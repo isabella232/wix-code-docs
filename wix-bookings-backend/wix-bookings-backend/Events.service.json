@@ -1,7 +1,8 @@
 { "name": "Events",
   "memberOf": "wix-bookings-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "bookingsEvents.js" },
@@ -731,7 +732,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 139,
+          [ { "lineno": 142,
               "filename": "bookingsEvents.js" } ],
         "docs":
           { "summary": "An event that fires when a booking's schedule is updated.",
@@ -924,7 +925,8 @@
         "extra":
           {  } },
       { "name": "onBookingUpdated",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -940,7 +942,10 @@
             "description":
               [ "The `onBookingUpdated()` event handler runs when a booking's details are updated.",
                 "",
-                "The `event` object includes a `trigger` property that describes the action that triggered the event. The `trigger` value for this event is `\"OWNER_UPDATED_ATTENDANCE\"` when the business updates the booking's attendance information.",
+                "The `event` object includes a `trigger` property that describes the action that triggered the event.  ",
+                "The `trigger` value is one of:",
+                "+ `\"OWNER_UPDATED_ATTENDANCE\"`: The business updates the booking's attendance information.",
+                "+ `\"CONTACT_MERGE\"`: The booking's contact has been merged with another contact and the contact ID has changed.",
                 "",
                 "> **Note:** Backend events don't work when previewing your site." ],
             "links": [],
