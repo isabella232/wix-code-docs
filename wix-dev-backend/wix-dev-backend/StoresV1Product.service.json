@@ -20,7 +20,7 @@
         "params":
           [ { "name": "productId",
               "type": "string",
-              "doc": "product id comment from proto" },
+              "doc": "product id comment from proto request" },
             { "name": "options",
               "type": "wix-dev-backend.StoresV1Product.GetProductOptions",
               "doc": "" } ],
@@ -92,10 +92,20 @@
             "extra":
               {  } },
         "members":
-          [ { "name": "ignoreCancellationPolicy",
-              "type": "boolean",
-              "doc": "Whether to ignore the service's cancellation policy.\n<!--ONLY:REST\n Requires BOOKINGS.IGNORE_BOOKING_POLICY permission.\n<!--END:ONLY:REST-->       \n<!--ONLY:VELO-->\n Requires \"Manage Wix Bookings App\" and \"Manage Bookings' Calendar\" [roles](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin).\n<!--END:ONLY:VELO-->",
-              "optional": true } ],
+          [
+            {
+              "name": "id",
+              "type": "string",
+              "doc": "product id comment from proto",
+              "optional": true
+            },
+            {
+              "name": "name",
+              "type": "string",
+              "doc": "product name comment from proto",
+              "optional": true
+            }
+          ],
         "extra":
           {  },
         "labels": [] }
