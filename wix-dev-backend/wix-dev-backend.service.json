@@ -1,38 +1,20 @@
-{ "name": "Bookings",
+{ "name": "wix-dev-backend",
   "mixes": [],
   "labels":
     [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
-  "docs":
-    { "summary": "",
-      "description": [],
-      "links": [],
-      "examples": [],
-      "extra":
-        {  } },
-  "properties":
-    [ { "name": "bookings",
-        "labels": [],
-        "get": true,
-        "set": false,
-        "type": "wix-dev-backend.Bookings",
-        "locations":
-          [ { "lineno": 70,
-              "filename": "index.js" } ],
-        "docs":
-          { "summary": "",
-            "links": [],
-            "examples": [],
-            "extra":
-              {  } },
-        "extra":
-          {  } }
-      ],
+  "docs": {
+    "summary": "",
+    "description": [],
+    "links": [],
+    "examples": [],
+    "extra": {}
+  },
+  "properties": [],
   "operations": [],
   "callbacks": [],
-  "messages":
-    [  ],
-  "extra":
-    {  } }
+  "messages": [],
+  "extra": {}
+}

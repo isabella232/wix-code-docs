@@ -1,4 +1,4 @@
-{ "name": "Bookings",
+{ "name": "StoresV1Product",
   "memberOf": "wix-dev-backend",
   "mixes": [],
   "labels": [],
@@ -22,13 +22,13 @@
               "type": "string",
               "doc": "product id comment from proto" },
             { "name": "options",
-              "type": "wix-dev-backend.Bookings.GetProductOptions",
+              "type": "wix-dev-backend.StoresV1Product.GetProductOptions",
               "doc": "" } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-dev-backend.Bookings.GetProductResult" ] },
+                  [ "wix-dev-backend.StoresV1Product.GetProductResult" ] },
             "doc": "response of get product from proto" },
         "locations":
           [ { "lineno": 1,
@@ -76,7 +76,7 @@
               {  } },
         "members":
           [ { "name": "product",
-              "type": "wix-dev-backend.Bookings.Product",
+              "type": "wix-dev-backend.StoresV1Product.Product",
               "doc": "product comment from proto response" } ],
         "extra":
           {  },
