@@ -5,37 +5,36 @@
   "location":
     { "lineno": 44,
       "filename": "index.js" },
-  "docs":
-    { "summary": "",
-      "description":
-        [],
-      "links": [],
-      "examples": [],
-      "extra":
-        {  } },
+  "docs": {
+    "summary": "",
+    "description": [],
+    "links": [],
+    "examples": [],
+    "extra": {  }
+  },
   "properties": [],
   "operations":
-    [ { "name": "cancelBooking",
+    [ { "name": "getProduct",
         "labels": [],
         "nameParams": [],
         "params":
-          [ { "name": "bookingId",
+          [ { "name": "productId",
               "type": "string",
-              "doc": "ID of the booking to be canceled." },
+              "doc": "product_id comment from proto" },
             { "name": "options",
-              "type": "wix-bookings-backend.Bookings.CancelBookingOptions",
+              "type": "wix-bookings-backend.Bookings.GetProductOptions",
               "doc": "An object representing the available options for canceling a booking." } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-bookings-backend.Bookings.CancelBookingResult" ] },
+                  [ "wix-bookings-backend.Bookings.GetProductResult" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 1,
               "filename": "cancelBooking.js" } ],
         "docs":
-          { "summary": "Foo Bar",
+          { "summary": "get product comment from proto",
             "description": [""],
             "links": [],
             "examples":
@@ -48,7 +47,7 @@
   "callbacks": [],
   "messages":
     [ 
-      { "name": "CancelBookingOptions",
+      { "name": "GetProductOptions",
         "locations":
           [ { "lineno": 11,
               "filename": "allTypeDefs.js" } ],
@@ -58,22 +57,15 @@
             "extra":
               {  } },
         "members":
-          [ { "name": "participantNotification",
-              "type": "wix-bookings-backend.ParticipantNotificationInfo",
-              "doc": "Whether to notify the participants about the booking confirmation, and an optional custom message.",
-              "optional": true },
-            { "name": "flowControlSettings",
-              "type": "wix-bookings-backend.Bookings.FlowControlSettingsInfo",
-              "doc": "Sets the cancel booking flow behavior.",
-              "optional": true },
-            { "name": "suppressAuth",
+          [ { "name": "isDraft",
               "type": "boolean",
-              "doc": "When `true`, prevents permission checks from running for the operation.",
-              "optional": true } ],
+              "doc": "is draft comment from proto",
+              "optional": true }
+          ],
         "extra":
           {  },
         "labels": [] },
-      { "name": "CancelBookingResult",
+      { "name": "GetProductResult",
         "locations":
           [ { "lineno": 32,
               "filename": "allTypeDefs.js" } ],
