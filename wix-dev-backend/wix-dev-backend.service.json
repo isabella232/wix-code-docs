@@ -17,12 +17,12 @@
         "labels": [],
         "get": true,
         "set": false,
-        "type": "wix-bookings-backend.Bookings",
+        "type": "wix-dev-backend.Bookings",
         "locations":
           [ { "lineno": 70,
               "filename": "index.js" } ],
         "docs":
-          { "summary": "The Bookings API provides functionality for updating and managing bookings created in the Wix Bookings app.",
+          { "summary": "",
             "links": [],
             "examples": [],
             "extra":
