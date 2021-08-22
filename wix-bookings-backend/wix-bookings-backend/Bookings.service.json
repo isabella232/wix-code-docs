@@ -20,10 +20,10 @@
         "params":
           [ { "name": "productId",
               "type": "string",
-              "doc": "product_id comment from proto" },
+              "doc": "product id comment from proto" },
             { "name": "options",
               "type": "wix-bookings-backend.Bookings.GetProductOptions",
-              "doc": "An object representing the available options for canceling a booking." } ],
+              "doc": "" } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -75,13 +75,13 @@
             "extra":
               {  } },
         "members":
-          [ { "name": "bookingId",
-              "type": "string",
+          [ { "name": "product",
+              "type": "wix-bookings-backend.Bookings.Product",
               "doc": "ID of the canceled booking." } ],
         "extra":
           {  },
         "labels": [] },
-      { "name": "FlowControlSettingsInfo",
+      { "name": "Product",
         "locations":
           [ { "lineno": 19,
               "filename": "allTypeDefs.js" } ],
