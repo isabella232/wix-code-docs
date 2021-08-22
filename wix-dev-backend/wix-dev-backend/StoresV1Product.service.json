@@ -94,7 +94,7 @@
         "members":
           [
             {
-              "name": "id",
+              "name": "_id",
               "type": "string",
               "doc": "product id comment from proto",
               "optional": true
