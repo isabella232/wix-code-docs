@@ -35,20 +35,8 @@
           [ { "lineno": 1,
               "filename": "cancelBooking.js" } ],
         "docs":
-          { "summary": "Cancels an existing booking.",
-            "description":
-              [ "The `cancelBooking()` function returns a Promise that resolves when the specified booking is canceled.",
-                "",
-                "Canceling a booking causes the following changes:",
-                "- The booking status changes to `CANCELED`.",
-                "- The participant is removed from the session.",
-                "- If the booking creates a session, the session that was created is deleted from the calendar.",
-                "- The participant is notified, according to the `participantNotification` properties.",
-                "",
-                "When `cancelBooking()` is invoked, the cancellation is validated against the service's bookings policy.",
-                "If `cancelBooking()` is invoked by a Bookings Admin, the service's bookings policy can be ignored by setting `ignoreCancellationPolicy` to `true`.",
-                ">**Note:**",
-                "> Only users with the **Bookings Admin** [role](https://support.wix.com/en/article/roles-permissions-overview#bookings-admin) can cancel other customers' bookings." ],
+          { "summary": "Foo Bar",
+            "description": [""],
             "links": [],
             "examples":
               [],
