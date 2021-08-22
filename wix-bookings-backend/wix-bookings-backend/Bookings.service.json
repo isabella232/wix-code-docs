@@ -1,5 +1,5 @@
-{ "name": "Bookings",
-  "memberOf": "wix-bookings-backend",
+{ "name": "WixStoresV1Product",
+  "memberOf": "wix-dev-backend",
   "mixes": [],
   "labels": [],
   "location":
