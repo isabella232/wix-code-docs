@@ -29,7 +29,7 @@
               { "name": "Promise",
                 "typeParams":
                   [ "wix-bookings-backend.Bookings.GetProductResult" ] },
-            "doc": "" },
+            "doc": "response of get product from proto" },
         "locations":
           [ { "lineno": 1,
               "filename": "cancelBooking.js" } ],
@@ -77,7 +77,7 @@
         "members":
           [ { "name": "product",
               "type": "wix-bookings-backend.Bookings.Product",
-              "doc": "ID of the canceled booking." } ],
+              "doc": "product comment from proto response" } ],
         "extra":
           {  },
         "labels": [] },
