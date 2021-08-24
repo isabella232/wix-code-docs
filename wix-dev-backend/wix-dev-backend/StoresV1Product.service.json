@@ -6,8 +6,8 @@
     { "lineno": 44,
       "filename": "index.js" },
   "docs": {
-    "summary": "",
-    "description": [],
+    "summary": "some summary about stores v1 product in wix-dev-backend",
+    "description": ["some more detailed introduction"],
     "links": [],
     "examples": [],
     "extra": {  }
