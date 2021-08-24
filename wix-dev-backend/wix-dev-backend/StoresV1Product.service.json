@@ -9,12 +9,7 @@
     "summary": "some summary about stores v1 product in wix-dev-backend",
     "description": ["some more detailed introduction"],
     "links": [],
-    "examples": [
-      {
-        "title": "General Example",
-        "body": ["import { storesV1Product } from \"wix-dev-backend\";"]
-      }
-    ],
+    "examples": [],
     "extra": {  }
   },
   "properties": [],
