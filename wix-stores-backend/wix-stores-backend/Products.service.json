@@ -1,12 +1,12 @@
-{ "name": "StoresV1Product",
-  "memberOf": "wix-dev-backend",
+{ "name": "Products",
+  "memberOf": "wix-stores-backend",
   "mixes": [],
   "labels": [],
   "location":
     { "lineno": 44,
       "filename": "index.js" },
   "docs": {
-    "summary": "some summary about stores v1 product in wix-dev-backend",
+    "summary": "some summary about stores v1 product in wix-stores-backend",
     "description": ["some more detailed introduction"],
     "links": [],
     "examples": [],
@@ -22,13 +22,13 @@
               "type": "string",
               "doc": "custom documentation for GetProduct's productId" },
             { "name": "options",
-              "type": "wix-dev-backend.StoresV1Product.GetProductOptions",
+              "type": "wix-stores-backend.Products.GetProductOptions",
               "doc": "" } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-dev-backend.StoresV1Product.Product" ] },
+                  [ "wix-stores-backend.Products.Product" ] },
             "doc": "custom documentation for GetProduct return value" },
         "locations":
           [ { "lineno": 1,
@@ -40,7 +40,7 @@
             "examples": [
               {
                 "title": "Get a product",
-                "body": ["import { storesV1Product } from \"wix-dev-backend\";"]
+                "body": ["import { storesV1Product } from \"wix-stores-backend\";"]
               }
             ],
             "extra":
@@ -80,7 +80,7 @@
               {  } },
         "members":
           [ { "name": "product",
-              "type": "wix-dev-backend.StoresV1Product.Product",
+              "type": "wix-stores-backend.Products.Product",
               "doc": "product comment from proto response" } ],
         "extra":
           {  },
