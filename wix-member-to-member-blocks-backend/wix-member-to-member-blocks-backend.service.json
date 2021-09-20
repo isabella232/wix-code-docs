@@ -1,0 +1,234 @@
+{ "name": "wix-member-to-member-blocks-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "index.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "blockMember",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "memberId",
+              "type": "string",
+              "doc": "ID of a member to block." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "void" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_members_membertomemberblocks_MemberToMemberBlocks_BlockMember_blockMember.js" } ],
+        "docs":
+          { "summary": "Blocks the specified member from the current member.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixMemberToMemberBlocksBackend from \"wix-member-to-member-blocks-backend\";",
+                      "",
+                      "export function blockMember() {",
+                      "  const memberId = \"a string\";",
+                      "",
+                      "  return wixMemberToMemberBlocksBackend",
+                      "    .blockMember(memberId)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "listCurrentMemberBlocking",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "paging",
+              "type": "wix-member-to-member-blocks-backend.CursorPaging_3235073023",
+              "doc": "Pagination parameters." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-member-to-member-blocks-backend.ListCurrentMemberBlockingResult_7877674201" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 33,
+              "filename": "com_wixpress_members_membertomemberblocks_MemberToMemberBlocks_ListCurrentMemberBlocking_listCurrentMemberBlocking.js" } ],
+        "docs":
+          { "summary": "Returns information about members blocked by the current member.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixMemberToMemberBlocksBackend from \"wix-member-to-member-blocks-backend\";",
+                      "",
+                      "export function listCurrentMemberBlocking() {",
+                      "  const paging = {",
+                      "    limit: 42,",
+                      "    cursor: \"a string\"",
+                      "  };",
+                      "",
+                      "  return wixMemberToMemberBlocksBackend",
+                      "    .listCurrentMemberBlocking(paging)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "unblockMember",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "memberId",
+              "type": "string",
+              "doc": "ID of a member to unblock." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "void" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_members_membertomemberblocks_MemberToMemberBlocks_UnblockMember_unblockMember.js" } ],
+        "docs":
+          { "summary": "Unblocks the specified member from the current member.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixMemberToMemberBlocksBackend from \"wix-member-to-member-blocks-backend\";",
+                      "",
+                      "export function unblockMember() {",
+                      "  const memberId = \"a string\";",
+                      "",
+                      "  return wixMemberToMemberBlocksBackend",
+                      "    .unblockMember(memberId)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } } ],
+  "callbacks": [],
+  "messages":
+    [ { "name": "CursorPaging_3235073023",
+        "locations":
+          [ { "lineno": 8,
+              "filename": "com_wixpress_members_membertomemberblocks_MemberToMemberBlocks_ListCurrentMemberBlocking_listCurrentMemberBlocking.js" } ],
+        "docs":
+          { "summary": "Pagination parameters.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "limit",
+              "type": "number",
+              "doc": "The number of items to load.\n Cursor token returned in the query response. To be used on the next query request, but not the first query request.",
+              "optional": true },
+            { "name": "cursor",
+              "type": "string",
+              "doc": "Cursor returned in last query response. Should not be provided on first page request",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Cursors_3337235656",
+        "locations":
+          [ { "lineno": 17,
+              "filename": "com_wixpress_members_membertomemberblocks_MemberToMemberBlocks_ListCurrentMemberBlocking_listCurrentMemberBlocking.js" } ],
+        "docs":
+          { "summary": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "next",
+              "type": "string",
+              "doc": "Cursor pointing to next result page." },
+            { "name": "prev",
+              "type": "string",
+              "doc": "Cursor pointing to previous result page." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListCurrentMemberBlockingResult_7877674201",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_members_membertomemberblocks_MemberToMemberBlocks_ListCurrentMemberBlocking_listCurrentMemberBlocking.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "blockedMemberIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of members blocked by the current member." },
+            { "name": "pagingMetadata",
+              "type": "wix-member-to-member-blocks-backend.PagingMetadataV2_4675861845",
+              "doc": "Metadata for the paginated results." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PagingMetadataV2_4675861845",
+        "locations":
+          [ { "lineno": 25,
+              "filename": "com_wixpress_members_membertomemberblocks_MemberToMemberBlocks_ListCurrentMemberBlocking_listCurrentMemberBlocking.js" } ],
+        "docs":
+          { "summary": "Metadata for the paginated results.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "count",
+              "type": "number",
+              "doc": "Number of items returned in the response." },
+            { "name": "cursors",
+              "type": "wix-member-to-member-blocks-backend.Cursors_3337235656",
+              "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used." } ],
+        "extra":
+          {  },
+        "labels": [] } ],
+  "extra":
+    {  } }
