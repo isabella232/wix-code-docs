@@ -1,0 +1,1142 @@
+{ "name": "wix-faq-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "index.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "bulkSetQuestionStatus",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "questionIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of question entry IDs to change status for." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Updated status of question entries.\nOne of:\n + `\"UNKNOWN\"`\n + `\"VISIBLE\"`\n + `\"HIDDEN\"`" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ { "name": "Array",
+                      "typeParams":
+                        [ "string" ] } ] },
+            "doc": "Fulfilled - List of failed question entry IDs that should be retried." },
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_BulkSetQuestionStatus_bulkSetQuestionStatus.js" } ],
+        "docs":
+          { "summary": "Updates multiple question entries' statuses.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function bulkSetQuestionStatus() {",
+                      "  const questionIds = [\"a string\"];",
+                      "  const status = \"UNKNOWN\";",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .bulkSetQuestionStatus(questionIds, status)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "bulkUpdateLabels",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "updates",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.QuestionLabelUpdate_6579331374" ] },
+              "doc": "List of updates for questions within a label, each containing the ID of the question to update, and optional new values for label and its order." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ { "name": "Array",
+                      "typeParams":
+                        [ "string" ] } ] },
+            "doc": "Fulfilled - List of failed question entry IDs that should retried." },
+        "locations":
+          [ { "lineno": 9,
+              "filename": "wix_faq_v1_FaqService_BulkUpdateLabelOrder_bulkUpdateLabels.js" } ],
+        "docs":
+          { "summary": "Updates a question entry's visibility.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function bulkUpdateLabels() {",
+                      "  const updates = [",
+                      "    {",
+                      "      questionId: \"a string\",",
+                      "      label: {",
+                      "        title: \"a string\",",
+                      "        sortOrder: 1.23",
+                      "      }",
+                      "    }",
+                      "  ];",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .bulkUpdateLabels(updates)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "createCategory",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "category",
+              "type": "wix-faq-backend.Category_4831108253",
+              "doc": "Category to update." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-faq-backend.Category_9228891322" ] },
+            "doc": "Fulfilled - Updated category." },
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_CreateCategory_createCategory.js" } ],
+        "docs":
+          { "summary": "Creates a category.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function createCategory() {",
+                      "  const category = {",
+                      "    title: \"a string\",",
+                      "    sortOrder: 1.23",
+                      "  };",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .createCategory(category)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "createQuestion",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "questionEntry",
+              "type": "wix-faq-backend.QuestionEntry_30377919292",
+              "doc": "Question entry to create." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-faq-backend.QuestionEntry_37721379577" ] },
+            "doc": "Fulfilled - Question entry, including a single question and its answer." },
+        "locations":
+          [ { "lineno": 19,
+              "filename": "wix_faq_v1_FaqService_CreateQuestion_createQuestion.js" } ],
+        "docs":
+          { "summary": "Creates a question entry.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function createQuestion() {",
+                      "  const questionEntry = {",
+                      "    _id: \"a string\",",
+                      "    question: \"a string\",",
+                      "    answer: {",
+                      "      format: {",
+                      "        draftjs: \"a string\"",
+                      "      }",
+                      "    },",
+                      "    labels: [",
+                      "      {",
+                      "        title: \"a string\",",
+                      "        sortOrder: 1.23",
+                      "      }",
+                      "    ],",
+                      "    sortOrder: 1.23,",
+                      "    status: \"UNKNOWN\",",
+                      "    categoryId: \"a string\"",
+                      "  };",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .createQuestion(questionEntry)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "deleteCategory",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "ID of the category to delete." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "void" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_DeleteCategory_deleteCategory.js" } ],
+        "docs":
+          { "summary": "Deletes a category.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function deleteCategory() {",
+                      "  const id = \"a string\";",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .deleteCategory(id)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "deleteQuestion",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "ID of question entry to delete." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "void" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_DeleteQuestion_deleteQuestion.js" } ],
+        "docs":
+          { "summary": "Deletes a question entry.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function deleteQuestion() {",
+                      "  const id = \"a string\";",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .deleteQuestion(id)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "listCategories",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "paging",
+              "type": "wix-faq-backend.CursorPaging_3235073023",
+              "doc": "Not needed if `question_id`s are provided in filter." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-faq-backend.ListCategoriesResult_16961634704" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 8,
+              "filename": "wix_faq_v1_FaqService_ListCategories_listCategories.js" } ],
+        "docs":
+          { "summary": "Retrieves up to 100 categories.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function listCategories() {",
+                      "  const paging = {",
+                      "    limit: 42,",
+                      "    cursor: \"a string\"",
+                      "  };",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .listCategories(paging)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "listQuestions",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "filters",
+              "type": "wix-faq-backend.ListQuestionsRequest_13969406726" },
+            { "name": "paging",
+              "type": "wix-faq-backend.CursorPaging_3235073023",
+              "doc": "Not needed if `question_id`s are provided in filter." },
+            { "name": "options",
+              "type": "wix-faq-backend.ListQuestionsRequest_5414875733" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-faq-backend.ListQuestionsResult_40952841538" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 26,
+              "filename": "wix_faq_v1_FaqService_ListQuestions_listQuestions.js" } ],
+        "docs":
+          { "summary": "Retrieves up to 100 question entries, given the provided filtering, paging, and sorting. Use the `fieldSet` parameter to set whether sharing links are included in the response.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function listQuestions() {",
+                      "  const filters = {",
+                      "    categoryId: \"a string\",",
+                      "    questionIds: [\"a string\"],",
+                      "    label: \"a string\",",
+                      "    contentFormat: \"DRAFTJS\"",
+                      "  };",
+                      "  const paging = {",
+                      "    limit: 42,",
+                      "    cursor: \"a string\"",
+                      "  };",
+                      "  const options = {",
+                      "    fieldsets: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .listQuestions(filters, paging, options)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "setQuestionLabels",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "ID of question entry to add labels to." },
+            { "name": "labels",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.Label_4605412461" ] },
+              "doc": "Labels to add to the question entry." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-faq-backend.QuestionEntry_37721379577" ] },
+            "doc": "Fulfilled - Question entry, including a single question and its answer." },
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_SetQuestionLabels_setQuestionLabels.js" } ],
+        "docs":
+          { "summary": "Adds or updates a question entry's labels. Replaces existing labels.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function setQuestionLabels() {",
+                      "  const id = \"a string\";",
+                      "  const labels = [",
+                      "    {",
+                      "      title: \"a string\",",
+                      "      sortOrder: 1.23",
+                      "    }",
+                      "  ];",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .setQuestionLabels(id, labels)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "updateCategory",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Category ID." },
+            { "name": "category",
+              "type": "wix-faq-backend.Category_4831108253",
+              "doc": "Category to update." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-faq-backend.Category_9228891322" ] },
+            "doc": "Fulfilled - Updated category." },
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_UpdateCategory_updateCategory.js" } ],
+        "docs":
+          { "summary": "Updates an existing category. Replaces all existing data for this category.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function updateCategory() {",
+                      "  const id = \"a string\";",
+                      "  const category = {",
+                      "    title: \"a string\",",
+                      "    sortOrder: 1.23",
+                      "  };",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .updateCategory(id, category)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "updateQuestion",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "FIXME auto-derive field with id\n ID of this question entry." },
+            { "name": "questionEntry",
+              "type": "wix-faq-backend.QuestionEntry_29730883065",
+              "doc": "Question entry to update." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-faq-backend.QuestionEntry_37721379577" ] },
+            "doc": "Fulfilled - Question entry, including a single question and its answer." },
+        "locations":
+          [ { "lineno": 17,
+              "filename": "wix_faq_v1_FaqService_UpdateQuestion_updateQuestion.js" } ],
+        "docs":
+          { "summary": "Update an existing question entry. Replaces the previous version.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function updateQuestion() {",
+                      "  const id = \"a string\";",
+                      "  const questionEntry = {",
+                      "    question: \"a string\",",
+                      "    answer: {",
+                      "      format: {",
+                      "        draftjs: \"a string\"",
+                      "      }",
+                      "    },",
+                      "    labels: [",
+                      "      {",
+                      "        title: \"a string\",",
+                      "        sortOrder: 1.23",
+                      "      }",
+                      "    ],",
+                      "    sortOrder: 1.23,",
+                      "    status: \"UNKNOWN\",",
+                      "    categoryId: \"a string\"",
+                      "  };",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .updateQuestion(id, questionEntry)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "updateQuestionVisibilities",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "visibility",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.QuestionVisibility_9151242405" ] },
+              "doc": "List of visibility updates for questions entries, each containing the ID of the question to update, and optional new values for status, order and categoryId." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ { "name": "Array",
+                      "typeParams":
+                        [ "string" ] } ] },
+            "doc": "Fulfilled - List of failed question entry IDs that should be retried." },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "wix_faq_v1_FaqService_UpdateQuestionsVisibility_updateQuestionVisibilities.js" } ],
+        "docs":
+          { "summary": "Updates multiple question entries' visibility within their categories.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixFaqBackend from \"wix-faq-backend\";",
+                      "",
+                      "export function updateQuestionVisibilities() {",
+                      "  const visibility = [",
+                      "    {",
+                      "      questionId: \"a string\",",
+                      "      categoryId: \"a string\",",
+                      "      sortOrder: 1.23,",
+                      "      status: \"UNKNOWN\"",
+                      "    }",
+                      "  ];",
+                      "",
+                      "  return wixFaqBackend",
+                      "    .updateQuestionVisibilities(visibility)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } } ],
+  "callbacks": [],
+  "messages":
+    [ { "name": "Category_4831108253",
+        "locations":
+          [ { "lineno": 29,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Category to update.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "title",
+              "type": "string",
+              "doc": "Category title.",
+              "optional": true },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "Order of category within a site.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Category_9228891322",
+        "locations":
+          [ { "lineno": 37,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Updated category.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Category ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Category title." },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "Order of category within a site." },
+            { "name": "_createdDate",
+              "type": "Date",
+              "doc": "Category's creation timestamp." },
+            { "name": "_updatedDate",
+              "type": "Date",
+              "doc": "Category's last update timestamp." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Content_10470174451",
+        "locations":
+          [ { "lineno": 57,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Contains the answer to the question.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "draftjs",
+              "type": "string",
+              "doc": "draft.js rich text.",
+              "optional": true },
+            { "name": "plainText",
+              "type": "string",
+              "doc": "Plain text.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "format",
+                  "members":
+                    [ "draftjs",
+                      "plainText" ] } ] },
+        "labels": [] },
+      { "name": "Content_10748240614",
+        "locations":
+          [ { "lineno": 48,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Contains the answer to the question.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "draftjs",
+              "type": "string",
+              "doc": "draft.js rich text.",
+              "optional": true },
+            { "name": "plainText",
+              "type": "string",
+              "doc": "Plain text.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "format",
+                  "members":
+                    [ "draftjs",
+                      "plainText" ] } ] },
+        "labels": [] },
+      { "name": "CursorPaging_3235073023",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Not needed if `question_id`s are provided in filter.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "limit",
+              "type": "number",
+              "doc": "The number of items to load.\n Cursor token returned in the query response. To be used on the next query request, but not the first query request.",
+              "optional": true },
+            { "name": "cursor",
+              "type": "string",
+              "doc": "Cursor returned in last query response. Should not be provided on first page request",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Cursors_3337235656",
+        "locations":
+          [ { "lineno": 10,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "next",
+              "type": "string",
+              "doc": "Cursor pointing to next result page." },
+            { "name": "prev",
+              "type": "string",
+              "doc": "Cursor pointing to previous result page." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Label_4605412461",
+        "locations":
+          [ { "lineno": 66,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Label to add or update.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "title",
+              "type": "string",
+              "doc": "Label title.",
+              "optional": true },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "Order of question entry within label.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Label_4790789903",
+        "locations":
+          [ { "lineno": 74,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "title",
+              "type": "string",
+              "doc": "Label title." },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "Order of question entry within label." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListCategoriesResult_16961634704",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_ListCategories_listCategories.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "categories",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.Category_9228891322" ] },
+              "doc": "List of categories." },
+            { "name": "pagingMetadata",
+              "type": "wix-faq-backend.PagingMetadataV2_5481679798",
+              "doc": "Metadata for the paginated results." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListQuestionsRequest_13969406726",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_ListQuestions_listQuestions.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "categoryId",
+              "type": "string",
+              "doc": "Category ID.",
+              "optional": true },
+            { "name": "questionIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of question IDs.",
+              "optional": true },
+            { "name": "label",
+              "type": "string",
+              "doc": "Question label.",
+              "optional": true },
+            { "name": "contentFormat",
+              "type": "string",
+              "doc": "Text output format.\nOne of:\n + `\"DRAFTJS\"`\n + `\"PLAIN_TEXT\"`",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListQuestionsRequest_5414875733",
+        "locations":
+          [ { "lineno": 13,
+              "filename": "wix_faq_v1_FaqService_ListQuestions_listQuestions.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "fieldsets",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListQuestionsResult_40952841538",
+        "locations":
+          [ { "lineno": 19,
+              "filename": "wix_faq_v1_FaqService_ListQuestions_listQuestions.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "questions",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.QuestionEntry_37721379577" ] },
+              "doc": "List of question entries." },
+            { "name": "pagingMetadata",
+              "type": "wix-faq-backend.PagingMetadataV2_5481679798",
+              "doc": "Metadata for the paginated results." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PagingMetadataV2_5481679798",
+        "locations":
+          [ { "lineno": 18,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Metadata for the paginated results.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "count",
+              "type": "number",
+              "doc": "Number of items returned in the response." },
+            { "name": "offset",
+              "type": "number",
+              "doc": "Offset that was requested." },
+            { "name": "total",
+              "type": "number",
+              "doc": "Total number of items that match the query. Returned if offset paging is used and the `tooManyToCount` flag is not set." },
+            { "name": "tooManyToCount",
+              "type": "boolean",
+              "doc": "Flag that indicates the server failed to calculate the `total` field." },
+            { "name": "cursors",
+              "type": "wix-faq-backend.Cursors_3337235656",
+              "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QuestionEntry_29730883065",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_UpdateQuestion_updateQuestion.js" } ],
+        "docs":
+          { "summary": "Question entry to update.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "question",
+              "type": "string",
+              "doc": "Question text." },
+            { "name": "answer",
+              "type": "wix-faq-backend.Content_10470174451",
+              "doc": "Contains the answer to the question." },
+            { "name": "labels",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.Label_4605412461" ] },
+              "doc": "List of up to 100 labels for this question entry.",
+              "optional": true },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "Order of question entry within its category.",
+              "optional": true },
+            { "name": "status",
+              "type": "string",
+              "doc": "Question entry's visibility status within the site.\nOne of:\n + `\"UNKNOWN\"`\n + `\"VISIBLE\"`\n + `\"HIDDEN\"`",
+              "optional": true },
+            { "name": "categoryId",
+              "type": "string",
+              "doc": "ID of the category to which this question belongs.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QuestionEntry_30377919292",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_CreateQuestion_createQuestion.js" } ],
+        "docs":
+          { "summary": "Question entry to create.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "FIXME auto-derive field with id\n ID of this question entry.",
+              "optional": true },
+            { "name": "question",
+              "type": "string",
+              "doc": "Question text.",
+              "optional": true },
+            { "name": "answer",
+              "type": "wix-faq-backend.Content_10470174451",
+              "doc": "Contains the answer to the question.",
+              "optional": true },
+            { "name": "labels",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.Label_4605412461" ] },
+              "doc": "List of up to 100 labels for this question entry.",
+              "optional": true },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "Order of question entry within its category.",
+              "optional": true },
+            { "name": "status",
+              "type": "string",
+              "doc": "Question entry's visibility status within the site.\nOne of:\n + `\"UNKNOWN\"`\n + `\"VISIBLE\"`\n + `\"HIDDEN\"`",
+              "optional": true },
+            { "name": "categoryId",
+              "type": "string",
+              "doc": "ID of the category to which this question belongs.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QuestionEntry_37721379577",
+        "locations":
+          [ { "lineno": 81,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Question entry, including a single question and its answer.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "FIXME auto-derive field with id\n ID of this question entry." },
+            { "name": "question",
+              "type": "string",
+              "doc": "Question text." },
+            { "name": "answer",
+              "type": "wix-faq-backend.Content_10748240614",
+              "doc": "Contains the answer to the question." },
+            { "name": "labels",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.Label_4790789903" ] },
+              "doc": "List of up to 100 labels for this question entry." },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "Order of question entry within its category." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Question entry's visibility status within the site.\nOne of:\n + `\"UNKNOWN\"`\n + `\"VISIBLE\"`\n + `\"HIDDEN\"`" },
+            { "name": "categoryId",
+              "type": "string",
+              "doc": "ID of the category to which this question belongs." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "URL slug for this question generated from the question entry's text." },
+            { "name": "shareLink",
+              "type": "string",
+              "doc": "Unique question URL." },
+            { "name": "_createdDate",
+              "type": "Date",
+              "doc": "Question entry's creation timestamp." },
+            { "name": "_updatedDate",
+              "type": "Date",
+              "doc": "Question entry's last update timestamp." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QuestionLabelUpdate_6579331374",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_BulkUpdateLabelOrder_bulkUpdateLabels.js" } ],
+        "docs":
+          { "summary": "Container to update question entry's order and status within a label.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "questionId",
+              "type": "string",
+              "doc": "ID of question entry to update.",
+              "optional": true },
+            { "name": "label",
+              "type": "wix-faq-backend.Label_4605412461",
+              "doc": "Label to add or update.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QuestionVisibility_9151242405",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_UpdateQuestionsVisibility_updateQuestionVisibilities.js" } ],
+        "docs":
+          { "summary": "Container used to update a question entry's visibility, ordering, and category.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "questionId",
+              "type": "string",
+              "doc": "ID of the question entry to update.",
+              "optional": true },
+            { "name": "categoryId",
+              "type": "string",
+              "doc": "ID of new category.",
+              "optional": true },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "New order of question entry in category.",
+              "optional": true },
+            { "name": "status",
+              "type": "string",
+              "doc": "New status of question entry.\nOne of:\n + `\"UNKNOWN\"`\n + `\"VISIBLE\"`\n + `\"HIDDEN\"`",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] } ],
+  "extra":
+    {  } }
