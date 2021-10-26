@@ -178,7 +178,10 @@
                 " changes either by user interaction or programmatically.",
                 "",
                 " Note that validations other than **required**, including custom validations,",
-                " are not run on input elements when they don't have a value." ],
+                " are not run on input elements when they don't have a value.",
+                "",
+                " Only the last applied custom validation on an element will run, unless you set the",
+                " optional `override` parameter to `false` for all custom validations." ],
             "links": [],
             "examples":
               [ { "title": "Set an element to invalid if its value is \"evil\"",
@@ -261,7 +264,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 228,
+          [ { "lineno": 231,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Resets the element's visual validity indication.",
@@ -296,7 +299,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 209,
+          [ { "lineno": 212,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Updates the element's visual validity indication based on its current validity state.",
