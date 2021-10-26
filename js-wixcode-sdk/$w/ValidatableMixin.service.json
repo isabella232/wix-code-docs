@@ -158,7 +158,7 @@
               "doc": "The name of the function or\n the function expression to run when the element's custom validation is checked." },
             { "name": "override",
               "type": "boolean",
-              "doc": "When `true`, overrides any existing custom validations set for the element so that only the current custom validation applies. \n\nWhen `false`, the current custom validation is added to any previous validations and all of them are applied. The order of execution follows the order the validations were set. \nIf one of the validations rejects, the rest of the validators won't run.\n\nDefaults to `true`, so that omitting the `override` property causes the current custom validation to override any other validations.",
+              "doc": "When `true`, overrides any existing custom validations set for the element so that only the current custom validation applies. \n\nWhen `false`, the current custom validation is added to any previous validations and all of them are applied. The order of execution follows the order the validations were set. \nIf one of the validations rejects, the rest of the validators won't run.\n\nDefaults to `true`, so that omitting the `override` property causes the current custom validation to override any other validations. \nIf multiple validations are set to override explicitly or by default, the last set validation will run and all other validations won't run.",
               "optional": true } ],
         "ret":
           { "type": "void" },
@@ -189,7 +189,67 @@
                       "  }",
                       "} );" ],
                   "extra":
-                    {  } } ],
+                    {  } },
+                { "title": "Set a new custom validation that overrides a previous validation",
+                  "body":
+                    [ "// This validation won't run",
+                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
+                      "  if(value === \"evil\") {",
+                      "    reject(\"Evil is invalid\");",
+                      "  }",
+                      "}, false);",
+                      "",
+                      "// This validation will run",
+                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
+                      "  if(value === \"bad\") {",
+                      "    reject(\"Bad is invalid\");",
+                      "  }",
+                      "}, true);" ],
+                  "extra":
+                    {  } },
+                { "title": "Set multiple custom validations",
+                  "body":
+                    [ "// This validation runs first",
+                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
+                      "  if(value === \"evil\") {",
+                      "    reject(\"Evil is invalid\");",
+                      "  }",
+                      "}, false);",
+                      "",
+                      "// This validation runs second",
+                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
+                      "  if(value === \"bad\") {",
+                      "    reject(\"Bad is invalid\");",
+                      "  }",
+                      "}, false);",
+                      "" ],
+                  "extra":
+                    { "description": "In this example, both custom validations run since the **override** property is set to **false**." } },
+                { "title": "Override multiple custom validations",
+                  "body":
+                    [ "// This validation will not run",
+                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
+                      "  if(value === \"evil\") {",
+                      "    reject(\"Evil is invalid\");",
+                      "  }",
+                      "});",
+                      "",
+                      "// This validation will not run",
+                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
+                      "  if(value === \"bad\") {",
+                      "    reject(\"Bad is invalid\");",
+                      "  }",
+                      "}, true);",
+                      "",
+                      "// This validation will run",
+                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
+                      "  if(value === \"cruel\") {",
+                      "    reject(\"Cruel is invalid\");",
+                      "  }",
+                      "});",
+                      "" ],
+                  "extra":
+                    { "description": "In this example all 3 custom validations are set to override, since omitting the **override** property defaults to **true**. Only the last applied validation runs." } } ],
             "extra":
               {  } },
         "extra":
@@ -201,7 +261,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 222,
+          [ { "lineno": 228,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Resets the element's visual validity indication.",
@@ -236,7 +296,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 203,
+          [ { "lineno": 209,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Updates the element's visual validity indication based on its current validity state.",
