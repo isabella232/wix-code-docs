@@ -74,9 +74,9 @@
             "typeParams":
               [ "number" ] },
         "locations":
-          [ { "lineno": 273,
+          [ { "lineno": 278,
               "filename": "DatePicker.es6" },
-            { "lineno": 306,
+            { "lineno": 311,
               "filename": "DatePicker.es6" } ],
         "docs":
           { "summary": "Sets or gets the days of the week that a user cannot select.",

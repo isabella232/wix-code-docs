@@ -1,7 +1,8 @@
 { "name": "ValidatableMixin",
   "memberOf": "$w",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 4,
       "filename": "ValidatableMixin.es6" },
@@ -148,16 +149,21 @@
           {  } } ],
   "operations":
     [ { "name": "onCustomValidation",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "validator",
               "type": "$w.Validator",
-              "doc": "The name of the function or\n the function expression to run when the element's custom validation is checked." } ],
+              "doc": "The name of the function or\n the function expression to run when the element's custom validation is checked." },
+            { "name": "override",
+              "type": "boolean",
+              "doc": "When `true`, overrides any existing custom validations set for the element so that only the current custom validation applies. \n\nWhen `false`, the current custom validation is added to any previous validations and all of them are applied. The order of execution follows the order the validations were set. \nIf one of the validations rejects, the rest of the validators won't run.\n\nDefaults to `true`, so that omitting the `override` property causes the current custom validation to override any other validations.",
+              "optional": true } ],
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 165,
+          [ { "lineno": 166,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Adds an event handler that runs when the element's validation is checked.",
@@ -195,7 +201,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 215,
+          [ { "lineno": 222,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Resets the element's visual validity indication.",
@@ -230,7 +236,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 196,
+          [ { "lineno": 203,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Updates the element's visual validity indication based on its current validity state.",
