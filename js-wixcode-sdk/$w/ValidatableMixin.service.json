@@ -1,8 +1,7 @@
 { "name": "ValidatableMixin",
   "memberOf": "$w",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 4,
       "filename": "ValidatableMixin.es6" },
@@ -149,8 +148,7 @@
           {  } } ],
   "operations":
     [ { "name": "onCustomValidation",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "validator",
