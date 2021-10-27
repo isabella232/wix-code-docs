@@ -158,7 +158,7 @@
               "doc": "The name of the function or\n the function expression to run when the element's custom validation is checked." },
             { "name": "override",
               "type": "boolean",
-              "doc": "When `true`, overrides any existing custom validations set for the element so that only the current custom validation applies. \n\nWhen `false`, the current custom validation is added to the previously applied validations and all of them run. The order of execution follows the order the validations were set. \nIf one of the validations rejects, the rest of the validations won't run. \n\nDefaults to `true`, so that omitting the `override` property causes the current custom validation to override any other validations. \nIf multiple validations are set to override explicitly or by default, only the last applied validation will run.\n\nFor example, if you add 4 custom validations to an element and set the `override` parameter to 'false`, 'true', `false`, `false` respectively, the first validation won't run\nand the remaining validations will run. This is because the second validation overrides the first.",
+              "doc": "When `true`, overrides any existing custom validations set for the element so that only the current custom validation applies. \n\nWhen `false`, the current custom validation is added to the previously applied validations and all of them run. The order of execution follows the order the validations were set. \nIf one of the validations rejects, the rest of the validations won't run. \n\nDefaults to `true`, so that omitting the `override` property causes the current custom validation to override any other validations. \nIf multiple validations are set to override explicitly or by default, only the last applied validation will run.\n\nFor example, if you add 4 custom validations to an element and set the `override` parameter to `false`, `true`, `false`, `false` respectively, the first validation won't run\nand the remaining validations will run. This is because the second validation overrides the first.",
               "optional": true } ],
         "ret":
           { "type": "void" },
@@ -180,8 +180,7 @@
                 " Note that validations other than **required**, including custom validations,",
                 " are not run on input elements when they don't have a value.",
                 "",
-                " Only the last applied custom validation on an element will run, unless you set the",
-                " optional `override` parameter to `false` for all custom validations." ],
+                " You can use the `override` parameter to override previously applied custom validations." ],
             "links": [],
             "examples":
               [ { "title": "Set an element to invalid if its value is \"evil\"",
@@ -253,7 +252,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 232,
+          [ { "lineno": 231,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Resets the element's visual validity indication.",
@@ -288,7 +287,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 213,
+          [ { "lineno": 212,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Updates the element's visual validity indication based on its current validity state.",
