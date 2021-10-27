@@ -240,7 +240,7 @@
                       "}, false);",
                       "" ],
                   "extra":
-                    { "description": "In this example, only the 3rd and 4th custom validations run. This is because the **override** property for the 3rd validation is set to `true` by default and overrides the previous 2 validations." } } ],
+                    { "description": "In this example, only the 3rd and 4th custom validations run. This is because the **override** property for the 3rd validation is set to **true** by default and overrides the previous 2 validations." } } ],
             "extra":
               {  } },
         "extra":
