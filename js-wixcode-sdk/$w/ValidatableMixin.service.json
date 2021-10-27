@@ -158,7 +158,7 @@
               "doc": "The name of the function or\n the function expression to run when the element's custom validation is checked." },
             { "name": "override",
               "type": "boolean",
-              "doc": "When `true`, overrides any existing custom validations set for the element so that only the current custom validation applies. \n\nWhen `false`, if all other validation overrides are also set to `false`, the current custom validation is added to the previous validations and all of them are applied. The order of execution follows the order the validations were set. \nIf one of the validations rejects, the rest of the validations won't run.\n\nDefaults to `true`, so that omitting the `override` property causes the current custom validation to override any other validations. \nIf multiple validations are set to override explicitly or by default, only the last applied validation will run.",
+              "doc": "When `true`, overrides any existing custom validations set for the element so that only the current custom validation applies. \n\nWhen `false`, the current custom validation is added to the previously applied validations and all of them run. The order of execution follows the order the validations were set. \nIf one of the validations rejects, the rest of the validations won't run. \n\nDefaults to `true`, so that omitting the `override` property causes the current custom validation to override any other validations. \nIf multiple validations are set to override explicitly or by default, only the last applied validation will run.\n\nFor example, if you add 4 custom validations to an element and set the `override` parameter to 'false`, 'true', `false`, `false` respectively, the first validation won't run\nand the remaining validations will run. This is because the second validation overrides the first.",
               "optional": true } ],
         "ret":
           { "type": "void" },
@@ -227,32 +227,7 @@
                       "}, false);",
                       "" ],
                   "extra":
-                    { "description": "In this example, both custom validations run since the **override** property is set to **false**." } },
-                { "title": "Override multiple custom validations",
-                  "body":
-                    [ "// This validation will not run",
-                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
-                      "  if(value === \"evil\") {",
-                      "    reject(\"Evil is invalid\");",
-                      "  }",
-                      "});",
-                      "",
-                      "// This validation will not run",
-                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
-                      "  if(value === \"bad\") {",
-                      "    reject(\"Bad is invalid\");",
-                      "  }",
-                      "}, true);",
-                      "",
-                      "// This validation will run",
-                      "$w(\"#myElement\").onCustomValidation( (value, reject) => {",
-                      "  if(value === \"cruel\") {",
-                      "    reject(\"Cruel is invalid\");",
-                      "  }",
-                      "});",
-                      "" ],
-                  "extra":
-                    { "description": "In this example all 3 custom validations are set to override, since omitting the **override** property defaults to **true**. Only the last applied validation runs." } } ],
+                    { "description": "In this example, only the 3rd and 4th custom validations run. This is because the **override** property for the 3rd validation is set to `true` by default and overrides the previous 2 validations." } } ],
             "extra":
               {  } },
         "extra":
@@ -264,7 +239,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 231,
+          [ { "lineno": 232,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Resets the element's visual validity indication.",
@@ -299,7 +274,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 212,
+          [ { "lineno": 213,
               "filename": "ValidatableMixin.es6" } ],
         "docs":
           { "summary": "Updates the element's visual validity indication based on its current validity state.",
