@@ -1,0 +1,1264 @@
+{ "name": "Events",
+  "memberOf": "wix-members-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 58,
+      "filename": "events.js" },
+  "docs":
+    { "summary": "Backend events that are fired from Members Area.",
+      "description":
+        [ "Backend events are fired in your site's backend when certain changes occur in your site's Members Area.",
+          " You can write event handlers that react to these backend events. Event handler functions",
+          " receive data that corresponds to the backend event that has occurred. Use event handlers",
+          " to create custom responses to the backend events.",
+          "",
+          "",
+          " Backend events are **not** fired when previewing your site.",
+          "",
+          " To add an event handler, add an **events.js** file to the **Backend** section",
+          " of your site if one does not already exist. All event handler functions for your",
+          " site are defined in this file.",
+          "",
+          " Event handler functions are defined using the following pattern:",
+          "",
+          " ```javascript",
+          " export function <wixAppName>_<eventName>(event) { }",
+          " ```",
+          "",
+          " For example, an event handler that handles the start of a site event looks",
+          " like this:",
+          "",
+          " ```javascript",
+          " export function members_onEventStarted(event) { }",
+          " ```" ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "onEventCanceled",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.CanceledEvent",
+              "doc": "Information about the event that was canceled." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 150,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a Wix event is canceled.",
+            "description":
+              [ "The `onEventCanceled()` event handler runs when an existing Wix event is canceled.",
+                " The received `CanceledEvent` object contains information about the event that was canceled.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links":
+              [ "[cancelEvent( )](wix-members-backend/wixevents/cancelevent)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onEventCreated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.CreatedEvent",
+              "doc": "Information about the event that was created." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 91,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a Wix event is created or copied.",
+            "description":
+              [ "The `onEventCreated()` event handler runs when a Wix event is created or copied in your site.",
+                " The received `CreatedEvent` object contains information about the new Wix event that was created/copied.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links":
+              [ "[createEvent( )](wix-members-backend/wixevents/createevent)",
+                "[copyEvent( )](wix-members-backend/wixevents/copyevent)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onEventDeleted",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.DeletedEvent",
+              "doc": "Information about the event that was deleted." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 176,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a Wix event is deleted.",
+            "description":
+              [ "The `onEventDeleted()` event handler runs when an existing event is deleted.",
+                " The received `DeletedEvent` object contains information about the event that was deleted.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links":
+              [ "[deleteEvent( )](wix-members-backend/wixevents/deleteevent)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onEventEnded",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.EndedEvent",
+              "doc": "Information about the event that has ended." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 258,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a Wix event ends.",
+            "description":
+              [ "The `onEventEnded()` event handler runs when a Wix event ends.",
+                " The received `EndedEvent` object contains information about the ended event.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onEventReminder",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.EventReminder",
+              "doc": "Information about the event that the reminder was sent for." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 202,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a Wix event's reminders are sent.",
+            "description":
+              [ "The `onEventReminder()` event handler runs when a Wix event is set to have a reminder",
+                " and the time of the reminder arrives.",
+                " The received `EventReminder` object contains information about the event.",
+                "",
+                " Configure when the reminder is sent in the site dashboard.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onEventStarted",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.StartedEvent",
+              "doc": "Information about the event that has started." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 234,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a Wix event starts.",
+            "description":
+              [ "The `onEventStarted()` event handler runs when a Wix event starts.",
+                " The received `StartedEvent` object contains information about the started event.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onEventUpdated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.UpdatedEvent",
+              "doc": "Information about the event that was updated." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 121,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when an existing Wix event is updated.",
+            "description":
+              [ "The `onEventUpdated()` event handler runs when an existing Wix event is updated.",
+                " The received `UpdatedEvent` object contains information about the event that was updated.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links":
+              [ "[updateEvent( )](wix-members-backend/wixevents/updateevent)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onOrderConfirmed",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.OrderConfirmedEvent",
+              "doc": "Information about the ticket order that was confirmed." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 573,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket order is confirmed.",
+            "description":
+              [ "The `onOrderConfirmed()` event handler runs when a ticket order is confirmed.",
+                " The received `OrderConfirmedEvent`",
+                " object contains information about the confirmed ticket order.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onOrderDeleted",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.OrderDeletedEvent",
+              "doc": "Information about the ticket order that was deleted." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 663,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket order is deleted.",
+            "description":
+              [ "The `onOrderDeleted()` event handler runs when a ticket order is deleted.",
+                " The received `OrderDeletedEvent`",
+                " object contains information about the deleted order.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onOrderInitiated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.OrderInitiatedEvent",
+              "doc": "Information about the ticket order that was initiated." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 532,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket order is initiated.",
+            "description":
+              [ "The `onOrderInitiated()` event handler runs when a ticket order is initiated.",
+                " The received `OrderInitiatedEvent`",
+                " object contains information about the initiated ticket order.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onOrderUpdated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.OrderUpdatedEvent",
+              "doc": "Information about the ticket order that was updated." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 617,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket order is updated.",
+            "description":
+              [ "The `onOrderUpdated()` event handler runs when a ticket order is updated.",
+                " The received `OrderUpdatedEvent`",
+                " object contains information about the updated ticket order.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onReservationCreated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.ReservationCreatedEvent",
+              "doc": "Information about the ticket reservation that was created." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 465,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket reservation is created.",
+            "description":
+              [ "The `onReservationCreated()` event handler runs when a ticket reservation is created.",
+                " The received `ReservationCreatedEvent`",
+                " object contains information about the created reservation.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onReservationUpdated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.ReservationUpdatedEvent",
+              "doc": "Information about the ticket reservation that was updated." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 499,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket reservation is updated.",
+            "description":
+              [ "The `onReservationUpdated()` event handler runs when a ticket reservation is updated.",
+                " The received `ReservationUpdatedEvent`",
+                " object contains information about the updated reservation.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onRsvpCreated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.RsvpCreatedEvent",
+              "doc": "Information about the RSVP that was created." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 282,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a guest registers to a Wix event.",
+            "description":
+              [ "The `onRsvpCreated()` event handler runs when a guest registers to a Wix event.",
+                " The received `RsvpCreatedEvent` object contains information about the created RSVP.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onRsvpDeleted",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.RsvpDeletedEvent",
+              "doc": "Information about the RSVP that was deleted." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 359,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when an RSVP is deleted.",
+            "description":
+              [ "The `onRsvpDeleted()` event handler runs when an RSVP is deleted.",
+                " The received `RsvpDeletedEvent` object contains information about the deleted RSVP.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onRsvpUpdated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.RsvpUpdatedEvent",
+              "doc": "Information about the RSVP that was updated." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 320,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when an RSVP is updated.",
+            "description":
+              [ "The `onRsvpUpdated()` event handler runs when an RSVP is updated.",
+                " The received `RsvpUpdatedEvent` object contains information about the updated RSVP.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onTicketDefinitionCreated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.TicketDefinitionCreatedEvent",
+              "doc": "Information about the ticket definition that was created." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 387,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket definition is created.",
+            "description":
+              [ "The `onTicketDefinitionCreated()` event handler runs when a ticket definition is created.",
+                " The received `TicketDefinitionCreatedEvent`",
+                " object contains information about the created ticket definition.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onTicketDefinitionDeleted",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.TicketDefinitionDeletedEvent",
+              "doc": "Information about the ticket definition that was deleted." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 439,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket definition is deleted.",
+            "description":
+              [ "The `onTicketDefinitionDeleted()` event handler runs when a ticket definition is deleted.",
+                " The received `TicketDefinitionDeletedEvent`",
+                " object contains information about the deleted ticket definition.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onTicketDefinitionUpdated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.TicketDefinitionUpdatedEvent",
+              "doc": "Information about the ticket definition that was updated." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 413,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a ticket definition is updated.",
+            "description":
+              [ "The `onTicketDefinitionUpdated()` event handler runs when a ticket definition is updated.",
+                " The received `TicketDefinitionUpdatedEvent`",
+                " object contains information about the updated ticket definition.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onWixEventCanceled",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-members-backend.Events.CanceledWixEvent",
+              "doc": "Information about the Wix event that was canceled." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 32,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a Wix event is canceled.",
+            "description":
+              [ "The `onEventCanceled()` event handler runs when an existing Wix event is canceled.",
+                " The received `CanceledEvent` object contains information about the event that was canceled.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links":
+              [ "[cancelEvent( )](wix-members-backend/wixevents/cancelevent)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages":
+    [ { "name": "CanceledEvent",
+        "locations":
+          [ { "lineno": 166,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing a Wix event that was canceled.",
+            "links":
+              [ "[onEventCanceled( )](#onEventCanceled)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the event was canceled." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Event title." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CanceledWixEvent",
+        "locations":
+          [ { "lineno": 48,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing a Wix event that was canceled.",
+            "links":
+              [ "[onEventCanceled( )](#onEventCanceled)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the event was canceled." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Event title." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CreatedEvent",
+        "locations":
+          [ { "lineno": 108,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the Wix event that was created or copied.",
+            "links":
+              [ "[onEventCreated( )](#onEventCreated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the event was created/copied." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Event title." },
+            { "name": "location",
+              "type": "wix-members-backend.Events.Location",
+              "doc": "Event location." },
+            { "name": "scheduleConfig",
+              "type": "wix-members-backend.Events.ScheduleConfiguration",
+              "doc": "Event's schedule configuration." },
+            { "name": "userId",
+              "type": "string",
+              "doc": "ID of the user who created/copied the event." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "DeletedEvent",
+        "locations":
+          [ { "lineno": 192,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing a Wix event that was deleted.",
+            "links":
+              [ "[onEventDeleted( )](#onEventDeleted)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the event was deleted." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Event title." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "EndedEvent",
+        "locations":
+          [ { "lineno": 273,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the event that has ended.",
+            "links":
+              [ "[onEventEnded( )](#onEventEnded)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the event ended." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "The ID of the event." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "EventReminder",
+        "locations":
+          [ { "lineno": 220,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the Wix event that reminders have been sent for.",
+            "links":
+              [ "[onEventReminder( )](#onEventReminder)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the reminder was sent." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "location",
+              "type": "wix-members-backend.Events.Location",
+              "doc": "Event location." },
+            { "name": "scheduleConfig",
+              "type": "wix-members-backend.Events.ScheduleConfiguration",
+              "doc": "Event's schedule configuration." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Event title." },
+            { "name": "userId",
+              "type": "string",
+              "doc": "ID of the user who created the event." },
+            { "name": "startsIn",
+              "type": "wix-members-backend.Events.TimeDuration",
+              "doc": "The time between now and the event start." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "OrderConfirmedEvent",
+        "locations":
+          [ { "lineno": 589,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the confirmed order.",
+            "links":
+              [ "[onOrderConfirmed( )](#onOrderConfirmed)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time order was confirmed." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "orderNumber",
+              "type": "string",
+              "doc": "Unique order number." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Contact ID associated with this order.",
+              "optional": true },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID associated with this order.",
+              "optional": true },
+            { "name": "created",
+              "type": "Date",
+              "doc": "Time order was created." },
+            { "name": "firstName",
+              "type": "string",
+              "doc": "Buyer first name." },
+            { "name": "lastName",
+              "type": "string",
+              "doc": "Buyer last name." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Buyer email." },
+            { "name": "checkoutForm",
+              "type": "wix-members-backend.Events.FormResponse",
+              "doc": "Checkout form response." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Order status.\n One of:\n\n + `\"FREE\"`: Order is confirmed, no payment required.\n + `\"PENDING\"`: Order was paid, but the payment provider suspended the payment. Eventually changes to `\"PAID\"`.\n + `\"PAID\"`: Order paid using the payment provider.\n + `\"OFFLINE_PENDING\"`: Order confirmed, but has to be paid offline and status needs to be manually updated to `\"PAID\"`.\n + `\"INITIATED\"`: Order is awaiting payment." },
+            { "name": "method",
+              "type": "string",
+              "doc": "Payment method used. For example, \"payPal\" or \"creditCard\"." },
+            { "name": "invoice",
+              "type": "wix-members-backend.Events.Invoice",
+              "doc": "Order invoice." },
+            { "name": "tickets",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-members-backend.Events.Ticket" ] },
+              "doc": "Tickets generated after payment." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "OrderDeletedEvent",
+        "locations":
+          [ { "lineno": 679,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the deleted ticket order.",
+            "links":
+              [ "[onOrderDeleted( )](#onOrderDeleted)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time order was deleted." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "orderNumber",
+              "type": "string",
+              "doc": "Unique order number." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Contact ID associated with this order.",
+              "optional": true },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID associated with this order.",
+              "optional": true },
+            { "name": "anonymized",
+              "type": "boolean",
+              "doc": "Whether the order was anonymized by a GDPR delete." },
+            { "name": "orderType",
+              "type": "string",
+              "doc": "Order type.\n One of:\n\n + `\"UNASSIGNED_TICKETS\"`: Buyer form is used for all tickets.\n + `\"ASSIGNED_TICKETS\"`: Each order ticket has its own form." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "OrderInitiatedEvent",
+        "locations":
+          [ { "lineno": 548,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the initiated order.",
+            "links":
+              [ "[onOrderInitiated( )](#onOrderInitiated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time order was initiated." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "orderNumber",
+              "type": "string",
+              "doc": "Unique order number." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Contact ID associated with this order.",
+              "optional": true },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID associated with this order.",
+              "optional": true },
+            { "name": "firstName",
+              "type": "string",
+              "doc": "Buyer first name." },
+            { "name": "lastName",
+              "type": "string",
+              "doc": "Buyer last name." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Buyer email." },
+            { "name": "checkoutForm",
+              "type": "wix-members-backend.Events.FormResponse",
+              "doc": "Checkout form response." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Order status.\n One of:\n\n + `\"FREE\"`: Order is confirmed, no payment required.\n + `\"PENDING\"`: Order was paid, but the payment provider suspended the payment. Eventually changes to `\"PAID\"`.\n + `\"PAID\"`: Order paid using the payment provider.\n + `\"OFFLINE_PENDING\"`: Order confirmed, but has to be paid offline and status needs to be manually updated to `\"PAID\"`.\n + `\"INITIATED\"`: Order is awaiting payment." },
+            { "name": "invoice",
+              "type": "wix-members-backend.Events.Invoice",
+              "doc": "Order invoice." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "OrderUpdatedEvent",
+        "locations":
+          [ { "lineno": 633,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the updated order.",
+            "links":
+              [ "[onOrderUpdated( )](#onOrderUpdated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time order was updated." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "orderNumber",
+              "type": "string",
+              "doc": "Unique order number." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Contact ID associated with this order.",
+              "optional": true },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID associated with this order.",
+              "optional": true },
+            { "name": "created",
+              "type": "Date",
+              "doc": "Time order was created." },
+            { "name": "firstName",
+              "type": "string",
+              "doc": "Buyer first name." },
+            { "name": "lastName",
+              "type": "string",
+              "doc": "Buyer last name." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Buyer email." },
+            { "name": "checkoutForm",
+              "type": "wix-members-backend.Events.FormResponse",
+              "doc": "Checkout form response." },
+            { "name": "confirmed",
+              "type": "boolean",
+              "doc": "Whether the order is confirmed An order gets confirmed\n when the payment gateway processes the payment and the funds reach the merchant's account." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Order status.\n One of:\n\n + `\"FREE\"`: Order is confirmed, no payment required.\n + `\"PENDING\"`: Order was paid, but the payment provider suspended the payment. Eventually changes to `\"PAID\"`.\n + `\"PAID\"`: Order paid using the payment provider.\n + `\"OFFLINE_PENDING\"`: Order confirmed, but has to be paid offline and status needs to be manually updated to `\"PAID\"`.\n + `\"INITIATED\"`: Order is awaiting payment." },
+            { "name": "method",
+              "type": "string",
+              "doc": "Payment method used. For example, \"payPal\" or \"creditCard\"." },
+            { "name": "archived",
+              "type": "boolean",
+              "doc": "Whether the order is archived." },
+            { "name": "tickets",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-members-backend.Events.Ticket" ] },
+              "doc": "Tickets generated after payment." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ReservationCreatedEvent",
+        "locations":
+          [ { "lineno": 481,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the created ticket reservation.",
+            "links":
+              [ "[onReservationCreated( )](#onReservationCreated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time tickets were reserved." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "reservationId",
+              "type": "string",
+              "doc": "Reservation ID. Can be used to retrieve an invoice." },
+            { "name": "expires",
+              "type": "Date",
+              "doc": "Time reservation expires." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Reservation status.\n One of:\n\n + `\"RESERVATION_PENDING\"`: Reservation is pending confirmation. It will expire after expiration due time.\n + `\"RESERVATION_CONFIRMED\"`: Reservation was confirmed and will not expire.\n + `\"RESERVATION_CANCELED\"`: Reservation was canceled because of non payment.\n + `\"RESERVATION_CANCELED_MANUALLY\"`: Reservation was canceled manually by the buyer." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ReservationUpdatedEvent",
+        "locations":
+          [ { "lineno": 515,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the updated reservation.",
+            "links":
+              [ "[onReservationUpdated( )](#onReservationUpdated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time tickets were reserved." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "reservationId",
+              "type": "string",
+              "doc": "Reservation ID. Can be used to retrieve an invoice." },
+            { "name": "status",
+              "type": "string",
+              "doc": "Reservation status.\n One of:\n\n + `\"RESERVATION_PENDING\"`: Reservation is pending confirmation. It will expire after expiration due time.\n + `\"RESERVATION_CONFIRMED\"`: Reservation was confirmed and will not expire.\n + `\"RESERVATION_CANCELED\"`: Reservation was canceled because of non payment.\n + `\"RESERVATION_CANCELED_MANUALLY\"`: Reservation was canceled manually by the buyer." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "RsvpCreatedEvent",
+        "locations":
+          [ { "lineno": 297,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the created RSVP.",
+            "links":
+              [ "[onRsvpCreated( )](#onRsvpCreated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the RSVP was created." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "rsvpId",
+              "type": "string",
+              "doc": "RSVP ID." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Contact ID associated with the RSVP." },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID associated with the RSVP.",
+              "optional": true },
+            { "name": "status",
+              "type": "string",
+              "doc": "RSVP response status.\n One of:\n\n + `\"YES\"`: Guest is attending.\n + `\"NO\"`: Guest is not attending.\n + `\"WAITING\"`: Guest added to the wait list." },
+            { "name": "firstName",
+              "type": "string",
+              "doc": "Guest first name." },
+            { "name": "lastName",
+              "type": "string",
+              "doc": "Guest last name." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Guest email address." },
+            { "name": "rsvpForm",
+              "type": "wix-members-backend.Events.FormResponse",
+              "doc": "RSVP form response." },
+            { "name": "guests",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-members-backend.Events.Guest" ] },
+              "doc": "List of guests." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "RsvpDeletedEvent",
+        "locations":
+          [ { "lineno": 374,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the deleted RSVP.",
+            "links":
+              [ "[onRsvpDeleted( )](#onRsvpDeleted)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time RSVP was deleted." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "rsvpId",
+              "type": "string",
+              "doc": "RSVP ID." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Contact ID associated with this RSVP." },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID associated with this RSVP.",
+              "optional": true },
+            { "name": "anonymized",
+              "type": "boolean",
+              "doc": "Whether the RSVP was anonymized as a result of a GDPR delete." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "RsvpUpdatedEvent",
+        "locations":
+          [ { "lineno": 335,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the updated RSVP.",
+            "links":
+              [ "[onRsvpUpdated( )](#onRsvpUpdated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the RSVP was updated." },
+            { "name": "created",
+              "type": "Date",
+              "doc": "Time the RSVP was created." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "rsvpId",
+              "type": "string",
+              "doc": "RSVP ID." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Contact ID associated with this RSVP." },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID associated with this RSVP.",
+              "optional": true },
+            { "name": "status",
+              "type": "string",
+              "doc": "RSVP response status.\n One of:\n\n + `\"YES\"`: Guest is attending.\n + `\"NO\"`: Guest is not attending.\n + `\"WAITING\"`: Guest added to the wait list." },
+            { "name": "firstName",
+              "type": "string",
+              "doc": "Guest first name." },
+            { "name": "lastName",
+              "type": "string",
+              "doc": "Guest last name." },
+            { "name": "email",
+              "type": "string",
+              "doc": "Guest email." },
+            { "name": "rsvpForm",
+              "type": "wix-members-backend.Events.FormResponse",
+              "doc": "RSVP form response." },
+            { "name": "guests",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-members-backend.Events.Guest" ] },
+              "doc": "List of guests." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "StartedEvent",
+        "locations":
+          [ { "lineno": 249,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the event that has started.",
+            "links":
+              [ "[onEventStarted( )](#onEventStarted)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the event started." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TicketDefinitionCreatedEvent",
+        "locations":
+          [ { "lineno": 403,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the created ticket definition.",
+            "links":
+              [ "[onTicketDefinitionCreated( )](#onTicketDefinitionCreated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time ticket definition was created." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "ticketDefinitionId",
+              "type": "string",
+              "doc": "Ticket definition ID." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TicketDefinitionDeletedEvent",
+        "locations":
+          [ { "lineno": 455,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the deleted ticket definition.",
+            "links":
+              [ "[onTicketDefinitionDeleted( )](#onTicketDefinitionDeleted)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time ticket definition was deleted." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "ticketDefinitionId",
+              "type": "string",
+              "doc": "Ticket definition ID." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TicketDefinitionUpdatedEvent",
+        "locations":
+          [ { "lineno": 429,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the updated ticket definition.",
+            "links":
+              [ "[onTicketDefinitionUpdated( )](#onTicketDefinitionUpdated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time ticket definition was updated." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "ticketDefinitionId",
+              "type": "string",
+              "doc": "Ticket definition ID." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "UpdatedEvent",
+        "locations":
+          [ { "lineno": 137,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the Wix event that was updated.",
+            "links":
+              [ "[onEventUpdated( )](#onEventUpdated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "timestamp",
+              "type": "Date",
+              "doc": "Time the event was updated." },
+            { "name": "eventId",
+              "type": "string",
+              "doc": "Event ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Event title." },
+            { "name": "location",
+              "type": "wix-members-backend.Events.Location",
+              "doc": "Event location." },
+            { "name": "scheduleConfig",
+              "type": "wix-members-backend.Events.ScheduleConfiguration",
+              "doc": "Event's schedule configuration." },
+            { "name": "scheduleConfigUpdated",
+              "type": "boolean",
+              "doc": "Whether the schedule configuration was updated." } ],
+        "extra":
+          {  },
+        "labels": [] } ],
+  "extra":
+    {  } }
