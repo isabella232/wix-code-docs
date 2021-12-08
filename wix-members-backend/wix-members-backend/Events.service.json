@@ -1,20 +1,20 @@
 { "name": "Events",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
-    { "lineno": 58,
+    { "lineno": 1,
       "filename": "events.js" },
   "docs":
-    { "summary": "Backend events that are fired from Members Area.",
+    { "summary": "Events that are triggered by actions on a site's members.",
       "description":
-        [ "Backend events are fired in your site's backend when certain changes occur in your site's Members Area.",
-          " You can write event handlers that react to these backend events. Event handler functions",
+        [ "Events are triggered in your site's backend when certain changes occur to your site's members.",
+          " You can write event handlers that react to these events. Event handler functions",
           " receive data that corresponds to the backend event that has occurred. Use event handlers",
-          " to create custom responses to the backend events.",
+          " to create custom responses to the events.",
           "",
-          "",
-          " Backend events are **not** fired when previewing your site.",
+          " Events are **not** triggered when previewing your site.",
           "",
           " To add an event handler, add an **events.js** file to the **Backend** section",
           " of your site if one does not already exist. All event handler functions for your",
@@ -26,11 +26,11 @@
           " export function <wixAppName>_<eventName>(event) { }",
           " ```",
           "",
-          " For example, an event handler that handles the start of a site event looks",
+          " For example, an event handler that handles the approval of a site member looks",
           " like this:",
           "",
           " ```javascript",
-          " export function members_onEventStarted(event) { }",
+          "export function wixMembers_onMemberApproved(event) { }",
           " ```" ],
       "links": [],
       "examples": [],
@@ -38,8 +38,34 @@
         {  } },
   "properties": [],
   "operations":
-    [ { "name": "onEventCanceled",
-        "labels": [],
+    [ { "name": "on",
+        "labels":
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "type": "void" } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 47,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An event that is triggered when a  is .",
+            "description":
+              [ "The `()` event handler runs when a is .",
+                " The received `` object contains information about the  that was .",
+                "",
+                "> **Note:** Backend events don’t work when previewing your site." ],
+            "links":
+              [ "[Event( )](wix-members-backend/)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onEventCanceled",
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -65,7 +91,8 @@
         "extra":
           {  } },
       { "name": "onEventCreated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -92,7 +119,8 @@
         "extra":
           {  } },
       { "name": "onEventDeleted",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -118,7 +146,8 @@
         "extra":
           {  } },
       { "name": "onEventEnded",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -143,7 +172,8 @@
         "extra":
           {  } },
       { "name": "onEventReminder",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -171,7 +201,8 @@
         "extra":
           {  } },
       { "name": "onEventStarted",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -196,7 +227,8 @@
         "extra":
           {  } },
       { "name": "onEventUpdated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -221,8 +253,36 @@
               {  } },
         "extra":
           {  } },
+      { "name": "onMemberApproved",
+        "labels":
+          [ "new" ],
+        "nameParams": [],
+        "params":
+          [ { "name": "members",
+              "type": "wix-members-backend.Events.ApprovedMember",
+              "doc": "Information about the site member that was approved." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 31,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An event that is triggered when a site member is approved.",
+            "description":
+              [ "The `onMemberApproved()` event handler runs when an existing site member is approved.",
+                " The received `ApprovedMember` object contains information about the site member that was approved.",
+                "",
+                "> **Note:** Backend events don’t work when previewing your site." ],
+            "links":
+              [ "[ApproveMember( )](wix-members-backend/approvemember)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
       { "name": "onOrderConfirmed",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -248,7 +308,8 @@
         "extra":
           {  } },
       { "name": "onOrderDeleted",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -274,7 +335,8 @@
         "extra":
           {  } },
       { "name": "onOrderInitiated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -300,7 +362,8 @@
         "extra":
           {  } },
       { "name": "onOrderUpdated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -326,7 +389,8 @@
         "extra":
           {  } },
       { "name": "onReservationCreated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -352,7 +416,8 @@
         "extra":
           {  } },
       { "name": "onReservationUpdated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -378,7 +443,8 @@
         "extra":
           {  } },
       { "name": "onRsvpCreated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -403,7 +469,8 @@
         "extra":
           {  } },
       { "name": "onRsvpDeleted",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -428,7 +495,8 @@
         "extra":
           {  } },
       { "name": "onRsvpUpdated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -453,7 +521,8 @@
         "extra":
           {  } },
       { "name": "onTicketDefinitionCreated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -479,7 +548,8 @@
         "extra":
           {  } },
       { "name": "onTicketDefinitionDeleted",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -505,7 +575,8 @@
         "extra":
           {  } },
       { "name": "onTicketDefinitionUpdated",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -531,7 +602,8 @@
         "extra":
           {  } },
       { "name": "onWixEventCanceled",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -558,7 +630,26 @@
           {  } } ],
   "callbacks": [],
   "messages":
-    [ { "name": "CanceledEvent",
+    [ { "name": "ApprovedMember",
+        "locations":
+          [ { "lineno": 64,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the member that was approved.",
+            "links":
+              [ "[onMemberApproved( )](#onMemberApproved)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "array",
+              "type": "Members",
+              "doc": "List of the affected members." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "CanceledEvent",
         "locations":
           [ { "lineno": 166,
               "filename": "events.js" } ],
@@ -581,7 +672,8 @@
               "doc": "Event title." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "CanceledWixEvent",
         "locations":
           [ { "lineno": 48,
@@ -605,7 +697,8 @@
               "doc": "Event title." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "CreatedEvent",
         "locations":
           [ { "lineno": 108,
@@ -638,7 +731,8 @@
               "doc": "ID of the user who created/copied the event." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "DeletedEvent",
         "locations":
           [ { "lineno": 192,
@@ -662,7 +756,8 @@
               "doc": "Event title." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "EndedEvent",
         "locations":
           [ { "lineno": 273,
@@ -683,7 +778,8 @@
               "doc": "The ID of the event." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "EventReminder",
         "locations":
           [ { "lineno": 220,
@@ -719,7 +815,8 @@
               "doc": "The time between now and the event start." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "OrderConfirmedEvent",
         "locations":
           [ { "lineno": 589,
@@ -781,7 +878,8 @@
               "doc": "Tickets generated after payment." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "OrderDeletedEvent",
         "locations":
           [ { "lineno": 679,
@@ -819,7 +917,8 @@
               "doc": "Order type.\n One of:\n\n + `\"UNASSIGNED_TICKETS\"`: Buyer form is used for all tickets.\n + `\"ASSIGNED_TICKETS\"`: Each order ticket has its own form." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "OrderInitiatedEvent",
         "locations":
           [ { "lineno": 548,
@@ -869,7 +968,8 @@
               "doc": "Order invoice." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "OrderUpdatedEvent",
         "locations":
           [ { "lineno": 633,
@@ -934,7 +1034,8 @@
               "doc": "Tickets generated after payment." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ReservationCreatedEvent",
         "locations":
           [ { "lineno": 481,
@@ -964,7 +1065,8 @@
               "doc": "Reservation status.\n One of:\n\n + `\"RESERVATION_PENDING\"`: Reservation is pending confirmation. It will expire after expiration due time.\n + `\"RESERVATION_CONFIRMED\"`: Reservation was confirmed and will not expire.\n + `\"RESERVATION_CANCELED\"`: Reservation was canceled because of non payment.\n + `\"RESERVATION_CANCELED_MANUALLY\"`: Reservation was canceled manually by the buyer." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ReservationUpdatedEvent",
         "locations":
           [ { "lineno": 515,
@@ -991,7 +1093,8 @@
               "doc": "Reservation status.\n One of:\n\n + `\"RESERVATION_PENDING\"`: Reservation is pending confirmation. It will expire after expiration due time.\n + `\"RESERVATION_CONFIRMED\"`: Reservation was confirmed and will not expire.\n + `\"RESERVATION_CANCELED\"`: Reservation was canceled because of non payment.\n + `\"RESERVATION_CANCELED_MANUALLY\"`: Reservation was canceled manually by the buyer." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "RsvpCreatedEvent",
         "locations":
           [ { "lineno": 297,
@@ -1043,7 +1146,8 @@
               "doc": "List of guests." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "RsvpDeletedEvent",
         "locations":
           [ { "lineno": 374,
@@ -1077,7 +1181,8 @@
               "doc": "Whether the RSVP was anonymized as a result of a GDPR delete." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "RsvpUpdatedEvent",
         "locations":
           [ { "lineno": 335,
@@ -1132,7 +1237,8 @@
               "doc": "List of guests." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "StartedEvent",
         "locations":
           [ { "lineno": 249,
@@ -1153,7 +1259,8 @@
               "doc": "Event ID." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "TicketDefinitionCreatedEvent",
         "locations":
           [ { "lineno": 403,
@@ -1177,7 +1284,8 @@
               "doc": "Ticket definition ID." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "TicketDefinitionDeletedEvent",
         "locations":
           [ { "lineno": 455,
@@ -1201,7 +1309,8 @@
               "doc": "Ticket definition ID." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "TicketDefinitionUpdatedEvent",
         "locations":
           [ { "lineno": 429,
@@ -1225,7 +1334,8 @@
               "doc": "Ticket definition ID." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "UpdatedEvent",
         "locations":
           [ { "lineno": 137,
@@ -1258,6 +1368,7 @@
               "doc": "Whether the schedule configuration was updated." } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "removed" ] } ],
   "extra":
     {  } }
