@@ -1,7 +1,6 @@
 { "name": "wix-crm-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "contacts.js" },
@@ -155,8 +154,7 @@
           {  } } ],
   "operations":
     [ { "name": "createContact",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "contactInfo",
@@ -285,8 +283,7 @@
         "extra":
           {  } },
       { "name": "deleteContact",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "contactId",
@@ -403,7 +400,8 @@
         "extra":
           {  } },
       { "name": "emailContact",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "emailId",
@@ -413,7 +411,7 @@
               "type": "string",
               "doc": "The contact's ID you are sending the email to." },
             { "name": "options",
-              "type": "wix-crm.TriggeredEmails.TriggeredEmailOptions",
+              "type": "wix-crm-backend.TriggeredEmails.TriggeredEmailOptions",
               "doc": "Variable values to insert into the email.",
               "optional": true } ],
         "ret":
@@ -426,7 +424,7 @@
           [ { "lineno": 90,
               "filename": "contacts.js" } ],
         "docs":
-          { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-crm-backend.triggeredEmails.emailContact()](https://www.wix.com/velo/reference/wix-crm-backend/triggeredemails-obj/emailcontact).",
+          { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-crm-backend.triggeredEmails.emailContact()](https://www.wix.com/velo/reference/wix-crm-backend/triggeredemails/emailcontact).",
             "description":
               [ "Sends a Triggered Email to a contact.",
                 "",
@@ -434,7 +432,7 @@
                 ">",
                 "> If this function is already in your code, it will continue to work.",
                 "> To stay compatible with future changes, migrate to",
-                "> [`wix-crm-backend.triggeredEmails.emailContact()`](wix-crm-backend/triggeredemails-obj/emailcontact).",
+                "> [`wix-crm-backend.triggeredEmails.emailContact()`](wix-crm-backend/triggeredemails/emailcontact).",
                 ">",
                 "> To migrate to the new function:",
                 ">",
@@ -539,8 +537,7 @@
         "extra":
           {  } },
       { "name": "getContactById",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "contactId",
@@ -556,7 +553,7 @@
           [ { "lineno": 164,
               "filename": "contacts.js" } ],
         "docs":
-          { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-crm-backend.contacts.getContact()](https://www.wix.com/velo/reference/wix-crm-backend/contacts/getContact).",
+          { "summary": "**Deprecated.**\nThis function will continue to work, but a newer version is available at\n[wix-crm-backend.contacts.getContact()](https://www.wix.com/velo/reference/wix-crm-backend/contacts/getcontact).",
             "description":
               [ "Gets an existing contact by ID.",
                 "",
@@ -629,8 +626,7 @@
         "extra":
           {  } },
       { "name": "updateContact",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "contactId",
