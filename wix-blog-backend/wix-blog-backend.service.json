@@ -1,7 +1,6 @@
 { "name": "wix-blog-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -472,8 +471,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "AnchorData_2936935776",
         "locations":
           [ { "lineno": 150,
@@ -523,8 +521,7 @@
                   "members":
                     [ "bookingData",
                       "eventData" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "AppEmbedData_44614653994",
         "locations":
           [ { "lineno": 156,
@@ -574,8 +571,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "AppEmbedData_BookingData_3465190693",
         "locations":
           [ { "lineno": 172,
@@ -608,8 +604,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "AppEmbedData_EventData_8829001099",
         "locations":
           [ { "lineno": 178,
@@ -646,8 +641,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Background_Gradient_77770295",
         "locations":
           [ { "lineno": 717,
@@ -689,8 +683,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "BlogPaging_330394407",
         "locations":
           [ { "lineno": 27,
@@ -737,8 +730,7 @@
               "type": "wix-blog-backend.Link" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ButtonData_70625942486",
         "locations":
           [ { "lineno": 185,
@@ -780,8 +772,7 @@
               "type": "wix-blog-backend.Styles_Colors" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ButtonData_Styles_9840713929",
         "locations":
           [ { "lineno": 212,
@@ -936,8 +927,7 @@
               "doc": "Legacy mongo id used by analytics and db driver." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Category_40509540199",
         "locations":
           [ { "lineno": 53,
@@ -1002,8 +992,7 @@
               "type": "wix-blog-backend.TextStyle" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CodeBlockData_9904854867",
         "locations":
           [ { "lineno": 219,
@@ -1042,8 +1031,7 @@
               "doc": "One of:\n + `\"LTR\"`\n + `\"RTL\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CollapsibleListData_44998877770",
         "locations":
           [ { "lineno": 225,
@@ -1084,8 +1072,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ColorData_7647716659",
         "locations":
           [ { "lineno": 239,
@@ -1127,8 +1114,7 @@
               [ { "name": "media",
                   "members":
                     [ "image" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CoverMedia_22661640638",
         "locations":
           [ { "lineno": 35,
@@ -1203,8 +1189,7 @@
                       "linkData",
                       "mentionData",
                       "underlineData" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Decoration_68131066520",
         "locations":
           [ { "lineno": 246,
@@ -1270,8 +1255,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Design_OptionDesign_953058154",
         "locations":
           [ { "lineno": 738,
@@ -1304,8 +1288,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Design_PollDesign_34454566800",
         "locations":
           [ { "lineno": 744,
@@ -1347,8 +1330,7 @@
               "doc": "One of:\n + `\"CENTER\"`\n + `\"LEFT\"`\n + `\"RIGHT\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "DividerData_47293567278",
         "locations":
           [ { "lineno": 272,
@@ -1400,8 +1382,7 @@
               "type": "wix-blog-backend.TextNodeStyle" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "DocumentStyle_77601517520",
         "locations":
           [ { "lineno": 291,
@@ -1448,8 +1429,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "EmbedData_70800071814",
         "locations":
           [ { "lineno": 303,
@@ -1492,8 +1472,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "FileData_39771476977",
         "locations":
           [ { "lineno": 311,
@@ -1544,8 +1523,7 @@
                   "members":
                     [ "_id",
                       "url" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "FileSource_11163158514",
         "locations":
           [ { "lineno": 321,
@@ -1591,8 +1569,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "FontSizeData_3824463591",
         "locations":
           [ { "lineno": 330,
@@ -1631,8 +1608,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GIFData",
         "locations":
           [ { "lineno": 354,
@@ -1657,8 +1633,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GIFData_45278246780",
         "locations":
           [ { "lineno": 348,
@@ -1731,8 +1706,7 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GalleryData_121837021992",
         "locations":
           [ { "lineno": 358,
@@ -1786,8 +1760,7 @@
                   "members":
                     [ "image",
                       "video" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GalleryData_Item_62919712022",
         "locations":
           [ { "lineno": 382,
@@ -1834,8 +1807,7 @@
               "type": "wix-blog-backend.GalleryOptions_Thumbnails" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GalleryOptions_21439276766",
         "locations":
           [ { "lineno": 392,
@@ -1877,8 +1849,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GalleryOptions_ItemStyle_12059012395",
         "locations":
           [ { "lineno": 400,
@@ -1926,8 +1897,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GalleryOptions_Layout_4819719370",
         "locations":
           [ { "lineno": 411,
@@ -1971,8 +1941,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "GalleryOptions_Thumbnails_6677769515",
         "locations":
           [ { "lineno": 433,
@@ -2210,8 +2179,7 @@
                   "members":
                     [ "html",
                       "url" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "HTMLData_41098731592",
         "locations":
           [ { "lineno": 445,
@@ -2256,8 +2224,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "HeadingData_7012938143",
         "locations":
           [ { "lineno": 454,
@@ -2315,8 +2282,7 @@
               "doc": "Image size in bytes. Optional." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ImageData",
         "locations":
           [ { "lineno": 468,
@@ -2343,8 +2309,7 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ImageData_83717634114",
         "locations":
           [ { "lineno": 462,
@@ -2428,8 +2393,7 @@
               "type": "wix-blog-backend.Link" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Item_Image_45302550261",
         "locations":
           [ { "lineno": 368,
@@ -2464,8 +2428,7 @@
               "type": "wix-blog-backend.Media" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Item_Video_22775990162",
         "locations":
           [ { "lineno": 375,
@@ -2498,8 +2461,7 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Layout_OptionLayout_1580920867",
         "locations":
           [ { "lineno": 751,
@@ -2536,8 +2498,7 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Layout_PollLayout_13540866094",
         "locations":
           [ { "lineno": 757,
@@ -2591,8 +2552,7 @@
                   "members":
                     [ "anchor",
                       "url" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "LinkData",
         "locations":
           [ { "lineno": 495,
@@ -2607,8 +2567,7 @@
               "type": "wix-blog-backend.Link" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "LinkData_26931558914",
         "locations":
           [ { "lineno": 489,
@@ -2649,8 +2608,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "LinkPreviewData_63536603862",
         "locations":
           [ { "lineno": 495,
@@ -2731,8 +2689,7 @@
               "doc": "UoU generated link" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Link_Rel_3853065424",
         "locations":
           [ { "lineno": 506,
@@ -2900,8 +2857,7 @@
               "doc": "Repeated field of dynamically typed values." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListValue_24710570060",
         "locations":
           [ { "lineno": 514,
@@ -2939,8 +2895,7 @@
               "type": "wix-blog-backend.MapSettings" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "MapData_48792005198",
         "locations":
           [ { "lineno": 521,
@@ -3000,8 +2955,7 @@
               "doc": "One of:\n + `\"ROADMAP\"`\n + `\"SATELITE\"`\n + `\"HYBRID\"`\n + `\"TERRAIN\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "MapSettings_17066473385",
         "locations":
           [ { "lineno": 528,
@@ -3065,8 +3019,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Media_19648731753",
         "locations":
           [ { "lineno": 548,
@@ -3105,8 +3058,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "MentionData_1009308959",
         "locations":
           [ { "lineno": 557,
@@ -3147,8 +3099,7 @@
               "doc": "Total number of items that match the query." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "MetaData_528203147",
         "locations":
           [ { "lineno": 44,
@@ -3196,8 +3147,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Metadata_5490399625",
         "locations":
           [ { "lineno": 564,
@@ -3245,8 +3195,7 @@
               "doc": "Total number of post views." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Metrics_2321136847",
         "locations":
           [ { "lineno": 70,
@@ -3383,8 +3332,7 @@
                       "tableData",
                       "textData",
                       "videoData" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "NodeStyle",
         "locations":
           [ { "lineno": 640,
@@ -3403,8 +3351,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "NodeStyle_13567015619",
         "locations":
           [ { "lineno": 634,
@@ -3581,8 +3528,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Oembed_39669817914",
         "locations":
           [ { "lineno": 642,
@@ -3646,8 +3592,7 @@
               "doc": "The path to that page - e.g /product-page/a-product" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PageUrl_5174563244",
         "locations":
           [ { "lineno": 130,
@@ -3685,8 +3630,7 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ParagraphData_9784574843",
         "locations":
           [ { "lineno": 662,
@@ -3728,8 +3672,7 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PluginContainerData_31707594155",
         "locations":
           [ { "lineno": 669,
@@ -3769,8 +3712,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PluginContainerData_Height_1781445912",
         "locations":
           [ { "lineno": 682,
@@ -3805,8 +3747,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PluginContainerData_Spoiler_4959863162",
         "locations":
           [ { "lineno": 688,
@@ -3850,8 +3791,7 @@
                   "members":
                     [ "custom",
                       "size" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PluginContainerData_Width_12457607246",
         "locations":
           [ { "lineno": 696,
@@ -3897,8 +3837,7 @@
               "type": "wix-blog-backend.PollData_Design" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PollData_120678260381",
         "locations":
           [ { "lineno": 708,
@@ -3937,8 +3876,7 @@
               "type": "wix-blog-backend.Design_OptionDesign" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PollData_Design_38739316945",
         "locations":
           [ { "lineno": 798,
@@ -3973,8 +3911,7 @@
               "type": "wix-blog-backend.Layout_OptionLayout" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PollData_Layout_18227954876",
         "locations":
           [ { "lineno": 805,
@@ -4020,8 +3957,7 @@
               "type": "wix-blog-backend.Poll_Settings" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PollData_Poll_48959996147",
         "locations":
           [ { "lineno": 812,
@@ -4080,8 +4016,7 @@
                     [ "color",
                       "gradient",
                       "image" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PollDesign_Background_31366935110",
         "locations":
           [ { "lineno": 725,
@@ -4131,8 +4066,7 @@
               "type": "wix-blog-backend.Media" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Poll_Option_23359497275",
         "locations":
           [ { "lineno": 782,
@@ -4171,8 +4105,7 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Poll_Settings_13073903132",
         "locations":
           [ { "lineno": 790,
@@ -4444,8 +4377,7 @@
               "doc": "Legacy mongo ids used for related post mapping" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PostLikedDomainEvent",
         "locations":
           [ { "lineno": 936,
@@ -4500,8 +4432,7 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PostLikedInitiator",
         "locations":
           [ { "lineno": 947,
@@ -4556,8 +4487,7 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Post_660054615571",
         "locations":
           [ { "lineno": 79,
@@ -4827,8 +4757,7 @@
               "type": "wix-blog-backend.DocumentStyle" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "RichContent_565899934741",
         "locations":
           [ { "lineno": 823,
@@ -4876,8 +4805,7 @@
               "doc": "SEO general settings." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "SeoSchema_9738697991",
         "locations":
           [ { "lineno": 1,
@@ -4918,8 +4846,7 @@
               "doc": "disable auto creation of 301 redirects on slug changes (enabled by default)." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "SeoSchema_Settings_3196499781",
         "locations":
           [ { "lineno": 9,
@@ -4968,8 +4895,7 @@
               "doc": "Whether the tag is disabled." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "SeoSchema_Tag_6403344610",
         "locations":
           [ { "lineno": 16,
@@ -5022,8 +4948,7 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Settings_Permissions_9459571820",
         "locations":
           [ { "lineno": 769,
@@ -5066,8 +4991,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Sorting_7874645153",
         "locations":
           [ { "lineno": 138,
@@ -5105,8 +5029,7 @@
               "doc": "Set of key-value pairs. Unordered map of dynamically typed values." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Struct_26415584452",
         "locations":
           [ { "lineno": 832,
@@ -5142,8 +5065,7 @@
               "doc": "number of pixels" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Styles_Border_2949656518",
         "locations":
           [ { "lineno": 197,
@@ -5185,8 +5107,7 @@
               "doc": "hex color" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Styles_Colors_6252708352",
         "locations":
           [ { "lineno": 204,
@@ -5226,8 +5147,7 @@
               "type": "wix-blog-backend.TableCellData_BorderColors" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TableCellData_20392583239",
         "locations":
           [ { "lineno": 838,
@@ -5266,8 +5186,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TableCellData_BorderColors_9302897572",
         "locations":
           [ { "lineno": 845,
@@ -5307,8 +5226,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TableCellData_CellStyle_8447526124",
         "locations":
           [ { "lineno": 854,
@@ -5346,8 +5264,7 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TableData_38504540797",
         "locations":
           [ { "lineno": 864,
@@ -5395,8 +5312,7 @@
                     [ "number" ] } } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TableData_Dimensions_2431057060",
         "locations":
           [ { "lineno": 872,
@@ -5447,8 +5363,7 @@
               "doc": "List of decorations" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TextData_70531613750",
         "locations":
           [ { "lineno": 880,
@@ -5489,8 +5404,7 @@
                     [ "wix-blog-backend.Decoration" ] } } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TextNodeStyle_70687623701",
         "locations":
           [ { "lineno": 887,
@@ -5528,8 +5442,7 @@
               "doc": "CSS value" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "TextStyle_7500253246",
         "locations":
           [ { "lineno": 893,
@@ -5594,8 +5507,7 @@
                       "numberValue",
                       "stringValue",
                       "structValue" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Value_26483387342",
         "locations":
           [ { "lineno": 905,
@@ -5664,8 +5576,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "VideoData_57759307380",
         "locations":
           [ { "lineno": 920,
