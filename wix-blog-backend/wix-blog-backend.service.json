@@ -1,19 +1,21 @@
 { "name": "wix-blog-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
   "docs":
-    { "links": [],
+    { "summary": "The wix-blog-backend module contains functionality for working with\n your site's Wix blog.",
+      "links": [],
       "examples": [],
       "extra":
         {  } },
   "properties": [],
   "operations":
     [ { "name": "getCategory",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "getCategoryRequest",
@@ -57,7 +59,8 @@
         "extra":
           {  } },
       { "name": "getCategoryBySlug",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "getCategoryBySlugRequest",
@@ -101,7 +104,8 @@
         "extra":
           {  } },
       { "name": "getPost",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "getPostRequest",
@@ -145,7 +149,8 @@
         "extra":
           {  } },
       { "name": "getPostBySlug",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "getPostBySlugRequest",
@@ -189,7 +194,8 @@
         "extra":
           {  } },
       { "name": "getPostMetrics",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "getPostMetricsRequest",
@@ -232,7 +238,8 @@
         "extra":
           {  } },
       { "name": "listCategories",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "listCategoriesRequest",
@@ -279,7 +286,8 @@
         "extra":
           {  } },
       { "name": "listPosts",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "listPostsRequest",
@@ -331,7 +339,8 @@
         "extra":
           {  } },
       { "name": "queryCategories",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "queryCategoriesRequest",
@@ -389,7 +398,8 @@
         "extra":
           {  } },
       { "name": "queryPosts",
-        "labels": [],
+        "labels":
+          [ "removed" ],
         "nameParams": [],
         "params":
           [ { "name": "queryPostsRequest",
@@ -448,7 +458,23 @@
           {  } } ],
   "callbacks": [],
   "messages":
-    [ { "name": "AnchorData_2936935776",
+    [ { "name": "AnchorData",
+        "locations":
+          [ { "lineno": 156,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "anchor",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "AnchorData_2936935776",
         "locations":
           [ { "lineno": 150,
               "filename": "shared.js" } ],
@@ -462,7 +488,43 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "AppEmbedData",
+        "locations":
+          [ { "lineno": 162,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"PRODUCT\"`\n + `\"EVENT\"`\n + `\"BOOKING\"`" },
+            { "name": "itemId",
+              "type": "string" },
+            { "name": "name",
+              "type": "string" },
+            { "name": "url",
+              "type": "string" },
+            { "name": "image",
+              "type": "wix-blog-backend.Media" },
+            { "name": "bookingData",
+              "type": "wix-blog-backend.AppEmbedData_BookingData",
+              "optional": true },
+            { "name": "eventData",
+              "type": "wix-blog-backend.AppEmbedData_EventData",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "appData",
+                  "members":
+                    [ "bookingData",
+                      "eventData" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "AppEmbedData_44614653994",
         "locations":
           [ { "lineno": 156,
@@ -496,7 +558,24 @@
                   "members":
                     [ "bookingData",
                       "eventData" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "AppEmbedData_BookingData",
+        "locations":
+          [ { "lineno": 178,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "durations",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "AppEmbedData_BookingData_3465190693",
         "locations":
           [ { "lineno": 172,
@@ -511,7 +590,26 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "AppEmbedData_EventData",
+        "locations":
+          [ { "lineno": 184,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "scheduling",
+              "type": "string" },
+            { "name": "location",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "AppEmbedData_EventData_8829001099",
         "locations":
           [ { "lineno": 178,
@@ -528,7 +626,28 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Background_Gradient",
+        "locations":
+          [ { "lineno": 723,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "angle",
+              "type": "number" },
+            { "name": "startColor",
+              "type": "string" },
+            { "name": "lastColor",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Background_Gradient_77770295",
         "locations":
           [ { "lineno": 717,
@@ -547,7 +666,31 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "BlogPaging",
+        "locations":
+          [ { "lineno": 27,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Pagination options.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "offset",
+              "type": "number",
+              "doc": "Number of items to skip in the current sort order.",
+              "optional": true },
+            { "name": "limit",
+              "type": "number",
+              "doc": "Number of items to return. If not set, defaults to 50.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "BlogPaging_330394407",
         "locations":
           [ { "lineno": 27,
@@ -569,7 +712,33 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "ButtonData",
+        "locations":
+          [ { "lineno": 191,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"LINK\"`\n + `\"ACTION\"`" },
+            { "name": "styles",
+              "type": "wix-blog-backend.ButtonData_Styles" },
+            { "name": "text",
+              "type": "string" },
+            { "name": "link",
+              "type": "wix-blog-backend.Link" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ButtonData_70625942486",
         "locations":
           [ { "lineno": 185,
@@ -593,7 +762,26 @@
               "type": "wix-blog-backend.Link_26711870068" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "ButtonData_Styles",
+        "locations":
+          [ { "lineno": 218,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "border",
+              "type": "wix-blog-backend.Styles_Border" },
+            { "name": "colors",
+              "type": "wix-blog-backend.Styles_Colors" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ButtonData_Styles_9840713929",
         "locations":
           [ { "lineno": 212,
@@ -610,7 +798,146 @@
               "type": "wix-blog-backend.Styles_Colors_6252708352" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Category",
+        "locations":
+          [ { "lineno": 53,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "An object representing post category.",
+            "links": [],
+            "examples":
+              [ { "title": "A backend event that occurs when a new category is created",
+                  "body":
+                    [ "// Place this code in the events.js file",
+                      "// of your site's Backend section.",
+                      "// Add the file if it doesn't exist.",
+                      "",
+                      "export function wixBlog_onCategoryCreated(event: CategoryCreated) {",
+                      "  console.log('wixBlog_onCategoryCreated', event);",
+                      "  console.log('Created category label', event.createdEvent.entityAsJson.label);",
+                      "}",
+                      "",
+                      "/*  Full event object:",
+                      " *  {",
+                      " *    \"entityId\": \"71d1ead7-a341-4853-8f32-d5534e274473\",",
+                      " *    \"slug\": \"created\",",
+                      " *    \"id\": \"0002d822-bcf6-473f-8879-d913b788fd3c\",",
+                      " *    \"createdEvent\": {",
+                      " *      \"entityAsJson\": {",
+                      " *        \"id\": \"71d1ead7-a341-4853-8f32-d5534e274473\",",
+                      " *        \"label\": \"Membership Posts\",",
+                      " *        \"url\": {",
+                      " *          \"base\": \"https://www.darlingmagnolia.com\",",
+                      " *          \"path\": \"/blog/categories/membership-posts\"",
+                      " *        },",
+                      " *        \"description\": \"Exclusive Membership blog posts\",",
+                      " *        \"coverMedia\": {",
+                      " *          \"enabled\": true,",
+                      " *          \"displayed\": true",
+                      " *        },",
+                      " *        \"rank\": 4,",
+                      " *        \"slug\": \"membership\",",
+                      " *        \"language\": \"en\"",
+                      " *      },",
+                      " *      \"triggeredByUndelete\": false",
+                      " *    },",
+                      " *    \"entityFqdn\": \"wix.blog.v3.category\",",
+                      " *    \"eventTime\": \"2021-03-02T10:24:16.556Z\"",
+                      " *  }",
+                      " */" ],
+                  "extra":
+                    {  } },
+                { "title": "A backend event that occurs when an existing category is updated",
+                  "body":
+                    [ "// Place this code in the events.js file",
+                      "// of your site's Backend section.",
+                      "// Add the file if it doesn't exist.",
+                      "",
+                      "export function wixBlog_onCategoryUpdated(event: CategoryUpdated) {",
+                      "  console.log('wixBlog_onCategoryUpdated', event);",
+                      "  console.log('Updated category label', event.updatedEvent.currentEntityAsJson.label);",
+                      "}",
+                      "",
+                      "/*  Full event object:",
+                      " *  {",
+                      " *    \"entityId\": \"8c9bddc8-fd73-44de-8e49-441534b86e55\",",
+                      " *    \"slug\": \"updated\",",
+                      " *    \"id\": \"2a2aab57-dfb0-434b-94e0-5785d2c3ab7f\",",
+                      " *    \"entityFqdn\": \"wix.blog.v3.category\",",
+                      " *    \"updatedEvent\": {",
+                      " *      \"currentEntityAsJson\": {",
+                      " *        \"id\": \"8c9bddc8-fd73-44de-8e49-441534b86e55\",",
+                      " *        \"label\": \"INTERNSHIP\",",
+                      " *        \"url\": {",
+                      " *          \"base\": \"https://patwebsite651.wixsite.com/my-site\",",
+                      " *          \"path\": \"/news/categories/internship\"",
+                      " *        },",
+                      " *        \"coverMedia\": {",
+                      " *          \"enabled\": true,",
+                      " *          \"image\": {",
+                      " *            \"id\": \"11062b_a98c4b8d0dc843aca9b8d55c3bb5c4a6~mv2.jpg\",",
+                      " *            \"url\": \"https://static.wixstatic.com/media/11062b_a98c4b8d0dc843aca9b8d55c3bb5c4a6~mv2.jpg\",",
+                      " *            \"height\": 3337,",
+                      " *            \"width\": 5000",
+                      " *          },",
+                      " *          \"displayed\": true",
+                      " *        },",
+                      " *        \"rank\": 0,",
+                      " *        \"slug\": \"membership\",",
+                      " *        \"language\": \"en\"",
+                      " *      }",
+                      " *    },",
+                      " *    \"eventTime\": \"2021-03-02T10:24:22.659Z\",",
+                      " *    \"triggeredByAnonymizeRequest\": false",
+                      " *  }",
+                      " */" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Category ID." },
+            { "name": "label",
+              "type": "string",
+              "doc": "Category label. Displayed in the categories menu." },
+            { "name": "postCount",
+              "type": "number",
+              "doc": "Number of posts in the category." },
+            { "name": "url",
+              "type": "wix-blog-backend.PageUrl",
+              "doc": "Category page URL." },
+            { "name": "description",
+              "type": "string",
+              "doc": "Category description." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Category title." },
+            { "name": "coverMedia",
+              "type": "wix-blog-backend.CoverMedia",
+              "doc": "Category cover image." },
+            { "name": "rank",
+              "type": "number",
+              "doc": "Category position in sequence. `-1` if no rank is defined." },
+            { "name": "translationId",
+              "type": "string",
+              "doc": "ID of the category's translations. All translations of a single category will share the same `translationId`." },
+            { "name": "language",
+              "type": "string",
+              "doc": "Category language." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Category slug. For example, 'category-slug'." },
+            { "name": "internalId",
+              "type": "string",
+              "doc": "Legacy mongo id used by analytics and db driver." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Category_40509540199",
         "locations":
           [ { "lineno": 53,
@@ -659,7 +986,24 @@
               "doc": "Legacy mongo id used by analytics and db driver." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "CodeBlockData",
+        "locations":
+          [ { "lineno": 225,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "textStyle",
+              "type": "wix-blog-backend.TextStyle" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CodeBlockData_9904854867",
         "locations":
           [ { "lineno": 219,
@@ -674,7 +1018,32 @@
               "type": "wix-blog-backend.TextStyle_7500253246" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "CollapsibleListData",
+        "locations":
+          [ { "lineno": 231,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "expandOnlyOne",
+              "type": "boolean" },
+            { "name": "initialExpandedItems",
+              "type": "string",
+              "doc": "One of:\n + `\"FIRST\"`\n + `\"ALL\"`\n + `\"NONE\"`" },
+            { "name": "direction",
+              "type": "string",
+              "doc": "One of:\n + `\"LTR\"`\n + `\"RTL\"`" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CollapsibleListData_44998877770",
         "locations":
           [ { "lineno": 225,
@@ -697,7 +1066,26 @@
               "doc": "One of:\n + `\"LTR\"`\n + `\"RTL\"`" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "ColorData",
+        "locations":
+          [ { "lineno": 245,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "background",
+              "type": "string" },
+            { "name": "foreground",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ColorData_7647716659",
         "locations":
           [ { "lineno": 239,
@@ -714,7 +1102,33 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "CoverMedia",
+        "locations":
+          [ { "lineno": 35,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Post cover media.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "image",
+              "type": "wix-blog-backend.Image",
+              "doc": "Image details.",
+              "optional": true },
+            { "name": "displayed",
+              "type": "boolean",
+              "doc": "Whether cover media is displayed." } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "media",
+                  "members":
+                    [ "image" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "CoverMedia_22661640638",
         "locations":
           [ { "lineno": 35,
@@ -738,7 +1152,59 @@
               [ { "name": "media",
                   "members":
                     [ "image" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Decoration",
+        "locations":
+          [ { "lineno": 252,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "Decoration type\nOne of:\n + `\"BOLD\"`\n + `\"ITALIC\"`\n + `\"UNDERLINE\"`\n + `\"SPOILER\"`\n + `\"ANCHOR\"`\n + `\"MENTION\"`\n + `\"LINK\"`\n + `\"COLOR\"`\n + `\"FONT_SIZE\"`\n + `\"EXTERNAL\"`" },
+            { "name": "anchorData",
+              "type": "wix-blog-backend.AnchorData",
+              "optional": true },
+            { "name": "colorData",
+              "type": "wix-blog-backend.ColorData",
+              "optional": true },
+            { "name": "linkData",
+              "type": "wix-blog-backend.LinkData",
+              "optional": true },
+            { "name": "mentionData",
+              "type": "wix-blog-backend.MentionData",
+              "optional": true },
+            { "name": "fontSizeData",
+              "type": "wix-blog-backend.FontSizeData",
+              "optional": true },
+            { "name": "fontWeightValue",
+              "type": "number",
+              "optional": true },
+            { "name": "italicData",
+              "type": "boolean",
+              "optional": true },
+            { "name": "underlineData",
+              "type": "boolean",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "anchorData",
+                      "colorData",
+                      "fontSizeData",
+                      "fontWeightValue",
+                      "italicData",
+                      "linkData",
+                      "mentionData",
+                      "underlineData" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "Decoration_68131066520",
         "locations":
           [ { "lineno": 246,
@@ -788,7 +1254,24 @@
                       "linkData",
                       "mentionData",
                       "underlineData" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Design_OptionDesign",
+        "locations":
+          [ { "lineno": 744,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "borderRadius",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Design_OptionDesign_953058154",
         "locations":
           [ { "lineno": 738,
@@ -803,7 +1286,26 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Design_PollDesign",
+        "locations":
+          [ { "lineno": 750,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "background",
+              "type": "wix-blog-backend.PollDesign_Background" },
+            { "name": "borderRadius",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Design_PollDesign_34454566800",
         "locations":
           [ { "lineno": 744,
@@ -820,7 +1322,33 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "DividerData",
+        "locations":
+          [ { "lineno": 278,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "lineStyle",
+              "type": "string",
+              "doc": "One of:\n + `\"SINGLE\"`\n + `\"DOUBLE\"`\n + `\"DASHED\"`\n + `\"DOTTED\"`" },
+            { "name": "width",
+              "type": "string",
+              "doc": "One of:\n + `\"LARGE\"`\n + `\"MEDIUM\"`\n + `\"SMALL\"`" },
+            { "name": "alignment",
+              "type": "string",
+              "doc": "One of:\n + `\"CENTER\"`\n + `\"LEFT\"`\n + `\"RIGHT\"`" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "DividerData_47293567278",
         "locations":
           [ { "lineno": 272,
@@ -844,7 +1372,36 @@
               "doc": "One of:\n + `\"CENTER\"`\n + `\"LEFT\"`\n + `\"RIGHT\"`" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "DocumentStyle",
+        "locations":
+          [ { "lineno": 297,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "headerOne",
+              "type": "wix-blog-backend.TextNodeStyle" },
+            { "name": "headerTwo",
+              "type": "wix-blog-backend.TextNodeStyle" },
+            { "name": "headerThree",
+              "type": "wix-blog-backend.TextNodeStyle" },
+            { "name": "headerFour",
+              "type": "wix-blog-backend.TextNodeStyle" },
+            { "name": "headerFive",
+              "type": "wix-blog-backend.TextNodeStyle" },
+            { "name": "headerSix",
+              "type": "wix-blog-backend.TextNodeStyle" },
+            { "name": "paragraph",
+              "type": "wix-blog-backend.TextNodeStyle" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "DocumentStyle_77601517520",
         "locations":
           [ { "lineno": 291,
@@ -871,7 +1428,28 @@
               "type": "wix-blog-backend.TextNodeStyle_70687623701" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "EmbedData",
+        "locations":
+          [ { "lineno": 309,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "oembed",
+              "type": "wix-blog-backend.Oembed" },
+            { "name": "src",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "EmbedData_70800071814",
         "locations":
           [ { "lineno": 303,
@@ -890,7 +1468,32 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "FileData",
+        "locations":
+          [ { "lineno": 317,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "src",
+              "type": "wix-blog-backend.FileSource" },
+            { "name": "name",
+              "type": "string" },
+            { "name": "type",
+              "type": "string" },
+            { "name": "size",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "FileData_39771476977",
         "locations":
           [ { "lineno": 311,
@@ -913,7 +1516,36 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "FileSource",
+        "locations":
+          [ { "lineno": 327,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "url",
+              "type": "string",
+              "doc": "Absolute URL",
+              "optional": true },
+            { "name": "_id",
+              "type": "string",
+              "doc": "ID that will be resolved to a URL by a resolver function",
+              "optional": true },
+            { "name": "private",
+              "type": "boolean" } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "_id",
+                      "url" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "FileSource_11163158514",
         "locations":
           [ { "lineno": 321,
@@ -940,7 +1572,27 @@
                   "members":
                     [ "_id",
                       "url" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "FontSizeData",
+        "locations":
+          [ { "lineno": 336,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "unit",
+              "type": "string",
+              "doc": "One of:\n + `\"PX\"`\n + `\"EM\"`" },
+            { "name": "value",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "FontSizeData_3824463591",
         "locations":
           [ { "lineno": 330,
@@ -958,7 +1610,55 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GIF",
+        "locations":
+          [ { "lineno": 345,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "original gif",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "gif",
+              "type": "string" },
+            { "name": "mp4",
+              "type": "string" },
+            { "name": "still",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "GIFData",
+        "locations":
+          [ { "lineno": 354,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "original",
+              "type": "wix-blog-backend.GIF",
+              "doc": "original gif" },
+            { "name": "downsized",
+              "type": "wix-blog-backend.GIF",
+              "doc": "original gif" },
+            { "name": "height",
+              "type": "number" },
+            { "name": "width",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "GIFData_45278246780",
         "locations":
           [ { "lineno": 348,
@@ -983,7 +1683,8 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GIF_8612170960",
         "locations":
           [ { "lineno": 339,
@@ -1003,7 +1704,35 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GalleryData",
+        "locations":
+          [ { "lineno": 364,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "items",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.GalleryData_Item" ] } },
+            { "name": "options",
+              "type": "wix-blog-backend.GalleryOptions" },
+            { "name": "disableExpand",
+              "type": "boolean" },
+            { "name": "disableDownload",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "GalleryData_121837021992",
         "locations":
           [ { "lineno": 358,
@@ -1029,7 +1758,36 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GalleryData_Item",
+        "locations":
+          [ { "lineno": 388,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "image",
+              "type": "wix-blog-backend.Item_Image",
+              "optional": true },
+            { "name": "video",
+              "type": "wix-blog-backend.Item_Video",
+              "optional": true },
+            { "name": "title",
+              "type": "string" },
+            { "name": "altText",
+              "type": "string" } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "image",
+                      "video" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "GalleryData_Item_62919712022",
         "locations":
           [ { "lineno": 382,
@@ -1056,7 +1814,28 @@
                   "members":
                     [ "image",
                       "video" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GalleryOptions",
+        "locations":
+          [ { "lineno": 398,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "layout",
+              "type": "wix-blog-backend.GalleryOptions_Layout" },
+            { "name": "item",
+              "type": "wix-blog-backend.GalleryOptions_ItemStyle" },
+            { "name": "thumbnails",
+              "type": "wix-blog-backend.GalleryOptions_Thumbnails" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "GalleryOptions_21439276766",
         "locations":
           [ { "lineno": 392,
@@ -1075,7 +1854,31 @@
               "type": "wix-blog-backend.GalleryOptions_Thumbnails_6677769515" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GalleryOptions_ItemStyle",
+        "locations":
+          [ { "lineno": 406,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "targetSize",
+              "type": "number" },
+            { "name": "ratio",
+              "type": "number" },
+            { "name": "crop",
+              "type": "string",
+              "doc": "One of:\n + `\"FILL\"`\n + `\"FIT\"`" },
+            { "name": "spacing",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "GalleryOptions_ItemStyle_12059012395",
         "locations":
           [ { "lineno": 400,
@@ -1097,7 +1900,34 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GalleryOptions_Layout",
+        "locations":
+          [ { "lineno": 417,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"COLLAGE\"`\n + `\"MASONRY\"`\n + `\"GRID\"`\n + `\"THUMBNAIL\"`\n + `\"SLIDER\"`\n + `\"SLIDESHOW\"`\n + `\"PANORAMA\"`\n + `\"COLUMN\"`\n + `\"MAGIC\"`\n + `\"FULLSIZE\"`" },
+            { "name": "horizontalScroll",
+              "type": "boolean" },
+            { "name": "orientation",
+              "type": "string",
+              "doc": "One of:\n + `\"ROWS\"`\n + `\"COLUMNS\"`" },
+            { "name": "numberOfColumns",
+              "type": "number" },
+            { "name": "mobileNumberOfColumns",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "GalleryOptions_Layout_4819719370",
         "locations":
           [ { "lineno": 411,
@@ -1122,7 +1952,27 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "GalleryOptions_Thumbnails",
+        "locations":
+          [ { "lineno": 439,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "placement",
+              "type": "string",
+              "doc": "One of:\n + `\"TOP\"`\n + `\"RIGHT\"`\n + `\"BOTTOM\"`\n + `\"LEFT\"`\n + `\"NONE\"`" },
+            { "name": "spacing",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "GalleryOptions_Thumbnails_6677769515",
         "locations":
           [ { "lineno": 433,
@@ -1140,7 +1990,8 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetCategoryBySlugRequest_6122489100",
         "locations":
           [ { "lineno": 1,
@@ -1163,7 +2014,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetCategoryBySlugResult_38988902492",
         "locations":
           [ { "lineno": 8,
@@ -1178,7 +2030,8 @@
               "type": "wix-blog-backend.Category_40509540199" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetCategoryRequest_8489616180",
         "locations":
           [ { "lineno": 1,
@@ -1201,7 +2054,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetCategoryResult_42005697694",
         "locations":
           [ { "lineno": 8,
@@ -1216,7 +2070,8 @@
               "type": "wix-blog-backend.Category_40509540199" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetPostBySlugRequest_7113026756",
         "locations":
           [ { "lineno": 1,
@@ -1239,7 +2094,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetPostBySlugResult_658078112296",
         "locations":
           [ { "lineno": 8,
@@ -1254,7 +2110,8 @@
               "type": "wix-blog-backend.Post_660054615571" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetPostMetricsRequest_3451674447",
         "locations":
           [ { "lineno": 1,
@@ -1270,7 +2127,8 @@
               "doc": "Post ID." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetPostMetricsResult_3369817946",
         "locations":
           [ { "lineno": 7,
@@ -1286,7 +2144,8 @@
               "doc": "Post metrics." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetPostRequest_10374720696",
         "locations":
           [ { "lineno": 1,
@@ -1309,7 +2168,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "GetPostResult_660081409258",
         "locations":
           [ { "lineno": 9,
@@ -1324,7 +2184,34 @@
               "type": "wix-blog-backend.Post_660054615571" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "HTMLData",
+        "locations":
+          [ { "lineno": 451,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "url",
+              "type": "string",
+              "optional": true },
+            { "name": "html",
+              "type": "string",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "html",
+                      "url" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "HTMLData_41098731592",
         "locations":
           [ { "lineno": 445,
@@ -1349,7 +2236,28 @@
                   "members":
                     [ "html",
                       "url" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "HeadingData",
+        "locations":
+          [ { "lineno": 460,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "level",
+              "type": "number" },
+            { "name": "textStyle",
+              "type": "wix-blog-backend.TextStyle" },
+            { "name": "indentation",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "HeadingData_7012938143",
         "locations":
           [ { "lineno": 454,
@@ -1368,7 +2276,75 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Image",
+        "locations":
+          [ { "lineno": 122,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Image details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "WixMedia image ID." },
+            { "name": "url",
+              "type": "string",
+              "doc": "Image URL." },
+            { "name": "height",
+              "type": "number",
+              "doc": "Original image height." },
+            { "name": "width",
+              "type": "number",
+              "doc": "Original image width." },
+            { "name": "altText",
+              "type": "string",
+              "doc": "Image alt text. Optional." },
+            { "name": "urlExpirationDate",
+              "type": "Date",
+              "doc": "Image URL expiration date (when relevant). Optional" },
+            { "name": "filename",
+              "type": "string",
+              "doc": "Image filename. Optional." },
+            { "name": "sizeInBytes",
+              "type": "string",
+              "doc": "Image size in bytes. Optional." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "ImageData",
+        "locations":
+          [ { "lineno": 468,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "image",
+              "type": "wix-blog-backend.Media" },
+            { "name": "link",
+              "type": "wix-blog-backend.Link" },
+            { "name": "disableExpand",
+              "type": "boolean" },
+            { "name": "altText",
+              "type": "string" },
+            { "name": "caption",
+              "type": "string" },
+            { "name": "disableDownload",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ImageData_83717634114",
         "locations":
           [ { "lineno": 462,
@@ -1395,7 +2371,8 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Image_14365439871",
         "locations":
           [ { "lineno": 116,
@@ -1433,7 +2410,26 @@
               "doc": "Image size in bytes. Optional." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Item_Image",
+        "locations":
+          [ { "lineno": 374,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "media",
+              "type": "wix-blog-backend.Media" },
+            { "name": "link",
+              "type": "wix-blog-backend.Link" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Item_Image_45302550261",
         "locations":
           [ { "lineno": 368,
@@ -1450,7 +2446,26 @@
               "type": "wix-blog-backend.Link_26711870068" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Item_Video",
+        "locations":
+          [ { "lineno": 381,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "media",
+              "type": "wix-blog-backend.Media" },
+            { "name": "thumbnail",
+              "type": "wix-blog-backend.Media" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Item_Video_22775990162",
         "locations":
           [ { "lineno": 375,
@@ -1467,7 +2482,24 @@
               "type": "wix-blog-backend.Media_19648731753" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Layout_OptionLayout",
+        "locations":
+          [ { "lineno": 757,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "enableImage",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Layout_OptionLayout_1580920867",
         "locations":
           [ { "lineno": 751,
@@ -1482,7 +2514,30 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Layout_PollLayout",
+        "locations":
+          [ { "lineno": 763,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"LIST\"`\n + `\"GRID\"`" },
+            { "name": "direction",
+              "type": "string",
+              "doc": "One of:\n + `\"LTR\"`\n + `\"RTL\"`" },
+            { "name": "enableImage",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Layout_PollLayout_13540866094",
         "locations":
           [ { "lineno": 757,
@@ -1503,7 +2558,57 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Link",
+        "locations":
+          [ { "lineno": 480,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "url",
+              "type": "string",
+              "optional": true },
+            { "name": "anchor",
+              "type": "string",
+              "doc": "Key of linked node in document",
+              "optional": true },
+            { "name": "target",
+              "type": "string",
+              "doc": "One of:\n + `\"SELF\"`\n + `\"BLANK\"`\n + `\"PARENT\"`\n + `\"TOP\"`" },
+            { "name": "rel",
+              "type": "wix-blog-backend.Link_Rel" },
+            { "name": "customData",
+              "type": "string",
+              "doc": "Serialized object, used for custom/external link panel" } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "anchor",
+                      "url" ] } ] },
+        "labels":
+          [ "new" ] },
+      { "name": "LinkData",
+        "locations":
+          [ { "lineno": 495,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "link",
+              "type": "wix-blog-backend.Link" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "LinkData_26931558914",
         "locations":
           [ { "lineno": 489,
@@ -1518,7 +2623,34 @@
               "type": "wix-blog-backend.Link_26711870068" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "LinkPreviewData",
+        "locations":
+          [ { "lineno": 501,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "link",
+              "type": "wix-blog-backend.Link" },
+            { "name": "title",
+              "type": "string" },
+            { "name": "thumbnailUrl",
+              "type": "string" },
+            { "name": "description",
+              "type": "string" },
+            { "name": "html",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "LinkPreviewData_63536603862",
         "locations":
           [ { "lineno": 495,
@@ -1543,7 +2675,8 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Link_26711870068",
         "locations":
           [ { "lineno": 474,
@@ -1575,7 +2708,31 @@
                   "members":
                     [ "anchor",
                       "url" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Link_Rel",
+        "locations":
+          [ { "lineno": 512,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "nofollow",
+              "type": "boolean",
+              "doc": "Indicates to search engine crawlers that the link should not be followed" },
+            { "name": "sponsored",
+              "type": "boolean",
+              "doc": "Paid links" },
+            { "name": "ugc",
+              "type": "boolean",
+              "doc": "UoU generated link" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Link_Rel_3853065424",
         "locations":
           [ { "lineno": 506,
@@ -1597,7 +2754,8 @@
               "doc": "UoU generated link" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ListCategoriesRequest_7236808745",
         "locations":
           [ { "lineno": 1,
@@ -1621,7 +2779,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ListCategoriesResult_43336369624",
         "locations":
           [ { "lineno": 8,
@@ -1643,7 +2802,8 @@
               "doc": "Details on the paged set of results returned." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ListPostsRequest_29021266372",
         "locations":
           [ { "lineno": 1,
@@ -1696,7 +2856,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ListPostsResult_662440532932",
         "locations":
           [ { "lineno": 21,
@@ -1718,7 +2879,29 @@
               "doc": "Details on the paged set of results returned." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "ListValue",
+        "locations":
+          [ { "lineno": 520,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Represents a repeated `Value`.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "values",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Value" ] },
+              "doc": "Repeated field of dynamically typed values." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ListValue_24710570060",
         "locations":
           [ { "lineno": 514,
@@ -1738,7 +2921,26 @@
               "doc": "Repeated field of dynamically typed values." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "MapData",
+        "locations":
+          [ { "lineno": 527,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "mapSettings",
+              "type": "wix-blog-backend.MapSettings" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "MapData_48792005198",
         "locations":
           [ { "lineno": 521,
@@ -1755,7 +2957,51 @@
               "type": "wix-blog-backend.MapSettings_17066473385" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "MapSettings",
+        "locations":
+          [ { "lineno": 534,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "address",
+              "type": "string" },
+            { "name": "draggable",
+              "type": "boolean" },
+            { "name": "marker",
+              "type": "boolean",
+              "doc": "Visibilty of marker" },
+            { "name": "streetViewControl",
+              "type": "boolean",
+              "doc": "Visibilty of street view control" },
+            { "name": "zoomControl",
+              "type": "boolean",
+              "doc": "Visibilty of zoom control" },
+            { "name": "lat",
+              "type": "number",
+              "doc": "latitude" },
+            { "name": "lng",
+              "type": "number",
+              "doc": "longitude" },
+            { "name": "locationName",
+              "type": "string" },
+            { "name": "viewModeControl",
+              "type": "boolean",
+              "doc": "Visibilty of view mode control" },
+            { "name": "initialZoom",
+              "type": "number" },
+            { "name": "mapType",
+              "type": "string",
+              "doc": "One of:\n + `\"ROADMAP\"`\n + `\"SATELITE\"`\n + `\"HYBRID\"`\n + `\"TERRAIN\"`" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "MapSettings_17066473385",
         "locations":
           [ { "lineno": 528,
@@ -1797,7 +3043,30 @@
               "doc": "One of:\n + `\"ROADMAP\"`\n + `\"SATELITE\"`\n + `\"HYBRID\"`\n + `\"TERRAIN\"`" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Media",
+        "locations":
+          [ { "lineno": 554,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "src",
+              "type": "wix-blog-backend.FileSource" },
+            { "name": "width",
+              "type": "number" },
+            { "name": "height",
+              "type": "number" },
+            { "name": "duration",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Media_19648731753",
         "locations":
           [ { "lineno": 548,
@@ -1818,7 +3087,26 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "MentionData",
+        "locations":
+          [ { "lineno": 563,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "name",
+              "type": "string" },
+            { "name": "slug",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "MentionData_1009308959",
         "locations":
           [ { "lineno": 557,
@@ -1835,7 +3123,32 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "MetaData",
+        "locations":
+          [ { "lineno": 44,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Details on the paged set of results returned.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "count",
+              "type": "number",
+              "doc": "Number of items returned in this response." },
+            { "name": "offset",
+              "type": "number",
+              "doc": "Requested offset." },
+            { "name": "total",
+              "type": "number",
+              "doc": "Total number of items that match the query." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "MetaData_528203147",
         "locations":
           [ { "lineno": 44,
@@ -1858,7 +3171,33 @@
               "doc": "Total number of items that match the query." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Metadata",
+        "locations":
+          [ { "lineno": 570,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "version",
+              "type": "number",
+              "doc": "Schema version" },
+            { "name": "createdTimestamp",
+              "type": "Date",
+              "doc": "Time content was created" },
+            { "name": "updatedTimestamp",
+              "type": "Date",
+              "doc": "Time of latest edit" },
+            { "name": "_id",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Metadata_5490399625",
         "locations":
           [ { "lineno": 564,
@@ -1882,7 +3221,32 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Metrics",
+        "locations":
+          [ { "lineno": 73,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Post metrics.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "comments",
+              "type": "number",
+              "doc": "Total number of post comments." },
+            { "name": "likes",
+              "type": "number",
+              "doc": "Total number of post likes." },
+            { "name": "views",
+              "type": "number",
+              "doc": "Total number of post views." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Metrics_2321136847",
         "locations":
           [ { "lineno": 70,
@@ -1905,7 +3269,142 @@
               "doc": "Total number of post views." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Node",
+        "locations":
+          [ { "lineno": 579,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "Node type\nOne of:\n + `\"PARAGRAPH\"`\n + `\"TEXT\"`\n + `\"HEADING\"`\n + `\"BULLETED_LIST\"`\n + `\"ORDERED_LIST\"`\n + `\"LIST_ITEM\"`\n + `\"BLOCKQUOTE\"`\n + `\"CODE_BLOCK\"`\n + `\"VIDEO\"`\n + `\"DIVIDER\"`\n + `\"FILE\"`\n + `\"GALLERY\"`\n + `\"GIF\"`\n + `\"HTML\"`\n + `\"IMAGE\"`\n + `\"LINK_PREVIEW\"`\n + `\"MAP\"`\n + `\"POLL\"`\n + `\"APP_EMBED\"`\n + `\"BUTTON\"`\n + `\"COLLAPSIBLE_LIST\"`\n + `\"TABLE\"`\n + `\"EMBED\"`\n + `\"COLLAPSIBLE_ITEM\"`\n + `\"COLLAPSIBLE_ITEM_TITLE\"`\n + `\"COLLAPSIBLE_ITEM_BODY\"`\n + `\"TABLE_CELL\"`\n + `\"TABLE_ROW\"`\n + `\"EXTERNAL\"`" },
+            { "name": "_id",
+              "type": "string",
+              "doc": "Node unique identifier" },
+            { "name": "nodes",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Node" ] },
+              "doc": "List of child nodes" },
+            { "name": "style",
+              "type": "wix-blog-backend.NodeStyle" },
+            { "name": "buttonData",
+              "type": "wix-blog-backend.ButtonData",
+              "optional": true },
+            { "name": "codeBlockData",
+              "type": "wix-blog-backend.CodeBlockData",
+              "optional": true },
+            { "name": "dividerData",
+              "type": "wix-blog-backend.DividerData",
+              "optional": true },
+            { "name": "fileData",
+              "type": "wix-blog-backend.FileData",
+              "optional": true },
+            { "name": "galleryData",
+              "type": "wix-blog-backend.GalleryData",
+              "optional": true },
+            { "name": "gifData",
+              "type": "wix-blog-backend.GIFData",
+              "optional": true },
+            { "name": "headingData",
+              "type": "wix-blog-backend.HeadingData",
+              "optional": true },
+            { "name": "htmlData",
+              "type": "wix-blog-backend.HTMLData",
+              "optional": true },
+            { "name": "imageData",
+              "type": "wix-blog-backend.ImageData",
+              "optional": true },
+            { "name": "linkPreviewData",
+              "type": "wix-blog-backend.LinkPreviewData",
+              "optional": true },
+            { "name": "mapData",
+              "type": "wix-blog-backend.MapData",
+              "optional": true },
+            { "name": "paragraphData",
+              "type": "wix-blog-backend.ParagraphData",
+              "optional": true },
+            { "name": "pollData",
+              "type": "wix-blog-backend.PollData",
+              "optional": true },
+            { "name": "textData",
+              "type": "wix-blog-backend.TextData",
+              "optional": true },
+            { "name": "appEmbedData",
+              "type": "wix-blog-backend.AppEmbedData",
+              "optional": true },
+            { "name": "videoData",
+              "type": "wix-blog-backend.VideoData",
+              "optional": true },
+            { "name": "embedData",
+              "type": "wix-blog-backend.EmbedData",
+              "optional": true },
+            { "name": "collapsibleListData",
+              "type": "wix-blog-backend.CollapsibleListData",
+              "optional": true },
+            { "name": "tableData",
+              "type": "wix-blog-backend.TableData",
+              "optional": true },
+            { "name": "tableCellData",
+              "type": "wix-blog-backend.TableCellData",
+              "optional": true },
+            { "name": "externalData",
+              "type": "wix-blog-backend.Struct",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "appEmbedData",
+                      "buttonData",
+                      "codeBlockData",
+                      "collapsibleListData",
+                      "dividerData",
+                      "embedData",
+                      "externalData",
+                      "fileData",
+                      "galleryData",
+                      "gifData",
+                      "headingData",
+                      "htmlData",
+                      "imageData",
+                      "linkPreviewData",
+                      "mapData",
+                      "paragraphData",
+                      "pollData",
+                      "tableCellData",
+                      "tableData",
+                      "textData",
+                      "videoData" ] } ] },
+        "labels":
+          [ "new" ] },
+      { "name": "NodeStyle",
+        "locations":
+          [ { "lineno": 640,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "paddingTop",
+              "type": "string" },
+            { "name": "paddingBottom",
+              "type": "string" },
+            { "name": "backgroundColor",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "NodeStyle_13567015619",
         "locations":
           [ { "lineno": 634,
@@ -1924,7 +3423,8 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Node_544879895433",
         "locations":
           [ { "lineno": 573,
@@ -2037,7 +3537,52 @@
                       "tableData",
                       "textData",
                       "videoData" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Oembed",
+        "locations":
+          [ { "lineno": 648,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string" },
+            { "name": "width",
+              "type": "number" },
+            { "name": "height",
+              "type": "number" },
+            { "name": "title",
+              "type": "string" },
+            { "name": "url",
+              "type": "string" },
+            { "name": "html",
+              "type": "string" },
+            { "name": "authorName",
+              "type": "string" },
+            { "name": "authorUrl",
+              "type": "string" },
+            { "name": "providerName",
+              "type": "string" },
+            { "name": "providerUrl",
+              "type": "string" },
+            { "name": "thumbnailUrl",
+              "type": "string" },
+            { "name": "thumbnailWidth",
+              "type": "string" },
+            { "name": "thumbnailHeight",
+              "type": "string" },
+            { "name": "videoUrl",
+              "type": "string" },
+            { "name": "version",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Oembed_39669817914",
         "locations":
           [ { "lineno": 642,
@@ -2080,7 +3625,29 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PageUrl",
+        "locations":
+          [ { "lineno": 136,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Post URL.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "base",
+              "type": "string",
+              "doc": "The base URL. For premium sites, this will be the domain. For free sites, this would be site URL (e.g mysite.wixsite.com/mysite)" },
+            { "name": "path",
+              "type": "string",
+              "doc": "The path to that page - e.g /product-page/a-product" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PageUrl_5174563244",
         "locations":
           [ { "lineno": 130,
@@ -2100,7 +3667,26 @@
               "doc": "The path to that page - e.g /product-page/a-product" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "ParagraphData",
+        "locations":
+          [ { "lineno": 668,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "textStyle",
+              "type": "wix-blog-backend.TextStyle" },
+            { "name": "indentation",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ParagraphData_9784574843",
         "locations":
           [ { "lineno": 662,
@@ -2117,7 +3703,33 @@
               "type": "number" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PluginContainerData",
+        "locations":
+          [ { "lineno": 675,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "width",
+              "type": "wix-blog-backend.PluginContainerData_Width" },
+            { "name": "alignment",
+              "type": "string",
+              "doc": "One of:\n + `\"CENTER\"`\n + `\"LEFT\"`\n + `\"RIGHT\"`" },
+            { "name": "spoiler",
+              "type": "wix-blog-backend.PluginContainerData_Spoiler" },
+            { "name": "height",
+              "type": "wix-blog-backend.PluginContainerData_Height" },
+            { "name": "textWrap",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PluginContainerData_31707594155",
         "locations":
           [ { "lineno": 669,
@@ -2141,7 +3753,24 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PluginContainerData_Height",
+        "locations":
+          [ { "lineno": 688,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "custom",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PluginContainerData_Height_1781445912",
         "locations":
           [ { "lineno": 682,
@@ -2156,7 +3785,28 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PluginContainerData_Spoiler",
+        "locations":
+          [ { "lineno": 694,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "enabled",
+              "type": "boolean" },
+            { "name": "description",
+              "type": "string" },
+            { "name": "buttonText",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PluginContainerData_Spoiler_4959863162",
         "locations":
           [ { "lineno": 688,
@@ -2175,7 +3825,33 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PluginContainerData_Width",
+        "locations":
+          [ { "lineno": 702,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "size",
+              "type": "string",
+              "doc": "One of:\n + `\"CONTENT\"`\n + `\"SMALL\"`\n + `\"ORIGINAL\"`\n + `\"FULL_WIDTH\"`",
+              "optional": true },
+            { "name": "custom",
+              "type": "string",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "custom",
+                      "size" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "PluginContainerData_Width_12457607246",
         "locations":
           [ { "lineno": 696,
@@ -2199,7 +3875,30 @@
                   "members":
                     [ "custom",
                       "size" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PollData",
+        "locations":
+          [ { "lineno": 714,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "poll",
+              "type": "wix-blog-backend.PollData_Poll" },
+            { "name": "layout",
+              "type": "wix-blog-backend.PollData_Layout" },
+            { "name": "design",
+              "type": "wix-blog-backend.PollData_Design" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PollData_120678260381",
         "locations":
           [ { "lineno": 708,
@@ -2220,7 +3919,26 @@
               "type": "wix-blog-backend.PollData_Design_38739316945" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PollData_Design",
+        "locations":
+          [ { "lineno": 804,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "poll",
+              "type": "wix-blog-backend.Design_PollDesign" },
+            { "name": "options",
+              "type": "wix-blog-backend.Design_OptionDesign" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PollData_Design_38739316945",
         "locations":
           [ { "lineno": 798,
@@ -2237,7 +3955,26 @@
               "type": "wix-blog-backend.Design_OptionDesign_953058154" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PollData_Layout",
+        "locations":
+          [ { "lineno": 811,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "poll",
+              "type": "wix-blog-backend.Layout_PollLayout" },
+            { "name": "options",
+              "type": "wix-blog-backend.Layout_OptionLayout" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PollData_Layout_18227954876",
         "locations":
           [ { "lineno": 805,
@@ -2254,7 +3991,37 @@
               "type": "wix-blog-backend.Layout_OptionLayout_1580920867" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PollData_Poll",
+        "locations":
+          [ { "lineno": 818,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string" },
+            { "name": "title",
+              "type": "string" },
+            { "name": "creatorId",
+              "type": "string" },
+            { "name": "image",
+              "type": "wix-blog-backend.Media" },
+            { "name": "options",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Poll_Option" ] } },
+            { "name": "settings",
+              "type": "wix-blog-backend.Poll_Settings" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PollData_Poll_48959996147",
         "locations":
           [ { "lineno": 812,
@@ -2282,7 +4049,39 @@
               "type": "wix-blog-backend.Poll_Settings_13073903132" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PollDesign_Background",
+        "locations":
+          [ { "lineno": 731,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"COLOR\"`\n + `\"IMAGE\"`\n + `\"GRADIENT\"`" },
+            { "name": "color",
+              "type": "string",
+              "optional": true },
+            { "name": "image",
+              "type": "wix-blog-backend.Media",
+              "optional": true },
+            { "name": "gradient",
+              "type": "wix-blog-backend.Background_Gradient",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "background",
+                  "members":
+                    [ "color",
+                      "gradient",
+                      "image" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "PollDesign_Background_31366935110",
         "locations":
           [ { "lineno": 725,
@@ -2312,7 +4111,28 @@
                     [ "color",
                       "gradient",
                       "image" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Poll_Option",
+        "locations":
+          [ { "lineno": 788,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string" },
+            { "name": "title",
+              "type": "string" },
+            { "name": "image",
+              "type": "wix-blog-backend.Media" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Poll_Option_23359497275",
         "locations":
           [ { "lineno": 782,
@@ -2331,7 +4151,28 @@
               "type": "wix-blog-backend.Media_19648731753" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Poll_Settings",
+        "locations":
+          [ { "lineno": 796,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "permissions",
+              "type": "wix-blog-backend.Settings_Permissions" },
+            { "name": "showVoters",
+              "type": "boolean" },
+            { "name": "showVotesCount",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Poll_Settings_13073903132",
         "locations":
           [ { "lineno": 790,
@@ -2350,7 +4191,373 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Post",
+        "locations":
+          [ { "lineno": 82,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "An object representing blog post.",
+            "links": [],
+            "examples":
+              [ { "title": "A backend event that occurs when a new post is created",
+                  "body":
+                    [ "// Place this code in the events.js file",
+                      "// of your site's Backend section.",
+                      "// Add the file if it doesn't exist.",
+                      "",
+                      "export function wixBlog_onPostCreated(event) {",
+                      "  console.log('wixBlog_onPostCreated', event);",
+                      "  console.log('Created post title', event.createdEvent.entityAsJson.title);",
+                      "}",
+                      "",
+                      "/*  Full event object:",
+                      "{",
+                      " *    \"entityId\": \"3bceaccb-ddfc-4078-84bf-50699b4d3f83\",",
+                      " *    \"slug\": \"created\",",
+                      " *    \"id\": \"1d034196-3347-4a66-988a-3f30d7e51b9d\",",
+                      " *    \"createdEvent\": {",
+                      " *      \"entityAsJson\": {",
+                      " *        \"id\": \"3bceaccb-ddfc-4078-84bf-50699b4d3f83\",",
+                      " *        \"title\": \"MANCHURIAN CANDIDATE\",",
+                      " *        \"excerpt\": \"By sacrificing Stormy, you made available the power of the storm. So, when a position is available... you take it, if it’s to your liking...\",",
+                      " *        \"firstPublishedDate\": \"2021-03-02T08:40:54.354Z\",",
+                      " *        \"lastPublishedDate\": \"2021-03-02T08:40:54.354Z\",",
+                      " *        \"url\": {",
+                      " *          \"base\": \"https://www.brooyetti.com\",",
+                      " *          \"path\": \"/post/manchurian-candidate\"",
+                      " *        },",
+                      " *        \"slug\": \"manchurian-candidate\",",
+                      " *        \"featured\": false,",
+                      " *        \"pinned\": false,",
+                      " *        \"categoryIds\": [],",
+                      " *        \"coverMedia\": {",
+                      " *          \"enabled\": true,",
+                      " *          \"image\": {",
+                      " *            \"id\": \"1a245d_98065284cc0c4b16a72f8397d817eef9~mv2.png\",",
+                      " *            \"url\": \"https://static.wixstatic.com/media/1a245d_98065284cc0c4b16a72f8397d817eef9~mv2.png\",",
+                      " *            \"height\": 1606,",
+                      " *            \"width\": 2728",
+                      " *          },",
+                      " *          \"displayed\": true",
+                      " *        },",
+                      " *        \"memberId\": \"1a245d8a-a400-4b37-9e20-88171beab277\",",
+                      " *        \"hashtags\": [],",
+                      " *        \"commentingEnabled\": true,",
+                      " *        \"minutesToRead\": 2,",
+                      " *        \"tagIds\": [],",
+                      " *        \"pricingPlans\": [],",
+                      " *        \"relatedPostIds\": [],",
+                      " *        \"pricingPlanIds\": [],",
+                      " *        \"language\": \"en\",",
+                      " *        \"contactId\": \"8e9a7c84-07d9-439d-b715-70f005fa777d\",",
+                      " *        \"contentId\": \"61bc963c03df920016f3c2ce\",",
+                      " *        \"mostRecentContributorId\": \"1a245d8a-a400-4b37-9e20-88171beab277\"",
+                      " *      },",
+                      " *      \"triggeredByUndelete\": false",
+                      " *    },",
+                      " *    \"entityFqdn\": \"wix.blog.post\",",
+                      " *    \"eventTime\": \"2021-03-02T08:40:54.448Z\"",
+                      " *  }",
+                      " */" ],
+                  "extra":
+                    {  } },
+                { "title": "A backend event that occurs when an existing post is updated",
+                  "body":
+                    [ "// Place this code in the events.js file",
+                      "// of your site's Backend section.",
+                      "// Add the file if it doesn't exist.",
+                      "",
+                      "export function wixBlog_onPostUpdated(event) {",
+                      "  console.log('wixBlog_onPostUpdated', event);",
+                      "  console.log('Updated post title', event.updatedEvent.currentEntityAsJson.title);",
+                      "}",
+                      "",
+                      "/*  Full event object:",
+                      " *  {",
+                      " *    \"entityId\": \"75e7fa83-91fc-4501-b711-c9da7527df14\",",
+                      " *    \"slug\": \"updated\",",
+                      " *    \"id\": \"e390b383-ed1f-4466-8981-ef7bdd9963a0\",",
+                      " *    \"entityFqdn\": \"wix.blog.post\",",
+                      " *    \"updatedEvent\": {",
+                      " *      \"currentEntityAsJson\": {",
+                      " *        \"id\": \"75e7fa83-91fc-4501-b711-c9da7527df14\",",
+                      " *        \"title\": \"Healthy Skin\",",
+                      " *        \"excerpt\": \"For a long time, it has been thought that the look of our skin and the way we eat are two completely unrelated elements of our bodily wel...\",",
+                      " *        \"firstPublishedDate\": \"2021-01-23T12:16:28.403Z\",",
+                      " *        \"lastPublishedDate\": \"2021-03-02T08:40:52.182Z\",",
+                      " *        \"url\": {",
+                      " *          \"base\": \"https://www.beroot.co.uk\",",
+                      " *          \"path\": \"/post/healthy-skin\"",
+                      " *        },",
+                      " *        \"slug\": \"healthy-skin\",",
+                      " *        \"featured\": false,",
+                      " *        \"pinned\": false,",
+                      " *        \"categoryIds\": [],",
+                      " *        \"coverMedia\": {",
+                      " *          \"enabled\": true,",
+                      " *          \"image\": {",
+                      " *            \"id\": \"11062b_1881ef79d05e480fbc827c4de0e63bd6~mv2.jpg\",",
+                      " *            \"url\": \"https://static.wixstatic.com/media/11062b_1881ef79d05e480fbc827c4de0e63bd6~mv2.jpg\",",
+                      " *            \"height\": 3941,",
+                      " *            \"width\": 5906",
+                      " *          },",
+                      " *          \"displayed\": true",
+                      " *        },",
+                      " *        \"memberId\": \"0d8e7313-85a4-43b4-9954-b0c23ef9b104\",",
+                      " *        \"hashtags\": [],",
+                      " *        \"commentingEnabled\": true,",
+                      " *        \"minutesToRead\": 3,",
+                      " *        \"tagIds\": [],",
+                      " *        \"pricingPlans\": [],",
+                      " *        \"relatedPostIds\": [],",
+                      " *        \"pricingPlanIds\": [],",
+                      " *        \"language\": \"en\",",
+                      " *        \"contactId\": \"8e9a7c84-07d9-439d-b715-70f005fa777d\",",
+                      " *        \"contentId\": \"61bc9664369c130016f6192c\",",
+                      " *        \"mostRecentContributorId\": \"0d8e7313-85a4-43b4-9954-b0c23ef9b104\"",
+                      " *      }",
+                      " *    },",
+                      " *    \"eventTime\": \"2021-03-02T08:40:52.287Z\",",
+                      " *    \"triggeredByAnonymizeRequest\": false",
+                      " *  }",
+                      " */" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Post ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Post title." },
+            { "name": "excerpt",
+              "type": "string",
+              "doc": "Post excerpt.\n Can be selected by site owner or extracted from the content text's first characters." },
+            { "name": "contentText",
+              "type": "string",
+              "doc": "The post content in plain text." },
+            { "name": "firstPublishedDate",
+              "type": "Date",
+              "doc": "Date the post was first published." },
+            { "name": "lastPublishedDate",
+              "type": "Date",
+              "doc": "Date the post was last published." },
+            { "name": "url",
+              "type": "wix-blog-backend.PageUrl",
+              "doc": "Post URL." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Post slug. For example, 'post-slug'." },
+            { "name": "featured",
+              "type": "boolean",
+              "doc": "Whether the post is marked as featured. Allows for filtering posts by featured only." },
+            { "name": "pinned",
+              "type": "boolean",
+              "doc": "Whether the post is pinned. Places the post at the top of the post list." },
+            { "name": "categoryIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of categories this post belongs to." },
+            { "name": "coverMedia",
+              "type": "wix-blog-backend.CoverMedia",
+              "doc": "Post cover media." },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Post owner's member ID." },
+            { "name": "hashtags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Hashtags in the post's content text." },
+            { "name": "commentingEnabled",
+              "type": "boolean",
+              "doc": "Whether commenting on the post is enabled." },
+            { "name": "minutesToRead",
+              "type": "number",
+              "doc": "Estimated reading time (calculated automatically)." },
+            { "name": "heroImage",
+              "type": "wix-blog-backend.Image",
+              "doc": "Image details." },
+            { "name": "tagIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of tags the post is tagged with." },
+            { "name": "relatedPostIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of posts that are related to this post." },
+            { "name": "pricingPlanIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Pricing plans IDs." },
+            { "name": "translationId",
+              "type": "string",
+              "doc": "ID of the translations of this post." },
+            { "name": "language",
+              "type": "string",
+              "doc": "Language the post is written in." },
+            { "name": "metrics",
+              "type": "wix-blog-backend.Metrics",
+              "doc": "Post metrics." },
+            { "name": "seoData",
+              "type": "wix-blog-backend.SeoSchema",
+              "doc": "SEO data." },
+            { "name": "content",
+              "type": "string",
+              "doc": "The post content as a stringified DraftJs document." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Post owner's contact ID." },
+            { "name": "richContent",
+              "type": "wix-blog-backend.RichContent",
+              "doc": "Post rich content" },
+            { "name": "contentId",
+              "type": "string",
+              "doc": "Content reference ID." },
+            { "name": "internalId",
+              "type": "string",
+              "doc": "Legacy mongo id used by analytics and db driver." },
+            { "name": "internalCategoryIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Legacy mongo category ids used by db driver." },
+            { "name": "internalRelatedPostIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Legacy mongo ids used for related post mapping" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "PostLikedDomainEvent",
+        "locations":
+          [ { "lineno": 936,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "An object representing initiator.",
+            "links": [],
+            "examples":
+              [ { "title": "A backend event that occurs when an existing post is liked",
+                  "body":
+                    [ "// Place this code in the events.js file",
+                      "// of your site's Backend section.",
+                      "// Add the file if it doesn't exist.",
+                      "",
+                      "export function wixBlog_onPostLiked(event) {",
+                      "  console.log('wixBlog_onPostLiked', event);",
+                      "  console.log('Liked post id', event.actionEvent.bodyAsJson.postId);",
+                      "}",
+                      "",
+                      "/*  Full event object:",
+                      " *  {",
+                      " *    \"entityId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
+                      " *    \"actionEvent\": {",
+                      " *      \"bodyAsJson\": {",
+                      " *        \"postId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
+                      " *        \"memberId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8d84c\"",
+                      " *      }",
+                      " *    },",
+                      " *    \"slug\": \"liked\",",
+                      " *    \"id\": \"7626b90d-9516-4530-bb48-81af66a5f023\",",
+                      " *    \"entityFqdn\": \"wix.blog.post\",",
+                      " *    \"eventTime\": \"2021-03-02T08:40:55.512Z\",",
+                      " *    \"triggeredByAnonymizeRequest\": false",
+                      " *  }",
+                      " */" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID of person who liked a post (returned if the member was logged in when liking\nthe post)",
+              "optional": true },
+            { "name": "anonymousVisitorId",
+              "type": "string",
+              "doc": "Visitor ID if person that liked the post is not logged in",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "initiator",
+                  "members":
+                    [ "memberId",
+                      "anonymousVisitorId" ] } ] },
+        "labels":
+          [ "new" ] },
+      { "name": "PostLikedInitiator",
+        "locations":
+          [ { "lineno": 947,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "An object representing initiator.",
+            "links": [],
+            "examples":
+              [ { "title": "A backend event that occurs when an existing post is liked",
+                  "body":
+                    [ "// Place this code in the events.js file",
+                      "// of your site's Backend section.",
+                      "// Add the file if it doesn't exist.",
+                      "",
+                      "export function wixBlog_onPostLiked(event) {",
+                      "  console.log('wixBlog_onPostLiked', event);",
+                      "  console.log('Liked post id', event.actionEvent.bodyAsJson.postId);",
+                      "}",
+                      "",
+                      "/*  Full event object:",
+                      " *  {",
+                      " *    \"entityId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
+                      " *    \"actionEvent\": {",
+                      " *      \"bodyAsJson\": {",
+                      " *        \"postId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
+                      " *        \"memberId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8d84c\"",
+                      " *      }",
+                      " *    },",
+                      " *    \"slug\": \"liked\",",
+                      " *    \"id\": \"7626b90d-9516-4530-bb48-81af66a5f023\",",
+                      " *    \"entityFqdn\": \"wix.blog.post\",",
+                      " *    \"eventTime\": \"2021-03-02T08:40:55.512Z\",",
+                      " *    \"triggeredByAnonymizeRequest\": false",
+                      " *  }",
+                      " */" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID of person who liked a post (returned if the member was logged in when liking\nthe post)",
+              "optional": true },
+            { "name": "anonymousVisitorId",
+              "type": "string",
+              "doc": "Visitor ID if person that liked the post is not logged in",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "initiator",
+                  "members":
+                    [ "memberId",
+                      "anonymousVisitorId" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "Post_660054615571",
         "locations":
           [ { "lineno": 79,
@@ -2477,7 +4684,8 @@
               "doc": "Legacy mongo ids used for related post mapping" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "QueryCategoriesRequest_13769270828",
         "locations":
           [ { "lineno": 1,
@@ -2512,7 +4720,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "QueryCategoriesResult_44203314674",
         "locations":
           [ { "lineno": 11,
@@ -2534,7 +4743,8 @@
               "doc": "Details on the paged set of results returned." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "QueryPostsRequest_16120738701",
         "locations":
           [ { "lineno": 1,
@@ -2569,7 +4779,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "QueryPostsResult_661250485098",
         "locations":
           [ { "lineno": 11,
@@ -2591,7 +4802,33 @@
               "doc": "Details on the paged set of results returned." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "RichContent",
+        "locations":
+          [ { "lineno": 829,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Post rich content",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "nodes",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Node" ] },
+              "doc": "List of nodes" },
+            { "name": "metadata",
+              "type": "wix-blog-backend.Metadata" },
+            { "name": "documentStyle",
+              "type": "wix-blog-backend.DocumentStyle" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "RichContent_565899934741",
         "locations":
           [ { "lineno": 823,
@@ -2615,7 +4852,32 @@
               "type": "wix-blog-backend.DocumentStyle_77601517520" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "SeoSchema",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "SEO data.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.SeoSchema_Tag" ] },
+              "doc": "SEO tags information." },
+            { "name": "settings",
+              "type": "wix-blog-backend.SeoSchema_Settings",
+              "doc": "SEO general settings." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "SeoSchema_9738697991",
         "locations":
           [ { "lineno": 1,
@@ -2638,7 +4900,26 @@
               "doc": "SEO general settings." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "SeoSchema_Settings",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "SEO general settings.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "preventAutoRedirect",
+              "type": "boolean",
+              "doc": "disable auto creation of 301 redirects on slug changes (enabled by default)." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "SeoSchema_Settings_3196499781",
         "locations":
           [ { "lineno": 9,
@@ -2655,7 +4936,40 @@
               "doc": "disable auto creation of 301 redirects on slug changes (enabled by default)." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "SeoSchema_Tag",
+        "locations":
+          [ { "lineno": 16,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "SEO tag type. Supported values: `title`, `meta`, `script`, `link`." },
+            { "name": "props",
+              "type": "Object",
+              "doc": "SEO tag attributes/properties (name, content, rel, href)." },
+            { "name": "meta",
+              "type": "Object",
+              "doc": "Tag meta data, e.g. {height: 300, width: 240}." },
+            { "name": "children",
+              "type": "string",
+              "doc": "Tag inner content e.g. `<title> inner content </title>`." },
+            { "name": "custom",
+              "type": "boolean",
+              "doc": "Whether the tag is a custom tag." },
+            { "name": "disabled",
+              "type": "boolean",
+              "doc": "Whether the tag is disabled." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "SeoSchema_Tag_6403344610",
         "locations":
           [ { "lineno": 16,
@@ -2686,7 +5000,30 @@
               "doc": "Whether the tag is disabled." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Settings_Permissions",
+        "locations":
+          [ { "lineno": 775,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "view",
+              "type": "string",
+              "doc": "One of:\n + `\"CREATOR\"`\n + `\"VOTERS\"`\n + `\"EVERYONE\"`" },
+            { "name": "vote",
+              "type": "string",
+              "doc": "One of:\n + `\"SITE_MEMBERS\"`\n + `\"ALL\"`" },
+            { "name": "allowMultipleVotes",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Settings_Permissions_9459571820",
         "locations":
           [ { "lineno": 769,
@@ -2707,7 +5044,30 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Sorting",
+        "locations":
+          [ { "lineno": 144,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "fieldName",
+              "type": "string",
+              "doc": "Name of the field to sort by.",
+              "optional": true },
+            { "name": "order",
+              "type": "string",
+              "doc": "Sort order.\n\n Defaults to `ASC`.\nOne of:\n + `\"ASC\"`\n + `\"DESC\"`",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Sorting_7874645153",
         "locations":
           [ { "lineno": 138,
@@ -2728,7 +5088,25 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Struct",
+        "locations":
+          [ { "lineno": 838,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "fields",
+              "type": "Object",
+              "doc": "Set of key-value pairs. Unordered map of dynamically typed values." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Struct_26415584452",
         "locations":
           [ { "lineno": 832,
@@ -2744,7 +5122,28 @@
               "doc": "Set of key-value pairs. Unordered map of dynamically typed values." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Styles_Border",
+        "locations":
+          [ { "lineno": 203,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "width",
+              "type": "number",
+              "doc": "number of pixels" },
+            { "name": "radius",
+              "type": "number",
+              "doc": "number of pixels" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Styles_Border_2949656518",
         "locations":
           [ { "lineno": 197,
@@ -2763,7 +5162,31 @@
               "doc": "number of pixels" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Styles_Colors",
+        "locations":
+          [ { "lineno": 210,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "text",
+              "type": "string",
+              "doc": "hex color" },
+            { "name": "border",
+              "type": "string",
+              "doc": "hex color" },
+            { "name": "background",
+              "type": "string",
+              "doc": "hex color" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Styles_Colors_6252708352",
         "locations":
           [ { "lineno": 204,
@@ -2785,7 +5208,26 @@
               "doc": "hex color" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "TableCellData",
+        "locations":
+          [ { "lineno": 844,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "cellStyle",
+              "type": "wix-blog-backend.TableCellData_CellStyle" },
+            { "name": "borderColors",
+              "type": "wix-blog-backend.TableCellData_BorderColors" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "TableCellData_20392583239",
         "locations":
           [ { "lineno": 838,
@@ -2802,7 +5244,30 @@
               "type": "wix-blog-backend.TableCellData_BorderColors_9302897572" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "TableCellData_BorderColors",
+        "locations":
+          [ { "lineno": 851,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "left",
+              "type": "string" },
+            { "name": "right",
+              "type": "string" },
+            { "name": "top",
+              "type": "string" },
+            { "name": "bottom",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "TableCellData_BorderColors_9302897572",
         "locations":
           [ { "lineno": 845,
@@ -2823,7 +5288,27 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "TableCellData_CellStyle",
+        "locations":
+          [ { "lineno": 860,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "verticalAlignment",
+              "type": "string",
+              "doc": "One of:\n + `\"TOP\"`\n + `\"MIDDLE\"`\n + `\"BOTTOM\"`" },
+            { "name": "backgroundColor",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "TableCellData_CellStyle_8447526124",
         "locations":
           [ { "lineno": 854,
@@ -2841,7 +5326,28 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "TableData",
+        "locations":
+          [ { "lineno": 870,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "dimensions",
+              "type": "wix-blog-backend.TableData_Dimensions" },
+            { "name": "header",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "TableData_38504540797",
         "locations":
           [ { "lineno": 864,
@@ -2860,7 +5366,37 @@
               "type": "boolean" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "TableData_Dimensions",
+        "locations":
+          [ { "lineno": 878,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "colsWidthRatio",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "number" ] } },
+            { "name": "rowsHeight",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "number" ] } },
+            { "name": "colsMinWidth",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "number" ] } } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "TableData_Dimensions_2431057060",
         "locations":
           [ { "lineno": 872,
@@ -2888,7 +5424,31 @@
                     [ "number" ] } } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "TextData",
+        "locations":
+          [ { "lineno": 886,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "text",
+              "type": "string",
+              "doc": "Textual data" },
+            { "name": "decorations",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Decoration" ] },
+              "doc": "List of decorations" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "TextData_70531613750",
         "locations":
           [ { "lineno": 880,
@@ -2910,7 +5470,27 @@
               "doc": "List of decorations" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "TextNodeStyle",
+        "locations":
+          [ { "lineno": 893,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "decorations",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Decoration" ] } } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "TextNodeStyle_70687623701",
         "locations":
           [ { "lineno": 887,
@@ -2928,7 +5508,28 @@
                     [ "wix-blog-backend.Decoration_68131066520" ] } } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "TextStyle",
+        "locations":
+          [ { "lineno": 899,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "textAlignment",
+              "type": "string",
+              "doc": "One of:\n + `\"AUTO\"`\n + `\"LEFT\"`\n + `\"RIGHT\"`\n + `\"CENTER\"`\n + `\"JUSTIFY\"`" },
+            { "name": "lineHeight",
+              "type": "string",
+              "doc": "CSS value" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "TextStyle_7500253246",
         "locations":
           [ { "lineno": 893,
@@ -2947,7 +5548,54 @@
               "doc": "CSS value" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Value",
+        "locations":
+          [ { "lineno": 911,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "`key` of type string, `value` of type object",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "nullValue",
+              "type": "string",
+              "doc": "Represents a null value.\nOne of:\n + `\"NULL_VALUE\"`",
+              "optional": true },
+            { "name": "numberValue",
+              "type": "number",
+              "doc": "Represents a double value.",
+              "optional": true },
+            { "name": "stringValue",
+              "type": "string",
+              "doc": "Represents a string value.",
+              "optional": true },
+            { "name": "boolValue",
+              "type": "boolean",
+              "doc": "Represents a boolean value.",
+              "optional": true },
+            { "name": "structValue",
+              "type": "wix-blog-backend.Struct",
+              "optional": true },
+            { "name": "listValue",
+              "type": "wix-blog-backend.ListValue",
+              "doc": "Represents a repeated `Value`.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "kind",
+                  "members":
+                    [ "boolValue",
+                      "listValue",
+                      "nullValue",
+                      "numberValue",
+                      "stringValue",
+                      "structValue" ] } ] },
+        "labels":
+          [ "new" ] },
       { "name": "Value_26483387342",
         "locations":
           [ { "lineno": 905,
@@ -2992,7 +5640,32 @@
                       "numberValue",
                       "stringValue",
                       "structValue" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "VideoData",
+        "locations":
+          [ { "lineno": 926,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData" },
+            { "name": "video",
+              "type": "wix-blog-backend.Media" },
+            { "name": "thumbnail",
+              "type": "wix-blog-backend.Media" },
+            { "name": "disableDownload",
+              "type": "boolean" },
+            { "name": "title",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "VideoData_57759307380",
         "locations":
           [ { "lineno": 920,
@@ -3015,6 +5688,7 @@
               "type": "string" } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "removed" ] } ],
   "extra":
     {  } }

@@ -1,0 +1,1023 @@
+{ "name": "Events",
+  "memberOf": "wix-blog-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "events.js" },
+  "docs":
+    { "summary": "Backend events that are fired from Wix blog.",
+      "description":
+        [ "Backend events are fired in your site's backend when certain changes occur in your site's blog.",
+          " You can write event handlers that react to these backend events. Event handler functions",
+          " receive data that corresponds to the backend event that has occurred. Use event handlers",
+          " to create custom responses to the backend events.",
+          "",
+          " Backend events are **not** fired when previewing your site.",
+          "",
+          " To add an event handler, add an **events.js** file to the **Backend** section",
+          " of your site if one does not already exist. All event handler functions for your",
+          " site are defined in this file.",
+          "",
+          " To observe if a specific event was consumed by the handler code and test the integration completely, please go to",
+          " **Developer Tools->Logs->View site events** from a dashboard of the site (see",
+          " [Velo: Viewing Live Site Events](https://support.wix.com/en/article/velo-viewing-live-site-monitoring-events)",
+          " for more).",
+          "",
+          " Event handler functions are defined using the following pattern:",
+          "",
+          " ```javascript",
+          " export function <wixAppName>_<eventName>(event) { }",
+          " ```",
+          "",
+          " For example, an event handler that handles the creation of a post looks",
+          " like this:",
+          "",
+          " ```javascript",
+          " export function wixBlog_onPostCreated(event) { }",
+          " ```" ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "onCategoryCreated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-blog-backend.Events.CategoryCreated",
+              "doc": "Information about the category that was created." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 186,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a category is created.",
+            "description":
+              [ "The `onCategoryCreated()` event handler runs when a category is created.",
+                " The received `CreatedCategory` object contains information about the new category that was created.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onCategoryDeleted",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-blog-backend.Events.CategoryDeleted",
+              "doc": "Information about the category that was deleted." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 246,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a category is deleted.",
+            "description":
+              [ "The `onCategoryDeleted()` event handler runs when an existing category is deleted.",
+                " The received `CategoryDeleted` object contains information about the category that was deleted.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onCategoryUpdated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-blog-backend.Events.CategoryUpdated",
+              "doc": "Information about the category that was updated." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 216,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when an existing category is updated.",
+            "description":
+              [ "The `onCategoryUpdated()` event handler runs when an existing category is updated.",
+                " The received `CategoryUpdated` object contains information about the category that was updated.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onPostCreated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-blog-backend.Events.PostCreated",
+              "doc": "Information about the post that was created." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 37,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a post is created.",
+            "description":
+              [ "The `onPostCreated()` event handler runs when a post is created.",
+                " The received `PostCreated` object contains information about the new post that was created.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onPostDeleted",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-blog-backend.Events.PostDeleted",
+              "doc": "Information about the post that was deleted." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 96,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when a post is deleted.",
+            "description":
+              [ "The `onPostDeleted()` event handler runs when an existing post is deleted.",
+                " The received `PostDeleted` object contains information about the post that was deleted.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onPostLiked",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-blog-backend.Events.LikedPost",
+              "doc": "Information about the post that was liked." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 126,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when an existing post is liked.",
+            "description":
+              [ "The `onPostLiked()` event handler runs when an existing post is liked.",
+                " The received `LikedPost` object contains information about the post that was liked.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onPostUnliked",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-blog-backend.Events.UnlikedPost",
+              "doc": "Information about the post that was unliked." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 156,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when an existing post is unliked.",
+            "description":
+              [ "The `onPostUnliked()` event handler runs when an existing post is unliked.",
+                " The received `UnlikedPost` object contains information about the post that was unliked.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "onPostUpdated",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "event",
+              "type": "wix-blog-backend.Events.PostUpdated",
+              "doc": "Information about the post that was updated." } ],
+        "ret":
+          { "type": "void" },
+        "locations":
+          [ { "lineno": 66,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "A backend event that fires when an existing post is updated.",
+            "description":
+              [ "The `onPostUpdated()` event handler runs when an existing post is updated.",
+                " The received `PostUpdated` object contains information about the post that was updated.",
+                "",
+                "> **Note:** Backend events are **not** fired when previewing your site." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages":
+    [ { "name": "Category",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "category.js" } ],
+        "docs":
+          { "summary": "An object representing Category.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Category ID." },
+            { "name": "label",
+              "type": "string",
+              "doc": "Category label. Displayed in the categories menu." },
+            { "name": "postCount",
+              "type": "number",
+              "doc": "Number of posts in the category." },
+            { "name": "url",
+              "type": "wix-blog-backend.Events.PageUrl",
+              "doc": "Category page URL." },
+            { "name": "description",
+              "type": "string",
+              "doc": "Category description." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Category title." },
+            { "name": "coverMedia",
+              "type": "wix-blog-backend.Events.CoverMedia",
+              "doc": "Category cover image." },
+            { "name": "rank",
+              "type": "number",
+              "doc": "Category position in sequence. `-1` if no rank is defined." },
+            { "name": "translationId",
+              "type": "string",
+              "doc": "ID of the category's translations. All translations of a single category will share\nthe same `translationId`." },
+            { "name": "language",
+              "type": "string",
+              "doc": "Category language." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Category slug. For example, 'category-slug'." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CategoryCreated",
+        "locations":
+          [ { "lineno": 201,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the category that was created.",
+            "links":
+              [ "[onCategoryCreated( )](#onCategoryCreated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.category`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `created`. Event name." },
+            { "name": "createdEvent",
+              "type": "wix-blog-backend.Category",
+              "doc": "Event Info" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "Category ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CategoryDeleted",
+        "locations":
+          [ { "lineno": 261,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing a category that was deleted.",
+            "links":
+              [ "[onCategoryDeleted( )](#onCategoryDeleted)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.v3.category`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `deleted`. Event name." },
+            { "name": "deletedEvent",
+              "type": "object",
+              "doc": "Event Info" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "Category ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CategoryUpdated",
+        "locations":
+          [ { "lineno": 231,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the category that was updated.",
+            "links":
+              [ "[onCategoryUpdated( )](#onCategoryUpdated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.category`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `updated`. Event name." },
+            { "name": "updatedEvent",
+              "type": "wix-blog-backend.Category",
+              "doc": "Event Info" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "Category ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CoverMedia",
+        "locations":
+          [ { "lineno": 33,
+              "filename": "domain.js" } ],
+        "docs":
+          { "summary": "An object representing Post cover media.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "image",
+              "type": "wix-blog-backend.Events.Image",
+              "doc": "Image details.",
+              "optional": true },
+            { "name": "video",
+              "type": "wix-blog-backend.Events.Video",
+              "doc": "Video details.",
+              "optional": true },
+            { "name": "displayed",
+              "type": "boolean",
+              "doc": "Whether cover media is displayed.\n // * @memberof wix-blog-backend" } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "media",
+                  "members":
+                    [ "image",
+                      "video" ] } ] },
+        "labels": [] },
+      { "name": "Image",
+        "locations":
+          [ { "lineno": 10,
+              "filename": "domain.js" } ],
+        "docs":
+          { "summary": "An object representing Image details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "WixMedia image ID." },
+            { "name": "url",
+              "type": "string",
+              "doc": "Image URL." },
+            { "name": "height",
+              "type": "number",
+              "doc": "Original image height." },
+            { "name": "width",
+              "type": "number",
+              "doc": "Original image width." },
+            { "name": "altText",
+              "type": "string",
+              "doc": "Image alt text. Optional." },
+            { "name": "filename",
+              "type": "string",
+              "doc": "Image filename. Optional.\n // * @memberof wix-blog-backend" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "LikedPost",
+        "locations":
+          [ { "lineno": 141,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the post that was liked.",
+            "links":
+              [ "[onPostLiked( )](#onPostLiked)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `liked`. Event name." },
+            { "type": "void" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "PostLiked ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Location",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "post.js" } ],
+        "docs":
+          { "summary": "An object representing the Wix event location.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "name",
+              "type": "string",
+              "doc": "Location name.  Maximum allowed characters is 50." },
+            { "name": "coordinates",
+              "type": "wix-blog-backend.Events.MapCoordinates",
+              "doc": "The location's map coordinates." },
+            { "name": "address",
+              "type": "string",
+              "doc": "Single line address representation of the location." },
+            { "name": "type",
+              "type": "string",
+              "doc": "Type of location.\n One of:\n\n + `\"VENUE\"`: Event is hosted in the venue.\n + `\"ONLINE\"`: Event is hosted online." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "MapCoordinates",
+        "locations":
+          [ { "lineno": 16,
+              "filename": "post.js" } ],
+        "docs":
+          { "summary": "An object representing an event location's coordinates.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "lat",
+              "type": "number",
+              "doc": "Latitude." },
+            { "name": "lng",
+              "type": "number",
+              "doc": "Longitude." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Metrics",
+        "locations":
+          [ { "lineno": 43,
+              "filename": "domain.js" } ],
+        "docs":
+          { "summary": "An object representing Post metrics.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "comments",
+              "type": "number",
+              "doc": "Total number of post comments." },
+            { "name": "likes",
+              "type": "number",
+              "doc": "Total number of post likes." },
+            { "name": "views",
+              "type": "number",
+              "doc": "Total number of post views.\n // * @memberof wix-blog-backend" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PageUrl",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "domain.js" } ],
+        "docs":
+          { "summary": "An object representing Post URL.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "base",
+              "type": "string",
+              "doc": "The base URL. For premium sites, this will be the domain. For free sites, this would be site\nURL (e.g mysite.wixsite.com/mysite)" },
+            { "name": "path",
+              "type": "string",
+              "doc": "The path to that page - e.g /product-page/a-product\n // * @memberof wix-blog-backend" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Post",
+        "locations":
+          [ { "lineno": 40,
+              "filename": "post.js" } ],
+        "docs":
+          { "summary": "An object representing Post.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Post ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Post title." },
+            { "name": "excerpt",
+              "type": "string",
+              "doc": "Post excerpt. Can be selected by site owner or extracted from the content text's first\ncharacters." },
+            { "name": "contentText",
+              "type": "string",
+              "doc": "The post content in plain text." },
+            { "name": "firstPublishedDate",
+              "type": "string",
+              "doc": "Date the post was first published." },
+            { "name": "lastPublishedDate",
+              "type": "string",
+              "doc": "Date the post was last published." },
+            { "name": "url",
+              "type": "wix-blog-backend.Events.PageUrl",
+              "doc": "Post URL." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Post slug. For example, 'post-slug'." },
+            { "name": "featured",
+              "type": "boolean",
+              "doc": "Whether the post is marked as featured. Allows for filtering posts by featured only." },
+            { "name": "pinned",
+              "type": "boolean",
+              "doc": "Whether the post is pinned. Places the post at the top of the post list." },
+            { "name": "categoryIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of categories this post belongs to." },
+            { "name": "coverMedia",
+              "type": "wix-blog-backend.Events.CoverMedia",
+              "doc": "Post cover media." },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Post owner's member ID." },
+            { "name": "hashtags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Hashtags in the post's content text." },
+            { "name": "commentingEnabled",
+              "type": "boolean",
+              "doc": "Whether commenting on the post is enabled." },
+            { "name": "minutesToRead",
+              "type": "number",
+              "doc": "Estimated reading time (calculated automatically)." },
+            { "name": "heroImage",
+              "type": "wix-blog-backend.Events.Image",
+              "doc": "Hero image placed at the top of the blog page." },
+            { "name": "tagIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of tags the post is tagged with." },
+            { "name": "pricingPlans",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of the pricing plans. Deprecated on '2020-10-02' please use pricing_plan_ids instead" },
+            { "name": "relatedPostIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of posts that are related to this post." },
+            { "name": "pricingPlanIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Pricing plans IDs." },
+            { "name": "translationId",
+              "type": "string",
+              "doc": "ID of the translations of this post." },
+            { "name": "language",
+              "type": "string",
+              "doc": "Language the post is written in." },
+            { "name": "metrics",
+              "type": "wix-blog-backend.Events.Metrics",
+              "doc": "Post metrics." },
+            { "name": "seoData",
+              "type": "wix-blog-backend.Events.SeoSchema",
+              "doc": "SEO data." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Post owner's contact ID." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PostCreated",
+        "locations":
+          [ { "lineno": 52,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the post that was created.",
+            "links":
+              [ "[onPostCreated( )](#onPostCreated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `created`. Event name." },
+            { "name": "createdEvent",
+              "type": "wix-blog-backend.Post",
+              "doc": "Event Info" },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PostDeleted",
+        "locations":
+          [ { "lineno": 111,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing a post that was deleted.",
+            "links":
+              [ "[onPostDeleted( )](#onPostDeleted)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `deleted`. Event name." },
+            { "name": "deletedEvent",
+              "type": "object",
+              "doc": "Event Info" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "Post ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PostLikedDomainEvent",
+        "locations":
+          [ { "lineno": 74,
+              "filename": "post.js" } ],
+        "docs":
+          { "summary": "An object representing initiator.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID of person who liked a post (returned if the member was logged in when liking\nthe post)",
+              "optional": true },
+            { "name": "anonymousVisitorId",
+              "type": "string",
+              "doc": "Visitor ID if person that liked the post is not logged in",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "initiator",
+                  "members":
+                    [ "memberId",
+                      "anonymousVisitorId" ] } ] },
+        "labels": [] },
+      { "name": "PostLikedInitiator",
+        "locations":
+          [ { "lineno": 84,
+              "filename": "post.js" } ],
+        "docs":
+          { "summary": "An object representing initiator.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID of person who liked a post (returned if the member was logged in when liking\nthe post)",
+              "optional": true },
+            { "name": "anonymousVisitorId",
+              "type": "string",
+              "doc": "Visitor ID if person that liked the post is not logged in",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "initiator",
+                  "members":
+                    [ "memberId",
+                      "anonymousVisitorId" ] } ] },
+        "labels": [] },
+      { "name": "PostUpdated",
+        "locations":
+          [ { "lineno": 81,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the post that was updated.",
+            "links":
+              [ "[onPostUpdated( )](#onPostUpdated)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `updated`. Event name." },
+            { "name": "updatedEvent",
+              "type": "wix-blog-backend.Post",
+              "doc": "Event Info" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "Post ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ScheduleConfiguration",
+        "locations":
+          [ { "lineno": 24,
+              "filename": "post.js" } ],
+        "docs":
+          { "summary": "An object representing an event's schedule configuration.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "scheduleTbd",
+              "type": "boolean",
+              "doc": "Whether the event's schedule is to be determined later.\n\n If an event's time is not yet decided, the TBD message is displayed instead of the\n start date and end date.\n\n When `scheduleTbd` is `true`, `startDate`, `endDate`, and `timeZoneId` are not required." },
+            { "name": "scheduleTbdMessage",
+              "type": "string",
+              "doc": "Schedule TBD message.",
+              "optional": true },
+            { "name": "startDate",
+              "type": "Date",
+              "doc": "Event start date.",
+              "optional": true },
+            { "name": "endDate",
+              "type": "Date",
+              "doc": "Event end date.",
+              "optional": true },
+            { "name": "timeZoneId",
+              "type": "string",
+              "doc": "ID of the time zone for the Wix event in [tz database format](https://en.wikipedia.org/wiki/Tz_database), such as `EST`, or `America/Los_Angeles`. Optional for TBD events.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SeoSchema",
+        "locations":
+          [ { "lineno": 52,
+              "filename": "domain.js" } ],
+        "docs":
+          { "summary": "An object representing SEO data.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Events.SeoSchemaTags" ] },
+              "doc": "SEO tags information." },
+            { "name": "settings",
+              "type": "wix-blog-backend.Events.SeoSchemaSettings",
+              "doc": "SEO general settings.\n // * @memberof wix-blog-backend" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SeoSchemaSettings",
+        "locations":
+          [ { "lineno": 72,
+              "filename": "domain.js" } ],
+        "docs":
+          { "summary": "An object representing SEO general settings.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "preventAutoRedirect",
+              "type": "boolean",
+              "doc": "disable auto creation of 301 redirects on slug changes (enabled by default).\n // * @memberof wix-blog-backend" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SeoSchemaTags",
+        "locations":
+          [ { "lineno": 60,
+              "filename": "domain.js" } ],
+        "docs":
+          { "summary": "An object representing SEO tags information.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "SEO tag type. Supported values: `title`, `meta`, `script`, `link`." },
+            { "name": "props",
+              "type": "object",
+              "doc": "SEO tag attributes/properties (name, content, rel, href)." },
+            { "name": "meta",
+              "type": "object",
+              "doc": "Tag meta data, e.g. {height: 300, width: 240}." },
+            { "name": "children",
+              "type": "string",
+              "doc": "Tag inner content e.g. `<title> inner content </title>`." },
+            { "name": "custom",
+              "type": "boolean",
+              "doc": "Whether the tag is a custom tag." },
+            { "name": "disabled",
+              "type": "boolean",
+              "doc": "Whether the tag is disabled.\n // * @memberof wix-blog-backend" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "UnlikedPost",
+        "locations":
+          [ { "lineno": 171,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the post that was unliked.",
+            "links":
+              [ "[onPostUnliked( )](#onPostUnliked)" ],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `unliked`. Event name." },
+            { "type": "void" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "PostUnliked ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Video",
+        "locations":
+          [ { "lineno": 22,
+              "filename": "domain.js" } ],
+        "docs":
+          { "summary": "An object representing Video details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "WixMedia ID" },
+            { "name": "url",
+              "type": "string",
+              "doc": "URL of video" },
+            { "name": "height",
+              "type": "number",
+              "doc": "Original image height" },
+            { "name": "width",
+              "type": "number",
+              "doc": "Original image width" },
+            { "name": "thumbnail",
+              "type": "wix-blog-backend.Events.Image",
+              "doc": "Video poster\n // * @memberof wix-blog-backend" } ],
+        "extra":
+          {  },
+        "labels": [] } ],
+  "extra":
+    {  } }
