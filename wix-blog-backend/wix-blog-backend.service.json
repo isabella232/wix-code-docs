@@ -1,0 +1,3020 @@
+{ "name": "wix-blog-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "index.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "getCategory",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getCategoryRequest",
+              "type": "wix-blog-backend.GetCategoryRequest_8489616180" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.GetCategoryResult_42005697694" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 14,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_GetCategory_getCategory.js" } ],
+        "docs":
+          { "summary": "Retrieves a category with the provided ID.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function getCategory() {",
+                      "  const getCategoryRequest = {",
+                      "    categoryId: \"a string\",",
+                      "    fieldsToInclude: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .getCategory(getCategoryRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "getCategoryBySlug",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getCategoryBySlugRequest",
+              "type": "wix-blog-backend.GetCategoryBySlugRequest_6122489100" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.GetCategoryBySlugResult_38988902492" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 14,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_GetCategoryBySlug_getCategoryBySlug.js" } ],
+        "docs":
+          { "summary": "Retrieves a category with the provided slug.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function getCategoryBySlug() {",
+                      "  const getCategoryBySlugRequest = {",
+                      "    slug: \"a string\",",
+                      "    fieldsToInclude: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .getCategoryBySlug(getCategoryBySlugRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "getPost",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getPostRequest",
+              "type": "wix-blog-backend.GetPostRequest_10374720696" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.GetPostResult_660081409258" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPost_getPost.js" } ],
+        "docs":
+          { "summary": "Retrieves a post with the provided ID.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function getPost() {",
+                      "  const getPostRequest = {",
+                      "    postId: \"a string\",",
+                      "    fieldsToInclude: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .getPost(getPostRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "getPostBySlug",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getPostBySlugRequest",
+              "type": "wix-blog-backend.GetPostBySlugRequest_7113026756" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.GetPostBySlugResult_658078112296" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 14,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPostBySlug_getPostBySlug.js" } ],
+        "docs":
+          { "summary": "Retrieves a post with the provided slug.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function getPostBySlug() {",
+                      "  const getPostBySlugRequest = {",
+                      "    slug: \"a string\",",
+                      "    fieldsToInclude: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .getPostBySlug(getPostBySlugRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "getPostMetrics",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getPostMetricsRequest",
+              "type": "wix-blog-backend.GetPostMetricsRequest_3451674447" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.GetPostMetricsResult_3369817946" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 13,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPostMetrics_getPostMetrics.js" } ],
+        "docs":
+          { "summary": "Retrieves a specified post's metrics.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function getPostMetrics() {",
+                      "  const getPostMetricsRequest = {",
+                      "    postId: \"a string\"",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .getPostMetrics(getPostMetricsRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "listCategories",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listCategoriesRequest",
+              "type": "wix-blog-backend.ListCategoriesRequest_7236808745" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.ListCategoriesResult_43336369624" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 15,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_ListCategories_listCategories.js" } ],
+        "docs":
+          { "summary": "Lists up to 100 categories.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function listCategories() {",
+                      "  const listCategoriesRequest = {",
+                      "    paging: {",
+                      "      offset: 42,",
+                      "      limit: 42",
+                      "    },",
+                      "    fieldsToInclude: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .listCategories(listCategoriesRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "listPosts",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "listPostsRequest",
+              "type": "wix-blog-backend.ListPostsRequest_29021266372" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.ListPostsResult_662440532932" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 28,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_ListPosts_listPosts.js" } ],
+        "docs":
+          { "summary": "Lists up to 100 published posts.",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function listPosts() {",
+                      "  const listPostsRequest = {",
+                      "    featured: true,",
+                      "    hashtags: [\"a string\"],",
+                      "    categoryIds: [\"a string\"],",
+                      "    tagIds: [\"a string\"],",
+                      "    sort: \"FEED\",",
+                      "    paging: {",
+                      "      offset: 42,",
+                      "      limit: 42",
+                      "    },",
+                      "    fieldsToInclude: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .listPosts(listPostsRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "queryCategories",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "queryCategoriesRequest",
+              "type": "wix-blog-backend.QueryCategoriesRequest_13769270828" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.QueryCategoriesResult_44203314674" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 18,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_QueryCategories_queryCategories.js" } ],
+        "docs":
+          { "summary": "Retrieves up to 100 categories, given the provided paging, filtering, and sorting.",
+            "description":
+              [ "To learn how to query categories, see [API Query Language](https://dev.wix.com/api/rest/getting-started/api-query-language)." ],
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function queryCategories() {",
+                      "  const queryCategoriesRequest = {",
+                      "    paging: {",
+                      "      offset: 42,",
+                      "      limit: 42",
+                      "    },",
+                      "    filter: {",
+                      "      someKey: \"some-value\"",
+                      "    },",
+                      "    sort: [",
+                      "      {",
+                      "        fieldName: \"a string\",",
+                      "        order: \"ASC\"",
+                      "      }",
+                      "    ],",
+                      "    fieldsToInclude: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .queryCategories(queryCategoriesRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "queryPosts",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "queryPostsRequest",
+              "type": "wix-blog-backend.QueryPostsRequest_16120738701" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-blog-backend.QueryPostsResult_661250485098" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 18,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_QueryPosts_queryPosts.js" } ],
+        "docs":
+          { "summary": "Retrieves up to 100 posts, given the provided paging, filtering, and sorting.",
+            "description":
+              [ "To learn how to query posts, see [Field Support for Filtering and Sorting](https://dev.wix.com/api/rest/wix-blog/blog/filter-and-sort)." ],
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixBlogBackend from \"wix-blog-backend\";",
+                      "",
+                      "export function queryPosts() {",
+                      "  const queryPostsRequest = {",
+                      "    paging: {",
+                      "      offset: 42,",
+                      "      limit: 42",
+                      "    },",
+                      "    filter: {",
+                      "      someKey: \"some-value\"",
+                      "    },",
+                      "    sort: [",
+                      "      {",
+                      "        fieldName: \"a string\",",
+                      "        order: \"ASC\"",
+                      "      }",
+                      "    ],",
+                      "    fieldsToInclude: [\"UNKNOWN\"]",
+                      "  };",
+                      "",
+                      "  return wixBlogBackend",
+                      "    .queryPosts(queryPostsRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          {  } } ],
+  "callbacks": [],
+  "messages":
+    [ { "name": "AnchorData_2936935776",
+        "locations":
+          [ { "lineno": 150,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "anchor",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "AppEmbedData_44614653994",
+        "locations":
+          [ { "lineno": 156,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"PRODUCT\"`\n + `\"EVENT\"`\n + `\"BOOKING\"`" },
+            { "name": "itemId",
+              "type": "string" },
+            { "name": "name",
+              "type": "string" },
+            { "name": "url",
+              "type": "string" },
+            { "name": "image",
+              "type": "wix-blog-backend.Media_19648731753" },
+            { "name": "bookingData",
+              "type": "wix-blog-backend.AppEmbedData_BookingData_3465190693",
+              "optional": true },
+            { "name": "eventData",
+              "type": "wix-blog-backend.AppEmbedData_EventData_8829001099",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "appData",
+                  "members":
+                    [ "bookingData",
+                      "eventData" ] } ] },
+        "labels": [] },
+      { "name": "AppEmbedData_BookingData_3465190693",
+        "locations":
+          [ { "lineno": 172,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "durations",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "AppEmbedData_EventData_8829001099",
+        "locations":
+          [ { "lineno": 178,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "scheduling",
+              "type": "string" },
+            { "name": "location",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Background_Gradient_77770295",
+        "locations":
+          [ { "lineno": 717,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "angle",
+              "type": "number" },
+            { "name": "startColor",
+              "type": "string" },
+            { "name": "lastColor",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "BlogPaging_330394407",
+        "locations":
+          [ { "lineno": 27,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Pagination options.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "offset",
+              "type": "number",
+              "doc": "Number of items to skip in the current sort order.",
+              "optional": true },
+            { "name": "limit",
+              "type": "number",
+              "doc": "Number of items to return. If not set, defaults to 50.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ButtonData_70625942486",
+        "locations":
+          [ { "lineno": 185,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"LINK\"`\n + `\"ACTION\"`" },
+            { "name": "styles",
+              "type": "wix-blog-backend.ButtonData_Styles_9840713929" },
+            { "name": "text",
+              "type": "string" },
+            { "name": "link",
+              "type": "wix-blog-backend.Link_26711870068" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ButtonData_Styles_9840713929",
+        "locations":
+          [ { "lineno": 212,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "border",
+              "type": "wix-blog-backend.Styles_Border_2949656518" },
+            { "name": "colors",
+              "type": "wix-blog-backend.Styles_Colors_6252708352" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Category_40509540199",
+        "locations":
+          [ { "lineno": 53,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Category ID." },
+            { "name": "label",
+              "type": "string",
+              "doc": "Category label. Displayed in the categories menu." },
+            { "name": "postCount",
+              "type": "number",
+              "doc": "Number of posts in the category." },
+            { "name": "url",
+              "type": "wix-blog-backend.PageUrl_5174563244",
+              "doc": "Category page URL." },
+            { "name": "description",
+              "type": "string",
+              "doc": "Category description." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Category title." },
+            { "name": "coverMedia",
+              "type": "wix-blog-backend.CoverMedia_22661640638",
+              "doc": "Category cover image." },
+            { "name": "rank",
+              "type": "number",
+              "doc": "Category position in sequence. `-1` if no rank is defined." },
+            { "name": "translationId",
+              "type": "string",
+              "doc": "ID of the category's translations. All translations of a single category will share the same `translationId`." },
+            { "name": "language",
+              "type": "string",
+              "doc": "Category language." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Category slug. For example, 'category-slug'." },
+            { "name": "internalId",
+              "type": "string",
+              "doc": "Legacy mongo id used by analytics and db driver." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CodeBlockData_9904854867",
+        "locations":
+          [ { "lineno": 219,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "textStyle",
+              "type": "wix-blog-backend.TextStyle_7500253246" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CollapsibleListData_44998877770",
+        "locations":
+          [ { "lineno": 225,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "expandOnlyOne",
+              "type": "boolean" },
+            { "name": "initialExpandedItems",
+              "type": "string",
+              "doc": "One of:\n + `\"FIRST\"`\n + `\"ALL\"`\n + `\"NONE\"`" },
+            { "name": "direction",
+              "type": "string",
+              "doc": "One of:\n + `\"LTR\"`\n + `\"RTL\"`" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ColorData_7647716659",
+        "locations":
+          [ { "lineno": 239,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "background",
+              "type": "string" },
+            { "name": "foreground",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CoverMedia_22661640638",
+        "locations":
+          [ { "lineno": 35,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Post cover media.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "image",
+              "type": "wix-blog-backend.Image_14365439871",
+              "doc": "Image details.",
+              "optional": true },
+            { "name": "displayed",
+              "type": "boolean",
+              "doc": "Whether cover media is displayed." } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "media",
+                  "members":
+                    [ "image" ] } ] },
+        "labels": [] },
+      { "name": "Decoration_68131066520",
+        "locations":
+          [ { "lineno": 246,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "Decoration type\nOne of:\n + `\"BOLD\"`\n + `\"ITALIC\"`\n + `\"UNDERLINE\"`\n + `\"SPOILER\"`\n + `\"ANCHOR\"`\n + `\"MENTION\"`\n + `\"LINK\"`\n + `\"COLOR\"`\n + `\"FONT_SIZE\"`\n + `\"EXTERNAL\"`" },
+            { "name": "anchorData",
+              "type": "wix-blog-backend.AnchorData_2936935776",
+              "optional": true },
+            { "name": "colorData",
+              "type": "wix-blog-backend.ColorData_7647716659",
+              "optional": true },
+            { "name": "linkData",
+              "type": "wix-blog-backend.LinkData_26931558914",
+              "optional": true },
+            { "name": "mentionData",
+              "type": "wix-blog-backend.MentionData_1009308959",
+              "optional": true },
+            { "name": "fontSizeData",
+              "type": "wix-blog-backend.FontSizeData_3824463591",
+              "optional": true },
+            { "name": "fontWeightValue",
+              "type": "number",
+              "optional": true },
+            { "name": "italicData",
+              "type": "boolean",
+              "optional": true },
+            { "name": "underlineData",
+              "type": "boolean",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "anchorData",
+                      "colorData",
+                      "fontSizeData",
+                      "fontWeightValue",
+                      "italicData",
+                      "linkData",
+                      "mentionData",
+                      "underlineData" ] } ] },
+        "labels": [] },
+      { "name": "Design_OptionDesign_953058154",
+        "locations":
+          [ { "lineno": 738,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "borderRadius",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Design_PollDesign_34454566800",
+        "locations":
+          [ { "lineno": 744,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "background",
+              "type": "wix-blog-backend.PollDesign_Background_31366935110" },
+            { "name": "borderRadius",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "DividerData_47293567278",
+        "locations":
+          [ { "lineno": 272,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "lineStyle",
+              "type": "string",
+              "doc": "One of:\n + `\"SINGLE\"`\n + `\"DOUBLE\"`\n + `\"DASHED\"`\n + `\"DOTTED\"`" },
+            { "name": "width",
+              "type": "string",
+              "doc": "One of:\n + `\"LARGE\"`\n + `\"MEDIUM\"`\n + `\"SMALL\"`" },
+            { "name": "alignment",
+              "type": "string",
+              "doc": "One of:\n + `\"CENTER\"`\n + `\"LEFT\"`\n + `\"RIGHT\"`" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "DocumentStyle_77601517520",
+        "locations":
+          [ { "lineno": 291,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "headerOne",
+              "type": "wix-blog-backend.TextNodeStyle_70687623701" },
+            { "name": "headerTwo",
+              "type": "wix-blog-backend.TextNodeStyle_70687623701" },
+            { "name": "headerThree",
+              "type": "wix-blog-backend.TextNodeStyle_70687623701" },
+            { "name": "headerFour",
+              "type": "wix-blog-backend.TextNodeStyle_70687623701" },
+            { "name": "headerFive",
+              "type": "wix-blog-backend.TextNodeStyle_70687623701" },
+            { "name": "headerSix",
+              "type": "wix-blog-backend.TextNodeStyle_70687623701" },
+            { "name": "paragraph",
+              "type": "wix-blog-backend.TextNodeStyle_70687623701" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "EmbedData_70800071814",
+        "locations":
+          [ { "lineno": 303,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "oembed",
+              "type": "wix-blog-backend.Oembed_39669817914" },
+            { "name": "src",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "FileData_39771476977",
+        "locations":
+          [ { "lineno": 311,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "src",
+              "type": "wix-blog-backend.FileSource_11163158514" },
+            { "name": "name",
+              "type": "string" },
+            { "name": "type",
+              "type": "string" },
+            { "name": "size",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "FileSource_11163158514",
+        "locations":
+          [ { "lineno": 321,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "url",
+              "type": "string",
+              "doc": "Absolute URL",
+              "optional": true },
+            { "name": "_id",
+              "type": "string",
+              "doc": "ID that will be resolved to a URL by a resolver function",
+              "optional": true },
+            { "name": "private",
+              "type": "boolean" } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "_id",
+                      "url" ] } ] },
+        "labels": [] },
+      { "name": "FontSizeData_3824463591",
+        "locations":
+          [ { "lineno": 330,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "unit",
+              "type": "string",
+              "doc": "One of:\n + `\"PX\"`\n + `\"EM\"`" },
+            { "name": "value",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GIFData_45278246780",
+        "locations":
+          [ { "lineno": 348,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "original",
+              "type": "wix-blog-backend.GIF_8612170960",
+              "doc": "original gif" },
+            { "name": "downsized",
+              "type": "wix-blog-backend.GIF_8612170960",
+              "doc": "original gif" },
+            { "name": "height",
+              "type": "number" },
+            { "name": "width",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GIF_8612170960",
+        "locations":
+          [ { "lineno": 339,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "original gif",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "gif",
+              "type": "string" },
+            { "name": "mp4",
+              "type": "string" },
+            { "name": "still",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GalleryData_121837021992",
+        "locations":
+          [ { "lineno": 358,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "items",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.GalleryData_Item_62919712022" ] } },
+            { "name": "options",
+              "type": "wix-blog-backend.GalleryOptions_21439276766" },
+            { "name": "disableExpand",
+              "type": "boolean" },
+            { "name": "disableDownload",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GalleryData_Item_62919712022",
+        "locations":
+          [ { "lineno": 382,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "image",
+              "type": "wix-blog-backend.Item_Image_45302550261",
+              "optional": true },
+            { "name": "video",
+              "type": "wix-blog-backend.Item_Video_22775990162",
+              "optional": true },
+            { "name": "title",
+              "type": "string" },
+            { "name": "altText",
+              "type": "string" } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "image",
+                      "video" ] } ] },
+        "labels": [] },
+      { "name": "GalleryOptions_21439276766",
+        "locations":
+          [ { "lineno": 392,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "layout",
+              "type": "wix-blog-backend.GalleryOptions_Layout_4819719370" },
+            { "name": "item",
+              "type": "wix-blog-backend.GalleryOptions_ItemStyle_12059012395" },
+            { "name": "thumbnails",
+              "type": "wix-blog-backend.GalleryOptions_Thumbnails_6677769515" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GalleryOptions_ItemStyle_12059012395",
+        "locations":
+          [ { "lineno": 400,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "targetSize",
+              "type": "number" },
+            { "name": "ratio",
+              "type": "number" },
+            { "name": "crop",
+              "type": "string",
+              "doc": "One of:\n + `\"FILL\"`\n + `\"FIT\"`" },
+            { "name": "spacing",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GalleryOptions_Layout_4819719370",
+        "locations":
+          [ { "lineno": 411,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"COLLAGE\"`\n + `\"MASONRY\"`\n + `\"GRID\"`\n + `\"THUMBNAIL\"`\n + `\"SLIDER\"`\n + `\"SLIDESHOW\"`\n + `\"PANORAMA\"`\n + `\"COLUMN\"`\n + `\"MAGIC\"`\n + `\"FULLSIZE\"`" },
+            { "name": "horizontalScroll",
+              "type": "boolean" },
+            { "name": "orientation",
+              "type": "string",
+              "doc": "One of:\n + `\"ROWS\"`\n + `\"COLUMNS\"`" },
+            { "name": "numberOfColumns",
+              "type": "number" },
+            { "name": "mobileNumberOfColumns",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GalleryOptions_Thumbnails_6677769515",
+        "locations":
+          [ { "lineno": 433,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "placement",
+              "type": "string",
+              "doc": "One of:\n + `\"TOP\"`\n + `\"RIGHT\"`\n + `\"BOTTOM\"`\n + `\"LEFT\"`\n + `\"NONE\"`" },
+            { "name": "spacing",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetCategoryBySlugRequest_6122489100",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_GetCategoryBySlug_getCategoryBySlug.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "slug",
+              "type": "string",
+              "doc": "Slug of the category to retrieve." },
+            { "name": "fieldsToInclude",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of category fields to be included in the response.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetCategoryBySlugResult_38988902492",
+        "locations":
+          [ { "lineno": 8,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_GetCategoryBySlug_getCategoryBySlug.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "category",
+              "type": "wix-blog-backend.Category_40509540199" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetCategoryRequest_8489616180",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_GetCategory_getCategory.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "categoryId",
+              "type": "string",
+              "doc": "Category ID." },
+            { "name": "fieldsToInclude",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Array of category fields to be included in the response. By default, any `fieldsToInclude` not passed are not returned.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetCategoryResult_42005697694",
+        "locations":
+          [ { "lineno": 8,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_GetCategory_getCategory.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "category",
+              "type": "wix-blog-backend.Category_40509540199" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetPostBySlugRequest_7113026756",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPostBySlug_getPostBySlug.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "slug",
+              "type": "string",
+              "doc": "Slug of the post to retrieve." },
+            { "name": "fieldsToInclude",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetPostBySlugResult_658078112296",
+        "locations":
+          [ { "lineno": 8,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPostBySlug_getPostBySlug.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "post",
+              "type": "wix-blog-backend.Post_660054615571" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetPostMetricsRequest_3451674447",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPostMetrics_getPostMetrics.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "postId",
+              "type": "string",
+              "doc": "Post ID." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetPostMetricsResult_3369817946",
+        "locations":
+          [ { "lineno": 7,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPostMetrics_getPostMetrics.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "metrics",
+              "type": "wix-blog-backend.Metrics_2321136847",
+              "doc": "Post metrics." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetPostRequest_10374720696",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPost_getPost.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "postId",
+              "type": "string",
+              "doc": "Post ID." },
+            { "name": "fieldsToInclude",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Array of post fields to be included in the response. By default, any `fieldsToInclude` not passed are not returned.\n Note: `COUNTERS` is deprecated, use `METRICS` instead.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetPostResult_660081409258",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_GetPost_getPost.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "post",
+              "type": "wix-blog-backend.Post_660054615571" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "HTMLData_41098731592",
+        "locations":
+          [ { "lineno": 445,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "url",
+              "type": "string",
+              "optional": true },
+            { "name": "html",
+              "type": "string",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "html",
+                      "url" ] } ] },
+        "labels": [] },
+      { "name": "HeadingData_7012938143",
+        "locations":
+          [ { "lineno": 454,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "level",
+              "type": "number" },
+            { "name": "textStyle",
+              "type": "wix-blog-backend.TextStyle_7500253246" },
+            { "name": "indentation",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ImageData_83717634114",
+        "locations":
+          [ { "lineno": 462,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "image",
+              "type": "wix-blog-backend.Media_19648731753" },
+            { "name": "link",
+              "type": "wix-blog-backend.Link_26711870068" },
+            { "name": "disableExpand",
+              "type": "boolean" },
+            { "name": "altText",
+              "type": "string" },
+            { "name": "caption",
+              "type": "string" },
+            { "name": "disableDownload",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Image_14365439871",
+        "locations":
+          [ { "lineno": 116,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Image details.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "WixMedia image ID." },
+            { "name": "url",
+              "type": "string",
+              "doc": "Image URL." },
+            { "name": "height",
+              "type": "number",
+              "doc": "Original image height." },
+            { "name": "width",
+              "type": "number",
+              "doc": "Original image width." },
+            { "name": "altText",
+              "type": "string",
+              "doc": "Image alt text. Optional." },
+            { "name": "urlExpirationDate",
+              "type": "Date",
+              "doc": "Image URL expiration date (when relevant). Optional" },
+            { "name": "filename",
+              "type": "string",
+              "doc": "Image filename. Optional." },
+            { "name": "sizeInBytes",
+              "type": "string",
+              "doc": "Image size in bytes. Optional." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Item_Image_45302550261",
+        "locations":
+          [ { "lineno": 368,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "media",
+              "type": "wix-blog-backend.Media_19648731753" },
+            { "name": "link",
+              "type": "wix-blog-backend.Link_26711870068" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Item_Video_22775990162",
+        "locations":
+          [ { "lineno": 375,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "media",
+              "type": "wix-blog-backend.Media_19648731753" },
+            { "name": "thumbnail",
+              "type": "wix-blog-backend.Media_19648731753" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Layout_OptionLayout_1580920867",
+        "locations":
+          [ { "lineno": 751,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "enableImage",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Layout_PollLayout_13540866094",
+        "locations":
+          [ { "lineno": 757,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"LIST\"`\n + `\"GRID\"`" },
+            { "name": "direction",
+              "type": "string",
+              "doc": "One of:\n + `\"LTR\"`\n + `\"RTL\"`" },
+            { "name": "enableImage",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "LinkData_26931558914",
+        "locations":
+          [ { "lineno": 489,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "link",
+              "type": "wix-blog-backend.Link_26711870068" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "LinkPreviewData_63536603862",
+        "locations":
+          [ { "lineno": 495,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "link",
+              "type": "wix-blog-backend.Link_26711870068" },
+            { "name": "title",
+              "type": "string" },
+            { "name": "thumbnailUrl",
+              "type": "string" },
+            { "name": "description",
+              "type": "string" },
+            { "name": "html",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Link_26711870068",
+        "locations":
+          [ { "lineno": 474,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "url",
+              "type": "string",
+              "optional": true },
+            { "name": "anchor",
+              "type": "string",
+              "doc": "Key of linked node in document",
+              "optional": true },
+            { "name": "target",
+              "type": "string",
+              "doc": "One of:\n + `\"SELF\"`\n + `\"BLANK\"`\n + `\"PARENT\"`\n + `\"TOP\"`" },
+            { "name": "rel",
+              "type": "wix-blog-backend.Link_Rel_3853065424" },
+            { "name": "customData",
+              "type": "string",
+              "doc": "Serialized object, used for custom/external link panel" } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "anchor",
+                      "url" ] } ] },
+        "labels": [] },
+      { "name": "Link_Rel_3853065424",
+        "locations":
+          [ { "lineno": 506,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "nofollow",
+              "type": "boolean",
+              "doc": "Indicates to search engine crawlers that the link should not be followed" },
+            { "name": "sponsored",
+              "type": "boolean",
+              "doc": "Paid links" },
+            { "name": "ugc",
+              "type": "boolean",
+              "doc": "UoU generated link" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListCategoriesRequest_7236808745",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_ListCategories_listCategories.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "paging",
+              "type": "wix-blog-backend.BlogPaging_330394407",
+              "doc": "Pagination options.",
+              "optional": true },
+            { "name": "fieldsToInclude",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of category fields to be included in the response.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListCategoriesResult_43336369624",
+        "locations":
+          [ { "lineno": 8,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_ListCategories_listCategories.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "categories",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Category_40509540199" ] },
+              "doc": "List of categories." },
+            { "name": "metaData",
+              "type": "wix-blog-backend.MetaData_528203147",
+              "doc": "Details on the paged set of results returned." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListPostsRequest_29021266372",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_ListPosts_listPosts.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "featured",
+              "type": "boolean",
+              "doc": "Whether to return only featured posts.",
+              "optional": true },
+            { "name": "hashtags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Hashtag filter.\n Pass an array of hashtags to return posts with any of the provided hashtags (anywhere in the post content).",
+              "optional": true },
+            { "name": "categoryIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Category filter.\n Pass an array of category IDs to return posts with any of the provided categories.",
+              "optional": true },
+            { "name": "tagIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Tag filter.\n Pass an array of tag IDs to return posts with any of the provided tags.",
+              "optional": true },
+            { "name": "sort",
+              "type": "string",
+              "doc": "Sort order by descending view count, ascending or descending publish date, or default to descending by publish date with pinned posts first.\nOne of:\n + `\"FEED\"`\n + `\"PUBLISHED_DATE_ASC\"`\n + `\"PUBLISHED_DATE_DESC\"`\n + `\"VIEW_COUNT\"`",
+              "optional": true },
+            { "name": "paging",
+              "type": "wix-blog-backend.BlogPaging_330394407",
+              "doc": "Pagination options.",
+              "optional": true },
+            { "name": "fieldsToInclude",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListPostsResult_662440532932",
+        "locations":
+          [ { "lineno": 21,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_ListPosts_listPosts.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "posts",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Post_660054615571" ] },
+              "doc": "List of posts." },
+            { "name": "metaData",
+              "type": "wix-blog-backend.MetaData_528203147",
+              "doc": "Details on the paged set of results returned." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ListValue_24710570060",
+        "locations":
+          [ { "lineno": 514,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Represents a repeated `Value`.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "values",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Value_26483387342" ] },
+              "doc": "Repeated field of dynamically typed values." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "MapData_48792005198",
+        "locations":
+          [ { "lineno": 521,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "mapSettings",
+              "type": "wix-blog-backend.MapSettings_17066473385" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "MapSettings_17066473385",
+        "locations":
+          [ { "lineno": 528,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "address",
+              "type": "string" },
+            { "name": "draggable",
+              "type": "boolean" },
+            { "name": "marker",
+              "type": "boolean",
+              "doc": "Visibilty of marker" },
+            { "name": "streetViewControl",
+              "type": "boolean",
+              "doc": "Visibilty of street view control" },
+            { "name": "zoomControl",
+              "type": "boolean",
+              "doc": "Visibilty of zoom control" },
+            { "name": "lat",
+              "type": "number",
+              "doc": "latitude" },
+            { "name": "lng",
+              "type": "number",
+              "doc": "longitude" },
+            { "name": "locationName",
+              "type": "string" },
+            { "name": "viewModeControl",
+              "type": "boolean",
+              "doc": "Visibilty of view mode control" },
+            { "name": "initialZoom",
+              "type": "number" },
+            { "name": "mapType",
+              "type": "string",
+              "doc": "One of:\n + `\"ROADMAP\"`\n + `\"SATELITE\"`\n + `\"HYBRID\"`\n + `\"TERRAIN\"`" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Media_19648731753",
+        "locations":
+          [ { "lineno": 548,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "src",
+              "type": "wix-blog-backend.FileSource_11163158514" },
+            { "name": "width",
+              "type": "number" },
+            { "name": "height",
+              "type": "number" },
+            { "name": "duration",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "MentionData_1009308959",
+        "locations":
+          [ { "lineno": 557,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "name",
+              "type": "string" },
+            { "name": "slug",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "MetaData_528203147",
+        "locations":
+          [ { "lineno": 44,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Details on the paged set of results returned.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "count",
+              "type": "number",
+              "doc": "Number of items returned in this response." },
+            { "name": "offset",
+              "type": "number",
+              "doc": "Requested offset." },
+            { "name": "total",
+              "type": "number",
+              "doc": "Total number of items that match the query." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Metadata_5490399625",
+        "locations":
+          [ { "lineno": 564,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "version",
+              "type": "number",
+              "doc": "Schema version" },
+            { "name": "createdTimestamp",
+              "type": "Date",
+              "doc": "Time content was created" },
+            { "name": "updatedTimestamp",
+              "type": "Date",
+              "doc": "Time of latest edit" },
+            { "name": "_id",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Metrics_2321136847",
+        "locations":
+          [ { "lineno": 70,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Post metrics.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "comments",
+              "type": "number",
+              "doc": "Total number of post comments." },
+            { "name": "likes",
+              "type": "number",
+              "doc": "Total number of post likes." },
+            { "name": "views",
+              "type": "number",
+              "doc": "Total number of post views." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "NodeStyle_13567015619",
+        "locations":
+          [ { "lineno": 634,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "paddingTop",
+              "type": "string" },
+            { "name": "paddingBottom",
+              "type": "string" },
+            { "name": "backgroundColor",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Node_544879895433",
+        "locations":
+          [ { "lineno": 573,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "Node type\nOne of:\n + `\"PARAGRAPH\"`\n + `\"TEXT\"`\n + `\"HEADING\"`\n + `\"BULLETED_LIST\"`\n + `\"ORDERED_LIST\"`\n + `\"LIST_ITEM\"`\n + `\"BLOCKQUOTE\"`\n + `\"CODE_BLOCK\"`\n + `\"VIDEO\"`\n + `\"DIVIDER\"`\n + `\"FILE\"`\n + `\"GALLERY\"`\n + `\"GIF\"`\n + `\"HTML\"`\n + `\"IMAGE\"`\n + `\"LINK_PREVIEW\"`\n + `\"MAP\"`\n + `\"POLL\"`\n + `\"APP_EMBED\"`\n + `\"BUTTON\"`\n + `\"COLLAPSIBLE_LIST\"`\n + `\"TABLE\"`\n + `\"EMBED\"`\n + `\"COLLAPSIBLE_ITEM\"`\n + `\"COLLAPSIBLE_ITEM_TITLE\"`\n + `\"COLLAPSIBLE_ITEM_BODY\"`\n + `\"TABLE_CELL\"`\n + `\"TABLE_ROW\"`\n + `\"EXTERNAL\"`" },
+            { "name": "_id",
+              "type": "string",
+              "doc": "Node unique identifier" },
+            { "name": "nodes",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Node_544879895433" ] },
+              "doc": "List of child nodes" },
+            { "name": "style",
+              "type": "wix-blog-backend.NodeStyle_13567015619" },
+            { "name": "buttonData",
+              "type": "wix-blog-backend.ButtonData_70625942486",
+              "optional": true },
+            { "name": "codeBlockData",
+              "type": "wix-blog-backend.CodeBlockData_9904854867",
+              "optional": true },
+            { "name": "dividerData",
+              "type": "wix-blog-backend.DividerData_47293567278",
+              "optional": true },
+            { "name": "fileData",
+              "type": "wix-blog-backend.FileData_39771476977",
+              "optional": true },
+            { "name": "galleryData",
+              "type": "wix-blog-backend.GalleryData_121837021992",
+              "optional": true },
+            { "name": "gifData",
+              "type": "wix-blog-backend.GIFData_45278246780",
+              "optional": true },
+            { "name": "headingData",
+              "type": "wix-blog-backend.HeadingData_7012938143",
+              "optional": true },
+            { "name": "htmlData",
+              "type": "wix-blog-backend.HTMLData_41098731592",
+              "optional": true },
+            { "name": "imageData",
+              "type": "wix-blog-backend.ImageData_83717634114",
+              "optional": true },
+            { "name": "linkPreviewData",
+              "type": "wix-blog-backend.LinkPreviewData_63536603862",
+              "optional": true },
+            { "name": "mapData",
+              "type": "wix-blog-backend.MapData_48792005198",
+              "optional": true },
+            { "name": "paragraphData",
+              "type": "wix-blog-backend.ParagraphData_9784574843",
+              "optional": true },
+            { "name": "pollData",
+              "type": "wix-blog-backend.PollData_120678260381",
+              "optional": true },
+            { "name": "textData",
+              "type": "wix-blog-backend.TextData_70531613750",
+              "optional": true },
+            { "name": "appEmbedData",
+              "type": "wix-blog-backend.AppEmbedData_44614653994",
+              "optional": true },
+            { "name": "videoData",
+              "type": "wix-blog-backend.VideoData_57759307380",
+              "optional": true },
+            { "name": "embedData",
+              "type": "wix-blog-backend.EmbedData_70800071814",
+              "optional": true },
+            { "name": "collapsibleListData",
+              "type": "wix-blog-backend.CollapsibleListData_44998877770",
+              "optional": true },
+            { "name": "tableData",
+              "type": "wix-blog-backend.TableData_38504540797",
+              "optional": true },
+            { "name": "tableCellData",
+              "type": "wix-blog-backend.TableCellData_20392583239",
+              "optional": true },
+            { "name": "externalData",
+              "type": "wix-blog-backend.Struct_26415584452",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "appEmbedData",
+                      "buttonData",
+                      "codeBlockData",
+                      "collapsibleListData",
+                      "dividerData",
+                      "embedData",
+                      "externalData",
+                      "fileData",
+                      "galleryData",
+                      "gifData",
+                      "headingData",
+                      "htmlData",
+                      "imageData",
+                      "linkPreviewData",
+                      "mapData",
+                      "paragraphData",
+                      "pollData",
+                      "tableCellData",
+                      "tableData",
+                      "textData",
+                      "videoData" ] } ] },
+        "labels": [] },
+      { "name": "Oembed_39669817914",
+        "locations":
+          [ { "lineno": 642,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string" },
+            { "name": "width",
+              "type": "number" },
+            { "name": "height",
+              "type": "number" },
+            { "name": "title",
+              "type": "string" },
+            { "name": "url",
+              "type": "string" },
+            { "name": "html",
+              "type": "string" },
+            { "name": "authorName",
+              "type": "string" },
+            { "name": "authorUrl",
+              "type": "string" },
+            { "name": "providerName",
+              "type": "string" },
+            { "name": "providerUrl",
+              "type": "string" },
+            { "name": "thumbnailUrl",
+              "type": "string" },
+            { "name": "thumbnailWidth",
+              "type": "string" },
+            { "name": "thumbnailHeight",
+              "type": "string" },
+            { "name": "videoUrl",
+              "type": "string" },
+            { "name": "version",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PageUrl_5174563244",
+        "locations":
+          [ { "lineno": 130,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Post URL.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "base",
+              "type": "string",
+              "doc": "The base URL. For premium sites, this will be the domain. For free sites, this would be site URL (e.g mysite.wixsite.com/mysite)" },
+            { "name": "path",
+              "type": "string",
+              "doc": "The path to that page - e.g /product-page/a-product" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "ParagraphData_9784574843",
+        "locations":
+          [ { "lineno": 662,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "textStyle",
+              "type": "wix-blog-backend.TextStyle_7500253246" },
+            { "name": "indentation",
+              "type": "number" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PluginContainerData_31707594155",
+        "locations":
+          [ { "lineno": 669,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "width",
+              "type": "wix-blog-backend.PluginContainerData_Width_12457607246" },
+            { "name": "alignment",
+              "type": "string",
+              "doc": "One of:\n + `\"CENTER\"`\n + `\"LEFT\"`\n + `\"RIGHT\"`" },
+            { "name": "spoiler",
+              "type": "wix-blog-backend.PluginContainerData_Spoiler_4959863162" },
+            { "name": "height",
+              "type": "wix-blog-backend.PluginContainerData_Height_1781445912" },
+            { "name": "textWrap",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PluginContainerData_Height_1781445912",
+        "locations":
+          [ { "lineno": 682,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "custom",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PluginContainerData_Spoiler_4959863162",
+        "locations":
+          [ { "lineno": 688,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "enabled",
+              "type": "boolean" },
+            { "name": "description",
+              "type": "string" },
+            { "name": "buttonText",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PluginContainerData_Width_12457607246",
+        "locations":
+          [ { "lineno": 696,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "size",
+              "type": "string",
+              "doc": "One of:\n + `\"CONTENT\"`\n + `\"SMALL\"`\n + `\"ORIGINAL\"`\n + `\"FULL_WIDTH\"`",
+              "optional": true },
+            { "name": "custom",
+              "type": "string",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "data",
+                  "members":
+                    [ "custom",
+                      "size" ] } ] },
+        "labels": [] },
+      { "name": "PollData_120678260381",
+        "locations":
+          [ { "lineno": 708,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "poll",
+              "type": "wix-blog-backend.PollData_Poll_48959996147" },
+            { "name": "layout",
+              "type": "wix-blog-backend.PollData_Layout_18227954876" },
+            { "name": "design",
+              "type": "wix-blog-backend.PollData_Design_38739316945" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PollData_Design_38739316945",
+        "locations":
+          [ { "lineno": 798,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "poll",
+              "type": "wix-blog-backend.Design_PollDesign_34454566800" },
+            { "name": "options",
+              "type": "wix-blog-backend.Design_OptionDesign_953058154" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PollData_Layout_18227954876",
+        "locations":
+          [ { "lineno": 805,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "poll",
+              "type": "wix-blog-backend.Layout_PollLayout_13540866094" },
+            { "name": "options",
+              "type": "wix-blog-backend.Layout_OptionLayout_1580920867" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PollData_Poll_48959996147",
+        "locations":
+          [ { "lineno": 812,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string" },
+            { "name": "title",
+              "type": "string" },
+            { "name": "creatorId",
+              "type": "string" },
+            { "name": "image",
+              "type": "wix-blog-backend.Media_19648731753" },
+            { "name": "options",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Poll_Option_23359497275" ] } },
+            { "name": "settings",
+              "type": "wix-blog-backend.Poll_Settings_13073903132" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PollDesign_Background_31366935110",
+        "locations":
+          [ { "lineno": 725,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "One of:\n + `\"COLOR\"`\n + `\"IMAGE\"`\n + `\"GRADIENT\"`" },
+            { "name": "color",
+              "type": "string",
+              "optional": true },
+            { "name": "image",
+              "type": "wix-blog-backend.Media_19648731753",
+              "optional": true },
+            { "name": "gradient",
+              "type": "wix-blog-backend.Background_Gradient_77770295",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "background",
+                  "members":
+                    [ "color",
+                      "gradient",
+                      "image" ] } ] },
+        "labels": [] },
+      { "name": "Poll_Option_23359497275",
+        "locations":
+          [ { "lineno": 782,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string" },
+            { "name": "title",
+              "type": "string" },
+            { "name": "image",
+              "type": "wix-blog-backend.Media_19648731753" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Poll_Settings_13073903132",
+        "locations":
+          [ { "lineno": 790,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "permissions",
+              "type": "wix-blog-backend.Settings_Permissions_9459571820" },
+            { "name": "showVoters",
+              "type": "boolean" },
+            { "name": "showVotesCount",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Post_660054615571",
+        "locations":
+          [ { "lineno": 79,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Post ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Post title." },
+            { "name": "excerpt",
+              "type": "string",
+              "doc": "Post excerpt.\n Can be selected by site owner or extracted from the content text's first characters." },
+            { "name": "contentText",
+              "type": "string",
+              "doc": "The post content in plain text." },
+            { "name": "firstPublishedDate",
+              "type": "Date",
+              "doc": "Date the post was first published." },
+            { "name": "lastPublishedDate",
+              "type": "Date",
+              "doc": "Date the post was last published." },
+            { "name": "url",
+              "type": "wix-blog-backend.PageUrl_5174563244",
+              "doc": "Post URL." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Post slug. For example, 'post-slug'." },
+            { "name": "featured",
+              "type": "boolean",
+              "doc": "Whether the post is marked as featured. Allows for filtering posts by featured only." },
+            { "name": "pinned",
+              "type": "boolean",
+              "doc": "Whether the post is pinned. Places the post at the top of the post list." },
+            { "name": "categoryIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of categories this post belongs to." },
+            { "name": "coverMedia",
+              "type": "wix-blog-backend.CoverMedia_22661640638",
+              "doc": "Post cover media." },
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Post owner's member ID." },
+            { "name": "hashtags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Hashtags in the post's content text." },
+            { "name": "commentingEnabled",
+              "type": "boolean",
+              "doc": "Whether commenting on the post is enabled." },
+            { "name": "minutesToRead",
+              "type": "number",
+              "doc": "Estimated reading time (calculated automatically)." },
+            { "name": "heroImage",
+              "type": "wix-blog-backend.Image_14365439871",
+              "doc": "Image details." },
+            { "name": "tagIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of tags the post is tagged with." },
+            { "name": "relatedPostIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "IDs of posts that are related to this post." },
+            { "name": "pricingPlanIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Pricing plans IDs." },
+            { "name": "translationId",
+              "type": "string",
+              "doc": "ID of the translations of this post." },
+            { "name": "language",
+              "type": "string",
+              "doc": "Language the post is written in." },
+            { "name": "metrics",
+              "type": "wix-blog-backend.Metrics_2321136847",
+              "doc": "Post metrics." },
+            { "name": "seoData",
+              "type": "wix-blog-backend.SeoSchema_9738697991",
+              "doc": "SEO data." },
+            { "name": "content",
+              "type": "string",
+              "doc": "The post content as a stringified DraftJs document." },
+            { "name": "contactId",
+              "type": "string",
+              "doc": "Post owner's contact ID." },
+            { "name": "richContent",
+              "type": "wix-blog-backend.RichContent_565899934741",
+              "doc": "Post rich content" },
+            { "name": "contentId",
+              "type": "string",
+              "doc": "Content reference ID." },
+            { "name": "internalId",
+              "type": "string",
+              "doc": "Legacy mongo id used by analytics and db driver." },
+            { "name": "internalCategoryIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Legacy mongo category ids used by db driver." },
+            { "name": "internalRelatedPostIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Legacy mongo ids used for related post mapping" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QueryCategoriesRequest_13769270828",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_QueryCategories_queryCategories.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "paging",
+              "type": "wix-blog-backend.BlogPaging_330394407",
+              "doc": "Pagination options.",
+              "optional": true },
+            { "name": "filter",
+              "type": "Object",
+              "doc": "Filter object.\n For a detailed list of supported filters, see [Field Support for Filtering and Sorting](https://dev.wix.com/api/rest/wix-blog/blog/filter-and-sort).",
+              "optional": true },
+            { "name": "sort",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Sorting_7874645153" ] },
+              "doc": "Sorting options. For a list of sortable fields, see [Field Support for Filtering and Sorting](https://dev.wix.com/api/rest/wix-blog/blog/filter-and-sort).",
+              "optional": true },
+            { "name": "fieldsToInclude",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of category fields to be included in the response.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QueryCategoriesResult_44203314674",
+        "locations":
+          [ { "lineno": 11,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_CategoryService_QueryCategories_queryCategories.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "categories",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Category_40509540199" ] },
+              "doc": "List of categories." },
+            { "name": "metaData",
+              "type": "wix-blog-backend.MetaData_528203147",
+              "doc": "Details on the paged set of results returned." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QueryPostsRequest_16120738701",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_QueryPosts_queryPosts.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "paging",
+              "type": "wix-blog-backend.BlogPaging_330394407",
+              "doc": "Pagination options.",
+              "optional": true },
+            { "name": "filter",
+              "type": "Object",
+              "doc": "Filter object.\n For a detailed list of supported filters, see [Field Support for Filtering and Sorting](https://dev.wix.com/api/rest/wix-blog/blog/filter-and-sort).",
+              "optional": true },
+            { "name": "sort",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Sorting_7874645153" ] },
+              "doc": "Sorting options. For a list of sortable fields, see [Field Support for Filtering and Sorting](https://dev.wix.com/api/rest/wix-blog/blog/filter-and-sort).",
+              "optional": true },
+            { "name": "fieldsToInclude",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QueryPostsResult_661250485098",
+        "locations":
+          [ { "lineno": 11,
+              "filename": "com_wixpress_npm_communities_platformized_blog_v3_PostService_QueryPosts_queryPosts.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "posts",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Post_660054615571" ] },
+              "doc": "List of posts." },
+            { "name": "metaData",
+              "type": "wix-blog-backend.MetaData_528203147",
+              "doc": "Details on the paged set of results returned." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "RichContent_565899934741",
+        "locations":
+          [ { "lineno": 823,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Post rich content",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "nodes",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Node_544879895433" ] },
+              "doc": "List of nodes" },
+            { "name": "metadata",
+              "type": "wix-blog-backend.Metadata_5490399625" },
+            { "name": "documentStyle",
+              "type": "wix-blog-backend.DocumentStyle_77601517520" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SeoSchema_9738697991",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "SEO data.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "tags",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.SeoSchema_Tag_6403344610" ] },
+              "doc": "SEO tags information." },
+            { "name": "settings",
+              "type": "wix-blog-backend.SeoSchema_Settings_3196499781",
+              "doc": "SEO general settings." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SeoSchema_Settings_3196499781",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "SEO general settings.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "preventAutoRedirect",
+              "type": "boolean",
+              "doc": "disable auto creation of 301 redirects on slug changes (enabled by default)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SeoSchema_Tag_6403344610",
+        "locations":
+          [ { "lineno": 16,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "type",
+              "type": "string",
+              "doc": "SEO tag type. Supported values: `title`, `meta`, `script`, `link`." },
+            { "name": "props",
+              "type": "Object",
+              "doc": "SEO tag attributes/properties (name, content, rel, href)." },
+            { "name": "meta",
+              "type": "Object",
+              "doc": "Tag meta data, e.g. {height: 300, width: 240}." },
+            { "name": "children",
+              "type": "string",
+              "doc": "Tag inner content e.g. `<title> inner content </title>`." },
+            { "name": "custom",
+              "type": "boolean",
+              "doc": "Whether the tag is a custom tag." },
+            { "name": "disabled",
+              "type": "boolean",
+              "doc": "Whether the tag is disabled." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Settings_Permissions_9459571820",
+        "locations":
+          [ { "lineno": 769,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "view",
+              "type": "string",
+              "doc": "One of:\n + `\"CREATOR\"`\n + `\"VOTERS\"`\n + `\"EVERYONE\"`" },
+            { "name": "vote",
+              "type": "string",
+              "doc": "One of:\n + `\"SITE_MEMBERS\"`\n + `\"ALL\"`" },
+            { "name": "allowMultipleVotes",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Sorting_7874645153",
+        "locations":
+          [ { "lineno": 138,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "fieldName",
+              "type": "string",
+              "doc": "Name of the field to sort by.",
+              "optional": true },
+            { "name": "order",
+              "type": "string",
+              "doc": "Sort order.\n\n Defaults to `ASC`.\nOne of:\n + `\"ASC\"`\n + `\"DESC\"`",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Struct_26415584452",
+        "locations":
+          [ { "lineno": 832,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "fields",
+              "type": "Object",
+              "doc": "Set of key-value pairs. Unordered map of dynamically typed values." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Styles_Border_2949656518",
+        "locations":
+          [ { "lineno": 197,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "width",
+              "type": "number",
+              "doc": "number of pixels" },
+            { "name": "radius",
+              "type": "number",
+              "doc": "number of pixels" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Styles_Colors_6252708352",
+        "locations":
+          [ { "lineno": 204,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "text",
+              "type": "string",
+              "doc": "hex color" },
+            { "name": "border",
+              "type": "string",
+              "doc": "hex color" },
+            { "name": "background",
+              "type": "string",
+              "doc": "hex color" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TableCellData_20392583239",
+        "locations":
+          [ { "lineno": 838,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "cellStyle",
+              "type": "wix-blog-backend.TableCellData_CellStyle_8447526124" },
+            { "name": "borderColors",
+              "type": "wix-blog-backend.TableCellData_BorderColors_9302897572" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TableCellData_BorderColors_9302897572",
+        "locations":
+          [ { "lineno": 845,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "left",
+              "type": "string" },
+            { "name": "right",
+              "type": "string" },
+            { "name": "top",
+              "type": "string" },
+            { "name": "bottom",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TableCellData_CellStyle_8447526124",
+        "locations":
+          [ { "lineno": 854,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "verticalAlignment",
+              "type": "string",
+              "doc": "One of:\n + `\"TOP\"`\n + `\"MIDDLE\"`\n + `\"BOTTOM\"`" },
+            { "name": "backgroundColor",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TableData_38504540797",
+        "locations":
+          [ { "lineno": 864,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "dimensions",
+              "type": "wix-blog-backend.TableData_Dimensions_2431057060" },
+            { "name": "header",
+              "type": "boolean" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TableData_Dimensions_2431057060",
+        "locations":
+          [ { "lineno": 872,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "colsWidthRatio",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "number" ] } },
+            { "name": "rowsHeight",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "number" ] } },
+            { "name": "colsMinWidth",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "number" ] } } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TextData_70531613750",
+        "locations":
+          [ { "lineno": 880,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "text",
+              "type": "string",
+              "doc": "Textual data" },
+            { "name": "decorations",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Decoration_68131066520" ] },
+              "doc": "List of decorations" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TextNodeStyle_70687623701",
+        "locations":
+          [ { "lineno": 887,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "decorations",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-blog-backend.Decoration_68131066520" ] } } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TextStyle_7500253246",
+        "locations":
+          [ { "lineno": 893,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "textAlignment",
+              "type": "string",
+              "doc": "One of:\n + `\"AUTO\"`\n + `\"LEFT\"`\n + `\"RIGHT\"`\n + `\"CENTER\"`\n + `\"JUSTIFY\"`" },
+            { "name": "lineHeight",
+              "type": "string",
+              "doc": "CSS value" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Value_26483387342",
+        "locations":
+          [ { "lineno": 905,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "`key` of type string, `value` of type object",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "nullValue",
+              "type": "string",
+              "doc": "Represents a null value.\nOne of:\n + `\"NULL_VALUE\"`",
+              "optional": true },
+            { "name": "numberValue",
+              "type": "number",
+              "doc": "Represents a double value.",
+              "optional": true },
+            { "name": "stringValue",
+              "type": "string",
+              "doc": "Represents a string value.",
+              "optional": true },
+            { "name": "boolValue",
+              "type": "boolean",
+              "doc": "Represents a boolean value.",
+              "optional": true },
+            { "name": "structValue",
+              "type": "wix-blog-backend.Struct_26415584452",
+              "optional": true },
+            { "name": "listValue",
+              "type": "wix-blog-backend.ListValue_24710570060",
+              "doc": "Represents a repeated `Value`.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "kind",
+                  "members":
+                    [ "boolValue",
+                      "listValue",
+                      "nullValue",
+                      "numberValue",
+                      "stringValue",
+                      "structValue" ] } ] },
+        "labels": [] },
+      { "name": "VideoData_57759307380",
+        "locations":
+          [ { "lineno": 920,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "containerData",
+              "type": "wix-blog-backend.PluginContainerData_31707594155" },
+            { "name": "video",
+              "type": "wix-blog-backend.Media_19648731753" },
+            { "name": "thumbnail",
+              "type": "wix-blog-backend.Media_19648731753" },
+            { "name": "disableDownload",
+              "type": "boolean" },
+            { "name": "title",
+              "type": "string" } ],
+        "extra":
+          {  },
+        "labels": [] } ],
+  "extra":
+    {  } }
