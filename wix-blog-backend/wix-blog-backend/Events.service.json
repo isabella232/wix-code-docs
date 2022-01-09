@@ -44,8 +44,7 @@
   "properties": [],
   "operations":
     [ { "name": "onCategoryCreated",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -111,8 +110,7 @@
         "extra":
           {  } },
       { "name": "onCategoryDeleted",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -160,8 +158,7 @@
         "extra":
           {  } },
       { "name": "onCategoryUpdated",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -367,8 +364,7 @@
         "extra":
           {  } },
       { "name": "onPostLiked",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -422,8 +418,7 @@
         "extra":
           {  } },
       { "name": "onPostUnliked",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -675,7 +670,7 @@
               "type": "string",
               "doc": "Expected `created`. Event name." },
             { "name": "createdEvent",
-              "type": "wix-blog-backend.CategoryEntityCreatedEvent",
+              "type": "wix-blog-backend.Events.CategoryEntityCreatedEvent",
               "doc": "Event Info" },
             { "name": "entityId",
               "type": "string",
@@ -748,8 +743,43 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
+        "labels": [] },
+      { "name": "CategoryEntityCreatedEvent",
+        "locations":
+          [ { "lineno": 315,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing created category event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "entityAsJson",
+              "type": "wix-blog-backend.Category",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
         "labels":
-          [ "changed" ] },
+          [ "new" ] },
+      { "name": "CategoryEntityUpdatedEvent",
+        "locations":
+          [ { "lineno": 322,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing updated category event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "currentEntityAsJson",
+              "type": "wix-blog-backend.Category",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "CategoryUpdated",
         "locations":
           [ { "lineno": 231,
@@ -818,7 +848,7 @@
               "type": "string",
               "doc": "Expected `updated`. Event name." },
             { "name": "updatedEvent",
-              "type": "CategoryEntityUpdatedEvent",
+              "type": "wix-blog-backend.Events.CategoryEntityUpdatedEvent",
               "doc": "Event Info" },
             { "name": "entityId",
               "type": "string",
@@ -898,69 +928,25 @@
           [ "removed" ] },
       { "name": "LikedPost",
         "locations":
-          [ { "lineno": 141,
+          [ { "lineno": 283,
               "filename": "events.js" } ],
         "docs":
-          { "summary": "An object representing the post that was liked.",
-            "links":
-              [ "[onPostLiked( )](#onPostLiked)" ],
-            "examples":
-              [ { "title": "A backend event that occurs when an existing post is liked",
-                  "body":
-                    [ "// Place this code in the events.js file",
-                      "// of your site's Backend section.",
-                      "// Add the file if it doesn't exist.",
-                      "",
-                      "export function wixBlog_onPostLiked(event) {",
-                      "  console.log('wixBlog_onPostLiked', event);",
-                      "  console.log('Liked post id', event.actionEvent.bodyAsJson.postId);",
-                      "}",
-                      "",
-                      "/*  Full event object:",
-                      " *  {",
-                      " *    \"entityId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
-                      " *    \"actionEvent\": {",
-                      " *      \"bodyAsJson\": {",
-                      " *        \"postId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
-                      " *        \"memberId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8d84c\"",
-                      " *      }",
-                      " *    },",
-                      " *    \"slug\": \"liked\",",
-                      " *    \"id\": \"7626b90d-9516-4530-bb48-81af66a5f023\",",
-                      " *    \"entityFqdn\": \"wix.blog.post\",",
-                      " *    \"eventTime\": \"2021-03-02T08:40:55.512Z\",",
-                      " *    \"triggeredByAnonymizeRequest\": false",
-                      " *  }",
-                      " */" ],
-                  "extra":
-                    {  } } ],
+          { "summary": "An object representing liked post.",
+            "links": [],
+            "examples": [],
             "extra":
               {  } },
         "members":
-          [ { "name": "id",
+          [ { "name": "postId",
               "type": "string",
-              "doc": "Unique event ID." },
-            { "name": "entityFqdn",
-              "type": "string",
-              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
-            { "name": "slug",
-              "type": "string",
-              "doc": "Expected `liked`. Event name." },
-            { "type": "void" },
-            { "name": "entityId",
-              "type": "string",
-              "doc": "PostLiked ID associated with this event." },
-            { "name": "eventTime",
-              "type": "string",
-              "doc": "Event timestamp." },
-            { "name": "triggeredByAnonymizeRequest",
-              "type": "boolean",
-              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+              "doc": "ID of the liked post." },
+            { "name": "initiator",
+              "type": "wix-blog-backend.Events.PostLikedInitiator",
+              "doc": "ID of a person who liked the post" } ],
         "extra":
           {  },
         "labels":
-          [ "changed",
-            "removed" ] },
+          [ "new" ] },
       { "name": "Location",
         "locations":
           [ { "lineno": 1,
@@ -1249,7 +1235,7 @@
               "type": "string",
               "doc": "Expected `created`. Event name." },
             { "name": "createdEvent",
-              "type": "wix-blog-backend.PostEntityCreatedEvent",
+              "type": "wix-blog-backend.Events.PostEntityCreatedEvent",
               "doc": "Event Info" },
             { "name": "eventTime",
               "type": "string",
@@ -1320,6 +1306,42 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "PostEntityCreatedEvent",
+        "locations":
+          [ { "lineno": 329,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing created post event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "entityAsJson",
+              "type": "wix-blog-backend.Post",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "PostEntityUpdatedEvent",
+        "locations":
+          [ { "lineno": 336,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing updated post event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "currentEntityAsJson",
+              "type": "wix-blog-backend.Post",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PostLiked",
         "locations":
           [ { "lineno": 141,
@@ -1384,6 +1406,23 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
+        "labels": [] },
+      { "name": "PostLikedActionEvent",
+        "locations":
+          [ { "lineno": 276,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing liked post event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "bodyAsJson",
+              "type": "wix-blog-backend.Events.LikedPost",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
         "labels":
           [ "new" ] },
       { "name": "PostLikedDomainEvent",
@@ -1415,10 +1454,10 @@
           [ "removed" ] },
       { "name": "PostLikedInitiator",
         "locations":
-          [ { "lineno": 84,
-              "filename": "post.js" } ],
+          [ { "lineno": 291,
+              "filename": "events.js" } ],
         "docs":
-          { "summary": "An object representing initiator.",
+          { "summary": "An object representing post like initiator.",
             "links": [],
             "examples": [],
             "extra":
@@ -1439,7 +1478,7 @@
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
         "labels":
-          [ "removed" ] },
+          [ "new" ] },
       { "name": "PostUnliked",
         "locations":
           [ { "lineno": 171,
@@ -1502,6 +1541,23 @@
             { "name": "triggeredByAnonymizeRequest",
               "type": "boolean",
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PostUnlikedActionEvent",
+        "locations":
+          [ { "lineno": 301,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing unliked post event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "bodyAsJson",
+              "type": "wix-blog-backend.Events.UnlikedPost",
+              "doc": "Event body as a stringified JSON" } ],
         "extra":
           {  },
         "labels":
@@ -1590,7 +1646,7 @@
               "type": "string",
               "doc": "Expected `updated`. Event name." },
             { "name": "updatedEvent",
-              "type": "wix-blog-backend.PostEntityUpdatedEvent",
+              "type": "wix-blog-backend.Events.PostEntityUpdatedEvent",
               "doc": "Event Info" },
             { "name": "entityId",
               "type": "string",
@@ -1716,69 +1772,22 @@
           [ "removed" ] },
       { "name": "UnlikedPost",
         "locations":
-          [ { "lineno": 171,
+          [ { "lineno": 308,
               "filename": "events.js" } ],
         "docs":
-          { "summary": "An object representing the post that was unliked.",
-            "links":
-              [ "[onPostUnliked( )](#onPostUnliked)" ],
-            "examples":
-              [ { "title": "A backend event that occurs when an existing post is unliked",
-                  "body":
-                    [ "// Place this code in the events.js file",
-                      "// of your site's Backend section.",
-                      "// Add the file if it doesn't exist.",
-                      "",
-                      "export function wixBlog_onPostLiked(event) {",
-                      "  console.log('wixBlog_onPostLiked', event);",
-                      "  console.log('Liked post id', event.actionEvent.bodyAsJson.postId);",
-                      "}",
-                      "",
-                      "/*  Full event object:",
-                      " *  {",
-                      " *    \"entityId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
-                      " *    \"actionEvent\": {",
-                      " *      \"bodyAsJson\": {",
-                      " *        \"postId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
-                      " *        \"memberId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8d84c\"",
-                      " *      }",
-                      " *    },",
-                      " *    \"slug\": \"liked\",",
-                      " *    \"id\": \"7626b90d-9516-4530-bb48-81af66a5f023\",",
-                      " *    \"entityFqdn\": \"wix.blog.post\",",
-                      " *    \"eventTime\": \"2021-03-02T08:40:55.512Z\",",
-                      " *    \"triggeredByAnonymizeRequest\": false",
-                      " *  }",
-                      " */" ],
-                  "extra":
-                    {  } } ],
+          { "summary": "An object representing unliked post.",
+            "links": [],
+            "examples": [],
             "extra":
               {  } },
         "members":
-          [ { "name": "id",
+          [ { "name": "postId",
               "type": "string",
-              "doc": "Unique event ID." },
-            { "name": "entityFqdn",
-              "type": "string",
-              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
-            { "name": "slug",
-              "type": "string",
-              "doc": "Expected `unliked`. Event name." },
-            { "type": "void" },
-            { "name": "entityId",
-              "type": "string",
-              "doc": "PostUnliked ID associated with this event." },
-            { "name": "eventTime",
-              "type": "string",
-              "doc": "Event timestamp." },
-            { "name": "triggeredByAnonymizeRequest",
-              "type": "boolean",
-              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+              "doc": "ID of the unliked post." } ],
         "extra":
           {  },
         "labels":
-          [ "changed",
-            "removed" ] },
+          [ "new" ] },
       { "name": "Video",
         "locations":
           [ { "lineno": 22,
