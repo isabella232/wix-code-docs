@@ -1,6 +1,7 @@
 { "name": "wix-blog-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -459,7 +460,7 @@
   "messages":
     [ { "name": "AnchorData",
         "locations":
-          [ { "lineno": 156,
+          [ { "lineno": 150,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -490,7 +491,7 @@
           [ "removed" ] },
       { "name": "AppEmbedData",
         "locations":
-          [ { "lineno": 162,
+          [ { "lineno": 156,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -559,7 +560,7 @@
           [ "removed" ] },
       { "name": "AppEmbedData_BookingData",
         "locations":
-          [ { "lineno": 178,
+          [ { "lineno": 172,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -590,7 +591,7 @@
           [ "removed" ] },
       { "name": "AppEmbedData_EventData",
         "locations":
-          [ { "lineno": 184,
+          [ { "lineno": 178,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -625,7 +626,7 @@
           [ "removed" ] },
       { "name": "Background_Gradient",
         "locations":
-          [ { "lineno": 723,
+          [ { "lineno": 717,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -709,7 +710,7 @@
           [ "removed" ] },
       { "name": "ButtonData",
         "locations":
-          [ { "lineno": 191,
+          [ { "lineno": 185,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -758,7 +759,7 @@
           [ "removed" ] },
       { "name": "ButtonData_Styles",
         "locations":
-          [ { "lineno": 218,
+          [ { "lineno": 212,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -796,96 +797,8 @@
           [ { "lineno": 53,
               "filename": "shared.js" } ],
         "docs":
-          { "summary": "An object representing post category.",
-            "links": [],
-            "examples":
-              [ { "title": "A backend event that occurs when a new category is created",
-                  "body":
-                    [ "// Place this code in the events.js file",
-                      "// of your site's Backend section.",
-                      "// Add the file if it doesn't exist.",
-                      "",
-                      "export function wixBlog_onCategoryCreated(event: CategoryCreated) {",
-                      "  console.log('wixBlog_onCategoryCreated', event);",
-                      "  console.log('Created category label', event.createdEvent.entityAsJson.label);",
-                      "}",
-                      "",
-                      "/*  Full event object:",
-                      " *  {",
-                      " *    \"entityId\": \"71d1ead7-a341-4853-8f32-d5534e274473\",",
-                      " *    \"slug\": \"created\",",
-                      " *    \"id\": \"0002d822-bcf6-473f-8879-d913b788fd3c\",",
-                      " *    \"createdEvent\": {",
-                      " *      \"entityAsJson\": {",
-                      " *        \"id\": \"71d1ead7-a341-4853-8f32-d5534e274473\",",
-                      " *        \"label\": \"Membership Posts\",",
-                      " *        \"url\": {",
-                      " *          \"base\": \"https://www.darlingmagnolia.com\",",
-                      " *          \"path\": \"/blog/categories/membership-posts\"",
-                      " *        },",
-                      " *        \"description\": \"Exclusive Membership blog posts\",",
-                      " *        \"coverMedia\": {",
-                      " *          \"enabled\": true,",
-                      " *          \"displayed\": true",
-                      " *        },",
-                      " *        \"rank\": 4,",
-                      " *        \"slug\": \"membership\",",
-                      " *        \"language\": \"en\"",
-                      " *      },",
-                      " *      \"triggeredByUndelete\": false",
-                      " *    },",
-                      " *    \"entityFqdn\": \"wix.blog.v3.category\",",
-                      " *    \"eventTime\": \"2021-03-02T10:24:16.556Z\"",
-                      " *  }",
-                      " */" ],
-                  "extra":
-                    {  } },
-                { "title": "A backend event that occurs when an existing category is updated",
-                  "body":
-                    [ "// Place this code in the events.js file",
-                      "// of your site's Backend section.",
-                      "// Add the file if it doesn't exist.",
-                      "",
-                      "export function wixBlog_onCategoryUpdated(event: CategoryUpdated) {",
-                      "  console.log('wixBlog_onCategoryUpdated', event);",
-                      "  console.log('Updated category label', event.updatedEvent.currentEntityAsJson.label);",
-                      "}",
-                      "",
-                      "/*  Full event object:",
-                      " *  {",
-                      " *    \"entityId\": \"8c9bddc8-fd73-44de-8e49-441534b86e55\",",
-                      " *    \"slug\": \"updated\",",
-                      " *    \"id\": \"2a2aab57-dfb0-434b-94e0-5785d2c3ab7f\",",
-                      " *    \"entityFqdn\": \"wix.blog.v3.category\",",
-                      " *    \"updatedEvent\": {",
-                      " *      \"currentEntityAsJson\": {",
-                      " *        \"id\": \"8c9bddc8-fd73-44de-8e49-441534b86e55\",",
-                      " *        \"label\": \"INTERNSHIP\",",
-                      " *        \"url\": {",
-                      " *          \"base\": \"https://patwebsite651.wixsite.com/my-site\",",
-                      " *          \"path\": \"/news/categories/internship\"",
-                      " *        },",
-                      " *        \"coverMedia\": {",
-                      " *          \"enabled\": true,",
-                      " *          \"image\": {",
-                      " *            \"id\": \"11062b_a98c4b8d0dc843aca9b8d55c3bb5c4a6~mv2.jpg\",",
-                      " *            \"url\": \"https://static.wixstatic.com/media/11062b_a98c4b8d0dc843aca9b8d55c3bb5c4a6~mv2.jpg\",",
-                      " *            \"height\": 3337,",
-                      " *            \"width\": 5000",
-                      " *          },",
-                      " *          \"displayed\": true",
-                      " *        },",
-                      " *        \"rank\": 0,",
-                      " *        \"slug\": \"membership\",",
-                      " *        \"language\": \"en\"",
-                      " *      }",
-                      " *    },",
-                      " *    \"eventTime\": \"2021-03-02T10:24:22.659Z\",",
-                      " *    \"triggeredByAnonymizeRequest\": false",
-                      " *  }",
-                      " */" ],
-                  "extra":
-                    {  } } ],
+          { "links": [],
+            "examples": [],
             "extra":
               {  } },
         "members":
@@ -927,7 +840,44 @@
               "doc": "Legacy mongo id used by analytics and db driver." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
+      { "name": "CategoryEntityCreatedEvent",
+        "locations":
+          [ { "lineno": 315,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing created category event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "entityAsJson",
+              "type": "wix-blog-backend.Category",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "CategoryEntityUpdatedEvent",
+        "locations":
+          [ { "lineno": 322,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing updated category event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "currentEntityAsJson",
+              "type": "wix-blog-backend.Category",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Category_40509540199",
         "locations":
           [ { "lineno": 53,
@@ -980,7 +930,7 @@
           [ "removed" ] },
       { "name": "CodeBlockData",
         "locations":
-          [ { "lineno": 225,
+          [ { "lineno": 219,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1011,7 +961,7 @@
           [ "removed" ] },
       { "name": "CollapsibleListData",
         "locations":
-          [ { "lineno": 231,
+          [ { "lineno": 225,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1058,7 +1008,7 @@
           [ "removed" ] },
       { "name": "ColorData",
         "locations":
-          [ { "lineno": 245,
+          [ { "lineno": 239,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1142,7 +1092,7 @@
           [ "removed" ] },
       { "name": "Decoration",
         "locations":
-          [ { "lineno": 252,
+          [ { "lineno": 246,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1243,7 +1193,7 @@
           [ "removed" ] },
       { "name": "Design_OptionDesign",
         "locations":
-          [ { "lineno": 744,
+          [ { "lineno": 738,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1274,7 +1224,7 @@
           [ "removed" ] },
       { "name": "Design_PollDesign",
         "locations":
-          [ { "lineno": 750,
+          [ { "lineno": 744,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1309,7 +1259,7 @@
           [ "removed" ] },
       { "name": "DividerData",
         "locations":
-          [ { "lineno": 278,
+          [ { "lineno": 272,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1358,7 +1308,7 @@
           [ "removed" ] },
       { "name": "DocumentStyle",
         "locations":
-          [ { "lineno": 297,
+          [ { "lineno": 291,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1413,7 +1363,7 @@
           [ "removed" ] },
       { "name": "EmbedData",
         "locations":
-          [ { "lineno": 309,
+          [ { "lineno": 303,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1452,7 +1402,7 @@
           [ "removed" ] },
       { "name": "FileData",
         "locations":
-          [ { "lineno": 317,
+          [ { "lineno": 311,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1499,7 +1449,7 @@
           [ "removed" ] },
       { "name": "FileSource",
         "locations":
-          [ { "lineno": 327,
+          [ { "lineno": 321,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1554,7 +1504,7 @@
           [ "removed" ] },
       { "name": "FontSizeData",
         "locations":
-          [ { "lineno": 336,
+          [ { "lineno": 330,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1591,7 +1541,7 @@
           [ "removed" ] },
       { "name": "GIF",
         "locations":
-          [ { "lineno": 345,
+          [ { "lineno": 339,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "original gif",
@@ -1611,7 +1561,7 @@
         "labels": [] },
       { "name": "GIFData",
         "locations":
-          [ { "lineno": 354,
+          [ { "lineno": 348,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1683,7 +1633,7 @@
           [ "removed" ] },
       { "name": "GalleryData",
         "locations":
-          [ { "lineno": 364,
+          [ { "lineno": 358,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1736,7 +1686,7 @@
           [ "removed" ] },
       { "name": "GalleryData_Item",
         "locations":
-          [ { "lineno": 388,
+          [ { "lineno": 382,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1791,7 +1741,7 @@
           [ "removed" ] },
       { "name": "GalleryOptions",
         "locations":
-          [ { "lineno": 398,
+          [ { "lineno": 392,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1830,7 +1780,7 @@
           [ "removed" ] },
       { "name": "GalleryOptions_ItemStyle",
         "locations":
-          [ { "lineno": 406,
+          [ { "lineno": 400,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1875,7 +1825,7 @@
           [ "removed" ] },
       { "name": "GalleryOptions_Layout",
         "locations":
-          [ { "lineno": 417,
+          [ { "lineno": 411,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -1926,7 +1876,7 @@
           [ "removed" ] },
       { "name": "GalleryOptions_Thumbnails",
         "locations":
-          [ { "lineno": 439,
+          [ { "lineno": 433,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2157,7 +2107,7 @@
           [ "removed" ] },
       { "name": "HTMLData",
         "locations":
-          [ { "lineno": 451,
+          [ { "lineno": 445,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2208,7 +2158,7 @@
           [ "removed" ] },
       { "name": "HeadingData",
         "locations":
-          [ { "lineno": 460,
+          [ { "lineno": 454,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2247,7 +2197,7 @@
           [ "removed" ] },
       { "name": "Image",
         "locations":
-          [ { "lineno": 122,
+          [ { "lineno": 116,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Image details.",
@@ -2285,7 +2235,7 @@
         "labels": [] },
       { "name": "ImageData",
         "locations":
-          [ { "lineno": 468,
+          [ { "lineno": 462,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2379,7 +2329,7 @@
           [ "removed" ] },
       { "name": "Item_Image",
         "locations":
-          [ { "lineno": 374,
+          [ { "lineno": 368,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2414,7 +2364,7 @@
           [ "removed" ] },
       { "name": "Item_Video",
         "locations":
-          [ { "lineno": 381,
+          [ { "lineno": 375,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2449,7 +2399,7 @@
           [ "removed" ] },
       { "name": "Layout_OptionLayout",
         "locations":
-          [ { "lineno": 757,
+          [ { "lineno": 751,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2480,7 +2430,7 @@
           [ "removed" ] },
       { "name": "Layout_PollLayout",
         "locations":
-          [ { "lineno": 763,
+          [ { "lineno": 757,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2521,9 +2471,30 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "LikedPost",
+        "locations":
+          [ { "lineno": 283,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing liked post.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "postId",
+              "type": "string",
+              "doc": "ID of the liked post." },
+            { "name": "initiator",
+              "type": "wix-blog-backend.PostLikedInitiator",
+              "doc": "ID of a person who liked the post" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Link",
         "locations":
-          [ { "lineno": 480,
+          [ { "lineno": 474,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2555,7 +2526,7 @@
         "labels": [] },
       { "name": "LinkData",
         "locations":
-          [ { "lineno": 495,
+          [ { "lineno": 489,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2586,7 +2557,7 @@
           [ "removed" ] },
       { "name": "LinkPreviewData",
         "locations":
-          [ { "lineno": 501,
+          [ { "lineno": 495,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2670,7 +2641,7 @@
           [ "removed" ] },
       { "name": "Link_Rel",
         "locations":
-          [ { "lineno": 512,
+          [ { "lineno": 506,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2840,7 +2811,7 @@
           [ "removed" ] },
       { "name": "ListValue",
         "locations":
-          [ { "lineno": 520,
+          [ { "lineno": 514,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Represents a repeated `Value`.",
@@ -2881,7 +2852,7 @@
           [ "removed" ] },
       { "name": "MapData",
         "locations":
-          [ { "lineno": 527,
+          [ { "lineno": 521,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -2916,7 +2887,7 @@
           [ "removed" ] },
       { "name": "MapSettings",
         "locations":
-          [ { "lineno": 534,
+          [ { "lineno": 528,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3001,7 +2972,7 @@
           [ "removed" ] },
       { "name": "Media",
         "locations":
-          [ { "lineno": 554,
+          [ { "lineno": 548,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3044,7 +3015,7 @@
           [ "removed" ] },
       { "name": "MentionData",
         "locations":
-          [ { "lineno": 563,
+          [ { "lineno": 557,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3126,7 +3097,7 @@
           [ "removed" ] },
       { "name": "Metadata",
         "locations":
-          [ { "lineno": 570,
+          [ { "lineno": 564,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3175,7 +3146,7 @@
           [ "removed" ] },
       { "name": "Metrics",
         "locations":
-          [ { "lineno": 73,
+          [ { "lineno": 70,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Post metrics.",
@@ -3222,7 +3193,7 @@
           [ "removed" ] },
       { "name": "Node",
         "locations":
-          [ { "lineno": 579,
+          [ { "lineno": 573,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3335,7 +3306,7 @@
         "labels": [] },
       { "name": "NodeStyle",
         "locations":
-          [ { "lineno": 640,
+          [ { "lineno": 634,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3488,7 +3459,7 @@
           [ "removed" ] },
       { "name": "Oembed",
         "locations":
-          [ { "lineno": 648,
+          [ { "lineno": 642,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3575,7 +3546,7 @@
           [ "removed" ] },
       { "name": "PageUrl",
         "locations":
-          [ { "lineno": 136,
+          [ { "lineno": 130,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Post URL.",
@@ -3616,7 +3587,7 @@
           [ "removed" ] },
       { "name": "ParagraphData",
         "locations":
-          [ { "lineno": 668,
+          [ { "lineno": 662,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3651,7 +3622,7 @@
           [ "removed" ] },
       { "name": "PluginContainerData",
         "locations":
-          [ { "lineno": 675,
+          [ { "lineno": 669,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3700,7 +3671,7 @@
           [ "removed" ] },
       { "name": "PluginContainerData_Height",
         "locations":
-          [ { "lineno": 688,
+          [ { "lineno": 682,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3731,7 +3702,7 @@
           [ "removed" ] },
       { "name": "PluginContainerData_Spoiler",
         "locations":
-          [ { "lineno": 694,
+          [ { "lineno": 688,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3770,7 +3741,7 @@
           [ "removed" ] },
       { "name": "PluginContainerData_Width",
         "locations":
-          [ { "lineno": 702,
+          [ { "lineno": 696,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3819,7 +3790,7 @@
           [ "removed" ] },
       { "name": "PollData",
         "locations":
-          [ { "lineno": 714,
+          [ { "lineno": 708,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3862,7 +3833,7 @@
           [ "removed" ] },
       { "name": "PollData_Design",
         "locations":
-          [ { "lineno": 804,
+          [ { "lineno": 798,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3897,7 +3868,7 @@
           [ "removed" ] },
       { "name": "PollData_Layout",
         "locations":
-          [ { "lineno": 811,
+          [ { "lineno": 805,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3932,7 +3903,7 @@
           [ "removed" ] },
       { "name": "PollData_Poll",
         "locations":
-          [ { "lineno": 818,
+          [ { "lineno": 812,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -3989,7 +3960,7 @@
           [ "removed" ] },
       { "name": "PollDesign_Background",
         "locations":
-          [ { "lineno": 731,
+          [ { "lineno": 725,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4050,7 +4021,7 @@
           [ "removed" ] },
       { "name": "Poll_Option",
         "locations":
-          [ { "lineno": 788,
+          [ { "lineno": 782,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4089,7 +4060,7 @@
           [ "removed" ] },
       { "name": "Poll_Settings",
         "locations":
-          [ { "lineno": 796,
+          [ { "lineno": 790,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4128,136 +4099,11 @@
           [ "removed" ] },
       { "name": "Post",
         "locations":
-          [ { "lineno": 82,
+          [ { "lineno": 79,
               "filename": "shared.js" } ],
         "docs":
-          { "summary": "An object representing blog post.",
-            "links": [],
-            "examples":
-              [ { "title": "A backend event that occurs when a new post is created",
-                  "body":
-                    [ "// Place this code in the events.js file",
-                      "// of your site's Backend section.",
-                      "// Add the file if it doesn't exist.",
-                      "",
-                      "export function wixBlog_onPostCreated(event) {",
-                      "  console.log('wixBlog_onPostCreated', event);",
-                      "  console.log('Created post title', event.createdEvent.entityAsJson.title);",
-                      "}",
-                      "",
-                      "/*  Full event object:",
-                      "{",
-                      " *    \"entityId\": \"3bceaccb-ddfc-4078-84bf-50699b4d3f83\",",
-                      " *    \"slug\": \"created\",",
-                      " *    \"id\": \"1d034196-3347-4a66-988a-3f30d7e51b9d\",",
-                      " *    \"createdEvent\": {",
-                      " *      \"entityAsJson\": {",
-                      " *        \"id\": \"3bceaccb-ddfc-4078-84bf-50699b4d3f83\",",
-                      " *        \"title\": \"MANCHURIAN CANDIDATE\",",
-                      " *        \"excerpt\": \"By sacrificing Stormy, you made available the power of the storm. So, when a position is available... you take it, if it’s to your liking...\",",
-                      " *        \"firstPublishedDate\": \"2021-03-02T08:40:54.354Z\",",
-                      " *        \"lastPublishedDate\": \"2021-03-02T08:40:54.354Z\",",
-                      " *        \"url\": {",
-                      " *          \"base\": \"https://www.brooyetti.com\",",
-                      " *          \"path\": \"/post/manchurian-candidate\"",
-                      " *        },",
-                      " *        \"slug\": \"manchurian-candidate\",",
-                      " *        \"featured\": false,",
-                      " *        \"pinned\": false,",
-                      " *        \"categoryIds\": [],",
-                      " *        \"coverMedia\": {",
-                      " *          \"enabled\": true,",
-                      " *          \"image\": {",
-                      " *            \"id\": \"1a245d_98065284cc0c4b16a72f8397d817eef9~mv2.png\",",
-                      " *            \"url\": \"https://static.wixstatic.com/media/1a245d_98065284cc0c4b16a72f8397d817eef9~mv2.png\",",
-                      " *            \"height\": 1606,",
-                      " *            \"width\": 2728",
-                      " *          },",
-                      " *          \"displayed\": true",
-                      " *        },",
-                      " *        \"memberId\": \"1a245d8a-a400-4b37-9e20-88171beab277\",",
-                      " *        \"hashtags\": [],",
-                      " *        \"commentingEnabled\": true,",
-                      " *        \"minutesToRead\": 2,",
-                      " *        \"tagIds\": [],",
-                      " *        \"pricingPlans\": [],",
-                      " *        \"relatedPostIds\": [],",
-                      " *        \"pricingPlanIds\": [],",
-                      " *        \"language\": \"en\",",
-                      " *        \"contactId\": \"8e9a7c84-07d9-439d-b715-70f005fa777d\",",
-                      " *        \"contentId\": \"61bc963c03df920016f3c2ce\",",
-                      " *        \"mostRecentContributorId\": \"1a245d8a-a400-4b37-9e20-88171beab277\"",
-                      " *      },",
-                      " *      \"triggeredByUndelete\": false",
-                      " *    },",
-                      " *    \"entityFqdn\": \"wix.blog.post\",",
-                      " *    \"eventTime\": \"2021-03-02T08:40:54.448Z\"",
-                      " *  }",
-                      " */" ],
-                  "extra":
-                    {  } },
-                { "title": "A backend event that occurs when an existing post is updated",
-                  "body":
-                    [ "// Place this code in the events.js file",
-                      "// of your site's Backend section.",
-                      "// Add the file if it doesn't exist.",
-                      "",
-                      "export function wixBlog_onPostUpdated(event) {",
-                      "  console.log('wixBlog_onPostUpdated', event);",
-                      "  console.log('Updated post title', event.updatedEvent.currentEntityAsJson.title);",
-                      "}",
-                      "",
-                      "/*  Full event object:",
-                      " *  {",
-                      " *    \"entityId\": \"75e7fa83-91fc-4501-b711-c9da7527df14\",",
-                      " *    \"slug\": \"updated\",",
-                      " *    \"id\": \"e390b383-ed1f-4466-8981-ef7bdd9963a0\",",
-                      " *    \"entityFqdn\": \"wix.blog.post\",",
-                      " *    \"updatedEvent\": {",
-                      " *      \"currentEntityAsJson\": {",
-                      " *        \"id\": \"75e7fa83-91fc-4501-b711-c9da7527df14\",",
-                      " *        \"title\": \"Healthy Skin\",",
-                      " *        \"excerpt\": \"For a long time, it has been thought that the look of our skin and the way we eat are two completely unrelated elements of our bodily wel...\",",
-                      " *        \"firstPublishedDate\": \"2021-01-23T12:16:28.403Z\",",
-                      " *        \"lastPublishedDate\": \"2021-03-02T08:40:52.182Z\",",
-                      " *        \"url\": {",
-                      " *          \"base\": \"https://www.beroot.co.uk\",",
-                      " *          \"path\": \"/post/healthy-skin\"",
-                      " *        },",
-                      " *        \"slug\": \"healthy-skin\",",
-                      " *        \"featured\": false,",
-                      " *        \"pinned\": false,",
-                      " *        \"categoryIds\": [],",
-                      " *        \"coverMedia\": {",
-                      " *          \"enabled\": true,",
-                      " *          \"image\": {",
-                      " *            \"id\": \"11062b_1881ef79d05e480fbc827c4de0e63bd6~mv2.jpg\",",
-                      " *            \"url\": \"https://static.wixstatic.com/media/11062b_1881ef79d05e480fbc827c4de0e63bd6~mv2.jpg\",",
-                      " *            \"height\": 3941,",
-                      " *            \"width\": 5906",
-                      " *          },",
-                      " *          \"displayed\": true",
-                      " *        },",
-                      " *        \"memberId\": \"0d8e7313-85a4-43b4-9954-b0c23ef9b104\",",
-                      " *        \"hashtags\": [],",
-                      " *        \"commentingEnabled\": true,",
-                      " *        \"minutesToRead\": 3,",
-                      " *        \"tagIds\": [],",
-                      " *        \"pricingPlans\": [],",
-                      " *        \"relatedPostIds\": [],",
-                      " *        \"pricingPlanIds\": [],",
-                      " *        \"language\": \"en\",",
-                      " *        \"contactId\": \"8e9a7c84-07d9-439d-b715-70f005fa777d\",",
-                      " *        \"contentId\": \"61bc9664369c130016f6192c\",",
-                      " *        \"mostRecentContributorId\": \"0d8e7313-85a4-43b4-9954-b0c23ef9b104\"",
-                      " *      }",
-                      " *    },",
-                      " *    \"eventTime\": \"2021-03-02T08:40:52.287Z\",",
-                      " *    \"triggeredByAnonymizeRequest\": false",
-                      " *  }",
-                      " */" ],
-                  "extra":
-                    {  } } ],
+          { "links": [],
+            "examples": [],
             "extra":
               {  } },
         "members":
@@ -4377,7 +4223,62 @@
               "doc": "Legacy mongo ids used for related post mapping" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
+      { "name": "PostEntityCreatedEvent",
+        "locations":
+          [ { "lineno": 329,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing created post event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "entityAsJson",
+              "type": "wix-blog-backend.Post",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "PostEntityUpdatedEvent",
+        "locations":
+          [ { "lineno": 336,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing updated post event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "currentEntityAsJson",
+              "type": "wix-blog-backend.Post",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
+      { "name": "PostLikedActionEvent",
+        "locations":
+          [ { "lineno": 276,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing liked post event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "bodyAsJson",
+              "type": "wix-blog-backend.LikedPost",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PostLikedDomainEvent",
         "locations":
           [ { "lineno": 936,
@@ -4432,44 +4333,16 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "PostLikedInitiator",
         "locations":
-          [ { "lineno": 947,
-              "filename": "shared.js" } ],
+          [ { "lineno": 291,
+              "filename": "events.js" } ],
         "docs":
-          { "summary": "An object representing initiator.",
+          { "summary": "An object representing post like initiator.",
             "links": [],
-            "examples":
-              [ { "title": "A backend event that occurs when an existing post is liked",
-                  "body":
-                    [ "// Place this code in the events.js file",
-                      "// of your site's Backend section.",
-                      "// Add the file if it doesn't exist.",
-                      "",
-                      "export function wixBlog_onPostLiked(event) {",
-                      "  console.log('wixBlog_onPostLiked', event);",
-                      "  console.log('Liked post id', event.actionEvent.bodyAsJson.postId);",
-                      "}",
-                      "",
-                      "/*  Full event object:",
-                      " *  {",
-                      " *    \"entityId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
-                      " *    \"actionEvent\": {",
-                      " *      \"bodyAsJson\": {",
-                      " *        \"postId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
-                      " *        \"memberId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8d84c\"",
-                      " *      }",
-                      " *    },",
-                      " *    \"slug\": \"liked\",",
-                      " *    \"id\": \"7626b90d-9516-4530-bb48-81af66a5f023\",",
-                      " *    \"entityFqdn\": \"wix.blog.post\",",
-                      " *    \"eventTime\": \"2021-03-02T08:40:55.512Z\",",
-                      " *    \"triggeredByAnonymizeRequest\": false",
-                      " *  }",
-                      " */" ],
-                  "extra":
-                    {  } } ],
+            "examples": [],
             "extra":
               {  } },
         "members":
@@ -4487,7 +4360,26 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
+      { "name": "PostUnlikedActionEvent",
+        "locations":
+          [ { "lineno": 301,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing unliked post event info.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "bodyAsJson",
+              "type": "wix-blog-backend.UnlikedPost",
+              "doc": "Event body as a stringified JSON" } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Post_660054615571",
         "locations":
           [ { "lineno": 79,
@@ -4736,7 +4628,7 @@
           [ "removed" ] },
       { "name": "RichContent",
         "locations":
-          [ { "lineno": 829,
+          [ { "lineno": 823,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Post rich content",
@@ -4930,7 +4822,7 @@
           [ "removed" ] },
       { "name": "Settings_Permissions",
         "locations":
-          [ { "lineno": 775,
+          [ { "lineno": 769,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -4973,7 +4865,7 @@
           [ "removed" ] },
       { "name": "Sorting",
         "locations":
-          [ { "lineno": 144,
+          [ { "lineno": 138,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5016,7 +4908,7 @@
           [ "removed" ] },
       { "name": "Struct",
         "locations":
-          [ { "lineno": 838,
+          [ { "lineno": 832,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5049,7 +4941,7 @@
           [ "removed" ] },
       { "name": "Styles_Border",
         "locations":
-          [ { "lineno": 203,
+          [ { "lineno": 197,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5088,7 +4980,7 @@
           [ "removed" ] },
       { "name": "Styles_Colors",
         "locations":
-          [ { "lineno": 210,
+          [ { "lineno": 204,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5133,7 +5025,7 @@
           [ "removed" ] },
       { "name": "TableCellData",
         "locations":
-          [ { "lineno": 844,
+          [ { "lineno": 838,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5168,7 +5060,7 @@
           [ "removed" ] },
       { "name": "TableCellData_BorderColors",
         "locations":
-          [ { "lineno": 851,
+          [ { "lineno": 845,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5211,7 +5103,7 @@
           [ "removed" ] },
       { "name": "TableCellData_CellStyle",
         "locations":
-          [ { "lineno": 860,
+          [ { "lineno": 854,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5248,7 +5140,7 @@
           [ "removed" ] },
       { "name": "TableData",
         "locations":
-          [ { "lineno": 870,
+          [ { "lineno": 864,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5287,7 +5179,7 @@
           [ "removed" ] },
       { "name": "TableData_Dimensions",
         "locations":
-          [ { "lineno": 878,
+          [ { "lineno": 872,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5344,7 +5236,7 @@
           [ "removed" ] },
       { "name": "TextData",
         "locations":
-          [ { "lineno": 886,
+          [ { "lineno": 880,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5389,7 +5281,7 @@
           [ "removed" ] },
       { "name": "TextNodeStyle",
         "locations":
-          [ { "lineno": 893,
+          [ { "lineno": 887,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5426,7 +5318,7 @@
           [ "removed" ] },
       { "name": "TextStyle",
         "locations":
-          [ { "lineno": 899,
+          [ { "lineno": 893,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -5463,9 +5355,27 @@
           {  },
         "labels":
           [ "removed" ] },
+      { "name": "UnlikedPost",
+        "locations":
+          [ { "lineno": 308,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing unliked post.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "postId",
+              "type": "string",
+              "doc": "ID of the unliked post." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Value",
         "locations":
-          [ { "lineno": 911,
+          [ { "lineno": 905,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "`key` of type string, `value` of type object",
@@ -5556,7 +5466,7 @@
           [ "removed" ] },
       { "name": "VideoData",
         "locations":
-          [ { "lineno": 926,
+          [ { "lineno": 920,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],

@@ -71,7 +71,7 @@
                       "// of your site's Backend section.",
                       "// Add the file if it doesn't exist.",
                       "",
-                      "export function wixBlog_onCategoryCreated(event: CategoryCreated) {",
+                      "export function wixBlog_onCategoryCreated(event) {",
                       "  console.log('wixBlog_onCategoryCreated', event);",
                       "  console.log('Created category label', event.createdEvent.entityAsJson.label);",
                       "}",
@@ -138,7 +138,7 @@
                       "// of your site's Backend section.",
                       "// Add the file if it doesn't exist.",
                       "",
-                      "export function wixBlog_onCategoryDeleted(event: CategoryDeleted) {",
+                      "export function wixBlog_onCategoryDeleted(event) {",
                       "  console.log('wixBlog_onCategoryDeleted', event);",
                       "}",
                       "",
@@ -187,7 +187,7 @@
                       "// of your site's Backend section.",
                       "// Add the file if it doesn't exist.",
                       "",
-                      "export function wixBlog_onCategoryUpdated(event: CategoryUpdated) {",
+                      "export function wixBlog_onCategoryUpdated(event) {",
                       "  console.log('wixBlog_onCategoryUpdated', event);",
                       "  console.log('Updated category label', event.updatedEvent.currentEntityAsJson.label);",
                       "}",
@@ -232,8 +232,7 @@
         "extra":
           {  } },
       { "name": "onPostCreated",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -320,8 +319,7 @@
         "extra":
           {  } },
       { "name": "onPostDeleted",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -374,7 +372,7 @@
         "nameParams": [],
         "params":
           [ { "name": "event",
-              "type": "wix-blog-backend.Events.LikedPost",
+              "type": "wix-blog-backend.Events.PostLiked",
               "doc": "Information about the post that was liked." } ],
         "ret":
           { "type": "void" },
@@ -385,7 +383,7 @@
           { "summary": "A backend event that fires when an existing post is liked.",
             "description":
               [ "The `onPostLiked()` event handler runs when an existing post is liked.",
-                " The received `LikedPost` object contains information about the post that was liked.",
+                " The received `PostLiked` object contains information about the post that was liked.",
                 "",
                 "> **Note:** Backend events are **not** fired when previewing your site." ],
             "links": [],
@@ -429,7 +427,7 @@
         "nameParams": [],
         "params":
           [ { "name": "event",
-              "type": "wix-blog-backend.Events.UnlikedPost",
+              "type": "wix-blog-backend.Events.PostUnliked",
               "doc": "Information about the post that was unliked." } ],
         "ret":
           { "type": "void" },
@@ -440,7 +438,7 @@
           { "summary": "A backend event that fires when an existing post is unliked.",
             "description":
               [ "The `onPostUnliked()` event handler runs when an existing post is unliked.",
-                " The received `UnlikedPost` object contains information about the post that was unliked.",
+                " The received `PostUnliked` object contains information about the post that was unliked.",
                 "",
                 "> **Note:** Backend events are **not** fired when previewing your site." ],
             "links": [],
@@ -478,8 +476,7 @@
         "extra":
           {  } },
       { "name": "onPostUpdated",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "event",
@@ -613,7 +610,8 @@
               "doc": "Category slug. For example, 'category-slug'." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "CategoryCreated",
         "locations":
           [ { "lineno": 201,
@@ -629,7 +627,7 @@
                       "// of your site's Backend section.",
                       "// Add the file if it doesn't exist.",
                       "",
-                      "export function wixBlog_onCategoryCreated(event: CategoryCreated) {",
+                      "export function wixBlog_onCategoryCreated(event) {",
                       "  console.log('wixBlog_onCategoryCreated', event);",
                       "  console.log('Created category label', event.createdEvent.entityAsJson.label);",
                       "}",
@@ -677,7 +675,7 @@
               "type": "string",
               "doc": "Expected `created`. Event name." },
             { "name": "createdEvent",
-              "type": "wix-blog-backend.Category",
+              "type": "wix-blog-backend.CategoryEntityCreatedEvent",
               "doc": "Event Info" },
             { "name": "entityId",
               "type": "string",
@@ -707,7 +705,7 @@
                       "// of your site's Backend section.",
                       "// Add the file if it doesn't exist.",
                       "",
-                      "export function wixBlog_onCategoryDeleted(event: CategoryDeleted) {",
+                      "export function wixBlog_onCategoryDeleted(event) {",
                       "  console.log('wixBlog_onCategoryDeleted', event);",
                       "}",
                       "",
@@ -767,7 +765,7 @@
                       "// of your site's Backend section.",
                       "// Add the file if it doesn't exist.",
                       "",
-                      "export function wixBlog_onCategoryUpdated(event: CategoryUpdated) {",
+                      "export function wixBlog_onCategoryUpdated(event) {",
                       "  console.log('wixBlog_onCategoryUpdated', event);",
                       "  console.log('Updated category label', event.updatedEvent.currentEntityAsJson.label);",
                       "}",
@@ -820,7 +818,7 @@
               "type": "string",
               "doc": "Expected `updated`. Event name." },
             { "name": "updatedEvent",
-              "type": "wix-blog-backend.Category",
+              "type": "CategoryEntityUpdatedEvent",
               "doc": "Event Info" },
             { "name": "entityId",
               "type": "string",
@@ -863,7 +861,8 @@
                   "members":
                     [ "image",
                       "video" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Image",
         "locations":
           [ { "lineno": 10,
@@ -895,7 +894,8 @@
               "doc": "Image filename. Optional.\n // * @memberof wix-blog-backend" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "LikedPost",
         "locations":
           [ { "lineno": 141,
@@ -959,7 +959,8 @@
         "extra":
           {  },
         "labels":
-          [ "changed" ] },
+          [ "changed",
+            "removed" ] },
       { "name": "Location",
         "locations":
           [ { "lineno": 1,
@@ -985,7 +986,8 @@
               "doc": "Type of location.\n One of:\n\n + `\"VENUE\"`: Event is hosted in the venue.\n + `\"ONLINE\"`: Event is hosted online." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "MapCoordinates",
         "locations":
           [ { "lineno": 16,
@@ -1005,7 +1007,8 @@
               "doc": "Longitude." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Metrics",
         "locations":
           [ { "lineno": 43,
@@ -1028,7 +1031,8 @@
               "doc": "Total number of post views.\n // * @memberof wix-blog-backend" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "PageUrl",
         "locations":
           [ { "lineno": 1,
@@ -1048,7 +1052,8 @@
               "doc": "The path to that page - e.g /product-page/a-product\n // * @memberof wix-blog-backend" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "Post",
         "locations":
           [ { "lineno": 40,
@@ -1158,7 +1163,8 @@
               "doc": "Post owner's contact ID." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "PostCreated",
         "locations":
           [ { "lineno": 52,
@@ -1243,7 +1249,7 @@
               "type": "string",
               "doc": "Expected `created`. Event name." },
             { "name": "createdEvent",
-              "type": "wix-blog-backend.Post",
+              "type": "wix-blog-backend.PostEntityCreatedEvent",
               "doc": "Event Info" },
             { "name": "eventTime",
               "type": "string",
@@ -1313,8 +1319,73 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
+        "labels": [] },
+      { "name": "PostLiked",
+        "locations":
+          [ { "lineno": 141,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the post that was liked.",
+            "links":
+              [ "[onPostLiked( )](#onPostLiked)" ],
+            "examples":
+              [ { "title": "A backend event that occurs when an existing post is liked",
+                  "body":
+                    [ "// Place this code in the events.js file",
+                      "// of your site's Backend section.",
+                      "// Add the file if it doesn't exist.",
+                      "",
+                      "export function wixBlog_onPostLiked(event) {",
+                      "  console.log('wixBlog_onPostLiked', event);",
+                      "  console.log('Liked post id', event.actionEvent.bodyAsJson.postId);",
+                      "}",
+                      "",
+                      "/*  Full event object:",
+                      " *  {",
+                      " *    \"entityId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
+                      " *    \"actionEvent\": {",
+                      " *      \"bodyAsJson\": {",
+                      " *        \"postId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
+                      " *        \"memberId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8d84c\"",
+                      " *      }",
+                      " *    },",
+                      " *    \"slug\": \"liked\",",
+                      " *    \"id\": \"7626b90d-9516-4530-bb48-81af66a5f023\",",
+                      " *    \"entityFqdn\": \"wix.blog.post\",",
+                      " *    \"eventTime\": \"2021-03-02T08:40:55.512Z\",",
+                      " *    \"triggeredByAnonymizeRequest\": false",
+                      " *  }",
+                      " */" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `liked`. Event name." },
+            { "name": "actionEvent",
+              "type": "wix-blog-backend.Events.PostLikedActionEvent",
+              "doc": "Event Info" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "PostLiked ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
         "labels":
-          [ "changed" ] },
+          [ "new" ] },
       { "name": "PostLikedDomainEvent",
         "locations":
           [ { "lineno": 74,
@@ -1340,7 +1411,8 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "PostLikedInitiator",
         "locations":
           [ { "lineno": 84,
@@ -1366,7 +1438,74 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PostUnliked",
+        "locations":
+          [ { "lineno": 171,
+              "filename": "events.js" } ],
+        "docs":
+          { "summary": "An object representing the post that was unliked.",
+            "links":
+              [ "[onPostUnliked( )](#onPostUnliked)" ],
+            "examples":
+              [ { "title": "A backend event that occurs when an existing post is unliked",
+                  "body":
+                    [ "// Place this code in the events.js file",
+                      "// of your site's Backend section.",
+                      "// Add the file if it doesn't exist.",
+                      "",
+                      "export function wixBlog_onPostLiked(event) {",
+                      "  console.log('wixBlog_onPostLiked', event);",
+                      "  console.log('Liked post id', event.actionEvent.bodyAsJson.postId);",
+                      "}",
+                      "",
+                      "/*  Full event object:",
+                      " *  {",
+                      " *    \"entityId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
+                      " *    \"actionEvent\": {",
+                      " *      \"bodyAsJson\": {",
+                      " *        \"postId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8a04c\",",
+                      " *        \"memberId\": \"7d7ebfc8-ae30-4d97-8a9a-b10173b8d84c\"",
+                      " *      }",
+                      " *    },",
+                      " *    \"slug\": \"liked\",",
+                      " *    \"id\": \"7626b90d-9516-4530-bb48-81af66a5f023\",",
+                      " *    \"entityFqdn\": \"wix.blog.post\",",
+                      " *    \"eventTime\": \"2021-03-02T08:40:55.512Z\",",
+                      " *    \"triggeredByAnonymizeRequest\": false",
+                      " *  }",
+                      " */" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Unique event ID." },
+            { "name": "entityFqdn",
+              "type": "string",
+              "doc": "Expected `wix.blog.post`. Fully Qualified Domain Name." },
+            { "name": "slug",
+              "type": "string",
+              "doc": "Expected `unliked`. Event name." },
+            { "name": "actionEvent",
+              "type": "wix-blog-backend.Events.PostUnlikedActionEvent",
+              "doc": "Event Info" },
+            { "name": "entityId",
+              "type": "string",
+              "doc": "PostUnliked ID associated with this event." },
+            { "name": "eventTime",
+              "type": "string",
+              "doc": "Event timestamp." },
+            { "name": "triggeredByAnonymizeRequest",
+              "type": "boolean",
+              "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PostUpdated",
         "locations":
           [ { "lineno": 81,
@@ -1451,7 +1590,7 @@
               "type": "string",
               "doc": "Expected `updated`. Event name." },
             { "name": "updatedEvent",
-              "type": "wix-blog-backend.Post",
+              "type": "wix-blog-backend.PostEntityUpdatedEvent",
               "doc": "Event Info" },
             { "name": "entityId",
               "type": "string",
@@ -1498,7 +1637,8 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "SeoSchema",
         "locations":
           [ { "lineno": 52,
@@ -1521,7 +1661,8 @@
               "doc": "SEO general settings.\n // * @memberof wix-blog-backend" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "SeoSchemaSettings",
         "locations":
           [ { "lineno": 72,
@@ -1538,7 +1679,8 @@
               "doc": "disable auto creation of 301 redirects on slug changes (enabled by default).\n // * @memberof wix-blog-backend" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "SeoSchemaTags",
         "locations":
           [ { "lineno": 60,
@@ -1570,7 +1712,8 @@
               "doc": "Whether the tag is disabled.\n // * @memberof wix-blog-backend" } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "UnlikedPost",
         "locations":
           [ { "lineno": 171,
@@ -1634,7 +1777,8 @@
         "extra":
           {  },
         "labels":
-          [ "changed" ] },
+          [ "changed",
+            "removed" ] },
       { "name": "Video",
         "locations":
           [ { "lineno": 22,
@@ -1663,6 +1807,7 @@
               "doc": "Video poster\n // * @memberof wix-blog-backend" } ],
         "extra":
           {  },
-        "labels": [] } ],
+        "labels":
+          [ "removed" ] } ],
   "extra":
     {  } }
