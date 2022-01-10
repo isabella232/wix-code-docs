@@ -729,7 +729,7 @@
               "type": "string",
               "doc": "Expected `deleted`. Event name." },
             { "name": "deletedEvent",
-              "type": "object",
+              "type": "Object",
               "doc": "Event Info" },
             { "name": "entityId",
               "type": "string",
@@ -742,10 +742,11 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "CategoryEntityCreatedEvent",
         "locations":
-          [ { "lineno": 318,
+          [ { "lineno": 308,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing created category event info.",
@@ -762,7 +763,7 @@
         "labels": [] },
       { "name": "CategoryEntityUpdatedEvent",
         "locations":
-          [ { "lineno": 325,
+          [ { "lineno": 315,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing updated category event info.",
@@ -950,8 +951,7 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Location",
         "locations":
           [ { "lineno": 1,
@@ -1296,7 +1296,7 @@
               "type": "string",
               "doc": "Expected `deleted`. Event name." },
             { "name": "deletedEvent",
-              "type": "object",
+              "type": "Object",
               "doc": "Event Info" },
             { "name": "entityId",
               "type": "string",
@@ -1309,10 +1309,11 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "PostEntityCreatedEvent",
         "locations":
-          [ { "lineno": 332,
+          [ { "lineno": 322,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing created post event info.",
@@ -1329,7 +1330,7 @@
         "labels": [] },
       { "name": "PostEntityUpdatedEvent",
         "locations":
-          [ { "lineno": 339,
+          [ { "lineno": 329,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing updated post event info.",
@@ -1478,7 +1479,8 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "PostUnliked",
         "locations":
           [ { "lineno": 171,
@@ -1546,7 +1548,7 @@
         "labels": [] },
       { "name": "PostUnlikedActionEvent",
         "locations":
-          [ { "lineno": 304,
+          [ { "lineno": 294,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing unliked post event info.",
@@ -1770,7 +1772,7 @@
           [ "removed" ] },
       { "name": "UnlikedPost",
         "locations":
-          [ { "lineno": 311,
+          [ { "lineno": 301,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing unliked post.",
