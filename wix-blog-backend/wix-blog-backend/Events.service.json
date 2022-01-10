@@ -21,7 +21,7 @@
           " site are defined in this file.",
           "",
           " To observe if a specific event was consumed by the handler code and test the integration completely, please go to",
-          " **Developer Tools->Logs->View site events** from a dashboard of the site (see",
+          " **Developer Tools > Logs > View site events** from a dashboard of the site (see",
           " [Velo: Viewing Live Site Events](https://support.wix.com/en/article/velo-viewing-live-site-monitoring-events)",
           " for more).",
           "",
@@ -742,8 +742,7 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CategoryEntityCreatedEvent",
         "locations":
           [ { "lineno": 308,
@@ -1309,8 +1308,7 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PostEntityCreatedEvent",
         "locations":
           [ { "lineno": 322,
