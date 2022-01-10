@@ -683,8 +683,7 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CategoryDeleted",
         "locations":
           [ { "lineno": 261,
@@ -746,7 +745,7 @@
         "labels": [] },
       { "name": "CategoryEntityCreatedEvent",
         "locations":
-          [ { "lineno": 315,
+          [ { "lineno": 318,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing created category event info.",
@@ -760,11 +759,10 @@
               "doc": "Event body as a stringified JSON" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CategoryEntityUpdatedEvent",
         "locations":
-          [ { "lineno": 322,
+          [ { "lineno": 325,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing updated category event info.",
@@ -778,8 +776,7 @@
               "doc": "Event body as a stringified JSON" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CategoryUpdated",
         "locations":
           [ { "lineno": 231,
@@ -861,8 +858,7 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "CoverMedia",
         "locations":
           [ { "lineno": 33,
@@ -940,13 +936,22 @@
           [ { "name": "postId",
               "type": "string",
               "doc": "ID of the liked post." },
-            { "name": "initiator",
-              "type": "wix-blog-backend.Events.PostLikedInitiator",
-              "doc": "ID of a person who liked the post" } ],
+            { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID of person who liked a post (returned if the member was logged in when liking\nthe post)",
+              "optional": true },
+            { "name": "anonymousVisitorId",
+              "type": "string",
+              "doc": "Visitor ID if person that liked the post is not logged in",
+              "optional": true } ],
         "extra":
-          {  },
+          { "oneOfGroups":
+              [ { "name": "initiator",
+                  "members":
+                    [ "memberId",
+                      "anonymousVisitorId" ] } ] },
         "labels":
-          [ "new" ] },
+          [ "changed" ] },
       { "name": "Location",
         "locations":
           [ { "lineno": 1,
@@ -1245,8 +1250,7 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "PostDeleted",
         "locations":
           [ { "lineno": 111,
@@ -1308,7 +1312,7 @@
         "labels": [] },
       { "name": "PostEntityCreatedEvent",
         "locations":
-          [ { "lineno": 329,
+          [ { "lineno": 332,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing created post event info.",
@@ -1322,11 +1326,10 @@
               "doc": "Event body as a stringified JSON" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PostEntityUpdatedEvent",
         "locations":
-          [ { "lineno": 336,
+          [ { "lineno": 339,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing updated post event info.",
@@ -1340,8 +1343,7 @@
               "doc": "Event body as a stringified JSON" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PostLiked",
         "locations":
           [ { "lineno": 141,
@@ -1423,8 +1425,7 @@
               "doc": "Event body as a stringified JSON" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PostLikedDomainEvent",
         "locations":
           [ { "lineno": 74,
@@ -1454,7 +1455,7 @@
           [ "removed" ] },
       { "name": "PostLikedInitiator",
         "locations":
-          [ { "lineno": 291,
+          [ { "lineno": 294,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing post like initiator.",
@@ -1477,8 +1478,7 @@
                   "members":
                     [ "memberId",
                       "anonymousVisitorId" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PostUnliked",
         "locations":
           [ { "lineno": 171,
@@ -1546,7 +1546,7 @@
         "labels": [] },
       { "name": "PostUnlikedActionEvent",
         "locations":
-          [ { "lineno": 301,
+          [ { "lineno": 304,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing unliked post event info.",
@@ -1560,8 +1560,7 @@
               "doc": "Event body as a stringified JSON" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PostUpdated",
         "locations":
           [ { "lineno": 81,
@@ -1659,8 +1658,7 @@
               "doc": "Whether this event was triggered as a result of a privacy regulation\napplication (e.g., GDPR)." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "ScheduleConfiguration",
         "locations":
           [ { "lineno": 24,
@@ -1772,7 +1770,7 @@
           [ "removed" ] },
       { "name": "UnlikedPost",
         "locations":
-          [ { "lineno": 308,
+          [ { "lineno": 311,
               "filename": "events.js" } ],
         "docs":
           { "summary": "An object representing unliked post.",
@@ -1786,8 +1784,7 @@
               "doc": "ID of the unliked post." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Video",
         "locations":
           [ { "lineno": 22,
