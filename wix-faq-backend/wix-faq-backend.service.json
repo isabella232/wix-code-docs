@@ -1,12 +1,23 @@
 { "name": "wix-faq-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
   "docs":
-    { "links": [],
+    { "summary": "The wix-faq-backend module contains functionality\nfor working with your site's FAQ from backend code.",
+      "description":
+        [ "The backend Wix FAQ API allows you to view and manage FAQ content on your site,",
+          " as well as manage categories, and labels.",
+          "",
+          "To use the backend Wix FAQ API,",
+          "import `wixFaqBackend` from `wix-faq-backend`:",
+          "",
+          "```js",
+          "import wixFaqBackend from 'wix-faq-backend';",
+          "```" ],
+      "links": [],
       "examples": [],
       "extra":
         {  } },
