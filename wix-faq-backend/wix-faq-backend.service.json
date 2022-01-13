@@ -1,6 +1,7 @@
 { "name": "wix-faq-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -131,7 +132,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createCategory",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "category",
@@ -149,7 +151,7 @@
         "docs":
           { "summary": "Creates a category.",
             "description":
-              [ "The createCategory() function returns a Promise that resolves when the category is successfully created." ],
+              [ "The `createCategory()` function returns a Promise that resolves when the category is successfully created." ],
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -335,7 +337,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listCategories",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "paging",
@@ -352,6 +355,8 @@
               "filename": "listCategories.js" } ],
         "docs":
           { "summary": "Retrieves up to 100 categories.",
+            "description":
+              [ "The `listCategories()` function returns a Promise that resolves to the list of categories." ],
             "links": [],
             "examples":
               [ { "title": "basic usage",
