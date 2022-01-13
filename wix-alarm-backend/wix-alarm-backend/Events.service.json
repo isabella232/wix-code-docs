@@ -1,0 +1,135 @@
+{
+  "name": "Events",
+  "memberOf": "wix-alarm-backend",
+  "mixes": [],
+  "callbacks": [],
+  "messages": [
+    {
+      "name": "AlarmMessage",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AlarmRequest",
+      "members": [
+        {
+          "name": "seconds",
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AlarmResponse",
+      "members": [
+        {
+          "name": "time",
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AlarmSnoozed",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AlarmTriggered",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "BackendEventMetadata",
+      "members": [
+        {
+          "name": "entityId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "eventTime",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "triggeredByAnonymizeRequest",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ],
+  "extra": {},
+  "clientId": "wix-alarm-backend-events",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": []
+}
