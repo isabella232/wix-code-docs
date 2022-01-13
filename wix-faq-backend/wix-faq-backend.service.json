@@ -76,8 +76,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "bulkUpdateLabels",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "updates",
@@ -151,6 +150,8 @@
               "filename": "createCategory.js" } ],
         "docs":
           { "summary": "Creates a category.",
+            "description":
+              [ "The createCategory() function returns a Promise that resolves when the category is successfully created." ],
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -159,7 +160,7 @@
                       "",
                       "export function createCategory() {",
                       "  const category = {",
-                      "    title: \"a string\",",
+                      "    title: \"How to Get Started\",",
                       "    sortOrder: 1.23",
                       "  };",
                       "",
@@ -171,7 +172,17 @@
                       "    .catch((error) => {",
                       "      console.error(error);",
                       "    });",
-                      "}" ],
+                      "}",
+                      "",
+                      "/* Promise resolves to: ",
+                      " * {",
+                      " *   \"_id\": \"486f6ed7-9a09-4a37-9b06-d65acc6001d6\",",
+                      " *   \"title\": \"How to Get Started\",",
+                      " *   \"sortOrder\": 1.23,",
+                      " *   \"_createdDate\": \"2022-01-13T17:00:27.143Z\",",
+                      " *   \"_updatedDate\": \"2022-01-13T17:00:27.143Z\"",
+                      " * }",
+                      "*/" ],
                   "extra":
                     {  } } ],
             "extra":
@@ -180,8 +191,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createQuestion",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "questionEntry",
@@ -327,8 +337,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listCategories",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "paging",
@@ -374,8 +383,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listQuestions",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "filters",
@@ -434,8 +442,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "setQuestionLabels",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "id",
@@ -490,8 +497,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateCategory",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "id",
@@ -541,8 +547,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateQuestion",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "id",
@@ -605,8 +610,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateQuestionVisibilities",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "visibility",
@@ -685,8 +689,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Category_4831108253",
         "locations":
           [ { "lineno": 32,
@@ -767,8 +770,7 @@
                   "members":
                     [ "draftjs",
                       "plainText" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Content_10470174451",
         "locations":
           [ { "lineno": 60,
@@ -844,8 +846,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CursorPaging_3235073023",
         "locations":
           [ { "lineno": 1,
@@ -888,8 +889,7 @@
               "doc": "Cursor pointing to previous result page." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Cursors_3337235656",
         "locations":
           [ { "lineno": 10,
@@ -934,8 +934,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Label_4605412461",
         "locations":
           [ { "lineno": 69,
@@ -1000,8 +999,7 @@
               "doc": "Metadata for the paginated results." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListCategoriesResult_17441120979",
         "locations":
           [ { "lineno": 1,
@@ -1058,8 +1056,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListQuestionsRequest_13969406726",
         "locations":
           [ { "lineno": 1,
@@ -1134,8 +1131,7 @@
               "doc": "Metadata for the paginated results." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListQuestionsResult_41432327813",
         "locations":
           [ { "lineno": 19,
@@ -1190,8 +1186,7 @@
               "doc": "Indicates if there are more results after the current page.\n If `true`, another page of results can be retrieved.\n If `false`, this is the last page." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PagingMetadataV2_5961166073",
         "locations":
           [ { "lineno": 18,
@@ -1273,8 +1268,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "QuestionEntry_29730883065",
         "locations":
           [ { "lineno": 1,
@@ -1433,8 +1427,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "QuestionLabelUpdate_6579331374",
         "locations":
           [ { "lineno": 1,
@@ -1487,8 +1480,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "QuestionVisibility_9151242405",
         "locations":
           [ { "lineno": 1,
