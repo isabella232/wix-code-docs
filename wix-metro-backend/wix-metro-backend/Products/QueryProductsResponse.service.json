@@ -1,0 +1,48 @@
+{
+  "name": "QueryProductsResponse",
+  "memberOf": "wix-metro-backend.Products",
+  "mixes": [],
+  "callbacks": [],
+  "messages": [],
+  "extra": {},
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [
+    {
+      "name": "metadata",
+      "type": [
+        {
+          "referenceType": "wix-metro-backend.Products.PagingMetadataV2"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    },
+    {
+      "name": "products",
+      "type": [
+        {
+          "complexType": {
+            "nativeType": "Array",
+            "typeParams": [
+              {
+                "referenceType": "wix-metro-backend.Products.Product"
+              }
+            ]
+          }
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    }
+  ],
+  "operations": []
+}

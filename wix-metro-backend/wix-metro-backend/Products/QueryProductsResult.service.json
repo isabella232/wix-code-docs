@@ -1,0 +1,76 @@
+{
+  "name": "QueryProductsResult",
+  "memberOf": "wix-metro-backend.Products",
+  "mixes": [],
+  "callbacks": [],
+  "messages": [],
+  "extra": {},
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [
+    {
+      "name": "items",
+      "type": [
+        {
+          "complexType": {
+            "nativeType": "Array",
+            "typeParams": [
+              {
+                "referenceType": "wix-metro-backend.Products.Product"
+              }
+            ]
+          }
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    },
+    {
+      "name": "length",
+      "type": [
+        {
+          "nativeType": "number"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    },
+    {
+      "name": "pageSize",
+      "type": [
+        {
+          "nativeType": "number"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    },
+    {
+      "name": "query",
+      "type": [
+        {
+          "referenceType": "wix-metro-backend.Products.QueryProductsResponse"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    }
+  ],
+  "operations": []
+}
