@@ -1,0 +1,758 @@
+{ "name": "wix-seating-reservations-rc-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "index.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "createSeatingReservation",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "createSeatingReservationRequest",
+              "type": "wix-seating-reservations-rc-backend.CreateSeatingReservationRequest_4618253306" },
+            { "name": "options",
+              "type": "wix-seating-reservations-rc-backend.Options_936495653",
+              "doc": "Authorization options." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-seating-reservations-rc-backend.CreateSeatingReservationResult_30020331926" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 31,
+              "filename": "com_wixpress_seating_SeatingReservationService_CreateSeatingReservation_createSeatingReservation.js" } ],
+        "docs":
+          { "summary": "Creates a seating reservation",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixSeatingReservationsRcBackend from \"wix-seating-reservations-rc-backend\";",
+                      "",
+                      "export function createSeatingReservation() {",
+                      "  const createSeatingReservationRequest = {",
+                      "    reservation: {",
+                      "      places: [",
+                      "        {",
+                      "          _id: \"a string\",",
+                      "          capacity: 42",
+                      "        }",
+                      "      ],",
+                      "      externalId: \"a string\"",
+                      "    }",
+                      "  };",
+                      "  const options = {",
+                      "    suppressAuth: true",
+                      "  };",
+                      "",
+                      "  return wixSeatingReservationsRcBackend",
+                      "    .createSeatingReservation(createSeatingReservationRequest, options)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "deleteSeatingReservation",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "deleteSeatingReservationRequest",
+              "type": "wix-seating-reservations-rc-backend.DeleteSeatingReservationRequest_490917122" },
+            { "name": "options",
+              "type": "wix-seating-reservations-rc-backend.Options_936495653",
+              "doc": "Authorization options." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-seating-reservations-rc-backend.DeleteSeatingReservationResult_29444247975" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 13,
+              "filename": "com_wixpress_seating_SeatingReservationService_DeleteSeatingReservation_deleteSeatingReservation.js" } ],
+        "docs":
+          { "summary": "Deletes the seating reservation",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixSeatingReservationsRcBackend from \"wix-seating-reservations-rc-backend\";",
+                      "",
+                      "export function deleteSeatingReservation() {",
+                      "  const deleteSeatingReservationRequest = {",
+                      "    _id: \"a string\"",
+                      "  };",
+                      "  const options = {",
+                      "    suppressAuth: true",
+                      "  };",
+                      "",
+                      "  return wixSeatingReservationsRcBackend",
+                      "    .deleteSeatingReservation(deleteSeatingReservationRequest, options)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "getStock",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "getStockRequest",
+              "type": "wix-seating-reservations-rc-backend.GetStockRequest_12271259989" },
+            { "name": "options",
+              "type": "wix-seating-reservations-rc-backend.Options_936495653",
+              "doc": "Authorization options." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-seating-reservations-rc-backend.GetStockResult_9091983271" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 39,
+              "filename": "com_wixpress_seating_SeatingReservationService_GetStock_getStock.js" } ],
+        "docs":
+          { "summary": "Returns available seat counts by category id",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixSeatingReservationsRcBackend from \"wix-seating-reservations-rc-backend\";",
+                      "",
+                      "export function getStock() {",
+                      "  const getStockRequest = {",
+                      "    seatingPlan: {",
+                      "      byId: {",
+                      "        seatingPlanId: [\"a string\"]",
+                      "      }",
+                      "    }",
+                      "  };",
+                      "  const options = {",
+                      "    suppressAuth: true",
+                      "  };",
+                      "",
+                      "  return wixSeatingReservationsRcBackend",
+                      "    .getStock(getStockRequest, options)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "querySeatingReservation",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "querySeatingReservationRequest",
+              "type": "wix-seating-reservations-rc-backend.QuerySeatingReservationRequest_25322345829" },
+            { "name": "options",
+              "type": "wix-seating-reservations-rc-backend.Options_936495653",
+              "doc": "Authorization options." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-seating-reservations-rc-backend.QuerySeatingReservationResult_34038731241" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 84,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "summary": "Lists seating reservations by query request",
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixSeatingReservationsRcBackend from \"wix-seating-reservations-rc-backend\";",
+                      "",
+                      "export function querySeatingReservation() {",
+                      "  const querySeatingReservationRequest = {",
+                      "    query: {",
+                      "      filter: {",
+                      "        someKey: \"some-value\"",
+                      "      },",
+                      "      sort: [",
+                      "        {",
+                      "          fieldName: \"a string\",",
+                      "          order: \"ASC\"",
+                      "        }",
+                      "      ],",
+                      "      fields: [\"a string\"],",
+                      "      fieldsets: [\"a string\"],",
+                      "      pagingMethod: {",
+                      "        paging: {",
+                      "          limit: 42,",
+                      "          offset: 42",
+                      "        }",
+                      "      }",
+                      "    }",
+                      "  };",
+                      "  const options = {",
+                      "    suppressAuth: true",
+                      "  };",
+                      "",
+                      "  return wixSeatingReservationsRcBackend",
+                      "    .querySeatingReservation(querySeatingReservationRequest, options)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } } ],
+  "callbacks": [],
+  "messages":
+    [ { "name": "CreateSeatingReservationRequest_4618253306",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_seating_SeatingReservationService_CreateSeatingReservation_createSeatingReservation.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "reservation",
+              "type": "wix-seating-reservations-rc-backend.SeatingReservation_2858875545",
+              "doc": "A reservation to create",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CreateSeatingReservationResult_30020331926",
+        "locations":
+          [ { "lineno": 7,
+              "filename": "com_wixpress_seating_SeatingReservationService_CreateSeatingReservation_createSeatingReservation.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "reservation",
+              "type": "wix-seating-reservations-rc-backend.SeatingReservation_25000660502" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "CursorPaging_3327761744",
+        "locations":
+          [ { "lineno": 14,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "summary": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "limit",
+              "type": "number",
+              "doc": "The number of items to load.\n Cursor token returned in the query response. To be used on the next query request, but not the first query request." },
+            { "name": "cursor",
+              "type": "string",
+              "doc": "Cursor returned in last query response. Should not be provided on first page request",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Cursors_3337235656",
+        "locations":
+          [ { "lineno": 23,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "summary": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "next",
+              "type": "string",
+              "doc": "Cursor pointing to next result page." },
+            { "name": "prev",
+              "type": "string",
+              "doc": "Cursor pointing to previous result page." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "DeleteSeatingReservationRequest_490917122",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_seating_SeatingReservationService_DeleteSeatingReservation_deleteSeatingReservation.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The id of the reservation to delete" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "DeleteSeatingReservationResult_29444247975",
+        "locations":
+          [ { "lineno": 7,
+              "filename": "com_wixpress_seating_SeatingReservationService_DeleteSeatingReservation_deleteSeatingReservation.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "reservation",
+              "type": "wix-seating-reservations-rc-backend.SeatingReservation_25000660502" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetStockRequest_12271259989",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_seating_SeatingReservationService_GetStock_getStock.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "byId",
+              "type": "wix-seating-reservations-rc-backend.GetStockRequest_ById_2959669944",
+              "doc": "Get stock by seating plan id",
+              "optional": true },
+            { "name": "byExternalId",
+              "type": "wix-seating-reservations-rc-backend.GetStockRequest_ByExternalId_3134546971",
+              "doc": "Get stock by external seating plan id",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "seatingPlan",
+                  "members":
+                    [ "byExternalId",
+                      "byId" ] } ] },
+        "labels": [] },
+      { "name": "GetStockRequest_ByExternalId_3134546971",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "com_wixpress_seating_SeatingReservationService_GetStock_getStock.js" } ],
+        "docs":
+          { "summary": "Get stock by external seating plan id",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "externalSeatingPlanId",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "The external id of the plan",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetStockRequest_ById_2959669944",
+        "locations":
+          [ { "lineno": 16,
+              "filename": "com_wixpress_seating_SeatingReservationService_GetStock_getStock.js" } ],
+        "docs":
+          { "summary": "Get stock by seating plan id",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "seatingPlanId",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "The id of the plan",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetStockResult_9091983271",
+        "locations":
+          [ { "lineno": 23,
+              "filename": "com_wixpress_seating_SeatingReservationService_GetStock_getStock.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "stock",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-seating-reservations-rc-backend.TicketStock_6836847966" ] },
+              "doc": "Ticket counts by category" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Options_936495653",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Authorization options.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "suppressAuth",
+              "type": "boolean",
+              "doc": "When `true`, prevents permission checks from running for the operation.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PagingMetadataV2_5961166073",
+        "locations":
+          [ { "lineno": 39,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "summary": "Paging meta data",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "count",
+              "type": "number",
+              "doc": "Number of items returned in the response." },
+            { "name": "offset",
+              "type": "number",
+              "doc": "Offset that was requested." },
+            { "name": "total",
+              "type": "number",
+              "doc": "Total number of items that match the query. Returned if offset paging is used and the `tooManyToCount` flag is not set." },
+            { "name": "tooManyToCount",
+              "type": "boolean",
+              "doc": "Flag that indicates the server failed to calculate the `total` field." },
+            { "name": "cursors",
+              "type": "wix-seating-reservations-rc-backend.Cursors_3337235656",
+              "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used." },
+            { "name": "hasNext",
+              "type": "boolean",
+              "doc": "Indicates if there are more results after the current page.\n If `true`, another page of results can be retrieved.\n If `false`, this is the last page." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Paging_1710416686",
+        "locations":
+          [ { "lineno": 31,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "summary": "Paging options to limit and skip the number of items.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "limit",
+              "type": "number",
+              "doc": "Number of items to load." },
+            { "name": "offset",
+              "type": "number",
+              "doc": "Number of items to skip in the current sort order.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PlaceReservation_15204421881",
+        "locations":
+          [ { "lineno": 8,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The place id." },
+            { "name": "capacity",
+              "type": "number",
+              "doc": "Number of places in the spot. If not provided - defaults to 1.\n Used to reserve for more that one place in areas." },
+            { "name": "sectorName",
+              "type": "string",
+              "doc": "Optional sector name." },
+            { "name": "areaName",
+              "type": "string",
+              "doc": "Area name." },
+            { "name": "tableName",
+              "type": "string",
+              "doc": "Table name." },
+            { "name": "rowNumber",
+              "type": "string",
+              "doc": "Row number." },
+            { "name": "seatNumber",
+              "type": "string",
+              "doc": "Seat label in a row or table." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PlaceReservation_240390652",
+        "locations":
+          [ { "lineno": 13,
+              "filename": "com_wixpress_seating_SeatingReservationService_CreateSeatingReservation_createSeatingReservation.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The place id.",
+              "optional": true },
+            { "name": "capacity",
+              "type": "number",
+              "doc": "Number of places in the spot. If not provided - defaults to 1.\n Used to reserve for more that one place in areas.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QuerySeatingReservationRequest_25322345829",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "query",
+              "type": "wix-seating-reservations-rc-backend.QueryV2_25634716937",
+              "doc": "A query object" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QuerySeatingReservationResult_34038731241",
+        "locations":
+          [ { "lineno": 7,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "reservations",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-seating-reservations-rc-backend.SeatingReservation_25000660502" ] },
+              "doc": "Found reservations" },
+            { "name": "metadata",
+              "type": "wix-seating-reservations-rc-backend.PagingMetadataV2_5961166073",
+              "doc": "Paging meta data" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QueryV2_25634716937",
+        "locations":
+          [ { "lineno": 53,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "summary": "A query object",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "filter",
+              "type": "Object",
+              "doc": "Filter object in the following format:  \n`\"filter\" : {  \n              \"fieldName1\": \"value1\",  \n              \"fieldName2\":{\"$operator\":\"value2\"}  \n  }`  \nExample of operators: `$eq`, `$ne`, `$lt`, `$lte`, `$gt`, `$gte`, `$in`, `$hasSome`, `$hasAll`, `$startsWith`, `$contains`",
+              "optional": true },
+            { "name": "sort",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-seating-reservations-rc-backend.Sorting_7874645153" ] },
+              "doc": "Sort object in the following format:  \n`[{\"fieldName\":\"sortField1\",\"order\":\"ASC\"},{\"fieldName\":\"sortField2\",\"order\":\"DESC\"}]`",
+              "optional": true },
+            { "name": "fields",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Array of projected fields. A list of specific field names to return. If `fieldsets` are also specified, the union of `fieldsets` and `fields` is returned.",
+              "optional": true },
+            { "name": "fieldsets",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "Array of named, predefined sets of projected fields. A array of predefined named sets of fields to be returned. Specifying multiple `fieldsets` will return the union of fields from all sets. If `fields` are also specified, the union of `fieldsets` and `fields` is returned.",
+              "optional": true },
+            { "name": "paging",
+              "type": "wix-seating-reservations-rc-backend.Paging_1710416686",
+              "doc": "Paging options to limit and skip the number of items.",
+              "optional": true },
+            { "name": "cursorPaging",
+              "type": "wix-seating-reservations-rc-backend.CursorPaging_3327761744",
+              "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "pagingMethod",
+                  "members":
+                    [ "cursorPaging",
+                      "paging" ] } ] },
+        "labels": [] },
+      { "name": "SeatingReservation_25000660502",
+        "locations":
+          [ { "lineno": 21,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "The id of the reservation" },
+            { "name": "seatingPlanId",
+              "type": "string",
+              "doc": "The seating plan id" },
+            { "name": "externalSeatingPlanId",
+              "type": "string",
+              "doc": "The external seating plan id" },
+            { "name": "places",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-seating-reservations-rc-backend.PlaceReservation_15204421881" ] },
+              "doc": "Reserved places" },
+            { "name": "externalId",
+              "type": "string",
+              "doc": "A client defined external id for cross referencing.\n Can reference external entities.\n Format: \"{fqdn}:{entity guid}\"" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SeatingReservation_2858875545",
+        "locations":
+          [ { "lineno": 21,
+              "filename": "com_wixpress_seating_SeatingReservationService_CreateSeatingReservation_createSeatingReservation.js" } ],
+        "docs":
+          { "summary": "A reservation to create",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "places",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-seating-reservations-rc-backend.PlaceReservation_240390652" ] },
+              "doc": "Reserved places",
+              "optional": true },
+            { "name": "externalId",
+              "type": "string",
+              "doc": "A client defined external id for cross referencing.\n Can reference external entities.\n Format: \"{fqdn}:{entity guid}\"",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Sorting_7874645153",
+        "locations":
+          [ { "lineno": 72,
+              "filename": "com_wixpress_seating_SeatingReservationService_QuerySeatingReservation_querySeatingReservation.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "fieldName",
+              "type": "string",
+              "doc": "Name of the field to sort by.",
+              "optional": true },
+            { "name": "order",
+              "type": "string",
+              "doc": "Sort order.\n\n Defaults to `ASC`.\nOne of:\n + `\"ASC\"`\n + `\"DESC\"`",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "TicketStock_6836847966",
+        "locations":
+          [ { "lineno": 29,
+              "filename": "com_wixpress_seating_SeatingReservationService_GetStock_getStock.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "seatingPlanId",
+              "type": "string",
+              "doc": "Seating plan id" },
+            { "name": "externalSeatingPlanId",
+              "type": "string",
+              "doc": "External seating plan id" },
+            { "name": "externalCategoryId",
+              "type": "string",
+              "doc": "External category id" },
+            { "name": "totalCapacity",
+              "type": "number",
+              "doc": "Total capacity in the category" },
+            { "name": "reserved",
+              "type": "number",
+              "doc": "Already reserved capacity" } ],
+        "extra":
+          {  },
+        "labels": [] } ],
+  "extra":
+    {  } }
