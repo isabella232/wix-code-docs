@@ -1,0 +1,665 @@
+{
+  "name": "WixAnswersbinderV1Topic",
+  "memberOf": "wix-dev-backend",
+  "mixes": [],
+  "callbacks": [],
+  "messages": [
+    {
+      "name": "CreateTopicRequest",
+      "members": [
+        {
+          "name": "topic",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.Payload"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CreateTopicResponse",
+      "members": [
+        {
+          "name": "topic",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.Topic"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DeleteTopicRequest",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DeleteTopicResponse",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetTopicRequest",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetTopicResponse",
+      "members": [
+        {
+          "name": "topic",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.Topic"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetTopicStatusRequest",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetTopicStatusResponse",
+      "members": [
+        {
+          "name": "topic",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.TopicStatusItem"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "LanguageCode",
+      "members": [],
+      "enum": [
+        "AR",
+        "BG",
+        "CS",
+        "DA",
+        "DE",
+        "EN",
+        "ES",
+        "FI",
+        "FR",
+        "HE",
+        "ID",
+        "IT",
+        "JA",
+        "KO",
+        "NL",
+        "NO",
+        "NONE",
+        "PL",
+        "PT",
+        "RU",
+        "SK",
+        "SV",
+        "TH",
+        "TR",
+        "VI",
+        "ZH"
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListTopicsOptions",
+      "members": [
+        {
+          "name": "supportedChannel",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.SupportedChannel"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListTopicsRequest",
+      "members": [
+        {
+          "name": "languageCode",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.LanguageCode"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "supportedChannel",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.SupportedChannel"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListTopicsResponse",
+      "members": [
+        {
+          "name": "topics",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.Topic"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListTopicsStatusRequest",
+      "members": [
+        {
+          "name": "languageCode",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.LanguageCode"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListTopicsStatusResponse",
+      "members": [
+        {
+          "name": "topics",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.TopicStatusItem"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Payload",
+      "members": [
+        {
+          "name": "callbackLineId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "callbackQueueId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "description",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "languageCode",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.LanguageCode"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "name",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "postGroupId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PingRequest",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PingResponse",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "SupportedChannel",
+      "members": [],
+      "enum": [
+        "Callback",
+        "None",
+        "Ticket"
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Topic",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "description",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "languageCode",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.LanguageCode"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "name",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "supportedChannels",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.SupportedChannel"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "TopicStatus",
+      "members": [],
+      "enum": [
+        "Available",
+        "Closed",
+        "Unknown"
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "TopicStatusItem",
+      "members": [
+        {
+          "name": "callbackExpectedWaitingTimeMs",
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "callbackStatus",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.TopicStatus"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "topic",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.Topic"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateTopicRequest",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "topic",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.UpdateTopicRequestPayload"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateTopicRequestPayload",
+      "members": [
+        {
+          "name": "callbackLineId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "callbackQueueId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "description",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "languageCode",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.LanguageCode"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "name",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "postGroupId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateTopicResponse",
+      "members": [
+        {
+          "name": "topic",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnswersbinderV1Topic.Topic"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ],
+  "extra": {},
+  "clientId": "wix-dev-backend-topic",
+  "docs": {
+    "description": [
+      "",
+      "    Introduction auto-generated by metro-service",
+      "  "
+    ],
+    "examples": []
+  },
+  "relatedGuides": [],
+  "properties": [],
+  "operations": []
+}
