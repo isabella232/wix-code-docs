@@ -1,0 +1,2253 @@
+{
+  "name": "WixAnalyticsNgDataV1Data",
+  "memberOf": "wix-dev-backend",
+  "mixes": [],
+  "callbacks": [],
+  "messages": [
+    {
+      "name": "AggregateQueryResponse",
+      "members": [
+        {
+          "name": "data",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.AggregatedData"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "format",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "updatedAt",
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "viewSchema",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.GetDataViewResponse"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AggregatedData",
+      "members": [
+        {
+          "name": "currentPeriod",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.QueryStatPeriod"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dataPoints",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "Record"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dataPointsPrevious",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "Record"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "isMeasureActive",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "periodDiffPercentage",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "previousPeriod",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.QueryStatPeriod"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "today",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.QueryStatPeriod"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "yesterday",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.QueryStatPeriod"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CreateSavedQueryOptions",
+      "members": [
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "view",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CreateSavedQueryRequest",
+      "members": [
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of dimensions to return"
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "See Filters in Data Service Usage doc for a format description"
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "500 rows if not set"
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of measures to return"
+        },
+        {
+          "name": "name",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Sorting for the query results. Use the format `[\"view.field\", ...]` to sort on fields in ascending order. Use the format `[\"view.field desc\", ...]` to sort on fields in descending order. Use `[\"__UNSORTED__\"]` (2 underscores before and after) to disable sorting entirely. Empty sorts `[]` will trigger a default sort."
+        },
+        {
+          "name": "view",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CreateSavedQueryResponse",
+      "members": [
+        {
+          "name": "query",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.SavedQueryResponse"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CustomTimeframe",
+      "members": [
+        {
+          "name": "endDate",
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Timestamp of interval end. No value implies Now."
+        },
+        {
+          "name": "startDate",
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Timestamp of interval start. No value implies Now"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Data",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DeleteSavedQueryRequest",
+      "members": [
+        {
+          "name": "queryId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DownloadDataOptions",
+      "members": [
+        {
+          "name": "format",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.DownloadFormat"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DownloadDataRequest",
+      "members": [
+        {
+          "name": "bypassCache",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Force getting fresh data"
+        },
+        {
+          "name": "custom",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.CustomTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of dimensions to return"
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "See Filters in Data Service Usage doc for a format description"
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "500 rows if not set"
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of measures to return"
+        },
+        {
+          "name": "predefined",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.PredefinedTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Sorting for the query results. Use the format `[\"view.field\", ...]` to sort on fields in ascending order. Use the format `[\"view.field desc\", ...]` to sort on fields in descending order. Use `[\"__UNSORTED__\"]` (2 underscores before and after) to disable sorting entirely. Empty sorts `[]` will trigger a default sort."
+        },
+        {
+          "name": "tenantId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "if not set, uses a metasite from auth token"
+        },
+        {
+          "name": "timezone",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "See https://docs.looker.com/reference/view-params/timezone-values for supported timezone"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DownloadFormat",
+      "members": [],
+      "enum": [
+        "CSV",
+        "JSON"
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DownloadRequest",
+      "members": [
+        {
+          "name": "format",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.DownloadFormat"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "request",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.QueryDataViewRequest"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DownloadResponse",
+      "members": [
+        {
+          "name": "data",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Empty",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Field",
+      "members": [
+        {
+          "name": "canFilter",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "whether it's possible to filter on this field"
+        },
+        {
+          "name": "description",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "enumerations",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.FieldEnumeration"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "an array enumerating all the possible values that this field can contain. When null, there is no limit to the set of possible values this field can contain"
+        },
+        {
+          "name": "isNumeric",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "whether this field is of a type that represents a numeric value"
+        },
+        {
+          "name": "isTimeframe",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "whether this field is of a type that represents a time value"
+        },
+        {
+          "name": "label",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "human-readable lable of the field"
+        },
+        {
+          "name": "name",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "fully-qualified name of the field"
+        },
+        {
+          "name": "sortable",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "whether this field can be sorted"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "FieldEnumeration",
+      "members": [
+        {
+          "name": "label",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetDataViewRequest",
+      "members": [
+        {
+          "name": "view",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetDataViewResponse",
+      "members": [
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.Field"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.Field"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.Field"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetSavedQueryRequest",
+      "members": [
+        {
+          "name": "queryId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetSavedQueryResponse",
+      "members": [
+        {
+          "name": "query",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.SavedQueryResponse"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListDataViewsResponse",
+      "members": [
+        {
+          "name": "views",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListSavedQueryResponse",
+      "members": [
+        {
+          "name": "queries",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.SavedQueryResponse"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PredefinedTimeframe",
+      "members": [],
+      "enum": [
+        "LAST_14_DAYS",
+        "LAST_30_DAYS",
+        "LAST_7_DAYS",
+        "LAST_90_DAYS",
+        "THIS_MONTH",
+        "THIS_WEEK"
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryDataViewAggregatedRequest",
+      "members": [
+        {
+          "name": "chunkSize",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "query",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.QueryDataViewRequest"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryDataViewOptions",
+      "members": [
+        {
+          "name": "bypassCache",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "custom",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.CustomTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "predefined",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.PredefinedTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "timezone",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryDataViewRequest",
+      "members": [
+        {
+          "name": "bypassCache",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Force getting fresh data"
+        },
+        {
+          "name": "custom",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.CustomTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of dimensions to return"
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "See Filters in Data Service Usage doc for a format description"
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "500 rows if not set"
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of measures to return"
+        },
+        {
+          "name": "predefined",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.PredefinedTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Sorting for the query results. Use the format `[\"view.field\", ...]` to sort on fields in ascending order. Use the format `[\"view.field desc\", ...]` to sort on fields in descending order. Use `[\"__UNSORTED__\"]` (2 underscores before and after) to disable sorting entirely. Empty sorts `[]` will trigger a default sort."
+        },
+        {
+          "name": "tenantId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "if not set, uses a metasite from auth token"
+        },
+        {
+          "name": "timezone",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "See https://docs.looker.com/reference/view-params/timezone-values for supported timezone"
+        },
+        {
+          "name": "view",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryDataViewResponse",
+      "members": [
+        {
+          "name": "data",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "Record"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "format",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.DownloadFormat"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "updatedAt",
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryDataViewWithAggregateOptions",
+      "members": [
+        {
+          "name": "chunkSize",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryDataViewWithAggregateQuery",
+      "members": [
+        {
+          "name": "bypassCache",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Force getting fresh data"
+        },
+        {
+          "name": "custom",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.CustomTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of dimensions to return"
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "See Filters in Data Service Usage doc for a format description"
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "500 rows if not set"
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of measures to return"
+        },
+        {
+          "name": "predefined",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.PredefinedTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Sorting for the query results. Use the format `[\"view.field\", ...]` to sort on fields in ascending order. Use the format `[\"view.field desc\", ...]` to sort on fields in descending order. Use `[\"__UNSORTED__\"]` (2 underscores before and after) to disable sorting entirely. Empty sorts `[]` will trigger a default sort."
+        },
+        {
+          "name": "tenantId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "if not set, uses a metasite from auth token"
+        },
+        {
+          "name": "timezone",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "See https://docs.looker.com/reference/view-params/timezone-values for supported timezone"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryStatPeriod",
+      "members": [
+        {
+          "name": "data",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "fromDate",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "toDate",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "RunSavedQueryAggregatedRequest",
+      "members": [
+        {
+          "name": "chunkSize",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "query",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.RunSavedQueryRequest"
+            }
+          ],
+          "doc": "Name of saved query"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "RunSavedQueryOptions",
+      "members": [
+        {
+          "name": "bypassCache",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "custom",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.CustomTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "predefined",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.PredefinedTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "tenantId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "timezone",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "RunSavedQueryRequest",
+      "members": [
+        {
+          "name": "bypassCache",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Force getting fresh data"
+        },
+        {
+          "name": "custom",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.CustomTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "parameters",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "Record"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Override parameters for the query"
+        },
+        {
+          "name": "predefined",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.PredefinedTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "queryName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Name of saved query"
+        },
+        {
+          "name": "tenantId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "if not set, uses a metasite from auth token"
+        },
+        {
+          "name": "timezone",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "See https://docs.looker.com/reference/view-params/timezone-values for supported timezone"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "RunSavedQueryResponse",
+      "members": [
+        {
+          "name": "data",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "Record"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "runDate",
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "??? Not sure if needed for client"
+        },
+        {
+          "name": "viewSchema",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.GetDataViewResponse"
+            }
+          ],
+          "doc": "Client needs it for rendering purposes"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "RunSavedQueryWithAggregateOptions",
+      "members": [
+        {
+          "name": "chunkSize",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "RunSavedQueryWithAggregateQuery",
+      "members": [
+        {
+          "name": "bypassCache",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Force getting fresh data"
+        },
+        {
+          "name": "custom",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.CustomTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "parameters",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "Record"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Override parameters for the query"
+        },
+        {
+          "name": "predefined",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.PredefinedTimeframe"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "tenantId",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "if not set, uses a metasite from auth token"
+        },
+        {
+          "name": "timezone",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "See https://docs.looker.com/reference/view-params/timezone-values for supported timezone"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "SavedQueryResponse",
+      "members": [
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of dimensions to return"
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "See Filters in Data Service Usage doc for a format description"
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "500 rows if not set"
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of measures to return"
+        },
+        {
+          "name": "name",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "queryId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Sorting for the query results. Use the format `[\"view.field\", ...]` to sort on fields in ascending order. Use the format `[\"view.field desc\", ...]` to sort on fields in descending order. Use `[\"__UNSORTED__\"]` (2 underscores before and after) to disable sorting entirely. Empty sorts `[]` will trigger a default sort."
+        },
+        {
+          "name": "view",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateSavedQueryOptions",
+      "members": [
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "view",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateSavedQueryRequest",
+      "members": [
+        {
+          "name": "dimensions",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of dimensions to return"
+        },
+        {
+          "name": "filters",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "See Filters in Data Service Usage doc for a format description"
+        },
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "500 rows if not set"
+        },
+        {
+          "name": "measures",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "field names of measures to return"
+        },
+        {
+          "name": "name",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "queryId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorts",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Sorting for the query results. Use the format `[\"view.field\", ...]` to sort on fields in ascending order. Use the format `[\"view.field desc\", ...]` to sort on fields in descending order. Use `[\"__UNSORTED__\"]` (2 underscores before and after) to disable sorting entirely. Empty sorts `[]` will trigger a default sort."
+        },
+        {
+          "name": "view",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateSavedQueryResponse",
+      "members": [
+        {
+          "name": "query",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.WixAnalyticsNgDataV1Data.SavedQueryResponse"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ],
+  "extra": {},
+  "clientId": "wix-dev-backend-data",
+  "docs": {
+    "description": [
+      "",
+      "    Introduction auto-generated by metro-service",
+      "  "
+    ],
+    "examples": []
+  },
+  "relatedGuides": [],
+  "properties": [],
+  "operations": []
+}
