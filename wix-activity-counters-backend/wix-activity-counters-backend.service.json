@@ -1,0 +1,474 @@
+{ "name": "wix-activity-counters-backend",
+  "mixes": [],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 1,
+      "filename": "index.js" },
+  "docs":
+    { "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations":
+    [ { "name": "getActivityCounters",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "memberId",
+              "type": "string",
+              "doc": "ID of the site member whose counters will be returned." } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-activity-counters-backend.GetActivityCountersResult_12277928666" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 7,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_GetActivityCounters_getActivityCounters.js" } ],
+        "docs":
+          { "summary": "Returns activity counters for a requested site member.",
+            "description":
+              [ "A third party can read all the public counters, set by any apps. However, third parties can only read their own private counters, not those from others' apps." ],
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixActivityCountersBackend from \"wix-activity-counters-backend\";",
+                      "",
+                      "export function getActivityCounters() {",
+                      "  const memberId = \"a string\";",
+                      "",
+                      "  return wixActivityCountersBackend",
+                      "    .getActivityCounters(memberId)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "queryActivityCounters",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "queryActivityCountersRequest",
+              "type": "wix-activity-counters-backend.QueryActivityCountersRequest_16290101857" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-activity-counters-backend.QueryActivityCountersResult_16512412777" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 60,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_QueryActivityCounters_queryActivityCounters.js" } ],
+        "docs":
+          { "summary": "Returns up to 100 activity counters for the provided filter and paging.",
+            "description":
+              [ "Service will return only counters that are marked as public, or private counters from apps created by the requesting third party.",
+                "",
+                "Supported fields for filtering:",
+                "- memberId",
+                "",
+                "Supported operations:",
+                "Comparison:",
+                "- $eq",
+                "- $ne",
+                "- $in",
+                "Logical:",
+                "- $and",
+                "- $not",
+                "- $or" ],
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixActivityCountersBackend from \"wix-activity-counters-backend\";",
+                      "",
+                      "export function queryActivityCounters() {",
+                      "  const queryActivityCountersRequest = {",
+                      "    query: {",
+                      "      filter: {",
+                      "        kind: {",
+                      "          nullValue: \"NULL_VALUE\"",
+                      "        }",
+                      "      },",
+                      "      paging: {",
+                      "        limit: 42,",
+                      "        offset: 42",
+                      "      }",
+                      "    }",
+                      "  };",
+                      "",
+                      "  return wixActivityCountersBackend",
+                      "    .queryActivityCounters(queryActivityCountersRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } },
+      { "name": "setActivityCounters",
+        "labels": [],
+        "nameParams": [],
+        "params":
+          [ { "name": "setActivityCountersRequest",
+              "type": "wix-activity-counters-backend.SetActivityCountersRequest_6084579218" } ],
+        "ret":
+          { "type":
+              { "name": "Promise",
+                "typeParams":
+                  [ "wix-activity-counters-backend.SetActivityCountersResult_12213570528" ] },
+            "doc": "" },
+        "locations":
+          [ { "lineno": 25,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_SetActivityCounters_setActivityCounters.js" } ],
+        "docs":
+          { "summary": "Sets activity counters for a requested site member.",
+            "description":
+              [ "If a counter does not yet exist, it will be created.",
+                "",
+                "Counters are set under a custom key, which is an ID for the counter, and is unique per app." ],
+            "links": [],
+            "examples":
+              [ { "title": "basic usage",
+                  "body":
+                    [ "import wixActivityCountersBackend from \"wix-activity-counters-backend\";",
+                      "",
+                      "export function setActivityCounters() {",
+                      "  const setActivityCountersRequest = {",
+                      "    memberId: \"a string\",",
+                      "    counter: {",
+                      "      key: \"a string\",",
+                      "      public: true,",
+                      "      count: 42",
+                      "    }",
+                      "  };",
+                      "",
+                      "  return wixActivityCountersBackend",
+                      "    .setActivityCounters(setActivityCountersRequest)",
+                      "    .then((response) => {",
+                      "      console.log(response);",
+                      "    })",
+                      "    .catch((error) => {",
+                      "      console.error(error);",
+                      "    });",
+                      "}" ],
+                  "extra":
+                    {  } } ],
+            "extra":
+              {  } },
+        "extra":
+          { "customLabels":
+              [ { "id": "maturity-beta" } ] } } ],
+  "callbacks": [],
+  "messages":
+    [ { "name": "ActivityCounter_11406213787",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "memberId",
+              "type": "string",
+              "doc": "Member ID." },
+            { "name": "appId",
+              "type": "string",
+              "doc": "App ID." },
+            { "name": "counters",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-activity-counters-backend.Counter_2291860331" ] },
+              "doc": "Counters for this member and this app." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Counter_2013794168",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_SetActivityCounters_setActivityCounters.js" } ],
+        "docs":
+          { "summary": "Site member ID whose counter will be set.",
+            "description":
+              [ "Counter for this site member and app." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "key",
+              "type": "string",
+              "doc": "Key of the counter. Must be unique within a given app.",
+              "optional": true },
+            { "name": "public",
+              "type": "boolean",
+              "doc": "Whether count is available to all (if `public` is false, the counter is only available to the data owner; the site member, or the third party app that created the counter).",
+              "optional": true },
+            { "name": "count",
+              "type": "number",
+              "doc": "Current count of activity.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Counter_2291860331",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "shared.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "key",
+              "type": "string",
+              "doc": "Key of the counter. Must be unique within a given app." },
+            { "name": "public",
+              "type": "boolean",
+              "doc": "Whether count is available to all (if `public` is false, the counter is only available to the data owner; the site member, or the third party app that created the counter)." },
+            { "name": "count",
+              "type": "number",
+              "doc": "Current count of activity." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "GetActivityCountersResult_12277928666",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_GetActivityCounters_getActivityCounters.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "activityCounters",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-activity-counters-backend.ActivityCounter_11406213787" ] },
+              "doc": "Activity counters." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "PagingMetadata_1718372609",
+        "locations":
+          [ { "lineno": 46,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_QueryActivityCounters_queryActivityCounters.js" } ],
+        "docs":
+          { "summary": "Retrieved activity counters.",
+            "description":
+              [ "Paging metadata." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "count",
+              "type": "number",
+              "doc": "Number of items returned in the response." },
+            { "name": "offset",
+              "type": "number",
+              "doc": "Offset that was requested." },
+            { "name": "total",
+              "type": "number",
+              "doc": "Total number of items that match the query." },
+            { "name": "tooManyToCount",
+              "type": "boolean",
+              "doc": "Flag that indicates the server failed to calculate the `total` field." },
+            { "name": "hasNext",
+              "type": "boolean",
+              "doc": "Indicates if there are more results after the current page.\n If `true`, another page of results can be retrieved.\n If `false`, this is the last page." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Paging_1617727965",
+        "locations":
+          [ { "lineno": 38,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_QueryActivityCounters_queryActivityCounters.js" } ],
+        "docs":
+          { "summary": "Limit number of results.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "limit",
+              "type": "number",
+              "doc": "Number of items to load.",
+              "optional": true },
+            { "name": "offset",
+              "type": "number",
+              "doc": "Number of items to skip in the current sort order.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QueryActivityCountersRequest_16290101857",
+        "locations":
+          [ { "lineno": 9,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_QueryActivityCounters_queryActivityCounters.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "query",
+              "type": "wix-activity-counters-backend.Query_16129766425",
+              "doc": "Query options.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "QueryActivityCountersResult_16512412777",
+        "locations":
+          [ { "lineno": 15,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_QueryActivityCounters_queryActivityCounters.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "activityCounters",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-activity-counters-backend.ActivityCounter_11406213787" ] } },
+            { "name": "metadata",
+              "type": "wix-activity-counters-backend.PagingMetadata_1718372609",
+              "doc": "Retrieved activity counters.\n Paging metadata." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Query_16129766425",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_QueryActivityCounters_queryActivityCounters.js" } ],
+        "docs":
+          { "summary": "Query options.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "filter",
+              "type": "wix-activity-counters-backend.Value_11948408011",
+              "doc": "A filter object.",
+              "optional": true },
+            { "name": "paging",
+              "type": "wix-activity-counters-backend.Paging_1617727965",
+              "doc": "Limit number of results.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SetActivityCountersRequest_6084579218",
+        "locations":
+          [ { "lineno": 11,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_SetActivityCounters_setActivityCounters.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "memberId",
+              "type": "string" },
+            { "name": "counter",
+              "type": "wix-activity-counters-backend.Counter_2013794168",
+              "doc": "Site member ID whose counter will be set.\n Counter for this site member and app." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SetActivityCountersResult_12213570528",
+        "locations":
+          [ { "lineno": 19,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_SetActivityCounters_setActivityCounters.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "activityCounter",
+              "type": "wix-activity-counters-backend.ActivityCounter_11406213787" } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "Value_11948408011",
+        "locations":
+          [ { "lineno": 23,
+              "filename": "com_wixpress_members_activitycounters_ActivityCounters_QueryActivityCounters_queryActivityCounters.js" } ],
+        "docs":
+          { "summary": "A filter object.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "nullValue",
+              "type": "string",
+              "doc": "Represents a null value.\nOne of:\n + `\"NULL_VALUE\"`",
+              "optional": true },
+            { "name": "numberValue",
+              "type": "number",
+              "doc": "Represents a double value.",
+              "optional": true },
+            { "name": "stringValue",
+              "type": "string",
+              "doc": "Represents a string value.",
+              "optional": true },
+            { "name": "boolValue",
+              "type": "boolean",
+              "doc": "Represents a boolean value.",
+              "optional": true },
+            { "name": "structValue",
+              "type": "Object",
+              "doc": "Represents a structured value.",
+              "optional": true },
+            { "name": "listValue",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-activity-counters-backend.Value_11948408011" ] },
+              "doc": "Represents a repeated `Value`.",
+              "optional": true } ],
+        "extra":
+          { "oneOfGroups":
+              [ { "name": "kind",
+                  "members":
+                    [ "boolValue",
+                      "listValue",
+                      "nullValue",
+                      "numberValue",
+                      "stringValue",
+                      "structValue" ] } ] },
+        "labels": [] } ],
+  "extra":
+    {  } }
