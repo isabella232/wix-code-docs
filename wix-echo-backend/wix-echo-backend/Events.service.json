@@ -3,6 +3,12 @@
   "memberOf": "wix-echo-backend",
   "mixes": [],
   "callbacks": [],
+  "extra": {},
+  "clientId": "wix-echo-backend-events",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [],
   "messages": [
     {
       "name": "Dispatched",
@@ -172,11 +178,5 @@
         ]
       }
     }
-  ],
-  "extra": {},
-  "clientId": "wix-echo-backend-events",
-  "docs": {},
-  "relatedGuides": [],
-  "properties": [],
-  "operations": []
+  ]
 }
