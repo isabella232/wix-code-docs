@@ -3,6 +3,7 @@
   "memberOf": "wix-metro-backend.Products",
   "mixes": [],
   "callbacks": [],
+  "messages": [],
   "extra": {},
   "docs": {},
   "relatedGuides": [],
@@ -71,6 +72,5 @@
       }
     }
   ],
-  "operations": [],
-  "messages": []
+  "operations": []
 }

@@ -3,10 +3,10 @@
   "memberOf": "wix-metro-backend.Products",
   "mixes": [],
   "callbacks": [],
+  "messages": [],
   "extra": {},
   "docs": {},
   "relatedGuides": [],
   "properties": [],
-  "operations": [],
-  "messages": []
+  "operations": []
 }
