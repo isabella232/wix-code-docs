@@ -2,6 +2,713 @@
   "name": "wix-restaurants-catalogs-backend",
   "mixes": [],
   "callbacks": [],
+  "extra": {},
+  "clientId": "wix-restaurants-catalogs-backend",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [
+    {
+      "name": "archiveMenu",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.ArchiveMenuIdentifiers"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.ArchiveMenuResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Archive menu."
+        ]
+      }
+    },
+    {
+      "name": "createDish",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.CreateDishIdentifiers"
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "dish",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Item"
+            }
+          ],
+          "doc": "Dish data (as Item object)"
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.CreateDishResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Creates a new dish."
+        ]
+      }
+    },
+    {
+      "name": "createMenu",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Catalog Id"
+        },
+        {
+          "name": "menu",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Menu"
+            }
+          ],
+          "doc": "Menu data."
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.CreateMenuResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Creates a new menu."
+        ]
+      }
+    },
+    {
+      "name": "createSection",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.CreateSectionIdentifiers"
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "section",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Section"
+            }
+          ],
+          "doc": "Section data."
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.CreateSectionResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Creates a new menu section."
+        ]
+      }
+    },
+    {
+      "name": "createVariation",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Catalog Id."
+        },
+        {
+          "name": "name",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "variation name"
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.CreateVariationResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Creates a new variation."
+        ]
+      }
+    },
+    {
+      "name": "getItem",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.GetItemIdentifiers"
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "includeVisibilityCriteria",
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Default: false. Returns condition data of item"
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.GetItemResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Retrieves an item with the provided ID."
+        ]
+      }
+    },
+    {
+      "name": "getMenu",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.GetMenuIdentifiers"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.GetMenuResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Retrieves a menu with the provided ID."
+        ]
+      }
+    },
+    {
+      "name": "getSection",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.GetSectionIdentifiers"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.GetSectionResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Retrieves a menu section with the provided ID."
+        ]
+      }
+    },
+    {
+      "name": "listCatalogs",
+      "params": [
+        {
+          "name": "sort",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Sorting"
+            }
+          ],
+          "doc": "Sort order"
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.ListCatalogsOptions"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.ListCatalogsResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "listItems",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Catalog Id."
+        },
+        {
+          "name": "fieldMask",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.ListItemsOptions"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.ListItemsResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Retrieves catalogs items."
+        ]
+      }
+    },
+    {
+      "name": "listMenus",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Catalog Id"
+        },
+        {
+          "name": "fieldMask",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.ListMenusOptions"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.ListMenusResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Retrieves catalog menus."
+        ]
+      }
+    },
+    {
+      "name": "listSections",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Catalog Id"
+        },
+        {
+          "name": "fieldMask",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.ListSectionsOptions"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.ListSectionsResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Retrieves catalogs sections."
+        ]
+      }
+    },
+    {
+      "name": "unarchiveMenu",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.UnarchiveMenuIdentifiers"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.UnarchiveMenuResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Unarchive menu."
+        ]
+      }
+    },
+    {
+      "name": "updateItem",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateItemIdentifiers"
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "item",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateItemItem"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.UpdateItemResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Updates specified fields in an item."
+        ]
+      }
+    },
+    {
+      "name": "updateMenu",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuIdentifiers"
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "menu",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuMenu"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Updates specified fields in a menu."
+        ]
+      }
+    },
+    {
+      "name": "updateSection",
+      "params": [
+        {
+          "name": "identifiers",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionIdentifiers"
+            }
+          ],
+          "doc": null
+        },
+        {
+          "name": "section",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionSection"
+            }
+          ],
+          "doc": null
+        }
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Updates specified fields in a menu section."
+        ]
+      }
+    }
+  ],
   "messages": [
     {
       "name": "ApplicationError",
@@ -4581,713 +5288,6 @@
       "docs": {
         "description": [
           ""
-        ]
-      }
-    }
-  ],
-  "extra": {},
-  "clientId": "wix-restaurants-catalogs-backend",
-  "docs": {},
-  "relatedGuides": [],
-  "properties": [],
-  "operations": [
-    {
-      "name": "archiveMenu",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.ArchiveMenuIdentifiers"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.ArchiveMenuResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Archive menu."
-        ]
-      }
-    },
-    {
-      "name": "createDish",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.CreateDishIdentifiers"
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "dish",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Item"
-            }
-          ],
-          "doc": "Dish data (as Item object)"
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.CreateDishResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Creates a new dish."
-        ]
-      }
-    },
-    {
-      "name": "createMenu",
-      "params": [
-        {
-          "name": "catalogId",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Catalog Id"
-        },
-        {
-          "name": "menu",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Menu"
-            }
-          ],
-          "doc": "Menu data."
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.CreateMenuResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Creates a new menu."
-        ]
-      }
-    },
-    {
-      "name": "createSection",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.CreateSectionIdentifiers"
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "section",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Section"
-            }
-          ],
-          "doc": "Section data."
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.CreateSectionResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Creates a new menu section."
-        ]
-      }
-    },
-    {
-      "name": "createVariation",
-      "params": [
-        {
-          "name": "catalogId",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Catalog Id."
-        },
-        {
-          "name": "name",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "variation name"
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.CreateVariationResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Creates a new variation."
-        ]
-      }
-    },
-    {
-      "name": "getItem",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.GetItemIdentifiers"
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "includeVisibilityCriteria",
-          "type": [
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Default: false. Returns condition data of item"
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.GetItemResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Retrieves an item with the provided ID."
-        ]
-      }
-    },
-    {
-      "name": "getMenu",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.GetMenuIdentifiers"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.GetMenuResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Retrieves a menu with the provided ID."
-        ]
-      }
-    },
-    {
-      "name": "getSection",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.GetSectionIdentifiers"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.GetSectionResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Retrieves a menu section with the provided ID."
-        ]
-      }
-    },
-    {
-      "name": "listCatalogs",
-      "params": [
-        {
-          "name": "sort",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Sorting"
-            }
-          ],
-          "doc": "Sort order"
-        },
-        {
-          "name": "options",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.ListCatalogsOptions"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.ListCatalogsResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "listItems",
-      "params": [
-        {
-          "name": "catalogId",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Catalog Id."
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "options",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.ListItemsOptions"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.ListItemsResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Retrieves catalogs items."
-        ]
-      }
-    },
-    {
-      "name": "listMenus",
-      "params": [
-        {
-          "name": "catalogId",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Catalog Id"
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "options",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.ListMenusOptions"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.ListMenusResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Retrieves catalog menus."
-        ]
-      }
-    },
-    {
-      "name": "listSections",
-      "params": [
-        {
-          "name": "catalogId",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Catalog Id"
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "options",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.ListSectionsOptions"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.ListSectionsResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Retrieves catalogs sections."
-        ]
-      }
-    },
-    {
-      "name": "unarchiveMenu",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.UnarchiveMenuIdentifiers"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.UnarchiveMenuResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Unarchive menu."
-        ]
-      }
-    },
-    {
-      "name": "updateItem",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateItemIdentifiers"
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "item",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateItemItem"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.UpdateItemResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Updates specified fields in an item."
-        ]
-      }
-    },
-    {
-      "name": "updateMenu",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuIdentifiers"
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "menu",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuMenu"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Updates specified fields in a menu."
-        ]
-      }
-    },
-    {
-      "name": "updateSection",
-      "params": [
-        {
-          "name": "identifiers",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionIdentifiers"
-            }
-          ],
-          "doc": null
-        },
-        {
-          "name": "section",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionSection"
-            }
-          ],
-          "doc": null
-        }
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [
-          "Updates specified fields in a menu section."
         ]
       }
     }
