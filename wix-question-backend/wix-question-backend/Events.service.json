@@ -3,12 +3,6 @@
   "memberOf": "wix-question-backend",
   "mixes": [],
   "callbacks": [],
-  "extra": {},
-  "clientId": "wix-question-backend-events",
-  "docs": {},
-  "relatedGuides": [],
-  "properties": [],
-  "operations": [],
   "messages": [
     {
       "name": "BackendEventMetadata",
@@ -832,5 +826,11 @@
         ]
       }
     }
-  ]
+  ],
+  "extra": {},
+  "clientId": "wix-question-backend-events",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": []
 }
