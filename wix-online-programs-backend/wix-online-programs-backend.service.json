@@ -897,18 +897,6 @@
           "doc": "Document filename. Optional."
         },
         {
-          "name": "sizeInBytes",
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Document size in bytes. Optional."
-        },
-        {
           "name": "url",
           "type": [
             {
@@ -916,15 +904,6 @@
             }
           ],
           "doc": "Document URL."
-        },
-        {
-          "name": "urlExpirationDate",
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Document URL expiration date (when relevant). Optional"
         }
       ],
       "docs": {
@@ -2584,7 +2563,7 @@
               "referenceType": "wix-online-programs-backend.Document"
             }
           ],
-          "doc": ""
+          "doc": "WixMedia document"
         },
         {
           "name": "image",
@@ -2593,7 +2572,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "WixMedia image"
         },
         {
           "name": "video",
@@ -2602,7 +2581,7 @@
               "referenceType": "wix-online-programs-backend.Video"
             }
           ],
-          "doc": ""
+          "doc": "WixMedia video"
         }
       ],
       "docs": {
@@ -3565,7 +3544,14 @@
           "name": "performance",
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantPerformance"
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-online-programs-backend.ParticipantPerformance"
+                  }
+                ]
+              }
             }
           ],
           "doc": ""
