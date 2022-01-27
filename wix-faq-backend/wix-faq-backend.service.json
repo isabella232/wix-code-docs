@@ -1,6 +1,7 @@
 { "name": "wix-faq-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -23,7 +24,8 @@
   "properties": [],
   "operations":
     [ { "name": "bulkSetQuestionStatus",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "questionIds",
@@ -48,15 +50,17 @@
               "filename": "bulkSetQuestionStatus.js" } ],
         "docs":
           { "summary": "Updates multiple question entries' statuses.",
+            "description":
+              [ "Updates one or more question entries' statuses. If all updates are successful, `bulkSetQuestionStatus` returns an empty array. If any updates were unsuccessful, the array contains the IDs of all questions to retry." ],
             "links": [],
             "examples":
-              [ { "title": "basic usage",
+              [ { "title": "Update the status of the specified question entry to `VISIBLE`",
                   "body":
                     [ "import wixFaqBackend from \"wix-faq-backend\";",
                       "",
                       "export function bulkSetQuestionStatus() {",
-                      "  const questionIds = [\"a string\"];",
-                      "  const status = \"UNKNOWN\";",
+                      "  const questionIds = [\"65840ccb-4d96-471f-8fe1-a10893e7ba87\"];",
+                      "  const status = \"VISIBLE\";",
                       "",
                       "  return wixFaqBackend",
                       "    .bulkSetQuestionStatus(questionIds, status)",
@@ -66,7 +70,12 @@
                       "    .catch((error) => {",
                       "      console.error(error);",
                       "    });",
-                      "}" ],
+                      "}",
+                      "/* Array of question IDs that should be retried.",
+                      " * [",
+                      " *   \"65840ccb-4d96-471f-8fe1-a10893e7ba87\"",
+                      " * ]",
+                      " */" ],
                   "extra":
                     {  } } ],
             "extra":
