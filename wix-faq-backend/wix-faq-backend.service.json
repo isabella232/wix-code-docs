@@ -1,7 +1,6 @@
 { "name": "wix-faq-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -24,8 +23,7 @@
   "properties": [],
   "operations":
     [ { "name": "bulkSetQuestionStatus",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "questionIds",
@@ -84,8 +82,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "bulkUpdateLabels",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "updates",
@@ -141,8 +138,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createCategory",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "category",
