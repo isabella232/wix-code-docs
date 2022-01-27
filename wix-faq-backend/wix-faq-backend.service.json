@@ -71,7 +71,7 @@
                       "      console.error(error);",
                       "    });",
                       "}",
-                      "/* Array of question IDs that should be retried.",
+                      "/* Promise resolves to: ",
                       " * [",
                       " *   \"65840ccb-4d96-471f-8fe1-a10893e7ba87\"",
                       " * ]",
@@ -84,7 +84,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "bulkUpdateLabels",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "updates",
@@ -105,7 +106,7 @@
           [ { "lineno": 9,
               "filename": "bulkUpdateLabels.js" } ],
         "docs":
-          { "summary": "Updates a question entry's visibility.",
+          { "summary": "Sets new values for a specified question entry's label and / or its order in the site's FAQ).",
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -140,7 +141,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createCategory",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "category",
@@ -156,12 +158,12 @@
           [ { "lineno": 1,
               "filename": "createCategory.js" } ],
         "docs":
-          { "summary": "Creates a category.",
+          { "summary": "Creates a new category.",
             "description":
-              [ "The `createCategory()` function returns a Promise that resolves when the category is successfully created." ],
+              [ "The `createCategory()` function returns a Promise that resolves when the new category is successfully created." ],
             "links": [],
             "examples":
-              [ { "title": "basic usage",
+              [ { "title": "Create a new category, \"How to Get Started\"",
                   "body":
                     [ "import wixFaqBackend from \"wix-faq-backend\";",
                       "",
