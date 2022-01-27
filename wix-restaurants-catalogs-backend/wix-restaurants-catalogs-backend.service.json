@@ -1924,18 +1924,6 @@
             }
           ],
           "doc": "The location id that the catalog refers to"
-        },
-        {
-          "name": "revision",
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Catalog revision, represents the number of changes to the catalog."
         }
       ],
       "docs": {
@@ -3947,18 +3935,6 @@
             }
           ],
           "doc": "Currency code. Must be valid ISO 4217 currency code (e.g., USD)."
-        },
-        {
-          "name": "formattedValue",
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Monetary amount. Decimal string in local format (e.g., 1 000,30). Optionally, a single (-), to indicate that the amount is negative."
         },
         {
           "name": "value",
