@@ -18,9 +18,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.ArchiveMenuIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -52,7 +54,8 @@
               "referenceType": "wix-restaurants-catalogs-backend.CreateDishIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "dish",
@@ -61,9 +64,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": "Dish data (as Item object)"
+          "doc": "Dish data (as Item object)",
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -95,7 +100,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "Catalog Id",
+          "required": false
         },
         {
           "name": "menu",
@@ -104,9 +110,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": "Menu data."
+          "doc": "Menu data.",
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -138,7 +146,8 @@
               "referenceType": "wix-restaurants-catalogs-backend.CreateSectionIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "section",
@@ -147,9 +156,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Section data."
+          "doc": "Section data.",
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -181,7 +192,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "Catalog Id.",
+          "required": false
         },
         {
           "name": "name",
@@ -190,9 +202,11 @@
               "nativeType": "string"
             }
           ],
-          "doc": "variation name"
+          "doc": "variation name",
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -224,7 +238,8 @@
               "referenceType": "wix-restaurants-catalogs-backend.GetItemIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "includeVisibilityCriteria",
@@ -233,9 +248,11 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Default: false. Returns condition data of item"
+          "doc": "Default: false. Returns condition data of item",
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -267,9 +284,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.GetMenuIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -301,9 +320,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.GetSectionIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -335,7 +356,8 @@
               "referenceType": "wix-restaurants-catalogs-backend.Sorting"
             }
           ],
-          "doc": "Sort order"
+          "doc": "Sort order",
+          "required": false
         },
         {
           "name": "options",
@@ -344,9 +366,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.ListCatalogsOptions"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -378,7 +402,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "Catalog Id.",
+          "required": false
         },
         {
           "name": "fieldMask",
@@ -394,7 +419,8 @@
               }
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "options",
@@ -403,9 +429,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.ListItemsOptions"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -437,7 +465,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "Catalog Id",
+          "required": false
         },
         {
           "name": "fieldMask",
@@ -453,7 +482,8 @@
               }
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "options",
@@ -462,9 +492,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.ListMenusOptions"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -496,7 +528,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "Catalog Id",
+          "required": false
         },
         {
           "name": "fieldMask",
@@ -512,7 +545,8 @@
               }
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "options",
@@ -521,9 +555,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.ListSectionsOptions"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -555,9 +591,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.UnarchiveMenuIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -589,7 +627,8 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateItemIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "item",
@@ -598,9 +637,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateItemItem"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -632,7 +673,8 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "menu",
@@ -641,9 +683,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuMenu"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -675,7 +719,8 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionIdentifiers"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "section",
@@ -684,9 +729,11 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionSection"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
