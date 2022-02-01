@@ -26,8 +26,12 @@
               "referenceType": "wix-metro-backend.Products.Product"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
+      ],
+      "requiredFields": [
+        "CreateProductRequest.product.title"
       ],
       "ret": {
         "type": [
@@ -60,8 +64,12 @@
               "nativeType": "string"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
+      ],
+      "requiredFields": [
+        "DeleteProductRequest.productId"
       ],
       "ret": {
         "type": [
@@ -94,8 +102,12 @@
               "nativeType": "string"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
+      ],
+      "requiredFields": [
+        "GetProductRequest.productId"
       ],
       "ret": {
         "type": [
@@ -128,7 +140,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "product",
@@ -137,8 +150,12 @@
               "referenceType": "wix-metro-backend.Products.Product"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
+      ],
+      "requiredFields": [
+        "UpdateProductRequest.product.id"
       ],
       "ret": {
         "type": [
@@ -1204,6 +1221,7 @@
         },
         {
           "name": "height",
+          "readOnly": true,
           "type": [
             {
               "nativeType": "number"
@@ -1231,6 +1249,7 @@
         },
         {
           "name": "width",
+          "readOnly": true,
           "type": [
             {
               "nativeType": "number"
