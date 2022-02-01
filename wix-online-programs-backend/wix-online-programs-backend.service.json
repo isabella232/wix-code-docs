@@ -18,7 +18,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "memberId",
@@ -27,7 +28,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         },
         {
           "name": "options",
@@ -36,9 +38,11 @@
               "referenceType": "wix-online-programs-backend.AddParticipantOptions"
             }
           ],
-          "doc": null
+          "doc": null,
+          "required": false
         }
       ],
+      "requiredFields": [],
       "ret": {
         "type": [
           {
