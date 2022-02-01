@@ -19,11 +19,9 @@
               "referenceType": "wix-restaurants-catalogs-backend.Events.CatalogCreated"
             }
           ],
-          "doc": null,
-          "required": false
+          "doc": null
         }
       ],
-      "requiredFields": [],
       "ret": {
         "type": [
           {
@@ -64,11 +62,9 @@
               "referenceType": "wix-restaurants-catalogs-backend.Events.CatalogUpdated"
             }
           ],
-          "doc": null,
-          "required": false
+          "doc": null
         }
       ],
-      "requiredFields": [],
       "ret": {
         "type": [
           {
