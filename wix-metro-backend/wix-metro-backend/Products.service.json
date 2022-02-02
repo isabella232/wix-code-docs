@@ -227,6 +227,18 @@
           "doc": "WixMedia ID."
         },
         {
+          "name": "filename",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Audio filename. Optional."
+        },
+        {
           "name": "url",
           "type": [
             {
@@ -387,6 +399,18 @@
             }
           ],
           "doc": "WixMedia ID."
+        },
+        {
+          "name": "filename",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Document filename. Optional."
         },
         {
           "name": "url",
@@ -1251,6 +1275,18 @@
             }
           ],
           "doc": "WixMedia ID."
+        },
+        {
+          "name": "filename",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Video filename. Optional."
         },
         {
           "name": "resolutions",
