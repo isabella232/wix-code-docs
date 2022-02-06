@@ -41,6 +41,7 @@
       "members": [
         {
           "name": "question",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
@@ -60,6 +61,7 @@
       "members": [
         {
           "name": "cursor",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -72,6 +74,7 @@
         },
         {
           "name": "limit",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -103,6 +106,7 @@
         },
         {
           "name": "revision",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -140,6 +144,7 @@
       "members": [
         {
           "name": "_createdDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "Date"
@@ -149,6 +154,7 @@
         },
         {
           "name": "_id",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -161,6 +167,7 @@
         },
         {
           "name": "_updatedDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "Date"
@@ -170,6 +177,7 @@
         },
         {
           "name": "author",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -182,6 +190,7 @@
         },
         {
           "name": "content",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -191,6 +200,7 @@
         },
         {
           "name": "upvotedByMe",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -200,6 +210,7 @@
         },
         {
           "name": "upvotes",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -238,6 +249,7 @@
       "members": [
         {
           "name": "question",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
@@ -257,6 +269,7 @@
       "members": [
         {
           "name": "limit",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -269,6 +282,7 @@
         },
         {
           "name": "offset",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -310,6 +324,7 @@
       "members": [
         {
           "name": "questions",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -336,6 +351,7 @@
       "members": [
         {
           "name": "cursorPaging",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.CursorPaging"
@@ -345,6 +361,7 @@
         },
         {
           "name": "fields",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -361,6 +378,7 @@
         },
         {
           "name": "fieldsets",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -377,6 +395,7 @@
         },
         {
           "name": "filter",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -399,6 +418,7 @@
         },
         {
           "name": "paging",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Paging"
@@ -408,6 +428,7 @@
         },
         {
           "name": "sort",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -434,6 +455,7 @@
       "members": [
         {
           "name": "_createdDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "Date"
@@ -443,6 +465,7 @@
         },
         {
           "name": "_id",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -455,6 +478,7 @@
         },
         {
           "name": "_updatedDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "Date"
@@ -464,6 +488,7 @@
         },
         {
           "name": "author",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -476,6 +501,7 @@
         },
         {
           "name": "content",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -485,6 +511,7 @@
         },
         {
           "name": "revision",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -497,6 +524,7 @@
         },
         {
           "name": "spicyWords",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -513,6 +541,7 @@
         },
         {
           "name": "status",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Status"
@@ -522,6 +551,7 @@
         },
         {
           "name": "upvotes",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -550,6 +580,7 @@
       "members": [
         {
           "name": "questions",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -589,6 +620,7 @@
       "members": [
         {
           "name": "fieldName",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -598,6 +630,7 @@
         },
         {
           "name": "order",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.SortOrder"
@@ -658,6 +691,7 @@
       "members": [
         {
           "name": "_createdDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "Date"
@@ -667,6 +701,7 @@
         },
         {
           "name": "_updatedDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "Date"
@@ -676,6 +711,7 @@
         },
         {
           "name": "author",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -688,6 +724,7 @@
         },
         {
           "name": "content",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -697,6 +734,7 @@
         },
         {
           "name": "revision",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -709,6 +747,7 @@
         },
         {
           "name": "spicyWords",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -725,6 +764,7 @@
         },
         {
           "name": "status",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Status"
@@ -734,6 +774,7 @@
         },
         {
           "name": "upvotes",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -753,6 +794,7 @@
       "members": [
         {
           "name": "mask",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -788,6 +830,7 @@
       "members": [
         {
           "name": "question",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
@@ -835,6 +878,7 @@
         },
         {
           "name": "redeemVote",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
