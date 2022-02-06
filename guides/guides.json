@@ -19,7 +19,7 @@
           "isMdFile": true
         },
         {
-          "name": "Users & Contacts",
+          "name": "Members & Contacts",
           "url": "./overview-users.md",
           "isMdFile": true
         },
@@ -151,6 +151,11 @@
         {
           "name": "Wix Stores: Bundle Products",
           "url": "../package-readmes/storesBundle.md",
+          "isMdFile": true
+        },
+        {
+          "name": "Wix Stores: Data Requests",
+          "url": "../package-readmes/storesDataReq.md",
           "isMdFile": true
         },
         {
