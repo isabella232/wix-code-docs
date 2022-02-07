@@ -9180,6 +9180,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
