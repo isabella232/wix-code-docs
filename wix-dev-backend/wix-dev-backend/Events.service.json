@@ -22142,6 +22142,49 @@
       }
     },
     {
+      "name": "GetSeatingPlanThumbnailRequest",
+      "members": [
+        {
+          "name": "_id",
+          "readOnly": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetSeatingPlanThumbnailResponse",
+      "members": [
+        {
+          "name": "thumbnail",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.SeatingPlanThumbnail"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "GetStockRequest",
       "members": [
         {
@@ -41317,6 +41360,43 @@
       }
     },
     {
+      "name": "SeatingPlanThumbnail",
+      "members": [
+        {
+          "name": "_id",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "img",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "SeatingPlanUpdated",
       "members": [
         {
@@ -47309,6 +47389,45 @@
             }
           ],
           "doc": "The updated plan"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateSeatingPlanThumbnailRequest",
+      "members": [
+        {
+          "name": "thumbnail",
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.SeatingPlanThumbnail"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateSeatingPlanThumbnailResponse",
+      "members": [
+        {
+          "name": "thumbnail",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.SeatingPlanThumbnail"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
