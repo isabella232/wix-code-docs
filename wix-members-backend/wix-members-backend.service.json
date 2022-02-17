@@ -1,6 +1,7 @@
 { "name": "wix-members-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -14,7 +15,7 @@
           "import the applicable named exports from `wix-members-backend`:",
           "",
           "```js",
-          "import { authentication, authorization, badges, currentMember, members } from 'wix-members-backend';",
+          "import { authentication, authorization, badges, currentMember, members, followers } from 'wix-members-backend';",
           "```" ],
       "links": [],
       "examples": [],
@@ -103,6 +104,29 @@
                 "```javascript",
                 "import { currentMember } from 'wix-members-backend';",
                 "```" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
+      { "name": "followers",
+        "labels":
+          [ "new" ],
+        "get": true,
+        "set": false,
+        "type": "wix-members-backend.Authorization",
+        "locations":
+          [ { "lineno": 146,
+              "filename": "index.js" } ],
+        "docs":
+          { "summary": "The Followers API contains functionality for working with\n[members' followers](https://support.wix.com/en/article/about-the-members-area)\nfrom backend code.",
+            "description":
+              [ "To use the Followers API, import `{followers}` from the `wix-members-backend` module:",
+                "",
+                "   ```javascript",
+                "   import { followers } from 'wix-members-backend';",
+                "   ```" ],
             "links": [],
             "examples": [],
             "extra":
