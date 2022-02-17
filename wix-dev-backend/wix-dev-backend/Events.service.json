@@ -13095,6 +13095,70 @@
       }
     },
     {
+      "name": "CreateGalleryItemsRequest",
+      "members": [
+        {
+          "name": "galleryId",
+          "readOnly": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Gallery ID."
+        },
+        {
+          "name": "items",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.Item"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Media items to create."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CreateGalleryItemsResponse",
+      "members": [
+        {
+          "name": "items",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.Item"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Created media items."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "CreateGalleryRequest",
       "members": [
         {
