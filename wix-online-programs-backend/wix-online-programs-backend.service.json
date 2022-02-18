@@ -2356,15 +2356,6 @@
       "name": "ListParticipantsOptions",
       "members": [
         {
-          "name": "filter",
-          "type": [
-            {
-              "referenceType": "wix-online-programs-backend.ParticipantsFilter"
-            }
-          ],
-          "doc": ""
-        },
-        {
           "name": "memberId",
           "type": [
             {
@@ -2457,16 +2448,6 @@
           "type": [
             {
               "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "filter",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-online-programs-backend.ParticipantsFilter"
             }
           ],
           "doc": ""
@@ -3932,6 +3913,181 @@
             },
             {
               "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryParticipantsOptions",
+      "members": [
+        {
+          "name": "filter",
+          "type": [
+            {
+              "referenceType": "wix-online-programs-backend.ParticipantsFilter"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorting",
+          "type": [
+            {
+              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSorting"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryParticipantsRequest",
+      "members": [
+        {
+          "name": "challengeId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "filter",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-online-programs-backend.ParticipantsFilter"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "paging",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-online-programs-backend.Paging"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sorting",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSorting"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryParticipantsRequestSorting",
+      "members": [
+        {
+          "name": "criterion",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSortingCriterion"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "order",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSortingOrder"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryParticipantsRequestSortingCriterion",
+      "members": [],
+      "enum": [
+        "DEFAULT",
+        "JOIN_DATE",
+        "LAST_EVENT",
+        "NAME",
+        "PERFORMANCE"
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryParticipantsRequestSortingOrder",
+      "members": [],
+      "enum": [
+        "ORDER_ASC",
+        "ORDER_DEFAULT",
+        "ORDER_DESC"
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryParticipantsResponse",
+      "members": [
+        {
+          "name": "participants",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-online-programs-backend.Participant"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "totalCount",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
             }
           ],
           "doc": ""
