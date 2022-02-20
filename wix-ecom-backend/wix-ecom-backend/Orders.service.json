@@ -66,7 +66,7 @@
         ],
         "examples": [
           {
-            "title": "Title of AddActivity example",
+            "title": "AddActivity example",
             "body": [
               "",
               "    function addActivity() {",
@@ -129,7 +129,7 @@
         ],
         "examples": [
           {
-            "title": "Title of AddInternalActivity example",
+            "title": "AddInternalActivity example",
             "body": [
               "",
               "    function addInternalActivity() {",
@@ -205,7 +205,7 @@
         ],
         "examples": [
           {
-            "title": "Title of AggregateOrders example",
+            "title": "AggregateOrders example",
             "body": [
               "",
               "    function aggregateOrders() {",
@@ -257,7 +257,7 @@
         ],
         "examples": [
           {
-            "title": "Title of ArchiveOrder example",
+            "title": "ArchiveOrder example",
             "body": [
               "",
               "    function archiveOrder() {",
@@ -326,7 +326,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkArchiveOrders example",
+            "title": "BulkArchiveOrders example",
             "body": [
               "",
               "    function bulkArchiveOrders() {",
@@ -391,7 +391,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkArchiveOrdersByFilter example",
+            "title": "BulkArchiveOrdersByFilter example",
             "body": [
               "",
               "    function bulkArchiveOrdersByFilter() {",
@@ -460,7 +460,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkMarkAsFulfilled example",
+            "title": "BulkMarkAsFulfilled example",
             "body": [
               "",
               "    function bulkMarkAsFulfilled() {",
@@ -525,7 +525,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkMarkAsFulfilledByFilter example",
+            "title": "BulkMarkAsFulfilledByFilter example",
             "body": [
               "",
               "    function bulkMarkAsFulfilledByFilter() {",
@@ -594,7 +594,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkMarkAsUnfulfilled example",
+            "title": "BulkMarkAsUnfulfilled example",
             "body": [
               "",
               "    function bulkMarkAsUnfulfilled() {",
@@ -659,7 +659,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkMarkAsUnfulfilledByFilter example",
+            "title": "BulkMarkAsUnfulfilledByFilter example",
             "body": [
               "",
               "    function bulkMarkAsUnfulfilledByFilter() {",
@@ -718,7 +718,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkMarkOrdersAsPaid example",
+            "title": "BulkMarkOrdersAsPaid example",
             "body": [
               "",
               "    function bulkMarkOrdersAsPaid() {",
@@ -787,7 +787,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkUnArchiveOrders example",
+            "title": "BulkUnArchiveOrders example",
             "body": [
               "",
               "    function bulkUnArchiveOrders() {",
@@ -852,7 +852,7 @@
         ],
         "examples": [
           {
-            "title": "Title of BulkUnArchiveOrdersByFilter example",
+            "title": "BulkUnArchiveOrdersByFilter example",
             "body": [
               "",
               "    function bulkUnArchiveOrdersByFilter() {",
@@ -924,7 +924,7 @@
         ],
         "examples": [
           {
-            "title": "Title of CancelOrder example",
+            "title": "CancelOrder example",
             "body": [
               "",
               "    function cancelOrder() {",
@@ -989,7 +989,7 @@
         ],
         "examples": [
           {
-            "title": "Title of CreateOrder example",
+            "title": "CreateOrder example",
             "body": [
               "",
               "    function createOrder() {",
@@ -1041,7 +1041,7 @@
         ],
         "examples": [
           {
-            "title": "Title of CreatePaymentGatewayOrder example",
+            "title": "CreatePaymentGatewayOrder example",
             "body": [
               "",
               "    function createPaymentGatewayOrder() {",
@@ -1111,7 +1111,7 @@
         ],
         "examples": [
           {
-            "title": "Title of DecrementItemsQuantity example",
+            "title": "DecrementItemsQuantity example",
             "body": [
               "",
               "    function decrementItemsQuantity() {",
@@ -1164,7 +1164,7 @@
         ],
         "examples": [
           {
-            "title": "Title of DeleteActivity example",
+            "title": "DeleteActivity example",
             "body": [
               "",
               "    function deleteActivity() {",
@@ -1216,7 +1216,7 @@
         ],
         "examples": [
           {
-            "title": "Title of GetOrder example",
+            "title": "GetOrder example",
             "body": [
               "",
               "    function getOrder() {",
@@ -1268,7 +1268,7 @@
         ],
         "examples": [
           {
-            "title": "Title of GetShipments example",
+            "title": "GetShipments example",
             "body": [
               "",
               "    function getShipments() {",
@@ -1320,7 +1320,7 @@
         ],
         "examples": [
           {
-            "title": "Title of MarkAsFulfilled example",
+            "title": "MarkAsFulfilled example",
             "body": [
               "",
               "    function markAsFulfilled() {",
@@ -1372,7 +1372,7 @@
         ],
         "examples": [
           {
-            "title": "Title of MarkAsUnfulfilled example",
+            "title": "MarkAsUnfulfilled example",
             "body": [
               "",
               "    function markAsUnfulfilled() {",
@@ -1424,7 +1424,7 @@
         ],
         "examples": [
           {
-            "title": "Title of MarkOrderAsPaid example",
+            "title": "MarkOrderAsPaid example",
             "body": [
               "",
               "    function markOrderAsPaid() {",
@@ -1476,7 +1476,7 @@
         ],
         "examples": [
           {
-            "title": "Title of MarkOrderAsSeenByHuman example",
+            "title": "MarkOrderAsSeenByHuman example",
             "body": [
               "",
               "    function markOrderAsSeenByHuman() {",
@@ -1508,7 +1508,7 @@
         ],
         "examples": [
           {
-            "title": "Title of QueryOrders example",
+            "title": "QueryOrders example",
             "body": [
               "",
               "    function queryOrders() {",
@@ -1560,7 +1560,7 @@
         ],
         "examples": [
           {
-            "title": "Title of UnArchiveOrder example",
+            "title": "UnArchiveOrder example",
             "body": [
               "",
               "    function unArchiveOrder() {",
@@ -1624,7 +1624,7 @@
         ],
         "examples": [
           {
-            "title": "Title of UpdateActivity example",
+            "title": "UpdateActivity example",
             "body": [
               "",
               "    function updateActivity() {",
@@ -1703,7 +1703,7 @@
         ],
         "examples": [
           {
-            "title": "Title of UpdateBillingContactDetails example",
+            "title": "UpdateBillingContactDetails example",
             "body": [
               "",
               "    function updateBillingContactDetails() {",
@@ -1782,7 +1782,7 @@
         ],
         "examples": [
           {
-            "title": "Title of UpdateBuyerInfo example",
+            "title": "UpdateBuyerInfo example",
             "body": [
               "",
               "    function updateBuyerInfo() {",
@@ -1856,7 +1856,7 @@
         ],
         "examples": [
           {
-            "title": "Title of UpdateLineItemsDescriptionLines example",
+            "title": "UpdateLineItemsDescriptionLines example",
             "body": [
               "",
               "    function updateLineItemsDescriptionLines() {",
@@ -1936,7 +1936,7 @@
         ],
         "examples": [
           {
-            "title": "Title of UpdateOrderShippingAddress example",
+            "title": "UpdateOrderShippingAddress example",
             "body": [
               "",
               "    function updateOrderShippingAddress() {",

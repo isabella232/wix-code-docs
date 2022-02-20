@@ -101,13 +101,13 @@
         "doc": null
       },
       "docs": {
-        "summary": "Returns the bookings that match the query.",
+        "summary": "Returns the `CUSTOM_QUERY_BUILDER_NAME` that match the query.",
         "description": [
           "The `find()` function returns a Promise that resolves to the results found by the query and some information about the results. The Promise is rejected if find() is called with incorrect permissions or if any of the functions used to refine the query are invalid."
         ],
         "examples": [
           {
-            "title": "Title of find example",
+            "title": "find example",
             "body": [
               "import { orders } from 'wix-ecom-backend';",
               "//...",
@@ -169,7 +169,7 @@
         ],
         "examples": [
           {
-            "title": "Title of limit example",
+            "title": "limit example",
             "body": [
               "import { orders } from 'wix-ecom-backend';",
               "//...",

@@ -86,8 +86,37 @@
         "doc": null
       },
       "docs": {
+        "summary": "Indicates if the query has more results.",
         "description": [
           ""
+        ],
+        "examples": [
+          {
+            "title": "hasNext example",
+            "body": [
+              "import { orders } from 'wix-ecom-backend';",
+              "//...",
+              "orders",
+              "  .queryOrders()",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     },
@@ -104,8 +133,37 @@
         "doc": null
       },
       "docs": {
+        "summary": "Indicates the query has previous results.",
         "description": [
           ""
+        ],
+        "examples": [
+          {
+            "title": "hasPrev example",
+            "body": [
+              "import { orders } from 'wix-ecom-backend';",
+              "//...",
+              "orders",
+              "  .queryOrders()",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     },
