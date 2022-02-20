@@ -278,7 +278,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCardCreated example",
+            "title": "onCardCreated example",
             "body": [
               "",
               "  export function wixWorkflowsOnCardCreated(event) {",
@@ -320,7 +320,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCardDeleted example",
+            "title": "onCardDeleted example",
             "body": [
               "",
               "  export function wixWorkflowsOnCardDeleted(event) {",
@@ -362,7 +362,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCardUpdated example",
+            "title": "onCardUpdated example",
             "body": [
               "",
               "  export function wixWorkflowsOnCardUpdated(event) {",
@@ -1532,7 +1532,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onLocationArchiveStatus example",
+            "title": "onLocationArchiveStatus example",
             "body": [
               "",
               "  export function wixLocationsOnLocationArchiveStatus(event) {",
@@ -1574,7 +1574,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onLocationCreated example",
+            "title": "onLocationCreated example",
             "body": [
               "",
               "  export function wixLocationsOnLocationCreated(event) {",
@@ -1616,7 +1616,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onLocationSetDefaultLocation example",
+            "title": "onLocationSetDefaultLocation example",
             "body": [
               "",
               "  export function wixLocationsOnLocationSetDefaultLocation(event) {",
@@ -1658,7 +1658,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onLocationUpdated example",
+            "title": "onLocationUpdated example",
             "body": [
               "",
               "  export function wixLocationsOnLocationUpdated(event) {",
@@ -2078,7 +2078,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMessageButtonInteracted example",
+            "title": "onMessageButtonInteracted example",
             "body": [
               "",
               "  export function wixCrmInboxOnMessageButtonInteracted(event) {",
@@ -2120,7 +2120,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMessageSentToBusiness example",
+            "title": "onMessageSentToBusiness example",
             "body": [
               "",
               "  export function wixCrmInboxOnMessageSentToBusiness(event) {",
@@ -2162,7 +2162,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMessageSentToParticipant example",
+            "title": "onMessageSentToParticipant example",
             "body": [
               "",
               "  export function wixCrmInboxOnMessageSentToParticipant(event) {",
@@ -2249,7 +2249,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderAutoRenewCanceled example",
+            "title": "onOrderAutoRenewCanceled example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderAutoRenewCanceled(event) {",
@@ -2291,7 +2291,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderBillingCycleTriggered example",
+            "title": "onOrderBillingCycleTriggered example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderBillingCycleTriggered(event) {",
@@ -2333,7 +2333,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderCanceled example",
+            "title": "onOrderCanceled example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderCanceled(event) {",
@@ -2375,7 +2375,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderCanceled example",
+            "title": "onOrderCanceled example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderCanceled(event) {",
@@ -2417,7 +2417,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderCreated example",
+            "title": "onOrderCreated example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderCreated(event) {",
@@ -2459,7 +2459,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderCreated example",
+            "title": "onOrderCreated example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderCreated(event) {",
@@ -2501,7 +2501,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderEndDatePostponed example",
+            "title": "onOrderEndDatePostponed example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderEndDatePostponed(event) {",
@@ -2543,7 +2543,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderEnded example",
+            "title": "onOrderEnded example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderEnded(event) {",
@@ -2630,7 +2630,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderMarkedAsPaid example",
+            "title": "onOrderMarkedAsPaid example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderMarkedAsPaid(event) {",
@@ -2672,7 +2672,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderPaused example",
+            "title": "onOrderPaused example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderPaused(event) {",
@@ -2714,7 +2714,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderPurchased example",
+            "title": "onOrderPurchased example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderPurchased(event) {",
@@ -2756,7 +2756,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderResumed example",
+            "title": "onOrderResumed example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderResumed(event) {",
@@ -2798,7 +2798,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderStartDateChanged example",
+            "title": "onOrderStartDateChanged example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderStartDateChanged(event) {",
@@ -2840,7 +2840,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderStarted example",
+            "title": "onOrderStarted example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderStarted(event) {",
@@ -2972,7 +2972,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onOrderUpdated example",
+            "title": "onOrderUpdated example",
             "body": [
               "",
               "  export function wixPricingPlansOnOrderUpdated(event) {",
@@ -3776,7 +3776,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onSeatingPlanCreated example",
+            "title": "onSeatingPlanCreated example",
             "body": [
               "",
               "  export function wixSeatingOnSeatingPlanCreated(event) {",
@@ -3818,7 +3818,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onSeatingPlanDeleted example",
+            "title": "onSeatingPlanDeleted example",
             "body": [
               "",
               "  export function wixSeatingOnSeatingPlanDeleted(event) {",
@@ -3860,7 +3860,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onSeatingPlanUpdated example",
+            "title": "onSeatingPlanUpdated example",
             "body": [
               "",
               "  export function wixSeatingOnSeatingPlanUpdated(event) {",
