@@ -1340,7 +1340,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberApproved example",
+            "title": "onMemberApproved example",
             "body": [
               "",
               "  export function wixMembersOnMemberApproved(event) {",
@@ -1382,7 +1382,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberBlocked example",
+            "title": "onMemberBlocked example",
             "body": [
               "",
               "  export function wixMembersOnMemberBlocked(event) {",
@@ -1424,7 +1424,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberCreated example",
+            "title": "onMemberCreated example",
             "body": [
               "",
               "  export function wixMembersOnMemberCreated(event) {",
@@ -1466,7 +1466,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberDeleted example",
+            "title": "onMemberDeleted example",
             "body": [
               "",
               "  export function wixMembersOnMemberDeleted(event) {",
@@ -1508,7 +1508,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberJoinedCommunity example",
+            "title": "onMemberJoinedCommunity example",
             "body": [
               "",
               "  export function wixMembersOnMemberJoinedCommunity(event) {",
@@ -1550,7 +1550,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberLeftCommunity example",
+            "title": "onMemberLeftCommunity example",
             "body": [
               "",
               "  export function wixMembersOnMemberLeftCommunity(event) {",
@@ -1592,7 +1592,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberMuted example",
+            "title": "onMemberMuted example",
             "body": [
               "",
               "  export function wixMembersOnMemberMuted(event) {",
@@ -1634,7 +1634,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberUnmuted example",
+            "title": "onMemberUnmuted example",
             "body": [
               "",
               "  export function wixMembersOnMemberUnmuted(event) {",
@@ -1676,7 +1676,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onMemberUpdated example",
+            "title": "onMemberUpdated example",
             "body": [
               "",
               "  export function wixMembersOnMemberUpdated(event) {",
