@@ -248,7 +248,7 @@
         "doc": null
       },
       "docs": {
-        "summary": "Returns the `CUSTOM_QUERY_BUILDER_NAME` that match the query.",
+        "summary": "Returns the `ProductsQueryBuilder` that match the query.",
         "description": [
           "The `find()` function returns a Promise that resolves to the results found by the query and some information about the results. The Promise is rejected if find() is called with incorrect permissions or if any of the functions used to refine the query are invalid."
         ],
