@@ -39,7 +39,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onActivityCounterUpdated example",
+            "title": "onActivityCounterUpdated example",
             "body": [
               "",
               "  export function wixMembersOnActivityCounterUpdated(event) {",
