@@ -40,43 +40,15 @@
         "doc": null
       },
       "docs": {
-        "summary": "Adds a sort to a query, sorting by the specified properties in ascending order.",
+        "summary": "file 'docs/metroinspector-v1-product/QueryProperties/ascending/summary.md' not found.",
         "description": [
-          "The `ascending()` function refines a `ProductsQueryBuilder` to sort in ascending order of the specified properties. If you specify more than one property, `ascending()` sorts the results in ascending order by each property in the order they are listed.",
-          "",
-          "You can sort the following types:",
-          "",
-          "Number: Sorts numerically.",
-          "Date: Sorts by date and time.",
-          "String: Sorts lexicographically, so \"abc\" comes after \"XYZ\".",
-          "If a property contains a number as a String, that value will be sorted alphabetically and not numerically. Items that do not have a value for the specified sort property are ranked lowest."
+          "file 'docs/metroinspector-v1-product/QueryProperties/ascending/description.md' not found."
         ],
         "examples": [
           {
             "title": "ascending example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .ascending('title')",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
-              ""
+              "file 'docs/metroinspector-v1-product/QueryProperties/ascending/example.md' not found."
             ]
           }
         ]
@@ -113,43 +85,15 @@
         "doc": null
       },
       "docs": {
-        "summary": "Adds a sort to a query or sort, sorting by the specified properties in descending order.",
+        "summary": "file 'docs/metroinspector-v1-product/QueryProperties/descending/summary.md' not found.",
         "description": [
-          "The `descending()` function refines a `ProductsQueryBuilder` to sort in descending order of the specified properties. If you specify more than one property, `descending()` sorts the results in descending order by each property in the order they are listed.",
-          "",
-          "You can sort the following types:",
-          "",
-          "Number: Sorts numerically.",
-          "Date: Sorts by date and time.",
-          "String: Sorts lexicographically, so \"abc\" comes after \"XYZ\".",
-          "If a property contains a number as a String, that value will be sorted alphabetically and not numerically. Items that do not have a value for the specified sort property are ranked lowest."
+          "file 'docs/metroinspector-v1-product/QueryProperties/descending/description.md' not found."
         ],
         "examples": [
           {
             "title": "descending example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .descending('title')",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
-              ""
+              "file 'docs/metroinspector-v1-product/QueryProperties/descending/example.md' not found."
             ]
           }
         ]
@@ -189,42 +133,60 @@
         "doc": null
       },
       "docs": {
-        "summary": "Refines a query to match items whose specified property value equals the specified value.",
+        "summary": "This is summary for EQ,",
         "description": [
-          "The `eq()` function refines a `ProductsQueryBuilder` to only match items where the value of the specified property equals the specified value.",
-          "",
-          "It only matches values of the same type. For example, a number value stored as a String type does not match the same number stored as a Number type.",
-          "",
-          "Matching strings with eq() is case sensitive, so \"text\" is not equal to \"Text\"."
+          "Some description about `EQ`",
+          ""
         ],
         "examples": [
           {
             "title": "eq example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .eq('title', 'some-title')",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
+              "import { some-thing } from 'something-else'",
+              "",
+              "",
               ""
             ]
           }
+        ]
+      }
+    },
+    {
+      "name": "exists",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": null,
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": null,
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
         ]
       }
     },
@@ -248,35 +210,15 @@
         "doc": null
       },
       "docs": {
-        "summary": "Returns the `CUSTOM_QUERY_BUILDER_NAME` that match the query.",
+        "summary": "file 'docs/metroinspector-v1-product/QueryProperties/find/summary.md' not found.",
         "description": [
-          "The `find()` function returns a Promise that resolves to the results found by the query and some information about the results. The Promise is rejected if find() is called with incorrect permissions or if any of the functions used to refine the query are invalid."
+          "file 'docs/metroinspector-v1-product/QueryProperties/find/description.md' not found."
         ],
         "examples": [
           {
             "title": "find example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
-              ""
+              "file 'docs/metroinspector-v1-product/QueryProperties/find/example.md' not found."
             ]
           }
         ]
@@ -306,40 +248,15 @@
         "doc": null
       },
       "docs": {
-        "summary": "Limits the number of items the query returns.",
+        "summary": "file 'docs/metroinspector-v1-product/QueryProperties/limit/summary.md' not found.",
         "description": [
-          "The `limit()` function defines the number of results a query returns in each page. Only one page of results is retrieved at a time. The `next()` and `prev() `functions are used to navigate the pages of a query result.",
-          "",
-          "By default, limit is set to 50.",
-          "",
-          "The maximum value that `limit()` can accept is 1000."
+          "file 'docs/metroinspector-v1-product/QueryProperties/limit/description.md' not found."
         ],
         "examples": [
           {
             "title": "limit example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .limit(10)",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
-              ""
+              "file 'docs/metroinspector-v1-product/QueryProperties/limit/example.md' not found."
             ]
           }
         ]
@@ -379,40 +296,15 @@
         "doc": null
       },
       "docs": {
-        "summary": "Refines a query to match items whose specified property value not equals the specified value.",
+        "summary": "file 'docs/metroinspector-v1-product/QueryProperties/ne/summary.md' not found.",
         "description": [
-          "The `ne()` function refines a `ProductsQueryBuilder` to only match items where the value of the specified property not equals the specified value.",
-          "",
-          "It only matches values of the same type. For example, a number value stored as a String type does not match the same number stored as a Number type.",
-          "",
-          "Matching strings with ne() is case sensitive, so \"text\" is not equal to \"Text\"."
+          "file 'docs/metroinspector-v1-product/QueryProperties/ne/description.md' not found."
         ],
         "examples": [
           {
             "title": "ne example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .ne('title', 'some-title')",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
-              ""
+              "file 'docs/metroinspector-v1-product/QueryProperties/ne/example.md' not found."
             ]
           }
         ]
@@ -452,36 +344,15 @@
         "doc": null
       },
       "docs": {
-        "summary": "",
+        "summary": "file 'docs/metroinspector-v1-product/QueryProperties/startsWith/summary.md' not found.",
         "description": [
-          ""
+          "file 'docs/metroinspector-v1-product/QueryProperties/startsWith/description.md' not found."
         ],
         "examples": [
           {
             "title": "startsWith example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .startsWith('title', 'some-title')",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
-              ""
+              "file 'docs/metroinspector-v1-product/QueryProperties/startsWith/example.md' not found."
             ]
           }
         ]

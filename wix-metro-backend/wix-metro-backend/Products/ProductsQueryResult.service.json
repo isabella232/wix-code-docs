@@ -86,35 +86,15 @@
         "doc": null
       },
       "docs": {
-        "summary": "Indicates if the query has more results.",
+        "summary": "file 'docs/metroinspector-v1-product/QueryProperties/hasNext/summary.md' not found.",
         "description": [
-          ""
+          "file 'docs/metroinspector-v1-product/QueryProperties/hasNext/description.md' not found."
         ],
         "examples": [
           {
             "title": "hasNext example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
-              ""
+              "file 'docs/metroinspector-v1-product/QueryProperties/hasNext/example.md' not found."
             ]
           }
         ]
@@ -133,35 +113,15 @@
         "doc": null
       },
       "docs": {
-        "summary": "Indicates the query has previous results.",
+        "summary": "file 'docs/metroinspector-v1-product/QueryProperties/hasPrev/summary.md' not found.",
         "description": [
-          ""
+          "file 'docs/metroinspector-v1-product/QueryProperties/hasPrev/description.md' not found."
         ],
         "examples": [
           {
             "title": "hasPrev example",
             "body": [
-              "import { products } from 'wix-metro-backend';",
-              "//...",
-              "products",
-              "  .queryProducts()",
-              "  .find()",
-              "  .then((results) => {",
-              "    if (results.items.length > 0) {",
-              "      const items = results.items;",
-              "      const firstItem = items[0];",
-              "      const pageSize = results.pageSize;",
-              "      const hasNext = results.hasNext();",
-              "      const hasPrev = results.hasPrev();",
-              "      const length = results.length;",
-              "    } else {",
-              "      // handle case where no matching items found",
-              "    }",
-              "  })",
-              "  .catch((error) => {",
-              "    console.error(error);",
-              "  });",
-              ""
+              "file 'docs/metroinspector-v1-product/QueryProperties/hasPrev/example.md' not found."
             ]
           }
         ]
