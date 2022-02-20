@@ -55,7 +55,7 @@
         ],
         "examples": [
           {
-            "title": "Title of CreateProduct example",
+            "title": "CreateProduct example",
             "body": [
               "",
               "    function createProduct() {",
@@ -107,7 +107,7 @@
         ],
         "examples": [
           {
-            "title": "Title of DeleteProduct example",
+            "title": "DeleteProduct example",
             "body": [
               "",
               "    function deleteProduct() {",
@@ -159,7 +159,7 @@
         ],
         "examples": [
           {
-            "title": "Title of GetProduct example",
+            "title": "GetProduct example",
             "body": [
               "",
               "    function getProduct() {",
@@ -221,7 +221,7 @@
         ],
         "examples": [
           {
-            "title": "Title of UpdateProduct example",
+            "title": "UpdateProduct example",
             "body": [
               "",
               "    function updateProduct() {",
