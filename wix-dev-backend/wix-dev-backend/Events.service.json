@@ -878,7 +878,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onGalleryCreated example",
+            "title": "onGalleryCreated example",
             "body": [
               "",
               "  export function wixProGalleryOnGalleryCreated(event) {",
@@ -920,7 +920,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onGalleryDeleted example",
+            "title": "onGalleryDeleted example",
             "body": [
               "",
               "  export function wixProGalleryOnGalleryDeleted(event) {",
@@ -962,7 +962,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onGalleryItemCreated example",
+            "title": "onGalleryItemCreated example",
             "body": [
               "",
               "  export function wixProGalleryOnGalleryItemCreated(event) {",
@@ -1004,7 +1004,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onGalleryItemDeleted example",
+            "title": "onGalleryItemDeleted example",
             "body": [
               "",
               "  export function wixProGalleryOnGalleryItemDeleted(event) {",
@@ -1046,7 +1046,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onGalleryItemUpdated example",
+            "title": "onGalleryItemUpdated example",
             "body": [
               "",
               "  export function wixProGalleryOnGalleryItemUpdated(event) {",
@@ -1088,7 +1088,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onGalleryUpdated example",
+            "title": "onGalleryUpdated example",
             "body": [
               "",
               "  export function wixProGalleryOnGalleryUpdated(event) {",
@@ -36751,7 +36751,6 @@
       "members": [
         {
           "name": "galleryId",
-          "readOnly": true,
           "type": [
             {
               "nativeType": "string"
@@ -36881,7 +36880,6 @@
       "members": [
         {
           "name": "galleryId",
-          "readOnly": true,
           "type": [
             {
               "nativeType": "string"
@@ -36891,7 +36889,6 @@
         },
         {
           "name": "itemId",
-          "readOnly": true,
           "type": [
             {
               "nativeType": "string"
@@ -36908,6 +36905,50 @@
     },
     {
       "name": "PublishGalleryItemResponse",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PublishGalleryItemsRequest",
+      "members": [
+        {
+          "name": "galleryId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "id of the gallery that will be published"
+        },
+        {
+          "name": "itemIds",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "ids of the items that will be published"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PublishGalleryItemsResponse",
       "members": [],
       "docs": {
         "description": [
