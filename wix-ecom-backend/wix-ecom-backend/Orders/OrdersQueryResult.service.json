@@ -23,10 +23,42 @@
         }
       ],
       "docs": {
-        "summary": "",
-        "links": [],
-        "examples": [],
-        "extra": {}
+        "summary": "Returns an array of `orders` that match the query.,,",
+        "description": [
+          "The current page of `orders` retrieved by the query.",
+          "",
+          "The page size is defined by the `limit()` function, can be retrieved using the `pageSize` property, and navigating through pages is done with the `prev()` and `next()` functions.",
+          "",
+          "When no items match the query, the `orders` array is empty."
+        ],
+        "examples": [
+          {
+            "title": "items example",
+            "body": [
+              "import { orders } from 'wix-ecom-backend';",
+              "//...",
+              "orders",
+              "  .queryOrders()",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
+        ]
       }
     },
     {
@@ -277,8 +309,47 @@
         "doc": null
       },
       "docs": {
+        "summary": "Retrieves the next page of query results.",
         "description": [
-          ""
+          "The `next()` function retrieves the next page of query results.",
+          "",
+          "The page size is defined by the `limit()` function, can be retrieved using the `pageSize` property, and navigating through pages is done with the `prev()` and `next()  functions.",
+          "",
+          "If items are added or removed between calls to   next()   the values returned by `OrdersQueryBuilder` may change."
+        ],
+        "examples": [
+          {
+            "title": "next example",
+            "body": [
+              "import { orders } from 'wix-ecom-backend';",
+              "//...",
+              "orders",
+              "  .queryOrders()",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "",
+              "      let allItems = [];",
+              "      while (results.hasNext()) {",
+              "        nextResult = await results.next();",
+              "        allItems = allItems.concat(nextResult.items);",
+              "      }",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     },
@@ -302,8 +373,47 @@
         "doc": null
       },
       "docs": {
+        "summary": "Retrieves the previous page of query results.",
         "description": [
-          ""
+          "The `prev()` function retrieves the previous page of query results.",
+          "",
+          "The page size is defined by the `limit()` function, can be retrieved using the pageSize property, and navigating through pages is done with the `prev()` and `next()` functions.",
+          "",
+          "If items are added or removed between calls to `prev()` the values returned may change."
+        ],
+        "examples": [
+          {
+            "title": "prev example",
+            "body": [
+              "import { orders } from 'wix-ecom-backend';",
+              "//...",
+              "orders",
+              "  .queryOrders()",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "",
+              "      let allItems = [];",
+              "      while (results.hasPrev()) {",
+              "        prevResult = await results.prev();",
+              "        allItems = allItems.concat(prevResult.items);",
+              "      }",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
         ]
       }
     }
