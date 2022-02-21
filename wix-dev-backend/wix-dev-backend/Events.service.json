@@ -3986,7 +3986,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onTransactionCreated example",
+            "title": "onTransactionCreated example",
             "body": [
               "",
               "  export function wixPaymentsTransactionsOnTransactionCreated(event) {",
@@ -4028,7 +4028,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onTransactionUpdated example",
+            "title": "onTransactionUpdated example",
             "body": [
               "",
               "  export function wixPaymentsTransactionsOnTransactionUpdated(event) {",
@@ -9402,7 +9402,6 @@
         },
         {
           "name": "capturableAmount",
-          "readOnly": false,
           "optional": true,
           "type": [
             {
@@ -9429,7 +9428,6 @@
         },
         {
           "name": "idempotencyKey",
-          "readOnly": false,
           "optional": true,
           "type": [
             {
@@ -9439,7 +9437,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Key to ensure idempotency. Deprecated in favor of \"capturable_amount\"."
+          "doc": "Key to ensure idempotency."
         },
         {
           "name": "metadata",
@@ -50516,7 +50514,6 @@
         },
         {
           "name": "capturableAmount",
-          "readOnly": false,
           "optional": true,
           "type": [
             {
@@ -50543,7 +50540,6 @@
         },
         {
           "name": "idempotencyKey",
-          "readOnly": false,
           "optional": true,
           "type": [
             {
@@ -50553,7 +50549,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Key to ensure idempotency. Deprecated in favor of \"capturable_amount\" and \"refundable_amount\"."
+          "doc": "Key to ensure idempotency."
         },
         {
           "name": "metadata",
@@ -50587,7 +50583,6 @@
         },
         {
           "name": "refundableAmount",
-          "readOnly": false,
           "optional": true,
           "type": [
             {
