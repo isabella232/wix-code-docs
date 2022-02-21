@@ -25,11 +25,11 @@
       "docs": {
         "summary": "Returns an array of `products` that match the query.,,",
         "description": [
-          "The current page of `CUSTOM_NAMESPACE` retrieved by the query.",
+          "The current page of `products` retrieved by the query.",
           "",
           "The page size is defined by the `limit()` function, can be retrieved using the `pageSize` property, and navigating through pages is done with the `prev()` and `next()` functions.",
           "",
-          "When no items match the query, the `CUSTOM_NAMESPACE` array is empty."
+          "When no items match the query, the `products` array is empty."
         ],
         "examples": [
           {
@@ -167,7 +167,6 @@
               "//...",
               "products",
               "  .queryProducts()",
-              "  .query('title', 'some-title')",
               "  .find()",
               "  .then((results) => {",
               "    if (results.items.length > 0) {",
