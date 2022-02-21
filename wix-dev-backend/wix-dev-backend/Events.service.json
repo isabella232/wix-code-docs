@@ -3626,7 +3626,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onTransactionCreated example",
+            "title": "onTransactionCreated example",
             "body": [
               "",
               "  export function wixPaymentsTransactionsOnTransactionCreated(event) {",
@@ -3668,7 +3668,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onTransactionUpdated example",
+            "title": "onTransactionUpdated example",
             "body": [
               "",
               "  export function wixPaymentsTransactionsOnTransactionUpdated(event) {",
@@ -8895,6 +8895,19 @@
           "doc": "Amount to capture in minor units (for example, cents). When not passed, the whole transaction amount will be captured."
         },
         {
+          "name": "capturableAmount",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Amount that can be captured or voided in minor units to place a hold on a card to reserve funds.\nSpecify the amount to prevent double partial captures."
+        },
+        {
           "name": "externalCaptureId",
           "optional": true,
           "type": [
@@ -8906,6 +8919,19 @@
             }
           ],
           "doc": "Corresponding capture ID within the external entity that initiated the transaction capture."
+        },
+        {
+          "name": "idempotencyKey",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Key to ensure idempotency."
         },
         {
           "name": "metadata",
@@ -48782,6 +48808,19 @@
           "doc": "Amount to capture in minor units (for example, cents). Leave empty to capture the whole transaction amount."
         },
         {
+          "name": "capturableAmount",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Amount that can be captured or voided in minor units to place a hold on a card to reserve funds.\nSpecify the amount to prevent double partial refunds."
+        },
+        {
           "name": "externalVoidOrRefundId",
           "optional": true,
           "type": [
@@ -48793,6 +48832,19 @@
             }
           ],
           "doc": "Corresponding void or refund ID within the external entity that made the request."
+        },
+        {
+          "name": "idempotencyKey",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Key to ensure idempotency."
         },
         {
           "name": "metadata",
@@ -48823,6 +48875,19 @@
             }
           ],
           "doc": "Reason for void or refund."
+        },
+        {
+          "name": "refundableAmount",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Amount in minor units that can be refunded.\nSpecify the amount to prevent double partial refunds."
         },
         {
           "name": "transactionId",
