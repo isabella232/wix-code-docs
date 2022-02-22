@@ -14809,6 +14809,46 @@
       }
     },
     {
+      "name": "CurrentCycle",
+      "members": [
+        {
+          "name": "endedDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Indicates end date of the cycle. Can be empty."
+        },
+        {
+          "name": "index",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Index will be 0 when the order is in free trial period, in other cases index starts from 1."
+        },
+        {
+          "name": "startedDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Indicates start date of the cycle"
+        }
+      ],
+      "docs": {
+        "description": [
+          "Current cycle will be empty when order is cancelled, expired or order start date is in the future\nCurrent cycle start and end dates take into account free trial days and suspensions"
+        ]
+      }
+    },
+    {
       "name": "CursorMetaData",
       "members": [
         {
@@ -22954,6 +22994,23 @@
             }
           ],
           "doc": "Price info including subtotal, tax object with rate, amount, name, and a total"
+        },
+        {
+          "name": "prices",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.SpannedPrice"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Prices for different payment cycles. One spanned price can apply to multiple payment cycles."
         }
       ],
       "docs": {
@@ -38063,6 +38120,120 @@
       }
     },
     {
+      "name": "PriceDuration",
+      "members": [
+        {
+          "name": "cycleFrom",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Indicates from which cycle does this price start to apply. Will start form 1."
+        },
+        {
+          "name": "endedDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Indicates until which date this price applies"
+        },
+        {
+          "name": "numberOfCycles",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Indicates for how many cycle does this price apply. Will be empty if the price applies until the end of the pricing plan"
+        },
+        {
+          "name": "startedDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Indicate from when this price applies"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PricingDetails",
+      "members": [
+        {
+          "name": "prices",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.SpannedPrice"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Prices for different payment cycles. One spanned price can apply to multiple payment cycles."
+        },
+        {
+          "name": "singlePaymentForDuration",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Duration"
+            }
+          ],
+          "doc": "One time payment, order is valid for a specified duration."
+        },
+        {
+          "name": "singlePaymentUnlimited",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "One time payment, order is valid until it is canceled."
+        },
+        {
+          "name": "subscription",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Recurrence"
+            }
+          ],
+          "doc": "Order has recurring payments."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "PrimaryContactInfo",
       "members": [
         {
@@ -44858,6 +45029,36 @@
       "docs": {
         "description": [
           "Video source."
+        ]
+      }
+    },
+    {
+      "name": "SpannedPrice",
+      "members": [
+        {
+          "name": "duration",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.PriceDuration"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "price",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Price"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
         ]
       }
     },
