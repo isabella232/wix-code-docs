@@ -73,7 +73,7 @@
         ],
         "examples": [
           {
-            "title": "Title of Echo example",
+            "title": "Echo example",
             "body": [
               "",
               "    function echo() {",
