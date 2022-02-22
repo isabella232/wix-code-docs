@@ -404,7 +404,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCategoryCreated example",
+            "title": "onCategoryCreated example",
             "body": [
               "",
               "  export function wixBlogOnCategoryCreated(event) {",
@@ -446,7 +446,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCategoryCreated example",
+            "title": "onCategoryCreated example",
             "body": [
               "",
               "  export function wixBlogOnCategoryCreated(event) {",
@@ -488,7 +488,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCategoryDeleted example",
+            "title": "onCategoryDeleted example",
             "body": [
               "",
               "  export function wixBlogOnCategoryDeleted(event) {",
@@ -530,7 +530,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCategoryDeleted example",
+            "title": "onCategoryDeleted example",
             "body": [
               "",
               "  export function wixBlogOnCategoryDeleted(event) {",
@@ -572,7 +572,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCategoryUpdated example",
+            "title": "onCategoryUpdated example",
             "body": [
               "",
               "  export function wixBlogOnCategoryUpdated(event) {",
@@ -614,7 +614,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onCategoryUpdated example",
+            "title": "onCategoryUpdated example",
             "body": [
               "",
               "  export function wixBlogOnCategoryUpdated(event) {",
