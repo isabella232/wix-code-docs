@@ -39,7 +39,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onEchoDispatched example",
+            "title": "onEchoDispatched example",
             "body": [
               "",
               "  export function wixMetroinspectorOnEchoDispatched(event) {",
