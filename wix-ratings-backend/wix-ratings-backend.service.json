@@ -34,8 +34,8 @@
       ],
       "requiredFields": [
         "definitionId",
-        "attributeId",
-        "value"
+        "options.attributeId",
+        "options.value"
       ],
       "ret": {
         "type": [
@@ -138,8 +138,8 @@
         }
       ],
       "requiredFields": [
-        "namespace",
-        "entityId"
+        "identifiers.namespace",
+        "identifiers.entityId"
       ],
       "ret": {
         "type": [
@@ -334,7 +334,7 @@
       "requiredFields": [
         "_id",
         "revision",
-        "value"
+        "options.value"
       ],
       "ret": {
         "type": [
