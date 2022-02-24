@@ -180,8 +180,8 @@
         }
       ],
       "requiredFields": [
-        "aggregation",
-        "aggregation"
+        "options.aggregation",
+        "options.aggregation"
       ],
       "ret": {
         "type": [
@@ -1140,7 +1140,7 @@
       ],
       "requiredFields": [
         "_id",
-        "activityId"
+        "identifiers.activityId"
       ],
       "ret": {
         "type": [
@@ -1599,7 +1599,7 @@
       ],
       "requiredFields": [
         "_id",
-        "activityId",
+        "identifiers.activityId",
         "activity"
       ],
       "ret": {
@@ -1912,7 +1912,7 @@
       ],
       "requiredFields": [
         "_id",
-        "shippingAddress"
+        "options.shippingAddress"
       ],
       "ret": {
         "type": [
