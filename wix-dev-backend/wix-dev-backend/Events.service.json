@@ -407,7 +407,7 @@
             "title": "onCategoryCreated example",
             "body": [
               "",
-              "  export function wixBlogOnCategoryCreated(event) {",
+              "  export function wixForumOnCategoryCreated(event) {",
               "  }",
               "",
               "  "
@@ -449,7 +449,7 @@
             "title": "onCategoryCreated example",
             "body": [
               "",
-              "  export function wixBlogOnCategoryCreated(event) {",
+              "  export function wixForumOnCategoryCreated(event) {",
               "  }",
               "",
               "  "
@@ -491,7 +491,7 @@
             "title": "onCategoryDeleted example",
             "body": [
               "",
-              "  export function wixBlogOnCategoryDeleted(event) {",
+              "  export function wixForumOnCategoryDeleted(event) {",
               "  }",
               "",
               "  "
@@ -533,7 +533,7 @@
             "title": "onCategoryDeleted example",
             "body": [
               "",
-              "  export function wixBlogOnCategoryDeleted(event) {",
+              "  export function wixForumOnCategoryDeleted(event) {",
               "  }",
               "",
               "  "
@@ -575,7 +575,7 @@
             "title": "onCategoryUpdated example",
             "body": [
               "",
-              "  export function wixBlogOnCategoryUpdated(event) {",
+              "  export function wixForumOnCategoryUpdated(event) {",
               "  }",
               "",
               "  "
@@ -617,7 +617,7 @@
             "title": "onCategoryUpdated example",
             "body": [
               "",
-              "  export function wixBlogOnCategoryUpdated(event) {",
+              "  export function wixForumOnCategoryUpdated(event) {",
               "  }",
               "",
               "  "
@@ -2648,7 +2648,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostClosed example",
+            "title": "onPostClosed example",
             "body": [
               "",
               "  export function wixForumOnPostClosed(event) {",
@@ -2690,7 +2690,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostCreated example",
+            "title": "onPostCreated example",
             "body": [
               "",
               "  export function wixForumOnPostCreated(event) {",
@@ -2732,7 +2732,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostCreated example",
+            "title": "onPostCreated example",
             "body": [
               "",
               "  export function wixForumOnPostCreated(event) {",
@@ -2774,7 +2774,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostDeleted example",
+            "title": "onPostDeleted example",
             "body": [
               "",
               "  export function wixForumOnPostDeleted(event) {",
@@ -2816,7 +2816,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostDeleted example",
+            "title": "onPostDeleted example",
             "body": [
               "",
               "  export function wixForumOnPostDeleted(event) {",
@@ -2858,7 +2858,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostLiked example",
+            "title": "onPostLiked example",
             "body": [
               "",
               "  export function wixForumOnPostLiked(event) {",
@@ -2900,7 +2900,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostLiked example",
+            "title": "onPostLiked example",
             "body": [
               "",
               "  export function wixForumOnPostLiked(event) {",
@@ -2942,7 +2942,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostMoved example",
+            "title": "onPostMoved example",
             "body": [
               "",
               "  export function wixForumOnPostMoved(event) {",
@@ -2984,7 +2984,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostOpened example",
+            "title": "onPostOpened example",
             "body": [
               "",
               "  export function wixForumOnPostOpened(event) {",
@@ -3026,7 +3026,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostPinned example",
+            "title": "onPostPinned example",
             "body": [
               "",
               "  export function wixForumOnPostPinned(event) {",
@@ -3068,7 +3068,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostReported example",
+            "title": "onPostReported example",
             "body": [
               "",
               "  export function wixForumOnPostReported(event) {",
@@ -3110,7 +3110,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostUnliked example",
+            "title": "onPostUnliked example",
             "body": [
               "",
               "  export function wixForumOnPostUnliked(event) {",
@@ -3152,7 +3152,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostUnliked example",
+            "title": "onPostUnliked example",
             "body": [
               "",
               "  export function wixForumOnPostUnliked(event) {",
@@ -3194,7 +3194,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostUnpinned example",
+            "title": "onPostUnpinned example",
             "body": [
               "",
               "  export function wixForumOnPostUnpinned(event) {",
@@ -3236,7 +3236,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostUpdated example",
+            "title": "onPostUpdated example",
             "body": [
               "",
               "  export function wixForumOnPostUpdated(event) {",
@@ -3278,7 +3278,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onPostUpdated example",
+            "title": "onPostUpdated example",
             "body": [
               "",
               "  export function wixForumOnPostUpdated(event) {",
