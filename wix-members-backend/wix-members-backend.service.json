@@ -112,7 +112,7 @@
           {  } },
       { "name": "followers",
         "labels":
-          [ "new" ],
+          [ "removed" ],
         "get": true,
         "set": false,
         "type": "wix-members-backend.Authorization",
