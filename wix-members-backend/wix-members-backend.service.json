@@ -112,12 +112,12 @@
           {  } },
       { "name": "followers",
         "labels":
-          [ "removed" ],
+          [ "new" ],
         "get": true,
         "set": false,
-        "type": "wix-members-backend.Followers",
+        "type": "wix-members-backend.Authorization",
         "locations":
-          [ { "lineno": 159,
+          [ { "lineno": 146,
               "filename": "index.js" } ],
         "docs":
           { "summary": "The Followers API contains functionality for working with\n[members' followers](https://support.wix.com/en/article/about-the-members-area)\nfrom backend code.",
