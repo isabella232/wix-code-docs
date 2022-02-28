@@ -62,7 +62,7 @@
           "name": "regular",
           "type": [
             {
-              "nativeType": "string"
+              "referenceType": "single-enum-test.FooEnum"
             }
           ],
           "doc": ""
