@@ -1,7 +1,6 @@
 { "name": "wix-members-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -111,13 +110,12 @@
         "extra":
           {  } },
       { "name": "followers",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "wix-members-backend.Followers",
         "locations":
-          [ { "lineno": 146,
+          [ { "lineno": 159,
               "filename": "index.js" } ],
         "docs":
           { "summary": "The Followers API contains functionality for working with\n[members' followers](https://support.wix.com/en/article/about-the-members-area)\nfrom backend code.",
