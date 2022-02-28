@@ -1006,19 +1006,19 @@
           "doc": ""
         },
         {
-          "name": "name",
+          "name": "pageLink",
           "type": [
             {
-              "nativeType": "string"
+              "referenceType": "wix-metro-backend.Products.PageLink"
             }
           ],
           "doc": ""
         },
         {
-          "name": "pageLink",
+          "name": "title",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.PageLink"
+              "nativeType": "string"
             }
           ],
           "doc": ""
