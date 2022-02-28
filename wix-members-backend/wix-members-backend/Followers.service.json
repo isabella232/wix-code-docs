@@ -1,14 +1,15 @@
 { "name": "Followers",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
-    { "lineno": 146,
+    { "lineno": 174,
       "filename": "index.js" },
   "docs":
     { "summary": "The Followers API contains functionality for working with\n[members' followers](https://support.wix.com/en/article/about-the-members-area)\nfrom backend code.",
       "description":
-        [ "*  To use the Followers API, import `{followers}` from the `wix-members-backend` module:",
+        [ "To use the Followers API, import `{followers}` from the `wix-members-backend` module:",
           "",
           "   ```javascript",
           "   import { followers } from 'wix-members-backend';",
