@@ -50,13 +50,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "single-enum-test.FooEnum"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nFOO"
         },
         {
           "name": "regular",
