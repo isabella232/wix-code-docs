@@ -13865,6 +13865,19 @@
       "name": "CreateGalleryRequest",
       "members": [
         {
+          "name": "cloneFromGalleryId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "galleryId to clone from"
+        },
+        {
           "name": "gallery",
           "type": [
             {
