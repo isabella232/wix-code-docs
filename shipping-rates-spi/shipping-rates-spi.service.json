@@ -1,7 +1,7 @@
 { "name": "shipping-rates-spi",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "shipping-rates-spi-index.js" },
@@ -22,7 +22,8 @@
   "properties": [],
   "operations":
     [ { "name": "getShippingRates",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "items",
@@ -59,9 +60,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ { "name": "Array",
-                      "typeParams":
-                        [ "shipping-rates-spi.ShippingRate" ] } ] },
+                  [ "shipping-rates-spi.ShippingRates" ] },
             "doc": "Fulfilled - shippingRates Available shipping rates." },
         "locations":
           [ { "lineno": 1,
@@ -80,7 +79,7 @@
   "messages":
     [ { "name": "AdditionalCharges",
         "locations":
-          [ { "lineno": 50,
+          [ { "lineno": 55,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -102,7 +101,7 @@
         "labels": [] },
       { "name": "AddressDetails",
         "locations":
-          [ { "lineno": 93,
+          [ { "lineno": 98,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -142,7 +141,7 @@
         "labels": [] },
       { "name": "BuyerDetails",
         "locations":
-          [ { "lineno": 111,
+          [ { "lineno": 116,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -172,7 +171,7 @@
         "labels": [] },
       { "name": "CatalogReference",
         "locations":
-          [ { "lineno": 79,
+          [ { "lineno": 84,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -194,7 +193,7 @@
         "labels": [] },
       { "name": "Cost",
         "locations":
-          [ { "lineno": 42,
+          [ { "lineno": 47,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -216,7 +215,7 @@
         "labels": [] },
       { "name": "Item",
         "locations":
-          [ { "lineno": 70,
+          [ { "lineno": 75,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -244,7 +243,7 @@
         "labels": [] },
       { "name": "Logistics",
         "locations":
-          [ { "lineno": 35,
+          [ { "lineno": 40,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -267,7 +266,7 @@
         "labels": [] },
       { "name": "PhysicalProperties",
         "locations":
-          [ { "lineno": 86,
+          [ { "lineno": 91,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -289,7 +288,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 59,
+          [ { "lineno": 64,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -308,7 +307,7 @@
         "labels": [] },
       { "name": "ShippingRate",
         "locations":
-          [ { "lineno": 27,
+          [ { "lineno": 32,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -331,6 +330,26 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "ShippingRates",
+        "locations":
+          [ { "lineno": 27,
+              "filename": "shipping-rates-spi.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "shippingRates",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "shipping-rates-spi.ShippingRate" ] },
+              "doc": "Available shipping rates. These define the shipping rate options that are displayed to site visitors on the Cart and Checkout pages." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ShippingRatesConfig",
         "locations":
           [ { "lineno": 1,
@@ -352,7 +371,7 @@
         "labels": [] },
       { "name": "StreetAddressInfo",
         "locations":
-          [ { "lineno": 105,
+          [ { "lineno": 110,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -371,7 +390,7 @@
         "labels": [] },
       { "name": "VatId",
         "locations":
-          [ { "lineno": 120,
+          [ { "lineno": 125,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
