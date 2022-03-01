@@ -31,31 +31,13 @@
                 { "name": "Array",
                   "typeParams":
                     [ "shipping-rates-spi.Item" ] },
-              "doc": "All items included to be sent." },
-            { "name": "shippingDestination",
-              "type": "shipping-rates-spi.AddressDetails",
-              "doc": "Address the items are shipped to." },
-            { "name": "shippingOrigin",
-              "type": "shipping-rates-spi.AddressDetails",
-              "doc": "Address the items are sent from." },
-            { "name": "buyerDetails",
-              "type": "shipping-rates-spi.BuyerDetails",
-              "doc": "Buyer's contact details." },
-            { "name": "weightUnit",
-              "type": "string",
-              "doc": "Weight measurement unit. Supported values: `\"KG\"` (kilograms) or `\"LB\"` (pounds)." },
-            { "name": "taxIncludedInPrices",
-              "type": "boolean",
-              "doc": "Whether tax in included in the items' prices." },
-            { "name": "currency",
-              "type": "string",
-              "doc": "Currency code the shipping rates will be presented in. For example, `\"USD\"` or `\"EUR\"`." },
-            { "name": "instanceId",
-              "type": "string",
-              "doc": "Instance ID of the app that is providing the shipping rates." },
-            { "name": "shippingRateDecimalPlaces",
-              "type": "number",
-              "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: 10$, 10.1$, 10.12$ (up to 2 decimal places).\nHowever it **cannot** be: 10.123$ (or further).\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
+              "doc": "All items to be shipped." },
+            { "name": "options",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "shipping-rates-spi.Option" ] },
+              "doc": "Shipping origin, shipping destination, and general configurations." } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -79,7 +61,7 @@
   "messages":
     [ { "name": "AdditionalCharges",
         "locations":
-          [ { "lineno": 55,
+          [ { "lineno": 122,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -101,7 +83,7 @@
         "labels": [] },
       { "name": "AddressDetails",
         "locations":
-          [ { "lineno": 98,
+          [ { "lineno": 55,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -141,7 +123,7 @@
         "labels": [] },
       { "name": "BuyerDetails",
         "locations":
-          [ { "lineno": 116,
+          [ { "lineno": 73,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -171,7 +153,7 @@
         "labels": [] },
       { "name": "CatalogReference",
         "locations":
-          [ { "lineno": 84,
+          [ { "lineno": 41,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -193,7 +175,7 @@
         "labels": [] },
       { "name": "Cost",
         "locations":
-          [ { "lineno": 47,
+          [ { "lineno": 113,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -206,16 +188,17 @@
               "doc": "Amount charged for this shipping rate." },
             { "name": "currency",
               "type": "string",
-              "doc": "Currency code of the shipping rate price. This can differ between carriers. For example, `\"USD\"` or `\"EUR\"`.\nFor example, a U.S. carrier might provide prices in USD, but a U.K. based carrier would use GBP." },
+              "doc": "Currency code of the shipping rate price. This can differ between carriers. For example, `\"USD\"` or `\"EUR\"`.\nThis must match the value of the `currency` property received in the `options` object. Shipping rates with other currencies are not displayed on the site.\nFor example, a U.S. carrier might provide prices in USD, but a U.K. based carrier would use GBP." },
             { "name": "additionalCharges",
               "type": "shipping-rates-spi.AdditionalCharges",
               "doc": "Additional costs such as handling, insurance, or packaging for fragile items." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Item",
         "locations":
-          [ { "lineno": 75,
+          [ { "lineno": 17,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -243,7 +226,7 @@
         "labels": [] },
       { "name": "Logistics",
         "locations":
-          [ { "lineno": 40,
+          [ { "lineno": 106,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -264,9 +247,47 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "Option",
+        "locations":
+          [ { "lineno": 26,
+              "filename": "shipping-rates-spi.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "shippingDestination",
+              "type": "shipping-rates-spi.AddressDetails",
+              "doc": "Address the items are shipped to." },
+            { "name": "shippingOrigin",
+              "type": "shipping-rates-spi.AddressDetails",
+              "doc": "Address the items are sent from." },
+            { "name": "buyerDetails",
+              "type": "shipping-rates-spi.BuyerDetails",
+              "doc": "Buyer's contact details." },
+            { "name": "weightUnit",
+              "type": "string",
+              "doc": "Weight measurement unit. Supported values: `\"KG\"` (kilograms) or `\"LB\"` (pounds)." },
+            { "name": "taxIncludedInPrices",
+              "type": "boolean",
+              "doc": "Whether tax in included in the items' prices." },
+            { "name": "currency",
+              "type": "string",
+              "doc": "Currency code the shipping rates will be presented in. For example, `\"USD\"` or `\"EUR\"`." },
+            { "name": "instanceId",
+              "type": "string",
+              "doc": "Instance ID of the app that is providing the shipping rates." },
+            { "name": "shippingRateDecimalPlaces",
+              "type": "number",
+              "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: 10$, 10.1$, 10.12$ (up to 2 decimal places).\nHowever it **cannot** be: 10.123$ (or further).\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PhysicalProperties",
         "locations":
-          [ { "lineno": 91,
+          [ { "lineno": 48,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -288,7 +309,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 64,
+          [ { "lineno": 131,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -307,7 +328,7 @@
         "labels": [] },
       { "name": "ShippingRate",
         "locations":
-          [ { "lineno": 32,
+          [ { "lineno": 98,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -332,7 +353,7 @@
         "labels": [] },
       { "name": "ShippingRates",
         "locations":
-          [ { "lineno": 27,
+          [ { "lineno": 93,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -348,8 +369,7 @@
               "doc": "Available shipping rates. These define the shipping rate options that are displayed to site visitors on the Cart and Checkout pages." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ShippingRatesConfig",
         "locations":
           [ { "lineno": 1,
@@ -371,7 +391,7 @@
         "labels": [] },
       { "name": "StreetAddressInfo",
         "locations":
-          [ { "lineno": 110,
+          [ { "lineno": 67,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -390,7 +410,7 @@
         "labels": [] },
       { "name": "VatId",
         "locations":
-          [ { "lineno": 125,
+          [ { "lineno": 82,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
