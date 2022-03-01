@@ -29186,6 +29186,34 @@
       }
     },
     {
+      "name": "MarkPostUnreadRequest",
+      "members": [
+        {
+          "name": "postId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the unread post."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "MarkPostUnreadResponse",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "MarkPostsSeenRequest",
       "members": [
         {
