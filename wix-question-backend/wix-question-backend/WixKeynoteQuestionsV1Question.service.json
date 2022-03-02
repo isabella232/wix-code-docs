@@ -26,7 +26,7 @@
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": true
         }
       ],
@@ -79,7 +79,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": true
         },
         {
@@ -89,7 +89,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -141,7 +141,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": true
         }
       ],
@@ -193,7 +193,7 @@
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QueryV2"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": true
         }
       ],
@@ -287,7 +287,7 @@
               "nativeType": "null"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -297,7 +297,7 @@
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpdateQuestionQuestion"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": true
         },
         {
@@ -307,7 +307,7 @@
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpdateQuestionOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -361,7 +361,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": true
         },
         {
@@ -371,7 +371,7 @@
               "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpvoteOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -949,10 +949,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nACCEPTED,\nANSWERED,\nREJECTED,\nSUBMITTED"
         },
         {
           "name": "upvotes",
@@ -1009,19 +1009,6 @@
       }
     },
     {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Sorting",
       "members": [
         {
@@ -1039,26 +1026,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Status",
-      "members": [],
-      "enum": [
-        "ACCEPTED",
-        "ANSWERED",
-        "REJECTED",
-        "SUBMITTED"
       ],
       "docs": {
         "description": [
@@ -1175,10 +1147,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nACCEPTED,\nANSWERED,\nREJECTED,\nSUBMITTED"
         },
         {
           "name": "upvotes",
