@@ -50,10 +50,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.AuthorType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Author identity type"
+          "doc": "Author identity type\nOne of:\nMEMBER,\nUNKNOWN,\nVISITOR"
         },
         {
           "name": "contactId",
@@ -72,20 +72,6 @@
       "docs": {
         "description": [
           "Entity describing review author"
-        ]
-      }
-    },
-    {
-      "name": "AuthorType",
-      "members": [],
-      "enum": [
-        "MEMBER",
-        "UNKNOWN",
-        "VISITOR"
-      ],
-      "docs": {
-        "description": [
-          "Supported types of review author"
         ]
       }
     },
@@ -1184,19 +1170,6 @@
       }
     },
     {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Sorting",
       "members": [
         {
@@ -1214,10 +1187,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
