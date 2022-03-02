@@ -19,7 +19,7 @@
               "referenceType": "wix-activity-counters-backend.Events.ActivityCounterUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
