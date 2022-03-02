@@ -28,7 +28,7 @@
               "referenceType": "wix-ratings-backend.CreateRatingOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -116,7 +116,7 @@
               "referenceType": "wix-ratings-backend.GetEntityRatingSummaryIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -265,7 +265,7 @@
               "referenceType": "wix-ratings-backend.QueryV2"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -327,7 +327,7 @@
               "referenceType": "wix-ratings-backend.UpdateRatingValueOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1248,19 +1248,6 @@
       }
     },
     {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Sorting",
       "members": [
         {
@@ -1278,10 +1265,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
