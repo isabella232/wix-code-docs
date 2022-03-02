@@ -898,19 +898,6 @@
       }
     },
     {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Sorting",
       "members": [
         {
@@ -928,10 +915,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
