@@ -18,7 +18,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -28,7 +28,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -38,7 +38,7 @@
               "referenceType": "wix-online-programs-backend.AddParticipantOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -74,7 +74,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -84,7 +84,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -94,7 +94,7 @@
               "referenceType": "wix-online-programs-backend.CreateJoinRequestOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -130,7 +130,7 @@
               "referenceType": "wix-online-programs-backend.CreatePaymentOrderIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -140,7 +140,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -150,7 +150,7 @@
               "referenceType": "wix-online-programs-backend.CreatePaymentOrderOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -186,7 +186,7 @@
               "referenceType": "wix-online-programs-backend.DeleteParticipantIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -196,7 +196,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -232,7 +232,7 @@
               "referenceType": "wix-online-programs-backend.GetMediaUploadInfoIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -242,7 +242,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -278,7 +278,7 @@
               "referenceType": "wix-online-programs-backend.GetParticipantIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -314,7 +314,7 @@
               "referenceType": "wix-online-programs-backend.GetSectionIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -350,7 +350,7 @@
               "referenceType": "wix-online-programs-backend.GetStepIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -360,7 +360,7 @@
               "referenceType": "wix-online-programs-backend.TimeInterval"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -396,7 +396,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -413,7 +413,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -423,7 +423,7 @@
               "referenceType": "wix-online-programs-backend.InviteParticipantsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -459,7 +459,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -469,7 +469,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -479,7 +479,7 @@
               "referenceType": "wix-online-programs-backend.JoinParticipantOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -515,7 +515,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -525,7 +525,7 @@
               "referenceType": "wix-online-programs-backend.Paging"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -535,7 +535,7 @@
               "referenceType": "wix-online-programs-backend.ListParticipantsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -571,7 +571,7 @@
               "referenceType": "wix-online-programs-backend.ListSectionsIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -607,7 +607,7 @@
               "referenceType": "wix-online-programs-backend.ListStepsIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -617,7 +617,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -627,7 +627,7 @@
               "referenceType": "wix-online-programs-backend.ListStepsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -663,7 +663,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -699,7 +699,7 @@
               "referenceType": "wix-online-programs-backend.MyProgramSectionIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -735,7 +735,7 @@
               "referenceType": "wix-online-programs-backend.MyProgramStepIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -771,7 +771,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -781,7 +781,7 @@
               "referenceType": "wix-online-programs-backend.Paging"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -791,7 +791,7 @@
               "referenceType": "wix-online-programs-backend.QueryParticipantsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -827,7 +827,7 @@
               "referenceType": "wix-online-programs-backend.ResetParticipantProgressIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -837,7 +837,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -847,7 +847,7 @@
               "referenceType": "wix-online-programs-backend.ResetParticipantProgressOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -883,17 +883,17 @@
               "referenceType": "wix-online-programs-backend.ResolveStepIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
           "name": "status",
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ResolutionStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "One of:\nCOMPLETED,\nSKIPPED,\nUNDO",
           "required": false
         },
         {
@@ -903,7 +903,7 @@
               "referenceType": "wix-online-programs-backend.ResolveStepOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -939,7 +939,7 @@
               "referenceType": "wix-online-programs-backend.ReviveParticipantIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -949,7 +949,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -985,7 +985,7 @@
               "referenceType": "wix-online-programs-backend.UpdateParticipantIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -995,7 +995,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -1005,7 +1005,7 @@
               "referenceType": "wix-online-programs-backend.UpdateParticipantOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1041,7 +1041,7 @@
               "referenceType": "wix-online-programs-backend.UpdateStepFeedbackIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -1051,7 +1051,7 @@
               "referenceType": "wix-online-programs-backend.Feedback"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -1061,7 +1061,7 @@
               "referenceType": "wix-online-programs-backend.UpdateStepFeedbackOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1375,25 +1375,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ChoiceRightness"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nNEUTRAL,\nRIGHT,\nWRONG"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ChoiceRightness",
-      "members": [],
-      "enum": [
-        "NEUTRAL",
-        "RIGHT",
-        "WRONG"
       ],
       "docs": {
         "description": [
@@ -1674,10 +1660,10 @@
           "name": "paymentType",
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.PaymentType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nPAID_PLANS,\nSINGLE_PAYMENT"
         },
         {
           "name": "startDate",
@@ -1748,10 +1734,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.PaymentType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nPAID_PLANS,\nSINGLE_PAYMENT"
         },
         {
           "name": "startDate",
@@ -2008,21 +1994,6 @@
           ],
           "doc": "Document URL expiration date (when relevant). Optional"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "DurationUnit",
-      "members": [],
-      "enum": [
-        "DAYS",
-        "HOURS",
-        "MINUTES",
-        "WEEKS"
       ],
       "docs": {
         "description": [
@@ -3459,10 +3430,10 @@
           "name": "sortingCriterion",
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.SortingCriterion"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDEFAULT,\nJOIN_DATE,\nLAST_EVENT,\nNAME,\nPERFORMANCE"
         },
         {
           "name": "states",
@@ -3472,13 +3443,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.State"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOMPLETED,\nFAILED,\nINVITED,\nJOINED,\nJOIN_REJECTED,\nJOIN_REQUESTED,\nLEFT,\nPAYMENT_REQUESTED,\nPAYMENT_STARTED,\nPAYMENT_STARTED_OFFLINE,\nREMOVED,\nRUNNING"
         }
       ],
       "docs": {
@@ -3571,10 +3542,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.SortingCriterion"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDEFAULT,\nJOIN_DATE,\nLAST_EVENT,\nNAME,\nPERFORMANCE"
         },
         {
           "name": "states",
@@ -3585,13 +3556,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.State"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOMPLETED,\nFAILED,\nINVITED,\nJOINED,\nJOIN_REJECTED,\nJOIN_REQUESTED,\nLEFT,\nPAYMENT_REQUESTED,\nPAYMENT_STARTED,\nPAYMENT_STARTED_OFFLINE,\nREMOVED,\nRUNNING"
         }
       ],
       "docs": {
@@ -4671,24 +4642,6 @@
       }
     },
     {
-      "name": "ParticipantStepState",
-      "members": [],
-      "enum": [
-        "COMPLETED",
-        "CONFIRMED",
-        "OVERDUE",
-        "PENDING",
-        "REJECTED",
-        "RUNNING",
-        "SKIPPED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "ParticipantStepStateTransition",
       "members": [
         {
@@ -4706,10 +4659,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantStepState"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOMPLETED,\nCONFIRMED,\nOVERDUE,\nPENDING,\nREJECTED,\nRUNNING,\nSKIPPED"
         }
       ],
       "docs": {
@@ -4773,13 +4726,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ParticipationState"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nFinished,\nInProgress,\nNotStarted"
         },
         {
           "name": "performance",
@@ -4807,41 +4760,14 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.State"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOMPLETED,\nFAILED,\nINVITED,\nJOINED,\nJOIN_REJECTED,\nJOIN_REQUESTED,\nLEFT,\nPAYMENT_REQUESTED,\nPAYMENT_STARTED,\nPAYMENT_STARTED_OFFLINE,\nREMOVED,\nRUNNING"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ParticipationState",
-      "members": [],
-      "enum": [
-        "Finished",
-        "InProgress",
-        "NotStarted"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "PaymentType",
-      "members": [],
-      "enum": [
-        "PAID_PLANS",
-        "SINGLE_PAYMENT"
       ],
       "docs": {
         "description": [
@@ -5058,51 +4984,21 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSortingCriterion"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDEFAULT,\nJOIN_DATE,\nLAST_EVENT,\nNAME,\nPERFORMANCE"
         },
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSortingOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nORDER_ASC,\nORDER_DEFAULT,\nORDER_DESC"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "QueryParticipantsRequestSortingCriterion",
-      "members": [],
-      "enum": [
-        "DEFAULT",
-        "JOIN_DATE",
-        "LAST_EVENT",
-        "NAME",
-        "PERFORMANCE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "QueryParticipantsRequestSortingOrder",
-      "members": [],
-      "enum": [
-        "ORDER_ASC",
-        "ORDER_DEFAULT",
-        "ORDER_DESC"
       ],
       "docs": {
         "description": [
@@ -5370,20 +5266,6 @@
       }
     },
     {
-      "name": "ResolutionStatus",
-      "members": [],
-      "enum": [
-        "COMPLETED",
-        "SKIPPED",
-        "UNDO"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "ResolveParticipantStepRequest",
       "members": [
         {
@@ -5431,10 +5313,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ResolutionStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOMPLETED,\nSKIPPED,\nUNDO"
         },
         {
           "name": "stepId",
@@ -5704,51 +5586,21 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.SortingCriterion"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDEFAULT,\nJOIN_DATE,\nLAST_EVENT,\nNAME,\nPERFORMANCE"
         },
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.SortingOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nORDER_ASC,\nORDER_DEFAULT,\nORDER_DESC"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SortingCriterion",
-      "members": [],
-      "enum": [
-        "DEFAULT",
-        "JOIN_DATE",
-        "LAST_EVENT",
-        "NAME",
-        "PERFORMANCE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SortingOrder",
-      "members": [],
-      "enum": [
-        "ORDER_ASC",
-        "ORDER_DEFAULT",
-        "ORDER_DESC"
       ],
       "docs": {
         "description": [
@@ -5787,29 +5639,6 @@
       }
     },
     {
-      "name": "State",
-      "members": [],
-      "enum": [
-        "COMPLETED",
-        "FAILED",
-        "INVITED",
-        "JOINED",
-        "JOIN_REJECTED",
-        "JOIN_REQUESTED",
-        "LEFT",
-        "PAYMENT_REQUESTED",
-        "PAYMENT_STARTED",
-        "PAYMENT_STARTED_OFFLINE",
-        "REMOVED",
-        "RUNNING"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "StateTransition",
       "members": [
         {
@@ -5840,10 +5669,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.State"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOMPLETED,\nFAILED,\nINVITED,\nJOINED,\nJOIN_REJECTED,\nJOIN_REQUESTED,\nLEFT,\nPAYMENT_REQUESTED,\nPAYMENT_STARTED,\nPAYMENT_STARTED_OFFLINE,\nREMOVED,\nRUNNING"
         }
       ],
       "docs": {
@@ -6096,10 +5925,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.DurationUnit"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDAYS,\nHOURS,\nMINUTES,\nWEEKS"
         },
         {
           "name": "value",
