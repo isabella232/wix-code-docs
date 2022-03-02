@@ -19,7 +19,7 @@
               "referenceType": "wix-question-backend.Events.QuestionCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -61,7 +61,7 @@
               "referenceType": "wix-question-backend.Events.QuestionDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -103,7 +103,7 @@
               "referenceType": "wix-question-backend.Events.QuestionUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -717,10 +717,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nACCEPTED,\nANSWERED,\nREJECTED,\nSUBMITTED"
         },
         {
           "name": "upvotes",
@@ -852,19 +852,6 @@
       }
     },
     {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Sorting",
       "members": [
         {
@@ -882,26 +869,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Status",
-      "members": [],
-      "enum": [
-        "ACCEPTED",
-        "ANSWERED",
-        "REJECTED",
-        "SUBMITTED"
       ],
       "docs": {
         "description": [
