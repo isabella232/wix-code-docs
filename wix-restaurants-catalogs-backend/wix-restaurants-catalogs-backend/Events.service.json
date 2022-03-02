@@ -19,7 +19,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Events.CatalogCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -64,7 +64,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Events.CatalogUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1716,25 +1716,6 @@
       }
     },
     {
-      "name": "DayOfWeek",
-      "members": [],
-      "enum": [
-        "FRI",
-        "MON",
-        "SAT",
-        "SUN",
-        "THU",
-        "TUE",
-        "UNDEFINED",
-        "WED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Deselection",
       "members": [
         {
@@ -1838,10 +1819,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.DishOptionType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDESELECTION,\nEXTRAS,\nSELECTION,\nUNSPECIFIED_DISH_OPTION_TYPE"
         }
       ],
       "docs": {
@@ -1873,21 +1854,6 @@
           ],
           "doc": "Option price. When an option price is included in the item price, price = null."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "DishOptionType",
-      "members": [],
-      "enum": [
-        "DESELECTION",
-        "EXTRAS",
-        "SELECTION",
-        "UNSPECIFIED_DISH_OPTION_TYPE"
       ],
       "docs": {
         "description": [
@@ -1985,20 +1951,6 @@
           ],
           "doc": "Number of options required to be chosen for this item. default 0, max value is available_choices size"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FulfillmentType",
-      "members": [],
-      "enum": [
-        "DELIVERY",
-        "PICKUP_OR_DINE_IN",
-        "UNSPECIFIED_FULFILLMENT_TYPE"
       ],
       "docs": {
         "description": [
@@ -2360,10 +2312,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.Type"
+              "nativeType": "string"
             }
           ],
-          "doc": "Type of the Item"
+          "doc": "Type of the Item\nOne of:\nDISH,\nUNSPECIFIED_ITEM_TYPE,\nVARIATION"
         },
         {
           "name": "visibilityCriteria",
@@ -2980,23 +2932,6 @@
       }
     },
     {
-      "name": "Platform",
-      "members": [],
-      "enum": [
-        "CALL_CENTER",
-        "CHAT_BOT",
-        "MOBILE_SITE",
-        "SITE",
-        "UNSPECIFIED_PLATFORM",
-        "WIX_APP"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "PublishCatalogUpdated",
       "members": [
         {
@@ -3247,19 +3182,6 @@
       }
     },
     {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Sorting",
       "members": [
         {
@@ -3277,10 +3199,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
@@ -3350,10 +3272,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.DayOfWeek"
+              "nativeType": "string"
             }
           ],
-          "doc": "Day of the week this period ends on."
+          "doc": "Day of the week this period ends on.\nOne of:\nFRI,\nMON,\nSAT,\nSUN,\nTHU,\nTUE,\nUNDEFINED,\nWED"
         },
         {
           "name": "closeTime",
@@ -3370,10 +3292,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.DayOfWeek"
+              "nativeType": "string"
             }
           ],
-          "doc": "Day of the week this period starts on."
+          "doc": "Day of the week this period starts on.\nOne of:\nFRI,\nMON,\nSAT,\nSUN,\nTHU,\nTUE,\nUNDEFINED,\nWED"
         },
         {
           "name": "openTime",
@@ -3389,20 +3311,6 @@
       "docs": {
         "description": [
           "A span of time that the object is available,\nstarting on the specified open day/time and closing on the specified close day/time.\nClosing time must occur after the opening time, for example later in the same day, or on a subsequent day."
-        ]
-      }
-    },
-    {
-      "name": "Type",
-      "members": [],
-      "enum": [
-        "DISH",
-        "UNSPECIFIED_ITEM_TYPE",
-        "VARIATION"
-      ],
-      "docs": {
-        "description": [
-          ""
         ]
       }
     },
@@ -3633,13 +3541,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.FulfillmentType"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Fulfillment types supported."
+          "doc": "Fulfillment types supported.\nOne of:\nDELIVERY,\nPICKUP_OR_DINE_IN,\nUNSPECIFIED_FULFILLMENT_TYPE"
         },
         {
           "name": "platforms",
@@ -3650,13 +3558,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.Platform"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Platforms supported."
+          "doc": "Platforms supported.\nOne of:\nCALL_CENTER,\nCHAT_BOT,\nMOBILE_SITE,\nSITE,\nUNSPECIFIED_PLATFORM,\nWIX_APP"
         },
         {
           "name": "visible",
