@@ -19,7 +19,7 @@
               "referenceType": "wix-dev-backend.Events.AccountCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -48,7 +48,7 @@
               "referenceType": "wix-dev-backend.Events.AccountPointsUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -90,7 +90,7 @@
               "referenceType": "wix-dev-backend.Events.AccountUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -132,7 +132,7 @@
               "referenceType": "wix-dev-backend.Events.ActivityCounterUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -174,7 +174,7 @@
               "referenceType": "wix-dev-backend.Events.AlarmSnoozedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -216,7 +216,7 @@
               "referenceType": "wix-dev-backend.Events.AlarmTriggeredEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -258,7 +258,7 @@
               "referenceType": "wix-dev-backend.Events.CardCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -300,7 +300,7 @@
               "referenceType": "wix-dev-backend.Events.CardDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -342,7 +342,7 @@
               "referenceType": "wix-dev-backend.Events.CardUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -384,7 +384,7 @@
               "referenceType": "wix-dev-backend.Events.CategoryCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -426,7 +426,7 @@
               "referenceType": "wix-dev-backend.Events.CategoryCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -468,7 +468,7 @@
               "referenceType": "wix-dev-backend.Events.CategoryDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -510,7 +510,7 @@
               "referenceType": "wix-dev-backend.Events.CategoryDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -552,7 +552,7 @@
               "referenceType": "wix-dev-backend.Events.CategoryUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -594,7 +594,7 @@
               "referenceType": "wix-dev-backend.Events.CategoryUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -636,7 +636,7 @@
               "referenceType": "wix-dev-backend.Events.ContactCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -681,7 +681,7 @@
               "referenceType": "wix-dev-backend.Events.ContactDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -726,7 +726,7 @@
               "referenceType": "wix-dev-backend.Events.ContactMergedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -771,7 +771,7 @@
               "referenceType": "wix-dev-backend.Events.ContactUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -816,7 +816,7 @@
               "referenceType": "wix-dev-backend.Events.ConversationConversationsMerged"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -858,7 +858,7 @@
               "referenceType": "wix-dev-backend.Events.GalleryCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -900,7 +900,7 @@
               "referenceType": "wix-dev-backend.Events.GalleryDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -942,7 +942,7 @@
               "referenceType": "wix-dev-backend.Events.GalleryItemCreatedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -984,7 +984,7 @@
               "referenceType": "wix-dev-backend.Events.GalleryItemDeletedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1026,7 +1026,7 @@
               "referenceType": "wix-dev-backend.Events.GalleryItemUpdatedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1068,7 +1068,7 @@
               "referenceType": "wix-dev-backend.Events.GalleryUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1110,7 +1110,7 @@
               "referenceType": "wix-dev-backend.Events.GroupRulesUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1152,7 +1152,7 @@
               "referenceType": "wix-dev-backend.Events.LocationArchiveStatus"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1194,7 +1194,7 @@
               "referenceType": "wix-dev-backend.Events.LocationCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1236,7 +1236,7 @@
               "referenceType": "wix-dev-backend.Events.LocationSetDefaultLocation"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1278,7 +1278,7 @@
               "referenceType": "wix-dev-backend.Events.LocationUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1320,7 +1320,7 @@
               "referenceType": "wix-dev-backend.Events.MemberApprovedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1362,7 +1362,7 @@
               "referenceType": "wix-dev-backend.Events.MemberBlockedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1404,7 +1404,7 @@
               "referenceType": "wix-dev-backend.Events.MemberCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1446,7 +1446,7 @@
               "referenceType": "wix-dev-backend.Events.MemberDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1488,7 +1488,7 @@
               "referenceType": "wix-dev-backend.Events.MemberJoinedCommunityEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1530,7 +1530,7 @@
               "referenceType": "wix-dev-backend.Events.MemberLeftCommunityEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1572,7 +1572,7 @@
               "referenceType": "wix-dev-backend.Events.MemberMutedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1614,7 +1614,7 @@
               "referenceType": "wix-dev-backend.Events.MemberUnmutedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1656,7 +1656,7 @@
               "referenceType": "wix-dev-backend.Events.MemberUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1698,7 +1698,7 @@
               "referenceType": "wix-dev-backend.Events.MessageButtonInteracted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1740,7 +1740,7 @@
               "referenceType": "wix-dev-backend.Events.MessageSentToBusinessEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1782,7 +1782,7 @@
               "referenceType": "wix-dev-backend.Events.MessageSentToParticipantEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1824,7 +1824,7 @@
               "referenceType": "wix-dev-backend.Events.OrderAcceptedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1869,7 +1869,7 @@
               "referenceType": "wix-dev-backend.Events.OrderAutoRenewCanceledEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1911,7 +1911,7 @@
               "referenceType": "wix-dev-backend.Events.OrderBillingCycleTriggeredEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1953,7 +1953,7 @@
               "referenceType": "wix-dev-backend.Events.OrderCanceledEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1995,7 +1995,7 @@
               "referenceType": "wix-dev-backend.Events.OrderCanceledEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2037,7 +2037,7 @@
               "referenceType": "wix-dev-backend.Events.OrderCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2079,7 +2079,7 @@
               "referenceType": "wix-dev-backend.Events.OrderCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2121,7 +2121,7 @@
               "referenceType": "wix-dev-backend.Events.OrderEndDatePostponedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2163,7 +2163,7 @@
               "referenceType": "wix-dev-backend.Events.OrderEndedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2205,7 +2205,7 @@
               "referenceType": "wix-dev-backend.Events.OrderFulfilledEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2250,7 +2250,7 @@
               "referenceType": "wix-dev-backend.Events.OrderMarkedAsPaidEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2292,7 +2292,7 @@
               "referenceType": "wix-dev-backend.Events.OrderPausedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2334,7 +2334,7 @@
               "referenceType": "wix-dev-backend.Events.OrderPurchasedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2376,7 +2376,7 @@
               "referenceType": "wix-dev-backend.Events.OrderResumedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2418,7 +2418,7 @@
               "referenceType": "wix-dev-backend.Events.OrderStartDateChangedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2460,7 +2460,7 @@
               "referenceType": "wix-dev-backend.Events.OrderStartedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2502,7 +2502,7 @@
               "referenceType": "wix-dev-backend.Events.OrderTransactionsPayments"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2544,7 +2544,7 @@
               "referenceType": "wix-dev-backend.Events.OrderTransactionsRefunded"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2586,7 +2586,7 @@
               "referenceType": "wix-dev-backend.Events.OrderUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2628,7 +2628,7 @@
               "referenceType": "wix-dev-backend.Events.PostClosed"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2670,7 +2670,7 @@
               "referenceType": "wix-dev-backend.Events.PostCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2712,7 +2712,7 @@
               "referenceType": "wix-dev-backend.Events.PostCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2754,7 +2754,7 @@
               "referenceType": "wix-dev-backend.Events.PostDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2796,7 +2796,7 @@
               "referenceType": "wix-dev-backend.Events.PostDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2838,7 +2838,7 @@
               "referenceType": "wix-dev-backend.Events.PostLikedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2880,7 +2880,7 @@
               "referenceType": "wix-dev-backend.Events.PostLiked"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2922,7 +2922,7 @@
               "referenceType": "wix-dev-backend.Events.PostMoved"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -2964,7 +2964,7 @@
               "referenceType": "wix-dev-backend.Events.PostOpened"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3006,7 +3006,7 @@
               "referenceType": "wix-dev-backend.Events.PostPinned"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3048,7 +3048,7 @@
               "referenceType": "wix-dev-backend.Events.PostReported"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3090,7 +3090,7 @@
               "referenceType": "wix-dev-backend.Events.PostUnlikedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3132,7 +3132,7 @@
               "referenceType": "wix-dev-backend.Events.PostUnliked"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3174,7 +3174,7 @@
               "referenceType": "wix-dev-backend.Events.PostUnpinned"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3216,7 +3216,7 @@
               "referenceType": "wix-dev-backend.Events.PostUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3258,7 +3258,7 @@
               "referenceType": "wix-dev-backend.Events.PostUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3300,7 +3300,7 @@
               "referenceType": "wix-dev-backend.Events.ProgramLoyaltyProgramDescriptionUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3345,7 +3345,7 @@
               "referenceType": "wix-dev-backend.Events.ProgramUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3390,7 +3390,7 @@
               "referenceType": "wix-dev-backend.Events.SeatingPlanCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3432,7 +3432,7 @@
               "referenceType": "wix-dev-backend.Events.SeatingPlanDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3474,7 +3474,7 @@
               "referenceType": "wix-dev-backend.Events.SeatingPlanUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3516,7 +3516,7 @@
               "referenceType": "wix-dev-backend.Events.SeatingReservationCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3558,7 +3558,7 @@
               "referenceType": "wix-dev-backend.Events.SeatingReservationDeleted"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3600,7 +3600,7 @@
               "referenceType": "wix-dev-backend.Events.TransactionCreated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3642,7 +3642,7 @@
               "referenceType": "wix-dev-backend.Events.TransactionUpdated"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -3778,21 +3778,6 @@
           ],
           "doc": "Accepted order."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Access",
-      "members": [],
-      "enum": [
-        "MEMBERS_ONLY",
-        "PRIVATE",
-        "PUBLIC",
-        "UNKNOWN"
       ],
       "docs": {
         "description": [
@@ -3965,11 +3950,50 @@
     },
     {
       "name": "Action",
-      "members": [],
-      "enum": [
-        "CREATED",
-        "UNKNOWN",
-        "UPDATED"
+      "members": [
+        {
+          "name": "actionId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "albumId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Root album when not specified"
+        },
+        {
+          "name": "uploadResponse",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "visualMediaContentId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
       ],
       "docs": {
         "description": [
@@ -3990,29 +4014,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ActionForAuthorization",
-      "members": [],
-      "enum": [
-        "CREATE_ALBUM",
-        "DELETE",
-        "DOWNLOAD",
-        "LIKE",
-        "MANAGE_PERMISSIONS",
-        "MOVE",
-        "RENAME",
-        "REPORT",
-        "SET_DESCRIPTION",
-        "TAG_USER",
-        "UPLOAD_VISUAL_MEDIA",
-        "VIEW"
       ],
       "docs": {
         "description": [
@@ -4097,10 +4098,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ActivityType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Activity item type"
+          "doc": "Activity item type\nOne of:\nDOWNLOAD_LINK_SENT,\nEMAIL_EDITED,\nFULFILLER_EMAIL_SENT,\nINVOICE_WAS_REMOVED,\nINVOICE_WAS_SENT,\nINVOICE_WAS_SET,\nMERCHANT_COMMENT,\nORDER_FULFILLED,\nORDER_NOT_FULFILLED,\nORDER_PAID,\nORDER_PLACED,\nPICKUP_READY_EMAIL_SENT,\nSHIPPING_ADDRESS_EDITED,\nSHIPPING_CONFIRMATION_EMAIL_SENT,\nTRACKING_LINK_WAS_SET,\nTRACKING_NUMBER_ADDED,\nTRACKING_NUMBER_EDITED,\nUNSPECIFIED_ORDER_HISTORY_ITEM_TYPE"
         }
       ],
       "docs": {
@@ -4177,49 +4178,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ActivityStatusStatus",
-      "members": [],
-      "enum": [
-        "ACTIVE",
-        "MUTED",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ActivityType",
-      "members": [],
-      "enum": [
-        "DOWNLOAD_LINK_SENT",
-        "EMAIL_EDITED",
-        "FULFILLER_EMAIL_SENT",
-        "INVOICE_WAS_REMOVED",
-        "INVOICE_WAS_SENT",
-        "INVOICE_WAS_SET",
-        "MERCHANT_COMMENT",
-        "ORDER_FULFILLED",
-        "ORDER_NOT_FULFILLED",
-        "ORDER_PAID",
-        "ORDER_PLACED",
-        "PICKUP_READY_EMAIL_SENT",
-        "SHIPPING_ADDRESS_EDITED",
-        "SHIPPING_CONFIRMATION_EMAIL_SENT",
-        "TRACKING_LINK_WAS_SET",
-        "TRACKING_NUMBER_ADDED",
-        "TRACKING_NUMBER_EDITED",
-        "UNSPECIFIED_ORDER_HISTORY_ITEM_TYPE"
       ],
       "docs": {
         "description": [
@@ -4448,10 +4406,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.PerformedBy"
+              "nativeType": "string"
             }
           ],
-          "doc": "by whom this action was done, defaults to PARTICIPANT in case of UNKNOWN_PERFORMED_BY"
+          "doc": "by whom this action was done, defaults to PARTICIPANT in case of UNKNOWN_PERFORMED_BY\nOne of:\nBUSINESS,\nPARTICIPANT,\nUNKNOWN_PERFORMED_BY"
         }
       ],
       "docs": {
@@ -4726,22 +4684,6 @@
       }
     },
     {
-      "name": "AddressTag",
-      "members": [],
-      "enum": [
-        "BILLING",
-        "HOME",
-        "SHIPPING",
-        "UNTAGGED",
-        "WORK"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "AdjustPointsRequest",
       "members": [
         {
@@ -4874,10 +4816,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.AggregationType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nRANGE,\nSCALAR,\nUNKNOWN_AGGREGATION_TYPE,\nVALUE"
         },
         {
           "name": "value",
@@ -4889,21 +4831,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "AggregationType",
-      "members": [],
-      "enum": [
-        "RANGE",
-        "SCALAR",
-        "UNKNOWN_AGGREGATION_TYPE",
-        "VALUE"
       ],
       "docs": {
         "description": [
@@ -5193,20 +5120,6 @@
       }
     },
     {
-      "name": "Alignment",
-      "members": [],
-      "enum": [
-        "CENTER",
-        "LEFT",
-        "RIGHT"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "AmountBreakdown",
       "members": [
         {
@@ -5336,10 +5249,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Anonymization status."
+          "doc": "Anonymization status.\nOne of:\nNOT_FOUND,\nSUCCEEDED,\nUNKNOWN"
         }
       ],
       "docs": {
@@ -5520,10 +5433,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.AppType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nBOOKING,\nEVENT,\nPRODUCT"
         },
         {
           "name": "url",
@@ -5538,20 +5451,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "AppType",
-      "members": [],
-      "enum": [
-        "BOOKING",
-        "EVENT",
-        "PRODUCT"
       ],
       "docs": {
         "description": [
@@ -5961,10 +5860,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.State"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDEMO,\nDISABLED,\nENABLED,\nPENDING,\nUNKNOWN"
         }
       ],
       "docs": {
@@ -6019,10 +5918,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.AttachmentType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Deprecated. For internal use."
+          "doc": "Deprecated. For internal use.\nOne of:\nContactType"
         },
         {
           "name": "contactId",
@@ -6048,18 +5947,6 @@
       "docs": {
         "description": [
           ""
-        ]
-      }
-    },
-    {
-      "name": "AttachmentType",
-      "members": [],
-      "enum": [
-        "ContactType"
-      ],
-      "docs": {
-        "description": [
-          "describes the supported types of attachments (currently only supports Contact which is the default type)"
         ]
       }
     },
@@ -6144,10 +6031,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.AuthorizationStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Authorization status."
+          "doc": "Authorization status.\nOne of:\nCANCELED,\nDECLINED,\nNEEDS_ACTION,\nPENDING,\nPROCESSING,\nSUCCEEDED,\nUNDEFINED"
         },
         {
           "name": "statusReason",
@@ -6179,24 +6066,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "AuthorizationStatus",
-      "members": [],
-      "enum": [
-        "CANCELED",
-        "DECLINED",
-        "NEEDS_ACTION",
-        "PENDING",
-        "PROCESSING",
-        "SUCCEEDED",
-        "UNDEFINED"
       ],
       "docs": {
         "description": [
@@ -6322,10 +6191,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ActionForAuthorization"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCREATE_ALBUM,\nDELETE,\nDOWNLOAD,\nLIKE,\nMANAGE_PERMISSIONS,\nMOVE,\nRENAME,\nREPORT,\nSET_DESCRIPTION,\nTAG_USER,\nUPLOAD_VISUAL_MEDIA,\nVIEW"
         },
         {
           "name": "isAllowedForAllMembers",
@@ -6355,20 +6224,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Reason"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nALBUM_NOT_EMPTY,\nDEFAULT_REASON,\nMISSING_PERMISSION,\nMUST_BE_A_MEMBER,\nMUST_BE_PUBLIC,\nNOT_ALLOWED_ON_FILES,\nNOT_ALLOWED_ON_ROOT,\nNOT_ALLOWED_ON_SUBFOLDERS_THIS_DEEP,\nNOT_FOUND,\nOWNED_BY_ANOTHER_USER"
         },
         {
           "name": "status",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nALLOWED,\nFORBIDDEN"
         }
       ],
       "docs": {
@@ -6473,25 +6342,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.BackgroundType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOLOR,\nGRADIENT,\nIMAGE"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "BackgroundType",
-      "members": [],
-      "enum": [
-        "COLOR",
-        "GRADIENT",
-        "IMAGE"
       ],
       "docs": {
         "description": [
@@ -6507,10 +6362,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.BadgeVisibility"
+              "nativeType": "string"
             }
           ],
-          "doc": "Controls whether the badge is visible to the participant.\nCurrently not supported in the Chat widget."
+          "doc": "Controls whether the badge is visible to the participant.\nCurrently not supported in the Chat widget.\nOne of:\nBUSINESS,\nBUSINESS_AND_PARTICIPANT,\nUNKNOWN_BADGE_VISIBILITY"
         },
         {
           "name": "iconUrl",
@@ -6535,20 +6390,6 @@
           ],
           "doc": "Display text."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "BadgeVisibility",
-      "members": [],
-      "enum": [
-        "BUSINESS",
-        "BUSINESS_AND_PARTICIPANT",
-        "UNKNOWN_BADGE_VISIBILITY"
       ],
       "docs": {
         "description": [
@@ -7662,10 +7503,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.TransactionStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Payment status."
+          "doc": "Payment status.\nOne of:\nAPPROVED,\nAUTHORIZED,\nCANCELED,\nDECLINED,\nPARTIALLY_REFUNDED,\nPENDING,\nPENDING_MERCHANT,\nREFUNDED,\nUNDEFINED"
         }
       ],
       "docs": {
@@ -7973,10 +7814,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Type"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nACTION,\nLINK"
         }
       ],
       "docs": {
@@ -8186,10 +8027,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.IdentityType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Customer type"
+          "doc": "Customer type\nOne of:\nCONTACT,\nMEMBER,\nUNSPECIFIED_IDENTITY_TYPE"
         },
         {
           "name": "lastName",
@@ -8222,10 +8063,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.IdentityType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Deprecated (use identityType instead)"
+          "doc": "Deprecated (use identityType instead)\nOne of:\nCONTACT,\nMEMBER,\nUNSPECIFIED_IDENTITY_TYPE"
         }
       ],
       "docs": {
@@ -8640,10 +8481,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.CancellationEffectiveAt"
+              "nativeType": "string"
             }
           ],
-          "doc": "Required. Whether to cancel the order effective immediately or at the next payment date. One-time orders can only be canceled immediately."
+          "doc": "Required. Whether to cancel the order effective immediately or at the next payment date. One-time orders can only be canceled immediately.\nOne of:\nIMMEDIATELY,\nNEXT_PAYMENT_DATE,\nUNDEFINED"
         }
       ],
       "docs": {
@@ -8669,20 +8510,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.CancellationCause"
+              "nativeType": "string"
             }
           ],
-          "doc": "Cause of the cancellation (i.e. owner, member, payment issues)."
+          "doc": "Cause of the cancellation (i.e. owner, member, payment issues).\nOne of:\nMEMBER_ACTION,\nOWNER_ACTION,\nPAYMENT_FAILURE,\nPAYMENT_SETUP_FAILURE,\nUNDEFINED,\nUNKNOWN"
         },
         {
           "name": "effectiveAt",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.CancellationEffectiveAt"
+              "nativeType": "string"
             }
           ],
-          "doc": "Indicates whether immediate or next payment date cancellation was requested when canceling."
+          "doc": "Indicates whether immediate or next payment date cancellation was requested when canceling.\nOne of:\nIMMEDIATELY,\nNEXT_PAYMENT_DATE,\nUNDEFINED"
         },
         {
           "name": "requestedDate",
@@ -8694,37 +8535,6 @@
           ],
           "doc": "Date the cancellation request was made."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "CancellationCause",
-      "members": [],
-      "enum": [
-        "MEMBER_ACTION",
-        "OWNER_ACTION",
-        "PAYMENT_FAILURE",
-        "PAYMENT_SETUP_FAILURE",
-        "UNDEFINED",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "CancellationEffectiveAt",
-      "members": [],
-      "enum": [
-        "IMMEDIATELY",
-        "NEXT_PAYMENT_DATE",
-        "UNDEFINED"
       ],
       "docs": {
         "description": [
@@ -8806,10 +8616,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.CaptureStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Capture status."
+          "doc": "Capture status.\nOne of:\nFAILED,\nPENDING,\nREVERSED,\nSUCCEEDED,\nUNDEFINED"
         },
         {
           "name": "statusReason",
@@ -8851,22 +8661,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "CaptureStatus",
-      "members": [],
-      "enum": [
-        "FAILED",
-        "PENDING",
-        "REVERSED",
-        "SUCCEEDED",
-        "UNDEFINED"
       ],
       "docs": {
         "description": [
@@ -9548,10 +9342,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Order"
+              "nativeType": "string"
             }
           ],
-          "doc": "Records can be sorted in ascending (default) or descending order."
+          "doc": "Records can be sorted in ascending (default) or descending order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
@@ -9821,19 +9615,6 @@
       }
     },
     {
-      "name": "CategoryFieldField",
-      "members": [],
-      "enum": [
-        "UNKNOWN",
-        "URL"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "CategoryRequest",
       "members": [
         {
@@ -9854,13 +9635,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Array of extra category fields to be added in the response. `UNKNOWN` must not be passed."
+          "doc": "Array of extra category fields to be added in the response. `UNKNOWN` must not be passed.\nOne of:\nUNKNOWN,\nURL"
         }
       ],
       "docs": {
@@ -9901,13 +9682,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Array of extra category fields to be added in the response. `UNKNOWN` must not be passed."
+          "doc": "Array of extra category fields to be added in the response. `UNKNOWN` must not be passed.\nOne of:\nUNKNOWN,\nURL"
         },
         {
           "name": "slug",
@@ -9974,10 +9755,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.VerticalAlignment"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nBOTTOM,\nMIDDLE,\nTOP"
         }
       ],
       "docs": {
@@ -10068,29 +9849,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ChannelType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sales channel that submitted the order"
+          "doc": "Sales channel that submitted the order\nOne of:\nAMAZON,\nBACKOFFICE_MERCHANT,\nEBAY,\nOTHER_PLATFORM,\nPOS,\nUNSPECIFIED,\nWEB,\nWISH,\nWIX_APP_STORE,\nWIX_INVOICES"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ChannelType",
-      "members": [],
-      "enum": [
-        "CHAT",
-        "EMAIL",
-        "FACEBOOK",
-        "INSTAGRAM",
-        "SMS",
-        "UNKNOWN_CHANNEL_TYPE",
-        "WHATSAPP"
       ],
       "docs": {
         "description": [
@@ -10313,10 +10076,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Direction"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nLTR,\nRTL"
         },
         {
           "name": "expandOnlyOne",
@@ -10336,10 +10099,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.InitialExpandedItems"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nALL,\nFIRST,\nNONE"
         }
       ],
       "docs": {
@@ -10816,56 +10579,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ContactActivityType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Contact's last action in the site."
+          "doc": "Contact's last action in the site.\nOne of:\nARENA_NEW_LEAD,\nBOOKINGS_APPOINTMENT,\nCASHIER_BUTTON_PURCHASE,\nCONTACT_CREATED,\nCONTACT_MERGED,\nECOM_CART_ABANDON,\nECOM_CHECKOUT_BUYER,\nECOM_PURCHASE,\nEVENTS_RSVP,\nFORM_SUBMITTED,\nGENERAL,\nHOTELS_CANCEL,\nHOTELS_CONFIRMATION,\nHOTELS_PURCHASE,\nHOTELS_RESERVATION,\nINBOX_FORM_SUBMITTED,\nINBOX_MESSAGE_FROM_CUSTOMER,\nINBOX_MESSAGE_TO_CUSTOMER,\nINBOX_PAYMENT_REQUEST_PAID,\nINVOICE_OVERDUE,\nINVOICE_PAY,\nMEMBER_LOGIN,\nMEMBER_REGISTER,\nMEMBER_STATUS_CHANGED,\nNEWSLETTER_SUBSCRIPTION_FORM_SUBMITTED,\nNEWSLETTER_SUBSCRIPTION_UNSUBSCRIBE,\nPRICE_QUOTE_ACCEPT,\nPRICE_QUOTE_EXPIRE,\nRESTAURANTS_ORDER,\nRESTAURANTS_RESERVATION,\nSHOUTOUT_CLICK,\nSHOUTOUT_OPEN,\nVIDEO_PURCHASE,\nVIDEO_RENT"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ContactActivityType",
-      "members": [],
-      "enum": [
-        "ARENA_NEW_LEAD",
-        "BOOKINGS_APPOINTMENT",
-        "CASHIER_BUTTON_PURCHASE",
-        "CONTACT_CREATED",
-        "CONTACT_MERGED",
-        "ECOM_CART_ABANDON",
-        "ECOM_CHECKOUT_BUYER",
-        "ECOM_PURCHASE",
-        "EVENTS_RSVP",
-        "FORM_SUBMITTED",
-        "GENERAL",
-        "HOTELS_CANCEL",
-        "HOTELS_CONFIRMATION",
-        "HOTELS_PURCHASE",
-        "HOTELS_RESERVATION",
-        "INBOX_FORM_SUBMITTED",
-        "INBOX_MESSAGE_FROM_CUSTOMER",
-        "INBOX_MESSAGE_TO_CUSTOMER",
-        "INBOX_PAYMENT_REQUEST_PAID",
-        "INVOICE_OVERDUE",
-        "INVOICE_PAY",
-        "MEMBER_LOGIN",
-        "MEMBER_REGISTER",
-        "MEMBER_STATUS_CHANGED",
-        "NEWSLETTER_SUBSCRIPTION_FORM_SUBMITTED",
-        "NEWSLETTER_SUBSCRIPTION_UNSUBSCRIBE",
-        "PRICE_QUOTE_ACCEPT",
-        "PRICE_QUOTE_EXPIRE",
-        "RESTAURANTS_ORDER",
-        "RESTAURANTS_RESERVATION",
-        "SHOUTOUT_CLICK",
-        "SHOUTOUT_OPEN",
-        "VIDEO_PURCHASE",
-        "VIDEO_RENT"
       ],
       "docs": {
         "description": [
@@ -10905,10 +10623,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.AddressTag"
+              "nativeType": "string"
             }
           ],
-          "doc": "Address type.\n`UNTAGGED` is shown as \"Other\" in the Contact List."
+          "doc": "Address type.\n`UNTAGGED` is shown as \"Other\" in the Contact List.\nOne of:\nBILLING,\nHOME,\nSHIPPING,\nUNTAGGED,\nWORK"
         }
       ],
       "docs": {
@@ -11066,10 +10784,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.EmailTag"
+              "nativeType": "string"
             }
           ],
-          "doc": "Email type."
+          "doc": "Email type.\nOne of:\nHOME,\nMAIN,\nUNTAGGED,\nWORK"
         }
       ],
       "docs": {
@@ -11098,21 +10816,6 @@
           ],
           "doc": "List of up to 50 email addresses."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ContactFieldSet",
-      "members": [],
-      "enum": [
-        "BASIC",
-        "COMMUNICATION_DETAILS",
-        "EXTENDED",
-        "FULL"
       ],
       "docs": {
         "description": [
@@ -11300,10 +11003,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.LabelType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Label type."
+          "doc": "Label type.\nOne of:\nSYSTEM,\nUNKNOWN,\nUSER_DEFINED,\nWIX_APP_DEFINED"
         },
         {
           "name": "legacyId",
@@ -11567,10 +11270,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.PhoneTag"
+              "nativeType": "string"
             }
           ],
-          "doc": "Phone type."
+          "doc": "Phone type.\nOne of:\nFAX,\nHOME,\nMAIN,\nMOBILE,\nUNTAGGED,\nWORK"
         }
       ],
       "docs": {
@@ -11649,10 +11352,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ContactSourceType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Source type."
+          "doc": "Source type.\nOne of:\nADMIN,\nIMPORT,\nOTHER,\nTHIRD_PARTY,\nWIX_APP,\nWIX_BOOKINGS,\nWIX_CHAT,\nWIX_CODE,\nWIX_EMAIL_MARKETING,\nWIX_EVENTS,\nWIX_FORMS,\nWIX_GROUPS,\nWIX_HOTELS,\nWIX_MARKET_PLACE,\nWIX_MUSIC,\nWIX_RESTAURANTS,\nWIX_SITE_MEMBERS,\nWIX_STORES"
         },
         {
           "name": "wixAppId",
@@ -11668,35 +11371,6 @@
           ],
           "doc": "App ID, if the contact was created by a Wix app."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ContactSourceType",
-      "members": [],
-      "enum": [
-        "ADMIN",
-        "IMPORT",
-        "OTHER",
-        "THIRD_PARTY",
-        "WIX_APP",
-        "WIX_BOOKINGS",
-        "WIX_CHAT",
-        "WIX_CODE",
-        "WIX_EMAIL_MARKETING",
-        "WIX_EVENTS",
-        "WIX_FORMS",
-        "WIX_GROUPS",
-        "WIX_HOTELS",
-        "WIX_MARKET_PLACE",
-        "WIX_MUSIC",
-        "WIX_RESTAURANTS",
-        "WIX_SITE_MEMBERS",
-        "WIX_STORES"
       ],
       "docs": {
         "description": [
@@ -11822,10 +11496,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ContactsFacetType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Type of facet."
+          "doc": "Type of facet.\nOne of:\nALL_CONTACTS,\nLABEL,\nMEMBERSHIP_STATUS,\nNOT_LABELED,\nSUBSCRIPTION_STATUS,\nUNKNOWN"
         },
         {
           "name": "namespace",
@@ -11876,23 +11550,6 @@
           ],
           "doc": "Filter used for query contacts of this facet"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ContactsFacetType",
-      "members": [],
-      "enum": [
-        "ALL_CONTACTS",
-        "LABEL",
-        "MEMBERSHIP_STATUS",
-        "NOT_LABELED",
-        "SUBSCRIPTION_STATUS",
-        "UNKNOWN"
       ],
       "docs": {
         "description": [
@@ -11984,13 +11641,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.ChannelType"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of communication channels where the visitor, contact, or member can receive messages."
+          "doc": "List of communication channels where the visitor, contact, or member can receive messages.\nOne of:\nCHAT,\nEMAIL,\nFACEBOOK,\nINSTAGRAM,\nSMS,\nUNKNOWN_CHANNEL_TYPE,\nWHATSAPP"
         },
         {
           "name": "participant",
@@ -12028,10 +11685,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ChannelType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCHAT,\nEMAIL,\nFACEBOOK,\nINSTAGRAM,\nSMS,\nUNKNOWN_CHANNEL_TYPE,\nWHATSAPP"
         },
         {
           "name": "recipients",
@@ -12909,13 +12566,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of category fields to be included in the response."
+          "doc": "List of category fields to be included in the response.\nOne of:\nINTERNAL_ID,\nUNKNOWN,\nURL"
         }
       ],
       "docs": {
@@ -14103,19 +13760,6 @@
       }
     },
     {
-      "name": "Crop",
-      "members": [],
-      "enum": [
-        "FILL",
-        "FIT"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Curbside",
       "members": [
         {
@@ -14512,39 +14156,6 @@
       }
     },
     {
-      "name": "DataType",
-      "members": [],
-      "enum": [
-        "PHOTO",
-        "TEXT",
-        "UNDEFINED",
-        "VIDEO"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "DayOfWeek",
-      "members": [],
-      "enum": [
-        "FRIDAY",
-        "MONDAY",
-        "SATURDAY",
-        "SUNDAY",
-        "THURSDAY",
-        "TUESDAY",
-        "WEDNESDAY"
-      ],
-      "docs": {
-        "description": [
-          "Enumerates the days of the week."
-        ]
-      }
-    },
-    {
       "name": "Decoration",
       "members": [
         {
@@ -14628,10 +14239,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.DecorationType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Decoration type"
+          "doc": "Decoration type\nOne of:\nANCHOR,\nBOLD,\nCOLOR,\nEXTERNAL,\nFONT_SIZE,\nITALIC,\nLINK,\nMENTION,\nSPOILER,\nUNDERLINE"
         },
         {
           "name": "underlineData",
@@ -14650,27 +14261,6 @@
       "docs": {
         "description": [
           "Adds appearence changes to text"
-        ]
-      }
-    },
-    {
-      "name": "DecorationType",
-      "members": [],
-      "enum": [
-        "ANCHOR",
-        "BOLD",
-        "COLOR",
-        "EXTERNAL",
-        "FONT_SIZE",
-        "ITALIC",
-        "LINK",
-        "MENTION",
-        "SPOILER",
-        "UNDERLINE"
-      ],
-      "docs": {
-        "description": [
-          ""
         ]
       }
     },
@@ -14847,10 +14437,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.DeleteStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDELETED,\nTRASH,\nUNKNOWN"
         },
         {
           "name": "initiatorId",
@@ -15530,20 +15120,6 @@
       }
     },
     {
-      "name": "DeleteStatus",
-      "members": [],
-      "enum": [
-        "DELETED",
-        "TRASH",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "DeliveryAddress",
       "members": [
         {
@@ -15691,10 +15267,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.OnArrival"
+              "nativeType": "string"
             }
           ],
-          "doc": "Special delivery instructions upon arrival to the address."
+          "doc": "Special delivery instructions upon arrival to the address.\nOne of:\nBUZZ_DOOR,\nCALL_ME,\nUNSPECIFIED_ON_ARRIVAL_TYPE"
         },
         {
           "name": "street",
@@ -16166,19 +15742,6 @@
       }
     },
     {
-      "name": "Direction",
-      "members": [],
-      "enum": [
-        "LTR",
-        "RTL"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "DiscardSeatingPlanVersionsRequest",
       "members": [
         {
@@ -16292,21 +15855,6 @@
       }
     },
     {
-      "name": "DiscountType",
-      "members": [],
-      "enum": [
-        "OFF_ITEM",
-        "OFF_ORDER",
-        "OFF_ORDER_MANAGER_DISCOUNT",
-        "UNSPECIFIED_TYPE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "DisplayData",
       "members": [
         {
@@ -16342,21 +15890,6 @@
           ],
           "doc": "Coupon name to be displayed."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "DisplayType",
-      "members": [],
-      "enum": [
-        "DESELECTION",
-        "EXTRAS",
-        "SELECTION",
-        "UNSPECIFIED_DISPLAY_TYPE"
       ],
       "docs": {
         "description": [
@@ -16425,10 +15958,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.DisputeReason"
+              "nativeType": "string"
             }
           ],
-          "doc": "Reason for dispute."
+          "doc": "Reason for dispute.\nOne of:\nCANCELED,\nCANCELED_RECURRING,\nCOUNTERFEIT,\nDUPLICATE_PROCESSING,\nFRAUD_CARD_ABSENT,\nFRAUD_CARD_PRESENT,\nMISREPRESENTATION,\nNOT_AS_DESCRIBED,\nOTHER,\nSERVICES_NOT_PROVIDED"
         },
         {
           "name": "rfi",
@@ -16445,10 +15978,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.DisputeStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Dispute status."
+          "doc": "Dispute status.\nOne of:\nCHARGEBACK_OPEN,\nCHARGEBACK_UNDER_REVIEW,\nLOST,\nPRE_ARBITRATION_LOST,\nPRE_ARBITRATION_UNDER_REVIEW,\nPRE_ARBITRATION_WON,\nRFI_CLOSED,\nRFI_OPEN,\nRFI_UNDER_REVIEW,\nUNDEFINED,\nWON"
         },
         {
           "name": "statusReason",
@@ -16498,49 +16031,6 @@
       }
     },
     {
-      "name": "DisputeReason",
-      "members": [],
-      "enum": [
-        "CANCELED",
-        "CANCELED_RECURRING",
-        "COUNTERFEIT",
-        "DUPLICATE_PROCESSING",
-        "FRAUD_CARD_ABSENT",
-        "FRAUD_CARD_PRESENT",
-        "MISREPRESENTATION",
-        "NOT_AS_DESCRIBED",
-        "OTHER",
-        "SERVICES_NOT_PROVIDED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "DisputeStatus",
-      "members": [],
-      "enum": [
-        "CHARGEBACK_OPEN",
-        "CHARGEBACK_UNDER_REVIEW",
-        "LOST",
-        "PRE_ARBITRATION_LOST",
-        "PRE_ARBITRATION_UNDER_REVIEW",
-        "PRE_ARBITRATION_WON",
-        "RFI_CLOSED",
-        "RFI_OPEN",
-        "RFI_UNDER_REVIEW",
-        "UNDEFINED",
-        "WON"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "DividerData",
       "members": [
         {
@@ -16548,10 +16038,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Alignment"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCENTER,\nLEFT,\nRIGHT"
         },
         {
           "name": "containerData",
@@ -16568,20 +16058,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.LineStyle"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDASHED,\nDOTTED,\nDOUBLE,\nSINGLE"
         },
         {
           "name": "width",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Width"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nLARGE,\nMEDIUM,\nSMALL"
         }
       ],
       "docs": {
@@ -17088,10 +16578,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Origin"
+              "nativeType": "string"
             }
           ],
-          "doc": "Origin on how the current draft post state was created."
+          "doc": "Origin on how the current draft post state was created.\nOne of:\nADD_CATEGORIES,\nADMIN,\nAPPROVE_IN_MODERATION,\nAUTO_SAVE,\nCOPY_TEMPLATE,\nIMPORT,\nIMPORT_BULK,\nIMPORT_HTML,\nIMPORT_PATCH,\nLANGUAGE_CHANGE,\nMANUAL_SAVE,\nMIGRATION,\nMODERATION,\nMOVE_TO_TRASH,\nNEW_EDIT_SESSION,\nPRICING_PLANS_CHANGE,\nPROVISION,\nPUBLISH,\nREASSIGN_OWNER,\nREBLOG,\nREJECT_FROM_MODERATION,\nREMOVE_FROM_MODERATION,\nRESTORE,\nREVERT_TO_DRAFT,\nSCHEDULE,\nSCHEDULING_SERVICE_PUBLISH,\nSCHEDULING_SERVICE_SCHEDULE,\nSCHEDULING_SERVICE_UNSCHEDULE,\nTRANSLATION,\nUNKNOWN,\nUNPUBLISH,\nUNSCHEDULE"
         },
         {
           "name": "commentingEnabled",
@@ -17246,10 +16736,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Post status."
+          "doc": "Post status.\nOne of:\nDELETED,\nIN_MODERATION,\nPUBLISHED,\nSCHEDULED,\nUNKNOWN,\nUNPUBLISHED"
         },
         {
           "name": "tagIds",
@@ -17320,10 +16810,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.PeriodUnit"
+              "nativeType": "string"
             }
           ],
-          "doc": "Days, months, weeks or years."
+          "doc": "Days, months, weeks or years.\nOne of:\nDAY,\nMONTH,\nUNDEFINED,\nWEEK,\nYEAR"
         }
       ],
       "docs": {
@@ -17564,10 +17054,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Status of the element"
+          "doc": "Status of the element\nOne of:\nHIDDEN,\nNA,\nOPEN"
         },
         {
           "name": "title",
@@ -17598,10 +17088,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Type"
+              "nativeType": "string"
             }
           ],
-          "doc": "Element type"
+          "doc": "Element type\nOne of:\nAREA,\nMULTI_ROW,\nROUND_TABLE,\nROW,\nSHAPE,\nTABLE"
         }
       ],
       "docs": {
@@ -17649,21 +17139,6 @@
           ],
           "doc": "The subject of the email"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "EmailTag",
-      "members": [],
-      "enum": [
-        "HOME",
-        "MAIN",
-        "UNTAGGED",
-        "WORK"
       ],
       "docs": {
         "description": [
@@ -17741,26 +17216,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.EnteredByIdentityType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nAPP,\nCONTACT,\nMEMBER,\nUSER"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "EnteredByIdentityType",
-      "members": [],
-      "enum": [
-        "APP",
-        "CONTACT",
-        "MEMBER",
-        "USER"
       ],
       "docs": {
         "description": [
@@ -17810,23 +17270,6 @@
           ],
           "doc": "Since platformized APIs only expose PATCH and not PUT we can't assume that the fields sent from the client are the actual diff.\nThis means that to generate a list of changed fields (as opposed to sent fields) one needs to traverse both objects.\nWe don't want to impose this on all developers and so we leave this traversal to the notification recipients which need it."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Enum",
-      "members": [],
-      "enum": [
-        "GROUP_PROTECTED",
-        "PRIVATE",
-        "PROTECTED",
-        "PUBLIC",
-        "UNCHANGED",
-        "UNKNOWN"
       ],
       "docs": {
         "description": [
@@ -17924,22 +17367,6 @@
       }
     },
     {
-      "name": "EventType",
-      "members": [],
-      "enum": [
-        "ACCEPTED",
-        "CANCELED",
-        "CREATED",
-        "FULFILLED",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Evidence",
       "members": [
         {
@@ -17973,48 +17400,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.EvidenceType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nACCESS_ACTIVITY_LOG,\nBILLING_ADDRESS,\nCANCELLATION_POLICY,\nCANCELLATION_POLICY_DISCLOSURE,\nCANCELLATION_REBUTTAL,\nCUSTOMER_COMMUNICATION,\nCUSTOMER_EMAIL_ADDRESS,\nCUSTOMER_NAME,\nCUSTOMER_PURCHASE_IP,\nCUSTOMER_SIGNATURE,\nDUPLICATE_CHARGE_DOCUMENTATION,\nDUPLICATE_CHARGE_EXPLANATION,\nDUPLICATE_CHARGE_ID,\nOTHER,\nPRODUCT_DESCRIPTION,\nRECEIPT,\nREFUND_POLICY,\nREFUND_POLICY_DISCLOSURE,\nREFUND_REFUSAL_EXPLANATION,\nSERVICE_DATE,\nSERVICE_DOCUMENTATION,\nSHIPPING_ADDRESS,\nSHIPPING_CARRIER,\nSHIPPING_DATE,\nSHIPPING_DOCUMENTATION,\nSHIPPING_TRACKING_NUMBER"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "EvidenceType",
-      "members": [],
-      "enum": [
-        "ACCESS_ACTIVITY_LOG",
-        "BILLING_ADDRESS",
-        "CANCELLATION_POLICY",
-        "CANCELLATION_POLICY_DISCLOSURE",
-        "CANCELLATION_REBUTTAL",
-        "CUSTOMER_COMMUNICATION",
-        "CUSTOMER_EMAIL_ADDRESS",
-        "CUSTOMER_NAME",
-        "CUSTOMER_PURCHASE_IP",
-        "CUSTOMER_SIGNATURE",
-        "DUPLICATE_CHARGE_DOCUMENTATION",
-        "DUPLICATE_CHARGE_EXPLANATION",
-        "DUPLICATE_CHARGE_ID",
-        "OTHER",
-        "PRODUCT_DESCRIPTION",
-        "RECEIPT",
-        "REFUND_POLICY",
-        "REFUND_POLICY_DISCLOSURE",
-        "REFUND_REFUSAL_EXPLANATION",
-        "SERVICE_DATE",
-        "SERVICE_DOCUMENTATION",
-        "SHIPPING_ADDRESS",
-        "SHIPPING_CARRIER",
-        "SHIPPING_DATE",
-        "SHIPPING_DOCUMENTATION",
-        "SHIPPING_TRACKING_NUMBER"
       ],
       "docs": {
         "description": [
@@ -18216,89 +17606,6 @@
           ],
           "doc": "Error message."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Field",
-      "members": [],
-      "enum": [
-        "INTERNAL_ID",
-        "UNKNOWN",
-        "URL"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FieldName",
-      "members": [],
-      "enum": [
-        "CREATED_DATE",
-        "PROMISED_TIME",
-        "UPDATED_DATE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Fieldset",
-      "members": [],
-      "enum": [
-        "CATEGORIES",
-        "CONFIG",
-        "ELEMENTS",
-        "PLACES"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FileAccess",
-      "members": [],
-      "enum": [
-        "PUBLIC",
-        "SECURE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FileCategory",
-      "members": [],
-      "enum": [
-        "IMAGE",
-        "UNKNOWN",
-        "VIDEO"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FileContentStatus",
-      "members": [],
-      "enum": [
-        "IN_PROGRESS",
-        "READY"
       ],
       "docs": {
         "description": [
@@ -18540,10 +17847,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.LabelType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Label type."
+          "doc": "Label type.\nOne of:\nSYSTEM,\nUNKNOWN,\nUSER_DEFINED,\nWIX_APP_DEFINED"
         },
         {
           "name": "language",
@@ -18620,13 +17927,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Fieldset"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "A fieldset for the response"
+          "doc": "A fieldset for the response\nOne of:\nCATEGORIES,\nCONFIG,\nELEMENTS,\nPLACES"
         },
         {
           "name": "fieldsets",
@@ -18771,10 +18078,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.FontType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nEM,\nPX"
         },
         {
           "name": "value",
@@ -18789,19 +18096,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FontType",
-      "members": [],
-      "enum": [
-        "EM",
-        "PX"
       ],
       "docs": {
         "description": [
@@ -19074,21 +18368,6 @@
       }
     },
     {
-      "name": "FulfillmentStatus",
-      "members": [],
-      "enum": [
-        "CANCELED",
-        "FULFILLED",
-        "NOT_FULFILLED",
-        "PARTIALLY_FULFILLED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "FulfillmentTrackingInfo",
       "members": [
         {
@@ -19124,21 +18403,6 @@
           ],
           "doc": "Tracking number."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FulfillmentType",
-      "members": [],
-      "enum": [
-        "DELIVERY",
-        "DINE_IN",
-        "PICKUP",
-        "UNSPECIFIED_FULFILLMENT_TYPE"
       ],
       "docs": {
         "description": [
@@ -20333,10 +19597,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ReasonNotSuspendable"
+              "nativeType": "string"
             }
           ],
-          "doc": "If the order cannot be suspended, a reason is returned here."
+          "doc": "If the order cannot be suspended, a reason is returned here.\nOne of:\nALREADY_SUSPENDED,\nCANCELED,\nENDED,\nNOT_STARTED,\nOLD_STRIPE,\nPENDING,\nTRIAL,\nUNDEFINED"
         },
         {
           "name": "suspendable",
@@ -20407,13 +19671,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of category fields to be included in the response."
+          "doc": "List of category fields to be included in the response.\nOne of:\nINTERNAL_ID,\nUNKNOWN,\nURL"
         },
         {
           "name": "slug",
@@ -20472,13 +19736,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Array of category fields to be included in the response. By default, any `fieldsToInclude` not passed are not returned."
+          "doc": "Array of category fields to be included in the response. By default, any `fieldsToInclude` not passed are not returned.\nOne of:\nINTERNAL_ID,\nUNKNOWN,\nURL"
         }
       ],
       "docs": {
@@ -20545,13 +19809,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.ContactFieldSet"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Predefined sets of fields to return."
+          "doc": "Predefined sets of fields to return.\nOne of:\nBASIC,\nCOMMUNICATION_DETAILS,\nEXTENDED,\nFULL"
         }
       ],
       "docs": {
@@ -20578,29 +19842,15 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.GetContactResponseType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Contact response type."
+          "doc": "Contact response type.\nOne of:\nIMPLICIT,\nMERGED,\nREGULAR"
         }
       ],
       "docs": {
         "description": [
           "The requested contact."
-        ]
-      }
-    },
-    {
-      "name": "GetContactResponseType",
-      "members": [],
-      "enum": [
-        "IMPLICIT",
-        "MERGED",
-        "REGULAR"
-      ],
-      "docs": {
-        "description": [
-          ""
         ]
       }
     },
@@ -21160,10 +20410,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Set"
+              "nativeType": "string"
             }
           ],
-          "doc": "Predefined set of fields to return."
+          "doc": "Predefined set of fields to return.\nOne of:\nEXTENDED,\nFULL,\nPUBLIC"
         },
         {
           "name": "fieldsets",
@@ -21174,13 +20424,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Set"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nEXTENDED,\nFULL,\nPUBLIC"
         }
       ],
       "docs": {
@@ -21415,10 +20665,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Set"
+              "nativeType": "string"
             }
           ],
-          "doc": "Predefined set of fields to return."
+          "doc": "Predefined set of fields to return.\nOne of:\nEXTENDED,\nFULL,\nPUBLIC"
         },
         {
           "name": "fieldsets",
@@ -21429,13 +20679,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Set"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nEXTENDED,\nFULL,\nPUBLIC"
         }
       ],
       "docs": {
@@ -21822,13 +21072,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead."
+          "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead.\nOne of:\nCONTACT_ID,\nCONTENT,\nCONTENT_TEXT,\nCOUNTERS,\nINTERNAL_ID,\nMETRICS,\nRICH_CONTENT,\nSEO,\nUNKNOWN,\nURL"
         },
         {
           "name": "slug",
@@ -21956,13 +21206,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Array of post fields to be included in the response. By default, any `fieldsToInclude` not passed are not returned.\nNote: `COUNTERS` is deprecated, use `METRICS` instead."
+          "doc": "Array of post fields to be included in the response. By default, any `fieldsToInclude` not passed are not returned.\nNote: `COUNTERS` is deprecated, use `METRICS` instead.\nOne of:\nCONTACT_ID,\nCONTENT,\nCONTENT_TEXT,\nCOUNTERS,\nINTERNAL_ID,\nMETRICS,\nRICH_CONTENT,\nSEO,\nUNKNOWN,\nURL"
         },
         {
           "name": "postId",
@@ -21993,34 +21243,6 @@
           ],
           "doc": "Post info."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "GetPostTemplatesSort",
-      "members": [],
-      "enum": [
-        "PUBLISHED_DATE_ASC",
-        "PUBLISHED_DATE_DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "GetPostsSort",
-      "members": [],
-      "enum": [
-        "FEED",
-        "PUBLISHED_DATE_ASC",
-        "PUBLISHED_DATE_DESC",
-        "VIEW_COUNT"
       ],
       "docs": {
         "description": [
@@ -22298,13 +21520,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Fieldset"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "A fieldset for the response"
+          "doc": "A fieldset for the response\nOne of:\nCATEGORIES,\nCONFIG,\nELEMENTS,\nPLACES"
         },
         {
           "name": "fieldsets",
@@ -22835,10 +22057,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.FileAccess"
+              "nativeType": "string"
             }
           ],
-          "doc": "Should be set public for album cover image"
+          "doc": "Should be set public for album cover image\nOne of:\nPUBLIC,\nSECURE"
         },
         {
           "name": "name",
@@ -23265,20 +22487,6 @@
       }
     },
     {
-      "name": "HeaderType",
-      "members": [],
-      "enum": [
-        "COLOR",
-        "IMAGE",
-        "NONE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "HeadingData",
       "members": [
         {
@@ -23604,20 +22812,6 @@
       }
     },
     {
-      "name": "IdentityType",
-      "members": [],
-      "enum": [
-        "CONTACT",
-        "MEMBER",
-        "UNSPECIFIED_IDENTITY_TYPE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Image",
       "members": [
         {
@@ -23836,20 +23030,6 @@
       }
     },
     {
-      "name": "ImageProvider",
-      "members": [],
-      "enum": [
-        "EXTERNAL",
-        "UNKNOWN",
-        "WIX_MEDIA"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "IncreaseUsageRequest",
       "members": [
         {
@@ -24014,10 +23194,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Enum"
+              "nativeType": "string"
             }
           ],
-          "doc": "what type of users should documents be visible to"
+          "doc": "what type of users should documents be visible to\nOne of:\nGROUP_PROTECTED,\nPRIVATE,\nPROTECTED,\nPUBLIC,\nUNCHANGED,\nUNKNOWN"
         },
         {
           "name": "payload",
@@ -24106,49 +23286,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "IndicationType",
-      "members": [],
-      "enum": [
-        "ERROR",
-        "SEEN",
-        "SENT",
-        "UNKNOWN_INDICATION_TYPE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "InitialExpandedItems",
-      "members": [],
-      "enum": [
-        "ALL",
-        "FIRST",
-        "NONE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Interaction",
-      "members": [],
-      "enum": [
-        "REACTION",
-        "UNKNOWN",
-        "VOTE"
       ],
       "docs": {
         "description": [
@@ -24321,19 +23458,6 @@
           ],
           "doc": "Invoice URL."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "InvoiceSource",
-      "members": [],
-      "enum": [
-        "UNSPECIFIED_INVOICE_SOURCE",
-        "WIX"
       ],
       "docs": {
         "description": [
@@ -24565,10 +23689,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Crop"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nFILL,\nFIT"
         },
         {
           "name": "ratio",
@@ -24609,20 +23733,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ItemType",
-      "members": [],
-      "enum": [
-        "ALBUM",
-        "UNKNOWN",
-        "VISUAL_MEDIA"
       ],
       "docs": {
         "description": [
@@ -24928,21 +24038,6 @@
       }
     },
     {
-      "name": "LabelType",
-      "members": [],
-      "enum": [
-        "SYSTEM",
-        "UNKNOWN",
-        "USER_DEFINED",
-        "WIX_APP_DEFINED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "LabelUpdated",
       "members": [
         {
@@ -25099,10 +24194,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.TransactionType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Transaction type."
+          "doc": "Transaction type.\nOne of:\nADJUST,\nEARN,\nREDEEM,\nUNKNOWN"
         }
       ],
       "docs": {
@@ -25158,42 +24253,21 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Orientation"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOLUMNS,\nROWS"
         },
         {
           "name": "type",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.LayoutType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOLLAGE,\nCOLUMN,\nFULLSIZE,\nGRID,\nMAGIC,\nMASONRY,\nPANORAMA,\nSLIDER,\nSLIDESHOW,\nTHUMBNAIL"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "LayoutType",
-      "members": [],
-      "enum": [
-        "COLLAGE",
-        "COLUMN",
-        "FULLSIZE",
-        "GRID",
-        "MAGIC",
-        "MASONRY",
-        "PANORAMA",
-        "SLIDER",
-        "SLIDESHOW",
-        "THUMBNAIL"
       ],
       "docs": {
         "description": [
@@ -25425,10 +24499,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.LineItemType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Line item type (may be extended)"
+          "doc": "Line item type (may be extended)\nOne of:\nCUSTOM_AMOUNT_ITEM,\nDIGITAL,\nPHYSICAL,\nUNSPECIFIED_LINE_ITEM_TYPE"
         },
         {
           "name": "mediaItem",
@@ -25741,10 +24815,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.DisplayType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Dish option type."
+          "doc": "Dish option type.\nOne of:\nDESELECTION,\nEXTRAS,\nSELECTION,\nUNSPECIFIED_DISPLAY_TYPE"
         }
       ],
       "docs": {
@@ -25834,36 +24908,6 @@
       }
     },
     {
-      "name": "LineItemType",
-      "members": [],
-      "enum": [
-        "CUSTOM_AMOUNT_ITEM",
-        "DIGITAL",
-        "PHYSICAL",
-        "UNSPECIFIED_LINE_ITEM_TYPE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "LineStyle",
-      "members": [],
-      "enum": [
-        "DASHED",
-        "DOTTED",
-        "DOUBLE",
-        "SINGLE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Link",
       "members": [
         {
@@ -25904,10 +24948,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Target"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nBLANK,\nPARENT,\nSELF,\nTOP"
         },
         {
           "name": "url",
@@ -26253,13 +25297,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of category fields to be included in the response."
+          "doc": "List of category fields to be included in the response.\nOne of:\nINTERNAL_ID,\nUNKNOWN,\nURL"
         },
         {
           "name": "paging",
@@ -26344,13 +25388,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.ContactFieldSet"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Predefined sets of fields to return."
+          "doc": "Predefined sets of fields to return.\nOne of:\nBASIC,\nCOMMUNICATION_DETAILS,\nEXTENDED,\nFULL"
         },
         {
           "name": "paging",
@@ -26943,10 +25987,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.LabelType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Filter for labels of the specified type."
+          "doc": "Filter for labels of the specified type.\nOne of:\nSYSTEM,\nUNKNOWN,\nUSER_DEFINED,\nWIX_APP_DEFINED"
         },
         {
           "name": "language",
@@ -27136,10 +26180,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Set"
+              "nativeType": "string"
             }
           ],
-          "doc": "Predefined sets of fields to return."
+          "doc": "Predefined sets of fields to return.\nOne of:\nEXTENDED,\nFULL,\nPUBLIC"
         },
         {
           "name": "fieldsets",
@@ -27150,13 +26194,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Set"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nEXTENDED,\nFULL,\nPUBLIC"
         },
         {
           "name": "paging",
@@ -27266,10 +26310,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.MessageVisibility"
+              "nativeType": "string"
             }
           ],
-          "doc": "__Required.__\nFilters for messages with the specified visibility setting."
+          "doc": "__Required.__\nFilters for messages with the specified visibility setting.\nOne of:\nBUSINESS,\nBUSINESS_AND_PARTICIPANT,\nUNKNOWN_VISIBILITY"
         }
       ],
       "docs": {
@@ -27485,10 +26529,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Order status to filter by. Currently Status Fulfilled is not supported"
+          "doc": "Order status to filter by. Currently Status Fulfilled is not supported\nOne of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
         }
       ],
       "docs": {
@@ -27592,13 +26636,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.OrderStatus"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Filter by order status."
+          "doc": "Filter by order status.\nOne of:\nACTIVE,\nCANCELED,\nDRAFT,\nENDED,\nPAUSED,\nPENDING,\nUNDEFINED"
         },
         {
           "name": "paymentStatuses",
@@ -27609,13 +26653,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.PaymentStatus"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Filter by payment status."
+          "doc": "Filter by payment status.\nOne of:\nFAILED,\nNOT_APPLICABLE,\nPAID,\nPENDING,\nREFUNDED,\nUNDEFINED,\nUNPAID"
         },
         {
           "name": "planIds",
@@ -27717,13 +26761,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead."
+          "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead.\nOne of:\nCONTACT_ID,\nCONTENT,\nCONTENT_TEXT,\nCOUNTERS,\nINTERNAL_ID,\nMETRICS,\nRICH_CONTENT,\nSEO,\nUNKNOWN,\nURL"
         },
         {
           "name": "hashtags",
@@ -27757,10 +26801,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.GetPostsSort"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order by descending view count, ascending or descending publish date, or default to descending by publish date with pinned posts first."
+          "doc": "Sort order by descending view count, ascending or descending publish date, or default to descending by publish date with pinned posts first.\nOne of:\nFEED,\nPUBLISHED_DATE_ASC,\nPUBLISHED_DATE_DESC,\nVIEW_COUNT"
         },
         {
           "name": "tagIds",
@@ -27928,10 +26972,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.GetPostTemplatesSort"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order by ascending/descending publish date. Default is ascending publish date sort"
+          "doc": "Sort order by ascending/descending publish date. Default is ascending publish date sort\nOne of:\nPUBLISHED_DATE_ASC,\nPUBLISHED_DATE_DESC"
         }
       ],
       "docs": {
@@ -28348,10 +27392,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.LocationType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Location type. **Note:** Currently not supported."
+          "doc": "Location type. **Note:** Currently not supported.\nOne of:\nBRANCH,\nHEADQUARTERS,\nOFFICES,\nRECEPTION,\nUNKNOWN"
         },
         {
           "name": "name",
@@ -28394,10 +27438,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.LocationStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Location status. Defaults to `ACTIVE`.\n__Note:__ [Archiving a location](https://dev.wix.com/api/rest/business-info/locations/archive-location)\ndoesn't affect the location's status. `INACTIVE` is currently not supported."
+          "doc": "Location status. Defaults to `ACTIVE`.\n__Note:__ [Archiving a location](https://dev.wix.com/api/rest/business-info/locations/archive-location)\ndoesn't affect the location's status. `INACTIVE` is currently not supported.\nOne of:\nACTIVE,\nINACTIVE"
         },
         {
           "name": "timeZone",
@@ -28500,35 +27544,6 @@
       "docs": {
         "description": [
           ""
-        ]
-      }
-    },
-    {
-      "name": "LocationStatus",
-      "members": [],
-      "enum": [
-        "ACTIVE",
-        "INACTIVE"
-      ],
-      "docs": {
-        "description": [
-          "For future use"
-        ]
-      }
-    },
-    {
-      "name": "LocationType",
-      "members": [],
-      "enum": [
-        "BRANCH",
-        "HEADQUARTERS",
-        "OFFICES",
-        "RECEPTION",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          "For future use"
         ]
       }
     },
@@ -28854,10 +27869,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ProgramStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Program status."
+          "doc": "Program status.\nOne of:\nACTIVE,\nDRAFT,\nPAUSED,\nUNKNOWN"
         }
       ],
       "docs": {
@@ -28869,21 +27884,6 @@
     {
       "name": "LoyaltyProgramDescriptionUpdated",
       "members": [],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ManuallyRefundableReason",
-      "members": [],
-      "enum": [
-        "EXPIRED",
-        "NOT_FOUND",
-        "NOT_SUPPORTED",
-        "OFFLINE"
-      ],
       "docs": {
         "description": [
           ""
@@ -29006,10 +28006,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.MapType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nHYBRID,\nROADMAP,\nSATELITE,\nTERRAIN"
         },
         {
           "name": "marker",
@@ -29063,21 +28063,6 @@
           ],
           "doc": "Visibilty of zoom control"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "MapType",
-      "members": [],
-      "enum": [
-        "HYBRID",
-        "ROADMAP",
-        "SATELITE",
-        "TERRAIN"
       ],
       "docs": {
         "description": [
@@ -29352,19 +28337,6 @@
       }
     },
     {
-      "name": "MediaItemType",
-      "members": [],
-      "enum": [
-        "IMAGE",
-        "UNSPECIFIED_MEDIA_TYPE_ITEM"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Member",
       "members": [
         {
@@ -29409,10 +28381,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ActivityStatusStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Member activity status."
+          "doc": "Member activity status.\nOne of:\nACTIVE,\nMUTED,\nUNKNOWN"
         },
         {
           "name": "contactDetails",
@@ -29467,10 +28439,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.PrivacyStatusStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Member privacy status."
+          "doc": "Member privacy status.\nOne of:\nPRIVATE,\nPUBLIC,\nUNKNOWN"
         },
         {
           "name": "profile",
@@ -29488,10 +28460,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Member site access status.\n<!--ONLY:REST-->\n- `PENDING`: Member created and is waiting for approval by site owner.\n- `APPROVED`: Member can log in to the site.\n- `OFFLINE`: Member is a [guest author](https://support.wix.com/en/article/wix-blog-adding-guest-authors-to-your-blog) for the site blog and cannot log in to the site.\n- `BLOCKED`: Member is blocked and cannot log in to the site.\n- `UNKNOWN`: Insufficient permissions to get the status.\n<!--END:ONLY:REST-->"
+          "doc": "Member site access status.\n<!--ONLY:REST-->\n- `PENDING`: Member created and is waiting for approval by site owner.\n- `APPROVED`: Member can log in to the site.\n- `OFFLINE`: Member is a [guest author](https://support.wix.com/en/article/wix-blog-adding-guest-authors-to-your-blog) for the site blog and cannot log in to the site.\n- `BLOCKED`: Member is blocked and cannot log in to the site.\n- `UNKNOWN`: Insufficient permissions to get the status.\n<!--END:ONLY:REST-->\nOne of:\nAPPROVED,\nBLOCKED,\nOFFLINE,\nPENDING,\nUNKNOWN"
         }
       ],
       "docs": {
@@ -29785,13 +28757,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.OrderStatus"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Filter by order status."
+          "doc": "Filter by order status.\nOne of:\nACTIVE,\nCANCELED,\nDRAFT,\nENDED,\nPAUSED,\nPENDING,\nUNDEFINED"
         },
         {
           "name": "paymentStatuses",
@@ -29802,13 +28774,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.PaymentStatus"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Filter by payment status."
+          "doc": "Filter by payment status.\nOne of:\nFAILED,\nNOT_APPLICABLE,\nPAID,\nPENDING,\nREFUNDED,\nUNDEFINED,\nUNPAID"
         },
         {
           "name": "planIds",
@@ -30163,10 +29135,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.MembershipPaymentStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Payment status"
+          "doc": "Payment status\nOne of:\nCHARGED,\nCHARGE_FAILED"
         },
         {
           "name": "voided",
@@ -30179,19 +29151,6 @@
           ],
           "doc": "Whether the membership is voided."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "MembershipPaymentStatus",
-      "members": [],
-      "enum": [
-        "CHARGED",
-        "CHARGE_FAILED"
       ],
       "docs": {
         "description": [
@@ -30370,10 +29329,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.MessageDirection"
+              "nativeType": "string"
             }
           ],
-          "doc": "__Required.__\nMessage direction."
+          "doc": "__Required.__\nMessage direction.\nOne of:\nBUSINESS_TO_PARTICIPANT,\nPARTICIPANT_TO_BUSINESS,\nUNKNOWN_DIRECTION"
         },
         {
           "name": "sender",
@@ -30405,10 +29364,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ChannelType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Communication channel the message is sent from."
+          "doc": "Communication channel the message is sent from.\nOne of:\nCHAT,\nEMAIL,\nFACEBOOK,\nINSTAGRAM,\nSMS,\nUNKNOWN_CHANNEL_TYPE,\nWHATSAPP"
         },
         {
           "name": "targetChannels",
@@ -30419,23 +29378,23 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.ChannelType"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Communication channel to send the message to."
+          "doc": "Communication channel to send the message to.\nOne of:\nCHAT,\nEMAIL,\nFACEBOOK,\nINSTAGRAM,\nSMS,\nUNKNOWN_CHANNEL_TYPE,\nWHATSAPP"
         },
         {
           "name": "visibility",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.MessageVisibility"
+              "nativeType": "string"
             }
           ],
-          "doc": "__Required.__\nControls who can see the message."
+          "doc": "__Required.__\nControls who can see the message.\nOne of:\nBUSINESS,\nBUSINESS_AND_PARTICIPANT,\nUNKNOWN_VISIBILITY"
         }
       ],
       "docs": {
@@ -30559,20 +29518,6 @@
       }
     },
     {
-      "name": "MessageDirection",
-      "members": [],
-      "enum": [
-        "BUSINESS_TO_PARTICIPANT",
-        "PARTICIPANT_TO_BUSINESS",
-        "UNKNOWN_DIRECTION"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "MessageIndication",
       "members": [
         {
@@ -30580,10 +29525,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ChannelType"
+              "nativeType": "string"
             }
           ],
-          "doc": "The channel to which this indication was added"
+          "doc": "The channel to which this indication was added\nOne of:\nCHAT,\nEMAIL,\nFACEBOOK,\nINSTAGRAM,\nSMS,\nUNKNOWN_CHANNEL_TYPE,\nWHATSAPP"
         },
         {
           "name": "conversationId",
@@ -30628,10 +29573,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.IndicationType"
+              "nativeType": "string"
             }
           ],
-          "doc": "The type of the indication"
+          "doc": "The type of the indication\nOne of:\nERROR,\nSEEN,\nSENT,\nUNKNOWN_INDICATION_TYPE"
         }
       ],
       "docs": {
@@ -30759,20 +29704,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "MessageVisibility",
-      "members": [],
-      "enum": [
-        "BUSINESS",
-        "BUSINESS_AND_PARTICIPANT",
-        "UNKNOWN_VISIBILITY"
       ],
       "docs": {
         "description": [
@@ -31151,19 +30082,6 @@
       }
     },
     {
-      "name": "Mode",
-      "members": [],
-      "enum": [
-        "AND",
-        "OR"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "MoveCardRequest",
       "members": [
         {
@@ -31430,33 +30348,6 @@
       }
     },
     {
-      "name": "Namespace",
-      "members": [],
-      "enum": [
-        "ALBUMS",
-        "CLUBS",
-        "CREATOR_ECONOMY",
-        "DEV_CENTER_COMPANY",
-        "DEV_SITE",
-        "HOTELS",
-        "HTML_DRAFT",
-        "LOGOS",
-        "ONBOARDING_DRAFT",
-        "PARTNER_DASHBOARD",
-        "SHOUT_OUT",
-        "SITELESS_BUSINESS",
-        "UNKNOWN_NAMESPACE",
-        "VIDEO_MAKER",
-        "WIX",
-        "WIX_STORES_TEST_DRIVE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "NamespaceChanged",
       "members": [
         {
@@ -31464,20 +30355,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Namespace"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nALBUMS,\nCLUBS,\nCREATOR_ECONOMY,\nDEV_CENTER_COMPANY,\nDEV_SITE,\nHOTELS,\nHTML_DRAFT,\nLOGOS,\nONBOARDING_DRAFT,\nPARTNER_DASHBOARD,\nSHOUT_OUT,\nSITELESS_BUSINESS,\nUNKNOWN_NAMESPACE,\nVIDEO_MAKER,\nWIX,\nWIX_STORES_TEST_DRIVE"
         },
         {
           "name": "oldNamespace",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Namespace"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nALBUMS,\nCLUBS,\nCREATOR_ECONOMY,\nDEV_CENTER_COMPANY,\nDEV_SITE,\nHOTELS,\nHTML_DRAFT,\nLOGOS,\nONBOARDING_DRAFT,\nPARTNER_DASHBOARD,\nSHOUT_OUT,\nSITELESS_BUSINESS,\nUNKNOWN_NAMESPACE,\nVIDEO_MAKER,\nWIX,\nWIX_STORES_TEST_DRIVE"
         }
       ],
       "docs": {
@@ -31764,10 +30655,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.NodeType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Node type"
+          "doc": "Node type\nOne of:\nAPP_EMBED,\nBLOCKQUOTE,\nBULLETED_LIST,\nBUTTON,\nCODE_BLOCK,\nCOLLAPSIBLE_ITEM,\nCOLLAPSIBLE_ITEM_BODY,\nCOLLAPSIBLE_ITEM_TITLE,\nCOLLAPSIBLE_LIST,\nDIVIDER,\nEMBED,\nEXTERNAL,\nFILE,\nGALLERY,\nGIF,\nHEADING,\nHTML,\nIMAGE,\nLINK_PREVIEW,\nLIST_ITEM,\nMAP,\nORDERED_LIST,\nPARAGRAPH,\nPOLL,\nTABLE,\nTABLE_CELL,\nTABLE_ROW,\nTEXT,\nVIDEO"
         },
         {
           "name": "videoData",
@@ -31836,65 +30727,6 @@
       }
     },
     {
-      "name": "NodeType",
-      "members": [],
-      "enum": [
-        "APP_EMBED",
-        "BLOCKQUOTE",
-        "BULLETED_LIST",
-        "BUTTON",
-        "CODE_BLOCK",
-        "COLLAPSIBLE_ITEM",
-        "COLLAPSIBLE_ITEM_BODY",
-        "COLLAPSIBLE_ITEM_TITLE",
-        "COLLAPSIBLE_LIST",
-        "DIVIDER",
-        "EMBED",
-        "EXTERNAL",
-        "FILE",
-        "GALLERY",
-        "GIF",
-        "HEADING",
-        "HTML",
-        "IMAGE",
-        "LINK_PREVIEW",
-        "LIST_ITEM",
-        "MAP",
-        "ORDERED_LIST",
-        "PARAGRAPH",
-        "POLL",
-        "TABLE",
-        "TABLE_CELL",
-        "TABLE_ROW",
-        "TEXT",
-        "VIDEO"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "NonRefundableReason",
-      "members": [],
-      "enum": [
-        "ACCESS_DENIED",
-        "ALREADY_REFUNDED",
-        "DISABLED_BY_PROVIDER",
-        "INTERNAL_ERROR",
-        "NONE",
-        "NOT_PAID",
-        "PROVIDER_IS_DOWN",
-        "ZERO_PRICE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "NotifyOrderEventRequest",
       "members": [
         {
@@ -31911,10 +30743,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.EventType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Notification event type"
+          "doc": "Notification event type\nOne of:\nACCEPTED,\nCANCELED,\nCREATED,\nFULFILLED,\nUNKNOWN"
         },
         {
           "name": "msid",
@@ -31939,18 +30771,6 @@
       "docs": {
         "description": [
           ""
-        ]
-      }
-    },
-    {
-      "name": "NullValue",
-      "members": [],
-      "enum": [
-        "NULL_VALUE"
-      ],
-      "docs": {
-        "description": [
-          "`NullValue` is a singleton enumeration to represent the null value for the\n`Value` type union."
         ]
       }
     },
@@ -32220,20 +31040,6 @@
       }
     },
     {
-      "name": "OnArrival",
-      "members": [],
-      "enum": [
-        "BUZZ_DOOR",
-        "CALL_ME",
-        "UNSPECIFIED_ON_ARRIVAL_TYPE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "OneTimePayment",
       "members": [
         {
@@ -32397,11 +31203,342 @@
     },
     {
       "name": "Order",
-      "members": [],
-      "enum": [
-        "NEWEST",
-        "OLDEST",
-        "UNKNOWN"
+      "members": [
+        {
+          "name": "_id",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order ID (auto-generated upon order creation)."
+        },
+        {
+          "name": "activities",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.Activity"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Log of updates related to the order."
+        },
+        {
+          "name": "archived",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Whether or not the order was archived."
+        },
+        {
+          "name": "billingInfo",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.BillingInfo"
+            }
+          ],
+          "doc": "Billing information."
+        },
+        {
+          "name": "buyerInfo",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.BuyerInfo"
+            }
+          ],
+          "doc": "Buyer information."
+        },
+        {
+          "name": "buyerLanguage",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Language to be used when communicating with the customer.\nFor a site that supports multiple languages, this is the language the customer selected (otherwise this defaults to the site language)."
+        },
+        {
+          "name": "buyerNote",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "A note added by the buyer."
+        },
+        {
+          "name": "cartId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Shopping cart ID."
+        },
+        {
+          "name": "channelInfo",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.ChannelInfo"
+            }
+          ],
+          "doc": "Information about the sales channel that submitted this order."
+        },
+        {
+          "name": "currency",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Currency used for pricing in this store."
+        },
+        {
+          "name": "customField",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.CustomField"
+            }
+          ],
+          "doc": "Custom field information."
+        },
+        {
+          "name": "dateCreated",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Order creation date and time."
+        },
+        {
+          "name": "discount",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Discount"
+            }
+          ],
+          "doc": "Discount information."
+        },
+        {
+          "name": "enteredBy",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.EnteredBy"
+            }
+          ],
+          "doc": "Identity of the order's initiator."
+        },
+        {
+          "name": "fulfillmentStatus",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order's current fulfillment status (whether the order received a tracking number or was delivered/picked up).\nOne of:\nCANCELED,\nFULFILLED,\nNOT_FULFILLED,\nPARTIALLY_FULFILLED"
+        },
+        {
+          "name": "fulfillments",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.Fulfillment"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Order fulfillment information."
+        },
+        {
+          "name": "invoiceInfo",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.V2InvoiceInfo"
+            }
+          ],
+          "doc": "Invoice information."
+        },
+        {
+          "name": "lastUpdated",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Date and time of latest update."
+        },
+        {
+          "name": "lineItems",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.LineItem"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Line items ordered."
+        },
+        {
+          "name": "number",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Order number displayed in the owner's store (auto-generated)."
+        },
+        {
+          "name": "numericId",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order’s unique numeric ID.\nPrimarily used for sorting and filtering when crawling all orders."
+        },
+        {
+          "name": "paymentStatus",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Current status of the payment.\nOne of:\nFULLY_REFUNDED,\nNOT_PAID,\nPAID,\nPARTIALLY_REFUNDED,\nPENDING,\nUNSPECIFIED_PAYMENT_STATUS"
+        },
+        {
+          "name": "read",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Deprecated."
+        },
+        {
+          "name": "refunds",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.V2Refund"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Refund information."
+        },
+        {
+          "name": "shippingInfo",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.ShippingInfo"
+            }
+          ],
+          "doc": "Shipping information."
+        },
+        {
+          "name": "subscriptionInfo",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.SubscriptionInfo"
+            }
+          ],
+          "doc": "Subscription information."
+        },
+        {
+          "name": "totals",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Totals"
+            }
+          ],
+          "doc": "Totals for order's line items."
+        },
+        {
+          "name": "weightUnit",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Weight unit used in this store.\nOne of:\nKG,\nLB,\nUNSPECIFIED_WEIGHT_UNIT"
+        }
       ],
       "docs": {
         "description": [
@@ -33114,24 +32251,6 @@
       }
     },
     {
-      "name": "OrderStatus",
-      "members": [],
-      "enum": [
-        "ACTIVE",
-        "CANCELED",
-        "DRAFT",
-        "ENDED",
-        "PAUSED",
-        "PENDING",
-        "UNDEFINED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "OrderTransactions",
       "members": [
         {
@@ -33242,20 +32361,6 @@
       }
     },
     {
-      "name": "OrderType",
-      "members": [],
-      "enum": [
-        "OFFLINE",
-        "ONLINE",
-        "UNDEFINED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "OrderUpdated",
       "members": [
         {
@@ -33333,76 +32438,6 @@
           ],
           "doc": "Retrieved orders."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Orientation",
-      "members": [],
-      "enum": [
-        "COLUMNS",
-        "ROWS"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Origin",
-      "members": [],
-      "enum": [
-        "ADD_CATEGORIES",
-        "ADMIN",
-        "APPROVE_IN_MODERATION",
-        "AUTO_SAVE",
-        "COPY_TEMPLATE",
-        "IMPORT",
-        "IMPORT_BULK",
-        "IMPORT_HTML",
-        "IMPORT_PATCH",
-        "LANGUAGE_CHANGE",
-        "MANUAL_SAVE",
-        "MIGRATION",
-        "MODERATION",
-        "MOVE_TO_TRASH",
-        "NEW_EDIT_SESSION",
-        "PRICING_PLANS_CHANGE",
-        "PROVISION",
-        "PUBLISH",
-        "REASSIGN_OWNER",
-        "REBLOG",
-        "REJECT_FROM_MODERATION",
-        "REMOVE_FROM_MODERATION",
-        "RESTORE",
-        "REVERT_TO_DRAFT",
-        "SCHEDULE",
-        "SCHEDULING_SERVICE_PUBLISH",
-        "SCHEDULING_SERVICE_SCHEDULE",
-        "SCHEDULING_SERVICE_UNSCHEDULE",
-        "TRANSLATION",
-        "UNKNOWN",
-        "UNPUBLISH",
-        "UNSCHEDULE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "OverrideSenderOptions",
-      "members": [],
-      "enum": [
-        "BUSINESS_USER",
-        "CALLER",
-        "PARTICIPANT"
       ],
       "docs": {
         "description": [
@@ -33861,10 +32896,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Pause period status."
+          "doc": "Pause period status.\nOne of:\nACTIVE,\nENDED,\nUNDEFINED"
         }
       ],
       "docs": {
@@ -34128,47 +33163,6 @@
       }
     },
     {
-      "name": "PaymentStatus",
-      "members": [],
-      "enum": [
-        "FULLY_REFUNDED",
-        "NOT_PAID",
-        "PAID",
-        "PARTIALLY_REFUNDED",
-        "PENDING",
-        "UNSPECIFIED_PAYMENT_STATUS"
-      ],
-      "docs": {
-        "description": [
-          "This might be extended in the future with pending orders statuses"
-        ]
-      }
-    },
-    {
-      "name": "PaymentType",
-      "members": [],
-      "enum": [
-        "BITPAY",
-        "BITSOFGOLD",
-        "CASH",
-        "CELLARIX",
-        "CREDIT",
-        "DELIVERY_CLUB",
-        "DELIVERY_COM",
-        "MULTIPASS",
-        "MYSODEXO",
-        "PAYPAL",
-        "TENBIS",
-        "UNSPECIFIED_PAYMENT_TYPE",
-        "WIX_PAYMENTS"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "PaymentsUpdated",
       "members": [
         {
@@ -34202,20 +33196,6 @@
       "docs": {
         "description": [
           "Triggered when a payment is updated."
-        ]
-      }
-    },
-    {
-      "name": "PerformedBy",
-      "members": [],
-      "enum": [
-        "BUSINESS",
-        "PARTICIPANT",
-        "UNKNOWN_PERFORMED_BY"
-      ],
-      "docs": {
-        "description": [
-          ""
         ]
       }
     },
@@ -34280,22 +33260,6 @@
       }
     },
     {
-      "name": "PeriodUnit",
-      "members": [],
-      "enum": [
-        "DAY",
-        "MONTH",
-        "UNDEFINED",
-        "WEEK",
-        "YEAR"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Permissions",
       "members": [
         {
@@ -34316,20 +33280,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ViewRole"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCREATOR,\nEVERYONE,\nVOTERS"
         },
         {
           "name": "vote",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.VoteRole"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nALL,\nSITE_MEMBERS"
         }
       ],
       "docs": {
@@ -34351,23 +33315,6 @@
           ],
           "doc": "The phone number we want to link to"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "PhoneTag",
-      "members": [],
-      "enum": [
-        "FAX",
-        "HOME",
-        "MAIN",
-        "MOBILE",
-        "UNTAGGED",
-        "WORK"
       ],
       "docs": {
         "description": [
@@ -34651,10 +33598,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Type"
+              "nativeType": "string"
             }
           ],
-          "doc": "Type of the parent element"
+          "doc": "Type of the parent element\nOne of:\nAREA,\nMULTI_ROW,\nROUND_TABLE,\nROW,\nSHAPE,\nTABLE"
         },
         {
           "name": "index",
@@ -34858,10 +33805,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.PluginContainerDataAlignment"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCENTER,\nLEFT,\nRIGHT"
         },
         {
           "name": "height",
@@ -34914,20 +33861,6 @@
       }
     },
     {
-      "name": "PluginContainerDataAlignment",
-      "members": [],
-      "enum": [
-        "CENTER",
-        "LEFT",
-        "RIGHT"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "PluginContainerDataWidth",
       "members": [
         {
@@ -34948,10 +33881,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.WidthType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCONTENT,\nFULL_WIDTH,\nORIGINAL,\nSMALL"
         }
       ],
       "docs": {
@@ -35300,10 +34233,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.PollLayoutDirection"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nLTR,\nRTL"
         },
         {
           "name": "enableImage",
@@ -35323,37 +34256,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.PollLayoutType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nGRID,\nLIST"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "PollLayoutDirection",
-      "members": [],
-      "enum": [
-        "LTR",
-        "RTL"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "PollLayoutType",
-      "members": [],
-      "enum": [
-        "GRID",
-        "LIST"
       ],
       "docs": {
         "description": [
@@ -35858,22 +34765,6 @@
       }
     },
     {
-      "name": "PostFieldField",
-      "members": [],
-      "enum": [
-        "CONTENT",
-        "IMAGES",
-        "UNKNOWN",
-        "URL",
-        "VIDEOS"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "PostLiked",
       "members": [
         {
@@ -36164,13 +35055,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Array of extra post fields to be added in the response."
+          "doc": "Array of extra post fields to be added in the response.\nOne of:\nIMAGES,\nUNKNOWN,\nURL,\nVIDEOS"
         },
         {
           "name": "postId",
@@ -36220,13 +35111,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Array of extra post fields to be added in the response."
+          "doc": "Array of extra post fields to be added in the response.\nOne of:\nIMAGES,\nUNKNOWN,\nURL,\nVIDEOS"
         },
         {
           "name": "slug",
@@ -36237,19 +35128,6 @@
           ],
           "doc": "URL slug."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "PostType",
-      "members": [],
-      "enum": [
-        "DISCUSSION",
-        "QUESTION"
       ],
       "docs": {
         "description": [
@@ -36481,10 +35359,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Order"
+              "nativeType": "string"
             }
           ],
-          "doc": "Records can be sorted in ascending (default) or descending order."
+          "doc": "Records can be sorted in ascending (default) or descending order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
@@ -36541,10 +35419,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.FileContentStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Image status. Immediately after upload review images might still be not ready.\nCurrently probability is low.\nMaybe in the future we will provide a way to poll the status"
+          "doc": "Image status. Immediately after upload review images might still be not ready.\nCurrently probability is low.\nMaybe in the future we will provide a way to poll the status\nOne of:\nIN_PROGRESS,\nREADY"
         },
         {
           "name": "url",
@@ -36939,20 +35817,6 @@
       }
     },
     {
-      "name": "PrivacyStatusStatus",
-      "members": [],
-      "enum": [
-        "PRIVATE",
-        "PUBLIC",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Profile",
       "members": [
         {
@@ -37101,21 +35965,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ProgramStatus",
-      "members": [],
-      "enum": [
-        "ACTIVE",
-        "DRAFT",
-        "PAUSED",
-        "UNKNOWN"
       ],
       "docs": {
         "description": [
@@ -37374,13 +36223,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.ContactFieldSet"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Predefined sets of fields to return."
+          "doc": "Predefined sets of fields to return.\nOne of:\nBASIC,\nCOMMUNICATION_DETAILS,\nEXTENDED,\nFULL"
         },
         {
           "name": "filter",
@@ -37615,13 +36464,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of category fields to be included in the response."
+          "doc": "List of category fields to be included in the response.\nOne of:\nINTERNAL_ID,\nUNKNOWN,\nURL"
         },
         {
           "name": "filter",
@@ -38173,13 +37022,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.ItemType"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Only visual media or albums or both"
+          "doc": "Only visual media or albums or both\nOne of:\nALBUM,\nUNKNOWN,\nVISUAL_MEDIA"
         },
         {
           "name": "likedBy",
@@ -38230,40 +37079,40 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Field"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nALBUM_INFO_TAG_COUNT,\nCOMMENT_COUNT,\nCREATED_DATE,\nLIKE_COUNT,\nMEMBER_TAG_COUNT,\nNAME,\nUNKNOWN,\nVIEW_COUNT"
         },
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Orientation"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nASC,\nDESC"
         },
         {
           "name": "orientation",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Orientation"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nASC,\nDESC"
         },
         {
           "name": "sortBy",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SortBy"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nMOST_COMBINED_TAGS,\nMOST_COMMENTS,\nMOST_LIKED,\nMOST_RECENT,\nMOST_TAGS,\nMOST_VIEWED,\nNAME"
         }
       ],
       "docs": {
@@ -38563,10 +37412,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Set"
+              "nativeType": "string"
             }
           ],
-          "doc": "Predefined sets of fields to return."
+          "doc": "Predefined sets of fields to return.\nOne of:\nEXTENDED,\nFULL,\nPUBLIC"
         },
         {
           "name": "fieldsets",
@@ -38577,13 +37426,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Set"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": ""
+          "doc": "One of:\nEXTENDED,\nFULL,\nPUBLIC"
         },
         {
           "name": "query",
@@ -38727,10 +37576,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Order"
+              "nativeType": "string"
             }
           ],
-          "doc": "Order of returned results."
+          "doc": "Order of returned results.\nOne of:\nNEWEST,\nOLDEST,\nUNKNOWN"
         },
         {
           "name": "rangeEnd",
@@ -38811,13 +37660,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead."
+          "doc": "List of post fields to be included in the response. Note: `COUNTERS` is deprecated, use `METRICS` instead.\nOne of:\nCONTACT_ID,\nCONTENT,\nCONTENT_TEXT,\nCOUNTERS,\nINTERNAL_ID,\nMETRICS,\nRICH_CONTENT,\nSEO,\nUNKNOWN,\nURL"
         },
         {
           "name": "filter",
@@ -38984,10 +37833,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.QueryPublicationsCountStatsRequestOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Order of returned results."
+          "doc": "Order of returned results.\nOne of:\nNEWEST,\nOLDEST,\nUNKNOWN"
         },
         {
           "name": "rangeEnd",
@@ -39030,20 +37879,6 @@
       }
     },
     {
-      "name": "QueryPublicationsCountStatsRequestOrder",
-      "members": [],
-      "enum": [
-        "NEWEST",
-        "OLDEST",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "QueryPublicationsCountStatsResponse",
       "members": [
         {
@@ -39082,13 +37917,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Fieldset"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "A fieldset for the response"
+          "doc": "A fieldset for the response\nOne of:\nCATEGORIES,\nCONFIG,\nELEMENTS,\nPLACES"
         },
         {
           "name": "query",
@@ -39420,10 +38255,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.QuotaType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nSTORAGE,\nVIDEO_DURATION"
         },
         {
           "name": "usage",
@@ -39438,19 +38273,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "QuotaType",
-      "members": [],
-      "enum": [
-        "STORAGE",
-        "VIDEO_DURATION"
       ],
       "docs": {
         "description": [
@@ -39514,46 +38336,6 @@
           ],
           "doc": "Exclusive upper bound of the range. Required if from is not given."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Reason",
-      "members": [],
-      "enum": [
-        "ALBUM_NOT_EMPTY",
-        "DEFAULT_REASON",
-        "MISSING_PERMISSION",
-        "MUST_BE_A_MEMBER",
-        "MUST_BE_PUBLIC",
-        "NOT_ALLOWED_ON_FILES",
-        "NOT_ALLOWED_ON_ROOT",
-        "NOT_ALLOWED_ON_SUBFOLDERS_THIS_DEEP",
-        "NOT_FOUND",
-        "OWNED_BY_ANOTHER_USER"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ReasonNotSuspendable",
-      "members": [],
-      "enum": [
-        "ALREADY_SUSPENDED",
-        "CANCELED",
-        "ENDED",
-        "NOT_STARTED",
-        "OLD_STRIPE",
-        "PENDING",
-        "TRIAL",
-        "UNDEFINED"
       ],
       "docs": {
         "description": [
@@ -39967,20 +38749,6 @@
       }
     },
     {
-      "name": "RefundStatus",
-      "members": [],
-      "enum": [
-        "FAILED",
-        "PENDING",
-        "SUCCEEDED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "RefundTransaction",
       "members": [
         {
@@ -40044,10 +38812,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.RefundStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Refund status."
+          "doc": "Refund status.\nOne of:\nFAILED,\nPENDING,\nSUCCEEDED"
         }
       ],
       "docs": {
@@ -40064,20 +38832,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ManuallyRefundableReason"
+              "nativeType": "string"
             }
           ],
-          "doc": "Reason why payment is only refundable manually."
+          "doc": "Reason why payment is only refundable manually.\nOne of:\nEXPIRED,\nNOT_FOUND,\nNOT_SUPPORTED,\nOFFLINE"
         },
         {
           "name": "nonRefundableReason",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.NonRefundableReason"
+              "nativeType": "string"
             }
           ],
-          "doc": "Reason why payment is not refundable."
+          "doc": "Reason why payment is not refundable.\nOne of:\nACCESS_DENIED,\nALREADY_REFUNDED,\nDISABLED_BY_PROVIDER,\nINTERNAL_ERROR,\nNONE,\nNOT_PAID,\nPROVIDER_IS_DOWN,\nZERO_PRICE"
         },
         {
           "name": "paymentId",
@@ -40107,25 +38875,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.RefundableStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Payment refundability status."
+          "doc": "Payment refundability status.\nOne of:\nMANUAL,\nNOT_REFUNDABLE,\nREFUNDABLE"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "RefundableStatus",
-      "members": [],
-      "enum": [
-        "MANUAL",
-        "NOT_REFUNDABLE",
-        "REFUNDABLE"
       ],
       "docs": {
         "description": [
@@ -40203,10 +38957,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.TransactionStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Payment status."
+          "doc": "Payment status.\nOne of:\nAPPROVED,\nAUTHORIZED,\nCANCELED,\nDECLINED,\nPARTIALLY_REFUNDED,\nPENDING,\nPENDING_MERCHANT,\nREFUNDED,\nUNDEFINED"
         }
       ],
       "docs": {
@@ -40293,21 +39047,6 @@
       }
     },
     {
-      "name": "ReportReason",
-      "members": [],
-      "enum": [
-        "HARASSMENT_OR_BULLYING",
-        "HATE_SPEECH_OR_GRAPHIC_VIOLENCE",
-        "INAPPROPRIATE_CONTENT",
-        "UNWANTED_OR_SPAM"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "ReportRequest",
       "members": [
         {
@@ -40351,10 +39090,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ReportReason"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nHARASSMENT_OR_BULLYING,\nHATE_SPEECH_OR_GRAPHIC_VIOLENCE,\nINAPPROPRIATE_CONTENT,\nUNWANTED_OR_SPAM"
         }
       ],
       "docs": {
@@ -40381,10 +39120,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ReportReason"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nHARASSMENT_OR_BULLYING,\nHATE_SPEECH_OR_GRAPHIC_VIOLENCE,\nINAPPROPRIATE_CONTENT,\nUNWANTED_OR_SPAM"
         }
       ],
       "docs": {
@@ -40417,20 +39156,6 @@
       }
     },
     {
-      "name": "ReportType",
-      "members": [],
-      "enum": [
-        "OFFENSIVE_CONTENT",
-        "OFFENSIVE_MEDIA",
-        "SPAM"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Reported",
       "members": [
         {
@@ -40448,10 +39173,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ReportType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Type of report."
+          "doc": "Type of report.\nOne of:\nOFFENSIVE_CONTENT,\nOFFENSIVE_MEDIA,\nSPAM"
         }
       ],
       "docs": {
@@ -40477,10 +39202,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.CancellationEffectiveAt"
+              "nativeType": "string"
             }
           ],
-          "doc": "Required. Whether to cancel the order effective immediately or at the next payment date. One-time orders can only be canceled immediately."
+          "doc": "Required. Whether to cancel the order effective immediately or at the next payment date. One-time orders can only be canceled immediately.\nOne of:\nIMMEDIATELY,\nNEXT_PAYMENT_DATE,\nUNDEFINED"
         }
       ],
       "docs": {
@@ -40612,10 +39337,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.RestockType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Restock policy type."
+          "doc": "Restock policy type.\nOne of:\nALL_ITEMS,\nNO_ITEMS,\nSOME_ITEMS"
         }
       ],
       "docs": {
@@ -40647,20 +39372,6 @@
           ],
           "doc": "Line item quantity being restocked."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "RestockType",
-      "members": [],
-      "enum": [
-        "ALL_ITEMS",
-        "NO_ITEMS",
-        "SOME_ITEMS"
       ],
       "docs": {
         "description": [
@@ -41095,28 +39806,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ScalarType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nAVG,\nCOUNT_DISTINCT,\nMAX,\nMIN,\nSUM,\nUNKNOWN_SCALAR_TYPE"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ScalarType",
-      "members": [],
-      "enum": [
-        "AVG",
-        "COUNT_DISTINCT",
-        "MAX",
-        "MIN",
-        "SUM",
-        "UNKNOWN_SCALAR_TYPE"
       ],
       "docs": {
         "description": [
@@ -41390,10 +40084,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Mode"
+              "nativeType": "string"
             }
           ],
-          "doc": "boolean search mode"
+          "doc": "boolean search mode\nOne of:\nAND,\nOR"
         }
       ],
       "docs": {
@@ -41423,10 +40117,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SearchIndexingNotificationState"
+              "nativeType": "string"
             }
           ],
-          "doc": "new state of indexing for the site specified in ms_id"
+          "doc": "new state of indexing for the site specified in ms_id\nOne of:\nOff,\nOn,\nUnknown"
         },
         {
           "name": "language",
@@ -41454,20 +40148,6 @@
           ],
           "doc": "site for which notification is targeted"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SearchIndexingNotificationState",
-      "members": [],
-      "enum": [
-        "Off",
-        "On",
-        "Unknown"
       ],
       "docs": {
         "description": [
@@ -42056,10 +40736,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.OverrideSenderOptions"
+              "nativeType": "string"
             }
           ],
-          "doc": "Controls which identity to use in the message's `sender` property."
+          "doc": "Controls which identity to use in the message's `sender` property.\nOne of:\nBUSINESS_USER,\nCALLER,\nPARTICIPANT"
         },
         {
           "name": "sendNotifications",
@@ -42311,20 +40991,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Set",
-      "members": [],
-      "enum": [
-        "EXTENDED",
-        "FULL",
-        "PUBLIC"
       ],
       "docs": {
         "description": [
@@ -42867,10 +41533,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ItemType"
+              "nativeType": "string"
             }
           ],
-          "doc": "visual media or album"
+          "doc": "visual media or album\nOne of:\nALBUM,\nUNKNOWN,\nVISUAL_MEDIA"
         },
         {
           "name": "viewCount",
@@ -43157,20 +41823,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SiteCreatedContext"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDUPLICATE,\nDUPLICATE_BY_SITE_TRANSFER,\nFLASH,\nFROM_TEMPLATE,\nOLD_SITE_TRANSFER,\nOTHER"
         },
         {
           "name": "namespace",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Namespace"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nALBUMS,\nCLUBS,\nCREATOR_ECONOMY,\nDEV_CENTER_COMPANY,\nDEV_SITE,\nHOTELS,\nHTML_DRAFT,\nLOGOS,\nONBOARDING_DRAFT,\nPARTNER_DASHBOARD,\nSHOUT_OUT,\nSITELESS_BUSINESS,\nUNKNOWN_NAMESPACE,\nVIDEO_MAKER,\nWIX,\nWIX_STORES_TEST_DRIVE"
         },
         {
           "name": "originMetaSiteId",
@@ -43215,23 +41881,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SiteCreatedContext",
-      "members": [],
-      "enum": [
-        "DUPLICATE",
-        "DUPLICATE_BY_SITE_TRANSFER",
-        "FLASH",
-        "FROM_TEMPLATE",
-        "OLD_SITE_TRANSFER",
-        "OTHER"
       ],
       "docs": {
         "description": [
@@ -43476,78 +42125,21 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.FieldName"
+              "nativeType": "string"
             }
           ],
-          "doc": "Field to sort by."
+          "doc": "Field to sort by.\nOne of:\nCREATED_DATE,\nPROMISED_TIME,\nUPDATED_DATE"
         },
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SortBy",
-      "members": [],
-      "enum": [
-        "MOST_COMBINED_TAGS",
-        "MOST_COMMENTS",
-        "MOST_LIKED",
-        "MOST_RECENT",
-        "MOST_TAGS",
-        "MOST_VIEWED",
-        "NAME"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SortDirection",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SortType",
-      "members": [],
-      "enum": [
-        "COUNT",
-        "VALUE"
       ],
       "docs": {
         "description": [
@@ -43573,30 +42165,15 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
         "description": [
           ""
-        ]
-      }
-    },
-    {
-      "name": "Source",
-      "members": [],
-      "enum": [
-        "CUSTOM",
-        "UNDEFINED",
-        "VIMEO",
-        "YOUTUBE"
-      ],
-      "docs": {
-        "description": [
-          "Video source."
         ]
       }
     },
@@ -44066,10 +42643,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.FileCategory"
+              "nativeType": "string"
             }
           ],
-          "doc": "What kind of media was being tried to upload"
+          "doc": "What kind of media was being tried to upload\nOne of:\nIMAGE,\nUNKNOWN,\nVIDEO"
         },
         {
           "name": "quotaExceeded",
@@ -44275,39 +42852,6 @@
       }
     },
     {
-      "name": "State",
-      "members": [],
-      "enum": [
-        "DEMO",
-        "DISABLED",
-        "ENABLED",
-        "PENDING",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Status",
-      "members": [],
-      "enum": [
-        "DELETED",
-        "IN_MODERATION",
-        "PUBLISHED",
-        "SCHEDULED",
-        "UNKNOWN",
-        "UNPUBLISHED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "StatusReason",
       "members": [
         {
@@ -44501,24 +43045,6 @@
       }
     },
     {
-      "name": "SubdivisionType",
-      "members": [],
-      "enum": [
-        "ADMINISTRATIVE_AREA_LEVEL_1",
-        "ADMINISTRATIVE_AREA_LEVEL_2",
-        "ADMINISTRATIVE_AREA_LEVEL_3",
-        "ADMINISTRATIVE_AREA_LEVEL_4",
-        "ADMINISTRATIVE_AREA_LEVEL_5",
-        "COUNTRY",
-        "UNKNOWN_SUBDIVISION_TYPE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "SubmitEvidenceRequest",
       "members": [
         {
@@ -44572,36 +43098,6 @@
       "docs": {
         "description": [
           ""
-        ]
-      }
-    },
-    {
-      "name": "SubmitOperation",
-      "members": [],
-      "enum": [
-        "CREATE",
-        "UNKNOWN",
-        "UPDATE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SubscriptionFrequency",
-      "members": [],
-      "enum": [
-        "DAY",
-        "MONTH",
-        "UNDEFINED",
-        "WEEK",
-        "YEAR"
-      ],
-      "docs": {
-        "description": [
-          "Frequency unit of recurring payment"
         ]
       }
     },
@@ -44722,10 +43218,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SubscriptionFrequency"
+              "nativeType": "string"
             }
           ],
-          "doc": "Frequency of recurring payment."
+          "doc": "Frequency of recurring payment.\nOne of:\nDAY,\nMONTH,\nUNDEFINED,\nWEEK,\nYEAR"
         }
       ],
       "docs": {
@@ -44807,20 +43303,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ContactSourceType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Need to resolve source in allocator, because of server sign"
+          "doc": "Need to resolve source in allocator, because of server sign\nOne of:\nADMIN,\nIMPORT,\nOTHER,\nTHIRD_PARTY,\nWIX_APP,\nWIX_BOOKINGS,\nWIX_CHAT,\nWIX_CODE,\nWIX_EMAIL_MARKETING,\nWIX_EVENTS,\nWIX_FORMS,\nWIX_GROUPS,\nWIX_HOTELS,\nWIX_MARKET_PLACE,\nWIX_MUSIC,\nWIX_RESTAURANTS,\nWIX_SITE_MEMBERS,\nWIX_STORES"
         },
         {
           "name": "submitOperation",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SubmitOperation"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCREATE,\nUNKNOWN,\nUPDATE"
         }
       ],
       "docs": {
@@ -45201,21 +43697,6 @@
       }
     },
     {
-      "name": "Target",
-      "members": [],
-      "enum": [
-        "BLANK",
-        "PARENT",
-        "SELF",
-        "TOP"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Tax",
       "members": [
         {
@@ -45303,10 +43784,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Orientation"
+              "nativeType": "string"
             }
           ],
-          "doc": "Controls whether the message is displayed in portrait or landscape layout."
+          "doc": "Controls whether the message is displayed in portrait or landscape layout.\nOne of:\nLANDSCAPE,\nPORTRAIT,\nUNKNOWN_ORIENTATION"
         },
         {
           "name": "textLines",
@@ -45338,22 +43819,6 @@
           ],
           "doc": "Title displayed in the message."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "TextAlignment",
-      "members": [],
-      "enum": [
-        "AUTO",
-        "CENTER",
-        "JUSTIFY",
-        "LEFT",
-        "RIGHT"
       ],
       "docs": {
         "description": [
@@ -45518,10 +43983,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.TextAlignment"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nAUTO,\nCENTER,\nJUSTIFY,\nLEFT,\nRIGHT"
         }
       ],
       "docs": {
@@ -45610,10 +44075,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.ThumbnailsAlignment"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nBOTTOM,\nLEFT,\nNONE,\nRIGHT,\nTOP"
         },
         {
           "name": "spacing",
@@ -45628,22 +44093,6 @@
           ],
           "doc": ""
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ThumbnailsAlignment",
-      "members": [],
-      "enum": [
-        "BOTTOM",
-        "LEFT",
-        "NONE",
-        "RIGHT",
-        "TOP"
       ],
       "docs": {
         "description": [
@@ -45739,10 +44188,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.DayOfWeek"
+              "nativeType": "string"
             }
           ],
-          "doc": "Day of the week the period ends on."
+          "doc": "Day of the week the period ends on.\nOne of:\nFRIDAY,\nMONDAY,\nSATURDAY,\nSUNDAY,\nTHURSDAY,\nTUESDAY,\nWEDNESDAY"
         },
         {
           "name": "closeTime",
@@ -45759,10 +44208,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.DayOfWeek"
+              "nativeType": "string"
             }
           ],
-          "doc": "Day of the week the period starts on."
+          "doc": "Day of the week the period starts on.\nOne of:\nFRIDAY,\nMONDAY,\nSATURDAY,\nSUNDAY,\nTHURSDAY,\nTUESDAY,\nWEDNESDAY"
         },
         {
           "name": "openTime",
@@ -46123,10 +44572,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.TransactionType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nADJUST,\nEARN,\nREDEEM,\nUNKNOWN"
         }
       ],
       "docs": {
@@ -46164,24 +44613,6 @@
       }
     },
     {
-      "name": "TransactionModificationReason",
-      "members": [],
-      "enum": [
-        "ABANDONED_PAYMENT",
-        "BUYER_REQUEST",
-        "COMPLIANCE",
-        "DUPLICATE_PAYMENT",
-        "FRAUD",
-        "MERCHANT_REQUEST",
-        "OTHER"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "TransactionReference",
       "members": [
         {
@@ -46204,41 +44635,6 @@
           ],
           "doc": "Previously created transaction's ID."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "TransactionStatus",
-      "members": [],
-      "enum": [
-        "APPROVED",
-        "AUTHORIZED",
-        "CANCELED",
-        "DECLINED",
-        "PARTIALLY_REFUNDED",
-        "PENDING",
-        "PENDING_MERCHANT",
-        "REFUNDED",
-        "UNDEFINED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "TransactionType",
-      "members": [],
-      "enum": [
-        "ADJUST",
-        "EARN",
-        "REDEEM",
-        "UNKNOWN"
       ],
       "docs": {
         "description": [
@@ -46375,19 +44771,6 @@
           ],
           "doc": "Created refund ID"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Type",
-      "members": [],
-      "enum": [
-        "ACTION",
-        "LINK"
       ],
       "docs": {
         "description": [
@@ -46883,13 +45266,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Field"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of category fields to be included in the response."
+          "doc": "List of category fields to be included in the response.\nOne of:\nINTERNAL_ID,\nUNKNOWN,\nURL"
         }
       ],
       "docs": {
@@ -47647,10 +46030,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.TransactionStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Payment status."
+          "doc": "Payment status.\nOne of:\nAPPROVED,\nAUTHORIZED,\nCANCELED,\nDECLINED,\nPARTIALLY_REFUNDED,\nPENDING,\nPENDING_MERCHANT,\nREFUNDED,\nUNDEFINED"
         }
       ],
       "docs": {
@@ -47944,10 +46327,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.InvoiceSource"
+              "nativeType": "string"
             }
           ],
-          "doc": "Invoice source"
+          "doc": "Invoice source\nOne of:\nUNSPECIFIED_INVOICE_SOURCE,\nWIX"
         }
       ],
       "docs": {
@@ -48060,10 +46443,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.NullValue"
+              "nativeType": "string"
             }
           ],
-          "doc": "Represents a null value."
+          "doc": "Represents a null value.\nOne of:\nNULL_VALUE"
         },
         {
           "name": "numberValue",
@@ -48123,20 +46506,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SortDirection"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nASC,\nDESC"
         },
         {
           "name": "sortType",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SortType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCOUNT,\nVALUE"
         }
       ],
       "docs": {
@@ -48163,39 +46546,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.VatType"
+              "nativeType": "string"
             }
           ],
-          "doc": "tax type"
+          "doc": "tax type\nOne of:\nCNPJ,\nCPF,\nUNSPECIFIED_TAX_TYPE"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "VatType",
-      "members": [],
-      "enum": [
-        "CNPJ",
-        "CPF",
-        "UNSPECIFIED_TAX_TYPE"
-      ],
-      "docs": {
-        "description": [
-          "Brazilian tax info types"
-        ]
-      }
-    },
-    {
-      "name": "VerticalAlignment",
-      "members": [],
-      "enum": [
-        "BOTTOM",
-        "MIDDLE",
-        "TOP"
       ],
       "docs": {
         "description": [
@@ -48412,10 +46767,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Source"
+              "nativeType": "string"
             }
           ],
-          "doc": "Video source."
+          "doc": "Video source.\nOne of:\nCUSTOM,\nUNDEFINED,\nVIMEO,\nYOUTUBE"
         },
         {
           "name": "width",
@@ -48618,20 +46973,6 @@
           ],
           "doc": "Available resolutions for the video, starting with the optimal resolution."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ViewRole",
-      "members": [],
-      "enum": [
-        "CREATOR",
-        "EVERYONE",
-        "VOTERS"
       ],
       "docs": {
         "description": [
@@ -49009,20 +47350,20 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.TransactionModificationReason"
+              "nativeType": "string"
             }
           ],
-          "doc": "Void reason."
+          "doc": "Void reason.\nOne of:\nABANDONED_PAYMENT,\nBUYER_REQUEST,\nCOMPLIANCE,\nDUPLICATE_PAYMENT,\nFRAUD,\nMERCHANT_REQUEST,\nOTHER"
         },
         {
           "name": "status",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.VoidStatus"
+              "nativeType": "string"
             }
           ],
-          "doc": "Void status."
+          "doc": "Void status.\nOne of:\nFAILED,\nPENDING,\nSUCCEEDED,\nUNDEFINED"
         },
         {
           "name": "statusReason",
@@ -49160,10 +47501,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.TransactionModificationReason"
+              "nativeType": "string"
             }
           ],
-          "doc": "Reason for void or refund."
+          "doc": "Reason for void or refund.\nOne of:\nABANDONED_PAYMENT,\nBUYER_REQUEST,\nCOMPLIANCE,\nDUPLICATE_PAYMENT,\nFRAUD,\nMERCHANT_REQUEST,\nOTHER"
         },
         {
           "name": "refundableAmount",
@@ -49235,48 +47576,6 @@
       }
     },
     {
-      "name": "VoidStatus",
-      "members": [],
-      "enum": [
-        "FAILED",
-        "PENDING",
-        "SUCCEEDED",
-        "UNDEFINED"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "VoteRole",
-      "members": [],
-      "enum": [
-        "ALL",
-        "SITE_MEMBERS"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "WeightUnit",
-      "members": [],
-      "enum": [
-        "KG",
-        "LB",
-        "UNSPECIFIED_WEIGHT_UNIT"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "WhatsAppLink",
       "members": [
         {
@@ -49289,35 +47588,6 @@
           ],
           "doc": "The whatsApp phone number we want to connect with"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Width",
-      "members": [],
-      "enum": [
-        "LARGE",
-        "MEDIUM",
-        "SMALL"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "WidthType",
-      "members": [],
-      "enum": [
-        "CONTENT",
-        "FULL_WIDTH",
-        "ORIGINAL",
-        "SMALL"
       ],
       "docs": {
         "description": [
