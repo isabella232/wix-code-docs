@@ -46,7 +46,7 @@
               "referenceType": "wix-echo-backend.Metroinspector.EchoOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
