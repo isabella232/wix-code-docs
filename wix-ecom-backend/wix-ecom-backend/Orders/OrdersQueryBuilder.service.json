@@ -26,7 +26,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -62,7 +62,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -145,7 +145,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
