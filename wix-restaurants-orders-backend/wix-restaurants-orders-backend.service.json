@@ -41,7 +41,7 @@
               "referenceType": "wix-restaurants-orders-backend.AcceptOrderOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -240,7 +240,7 @@
               "referenceType": "wix-restaurants-orders-backend.ListOrdersOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -505,10 +505,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Type"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nCALL_CENTER,\nFACEBOOK,\nMOBILE,\nMOBILE_WEB,\nTPA,\nUNSPECIFIED_CHANNEL_TYPE,\nWEB"
         }
       ],
       "docs": {
@@ -879,10 +879,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.OnArrival"
+              "nativeType": "string"
             }
           ],
-          "doc": "Special delivery instructions upon arrival to the address."
+          "doc": "Special delivery instructions upon arrival to the address.\nOne of:\nBUZZ_DOOR,\nCALL_ME,\nUNSPECIFIED_ON_ARRIVAL_TYPE"
         },
         {
           "name": "street",
@@ -1097,41 +1097,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.DiscountType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Discount type."
+          "doc": "Discount type.\nOne of:\nOFF_ITEM,\nOFF_ORDER,\nOFF_ORDER_MANAGER_DISCOUNT,\nUNSPECIFIED_TYPE"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "DiscountType",
-      "members": [],
-      "enum": [
-        "OFF_ITEM",
-        "OFF_ORDER",
-        "OFF_ORDER_MANAGER_DISCOUNT",
-        "UNSPECIFIED_TYPE"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "DisplayType",
-      "members": [],
-      "enum": [
-        "DESELECTION",
-        "EXTRAS",
-        "SELECTION",
-        "UNSPECIFIED_DISPLAY_TYPE"
       ],
       "docs": {
         "description": [
@@ -1142,22 +1112,6 @@
     {
       "name": "Empty",
       "members": [],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "EventType",
-      "members": [],
-      "enum": [
-        "ACCEPTED",
-        "CANCELED",
-        "CREATED",
-        "FULFILLED",
-        "UNKNOWN"
-      ],
       "docs": {
         "description": [
           ""
@@ -1235,20 +1189,6 @@
           ],
           "doc": "Order pickup time."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FieldName",
-      "members": [],
-      "enum": [
-        "CREATED_DATE",
-        "PROMISED_TIME",
-        "UPDATED_DATE"
       ],
       "docs": {
         "description": [
@@ -1356,26 +1296,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.FulfillmentType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Fulfillment type."
+          "doc": "Fulfillment type.\nOne of:\nDELIVERY,\nDINE_IN,\nPICKUP,\nUNSPECIFIED_FULFILLMENT_TYPE"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FulfillmentType",
-      "members": [],
-      "enum": [
-        "DELIVERY",
-        "DINE_IN",
-        "PICKUP",
-        "UNSPECIFIED_FULFILLMENT_TYPE"
       ],
       "docs": {
         "description": [
@@ -1701,10 +1626,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.DisplayType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Dish option type."
+          "doc": "Dish option type.\nOne of:\nDESELECTION,\nEXTRAS,\nSELECTION,\nUNSPECIFIED_DISPLAY_TYPE"
         }
       ],
       "docs": {
@@ -1810,10 +1735,10 @@
           "name": "status",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
         }
       ],
       "docs": {
@@ -1905,10 +1830,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Order status to filter by. Currently Status Fulfilled is not supported"
+          "doc": "Order status to filter by. Currently Status Fulfilled is not supported\nOne of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
         }
       ],
       "docs": {
@@ -2045,10 +1970,10 @@
           "name": "status",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
         }
       ],
       "docs": {
@@ -2148,10 +2073,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Order status. Currently, it is not possible to filter by status `FULFILLED`."
+          "doc": "Order status. Currently, it is not possible to filter by status `FULFILLED`.\nOne of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
         }
       ],
       "docs": {
@@ -2258,10 +2183,10 @@
           "name": "eventType",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.EventType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nACCEPTED,\nCANCELED,\nCREATED,\nFULFILLED,\nUNKNOWN"
         },
         {
           "name": "msid",
@@ -2296,10 +2221,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.EventType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Notification event type"
+          "doc": "Notification event type\nOne of:\nACCEPTED,\nCANCELED,\nCREATED,\nFULFILLED,\nUNKNOWN"
         },
         {
           "name": "msid",
@@ -2321,20 +2246,6 @@
     {
       "name": "NotifyOrderEventResponse",
       "members": [],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "OnArrival",
-      "members": [],
-      "enum": [
-        "BUZZ_DOOR",
-        "CALL_ME",
-        "UNSPECIFIED_ON_ARRIVAL_TYPE"
-      ],
       "docs": {
         "description": [
           ""
@@ -2541,10 +2452,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Status"
+              "nativeType": "string"
             }
           ],
-          "doc": "Current order status."
+          "doc": "Current order status.\nOne of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
         },
         {
           "name": "totals",
@@ -2742,35 +2653,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.PaymentType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Payment type."
+          "doc": "Payment type.\nOne of:\nBITPAY,\nBITSOFGOLD,\nCASH,\nCELLARIX,\nCREDIT,\nDELIVERY_CLUB,\nDELIVERY_COM,\nMULTIPASS,\nMYSODEXO,\nPAYPAL,\nTENBIS,\nUNSPECIFIED_PAYMENT_TYPE,\nWIX_PAYMENTS"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "PaymentType",
-      "members": [],
-      "enum": [
-        "BITPAY",
-        "BITSOFGOLD",
-        "CASH",
-        "CELLARIX",
-        "CREDIT",
-        "DELIVERY_CLUB",
-        "DELIVERY_COM",
-        "MULTIPASS",
-        "MYSODEXO",
-        "PAYPAL",
-        "TENBIS",
-        "UNSPECIFIED_PAYMENT_TYPE",
-        "WIX_PAYMENTS"
       ],
       "docs": {
         "description": [
@@ -2872,55 +2759,25 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.FieldName"
+              "nativeType": "string"
             }
           ],
-          "doc": "Field to sort by."
+          "doc": "Field to sort by.\nOne of:\nCREATED_DATE,\nPROMISED_TIME,\nUPDATED_DATE"
         },
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
         "description": [
           ""
-        ]
-      }
-    },
-    {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Status",
-      "members": [],
-      "enum": [
-        "ACCEPTED",
-        "CANCELED",
-        "FULFILLED",
-        "NEW",
-        "PENDING",
-        "UNSPECIFIED_ORDER_STATUS"
-      ],
-      "docs": {
-        "description": [
-          "This might be extended in the future with pending orders statuses"
         ]
       }
     },
@@ -3023,24 +2880,6 @@
           ],
           "doc": "Total order price."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Type",
-      "members": [],
-      "enum": [
-        "CALL_CENTER",
-        "FACEBOOK",
-        "MOBILE",
-        "MOBILE_WEB",
-        "TPA",
-        "UNSPECIFIED_CHANNEL_TYPE",
-        "WEB"
       ],
       "docs": {
         "description": [
