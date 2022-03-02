@@ -26,7 +26,7 @@
               "referenceType": "wix-metro-backend.Products.Product"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -78,7 +78,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": true
         }
       ],
@@ -130,7 +130,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": true
         }
       ],
@@ -182,7 +182,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -192,7 +192,7 @@
               "referenceType": "wix-metro-backend.Products.Product"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1132,19 +1132,6 @@
       }
     },
     {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Sorting",
       "members": [
         {
@@ -1162,10 +1149,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
@@ -1227,24 +1214,6 @@
           ],
           "doc": "Subdivision full name."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SubdivisionType",
-      "members": [],
-      "enum": [
-        "ADMINISTRATIVE_AREA_LEVEL_1",
-        "ADMINISTRATIVE_AREA_LEVEL_2",
-        "ADMINISTRATIVE_AREA_LEVEL_3",
-        "ADMINISTRATIVE_AREA_LEVEL_4",
-        "ADMINISTRATIVE_AREA_LEVEL_5",
-        "COUNTRY",
-        "UNKNOWN_SUBDIVISION_TYPE"
       ],
       "docs": {
         "description": [
