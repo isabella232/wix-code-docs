@@ -49,7 +49,7 @@
               "referenceType": "wix-loyalty-backend.Loyalty.AdjustPointsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -141,7 +141,7 @@
               "referenceType": "wix-loyalty-backend.Loyalty.EarnPointsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -223,7 +223,7 @@
               "referenceType": "wix-loyalty-backend.Loyalty.GetAccountBySecondaryIdOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -301,7 +301,7 @@
               "referenceType": "wix-loyalty-backend.Loyalty.ListAccountsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -357,7 +357,7 @@
               "referenceType": "wix-loyalty-backend.Loyalty.RedeemPointsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -1291,10 +1291,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.TransactionType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Transaction type."
+          "doc": "Transaction type.\nOne of:\nADJUST,\nEARN,\nREDEEM,\nUNKNOWN"
         }
       ],
       "docs": {
@@ -2054,30 +2054,15 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.TransactionType"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nADJUST,\nEARN,\nREDEEM,\nUNKNOWN"
         }
       ],
       "docs": {
         "description": [
           "Loyalty transaction."
-        ]
-      }
-    },
-    {
-      "name": "TransactionType",
-      "members": [],
-      "enum": [
-        "ADJUST",
-        "EARN",
-        "REDEEM",
-        "UNKNOWN"
-      ],
-      "docs": {
-        "description": [
-          ""
         ]
       }
     }
