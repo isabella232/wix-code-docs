@@ -19,7 +19,7 @@
               "referenceType": "wix-alarm-backend.Events.AlarmSnoozedEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -61,7 +61,7 @@
               "referenceType": "wix-alarm-backend.Events.AlarmTriggeredEvent"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
