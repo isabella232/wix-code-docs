@@ -1,7 +1,7 @@
 { "name": "wix-faq-backend",
   "mixes": [],
   "labels":
-    [ "new" ],
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -121,20 +121,21 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createCategory",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "category",
               "type": "wix-faq-backend.Category_4831108253",
-              "doc": "Category to update." } ],
+              "doc": "Category to create." } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
                   [ "wix-faq-backend.Category_9228891322" ] },
-            "doc": "Fulfilled - Updated category." },
+            "doc": "" },
         "locations":
-          [ { "lineno": 1,
+          [ { "lineno": 9,
               "filename": "wix_faq_v1_FaqService_CreateCategory_createCategory.js" } ],
         "docs":
           { "summary": "Creates a category.",
@@ -180,7 +181,7 @@
                   [ "wix-faq-backend.QuestionEntry_37721379577" ] },
             "doc": "Fulfilled - Question entry, including a single question and its answer." },
         "locations":
-          [ { "lineno": 19,
+          [ { "lineno": 1,
               "filename": "wix_faq_v1_FaqService_CreateQuestion_createQuestion.js" } ],
         "docs":
           { "summary": "Creates a question entry.",
@@ -313,7 +314,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listCategories",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "paging",
@@ -323,7 +325,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-faq-backend.ListCategoriesResult_16961634704" ] },
+                  [ "wix-faq-backend.ListCategoriesResult_17441120979" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 8,
@@ -359,7 +361,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listQuestions",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "filters",
@@ -373,7 +376,7 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-faq-backend.ListQuestionsResult_40952841538" ] },
+                  [ "wix-faq-backend.ListQuestionsResult_41432327813" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 26,
@@ -473,26 +476,25 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateCategory",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
-          [ { "name": "id",
-              "type": "string",
-              "doc": "Category ID." },
-            { "name": "category",
-              "type": "wix-faq-backend.Category_4831108253",
-              "doc": "Category to update." } ],
+          [ { "name": "category",
+              "type": "wix-faq-backend.Category_5663521922" } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
                   [ "wix-faq-backend.Category_9228891322" ] },
-            "doc": "Fulfilled - Updated category." },
+            "doc": "" },
         "locations":
-          [ { "lineno": 1,
+          [ { "lineno": 9,
+              "filename": "wix_faq_v1_FaqService_PartiallyUpdateCategory_updateCategory.js" },
+            { "lineno": 1,
               "filename": "wix_faq_v1_FaqService_UpdateCategory_updateCategory.js" } ],
         "docs":
-          { "summary": "Updates an existing category. Replaces all existing data for this category.",
+          { "summary": "Partially update Category for Velo",
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -500,14 +502,14 @@
                     [ "import wixFaqBackend from \"wix-faq-backend\";",
                       "",
                       "export function updateCategory() {",
-                      "  const id = \"a string\";",
                       "  const category = {",
+                      "    _id: \"a string\",",
                       "    title: \"a string\",",
                       "    sortOrder: 1.23",
                       "  };",
                       "",
                       "  return wixFaqBackend",
-                      "    .updateCategory(id, category)",
+                      "    .updateCategory(category)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -523,15 +525,13 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "updateQuestion",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
-          [ { "name": "id",
-              "type": "string",
-              "doc": "FIXME auto-derive field with id\n ID of this question entry." },
-            { "name": "questionEntry",
-              "type": "wix-faq-backend.QuestionEntry_29730883065",
-              "doc": "Question entry to update." } ],
+          [ { "name": "questionEntry",
+              "type": "wix-faq-backend.QuestionEntry_30377919292",
+              "doc": "Question entry to create." } ],
         "ret":
           { "type":
               { "name": "Promise",
@@ -539,10 +539,12 @@
                   [ "wix-faq-backend.QuestionEntry_37721379577" ] },
             "doc": "Fulfilled - Question entry, including a single question and its answer." },
         "locations":
-          [ { "lineno": 17,
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_PartiallyUpdateQuestion_updateQuestion.js" },
+            { "lineno": 17,
               "filename": "wix_faq_v1_FaqService_UpdateQuestion_updateQuestion.js" } ],
         "docs":
-          { "summary": "Update an existing question entry. Replaces the previous version.",
+          { "summary": "Partially update Question entry for Velo",
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -550,8 +552,8 @@
                     [ "import wixFaqBackend from \"wix-faq-backend\";",
                       "",
                       "export function updateQuestion() {",
-                      "  const id = \"a string\";",
                       "  const questionEntry = {",
+                      "    _id: \"a string\",",
                       "    question: \"a string\",",
                       "    answer: {",
                       "      format: {",
@@ -570,7 +572,7 @@
                       "  };",
                       "",
                       "  return wixFaqBackend",
-                      "    .updateQuestion(id, questionEntry)",
+                      "    .updateQuestion(questionEntry)",
                       "    .then((response) => {",
                       "      console.log(response);",
                       "    })",
@@ -644,10 +646,10 @@
   "messages":
     [ { "name": "Category_4831108253",
         "locations":
-          [ { "lineno": 29,
-              "filename": "shared.js" } ],
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_CreateCategory_createCategory.js" } ],
         "docs":
-          { "summary": "Category to update.",
+          { "summary": "Category to create.",
             "links": [],
             "examples": [],
             "extra":
@@ -663,14 +665,40 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
+      { "name": "Category_5663521922",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_PartiallyUpdateCategory_updateCategory.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "_id",
+              "type": "string",
+              "doc": "Category ID.",
+              "optional": true },
+            { "name": "title",
+              "type": "string",
+              "doc": "Category title.",
+              "optional": true },
+            { "name": "sortOrder",
+              "type": "number",
+              "doc": "Order of category within a site.",
+              "optional": true } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "Category_9228891322",
         "locations":
-          [ { "lineno": 37,
+          [ { "lineno": 35,
               "filename": "shared.js" } ],
         "docs":
-          { "summary": "Updated category.",
-            "links": [],
+          { "links": [],
             "examples": [],
             "extra":
               {  } },
@@ -692,10 +720,11 @@
               "doc": "Category's last update timestamp." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Content_10470174451",
         "locations":
-          [ { "lineno": 57,
+          [ { "lineno": 54,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Contains the answer to the question.",
@@ -721,7 +750,7 @@
         "labels": [] },
       { "name": "Content_10748240614",
         "locations":
-          [ { "lineno": 48,
+          [ { "lineno": 45,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Contains the answer to the question.",
@@ -758,18 +787,19 @@
         "members":
           [ { "name": "limit",
               "type": "number",
-              "doc": "The number of items to load.\n Cursor token returned in the query response. To be used on the next query request, but not the first query request.",
+              "doc": "Number of items to load.",
               "optional": true },
             { "name": "cursor",
               "type": "string",
-              "doc": "Cursor returned in last query response. Should not be provided on first page request",
+              "doc": "Pointer to the next or previous page in the list of results.\n\nYou can get the relevant cursor token\nfrom the `pagingMetadata` object in the previous call's response.\nNot relevant for the first request.",
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Cursors_3337235656",
         "locations":
-          [ { "lineno": 10,
+          [ { "lineno": 13,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used.",
@@ -780,16 +810,17 @@
         "members":
           [ { "name": "next",
               "type": "string",
-              "doc": "Cursor pointing to next result page." },
+              "doc": "Cursor pointing to next page in the list of results." },
             { "name": "prev",
               "type": "string",
-              "doc": "Cursor pointing to previous result page." } ],
+              "doc": "Cursor pointing to previous page in the list of results." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Label_4605412461",
         "locations":
-          [ { "lineno": 66,
+          [ { "lineno": 63,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Label to add or update.",
@@ -811,7 +842,7 @@
         "labels": [] },
       { "name": "Label_4790789903",
         "locations":
-          [ { "lineno": 74,
+          [ { "lineno": 71,
               "filename": "shared.js" } ],
         "docs":
           { "links": [],
@@ -849,7 +880,31 @@
               "doc": "Metadata for the paginated results." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "ListCategoriesResult_17441120979",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "wix_faq_v1_FaqService_ListCategories_listCategories.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "categories",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.Category_9228891322" ] },
+              "doc": "List of categories." },
+            { "name": "pagingMetadata",
+              "type": "wix-faq-backend.PagingMetadataV2_5961166073",
+              "doc": "Metadata for the paginated results." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ListQuestionsRequest_13969406726",
         "locations":
           [ { "lineno": 1,
@@ -922,7 +977,31 @@
               "doc": "Metadata for the paginated results." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "ListQuestionsResult_41432327813",
+        "locations":
+          [ { "lineno": 19,
+              "filename": "wix_faq_v1_FaqService_ListQuestions_listQuestions.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "questions",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "wix-faq-backend.QuestionEntry_37721379577" ] },
+              "doc": "List of question entries." },
+            { "name": "pagingMetadata",
+              "type": "wix-faq-backend.PagingMetadataV2_5961166073",
+              "doc": "Metadata for the paginated results." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PagingMetadataV2_5481679798",
         "locations":
           [ { "lineno": 18,
@@ -951,7 +1030,41 @@
               "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "PagingMetadataV2_5961166073",
+        "locations":
+          [ { "lineno": 21,
+              "filename": "shared.js" } ],
+        "docs":
+          { "summary": "Metadata for the paginated results.",
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "count",
+              "type": "number",
+              "doc": "Number of items returned in the response." },
+            { "name": "offset",
+              "type": "number",
+              "doc": "Offset that was requested." },
+            { "name": "total",
+              "type": "number",
+              "doc": "Total number of items that match the query. Returned if offset paging is used and the `tooManyToCount` flag is not set." },
+            { "name": "tooManyToCount",
+              "type": "boolean",
+              "doc": "Flag that indicates the server failed to calculate the `total` field." },
+            { "name": "cursors",
+              "type": "wix-faq-backend.Cursors_3337235656",
+              "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used." },
+            { "name": "hasNext",
+              "type": "boolean",
+              "doc": "Indicates if there are more results after the current page.\n If `true`, another page of results can be retrieved.\n If `false`, this is the last page." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "QuestionEntry_29730883065",
         "locations":
           [ { "lineno": 1,
@@ -993,8 +1106,8 @@
         "labels": [] },
       { "name": "QuestionEntry_30377919292",
         "locations":
-          [ { "lineno": 1,
-              "filename": "wix_faq_v1_FaqService_CreateQuestion_createQuestion.js" } ],
+          [ { "lineno": 100,
+              "filename": "shared.js" } ],
         "docs":
           { "summary": "Question entry to create.",
             "links": [],
@@ -1038,7 +1151,7 @@
         "labels": [] },
       { "name": "QuestionEntry_37721379577",
         "locations":
-          [ { "lineno": 81,
+          [ { "lineno": 78,
               "filename": "shared.js" } ],
         "docs":
           { "summary": "Question entry, including a single question and its answer.",
