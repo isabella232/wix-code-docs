@@ -33,10 +33,7 @@
                     [ "shipping-rates-spi.Item" ] },
               "doc": "All items to be shipped." },
             { "name": "options",
-              "type":
-                { "name": "Array",
-                  "typeParams":
-                    [ "shipping-rates-spi.Option" ] },
+              "type": "shipping-rates-spi.Option",
               "doc": "Shipping origin, shipping destination, and general configurations." } ],
         "ret":
           { "type":
@@ -194,8 +191,7 @@
               "doc": "Additional costs such as handling, insurance, or packaging for fragile items." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Item",
         "locations":
           [ { "lineno": 17,
@@ -283,8 +279,7 @@
               "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: 10$, 10.1$, 10.12$ (up to 2 decimal places).\nHowever it **cannot** be: 10.123$ (or further).\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PhysicalProperties",
         "locations":
           [ { "lineno": 48,
