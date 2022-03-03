@@ -1,6 +1,7 @@
 { "name": "shipping-rates-spi",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "shipping-rates-spi-index.js" },
@@ -21,7 +22,8 @@
   "properties": [],
   "operations":
     [ { "name": "getShippingRates",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "items",
@@ -31,7 +33,7 @@
                     [ "shipping-rates-spi.Item" ] },
               "doc": "All items to be shipped." },
             { "name": "options",
-              "type": "shipping-rates-spi.Option",
+              "type": "shipping-rates-spi.Options",
               "doc": "Shipping origin, shipping destination, and general configurations." } ],
         "ret":
           { "type":
@@ -277,7 +279,46 @@
               "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: 10$, 10.1$, 10.12$ (up to 2 decimal places).\nHowever it **cannot** be: 10.123$ (or further).\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
+      { "name": "Options",
+        "locations":
+          [ { "lineno": 26,
+              "filename": "shipping-rates-spi.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "shippingDestination",
+              "type": "shipping-rates-spi.AddressDetails",
+              "doc": "Address the items are shipped to." },
+            { "name": "shippingOrigin",
+              "type": "shipping-rates-spi.AddressDetails",
+              "doc": "Address the items are sent from." },
+            { "name": "buyerDetails",
+              "type": "shipping-rates-spi.BuyerDetails",
+              "doc": "Buyer's contact details." },
+            { "name": "weightUnit",
+              "type": "string",
+              "doc": "Weight measurement unit. Supported values: `\"KG\"` (kilograms) or `\"LB\"` (pounds)." },
+            { "name": "taxIncludedInPrices",
+              "type": "boolean",
+              "doc": "Whether tax in included in the items' prices." },
+            { "name": "currency",
+              "type": "string",
+              "doc": "Currency code the shipping rates will be presented in. For example, `\"USD\"` or `\"EUR\"`." },
+            { "name": "instanceId",
+              "type": "string",
+              "doc": "Instance ID of the app that is providing the shipping rates." },
+            { "name": "shippingRateDecimalPlaces",
+              "type": "number",
+              "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: 10$, 10.1$, 10.12$ (up to 2 decimal places).\nHowever it **cannot** be: 10.123$ (or further).\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "PhysicalProperties",
         "locations":
           [ { "lineno": 48,
