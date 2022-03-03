@@ -121,8 +121,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "createCategory",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "category",
@@ -314,8 +313,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listCategories",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "paging",
@@ -361,8 +359,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listQuestions",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "filters",
@@ -494,7 +491,7 @@
             { "lineno": 1,
               "filename": "wix_faq_v1_FaqService_UpdateCategory_updateCategory.js" } ],
         "docs":
-          { "summary": "Partially update Category for Velo",
+          { "summary": "Updates categories fields. Updates only the values passed.",
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -544,7 +541,7 @@
             { "lineno": 17,
               "filename": "wix_faq_v1_FaqService_UpdateQuestion_updateQuestion.js" } ],
         "docs":
-          { "summary": "Partially update Question entry for Velo",
+          { "summary": "Updates question entries' fields. Updates only the values passed.",
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -665,8 +662,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Category_5663521922",
         "locations":
           [ { "lineno": 1,
@@ -691,8 +687,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Category_9228891322",
         "locations":
           [ { "lineno": 35,
@@ -720,8 +715,7 @@
               "doc": "Category's last update timestamp." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Content_10470174451",
         "locations":
           [ { "lineno": 54,
@@ -795,8 +789,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Cursors_3337235656",
         "locations":
           [ { "lineno": 13,
@@ -816,8 +809,7 @@
               "doc": "Cursor pointing to previous page in the list of results." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Label_4605412461",
         "locations":
           [ { "lineno": 63,
@@ -903,8 +895,7 @@
               "doc": "Metadata for the paginated results." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListQuestionsRequest_13969406726",
         "locations":
           [ { "lineno": 1,
@@ -1000,8 +991,7 @@
               "doc": "Metadata for the paginated results." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PagingMetadataV2_5481679798",
         "locations":
           [ { "lineno": 18,
@@ -1063,8 +1053,7 @@
               "doc": "Indicates if there are more results after the current page.\n If `true`, another page of results can be retrieved.\n If `false`, this is the last page." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "QuestionEntry_29730883065",
         "locations":
           [ { "lineno": 1,
