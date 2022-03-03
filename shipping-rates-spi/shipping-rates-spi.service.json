@@ -8,13 +8,7 @@
   "docs":
     { "summary": "The Shipping Rates SPI.",
       "description":
-        [ "To use the Shipping Rates SPI, import `XXXX` from the `XXXX` module:",
-          "",
-          "   ```javascript",
-          "",
-          "   import XXXXX from 'XXXXX';",
-          "",
-          "   ```" ],
+        [ "To learn more about how to use the Shipping Rates SPI, read the (Shipping SPI Beta Article)[LINK TO COME]" ],
       "links": [],
       "examples": [],
       "extra":
@@ -45,9 +39,9 @@
           [ { "lineno": 1,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
-          { "summary": "This endpoint will be called by Wix Stores to the relevant registered shipping providers, based on the requested destination of the items being sent.",
+          { "summary": "Retrieves relevant shipping rates provided by integrated shipping providers.",
             "description":
-              [ "TBD" ],
+              [ "This endpoint is called by Wix Stores to the relevant registered shipping providers, based on the requested destination of the items being sent." ],
             "links": [],
             "examples":
               [ { "title": "Example of `spi-integration.js` file.",
