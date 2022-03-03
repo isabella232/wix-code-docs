@@ -50,7 +50,7 @@
               [ "TBD" ],
             "links": [],
             "examples":
-              [ { "title": "Example of `my-integration-name.js` file.",
+              [ { "title": "Example of `spi-integration.js` file.",
                   "body":
                     [ "export const getShippingRates = (items, options) => {",
                       "  console.log(\"log\", items, options);",
@@ -64,7 +64,16 @@
                       "        \"additionalCharges\": []",
                       "      }",
                       "    }]",
-                      "  }",
+                      "  };",
+                      "};" ],
+                  "extra":
+                    {  } },
+                { "title": "Example of `spi-integration-config.js` file.",
+                  "body":
+                    [ "export function getConfig() {",
+                      "  return {",
+                      "      \"name\": \"Shipping Platform Name\",",
+                      "  };",
                       "};" ],
                   "extra":
                     {  } } ],
@@ -76,7 +85,7 @@
   "messages":
     [ { "name": "AdditionalCharges",
         "locations":
-          [ { "lineno": 122,
+          [ { "lineno": 123,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -98,7 +107,7 @@
         "labels": [] },
       { "name": "AddressDetails",
         "locations":
-          [ { "lineno": 55,
+          [ { "lineno": 56,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -138,7 +147,7 @@
         "labels": [] },
       { "name": "BuyerDetails",
         "locations":
-          [ { "lineno": 73,
+          [ { "lineno": 74,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -168,7 +177,7 @@
         "labels": [] },
       { "name": "CatalogReference",
         "locations":
-          [ { "lineno": 41,
+          [ { "lineno": 42,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -190,7 +199,7 @@
         "labels": [] },
       { "name": "Cost",
         "locations":
-          [ { "lineno": 113,
+          [ { "lineno": 114,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -212,7 +221,7 @@
         "labels": [] },
       { "name": "Item",
         "locations":
-          [ { "lineno": 17,
+          [ { "lineno": 18,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -240,7 +249,7 @@
         "labels": [] },
       { "name": "Logistics",
         "locations":
-          [ { "lineno": 106,
+          [ { "lineno": 107,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -301,7 +310,7 @@
           [ "removed" ] },
       { "name": "Options",
         "locations":
-          [ { "lineno": 26,
+          [ { "lineno": 27,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -338,7 +347,7 @@
         "labels": [] },
       { "name": "PhysicalProperties",
         "locations":
-          [ { "lineno": 48,
+          [ { "lineno": 49,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -360,7 +369,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 131,
+          [ { "lineno": 132,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -379,7 +388,7 @@
         "labels": [] },
       { "name": "ShippingRate",
         "locations":
-          [ { "lineno": 98,
+          [ { "lineno": 99,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -404,7 +413,7 @@
         "labels": [] },
       { "name": "ShippingRates",
         "locations":
-          [ { "lineno": 93,
+          [ { "lineno": 94,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -442,7 +451,7 @@
         "labels": [] },
       { "name": "StreetAddressInfo",
         "locations":
-          [ { "lineno": 67,
+          [ { "lineno": 68,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -461,7 +470,7 @@
         "labels": [] },
       { "name": "VatId",
         "locations":
-          [ { "lineno": 82,
+          [ { "lineno": 83,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
