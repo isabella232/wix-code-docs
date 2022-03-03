@@ -1,6 +1,7 @@
 { "name": "wix-members-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -111,10 +112,10 @@
           {  } },
       { "name": "followers",
         "labels":
-          [ "removed" ],
+          [ "new" ],
         "get": true,
         "set": false,
-        "type": "wix-members-backend.Authorization",
+        "type": "wix-members-backend.Followers",
         "locations":
           [ { "lineno": 146,
               "filename": "index.js" } ],
