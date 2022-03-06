@@ -156,6 +156,45 @@
       }
     },
     {
+      "name": "endsWith",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "eq",
       "params": [
         {
@@ -229,6 +268,45 @@
       }
     },
     {
+      "name": "exists",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "find",
       "params": [],
       "requiredFields": [],
@@ -279,6 +357,312 @@
               ""
             ]
           }
+        ]
+      }
+    },
+    {
+      "name": "ge",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "gt",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "hasAll",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "hasSome",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "in",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "isEmpty",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "isNotEmpty",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "le",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
         ]
       }
     },
@@ -342,6 +726,45 @@
               ""
             ]
           }
+        ]
+      }
+    },
+    {
+      "name": "lt",
+      "params": [
+        {
+          "name": "propertyName",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "any"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
         ]
       }
     },
