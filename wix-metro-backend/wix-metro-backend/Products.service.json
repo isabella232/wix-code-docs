@@ -273,49 +273,6 @@
       }
     },
     {
-      "name": "Audio",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "WixMedia ID."
-        },
-        {
-          "name": "filename",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Audio filename. Optional."
-        },
-        {
-          "name": "url",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Audio URL."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "CreateProductRequest",
       "members": [
         {
@@ -448,49 +405,6 @@
     {
       "name": "DeleteProductResponse",
       "members": [],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Document",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "WixMedia ID."
-        },
-        {
-          "name": "filename",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Document filename. Optional."
-        },
-        {
-          "name": "url",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Document URL."
-        }
-      ],
       "docs": {
         "description": [
           ""
@@ -783,7 +697,7 @@
           "name": "audio",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Audio"
+              "nativeType": "string"
             }
           ],
           "doc": ""
@@ -822,7 +736,7 @@
           "name": "document",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Document"
+              "nativeType": "string"
             }
           ],
           "doc": ""
@@ -928,7 +842,7 @@
           "name": "video",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.VideoV2"
+              "nativeType": "string"
             }
           ],
           "doc": ""
@@ -1364,56 +1278,6 @@
             }
           ],
           "doc": "Video width."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "VideoV2",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "WixMedia ID."
-        },
-        {
-          "name": "filename",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video filename. Optional."
-        },
-        {
-          "name": "resolutions",
-          "optional": true,
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "referenceType": "wix-metro-backend.Products.VideoResolution"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Available resolutions for the video, starting with the optimal resolution."
         }
       ],
       "docs": {
