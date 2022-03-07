@@ -47,7 +47,7 @@
               [ { "title": "Example of `spi-integration.js` file.",
                   "body":
                     [ "export const getShippingRates = (items, options) => {",
-                      "  console.log(\"log\", items, options);",
+                      "",
                       "  return {",
                       "    \"shippingRates\": [{",
                       "      \"code\": \"usps_international\",",
@@ -62,11 +62,71 @@
                       "};" ],
                   "extra":
                     {  } },
+                { "title": "Returning shipping rates based on quantity of items in the cart.",
+                  "body":
+                    [ "export const getShippingRates = (items, options) => {",
+                      "",
+                      "  const { rates: ratesByQuantity } = getRatesByQuantity(items)",
+                      "  const finalRates = ratesByQuantity;",
+                      "",
+                      "  // Ensure that output currency matches site currency",
+                      "  finalRates[0].cost.currency = options.currency;",
+                      "",
+                      "  return { 'shippingRates': finalRates };",
+                      "}",
+                      "",
+                      "const getRatesByQuantity = (items) => {",
+                      "  const cartQuantity = calculateTotalCartQuantity(items);",
+                      "",
+                      "  return ShippingRatesByQuantity(cartQuantity);",
+                      "}",
+                      "",
+                      "function calculateTotalCartQuantity(items) {",
+                      "  return items.reduce((acc, item) => acc += item.quantity, 0);",
+                      "}",
+                      "",
+                      "function ShippingRatesByQuantity(totalCartQuantity) {",
+                      "  if (totalCartQuantity >= 3) {",
+                      "    return {",
+                      "      shippingPrice: 10,",
+                      "      rates: [{",
+                      "        code: 'quantity_more_3',",
+                      "        title: 'Quantity > 3',",
+                      "        logistics: {",
+                      "          deliveryTime: '3-5 Days',",
+                      "          instructions: 'Please be available',",
+                      "        },",
+                      "        cost: {",
+                      "          price: '10.00',",
+                      "          currency: '',",
+                      "          additionalCharges: [],",
+                      "        }",
+                      "      }]",
+                      "    }",
+                      "  } else return {",
+                      "    shippingPrice: 20,",
+                      "    rates: [{",
+                      "      code: 'quantity_more_1',",
+                      "      title: '1 Item',",
+                      "      logistics: {",
+                      "        deliveryTime: '3-5 Days',",
+                      "        instructions: 'Please be available',",
+                      "      },",
+                      "      cost: {",
+                      "        price: '20.00',",
+                      "        currency: '',",
+                      "        additionalCharges: [],",
+                      "      }",
+                      "    }]",
+                      "  }",
+                      "}" ],
+                  "extra":
+                    {  } },
                 { "title": "Example of `spi-integration-config.js` file.",
                   "body":
                     [ "export function getConfig() {",
                       "  return {",
-                      "      \"name\": \"Shipping Platform Name\",",
+                      "    \"name\": \"Shipping Platform Name\",",
                       "  };",
                       "};" ],
                   "extra":
@@ -79,7 +139,7 @@
   "messages":
     [ { "name": "AdditionalCharges",
         "locations":
-          [ { "lineno": 123,
+          [ { "lineno": 124,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -101,7 +161,7 @@
         "labels": [] },
       { "name": "AddressDetails",
         "locations":
-          [ { "lineno": 56,
+          [ { "lineno": 57,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -141,7 +201,7 @@
         "labels": [] },
       { "name": "BuyerDetails",
         "locations":
-          [ { "lineno": 74,
+          [ { "lineno": 75,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -171,7 +231,7 @@
         "labels": [] },
       { "name": "CatalogReference",
         "locations":
-          [ { "lineno": 42,
+          [ { "lineno": 43,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -193,7 +253,7 @@
         "labels": [] },
       { "name": "Cost",
         "locations":
-          [ { "lineno": 114,
+          [ { "lineno": 115,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -215,7 +275,7 @@
         "labels": [] },
       { "name": "Item",
         "locations":
-          [ { "lineno": 18,
+          [ { "lineno": 19,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -243,7 +303,7 @@
         "labels": [] },
       { "name": "Logistics",
         "locations":
-          [ { "lineno": 107,
+          [ { "lineno": 108,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -304,7 +364,7 @@
           [ "removed" ] },
       { "name": "Options",
         "locations":
-          [ { "lineno": 27,
+          [ { "lineno": 28,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -341,7 +401,7 @@
         "labels": [] },
       { "name": "PhysicalProperties",
         "locations":
-          [ { "lineno": 49,
+          [ { "lineno": 50,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -363,7 +423,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 132,
+          [ { "lineno": 133,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -382,7 +442,7 @@
         "labels": [] },
       { "name": "ShippingRate",
         "locations":
-          [ { "lineno": 99,
+          [ { "lineno": 100,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -407,7 +467,7 @@
         "labels": [] },
       { "name": "ShippingRates",
         "locations":
-          [ { "lineno": 94,
+          [ { "lineno": 95,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -445,7 +505,7 @@
         "labels": [] },
       { "name": "StreetAddressInfo",
         "locations":
-          [ { "lineno": 68,
+          [ { "lineno": 69,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -464,7 +524,7 @@
         "labels": [] },
       { "name": "VatId",
         "locations":
-          [ { "lineno": 83,
+          [ { "lineno": 84,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
