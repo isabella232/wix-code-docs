@@ -8,7 +8,7 @@
   "docs":
     { "summary": "The Shipping Rates SPI.",
       "description":
-        [ "To learn more about how to use the Shipping Rates SPI, read the (Shipping SPI Beta Article)[LINK TO COME]" ],
+        [ "To learn more about the Shipping Rates SPI and how to use it, read the [Shipping SPI Beta Article](https://support.wix.com/en/article/velo-shipping-rates-spi)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -41,7 +41,9 @@
         "docs":
           { "summary": "Retrieves relevant shipping rates provided by integrated shipping providers.",
             "description":
-              [ "This endpoint is called by Wix Stores to the relevant registered shipping providers, based on the requested destination of the items being sent." ],
+              [ "This endpoint is called by Wix Stores to the relevant registered shipping providers, based on the requested destination of the items being sent.",
+                "",
+                "> **Note:** The `items` and `options` params are provided by the cart. However, you may add to them if, for example, you want to integrate with a shipping provider that requires information not already provided." ],
             "links": [],
             "examples":
               [ { "title": "Example of `spi-integration.js` file.",
@@ -139,7 +141,7 @@
   "messages":
     [ { "name": "AdditionalCharges",
         "locations":
-          [ { "lineno": 124,
+          [ { "lineno": 125,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -161,7 +163,7 @@
         "labels": [] },
       { "name": "AddressDetails",
         "locations":
-          [ { "lineno": 57,
+          [ { "lineno": 58,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -201,7 +203,7 @@
         "labels": [] },
       { "name": "BuyerDetails",
         "locations":
-          [ { "lineno": 75,
+          [ { "lineno": 76,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -231,7 +233,7 @@
         "labels": [] },
       { "name": "CatalogReference",
         "locations":
-          [ { "lineno": 43,
+          [ { "lineno": 44,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -253,7 +255,7 @@
         "labels": [] },
       { "name": "Cost",
         "locations":
-          [ { "lineno": 115,
+          [ { "lineno": 116,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -275,7 +277,7 @@
         "labels": [] },
       { "name": "Item",
         "locations":
-          [ { "lineno": 19,
+          [ { "lineno": 20,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -303,7 +305,7 @@
         "labels": [] },
       { "name": "Logistics",
         "locations":
-          [ { "lineno": 108,
+          [ { "lineno": 109,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -364,7 +366,7 @@
           [ "removed" ] },
       { "name": "Options",
         "locations":
-          [ { "lineno": 28,
+          [ { "lineno": 29,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -395,13 +397,14 @@
               "doc": "Instance ID of the app that is providing the shipping rates." },
             { "name": "shippingRateDecimalPlaces",
               "type": "number",
-              "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: 10$, 10.1$, 10.12$ (up to 2 decimal places).\nHowever it **cannot** be: 10.123$ (or further).\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
+              "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: $10, $10.1, $10.12 (up to 2 decimal places).\nHowever it **cannot** be: $10.123 (or further).\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "PhysicalProperties",
         "locations":
-          [ { "lineno": 50,
+          [ { "lineno": 51,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -423,7 +426,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 133,
+          [ { "lineno": 134,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -442,7 +445,7 @@
         "labels": [] },
       { "name": "ShippingRate",
         "locations":
-          [ { "lineno": 100,
+          [ { "lineno": 101,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -467,7 +470,7 @@
         "labels": [] },
       { "name": "ShippingRates",
         "locations":
-          [ { "lineno": 95,
+          [ { "lineno": 96,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -505,7 +508,7 @@
         "labels": [] },
       { "name": "StreetAddressInfo",
         "locations":
-          [ { "lineno": 69,
+          [ { "lineno": 70,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -524,7 +527,7 @@
         "labels": [] },
       { "name": "VatId",
         "locations":
-          [ { "lineno": 84,
+          [ { "lineno": 85,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
