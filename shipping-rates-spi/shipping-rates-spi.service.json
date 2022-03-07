@@ -8,7 +8,7 @@
   "docs":
     { "summary": "The Shipping Rates SPI.",
       "description":
-        [ "To learn more about the Shipping Rates SPI and how to use it, read the [Shipping SPI Beta Article](https://support.wix.com/en/article/velo-shipping-rates-spi)." ],
+        [ "To learn more about the Shipping Rates SPI and how to use it, read the [Velo: Shipping SPI Article](https://support.wix.com/en/article/velo-shipping-rates-spi)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -16,8 +16,7 @@
   "properties": [],
   "operations":
     [ { "name": "getShippingRates",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "items",
@@ -141,7 +140,7 @@
   "messages":
     [ { "name": "AdditionalCharges",
         "locations":
-          [ { "lineno": 125,
+          [ { "lineno": 127,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -163,7 +162,7 @@
         "labels": [] },
       { "name": "AddressDetails",
         "locations":
-          [ { "lineno": 58,
+          [ { "lineno": 60,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -203,7 +202,7 @@
         "labels": [] },
       { "name": "BuyerDetails",
         "locations":
-          [ { "lineno": 76,
+          [ { "lineno": 78,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -233,7 +232,7 @@
         "labels": [] },
       { "name": "CatalogReference",
         "locations":
-          [ { "lineno": 44,
+          [ { "lineno": 46,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -255,7 +254,7 @@
         "labels": [] },
       { "name": "Cost",
         "locations":
-          [ { "lineno": 116,
+          [ { "lineno": 118,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -305,7 +304,7 @@
         "labels": [] },
       { "name": "Logistics",
         "locations":
-          [ { "lineno": 109,
+          [ { "lineno": 111,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -397,14 +396,14 @@
               "doc": "Instance ID of the app that is providing the shipping rates." },
             { "name": "shippingRateDecimalPlaces",
               "type": "number",
-              "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: $10, $10.1, $10.12 (up to 2 decimal places).\nHowever it **cannot** be: $10.123 (or further).\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
+              "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: $10, $10.1, $10.12 (up to 2 decimal places).\n\nHowever it **cannot** be: $10.123 (or further).\n\nIf the requested number of decimal places is less than the shipping option's actual rate, that shipping option will be ignored and not provided to the user." } ],
         "extra":
           {  },
         "labels":
           [ "changed" ] },
       { "name": "PhysicalProperties",
         "locations":
-          [ { "lineno": 51,
+          [ { "lineno": 53,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -426,7 +425,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 134,
+          [ { "lineno": 136,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -445,7 +444,7 @@
         "labels": [] },
       { "name": "ShippingRate",
         "locations":
-          [ { "lineno": 101,
+          [ { "lineno": 103,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -470,7 +469,7 @@
         "labels": [] },
       { "name": "ShippingRates",
         "locations":
-          [ { "lineno": 96,
+          [ { "lineno": 98,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -508,7 +507,7 @@
         "labels": [] },
       { "name": "StreetAddressInfo",
         "locations":
-          [ { "lineno": 70,
+          [ { "lineno": 72,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -527,7 +526,7 @@
         "labels": [] },
       { "name": "VatId",
         "locations":
-          [ { "lineno": 85,
+          [ { "lineno": 87,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
