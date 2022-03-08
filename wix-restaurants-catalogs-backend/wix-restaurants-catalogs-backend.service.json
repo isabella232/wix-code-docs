@@ -5446,7 +5446,7 @@
           "name": "item",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.item-3"
+              "referenceType": "wix-restaurants-catalogs-backend.item_3"
             }
           ],
           "doc": ""
@@ -5675,7 +5675,7 @@
           "name": "menu",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.menu-4"
+              "referenceType": "wix-restaurants-catalogs-backend.menu_4"
             }
           ],
           "doc": ""
@@ -5843,7 +5843,7 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.section-5"
+              "referenceType": "wix-restaurants-catalogs-backend.section_5"
             }
           ],
           "doc": ""
@@ -6188,7 +6188,7 @@
       }
     },
     {
-      "name": "item-3",
+      "name": "item_3",
       "members": [
         {
           "name": "_id",
@@ -6210,7 +6210,7 @@
       }
     },
     {
-      "name": "menu-4",
+      "name": "menu_4",
       "members": [
         {
           "name": "_id",
@@ -6232,7 +6232,7 @@
       }
     },
     {
-      "name": "section-5",
+      "name": "section_5",
       "members": [
         {
           "name": "_id",
