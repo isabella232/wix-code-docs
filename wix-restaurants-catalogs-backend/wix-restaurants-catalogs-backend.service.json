@@ -18,12 +18,13 @@
               "referenceType": "wix-restaurants-catalogs-backend.ArchiveMenuIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
       "requiredFields": [
-        "menuId"
+        "identifiers.catalogId",
+        "identifiers.menuId"
       ],
       "ret": {
         "type": [
@@ -42,7 +43,592 @@
       },
       "docs": {
         "description": [
-          "Archive menu."
+          "Archives a menu. You can't update archived menus."
+        ]
+      }
+    },
+    {
+      "name": "bulkArchiveMenus",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the menus belong to.",
+          "required": true
+        },
+        {
+          "name": "ids",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "IDs of the menus to archive.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkArchiveMenusOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkArchiveMenusResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Changes the `archived` boolean to `true` for multiple menus in a draft catalog."
+        ]
+      }
+    },
+    {
+      "name": "bulkCreateDishes",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the dishes will belong to.",
+          "required": true
+        },
+        {
+          "name": "createDishRequests",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-catalogs-backend.CreateDishRequest"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Information about the dishes to create. Limited to 20 dishes.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkCreateDishesOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkCreateDishesResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Adds multiple dishes to a draft catalog."
+        ]
+      }
+    },
+    {
+      "name": "bulkCreateMenus",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the menus will belong to.",
+          "required": true
+        },
+        {
+          "name": "menus",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-catalogs-backend.Menu"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Information about the menus to create. Limited to 20 menus.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkCreateMenusOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkCreateMenusResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Adds multiple menus to a draft catalog."
+        ]
+      }
+    },
+    {
+      "name": "bulkCreateSections",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the sections will belong to.",
+          "required": true
+        },
+        {
+          "name": "createSectionRequests",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-catalogs-backend.CreateSectionRequest"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Information about the sections to create. Limited to 20 sections.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkCreateSectionsOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkCreateSectionsResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Adds multiple sections to a draft catalog."
+        ]
+      }
+    },
+    {
+      "name": "bulkCreateVariations",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the variations will belong to.",
+          "required": true
+        },
+        {
+          "name": "variations",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-catalogs-backend.NewVariation"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Variations to create. Limited to 20 variations.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkCreateVariationsOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkCreateVariationsResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Adds multiple variations to a draft catalog."
+        ]
+      }
+    },
+    {
+      "name": "bulkUnarchiveMenus",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the menus belong to.",
+          "required": true
+        },
+        {
+          "name": "ids",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "IDs of the menus to unarchive.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkUnarchiveMenusOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkUnarchiveMenusResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Changes the `archived` boolean to `false` for multiple menus in a draft catalog."
+        ]
+      }
+    },
+    {
+      "name": "bulkUpdateItems",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the items belong to.",
+          "required": true
+        },
+        {
+          "name": "items",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-catalogs-backend.Item"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Items to update. Limited to 20 items.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkUpdateItemsOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkUpdateItemsResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Updates multiple items in a draft catalog.\nYou can't update archived items."
+        ]
+      }
+    },
+    {
+      "name": "bulkUpdateMenus",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the menus belong to.",
+          "required": true
+        },
+        {
+          "name": "menus",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-catalogs-backend.Menu"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Menus to update.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkUpdateMenusOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkUpdateMenusResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Updates multiple menus in a draft catalog.\nYou can't update archived menus."
+        ]
+      }
+    },
+    {
+      "name": "bulkUpdateSections",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog the sections belong to.",
+          "required": true
+        },
+        {
+          "name": "updateSectionsRequests",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionRequest"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Information about the sections to update. Limited to 20 sections.",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.BulkUpdateSectionsOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.BulkUpdateSectionsResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Updates multiple sections in a draft catalog.\nYou can't update archived sections."
         ]
       }
     },
@@ -56,7 +642,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.CreateDishIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -66,14 +652,15 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": "Dish data (as Item object)",
+          "doc": "Item of type `dish` to create.",
           "required": true
         }
       ],
       "requiredFields": [
+        "identifiers.catalogId",
         "dish",
-        "menuId",
-        "sectionId"
+        "identifiers.menuId",
+        "identifiers.sectionId"
       ],
       "ret": {
         "type": [
@@ -92,7 +679,45 @@
       },
       "docs": {
         "description": [
-          "Creates a new dish."
+          "Creates a dish."
+        ]
+      }
+    },
+    {
+      "name": "createDraftCatalog",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the catalog to create a draft version for.",
+          "required": true
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.CreateDraftCatalogResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Creates a draft version of the specified catalog.\nThen you can update and publish the draft catalog by using the endpoints in the [Draft Catalogs category](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs)."
         ]
       }
     },
@@ -106,8 +731,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id",
-          "required": false
+          "doc": "ID of the catalog the menu will belong to.",
+          "required": true
         },
         {
           "name": "menu",
@@ -116,11 +741,12 @@
               "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": "Menu data.",
+          "doc": "Menu to create.",
           "required": true
         }
       ],
       "requiredFields": [
+        "catalogId",
         "menu"
       ],
       "ret": {
@@ -140,7 +766,7 @@
       },
       "docs": {
         "description": [
-          "Creates a new menu."
+          "Creates a menu."
         ]
       }
     },
@@ -154,7 +780,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.CreateSectionIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -164,12 +790,13 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Section data.",
+          "doc": "Section to create.",
           "required": true
         }
       ],
       "requiredFields": [
-        "menuId",
+        "identifiers.catalogId",
+        "identifiers.menuId",
         "section"
       ],
       "ret": {
@@ -189,7 +816,7 @@
       },
       "docs": {
         "description": [
-          "Creates a new menu section."
+          "Creates a section.\nYou can't add the section to multiple menus, since every section belongs to a single menu."
         ]
       }
     },
@@ -203,8 +830,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id.",
-          "required": false
+          "doc": "ID of the catalog the variation will belong to.",
+          "required": true
         },
         {
           "name": "name",
@@ -213,11 +840,12 @@
               "nativeType": "string"
             }
           ],
-          "doc": "variation name",
+          "doc": "Variation name.",
           "required": true
         }
       ],
       "requiredFields": [
+        "catalogId",
         "name"
       ],
       "ret": {
@@ -237,7 +865,45 @@
       },
       "docs": {
         "description": [
-          "Creates a new variation."
+          "Creates a variation."
+        ]
+      }
+    },
+    {
+      "name": "discardDraftCatalog",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the draft catalog to discard.",
+          "required": true
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.DiscardDraftCatalogResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Discards a draft catalog. If you want to continue using [Bulk endpoints](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs) for this catalog, you must first call the [Create Draft Catalog](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs/create-draft-catalog) endpoint again."
         ]
       }
     },
@@ -251,7 +917,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.GetItemIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -261,12 +927,13 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Default: false. Returns condition data of item",
+          "doc": "Whether `visibilityCriteria` is returned. Defaults to `false`.",
           "required": false
         }
       ],
       "requiredFields": [
-        "itemId"
+        "identifiers.itemId",
+        "identifiers.catalogId"
       ],
       "ret": {
         "type": [
@@ -285,7 +952,7 @@
       },
       "docs": {
         "description": [
-          "Retrieves an item with the provided ID."
+          "Retrieves an item."
         ]
       }
     },
@@ -299,12 +966,13 @@
               "referenceType": "wix-restaurants-catalogs-backend.GetMenuIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
       "requiredFields": [
-        "menuId"
+        "identifiers.menuId",
+        "identifiers.catalogId"
       ],
       "ret": {
         "type": [
@@ -323,7 +991,7 @@
       },
       "docs": {
         "description": [
-          "Retrieves a menu with the provided ID."
+          "Retrieves a menu."
         ]
       }
     },
@@ -337,13 +1005,14 @@
               "referenceType": "wix-restaurants-catalogs-backend.GetSectionIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
       "requiredFields": [
-        "sectionId",
-        "menuId"
+        "identifiers.sectionId",
+        "identifiers.menuId",
+        "identifiers.catalogId"
       ],
       "ret": {
         "type": [
@@ -362,7 +1031,7 @@
       },
       "docs": {
         "description": [
-          "Retrieves a menu section with the provided ID."
+          "Retrieves a section."
         ]
       }
     },
@@ -376,7 +1045,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Sorting"
             }
           ],
-          "doc": "Sort order",
+          "doc": "Sort order. Defaults to `ASC`.",
           "required": false
         },
         {
@@ -386,7 +1055,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.ListCatalogsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
@@ -408,7 +1077,7 @@
       },
       "docs": {
         "description": [
-          ""
+          "Retrieves catalogs, given the provided filtering, sorting and paging.\nNote that there is a single catalog per location."
         ]
       }
     },
@@ -422,8 +1091,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id.",
-          "required": false
+          "doc": "ID of the catalog the items belong to.",
+          "required": true
         },
         {
           "name": "fieldMask",
@@ -439,7 +1108,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "Field mask path.",
           "required": false
         },
         {
@@ -449,11 +1118,13 @@
               "referenceType": "wix-restaurants-catalogs-backend.ListItemsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
-      "requiredFields": [],
+      "requiredFields": [
+        "catalogId"
+      ],
       "ret": {
         "type": [
           {
@@ -471,7 +1142,7 @@
       },
       "docs": {
         "description": [
-          "Retrieves catalogs items."
+          "Retrieves items, given the provided filtering, sorting and paging."
         ]
       }
     },
@@ -485,8 +1156,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id",
-          "required": false
+          "doc": "ID of the catalog the menus belong to.",
+          "required": true
         },
         {
           "name": "fieldMask",
@@ -502,7 +1173,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "Field mask path.",
           "required": false
         },
         {
@@ -512,11 +1183,13 @@
               "referenceType": "wix-restaurants-catalogs-backend.ListMenusOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
-      "requiredFields": [],
+      "requiredFields": [
+        "catalogId"
+      ],
       "ret": {
         "type": [
           {
@@ -534,7 +1207,7 @@
       },
       "docs": {
         "description": [
-          "Retrieves catalog menus."
+          "Retrieves menus, given the provided filtering, sorting and paging."
         ]
       }
     },
@@ -548,8 +1221,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id",
-          "required": false
+          "doc": "ID of the catalog the sections belong to.",
+          "required": true
         },
         {
           "name": "fieldMask",
@@ -565,7 +1238,7 @@
               }
             }
           ],
-          "doc": null,
+          "doc": "Field mask path.",
           "required": false
         },
         {
@@ -575,11 +1248,13 @@
               "referenceType": "wix-restaurants-catalogs-backend.ListSectionsOptions"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
-      "requiredFields": [],
+      "requiredFields": [
+        "catalogId"
+      ],
       "ret": {
         "type": [
           {
@@ -597,7 +1272,45 @@
       },
       "docs": {
         "description": [
-          "Retrieves catalogs sections."
+          "Retrieves sections, given the provided filtering, sorting and paging."
+        ]
+      }
+    },
+    {
+      "name": "publishDraftCatalog",
+      "params": [
+        {
+          "name": "catalogId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the draft catalog to publish.",
+          "required": true
+        }
+      ],
+      "requiredFields": [
+        "catalogId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-restaurants-catalogs-backend.PublishDraftCatalogResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Publishes a draft catalog to the live site by replacing the existing catalog."
         ]
       }
     },
@@ -611,12 +1324,13 @@
               "referenceType": "wix-restaurants-catalogs-backend.UnarchiveMenuIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
       "requiredFields": [
-        "menuId"
+        "identifiers.catalogId",
+        "identifiers.menuId"
       ],
       "ret": {
         "type": [
@@ -635,7 +1349,7 @@
       },
       "docs": {
         "description": [
-          "Unarchive menu."
+          "Unarchives a menu."
         ]
       }
     },
@@ -649,7 +1363,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateItemIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -659,12 +1373,13 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateItemItem"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
       "requiredFields": [
-        "item._id"
+        "item._id",
+        "identifiers.catalogId"
       ],
       "ret": {
         "type": [
@@ -683,7 +1398,7 @@
       },
       "docs": {
         "description": [
-          "Updates specified fields in an item."
+          "Updates an item.\nYou can't update archived items."
         ]
       }
     },
@@ -697,7 +1412,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -707,11 +1422,12 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuMenu"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
       "requiredFields": [
+        "identifiers.catalogId",
         "menu._id"
       ],
       "ret": {
@@ -731,7 +1447,7 @@
       },
       "docs": {
         "description": [
-          "Updates specified fields in a menu."
+          "Updates a menu.\nYou can't update archived menus."
         ]
       }
     },
@@ -745,7 +1461,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionIdentifiers"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         },
         {
@@ -755,13 +1471,14 @@
               "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionSection"
             }
           ],
-          "doc": null,
+          "doc": "",
           "required": false
         }
       ],
       "requiredFields": [
         "section._id",
-        "menuId"
+        "identifiers.menuId",
+        "identifiers.catalogId"
       ],
       "ret": {
         "type": [
@@ -780,7 +1497,7 @@
       },
       "docs": {
         "description": [
-          "Updates specified fields in a menu section."
+          "Updates a section.\nYou can't update archived sections. Note that every section belongs to a single menu, you can't add it to another menu."
         ]
       }
     }
@@ -872,13 +1589,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the menu belongs to."
         },
         {
           "name": "menuId",
@@ -887,7 +1603,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id"
+          "doc": "Menu ID."
         }
       ],
       "docs": {
@@ -907,7 +1623,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": "Archive Menu."
+          "doc": "Archived menu."
         }
       ],
       "docs": {
@@ -934,7 +1650,7 @@
               }
             }
           ],
-          "doc": "Times that this object is available. Each period represents a range of hours when the object is\navailable during the week. Limited to 100 time periods."
+          "doc": "Weekly recurring time periods when the entity is available.\nLimited to 100 time periods."
         },
         {
           "name": "specialHourPeriods",
@@ -951,7 +1667,7 @@
               }
             }
           ],
-          "doc": "Exceptions to the regular hours."
+          "doc": "Exceptions to the entity's regular availability. The entity can be available or not available during the special hour period."
         }
       ],
       "docs": {
@@ -1029,7 +1745,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the menus belong to."
         },
         {
           "name": "ids",
@@ -1046,7 +1762,7 @@
               }
             }
           ],
-          "doc": "Menus ids"
+          "doc": "IDs of the menus to archive."
         },
         {
           "name": "returnFullEntity",
@@ -1056,7 +1772,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full menu entity is returned. Defaults to `true`."
         }
       ],
       "docs": {
@@ -1076,7 +1792,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Archive Menus metadata."
         },
         {
           "name": "results",
@@ -1093,7 +1809,7 @@
               }
             }
           ],
-          "doc": "Menus results list"
+          "doc": "Information about the archived menus."
         }
       ],
       "docs": {
@@ -1131,7 +1847,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the dishes will belong to."
         },
         {
           "name": "createDishRequests",
@@ -1148,7 +1864,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Information about the dishes to create. Limited to 20 dishes."
         },
         {
           "name": "returnFullEntity",
@@ -1158,7 +1874,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full item entity is returned. Defaults to `true`."
         }
       ],
       "docs": {
@@ -1178,7 +1894,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Create Dishes metadata."
         },
         {
           "name": "results",
@@ -1195,7 +1911,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Information about the created dishes."
         }
       ],
       "docs": {
@@ -1233,7 +1949,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the menus will belong to."
         },
         {
           "name": "menus",
@@ -1250,7 +1966,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Information about the menus to create. Limited to 20 menus."
         },
         {
           "name": "returnFullEntity",
@@ -1260,7 +1976,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full menu entity is returned. Defaults to `true`."
         }
       ],
       "docs": {
@@ -1280,7 +1996,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Create Menus metadata."
         },
         {
           "name": "results",
@@ -1297,7 +2013,7 @@
               }
             }
           ],
-          "doc": "Menus results list"
+          "doc": "Information about the created menus."
         }
       ],
       "docs": {
@@ -1335,7 +2051,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the sections will belong to."
         },
         {
           "name": "createSectionRequests",
@@ -1352,7 +2068,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Information about the sections to create. Limited to 20 sections."
         },
         {
           "name": "returnFullEntity",
@@ -1362,7 +2078,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full section entity is returned. Defaults to `true`."
         }
       ],
       "docs": {
@@ -1382,7 +2098,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Create Sections metadata."
         },
         {
           "name": "results",
@@ -1399,7 +2115,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Information about the created sections."
         }
       ],
       "docs": {
@@ -1437,7 +2153,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the variations will belong to."
         },
         {
           "name": "returnFullEntity",
@@ -1447,7 +2163,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full variation entity is returned. Defaults to `true`."
         },
         {
           "name": "variations",
@@ -1464,7 +2180,7 @@
               }
             }
           ],
-          "doc": "Variations list"
+          "doc": "Variations to create. Limited to 20 variations."
         }
       ],
       "docs": {
@@ -1484,7 +2200,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Create Variations metadata."
         },
         {
           "name": "results",
@@ -1501,7 +2217,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Information about the created variations."
         }
       ],
       "docs": {
@@ -1521,7 +2237,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": ""
+          "doc": "Item."
         },
         {
           "name": "entityMetadata",
@@ -1531,7 +2247,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.ItemMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Metadata of the item."
         }
       ],
       "docs": {
@@ -1551,7 +2267,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": ""
+          "doc": "Menu."
         },
         {
           "name": "entityMetadata",
@@ -1561,7 +2277,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.ItemMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Menu metadata."
         }
       ],
       "docs": {
@@ -1581,7 +2297,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": ""
+          "doc": "Section."
         },
         {
           "name": "entityMetadata",
@@ -1591,7 +2307,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.ItemMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Section metadata."
         }
       ],
       "docs": {
@@ -1629,7 +2345,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the menus belong to."
         },
         {
           "name": "ids",
@@ -1646,7 +2362,7 @@
               }
             }
           ],
-          "doc": "Menus ids"
+          "doc": "IDs of the menus to unarchive."
         },
         {
           "name": "returnFullEntity",
@@ -1656,7 +2372,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full menu entity is returned. Defaults to `true`."
         }
       ],
       "docs": {
@@ -1676,7 +2392,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Unarchive Menus metadata."
         },
         {
           "name": "results",
@@ -1693,7 +2409,7 @@
               }
             }
           ],
-          "doc": "Menus results list"
+          "doc": "Information about the unarchived menus."
         }
       ],
       "docs": {
@@ -1731,7 +2447,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the items belong to."
         },
         {
           "name": "items",
@@ -1748,7 +2464,7 @@
               }
             }
           ],
-          "doc": "Items list"
+          "doc": "Items to update. Limited to 20 items."
         },
         {
           "name": "returnFullEntity",
@@ -1758,7 +2474,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full item entity is returned. Defaults to `true`."
         }
       ],
       "docs": {
@@ -1778,7 +2494,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Update Items metadata."
         },
         {
           "name": "results",
@@ -1795,7 +2511,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Information about the updated items."
         }
       ],
       "docs": {
@@ -1833,7 +2549,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the menus belong to."
         },
         {
           "name": "menus",
@@ -1850,7 +2566,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Menus to update."
         },
         {
           "name": "returnFullEntity",
@@ -1860,7 +2576,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full menu entity is returned. Defaults to `true`."
         }
       ],
       "docs": {
@@ -1880,7 +2596,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Update Menus metadata."
         },
         {
           "name": "results",
@@ -1897,7 +2613,7 @@
               }
             }
           ],
-          "doc": "Menus results list"
+          "doc": "Information about the updated menus."
         }
       ],
       "docs": {
@@ -1935,7 +2651,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the sections belong to."
         },
         {
           "name": "returnFullEntity",
@@ -1945,7 +2661,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the full section entity is returned. Defaults to `true`."
         },
         {
           "name": "updateSectionsRequests",
@@ -1962,7 +2678,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Information about the sections to update. Limited to 20 sections."
         }
       ],
       "docs": {
@@ -1982,7 +2698,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.BulkActionMetadata"
             }
           ],
-          "doc": ""
+          "doc": "Bulk Update Sections metadata."
         },
         {
           "name": "results",
@@ -1999,7 +2715,7 @@
               }
             }
           ],
-          "doc": "Section results list"
+          "doc": "Information about the updated sections."
         }
       ],
       "docs": {
@@ -2023,7 +2739,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog ID"
+          "doc": "Catalog ID."
         },
         {
           "name": "archived",
@@ -2034,7 +2750,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the catalog is archived.\n__Note:__ Archived catalogs can't be updated."
         },
         {
           "name": "draftPublishedDate",
@@ -2045,7 +2761,7 @@
               "nativeType": "Date"
             }
           ],
-          "doc": "date and time in UTC `yyyy-mm-ddThh:mm:sssZ` format."
+          "doc": "Date and time the last time a draft catalog has been published in `yyyy-mm-ddThh:mm:sssZ` format and [Coordinated Universal Time (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)."
         },
         {
           "name": "locationId",
@@ -2059,7 +2775,27 @@
               "nativeType": "string"
             }
           ],
-          "doc": "The location id that the catalog refers to"
+          "doc": "ID of the location the catalog belongs to. See the [Locations API](https://dev.wix.com/api/rest/business-info/locations/introduction) for more details."
+        }
+      ],
+      "docs": {
+        "description": [
+          "Collection of menus and discounts available in a specific location.\nUse a [draft catalog](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs) to publish multiple changes to a catalog at the same time.\nYou can read more about catalogs in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
+        ]
+      }
+    },
+    {
+      "name": "CatalogChanged",
+      "members": [
+        {
+          "name": "catalog",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Catalog"
+            }
+          ],
+          "doc": "Changed Catalog."
         }
       ],
       "docs": {
@@ -2071,6 +2807,36 @@
     {
       "name": "CatalogUpdated",
       "members": [
+        {
+          "name": "catalogDiscounts",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-catalogs-backend.Discount"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "catalogId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
         {
           "name": "catalogItems",
           "optional": true,
@@ -2153,6 +2919,44 @@
       }
     },
     {
+      "name": "Coupon",
+      "members": [
+        {
+          "name": "applied",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Whether the customer needs to enter the coupon code to receive the discount. Defaults to `true`."
+        },
+        {
+          "name": "code",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Coupon code."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "CreateDishIdentifiers",
       "members": [
         {
@@ -2199,7 +3003,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": ""
+          "doc": "Dish to create."
         },
         {
           "name": "menuId",
@@ -2208,7 +3012,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "ID of the menu the dish will belong to."
         },
         {
           "name": "sectionId",
@@ -2217,7 +3021,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "ID of the section the dish will belong to."
         }
       ],
       "docs": {
@@ -2237,7 +3041,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": "Created Dish (as Item object)"
+          "doc": "Created Dish."
         }
       ],
       "docs": {
@@ -2256,7 +3060,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog to create a draft version for."
         }
       ],
       "docs": {
@@ -2276,7 +3080,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Catalog"
             }
           ],
-          "doc": ""
+          "doc": "Created draft catalog."
         }
       ],
       "docs": {
@@ -2290,13 +3094,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the menu will belong to."
         },
         {
           "name": "menu",
@@ -2305,7 +3108,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": "Menu data."
+          "doc": "Menu to create."
         }
       ],
       "docs": {
@@ -2372,7 +3175,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id."
+          "doc": "ID of the menu the section will belong to."
         },
         {
           "name": "section",
@@ -2381,7 +3184,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Section data."
+          "doc": "Section to create."
         }
       ],
       "docs": {
@@ -2401,7 +3204,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Created Section."
+          "doc": "Created section."
         }
       ],
       "docs": {
@@ -2415,13 +3218,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the variation will belong to."
         },
         {
           "name": "name",
@@ -2430,7 +3232,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "variation name"
+          "doc": "Variation name."
         }
       ],
       "docs": {
@@ -2450,27 +3252,8 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": "Created Variation (as Item object)"
+          "doc": "Created Variation."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "DayOfWeek",
-      "members": [],
-      "enum": [
-        "FRI",
-        "MON",
-        "SAT",
-        "SUN",
-        "THU",
-        "TUE",
-        "UNDEFINED",
-        "WED"
       ],
       "docs": {
         "description": [
@@ -2496,7 +3279,7 @@
               }
             }
           ],
-          "doc": "List of available choices for the option."
+          "doc": "Item IDs of the available choices."
         }
       ],
       "docs": {
@@ -2515,7 +3298,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the draft catalog to discard."
         }
       ],
       "docs": {
@@ -2534,6 +3317,207 @@
       }
     },
     {
+      "name": "Discount",
+      "members": [
+        {
+          "name": "_id",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount ID."
+        },
+        {
+          "name": "active",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Whether the discount is active. Defaults to `true`."
+        },
+        {
+          "name": "amount",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Money"
+            }
+          ],
+          "doc": "Discount amount."
+        },
+        {
+          "name": "condition",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.DiscountCondition"
+            }
+          ],
+          "doc": "Discount condition.\nAll conditions must be met so that a customer can apply the discount."
+        },
+        {
+          "name": "description",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount description."
+        },
+        {
+          "name": "itemIds",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.ItemIds"
+            }
+          ],
+          "doc": "IDs of the items the discount applies to. **Note:** The items must be of type `dish`."
+        },
+        {
+          "name": "name",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount name."
+        },
+        {
+          "name": "percentage",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount percentage."
+        },
+        {
+          "name": "sectionIds",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.SectionIds"
+            }
+          ],
+          "doc": "IDs of the sections the discount applies to."
+        },
+        {
+          "name": "type",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount type.\nOne of:\nOFF_ITEM,\nOFF_ORDER,\nUNSPECIFIED_TYPE"
+        }
+      ],
+      "docs": {
+        "description": [
+          "Customers can use a discount to pay less. Can be an amount or a percentage.\nYou can read more about discounts in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
+        ]
+      }
+    },
+    {
+      "name": "DiscountCondition",
+      "members": [
+        {
+          "name": "availability",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Availability"
+            }
+          ],
+          "doc": "List of times when the discount is available."
+        },
+        {
+          "name": "coupon",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Coupon"
+            }
+          ],
+          "doc": "Coupon associated with the discount."
+        },
+        {
+          "name": "fulfillmentTypes",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Which fulfillment types the discount applies to.\nOne of:\nDELIVERY,\nPICKUP_OR_DINE_IN,\nUNSPECIFIED_FULFILLMENT_TYPE"
+        },
+        {
+          "name": "minOrderPrice",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Money"
+            }
+          ],
+          "doc": "Minimum order price for the discount."
+        },
+        {
+          "name": "platforms",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Which ordering platforms the discount applies to.\nOne of:\nCALL_CENTER,\nMOBILE_SITE,\nSITE,\nUNSPECIFIED_PLATFORM"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "DishOption",
       "members": [
         {
@@ -2544,7 +3528,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Deselection"
             }
           ],
-          "doc": ""
+          "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
         },
         {
           "name": "extras",
@@ -2554,7 +3538,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Extras"
             }
           ],
-          "doc": ""
+          "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
         },
         {
           "name": "name",
@@ -2574,7 +3558,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Selection"
             }
           ],
-          "doc": ""
+          "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
         },
         {
           "name": "type",
@@ -2582,10 +3566,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Type"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "One of:\nDESELECTION,\nEXTRAS,\nSELECTION,\nUNSPECIFIED_DISH_OPTION_TYPE"
         }
       ],
       "docs": {
@@ -2605,7 +3589,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Item ID."
+          "doc": "Item ID of the dish option."
         },
         {
           "name": "price",
@@ -2615,7 +3599,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Money"
             }
           ],
-          "doc": "Option price. When an option price is included in the item price, price = null."
+          "doc": "Dish option price. `0` for free choices that are included in the dish's price."
         }
       ],
       "docs": {
@@ -2669,7 +3653,7 @@
               }
             }
           ],
-          "doc": "List of available choices for the option."
+          "doc": "Item IDs of the available choices."
         },
         {
           "name": "defaultChoices",
@@ -2686,7 +3670,7 @@
               }
             }
           ],
-          "doc": "default choices item ids"
+          "doc": "Item IDs of the default choices."
         },
         {
           "name": "maxChoices",
@@ -2699,7 +3683,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": "Max number of options allowed to be chosen for this item. default available_choices size, must be equal or bigger than min choices"
+          "doc": "Maximum number of extras a customer can choose. Defaults to the value of `availableChoices`. Must be greater than or equal to the value of `minChoices`."
         },
         {
           "name": "minChoices",
@@ -2712,22 +3696,8 @@
               "nativeType": "number"
             }
           ],
-          "doc": "Number of options required to be chosen for this item. default 0, max value is available_choices size"
+          "doc": "Minimum number of extras a customer must choose. Defaults to `0`. Must be lower than or equal to the value of `availableChoices`."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FulfillmentType",
-      "members": [],
-      "enum": [
-        "DELIVERY",
-        "PICKUP_OR_DINE_IN",
-        "UNSPECIFIED_FULFILLMENT_TYPE"
       ],
       "docs": {
         "description": [
@@ -2768,13 +3738,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the item belongs to."
         },
         {
           "name": "includeVisibilityCriteria",
@@ -2784,7 +3753,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Default: false. Returns condition data of item"
+          "doc": "Whether `visibilityCriteria` is returned. Defaults to `false`."
         },
         {
           "name": "itemId",
@@ -2793,7 +3762,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Item Id."
+          "doc": "Item ID."
         }
       ],
       "docs": {
@@ -2813,7 +3782,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": "Item."
+          "doc": "Retrieved item."
         }
       ],
       "docs": {
@@ -2855,13 +3824,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the menu belongs to."
         },
         {
           "name": "menuId",
@@ -2870,7 +3838,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id."
+          "doc": "Menu ID."
         }
       ],
       "docs": {
@@ -2890,7 +3858,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": "Menu."
+          "doc": "Retrieved menu."
         }
       ],
       "docs": {
@@ -2941,13 +3909,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the section belongs to."
         },
         {
           "name": "menuId",
@@ -2956,7 +3923,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id."
+          "doc": "ID of the menu the catalog belongs to."
         },
         {
           "name": "sectionId",
@@ -2965,7 +3932,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Section Id."
+          "doc": "Section ID."
         }
       ],
       "docs": {
@@ -2985,7 +3952,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Section."
+          "doc": "Retrieved section."
         }
       ],
       "docs": {
@@ -2998,7 +3965,7 @@
       "name": "IndexCacheCmd",
       "members": [
         {
-          "name": "locale",
+          "name": "catalogId",
           "optional": true,
           "type": [
             {
@@ -3008,7 +3975,7 @@
           "doc": ""
         },
         {
-          "name": "locationId",
+          "name": "metaSiteId",
           "optional": true,
           "type": [
             {
@@ -3021,7 +3988,17 @@
           "doc": ""
         },
         {
-          "name": "organizationId",
+          "name": "orgId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "orgLocale",
           "optional": true,
           "type": [
             {
@@ -3052,7 +4029,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Item ID (auto-generated upon item creation).."
+          "doc": "Item ID."
         },
         {
           "name": "acceptSpecialRequest",
@@ -3065,7 +4042,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Allow the user to enter special request for this item, Default value is true"
+          "doc": "Whether a customer can add a special request when ordering this item. Defaults to `true`."
         },
         {
           "name": "archived",
@@ -3079,7 +4056,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this item is archived. Archived item can't be updated."
+          "doc": "Whether the item is archived. Defaults to `false`. **Note:** Archived items can't be updated."
         },
         {
           "name": "description",
@@ -3102,7 +4079,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.DishOptions"
             }
           ],
-          "doc": "List of dish options."
+          "doc": "Items customers can choose to modify a dish. Can be an extra, selection, or deselection."
         },
         {
           "name": "imageUrl",
@@ -3115,7 +4092,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Item media url."
+          "doc": "URL of the item's image file."
         },
         {
           "name": "inStock",
@@ -3128,7 +4105,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this item is sold out."
+          "doc": "Whether the item is in stock."
         },
         {
           "name": "labels",
@@ -3138,7 +4115,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Labels"
             }
           ],
-          "doc": "List of dish labels."
+          "doc": "Item labels. For example spicy, hot, vegan, gluten-free, or organic."
         },
         {
           "name": "name",
@@ -3174,7 +4151,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Tax applied for this item."
+          "doc": "Tax rate of the item in percent."
         },
         {
           "name": "type",
@@ -3182,10 +4159,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.ItemType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Type of the Item"
+          "doc": "Item type.\nOne of:\nDISH,\nUNSPECIFIED_ITEM_TYPE,\nVARIATION"
         },
         {
           "name": "visibilityCriteria",
@@ -3195,12 +4172,12 @@
               "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
             }
           ],
-          "doc": "Any visibility criteria required in order for this item to be displayed in the restaurant’s menu.\nIn case of multiple visibility criteria, all must be true for the item to be displayed."
+          "doc": "Visibility criteria that must be met for the item to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
         }
       ],
       "docs": {
         "description": [
-          ""
+          "Anything that customers can buy in the restaurant. Items can be of type `DISH` or `VARIATION`.\nYou can read more about items in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
         ]
       }
     },
@@ -3227,7 +4204,7 @@
       ],
       "docs": {
         "description": [
-          "All item IDs displayed in this section."
+          ""
         ]
       }
     },
@@ -3277,20 +4254,6 @@
           ],
           "doc": "Whether the action requested was successful for this item. When this value is false, error should be populated"
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "ItemType",
-      "members": [],
-      "enum": [
-        "DISH",
-        "UNSPECIFIED_ITEM_TYPE",
-        "VARIATION"
       ],
       "docs": {
         "description": [
@@ -3380,7 +4343,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether the catalog is archived or not. False by default"
+          "doc": "Whether archived catalogs are returned. Defaults to `false`."
         },
         {
           "name": "locationIds",
@@ -3397,7 +4360,7 @@
               }
             }
           ],
-          "doc": "Location filter. Pass an array of location IDs to return catalogs with any of the provided locations."
+          "doc": "IDs of the locations for which the catalog will be returned. See the [Locations API](https://dev.wix.com/api/rest/business-info/locations/introduction) for more details."
         },
         {
           "name": "paging",
@@ -3407,7 +4370,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Paging"
             }
           ],
-          "doc": "Defaults to offset = 0 and limit = 50 (max limit 1,000)."
+          "doc": "Paging information. `offset` defaults to `0` and `limit` defaults to `50`. The maximum for limit is `1,000`."
         },
         {
           "name": "sort",
@@ -3417,7 +4380,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Sorting"
             }
           ],
-          "doc": "Sort order"
+          "doc": "Sort order. Defaults to `ASC`."
         }
       ],
       "docs": {
@@ -3444,7 +4407,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Retrieved catalogs."
         }
       ],
       "docs": {
@@ -3483,17 +4446,16 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether the item is archived or not. Default value is false"
+          "doc": "Whether archived items are returned. Defaults to `false`."
         },
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the items belong to."
         },
         {
           "name": "fieldMask",
@@ -3510,7 +4472,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Field mask path."
         }
       ],
       "docs": {
@@ -3537,7 +4499,7 @@
               }
             }
           ],
-          "doc": "Items list."
+          "doc": "Retrieved items."
         }
       ],
       "docs": {
@@ -3576,17 +4538,16 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether the menu is archived or not. Default value is false"
+          "doc": "Whether archived menus are returned. Defaults to `false`."
         },
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the menus belong to."
         },
         {
           "name": "fieldMask",
@@ -3603,7 +4564,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Field mask path."
         }
       ],
       "docs": {
@@ -3630,7 +4591,7 @@
               }
             }
           ],
-          "doc": "Menus list."
+          "doc": "Retrieved menus."
         }
       ],
       "docs": {
@@ -3669,17 +4630,16 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether the section is archived or not. Default value is false"
+          "doc": "Whether archived sections are returned. Defaults to `false`."
         },
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the sections belong to."
         },
         {
           "name": "fieldMask",
@@ -3696,7 +4656,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Field mask path."
         }
       ],
       "docs": {
@@ -3747,7 +4707,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu ID(auto-generated upon menu creation).."
+          "doc": "Menu ID."
         },
         {
           "name": "archived",
@@ -3761,7 +4721,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this menu is archived. Archived menu can't be updated."
+          "doc": "Whether the menu is archived. Defaults to `false`. **Note:** Archived menus can't be updated."
         },
         {
           "name": "description",
@@ -3787,7 +4747,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu media url."
+          "doc": "URL of the menu's image file."
         },
         {
           "name": "name",
@@ -3807,10 +4767,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.SectionIds"
+              "referenceType": "wix-restaurants-catalogs-backend.MenuSectionIds"
             }
           ],
-          "doc": "Menu section ids (e.g., Appetizers, Sides, etc.)."
+          "doc": "IDs of the sections that are included in the menu."
         },
         {
           "name": "visibilityCriteria",
@@ -3820,7 +4780,34 @@
               "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
             }
           ],
-          "doc": "Any visibility criteria required in order for this menu to be displayed in the restaurant’s menu.\nIn case of multiple visibility criteria, all must be true for the menu to be displayed."
+          "doc": "Visibility criteria that must be met for the menu to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
+        }
+      ],
+      "docs": {
+        "description": [
+          "Collection of sections that show what customers can buy in the restaurant.\nYou can read more about menus in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
+        ]
+      }
+    },
+    {
+      "name": "MenuSectionIds",
+      "members": [
+        {
+          "name": "values",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -3871,7 +4858,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Variation name"
+          "doc": "Variation name."
         }
       ],
       "docs": {
@@ -3917,25 +4904,21 @@
       }
     },
     {
-      "name": "Platform",
-      "members": [],
-      "enum": [
-        "CALL_CENTER",
-        "CHAT_BOT",
-        "MOBILE_SITE",
-        "SITE",
-        "UNSPECIFIED_PLATFORM",
-        "WIX_APP"
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "PublishCatalogUpdated",
       "members": [
+        {
+          "name": "catalogId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
         {
           "name": "locationId",
           "optional": true,
@@ -3976,7 +4959,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the draft catalog to publish."
         }
       ],
       "docs": {
@@ -3996,7 +4979,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Catalog"
             }
           ],
-          "doc": ""
+          "doc": "Published catalog."
         }
       ],
       "docs": {
@@ -4020,7 +5003,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Section ID(auto-generated upon section creation).."
+          "doc": "Section ID."
         },
         {
           "name": "archived",
@@ -4034,7 +5017,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this section is archived. Archived section can't be updated."
+          "doc": "Whether the section is archived. Defaults to `false`. **Note:** Archived sections can't be updated."
         },
         {
           "name": "description",
@@ -4060,17 +5043,17 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Section media url."
+          "doc": "URL of the section's image file."
         },
         {
           "name": "itemIds",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.ItemIds"
+              "referenceType": "wix-restaurants-catalogs-backend.SectionItemIds"
             }
           ],
-          "doc": "All item IDs displayed in this section."
+          "doc": "IDs of the items that belong to the section."
         },
         {
           "name": "menuId",
@@ -4084,7 +5067,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Section menu id."
+          "doc": "ID of the menu the section belongs to."
         },
         {
           "name": "name",
@@ -4107,12 +5090,12 @@
               "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
             }
           ],
-          "doc": "Any visibility criteria required in order for this section to be displayed in the restaurant’s menu.\nIn case of multiple visibility criteria, all must be true for the section to be displayed."
+          "doc": "Visibility criteria that must be met for the section to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
         }
       ],
       "docs": {
         "description": [
-          ""
+          "Collection of dishes that customers can buy in the restaurant.\nYou can read more about sections in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
         ]
       }
     },
@@ -4144,6 +5127,33 @@
       }
     },
     {
+      "name": "SectionItemIds",
+      "members": [
+        {
+          "name": "values",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          "Item IDs of the dishes that belong to this section."
+        ]
+      }
+    },
+    {
       "name": "Selection",
       "members": [
         {
@@ -4161,7 +5171,7 @@
               }
             }
           ],
-          "doc": "List of available choices for the option."
+          "doc": "Item IDs of the available choices."
         },
         {
           "name": "defaultChoice",
@@ -4174,21 +5184,8 @@
               "nativeType": "string"
             }
           ],
-          "doc": "default choice item id"
+          "doc": "Item ID of the default choice."
         }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "SortOrder",
-      "members": [],
-      "enum": [
-        "ASC",
-        "DESC"
       ],
       "docs": {
         "description": [
@@ -4214,10 +5211,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.SortOrder"
+              "nativeType": "string"
             }
           ],
-          "doc": "Sort order."
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
         }
       ],
       "docs": {
@@ -4237,7 +5234,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this object is available, default value false."
+          "doc": "Whether the item is available during the exception. Defaults to `true`."
         },
         {
           "name": "endDate",
@@ -4247,7 +5244,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Date and Time in 24hr iso-8601 Coordinated universal time (UTC)"
+          "doc": "End date and time of the exception in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format and [Coordinated Universal Time (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)."
         },
         {
           "name": "eventName",
@@ -4260,7 +5257,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Event name"
+          "doc": "Name of the special hour period. In the Business Manager the special hour period is called event."
         },
         {
           "name": "startDate",
@@ -4270,12 +5267,12 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Date and Time in 24hr iso-8601 Coordinated universal time (UTC)"
+          "doc": "Start date and time of the exception in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format and [Coordinated Universal Time (UTC)](https://en.wikipedia.org/wiki/Coordinated_Universal_Time)."
         }
       ],
       "docs": {
         "description": [
-          "Set of time periods when a object availability hours differ from its normal availability hours."
+          "Exception to the business's regular hours. The business can be open or closed during the exception."
         ]
       }
     },
@@ -4287,10 +5284,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.DayOfWeek"
+              "nativeType": "string"
             }
           ],
-          "doc": "Day of the week this period ends on."
+          "doc": "Day of the week the period ends on.\nOne of:\nFRI,\nMON,\nSAT,\nSUN,\nTHU,\nTUE,\nUNDEFINED,\nWED"
         },
         {
           "name": "closeTime",
@@ -4300,17 +5297,17 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Time in 24hr ISO 8601 extended format (hh:mm). Valid values are 00:00-24:00, where 24:00 represents\nmidnight at the end of the specified day field."
+          "doc": "Time the period ends in 24-hour [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) extended format. Valid values are 00:00-24:00, where 24:00 represents\nmidnight at the end of the specified day.\n__Note:__ If `openDay` and `closeDay` specify the same day of the week `closeTime` must be later than `openTime`."
         },
         {
           "name": "openDay",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.DayOfWeek"
+              "nativeType": "string"
             }
           ],
-          "doc": "Day of the week this period starts on."
+          "doc": "Day of the week the period starts on.\nOne of:\nFRI,\nMON,\nSAT,\nSUN,\nTHU,\nTUE,\nUNDEFINED,\nWED"
         },
         {
           "name": "openTime",
@@ -4320,27 +5317,12 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Time in 24hr ISO 8601 extended format (hh:mm). Valid values are 00:00-24:00, where 24:00 represents\nmidnight at the end of the specified day field."
+          "doc": "Time the period starts in 24-hour [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) extended format. Valid values are 00:00-24:00, where 24:00 represents\nmidnight at the end of the specified day."
         }
       ],
       "docs": {
         "description": [
-          "A span of time that the object is available,\nstarting on the specified open day/time and closing on the specified close day/time.\nClosing time must occur after the opening time, for example later in the same day, or on a subsequent day."
-        ]
-      }
-    },
-    {
-      "name": "Type",
-      "members": [],
-      "enum": [
-        "DESELECTION",
-        "EXTRAS",
-        "SELECTION",
-        "UNSPECIFIED_DISH_OPTION_TYPE"
-      ],
-      "docs": {
-        "description": [
-          ""
+          "Weekly recurring time periods when the entity is available."
         ]
       }
     },
@@ -4377,13 +5359,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the menu belongs to."
         },
         {
           "name": "menuId",
@@ -4392,7 +5373,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id"
+          "doc": "Menu ID."
         }
       ],
       "docs": {
@@ -4412,7 +5393,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": "Unarchive Menu."
+          "doc": "Unarchived menu."
         }
       ],
       "docs": {
@@ -4463,7 +5444,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Allow the user to enter special request for this item, Default value is true"
+          "doc": "Whether a customer can add a special request when ordering this item. Defaults to `true`."
         },
         {
           "name": "archived",
@@ -4477,7 +5458,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this item is archived. Archived item can't be updated."
+          "doc": "Whether the item is archived. Defaults to `false`. **Note:** Archived items can't be updated."
         },
         {
           "name": "description",
@@ -4500,7 +5481,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.DishOptions"
             }
           ],
-          "doc": "List of dish options."
+          "doc": "Items customers can choose to modify a dish. Can be an extra, selection, or deselection."
         },
         {
           "name": "imageUrl",
@@ -4513,7 +5494,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Item media url."
+          "doc": "URL of the item's image file."
         },
         {
           "name": "inStock",
@@ -4526,7 +5507,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this item is sold out."
+          "doc": "Whether the item is in stock."
         },
         {
           "name": "labels",
@@ -4536,7 +5517,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Labels"
             }
           ],
-          "doc": "List of dish labels."
+          "doc": "Item labels. For example spicy, hot, vegan, gluten-free, or organic."
         },
         {
           "name": "name",
@@ -4572,7 +5553,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Tax applied for this item."
+          "doc": "Tax rate of the item in percent."
         },
         {
           "name": "type",
@@ -4580,10 +5561,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.ItemType"
+              "nativeType": "string"
             }
           ],
-          "doc": "Type of the Item"
+          "doc": "Item type.\nOne of:\nDISH,\nUNSPECIFIED_ITEM_TYPE,\nVARIATION"
         },
         {
           "name": "visibilityCriteria",
@@ -4593,7 +5574,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
             }
           ],
-          "doc": "Any visibility criteria required in order for this item to be displayed in the restaurant’s menu.\nIn case of multiple visibility criteria, all must be true for the item to be displayed."
+          "doc": "Visibility criteria that must be met for the item to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
         }
       ],
       "docs": {
@@ -4607,13 +5588,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Item data to update (partial).\nCatalog Id."
+          "doc": "ID of the catalog the item belongs to."
         },
         {
           "name": "item",
@@ -4622,7 +5602,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": ""
+          "doc": "Item to update."
         }
       ],
       "docs": {
@@ -4694,7 +5674,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this menu is archived. Archived menu can't be updated."
+          "doc": "Whether the menu is archived. Defaults to `false`. **Note:** Archived menus can't be updated."
         },
         {
           "name": "description",
@@ -4720,7 +5700,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu media url."
+          "doc": "URL of the menu's image file."
         },
         {
           "name": "name",
@@ -4740,10 +5720,10 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.SectionIds"
+              "referenceType": "wix-restaurants-catalogs-backend.MenuSectionIds"
             }
           ],
-          "doc": "Menu section ids (e.g., Appetizers, Sides, etc.)."
+          "doc": "IDs of the sections that are included in the menu."
         },
         {
           "name": "visibilityCriteria",
@@ -4753,7 +5733,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
             }
           ],
-          "doc": "Any visibility criteria required in order for this menu to be displayed in the restaurant’s menu.\nIn case of multiple visibility criteria, all must be true for the menu to be displayed."
+          "doc": "Visibility criteria that must be met for the menu to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
         }
       ],
       "docs": {
@@ -4767,13 +5747,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the menu belongs to."
         },
         {
           "name": "menu",
@@ -4782,7 +5761,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": "Menu data to update (partial)."
+          "doc": "Menu to update."
         }
       ],
       "docs": {
@@ -4858,7 +5837,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id."
+          "doc": "ID of the menu the section will belong to."
         },
         {
           "name": "section",
@@ -4867,7 +5846,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Section data."
+          "doc": "Section to update."
         }
       ],
       "docs": {
@@ -4887,7 +5866,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Updated Section."
+          "doc": "Updated section."
         }
       ],
       "docs": {
@@ -4911,7 +5890,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this section is archived. Archived section can't be updated."
+          "doc": "Whether the section is archived. Defaults to `false`. **Note:** Archived sections can't be updated."
         },
         {
           "name": "description",
@@ -4937,17 +5916,17 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Section media url."
+          "doc": "URL of the section's image file."
         },
         {
           "name": "itemIds",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.ItemIds"
+              "referenceType": "wix-restaurants-catalogs-backend.SectionItemIds"
             }
           ],
-          "doc": "All item IDs displayed in this section."
+          "doc": "IDs of the items that belong to the section."
         },
         {
           "name": "menuId",
@@ -4961,7 +5940,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Section menu id."
+          "doc": "ID of the menu the section belongs to."
         },
         {
           "name": "name",
@@ -4984,7 +5963,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
             }
           ],
-          "doc": "Any visibility criteria required in order for this section to be displayed in the restaurant’s menu.\nIn case of multiple visibility criteria, all must be true for the section to be displayed."
+          "doc": "Visibility criteria that must be met for the section to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
         }
       ],
       "docs": {
@@ -4998,13 +5977,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id."
+          "doc": "ID of the catalog the dish will belong to."
         },
         {
           "name": "dish",
@@ -5013,7 +5991,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": "Dish data (as Item object)"
+          "doc": "Item of type `dish` to create."
         },
         {
           "name": "menuId",
@@ -5022,7 +6000,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id."
+          "doc": "ID of the menu the dish will belong to."
         },
         {
           "name": "sectionId",
@@ -5031,7 +6009,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Section Id."
+          "doc": "ID of the section the dish will belong to."
         }
       ],
       "docs": {
@@ -5045,13 +6023,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the section will belong to."
         },
         {
           "name": "menuId",
@@ -5060,7 +6037,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id."
+          "doc": "ID of the menu the section will belong to."
         },
         {
           "name": "section",
@@ -5069,7 +6046,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Section data."
+          "doc": "Section to create."
         }
       ],
       "docs": {
@@ -5083,13 +6060,12 @@
       "members": [
         {
           "name": "catalogId",
-          "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Catalog Id"
+          "doc": "ID of the catalog the section belongs to."
         },
         {
           "name": "menuId",
@@ -5098,7 +6074,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Menu Id"
+          "doc": "Menu ID."
         },
         {
           "name": "section",
@@ -5107,7 +6083,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
-          "doc": "Section data to update (partial)."
+          "doc": "Section to update."
         }
       ],
       "docs": {
@@ -5127,7 +6103,7 @@
               "referenceType": "wix-restaurants-catalogs-backend.Availability"
             }
           ],
-          "doc": "Routine availability pattern for this item."
+          "doc": "Time periods when the entity is available."
         },
         {
           "name": "fulfillmentTypes",
@@ -5138,13 +6114,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.FulfillmentType"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Fulfillment types supported."
+          "doc": "Fulfillment types.\nOne of:\nDELIVERY,\nPICKUP_OR_DINE_IN,\nUNSPECIFIED_FULFILLMENT_TYPE"
         },
         {
           "name": "platforms",
@@ -5155,13 +6131,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Platform"
+                    "nativeType": "string"
                   }
                 ]
               }
             }
           ],
-          "doc": "Platforms supported."
+          "doc": "Ordering platforms.\nOne of:\nCALL_CENTER,\nCHAT_BOT,\nMOBILE_SITE,\nSITE,\nUNSPECIFIED_PLATFORM,\nWIX_APP"
         },
         {
           "name": "visible",
@@ -5174,7 +6150,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Whether this object is visible, default value true."
+          "doc": "Whether the entity appears in the live site. Defaults to `true`.\nIf `false`, the entity isn't rendered in the live site, even if each visibility criterion is fulfilled."
         }
       ],
       "docs": {
