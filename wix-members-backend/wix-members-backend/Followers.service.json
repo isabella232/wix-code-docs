@@ -1,7 +1,8 @@
 { "name": "Followers",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 161,
       "filename": "index.js" },
@@ -20,7 +21,8 @@
   "properties": [],
   "operations":
     [ { "name": "followMember",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
@@ -36,10 +38,12 @@
           [ { "lineno": 1,
               "filename": "followMember.js" } ],
         "docs":
-          { "summary": "Sets the current member to follow another member, specified by ID.",
+          { "summary": "Sets the current member to follow another member.",
             "description":
               [ "The `followMember()` function returns a Promise",
-                "that resolves when the current member is set to follow the specified member." ],
+                "that resolves when the current member is set to follow the specified member.",
+                "",
+                "The `memberId` parameter must be an ID from your site's Members collection. Typically, you retrieve the ID from the collection using a query or through a dataset." ],
             "links": [],
             "examples":
               [ { "title": "Set the current member to follow another member",
