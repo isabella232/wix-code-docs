@@ -9097,6 +9097,29 @@
       }
     },
     {
+      "name": "CardReaderInfo",
+      "members": [
+        {
+          "name": "readerToken",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Card reader token."
+        }
+      ],
+      "docs": {
+        "description": [
+          "Card Reader payment method info."
+        ]
+      }
+    },
+    {
       "name": "CardReaderPayment",
       "members": [
         {
@@ -33050,6 +33073,16 @@
     {
       "name": "PaymentMethod",
       "members": [
+        {
+          "name": "cardReader",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.CardReaderInfo"
+            }
+          ],
+          "doc": "Card Reader payment method."
+        },
         {
           "name": "displayName",
           "optional": true,
