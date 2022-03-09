@@ -1,8 +1,7 @@
 { "name": "Followers",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 161,
       "filename": "index.js" },
@@ -111,8 +110,7 @@
         "extra":
           {  } },
       { "name": "listCurrentMemberConnections",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "connectedMemberIds",
