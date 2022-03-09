@@ -39,7 +39,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onAlarmSnoozed example",
+            "title": "onAlarmSnoozed example",
             "body": [
               "",
               "  export function wixAlarmOnAlarmSnoozed(event) {",
@@ -81,7 +81,7 @@
         ],
         "examples": [
           {
-            "title": "Title of onAlarmTriggered example",
+            "title": "onAlarmTriggered example",
             "body": [
               "",
               "  export function wixAlarmOnAlarmTriggered(event) {",
