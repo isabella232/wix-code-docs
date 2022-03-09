@@ -1,7 +1,6 @@
 { "name": "wix-members-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -216,8 +215,7 @@
               "doc": "Metadata for the paginated results." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ListMemberFollowingResult_320169290",
         "locations":
           [ { "lineno": 1,

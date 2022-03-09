@@ -127,7 +127,7 @@
                 "typeParams":
                   [ { "name": "Array",
                       "typeParams":
-                        [ "wix-members-backend.ConnectedMembers" ] } ] },
+                        [ "string" ] } ] },
             "doc": "Fulfilled - List of site members whose connections to the current member were retrieved." },
         "locations":
           [ { "lineno": 1,
@@ -255,8 +255,7 @@
         "extra":
           {  } },
       { "name": "listMemberConnections",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "connectedMemberIds",
@@ -310,8 +309,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listMemberFollowers",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
@@ -361,8 +359,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listMemberFollowing",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
