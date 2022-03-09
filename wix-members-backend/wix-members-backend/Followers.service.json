@@ -127,7 +127,7 @@
                 "typeParams":
                   [ { "name": "Array",
                       "typeParams":
-                        [ "wix-members-followers-backend.ConnectedMembers" ] } ] },
+                        [ "wix-members-backend.ConnectedMembers" ] } ] },
             "doc": "Fulfilled - List of site members whose connections to the current member were retrieved." },
         "locations":
           [ { "lineno": 1,
@@ -162,8 +162,7 @@
         "extra":
           {  } },
       { "name": "listCurrentMemberFollowers",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "paging",
@@ -256,7 +255,8 @@
         "extra":
           {  } },
       { "name": "listMemberConnections",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "connectedMemberIds",
@@ -274,7 +274,7 @@
                 "typeParams":
                   [ { "name": "Array",
                       "typeParams":
-                        [ "wix-members-backend.ConnectedMembers_3248755667" ] } ] },
+                        [ "wix-members-backend.ConnectedMembers" ] } ] },
             "doc": "Fulfilled - List of site members whose connections to the requested member were retrieved." },
         "locations":
           [ { "lineno": 1,
@@ -310,20 +310,21 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listMemberFollowers",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
               "type": "string",
               "doc": "Member ID." },
             { "name": "paging",
-              "type": "wix-members-backend.Paging_69529131",
+              "type": "wix-members-backend.Paging",
               "doc": "Pagination options. For more information, see\n [Pagination](https://dev.wix.com/api/rest/getting-started/pagination)." } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-members-backend.ListMemberFollowersResult_2722969542" ] },
+                  [ "wix-members-backend.ListMemberFollowersResult" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 8,
@@ -360,20 +361,21 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "listMemberFollowing",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
               "type": "string",
               "doc": "Member ID." },
             { "name": "paging",
-              "type": "wix-members-backend.Paging_69529131",
+              "type": "wix-members-backend.Paging",
               "doc": "Pagination options. For more information, see\n [Pagination](https://dev.wix.com/api/rest/getting-started/pagination)." } ],
         "ret":
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "wix-members-backend.ListMemberFollowingResult_320169290" ] },
+                  [ "wix-members-backend.ListMemberFollowingResult" ] },
             "doc": "" },
         "locations":
           [ { "lineno": 8,

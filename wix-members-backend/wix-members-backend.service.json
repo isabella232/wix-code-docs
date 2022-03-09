@@ -1,6 +1,7 @@
 { "name": "wix-members-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "index.js" },
@@ -194,6 +195,29 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "ListMemberFollowingResult",
+        "locations":
+          [ { "lineno": 1,
+              "filename": "listMemberFollowing.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "memberIds",
+              "type":
+                { "name": "Array",
+                  "typeParams":
+                    [ "string" ] },
+              "doc": "List of site members who are followed by the requested member." },
+            { "name": "metadata",
+              "type": "wix-members-backend.PagingMetadata",
+              "doc": "Metadata for the paginated results." } ],
+        "extra":
+          {  },
+        "labels":
+          [ "new" ] },
       { "name": "ListMemberFollowingResult_320169290",
         "locations":
           [ { "lineno": 1,
@@ -215,7 +239,8 @@
               "doc": "Metadata for the paginated results." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "removed" ] },
       { "name": "ListMyMemberFollowersResult",
         "locations":
           [ { "lineno": 1,
