@@ -21,8 +21,7 @@
   "properties": [],
   "operations":
     [ { "name": "followMember",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
@@ -135,6 +134,9 @@
               "filename": "listCurrentMemberConnections.js" } ],
         "docs":
           { "summary": "Returns information if provided site members are followers or are followed by the member making the call.",
+            "description":
+              [ "The `listCurrentMemberConnections()` function returns a Promise",
+                "that resolves to an array of members who follow, or are followed by the current member." ],
             "links": [],
             "examples":
               [ { "title": "basic usage",
@@ -160,7 +162,8 @@
         "extra":
           {  } },
       { "name": "listCurrentMemberFollowers",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "paging",
@@ -176,7 +179,10 @@
           [ { "lineno": 8,
               "filename": "listCurrentMemberFollowers.js" } ],
         "docs":
-          { "summary": "Returns IDs of members who follow the member making the call",
+          { "summary": "Returns IDs of members who follow the member making the call.",
+            "description":
+              [ "The `listCurrentMemberFollowers()` function returns a Promise",
+                "that resolves to an array of members who follow the current member." ],
             "links": [],
             "examples":
               [ { "title": "basic usage",
