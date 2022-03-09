@@ -8,7 +8,7 @@
   "docs":
     { "summary": "The Shipping Rates SPI.",
       "description":
-        [ "To learn more about the Shipping Rates SPI and how to use it, read the [Velo: Shipping SPI Article](https://support.wix.com/en/article/velo-shipping-rates-spi)." ],
+        [ "To learn more about the Shipping Rates SPI and how to use it, click [here](https://support.wix.com/en/article/velo-shipping-rates-spi)." ],
       "links": [],
       "examples": [],
       "extra":
@@ -16,8 +16,7 @@
   "properties": [],
   "operations":
     [ { "name": "getShippingRates",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "items",
