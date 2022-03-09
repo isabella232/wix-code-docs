@@ -1,8 +1,7 @@
 { "name": "Followers",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 161,
       "filename": "index.js" },
@@ -21,8 +20,7 @@
   "properties": [],
   "operations":
     [ { "name": "followMember",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
@@ -162,8 +160,7 @@
         "extra":
           {  } },
       { "name": "listCurrentMemberFollowers",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "paging",
@@ -410,8 +407,7 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "unfollowMember",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
