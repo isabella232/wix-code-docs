@@ -43,7 +43,7 @@
               [ "The `followMember()` function returns a Promise",
                 "that resolves when the current member is set to follow the specified member.",
                 "",
-                "The `memberId` parameter must be an ID from your site's Members collection. Typically, you retrieve the ID from the collection using a query or through a dataset." ],
+                "The `memberId` parameter must be an ID from your site's Members/PublicData or Members/PrivateMembersData collection. Typically, you retrieve the ID from the collection using a query or through a dataset." ],
             "links": [],
             "examples":
               [ { "title": "Set the current member to follow another member",
