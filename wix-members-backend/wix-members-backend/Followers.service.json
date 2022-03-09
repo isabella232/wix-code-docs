@@ -1,7 +1,8 @@
 { "name": "Followers",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 161,
       "filename": "index.js" },
@@ -20,7 +21,8 @@
   "properties": [],
   "operations":
     [ { "name": "followMember",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
@@ -31,7 +33,7 @@
               { "name": "Promise",
                 "typeParams":
                   [ "void" ] },
-            "doc": "" },
+            "doc": "Fulfilled - When the current member is set to follow the specified member." },
         "locations":
           [ { "lineno": 1,
               "filename": "followMember.js" } ],
@@ -160,11 +162,12 @@
         "extra":
           {  } },
       { "name": "listCurrentMemberFollowers",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "paging",
-              "type": "wix-members-backend.Paging",
+              "type": "wix-members-backend.Followers.Paging",
               "doc": "Pagination options. For more information, see\n [Pagination](https://dev.wix.com/api/rest/getting-started/pagination)." } ],
         "ret":
           { "type":
@@ -407,7 +410,8 @@
           { "customLabels":
               [ { "id": "maturity-beta" } ] } },
       { "name": "unfollowMember",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "memberId",
@@ -418,7 +422,7 @@
               { "name": "Promise",
                 "typeParams":
                   [ "void" ] },
-            "doc": "" },
+            "doc": "Fulfilled - When the current member is set to unfollow the specified member." },
         "locations":
           [ { "lineno": 1,
               "filename": "unfollowMember.js" } ],
