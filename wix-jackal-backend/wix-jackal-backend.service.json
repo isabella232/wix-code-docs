@@ -1,0 +1,226 @@
+{
+  "name": "wix-jackal-backend",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "wix-jackal-backend",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [
+    {
+      "name": "createWishlist",
+      "params": [
+        {
+          "name": "wishlist",
+          "type": [
+            {
+              "referenceType": "wix-jackal-backend.Wishlist"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-jackal-backend.CreateWishlistResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "deleteWishlist",
+      "params": [
+        {
+          "name": "wishlistId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "revision",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-jackal-backend.DeleteWishlistResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "getWishlist",
+      "params": [
+        {
+          "name": "wishlistId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-jackal-backend.GetWishlistResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "queryWishlist",
+      "params": [
+        {
+          "name": "query",
+          "type": [
+            {
+              "referenceType": "wix-jackal-backend.QueryV2"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-jackal-backend.QueryWishlistResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "updateWishlist",
+      "params": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            },
+            {
+              "nativeType": "null"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "wishlist",
+          "type": [
+            {
+              "referenceType": "wix-jackal-backend.UpdateWishlistWishlist"
+            }
+          ],
+          "doc": "",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-jackal-backend.UpdateWishlistOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-jackal-backend.UpdateWishlistResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ],
+  "messages": []
+}
