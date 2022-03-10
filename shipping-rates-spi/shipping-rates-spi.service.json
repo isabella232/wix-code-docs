@@ -1,6 +1,7 @@
 { "name": "shipping-rates-spi",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "shipping-rates-spi-index.js" },
@@ -15,7 +16,8 @@
   "properties": [],
   "operations":
     [ { "name": "getShippingRates",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "items",
@@ -81,8 +83,7 @@
                       "        code: 'quantity_more_3',",
                       "        title: 'Quantity > 3',",
                       "        logistics: {",
-                      "          deliveryTime: '3-5 Days',",
-                      "          instructions: 'Please be available',",
+                      "          deliveryTime: '3-5 Days'",
                       "        },",
                       "        cost: {",
                       "          price: '10.00',",
@@ -100,8 +101,7 @@
                       "      code: 'quantity_more_1',",
                       "      title: '1 Item',",
                       "      logistics: {",
-                      "        deliveryTime: '3-5 Days',",
-                      "        instructions: 'Please be available',",
+                      "        deliveryTime: '3-5 Days'",
                       "      },",
                       "      cost: {",
                       "        price: '20.00',",
@@ -131,7 +131,7 @@
   "messages":
     [ { "name": "AdditionalCharges",
         "locations":
-          [ { "lineno": 127,
+          [ { "lineno": 125,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -245,7 +245,7 @@
         "labels": [] },
       { "name": "Cost",
         "locations":
-          [ { "lineno": 118,
+          [ { "lineno": 116,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
@@ -305,17 +305,11 @@
         "members":
           [ { "name": "deliveryTime",
               "type": "string",
-              "doc": "Expected delivery time in free text. For example, `\"3-5 business days\"`." },
-            { "name": "instructions",
-              "type": "string",
-              "doc": "Instructions for carrier. For example, `\"Please knock on the door. If unanswered, please call contact number. Thanks.\"`." },
-            { "name": "pickupDetails",
-              "type": "shipping-rates-spi.PickupDetails",
-              "doc": "Pickup details. If this field is not set, shipping is performed by delivery.",
-              "optional": true } ],
+              "doc": "Expected delivery time in free text. For example, `\"3-5 business days\"`." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Option",
         "locations":
           [ { "lineno": 26,
@@ -415,7 +409,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 136,
+          [ { "lineno": 134,
               "filename": "shipping-rates-spi.js" } ],
         "docs":
           { "links": [],
