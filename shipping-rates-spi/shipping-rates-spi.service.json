@@ -16,8 +16,7 @@
   "properties": [],
   "operations":
     [ { "name": "getShippingRates",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "items",
@@ -144,13 +143,14 @@
               "doc": "Additional charge type.\nSupported value/s:\n - `\"HANDLING_FEE\"`" },
             { "name": "details",
               "type": "string",
-              "doc": "Details of the additional charge. For example, `\"Insurance coverage of up to 80% of shipped items' value.\"`" },
+              "doc": "Details of the additional charge. For example, `\"Handling fee of $5 applied for gift wrapping.\"`" },
             { "name": "price",
               "type": "string",
               "doc": "Cost of additional charge." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "AddressDetails",
         "locations":
           [ { "lineno": 60,
@@ -261,10 +261,11 @@
               "doc": "Currency code of the shipping rate price. This can differ between carriers. For example, `\"USD\"` or `\"EUR\"`.\nThis must match the value of the `currency` property received in the `options` object. Shipping rates with other currencies are not displayed on the site.\nFor example, a U.S. carrier might provide prices in USD, but a U.K. based carrier would use GBP." },
             { "name": "additionalCharges",
               "type": "shipping-rates-spi.AdditionalCharges",
-              "doc": "Additional costs such as handling, insurance, or packaging for fragile items." } ],
+              "doc": "Additional costs such as handling fee for packaging of fragile items." } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "Item",
         "locations":
           [ { "lineno": 20,
@@ -308,8 +309,7 @@
               "doc": "Expected delivery time in free text. For example, `\"3-5 business days\"`." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Option",
         "locations":
           [ { "lineno": 26,
