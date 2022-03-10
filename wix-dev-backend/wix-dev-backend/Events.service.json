@@ -35797,16 +35797,6 @@
           "doc": "Indicates from which cycle does this price start to apply. Will start form 1."
         },
         {
-          "name": "endedDate",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Indicates until which date this price applies"
-        },
-        {
           "name": "numberOfCycles",
           "optional": true,
           "type": [
@@ -35818,16 +35808,6 @@
             }
           ],
           "doc": "Indicates for how many cycle does this price apply. Will be empty if the price applies until the end of the pricing plan"
-        },
-        {
-          "name": "startedDate",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Indicate from when this price applies"
         }
       ],
       "docs": {
