@@ -1175,7 +1175,6 @@
         },
         {
           "name": "height",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
@@ -1183,16 +1182,6 @@
             }
           ],
           "doc": "Video height."
-        },
-        {
-          "name": "poster",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video thumbnail."
         },
         {
           "name": "url",
@@ -1206,7 +1195,6 @@
         },
         {
           "name": "width",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
