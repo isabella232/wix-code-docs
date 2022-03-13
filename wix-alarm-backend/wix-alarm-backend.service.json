@@ -7,6 +7,122 @@
   "docs": {},
   "relatedGuides": [],
   "properties": [],
-  "operations": [],
-  "messages": []
+  "operations": [
+    {
+      "name": "alarm",
+      "params": [
+        {
+          "name": "seconds",
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-alarm-backend.AlarmResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "sets up an alarm after {seconds}"
+        ]
+      }
+    }
+  ],
+  "messages": [
+    {
+      "name": "AlarmMessage",
+      "members": [
+        {
+          "name": "_id",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AlarmRequest",
+      "members": [
+        {
+          "name": "seconds",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AlarmResponse",
+      "members": [
+        {
+          "name": "time",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AlarmSnoozed",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AlarmTriggered",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ]
 }
