@@ -46940,7 +46940,6 @@
         },
         {
           "name": "height",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
@@ -46948,16 +46947,6 @@
             }
           ],
           "doc": "Video height."
-        },
-        {
-          "name": "poster",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video thumbnail."
         },
         {
           "name": "url",
@@ -46971,7 +46960,6 @@
         },
         {
           "name": "width",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
@@ -47015,56 +47003,6 @@
             }
           ],
           "doc": ""
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "VideoV2",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "WixMedia ID."
-        },
-        {
-          "name": "filename",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video filename. Optional."
-        },
-        {
-          "name": "resolutions",
-          "optional": true,
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "referenceType": "wix-dev-backend.Events.VideoResolution"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Available resolutions for the video, starting with the optimal resolution."
         }
       ],
       "docs": {
