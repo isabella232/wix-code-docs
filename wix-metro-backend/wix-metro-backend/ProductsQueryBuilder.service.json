@@ -1,0 +1,13 @@
+{
+  "name": "ProductsQueryBuilder",
+  "memberOf": "wix-metro-backend",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "wix-metro-backend.wix-metro-backend.products-query-builder",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [],
+  "messages": []
+}
