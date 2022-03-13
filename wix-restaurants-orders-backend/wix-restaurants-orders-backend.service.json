@@ -2227,26 +2227,6 @@
       }
     },
     {
-      "name": "NewOrder",
-      "members": [
-        {
-          "name": "order",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-orders-backend.Order"
-            }
-          ],
-          "doc": "New order."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "NotifyOrderEventOptions",
       "members": [
         {
