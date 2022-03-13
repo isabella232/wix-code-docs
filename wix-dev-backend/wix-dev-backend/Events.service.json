@@ -9606,7 +9606,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.PageUrl"
+              "nativeType": "string"
             }
           ],
           "doc": "Category page URL."
@@ -12375,7 +12375,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.Video"
+              "nativeType": "string"
             }
           ],
           "doc": "Video details."
