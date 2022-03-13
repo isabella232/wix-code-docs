@@ -1721,6 +1721,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -1823,6 +1824,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -1925,6 +1927,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -2027,6 +2030,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -2129,6 +2133,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -2321,6 +2326,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -2423,6 +2429,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -2525,6 +2532,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -2627,6 +2635,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -4307,6 +4316,7 @@
       "members": [
         {
           "name": "archived",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -4316,6 +4326,7 @@
         },
         {
           "name": "locationIds",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -4332,6 +4343,7 @@
         },
         {
           "name": "paging",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-restaurants-catalogs-backend.Paging"
@@ -4435,6 +4447,7 @@
       "members": [
         {
           "name": "archived",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -4527,6 +4540,7 @@
       "members": [
         {
           "name": "archived",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -4619,6 +4633,7 @@
       "members": [
         {
           "name": "archived",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -5444,6 +5459,7 @@
         },
         {
           "name": "item",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-restaurants-catalogs-backend.item_3"
@@ -5673,6 +5689,7 @@
         },
         {
           "name": "menu",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-restaurants-catalogs-backend.menu_4"
@@ -5841,6 +5858,7 @@
         },
         {
           "name": "section",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-restaurants-catalogs-backend.section_5"
@@ -6192,6 +6210,7 @@
       "members": [
         {
           "name": "_id",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -6214,6 +6233,7 @@
       "members": [
         {
           "name": "_id",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -6236,6 +6256,7 @@
       "members": [
         {
           "name": "_id",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
