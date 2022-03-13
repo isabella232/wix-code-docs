@@ -1246,20 +1246,6 @@
       "name": "VideoResolution",
       "members": [
         {
-          "name": "filename",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video filename. Optional."
-        },
-        {
           "name": "format",
           "optional": true,
           "type": [
@@ -1271,6 +1257,7 @@
         },
         {
           "name": "height",
+          "readOnly": true,
           "optional": true,
           "type": [
             {
@@ -1281,28 +1268,13 @@
         },
         {
           "name": "poster",
-          "readOnly": false,
           "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Video poster. Deprecated, please use the `posters` property in the parent entity"
-        },
-        {
-          "name": "quality",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video quality for example 480p, 720p"
+          "doc": "Video thumbnail."
         },
         {
           "name": "sizeInBytes",
@@ -1316,7 +1288,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Video size in bytes. Optional. Deprecated, please use the `sizeInBytes` property in the parent entity. Size cannot be provided per resolution"
+          "doc": "Video size in bytes. Optional."
         },
         {
           "name": "url",
@@ -1337,10 +1309,11 @@
               "nativeType": "Date"
             }
           ],
-          "doc": "Video URL expiration date (when relevant). Optional. Deprecated, please use the `urlExpirationDate` property in the parent entity"
+          "doc": "Video URL expiration date (when relevant). Optional"
         },
         {
           "name": "width",
+          "readOnly": true,
           "optional": true,
           "type": [
             {
