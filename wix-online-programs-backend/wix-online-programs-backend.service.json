@@ -1094,6 +1094,7 @@
       "members": [
         {
           "name": "actionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -1477,6 +1478,7 @@
       "members": [
         {
           "name": "actionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -1486,6 +1488,7 @@
         },
         {
           "name": "startDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -1498,6 +1501,7 @@
         },
         {
           "name": "timeZone",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -1630,6 +1634,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -1639,6 +1644,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -1658,6 +1664,7 @@
       "members": [
         {
           "name": "paymentType",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -1667,6 +1674,7 @@
         },
         {
           "name": "startDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -1679,6 +1687,7 @@
         },
         {
           "name": "timeZone",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -1850,6 +1859,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -1859,6 +1869,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -1925,74 +1936,6 @@
             }
           ],
           "doc": ""
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Document",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "WixMedia ID."
-        },
-        {
-          "name": "filename",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Document filename. Optional."
-        },
-        {
-          "name": "sizeInBytes",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Document size in bytes. Optional."
-        },
-        {
-          "name": "url",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Document URL."
-        },
-        {
-          "name": "urlExpirationDate",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Document URL expiration date (when relevant). Optional"
         }
       ],
       "docs": {
@@ -2475,6 +2418,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2484,6 +2428,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2573,6 +2518,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2582,6 +2528,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2798,6 +2745,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2807,6 +2755,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2816,6 +2765,7 @@
         },
         {
           "name": "sectionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2835,6 +2785,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2844,6 +2795,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2853,6 +2805,7 @@
         },
         {
           "name": "stepId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -2986,6 +2939,7 @@
       "members": [
         {
           "name": "actionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3089,6 +3043,7 @@
       "members": [
         {
           "name": "actionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3098,6 +3053,7 @@
         },
         {
           "name": "startDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -3110,6 +3066,7 @@
         },
         {
           "name": "timeZone",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3376,6 +3333,7 @@
       "members": [
         {
           "name": "memberId",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -3388,6 +3346,7 @@
         },
         {
           "name": "memberIds",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -3407,6 +3366,7 @@
         },
         {
           "name": "memberName",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -3419,6 +3379,7 @@
         },
         {
           "name": "sorting",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-online-programs-backend.Sorting"
@@ -3428,6 +3389,7 @@
         },
         {
           "name": "sortingCriterion",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3437,6 +3399,7 @@
         },
         {
           "name": "states",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -3613,6 +3576,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3622,6 +3586,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3641,6 +3606,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3650,6 +3616,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3669,6 +3636,7 @@
       "members": [
         {
           "name": "dateInterval",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-online-programs-backend.DateInterval"
@@ -3678,6 +3646,7 @@
         },
         {
           "name": "timeInterval",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-online-programs-backend.TimeInterval"
@@ -3709,7 +3678,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Document"
+              "nativeType": "string"
             }
           ],
           "doc": "WixMedia document"
@@ -3729,7 +3698,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Video"
+              "nativeType": "string"
             }
           ],
           "doc": "WixMedia video"
@@ -3929,6 +3898,7 @@
       "members": [
         {
           "name": "programId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -3938,6 +3908,7 @@
         },
         {
           "name": "programSectionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -4007,6 +3978,7 @@
       "members": [
         {
           "name": "programId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -4016,6 +3988,7 @@
         },
         {
           "name": "programStepId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -4903,6 +4876,7 @@
       "members": [
         {
           "name": "filter",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-online-programs-backend.ParticipantsFilter"
@@ -4912,6 +4886,7 @@
         },
         {
           "name": "sorting",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSorting"
@@ -5118,6 +5093,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5127,6 +5103,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5146,6 +5123,7 @@
       "members": [
         {
           "name": "actionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5155,6 +5133,7 @@
         },
         {
           "name": "startDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -5370,6 +5349,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5379,6 +5359,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5388,6 +5369,7 @@
         },
         {
           "name": "stepId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5407,6 +5389,7 @@
       "members": [
         {
           "name": "actionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5416,6 +5399,7 @@
         },
         {
           "name": "feedback",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-online-programs-backend.Feedback"
@@ -5435,6 +5419,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5444,6 +5429,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5982,6 +5968,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -5991,6 +5978,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -6010,6 +5998,7 @@
       "members": [
         {
           "name": "actionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -6109,6 +6098,7 @@
       "members": [
         {
           "name": "challengeId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -6118,6 +6108,7 @@
         },
         {
           "name": "participantId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -6127,6 +6118,7 @@
         },
         {
           "name": "stepId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -6146,6 +6138,7 @@
       "members": [
         {
           "name": "actionId",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -6247,68 +6240,6 @@
       "docs": {
         "description": [
           ""
-        ]
-      }
-    },
-    {
-      "name": "Video",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "WixMedia ID"
-        },
-        {
-          "name": "height",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Original image height"
-        },
-        {
-          "name": "thumbnail",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video poster"
-        },
-        {
-          "name": "url",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "URL of video"
-        },
-        {
-          "name": "width",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Original image width"
-        }
-      ],
-      "docs": {
-        "description": [
-          "Deprecated - use VideoV2"
         ]
       }
     },
