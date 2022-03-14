@@ -10364,6 +10364,82 @@
       }
     },
     {
+      "name": "CommonImage",
+      "members": [
+        {
+          "name": "_id",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "WixMedia image ID."
+        },
+        {
+          "name": "altText",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Image alt text. Optional."
+        },
+        {
+          "name": "filename",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Image filename. Optional."
+        },
+        {
+          "name": "height",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Original image height."
+        },
+        {
+          "name": "url",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Image URL."
+        },
+        {
+          "name": "width",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Original image width."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "CompleteVisualMediaUploadFailure",
       "members": [
         {
@@ -18298,36 +18374,6 @@
             }
           ],
           "doc": "Form title displayed in the message."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "FormatUrl",
-      "members": [
-        {
-          "name": "format",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Describes the format of the video, for example `Youtube`, or `Vimeo`."
-        },
-        {
-          "name": "url",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Specifies the corresponding URL."
         }
       ],
       "docs": {
@@ -33436,98 +33482,6 @@
       }
     },
     {
-      "name": "PhotoMetadata",
-      "members": [
-        {
-          "name": "exif",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "complexType": {
-                "nativeType": "Record",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  },
-                  {
-                    "nativeType": "any"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Whether the media file is in [Exchangeable Image File format](https://en.wikipedia.org/wiki/Exif)."
-        },
-        {
-          "name": "focalPoint",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-dev-backend.Events.Point"
-            }
-          ],
-          "doc": "Focal point of the photo."
-        },
-        {
-          "name": "height",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Photo height in pixels."
-        },
-        {
-          "name": "quality",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Photo quality. Minimum 30, maximum 100."
-        },
-        {
-          "name": "unsharpMasking",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-dev-backend.Events.UnsharpMasking"
-            }
-          ],
-          "doc": "[Unsharp masking](https://en.wikipedia.org/wiki/Unsharp_masking) values of the photo."
-        },
-        {
-          "name": "width",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Photo width in pixels."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "PickupAddress",
       "members": [
         {
@@ -39317,72 +39271,6 @@
       }
     },
     {
-      "name": "Resolution",
-      "members": [
-        {
-          "name": "height",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Video height in pixels for this resolution."
-        },
-        {
-          "name": "urls",
-          "optional": true,
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "referenceType": "wix-dev-backend.Events.FormatUrl"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Video URLs."
-        },
-        {
-          "name": "videoMode",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video resolution. For example `720p`, or `1024p`."
-        },
-        {
-          "name": "width",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Video width in pixels for this resolution."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
       "name": "Restaurant",
       "members": [
         {
@@ -43920,45 +43808,31 @@
       }
     },
     {
-      "name": "TextData",
+      "name": "Text",
       "members": [
         {
-          "name": "decorations",
+          "name": "css",
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "complexType": {
-                "nativeType": "Array",
+                "nativeType": "Record",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Decoration"
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
                   }
                 ]
               }
             }
           ],
-          "doc": "List of decorations"
+          "doc": "Set of key-value pairs describing the [CSS style](https://en.wikipedia.org/wiki/CSS) of the text.\n__Note:__ The object structure is customizable. See the [List Gallery Items](https://dev.wix.com/api/rest/site-content/pro-gallery/list-gallery-items) code example for supported values."
         },
-        {
-          "name": "text",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Textual data"
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "TextMetadata",
-      "members": [
         {
           "name": "editorFontId",
           "optional": true,
@@ -43997,29 +43871,43 @@
             }
           ],
           "doc": "Text in HTML format."
-        },
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "TextData",
+      "members": [
         {
-          "name": "style",
+          "name": "decorations",
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "complexType": {
-                "nativeType": "Record",
+                "nativeType": "Array",
                 "typeParams": [
                   {
-                    "nativeType": "string"
-                  },
-                  {
-                    "nativeType": "any"
+                    "referenceType": "wix-dev-backend.Events.Decoration"
                   }
                 ]
               }
             }
           ],
-          "doc": "Set of key-value pairs describing the [CSS style](https://en.wikipedia.org/wiki/CSS) of the text.\n__Note:__ The object structure is customizable. See the [List Gallery Items](https://dev.wix.com/api/rest/site-content/pro-gallery/list-gallery-items) code example for supported values."
+          "doc": "List of decorations"
+        },
+        {
+          "name": "text",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Textual data"
         }
       ],
       "docs": {
@@ -44080,78 +43968,6 @@
             }
           ],
           "doc": "One of:\nAUTO,\nCENTER,\nJUSTIFY,\nLEFT,\nRIGHT"
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "Thumbnail",
-      "members": [
-        {
-          "name": "default",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Whether it is a default thumbnail."
-        },
-        {
-          "name": "focalPoint",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-dev-backend.Events.Point"
-            }
-          ],
-          "doc": "Focal point of the thumbnail."
-        },
-        {
-          "name": "height",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Thumbnail height in pixels."
-        },
-        {
-          "name": "url",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Thumbnail URL."
-        },
-        {
-          "name": "width",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Thumbnail width in pixels."
         }
       ],
       "docs": {
@@ -46783,100 +46599,44 @@
       "name": "VideoMetadata",
       "members": [
         {
+          "name": "bestQuality",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.VideoOfQuality"
+            }
+          ],
+          "doc": ""
+        },
+        {
           "name": "duration",
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
+              "nativeType": "number"
             }
           ],
-          "doc": "Video duration in milliseconds."
-        },
-        {
-          "name": "externalId",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "External video ID. **Note:** This property is not validated by Wix."
+          "doc": ""
         },
         {
           "name": "height",
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
-          "doc": "Video height in pixels."
-        },
-        {
-          "name": "posters",
-          "optional": true,
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "referenceType": "wix-dev-backend.Events.Thumbnail"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Information about the video posters."
-        },
-        {
-          "name": "resolutions",
-          "optional": true,
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "referenceType": "wix-dev-backend.Events.Resolution"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Information about the video resolutions."
-        },
-        {
-          "name": "source",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video source.\nOne of:\nCUSTOM,\nUNDEFINED,\nVIMEO,\nYOUTUBE"
+          "doc": ""
         },
         {
           "name": "width",
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
-          "doc": "Video width in pixels."
+          "doc": ""
         }
       ],
       "docs": {
@@ -47003,6 +46763,106 @@
             }
           ],
           "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "VideoV2",
+      "members": [
+        {
+          "name": "_id",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "WixMedia ID."
+        },
+        {
+          "name": "filename",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Video filename. Optional."
+        },
+        {
+          "name": "posters",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.CommonImage"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Video posters."
+        },
+        {
+          "name": "resolutions",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.VideoResolution"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Available resolutions for the video, starting with the optimal resolution."
+        },
+        {
+          "name": "sizeInBytes",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Original video size in bytes. Optional"
+        },
+        {
+          "name": "url",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Video URL"
+        },
+        {
+          "name": "urlExpirationDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Video URL expiration date (when relevant). Optional"
         }
       ],
       "docs": {
