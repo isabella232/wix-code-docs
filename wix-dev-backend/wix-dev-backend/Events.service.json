@@ -46832,19 +46832,6 @@
           "doc": "Available resolutions for the video, starting with the optimal resolution."
         },
         {
-          "name": "sizeInBytes",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Original video size in bytes. Optional"
-        },
-        {
           "name": "url",
           "optional": true,
           "type": [
@@ -46853,16 +46840,6 @@
             }
           ],
           "doc": "Video URL"
-        },
-        {
-          "name": "urlExpirationDate",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Video URL expiration date (when relevant). Optional"
         }
       ],
       "docs": {
