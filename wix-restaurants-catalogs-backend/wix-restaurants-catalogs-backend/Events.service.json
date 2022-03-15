@@ -1438,6 +1438,17 @@
       "name": "CatalogUpdated",
       "members": [
         {
+          "name": "archived",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
           "name": "catalogDiscounts",
           "optional": true,
           "type": [
@@ -3340,6 +3351,17 @@
     {
       "name": "PublishCatalogUpdated",
       "members": [
+        {
+          "name": "archived",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
         {
           "name": "catalogId",
           "optional": true,
