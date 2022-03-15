@@ -9,6 +9,71 @@
   "properties": [],
   "operations": [
     {
+      "name": "bulkAverageAttributes",
+      "params": [
+        {
+          "name": "namespace",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Entities namespace",
+          "required": true
+        },
+        {
+          "name": "entityIds",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Entities ids",
+          "required": false
+        },
+        {
+          "name": "options",
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.BulkAverageAttributesOptions"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [
+        "namespace"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-ratings-backend.BulkAverageAttributesResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          "Return average attribute rating for multiple entities."
+        ]
+      }
+    },
+    {
       "name": "createRating",
       "params": [
         {
@@ -440,6 +505,109 @@
       }
     },
     {
+      "name": "BulkAverageAttributesOptions",
+      "members": [
+        {
+          "name": "attributeId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "BulkAverageAttributesRequest",
+      "members": [
+        {
+          "name": "attributeId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Attribute id for which average will be computed."
+        },
+        {
+          "name": "entityIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Entities ids"
+        },
+        {
+          "name": "namespace",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Entities namespace"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "BulkAverageAttributesResponse",
+      "members": [
+        {
+          "name": "entityAverages",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-ratings-backend.EntityAverage"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Entity averages"
+        },
+        {
+          "name": "namespace",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Entities namespace"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "CreateRatingOptions",
       "members": [
         {
@@ -829,6 +997,46 @@
     {
       "name": "Empty",
       "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "EntityAverage",
+      "members": [
+        {
+          "name": "average",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Average entity rating"
+        },
+        {
+          "name": "entityId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Entity id"
+        },
+        {
+          "name": "total",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Total amount of ratings"
+        }
+      ],
       "docs": {
         "description": [
           ""
