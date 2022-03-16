@@ -73,14 +73,9 @@
         ],
         "examples": [
           {
-            "title": "Echo example",
+            "title": "Echo example 1",
             "body": [
-              "",
-              "    function echo() {",
-              "",
-              "  }",
-              "",
-              "  "
+              "const foo = ()=>{}"
             ]
           }
         ]
