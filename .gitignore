@@ -4,4 +4,5 @@ wix-dev-backend/**
 wix-dev-backend-test/**
 **/wix-dev-backend/**/*.json
 **/wix-dev-backend-test/**/*.json
+wix-dev-backend/wix-dev-backend/Events.service.json
 
