@@ -136,6 +136,7 @@
       "members": [
         {
           "name": "someDate",
+          "optional": true,
           "type": [
             {
               "nativeType": "Date"
@@ -145,6 +146,7 @@
         },
         {
           "name": "someInt32",
+          "optional": true,
           "type": [
             {
               "nativeType": "number"
@@ -154,6 +156,7 @@
         },
         {
           "name": "titleField",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
