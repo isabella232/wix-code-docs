@@ -2747,6 +2747,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -2908,6 +2909,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -3069,6 +3071,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -3323,6 +3326,7 @@
       "members": [
         {
           "name": "returnFullEntity",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -3516,6 +3520,7 @@
       "members": [
         {
           "name": "customMessage",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -3528,6 +3533,7 @@
         },
         {
           "name": "restockAllItems",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
@@ -8283,6 +8289,7 @@
       "members": [
         {
           "name": "addressContactDetails",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-ecom-backend.Orders.FullAddressContactDetails"
@@ -8370,6 +8377,7 @@
       "members": [
         {
           "name": "buyerInfo",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-ecom-backend.Orders.BuyerInfoUpdate"
