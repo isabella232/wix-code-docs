@@ -58,6 +58,9 @@
                       "    \"shippingRates\": [{",
                       "      \"code\": \"usps-international\",",
                       "      \"title\": \"USPS - International\",",
+                      "      \"logistics\": {",
+                      "        \"deliveryTime\": \"2-5 days\"",
+                      "      },",
                       "      \"cost\": {",
                       "        \"price\": \"15\",",
                       "        \"currency\": \"USD\",",
@@ -66,9 +69,6 @@
                       "          \"type\": \"HANDLING_FEE\",",
                       "          \"details\": \"Handling fee of $5 applied for fragile items.\"",
                       "        }]",
-                      "      },",
-                      "      \"logistics\": {",
-                      "        \"deliveryTime\": \"2-5 days\"",
                       "      }",
                       "    }]",
                       "  };",
@@ -161,8 +161,7 @@
               "doc": "Cost of additional charge." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "AddressDetails",
         "locations":
           [ { "lineno": 58,
@@ -202,8 +201,7 @@
                   "members":
                     [ "addressLine",
                       "streetAddress" ] } ] },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "BuyerDetails",
         "locations":
           [ { "lineno": 76,
@@ -233,8 +231,7 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "CatalogReference",
         "locations":
           [ { "lineno": 44,
@@ -256,8 +253,7 @@
               "doc": "Additional info in key:value form. For example, `{\"options\":{\"Size\": \"M\", \"Color\": \"Red\"}}` or `{\"variantId\": \"<VARIANT_ID>\"}`." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Cost",
         "locations":
           [ { "lineno": 114,
@@ -279,8 +275,7 @@
               "doc": "Additional costs such as handling fee for packaging of fragile items." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Item",
         "locations":
           [ { "lineno": 20,
@@ -308,8 +303,7 @@
               "doc": "Price of a single item." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Logistics",
         "locations":
           [ { "lineno": 109,
@@ -325,8 +319,7 @@
               "doc": "Expected delivery time in free text. For example, `'3-5 business days'`." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "Options",
         "locations":
           [ { "lineno": 29,
@@ -363,8 +356,7 @@
               "doc": "Expected decimal places for the shipping rate.\nFor example, if this field is `2`, the shipping rate could be: $10, $10.1, $10.12 (up to 2 decimal places); it **cannot** be: $10.123 (or further).\n\nIf the value of `shippingRateDecimalPlaces` is less than a shipping rate's actual cost, that shipping rate will not be returned." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PhysicalProperties",
         "locations":
           [ { "lineno": 51,
@@ -386,8 +378,7 @@
               "doc": "Whether this item is shippable." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "PickupDetails",
         "locations":
           [ { "lineno": 132,
@@ -406,8 +397,7 @@
               "doc": "Pickup method.\nSupported values:\n - `\"STORE_PICKUP\"`\n - `\"PICKUP_POINT\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ShippingRate",
         "locations":
           [ { "lineno": 101,
@@ -432,8 +422,7 @@
               "doc": "Shipping cost." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "ShippingRates",
         "locations":
           [ { "lineno": 96,
@@ -452,8 +441,7 @@
               "doc": "Available shipping rates. These define the shipping rate options that are displayed to site visitors on the Cart and Checkout pages." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "StreetAddressInfo",
         "locations":
           [ { "lineno": 70,
@@ -472,8 +460,7 @@
               "doc": "Street name." } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] },
+        "labels": [] },
       { "name": "VatId",
         "locations":
           [ { "lineno": 85,
@@ -492,7 +479,6 @@
               "doc": "VAT type.\nSupported values:\n - `\"CPF\"`\n - `\"CNPJ\"`" } ],
         "extra":
           {  },
-        "labels":
-          [ "new" ] } ],
+        "labels": [] } ],
   "extra":
     {  } }
