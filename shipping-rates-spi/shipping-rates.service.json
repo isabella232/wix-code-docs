@@ -1,6 +1,7 @@
 { "name": "shipping-rates",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "shipping-rates-spi-index.js" },
@@ -17,7 +18,8 @@
   "properties": [],
   "operations":
     [ { "name": "getShippingRates",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "items",
@@ -35,7 +37,9 @@
           { "type":
               { "name": "Promise",
                 "typeParams":
-                  [ "shipping-rates-spi.ShippingRates" ] },
+                  [ { "name": "Array",
+                      "typeParams":
+                        [ "shipping-rates-spi.ShippingRate" ] } ] },
             "doc": "Fulfilled - Available shipping rates." },
         "locations":
           [ { "lineno": 1,
