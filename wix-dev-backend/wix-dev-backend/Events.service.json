@@ -17252,16 +17252,6 @@
           "doc": "A place numbering meta data"
         },
         {
-          "name": "status",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Status of the element\nOne of:\nHIDDEN,\nNA,\nOPEN"
-        },
-        {
           "name": "title",
           "optional": true,
           "type": [
@@ -17273,17 +17263,6 @@
             }
           ],
           "doc": "User friendly title/label of the element."
-        },
-        {
-          "name": "totalCapacity",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Total place capacity of the element"
         },
         {
           "name": "type",
@@ -21763,6 +21742,68 @@
           "type": [
             {
               "referenceType": "wix-dev-backend.Events.SeatingPlanThumbnail"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetSeatingSummaryRequest",
+      "members": [
+        {
+          "name": "filter",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Filter for seating plan"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetSeatingSummaryResponse",
+      "members": [
+        {
+          "name": "plan",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.SeatingPlan"
+            }
+          ],
+          "doc": "First found seating plan by filter"
+        },
+        {
+          "name": "seatingReservationSummary",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.SeatingReservationSummary"
             }
           ],
           "doc": ""
@@ -33689,20 +33730,6 @@
             }
           ],
           "doc": "Unique label of the place"
-        },
-        {
-          "name": "occupied",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "number"
-            }
-          ],
-          "doc": "Occupied places"
         }
       ],
       "docs": {
@@ -33823,6 +33850,16 @@
           "type": [
             {
               "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "placeId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
             }
           ],
           "doc": ""
@@ -40582,6 +40619,33 @@
           "type": [
             {
               "referenceType": "wix-dev-backend.Events.BackendEventMetadata"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "SeatingReservationSummary",
+      "members": [
+        {
+          "name": "places",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.PlaceReservationDetails"
+                  }
+                ]
+              }
             }
           ],
           "doc": ""
