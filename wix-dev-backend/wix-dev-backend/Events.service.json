@@ -5546,6 +5546,36 @@
       }
     },
     {
+      "name": "Amount",
+      "members": [
+        {
+          "name": "type",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "if `FIXED`, the `amount` parameter refers to the exact amount to be charged in future payments\nif `MAXIMUM`, the amount charged can be up to the value passed for the `amount` parameter\nOne of:\nFIXED,\nMAXIMUM,\nUNKNOWN"
+        },
+        {
+          "name": "value",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "amount in minor units to be charged for future payments"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "AmountBreakdown",
       "members": [
         {
@@ -19258,6 +19288,39 @@
       }
     },
     {
+      "name": "Frequency",
+      "members": [
+        {
+          "name": "count",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "the number of intervals between payments. For example, `type=MONTH` and `count=3` indicates one payment every three months\nmaximum of one year interval allowed (1 year, 12 months, or 52 weeks)\nthis parameter is optional only when `type=SPORADIC`"
+        },
+        {
+          "name": "type",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "One of:\nDAY,\nMONTH,\nSPORADIC,\nUNKNOWN,\nWEEK,\nYEAR"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "FulfillOrderRequest",
       "members": [
         {
@@ -24519,6 +24582,36 @@
       }
     },
     {
+      "name": "Interval",
+      "members": [
+        {
+          "name": "endDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "end date of the mandate or subscription. If not provided, the mandate will be active until canceled"
+        },
+        {
+          "name": "startDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "start date of the mandate or subscription"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "InvalidateCache",
       "members": [
         {
@@ -29223,6 +29316,59 @@
     {
       "name": "LoyaltyProgramDescriptionUpdated",
       "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "MandateOptions",
+      "members": [
+        {
+          "name": "amount",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Amount"
+            }
+          ],
+          "doc": "payment amount"
+        },
+        {
+          "name": "description",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "a description of the mandate or subscription that is meant to be displayed to the customer"
+        },
+        {
+          "name": "frequency",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Frequency"
+            }
+          ],
+          "doc": "specifies frequency of payments"
+        },
+        {
+          "name": "interval",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Interval"
+            }
+          ],
+          "doc": "specifies time ranges for future payments"
+        }
+      ],
       "docs": {
         "description": [
           ""
@@ -42800,6 +42946,16 @@
       "name": "SetupCofRecurring",
       "members": [
         {
+          "name": "mandateOptions",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.MandateOptions"
+            }
+          ],
+          "doc": "a record of the permission a customer has given to debit his payment method"
+        },
+        {
           "name": "moto",
           "optional": true,
           "type": [
@@ -42819,6 +42975,16 @@
     {
       "name": "SetupCofUnscheduled",
       "members": [
+        {
+          "name": "mandateOptions",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.MandateOptions"
+            }
+          ],
+          "doc": "a record of the permission a customer has given to debit his payment method"
+        },
         {
           "name": "moto",
           "optional": true,
