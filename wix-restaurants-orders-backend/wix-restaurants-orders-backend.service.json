@@ -8,5 +8,469 @@
   "relatedGuides": [],
   "properties": [],
   "operations": [],
-  "messages": []
+  "messages": [
+    {
+      "name": "AcceptOrderOptions",
+      "members": [
+        {
+          "name": "dropOffTime",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "pickupTime",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AcceptOrderResponse",
+      "members": [
+        {
+          "name": "order",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Order"
+            }
+          ],
+          "doc": "Accepted order."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CancelOrderResponse",
+      "members": [
+        {
+          "name": "order",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Order"
+            }
+          ],
+          "doc": "Canceled order."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "FulfillOrderResponse",
+      "members": [
+        {
+          "name": "order",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Order"
+            }
+          ],
+          "doc": "Fulfilled order."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetOrderByMsidOptions",
+      "members": [
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetOrderByMsidResponse",
+      "members": [
+        {
+          "name": "order",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Order"
+            }
+          ],
+          "doc": "Order data."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetOrderResponse",
+      "members": [
+        {
+          "name": "order",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Order"
+            }
+          ],
+          "doc": "Retrieved order."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListOrdersByMsidOptions",
+      "members": [
+        {
+          "name": "_createdDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "delivered",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "limit",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "msid",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sort",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Sort"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "status",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Status"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListOrdersByMsidResponse",
+      "members": [
+        {
+          "name": "orders",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-orders-backend.Order"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Order data."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListOrdersOptions",
+      "members": [
+        {
+          "name": "_createdDate",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "asap",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "cursorPaging",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.CursorPaging"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "delivered",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "limit",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "locationIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "phone",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "promisedTime",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sort",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Sort"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "status",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Status"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ListOrdersResponse",
+      "members": [
+        {
+          "name": "orders",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-orders-backend.Order"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "List of retrieved orders."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "NotifyOrderEventOptions",
+      "members": [
+        {
+          "name": "eventType",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.EventType"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "msid",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "NotifyOrderEventResponse",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    }
+  ]
 }
