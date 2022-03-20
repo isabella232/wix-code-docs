@@ -45285,6 +45285,15 @@
       }
     },
     {
+      "name": "UnsupportedPayload",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "UpdateAlbumRequest",
       "members": [
         {
