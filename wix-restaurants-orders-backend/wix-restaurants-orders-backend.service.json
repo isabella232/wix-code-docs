@@ -3450,6 +3450,17 @@
           "doc": "Order payment information."
         },
         {
+          "name": "posInfo",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.PosInfo"
+            }
+          ],
+          "doc": "Information about the POS."
+        },
+        {
           "name": "restaurantId",
           "readOnly": true,
           "optional": true,
@@ -3747,6 +3758,56 @@
             }
           ],
           "doc": "When a delivery is ready to be picked up. This is the start time of the pickup window."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PosInfo",
+      "members": [
+        {
+          "name": "externalProvider",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.PosInfoExternalProvider"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PosInfoExternalProvider",
+      "members": [
+        {
+          "name": "_id",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the external provider."
+        },
+        {
+          "name": "orderId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the order in the external provider."
         }
       ],
       "docs": {
