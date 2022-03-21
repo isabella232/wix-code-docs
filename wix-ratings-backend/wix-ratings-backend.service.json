@@ -10,6 +10,86 @@
   "operations": [],
   "messages": [
     {
+      "name": "ActionEvent",
+      "members": [
+        {
+          "name": "bodyAsJson",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "AttributeSummary",
+      "members": [
+        {
+          "name": "_id",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Rating definition attribute identifier"
+        },
+        {
+          "name": "average",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Average of attribute values"
+        },
+        {
+          "name": "total",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Total amount of given attributes"
+        },
+        {
+          "name": "valueBreakdown",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-ratings-backend.ValueBreakdown"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Attribute breakdown"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "BulkAverageAttributesOptions",
       "members": [
         {
@@ -21,6 +101,52 @@
             }
           ],
           "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "BulkAverageAttributesRequest",
+      "members": [
+        {
+          "name": "attributeId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Attribute id for which average will be computed."
+        },
+        {
+          "name": "entityIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Entities ids"
+        },
+        {
+          "name": "namespace",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Entities namespace"
         }
       ],
       "docs": {
@@ -128,6 +254,76 @@
       }
     },
     {
+      "name": "CreateRatingRequest",
+      "members": [
+        {
+          "name": "attributeId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Attribute ID."
+        },
+        {
+          "name": "definitionId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Definition ID."
+        },
+        {
+          "name": "ratingOwner",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.IdentificationData"
+            }
+          ],
+          "doc": "Set rating's owner explicitly. Ignored when visitor/member calls API."
+        },
+        {
+          "name": "relatedContentIds",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Optional field to indicated to what entities this rating relates to\nGives ability to query ratings which relates to entity"
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Value to set for the specified attribute."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "CreateRatingResponse",
       "members": [
         {
@@ -148,8 +344,393 @@
       }
     },
     {
+      "name": "CursorPaging",
+      "members": [
+        {
+          "name": "cursor",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Pointer to the next or previous page in the list of results."
+        },
+        {
+          "name": "limit",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Number of items to load."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Cursors",
+      "members": [
+        {
+          "name": "next",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Cursor pointing to next page in the list of results."
+        },
+        {
+          "name": "prev",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Cursor pointing to previous page in the list of results."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DeleteByFilterOperation",
+      "members": [
+        {
+          "name": "filter",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "documents matching this filter wil be deleted. only filterable documents defined in document_type can be used for filtering"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DeleteByIdsOperation",
+      "members": [
+        {
+          "name": "documentIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "ids of the documents to delete"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DeleteRatingRequest",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the rating to delete."
+        },
+        {
+          "name": "revision",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "The revision number of the rating."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "DeleteRatingResponse",
       "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DomainEvent",
+      "members": [
+        {
+          "name": "_id",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "random GUID so clients can tell if event was already handled"
+        },
+        {
+          "name": "actionEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.ActionEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "createdEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.EntityCreatedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "deletedEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.EntityDeletedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "entityFqdn",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Assumes actions are also always typed to an entity_type\nExample: wix.stores.catalog.product, wix.bookings.session, wix.payments.transaction"
+        },
+        {
+          "name": "entityId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Assuming that all messages including Actions have id\nExample: The id of the specific order, the id of a specific campaign"
+        },
+        {
+          "name": "eventTime",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "The time of the event. Useful if there was a delay in dipatching"
+        },
+        {
+          "name": "originatedFrom",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "If present, indicates the action that triggered the event."
+        },
+        {
+          "name": "slug",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "This is top level to ease client code dipatching of messages (switch on entity_fqdn+slug)\nThis is although the created/updated/deleted notion is duplication of the oneof types\nExample: created/updated/deleted/started/completed/email_opened"
+        },
+        {
+          "name": "triggeredByAnonymizeRequest",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "A field that should be set if this event was triggered by an anonymize request.\nFor example you must set it to true when sending an event as a result of a GDPR right to be forgotten request.\nNOTE: This field is not relevant for `EntityCreatedEvent` but is located here for better ergonomics of consumers."
+        },
+        {
+          "name": "updatedEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.EntityUpdatedEvent"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Empty",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "EntityAverage",
+      "members": [
+        {
+          "name": "average",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Average entity rating"
+        },
+        {
+          "name": "entityId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Entity id"
+        },
+        {
+          "name": "total",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Total amount of ratings"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "EntityCreatedEvent",
+      "members": [
+        {
+          "name": "entityAsJson",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "EntityDeletedEvent",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "EntityUpdatedEvent",
+      "members": [
+        {
+          "name": "currentEntityAsJson",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Since platformized APIs only expose PATCH and not PUT we can't assume that the fields sent from the client are the actual diff.\nThis means that to generate a list of changed fields (as opposed to sent fields) one needs to traverse both objects.\nWe don't want to impose this on all developers and so we leave this traversal to the notification recipients which need it."
+        }
+      ],
       "docs": {
         "description": [
           ""
@@ -176,6 +757,51 @@
             }
           ],
           "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetEntityRatingSummaryRequest",
+      "members": [
+        {
+          "name": "attributeIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "List of attributes to get summary of."
+        },
+        {
+          "name": "entityId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Entity ID."
+        },
+        {
+          "name": "namespace",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ratings namespace whose summary is to be returned."
         }
       ],
       "docs": {
@@ -232,6 +858,42 @@
       }
     },
     {
+      "name": "GetNamespaceRatingSummaryRequest",
+      "members": [
+        {
+          "name": "attributeIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "list of attributes to get summary of."
+        },
+        {
+          "name": "namespace",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ratings namespace whose summary is to be returned."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "GetNamespaceRatingSummaryResponse",
       "members": [
         {
@@ -269,6 +931,25 @@
       }
     },
     {
+      "name": "GetRatingRequest",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of the rating to retrieve."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "GetRatingResponse",
       "members": [
         {
@@ -280,6 +961,233 @@
             }
           ],
           "doc": "The retrieved rating."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "IdentificationData",
+      "members": [
+        {
+          "name": "anonymousVisitorId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of a site visitor that has not logged in to the site."
+        },
+        {
+          "name": "contactId",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of of a contact in the site's [CRM by Ascend](https://www.wix.com/ascend/crm) system."
+        },
+        {
+          "name": "memberId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "ID of a site visitor that has logged in to the site."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "InternalDocument",
+      "members": [
+        {
+          "name": "document",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "document with mandatory fields (id) and with fields specific to the type of the document"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "InternalDocumentUpdateByFilterOperation",
+      "members": [
+        {
+          "name": "document",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.InternalDocument"
+            }
+          ],
+          "doc": "partial document to apply"
+        },
+        {
+          "name": "filter",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "documents matching this filter will be updated"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "InternalDocumentUpdateOperation",
+      "members": [
+        {
+          "name": "documents",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-ratings-backend.InternalDocument"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "documents to index or update"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "InternalUpdateExistingOperation",
+      "members": [
+        {
+          "name": "documents",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-ratings-backend.InternalDocument"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "documents to update"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PagingMetadataV2",
+      "members": [
+        {
+          "name": "count",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Number of items returned in the response."
+        },
+        {
+          "name": "cursors",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.Cursors"
+            }
+          ],
+          "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryRatingsRequest",
+      "members": [
+        {
+          "name": "query",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.QueryV2"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -386,6 +1294,362 @@
       }
     },
     {
+      "name": "Rating",
+      "members": [
+        {
+          "name": "_createdDate",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Represents the time this Rating was created"
+        },
+        {
+          "name": "_id",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Rating ID"
+        },
+        {
+          "name": "_updatedDate",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Represents the time this Rating was last updated"
+        },
+        {
+          "name": "attributeId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Attribute id which is defined by definition"
+        },
+        {
+          "name": "definitionId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Reference to namespace/entity ratings definition"
+        },
+        {
+          "name": "entityId",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Indication of what entity owns given current Rating"
+        },
+        {
+          "name": "namespace",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Used to identity type of entity which is being rated"
+        },
+        {
+          "name": "owner",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.IdentificationData"
+            }
+          ],
+          "doc": "Rating's owner"
+        },
+        {
+          "name": "relatedContentIds",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Optional field to indicated to what entities this rating relates to\nGives ability to query ratings which relates to entity"
+        },
+        {
+          "name": "revision",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Represents the current state of an item. Each time the item is modified, its `revision` changes. for an update operation to succeed, you MUST pass the latest revision"
+        },
+        {
+          "name": "value",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Numeric value of rating"
+        }
+      ],
+      "docs": {
+        "description": [
+          "Entity describing Rating"
+        ]
+      }
+    },
+    {
+      "name": "SearchInternalIndexingNotification",
+      "members": [
+        {
+          "name": "documentIds",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "the document types related to this notification"
+        },
+        {
+          "name": "documentType",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "the relevant document type"
+        },
+        {
+          "name": "indexingEventType",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "the type of notification\nOne of:\nReindex,\nUnknown"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Sorting",
+      "members": [
+        {
+          "name": "fieldName",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Name of the field to sort by."
+        },
+        {
+          "name": "order",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Sort order.\nOne of:\nASC,\nDESC"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateInternalDocumentsEvent",
+      "members": [
+        {
+          "name": "addDocuments",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-ratings-backend.InternalDocument"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "one or more search documents"
+        },
+        {
+          "name": "correlationId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "id to pass to processing notification"
+        },
+        {
+          "name": "deleteByFilter",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.DeleteByFilterOperation"
+            }
+          ],
+          "doc": "delete documents matching filter"
+        },
+        {
+          "name": "deleteByIds",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.DeleteByIdsOperation"
+            }
+          ],
+          "doc": "delete by document ids"
+        },
+        {
+          "name": "documentType",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "type of the documents"
+        },
+        {
+          "name": "language",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "language of the documents (mandatory)"
+        },
+        {
+          "name": "removeDocumentIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "one or more ids of indexed documents to be removed. Removal will happen before addition (if both provided)"
+        },
+        {
+          "name": "update",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.InternalDocumentUpdateOperation"
+            }
+          ],
+          "doc": "insert/update documents"
+        },
+        {
+          "name": "updateByFilter",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.InternalDocumentUpdateByFilterOperation"
+            }
+          ],
+          "doc": "update internal documents matching filter"
+        },
+        {
+          "name": "updateExisting",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.InternalUpdateExistingOperation"
+            }
+          ],
+          "doc": "update only existing documents"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "UpdateRatingValueOptions",
       "members": [
         {
@@ -408,6 +1672,52 @@
       }
     },
     {
+      "name": "UpdateRatingValueRequest",
+      "members": [
+        {
+          "name": "_id",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ratings ID."
+        },
+        {
+          "name": "revision",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Revision to be updated."
+        },
+        {
+          "name": "value",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "New numeric value of rating"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "UpdateRatingValueResponse",
       "members": [
         {
@@ -419,6 +1729,36 @@
             }
           ],
           "doc": "The updated rating."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ValueBreakdown",
+      "members": [
+        {
+          "name": "total",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Total amount of ratings with given value"
+        },
+        {
+          "name": "value",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "Ratings value"
         }
       ],
       "docs": {
