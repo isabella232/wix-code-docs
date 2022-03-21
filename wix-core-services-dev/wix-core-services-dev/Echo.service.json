@@ -83,6 +83,7 @@
       "members": [
         {
           "name": "_id",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -95,6 +96,7 @@
         },
         {
           "name": "durationField",
+          "optional": true,
           "type": [
             {
               "nativeType": "any"
@@ -104,6 +106,7 @@
         },
         {
           "name": "fixed64Field",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -113,6 +116,7 @@
         },
         {
           "name": "int64ValueField",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -125,6 +129,7 @@
         },
         {
           "name": "sfixed64Field",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -134,6 +139,7 @@
         },
         {
           "name": "sint64Field",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -143,6 +149,7 @@
         },
         {
           "name": "uint64Field",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -152,6 +159,7 @@
         },
         {
           "name": "uint64ValueField",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -283,6 +291,7 @@
       "members": [
         {
           "name": "_id",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -295,6 +304,7 @@
         },
         {
           "name": "durationField",
+          "optional": true,
           "type": [
             {
               "nativeType": "any"
@@ -304,6 +314,7 @@
         },
         {
           "name": "fixed64Field",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -313,6 +324,7 @@
         },
         {
           "name": "int64ValueField",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -325,6 +337,7 @@
         },
         {
           "name": "sfixed64Field",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -334,6 +347,7 @@
         },
         {
           "name": "sint64Field",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -343,6 +357,7 @@
         },
         {
           "name": "uint64Field",
+          "optional": true,
           "type": [
             {
               "nativeType": "string"
@@ -352,6 +367,7 @@
         },
         {
           "name": "uint64ValueField",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
