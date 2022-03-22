@@ -3,8 +3,8 @@
   "mixes": [],
   "labels": [],
   "location":
-    { "lineno": 359,
-      "filename": "HiddenMixin.es6" },
+    { "lineno": 236,
+      "filename": "HiddenMixin.js" },
   "docs":
     { "summary": "Use effect options to customize an effect when [showing]($w.HiddenMixin.html#show) or [hiding]($w.HiddenMixin.html#hide) an element.\n Effect options include arcs, bouncing, fading, flipping, floating, flying in/out, folding, gliding and more.",
       "links": [],
@@ -17,8 +17,8 @@
   "messages":
     [ { "name": "ArcEffectOptions",
         "locations":
-          [ { "lineno": 365,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 243,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"arc\"` effect.",
             "links":
@@ -41,20 +41,23 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"left\"`, `\"right\"`. Default: `\"left\"`." } ],
+              "doc": "Valid values: `\"left\"`, `\"right\"`. Defaults to `\"left\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "BounceEffectOptions",
         "locations":
-          [ { "lineno": 376,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 255,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"bounce\"` effect.",
             "links":
@@ -78,23 +81,27 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"topLeft\"`, `\"topRight\"`, `\"bottomRight\"`,\n `\"bottomLeft\"`, `\"center\"`. Default: `\"topLeft\"`." },
+              "doc": "Valid values: `\"topLeft\"`, `\"topRight\"`, `\"bottomRight\"`,\n `\"bottomLeft\"`, `\"center\"`. Defaults to `\"topLeft\"`.",
+              "optional": true },
             { "name": "intensity",
               "type": "string",
-              "doc": "Valid values: `\"soft\"`, `\"medium\"`, `\"hard\"`. Default: `\"medium\"`." } ],
+              "doc": "Valid values: `\"soft\"`, `\"medium\"`, `\"hard\"`. Defaults to `\"medium\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "FadeEffectOptions",
         "locations":
-          [ { "lineno": 389,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 269,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"fade\"` effect.",
             "links":
@@ -116,17 +123,19 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." } ],
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "FlipEffectOptions",
         "locations":
-          [ { "lineno": 399,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 280,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"flip\"` effect.",
             "links":
@@ -149,20 +158,23 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Default: `\"right\"`." } ],
+              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Defaults to `\"right\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "FloatEffectOptions",
         "locations":
-          [ { "lineno": 410,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 292,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"float\"` effect.",
             "links":
@@ -185,20 +197,23 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Default: `\"right\"`." } ],
+              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Defaults to `\"right\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "FlyEffectOptions",
         "locations":
-          [ { "lineno": 421,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 304,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"fly\"` effect.",
             "links":
@@ -221,20 +236,23 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Default: `\"right\"`." } ],
+              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Defaults to `\"right\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "FoldEffectOptions",
         "locations":
-          [ { "lineno": 432,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 316,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"fold\"` effect.",
             "links":
@@ -257,20 +275,23 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Default: `\"left\"`." } ],
+              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Defaults to `\"left\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "GlideEffectOptions",
         "locations":
-          [ { "lineno": 443,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 328,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"glide\"` effect.",
             "links":
@@ -294,23 +315,27 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "angle",
               "type": "number",
-              "doc": "Valid values: `0`-`360` degrees. Default: `0`." },
+              "doc": "Valid values: `0`-`360` degrees. Defaults to `0`.",
+              "optional": true },
             { "name": "distance",
               "type": "number",
-              "doc": "Valid values: `0`-`300` pixels. Default: `0`." } ],
+              "doc": "Valid values: `0`-`300` pixels. Defaults to `0`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "PuffEffectOptions",
         "locations":
-          [ { "lineno": 455,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 341,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"puff\"` effect.",
             "links":
@@ -332,17 +357,19 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." } ],
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "RollEffectOptions",
         "locations":
-          [ { "lineno": 465,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 352,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"roll\"` effect.",
             "links":
@@ -365,20 +392,23 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Default: `\"left\"`." } ],
+              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Defaults to `\"left\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "SlideEffectOptions",
         "locations":
-          [ { "lineno": 476,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 364,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"slide\"` effect.",
             "links":
@@ -401,20 +431,23 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Default: `\"left\"`." } ],
+              "doc": "Valid values: `\"top\"`, `\"right\"`, `\"bottom\"`, `\"left\"`. Defaults to `\"left\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "SpinEffectOptions",
         "locations":
-          [ { "lineno": 487,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 376,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"spin\"` effect.",
             "links":
@@ -438,23 +471,27 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `cw`, `ccw`. Default: `cw`." },
+              "doc": "Valid values: `cw`, `ccw`. Defaults to `cw`.",
+              "optional": true },
             { "name": "cycles",
               "type": "number",
-              "doc": "Valid values: `1`-`15`. Default: `5`." } ],
+              "doc": "Valid values: `1`-`15`. Defaults to `5`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "TurnEffectOptions",
         "locations":
-          [ { "lineno": 499,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 389,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"turn\"` effect.",
             "links":
@@ -477,20 +514,23 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." },
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true },
             { "name": "direction",
               "type": "string",
-              "doc": "Valid values: `\"right\"`, `\"left\"`. Default: `\"right\"`." } ],
+              "doc": "Valid values: `\"right\"`, `\"left\"`. Defaults to `\"right\"`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] },
       { "name": "ZoomEffectOptions",
         "locations":
-          [ { "lineno": 510,
-              "filename": "HiddenMixin.es6" } ],
+          [ { "lineno": 401,
+              "filename": "HiddenMixin.js" } ],
         "docs":
           { "summary": "An object used to customize the `\"zoom\"` effect.",
             "links":
@@ -512,10 +552,12 @@
         "members":
           [ { "name": "duration",
               "type": "number",
-              "doc": "Valid values: `0`-`4000` milliseconds. Default: `1200`." },
+              "doc": "Valid values: `0`-`4000` milliseconds. Defaults to `1200`.",
+              "optional": true },
             { "name": "delay",
               "type": "number",
-              "doc": "Valid values: `0`-`8000` milliseconds. Default: `0`." } ],
+              "doc": "Valid values: `0`-`8000` milliseconds. Defaults to `0`.",
+              "optional": true } ],
         "extra":
           {  },
         "labels": [] } ],

@@ -3,9 +3,10 @@
   "mixes":
     [ "$w.Element",
       "$w.HiddenCollapsedMixin" ],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
-    { "lineno": 303,
+    { "lineno": 314,
       "filename": "wixCodeDoc.js" },
   "docs":
     { "summary": "A thank you page displayed when an order is created.",
@@ -26,7 +27,7 @@
                   [ "$w.ThankYouPage.Order" ] },
             "doc": "Fulfilled - When the information associated with the order has been retrieved." },
         "locations":
-          [ { "lineno": 603,
+          [ { "lineno": 643,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "Gets the order associated with the current page.",
@@ -221,7 +222,7 @@
   "messages":
     [ { "name": "Address",
         "locations":
-          [ { "lineno": 342,
+          [ { "lineno": 353,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing address information.",
@@ -443,7 +444,7 @@
         "labels": [] },
       { "name": "AppliedCoupon",
         "locations":
-          [ { "lineno": 563,
+          [ { "lineno": 574,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a coupon applied to the order.",
@@ -643,7 +644,7 @@
         "labels": [] },
       { "name": "BillingInfo",
         "locations":
-          [ { "lineno": 401,
+          [ { "lineno": 412,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing an order's billing info.",
@@ -862,7 +863,7 @@
         "labels": [] },
       { "name": "BuyerInfo",
         "locations":
-          [ { "lineno": 314,
+          [ { "lineno": 325,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing information about the buyer.",
@@ -1072,7 +1073,7 @@
         "labels": [] },
       { "name": "ChannelInfo",
         "locations":
-          [ { "lineno": 364,
+          [ { "lineno": 375,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing information about the sales channel that submitted this order.",
@@ -1274,7 +1275,7 @@
         "labels": [] },
       { "name": "CustomField",
         "locations":
-          [ { "lineno": 554,
+          [ { "lineno": 565,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a custom field added by the customer during the checkout process.",
@@ -1474,7 +1475,7 @@
         "labels": [] },
       { "name": "CustomTextField",
         "locations":
-          [ { "lineno": 498,
+          [ { "lineno": 509,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a custom text field.",
@@ -1671,7 +1672,7 @@
         "labels": [] },
       { "name": "Discount",
         "locations":
-          [ { "lineno": 572,
+          [ { "lineno": 583,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a discount applied to the order.",
@@ -1864,7 +1865,7 @@
         "labels": [] },
       { "name": "EnteredBy",
         "locations":
-          [ { "lineno": 384,
+          [ { "lineno": 395,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing information about the identity of the order initiator.\nOccasionally, the person that completes the order isn't the buyer. For example, this occurs when an order is created using a point of sale terminal.",
@@ -2060,7 +2061,7 @@
         "labels": [] },
       { "name": "LineItemPriceData",
         "locations":
-          [ { "lineno": 434,
+          [ { "lineno": 445,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing an line item's price information.",
@@ -2260,7 +2261,7 @@
         "labels": [] },
       { "name": "MediaItem",
         "locations":
-          [ { "lineno": 479,
+          [ { "lineno": 490,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a line item's primary media item.",
@@ -2468,7 +2469,7 @@
         "labels": [] },
       { "name": "Option",
         "locations":
-          [ { "lineno": 471,
+          [ { "lineno": 482,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a line item option.",
@@ -2665,7 +2666,7 @@
         "labels": [] },
       { "name": "Order",
         "locations":
-          [ { "lineno": 579,
+          [ { "lineno": 619,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing an order.",
@@ -2916,10 +2917,11 @@
               "optional": true } ],
         "extra":
           {  },
-        "labels": [] },
+        "labels":
+          [ "changed" ] },
       { "name": "OrderLineItem",
         "locations":
-          [ { "lineno": 506,
+          [ { "lineno": 517,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing a line item in an order.",
@@ -3184,7 +3186,7 @@
         "labels": [] },
       { "name": "OrderShippingInfo",
         "locations":
-          [ { "lineno": 414,
+          [ { "lineno": 425,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing an order's shipping information.",
@@ -3398,7 +3400,7 @@
         "labels": [] },
       { "name": "PickupDetails",
         "locations":
-          [ { "lineno": 459,
+          [ { "lineno": 470,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing an order's pickup details.",
@@ -3535,7 +3537,7 @@
         "labels": [] },
       { "name": "ShipmentDetails",
         "locations":
-          [ { "lineno": 443,
+          [ { "lineno": 454,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing an order's shipping details.",
@@ -3766,7 +3768,7 @@
         "labels": [] },
       { "name": "ShipmentPriceData",
         "locations":
-          [ { "lineno": 426,
+          [ { "lineno": 437,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing shipment price information.",
@@ -3963,7 +3965,7 @@
         "labels": [] },
       { "name": "StreetAddress",
         "locations":
-          [ { "lineno": 334,
+          [ { "lineno": 345,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing information about the street name and street number of an address.",
@@ -4158,9 +4160,78 @@
         "extra":
           {  },
         "labels": [] },
+      { "name": "SubscriptionInfo",
+        "locations":
+          [ { "lineno": 590,
+              "filename": "wixCodeDoc.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "ID of the current subscription's cycle." },
+            { "name": "cycleNumber",
+              "type": "number",
+              "doc": "Current cycle number. For example, if the subscription is in the 3rd month of a 4-month subscription, the value will be `3`." },
+            { "name": "subscriptionSettings",
+              "type": "$w.ThankYouPage.SubscriptionSettings",
+              "doc": "Subscription settings." },
+            { "name": "subscriptionOptionInfo",
+              "type": "$w.ThankYouPage.SubscriptionOptionInfo",
+              "doc": "Subscription option information." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SubscriptionOptionInfo",
+        "locations":
+          [ { "lineno": 612,
+              "filename": "wixCodeDoc.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "id",
+              "type": "string",
+              "doc": "Subscription option ID." },
+            { "name": "title",
+              "type": "string",
+              "doc": "Subscription option title. For example, \"Coffee of the week\"." },
+            { "name": "description",
+              "type": "string",
+              "doc": "Subscription option description. For example, \"Subscribe and get 15% off\"." } ],
+        "extra":
+          {  },
+        "labels": [] },
+      { "name": "SubscriptionSettings",
+        "locations":
+          [ { "lineno": 598,
+              "filename": "wixCodeDoc.js" } ],
+        "docs":
+          { "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "members":
+          [ { "name": "frequency",
+              "type": "string",
+              "doc": "Frequency of recurring payment.\nSupported values:\n\n + `\"DAY\"`\n + `\"WEEK\"`\n + `\"MONTH\"`\n + `\"YEAR\"`" },
+            { "name": "autoRenewal",
+              "type": "boolean",
+              "doc": "Whether subscription is renewed automatically at the end of each period." },
+            { "name": "billingCycles",
+              "type": "number",
+              "doc": "Number of billing cycles before subscription ends. Ignored if `autoRenewal: false`." } ],
+        "extra":
+          {  },
+        "labels": [] },
       { "name": "Totals",
         "locations":
-          [ { "lineno": 541,
+          [ { "lineno": 552,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing an order's totals.",
@@ -4375,7 +4446,7 @@
         "labels": [] },
       { "name": "VatId",
         "locations":
-          [ { "lineno": 356,
+          [ { "lineno": 367,
               "filename": "wixCodeDoc.js" } ],
         "docs":
           { "summary": "An object representing value added tax (VAT) information.",

@@ -10,8 +10,8 @@
       "$w.ViewportMixin" ],
   "labels": [],
   "location":
-    { "lineno": 8,
-      "filename": "RatingsInput.js" },
+    { "lineno": 1,
+      "filename": "ratingsInput.js" },
   "docs":
     { "summary": "A ratings input element allows you to capture a value from your users\n using icons.",
       "links": [],
@@ -25,10 +25,10 @@
         "set": true,
         "type": "number",
         "locations":
-          [ { "lineno": 60,
-              "filename": "RatingsInput.js" },
-            { "lineno": 96,
-              "filename": "RatingsInput.js" } ],
+          [ { "lineno": 36,
+              "filename": "ratingsInput.js" },
+            { "lineno": 69,
+              "filename": "ratingsInput.js" } ],
         "docs":
           { "summary": "Sets or gets the rating value.",
             "description":
@@ -43,12 +43,11 @@
                 " Getting the `value` property returns the current displayed value.",
                 " > **Notes:**",
                 " > - If an element is connected to a dataset, setting the element's `value`",
-                " in code does not set the value of the connected field in the dataset.",
-                " That means if you use the dataset to perform a submit, the value changed",
-                " in code is not reflected in the submitted item.",
-                " > - To submit the new value using a dataset, set the field's value using the",
-                " [`setFieldValue()`](wix-dataset.html#setFieldValue) function before",
-                " performing the submit." ],
+                " >   in code does not set the value of the connected field in the dataset.",
+                " >   That means if you use the dataset to perform a submit, the value changed",
+                " >   in code is not reflected in the submitted item.",
+                " >",
+                " > - To submit the new value using a dataset, set the field's value using the [`setFieldValue()`](wix-dataset.html#setFieldValue) function before performing the submit." ],
             "links": [],
             "examples":
               [ { "title": "Get the rating value",
@@ -77,8 +76,8 @@
           { "type": "$w.RatingsInput",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 26,
-              "filename": "RatingsInput.js" } ],
+          [ { "lineno": 20,
+              "filename": "ratingsInput.js" } ],
         "docs":
           { "summary": "Sets the function that runs when a user's mouse enters one of the rating icons.",
             "links": [],

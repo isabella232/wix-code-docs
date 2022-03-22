@@ -1,10 +1,9 @@
 { "name": "wix-window",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
-    { "lineno": 14,
-      "filename": "window.es6" },
+    { "lineno": 1,
+      "filename": "window.js" },
   "docs":
     { "summary": "The wix-window module contains functionality that pertains to the\n current browser window.",
       "description":
@@ -26,8 +25,8 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 303,
-              "filename": "window.es6" } ],
+          [ { "lineno": 391,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Gets the locale of the site visitor's browser.",
             "description":
@@ -59,18 +58,50 @@
               {  } },
         "extra":
           {  } },
+      { "name": "consentPolicy",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "wix-window.ConsentPolicy",
+        "locations":
+          [ { "lineno": 1247,
+              "filename": "window.js" } ],
+        "docs":
+          { "summary": "The ConsentPolicy API is used to perform actions related to the user's allowed cookies and 3rd-party data transfer, such as for GDPR or CCPA purposes.",
+            "description":
+              [ "The consent policy helps you comply with [GDPR](https://support.wix.com/en/article/preparing-your-wix-site-for-the-gdpr) and [CCPA](https://support.wix.com/en/article/preparing-your-wix-site-for-ccpa) regulations and lets your users",
+                "control their information. The site owner sets up the site consent policy and cookie consent banners in",
+                "the site's [Privacy Center](https://www.wix.com/my-account/site-selector/?buttonText=Open%20Privacy%20Center&title=Select%20a%20Site&autoSelectOnSingleSite=true&actionUrl=https:%2F%2Fwww.wix.com%2Fdashboard%2F%7B%7BmetaSiteId%7D%7D%2Fcookie-consent-settings-app?referralInfo=corvid-docs).",
+                "",
+                " To use the ConsentPolicy API, import `{ consentPolicy }` from the `wix-window` module:",
+                "",
+                "   ```javascript",
+                "   import { consentPolicy } from 'wix-window';",
+                "   ```",
+                "",
+                "The APIs in `wix-window.ConsentPolicy` can only be used in front-end code." ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
+          {  } },
       { "name": "formFactor",
         "labels": [],
         "get": true,
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 351,
-              "filename": "window.es6" } ],
+          [ { "lineno": 432,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Gets what kind of device is being used to view the page.",
             "description":
-              [ "The `formFactor` property gets one of:",
+              [ "<br/>",
+                "",
+                ">**Note:** This property only checks the site visitor's device, and not which [EditorX breakpoint](https://support.wix.com/en/article/editor-x-managing-breakpoints) they are using. ",
+                "",
+                " The `formFactor` property gets one of:",
                 "",
                 " + `\"Desktop\"`: When viewed in a desktop browser.",
                 " + `\"Mobile\"`: When viewed in a mobile browser.",
@@ -96,8 +127,8 @@
         "set": false,
         "type": "wix-window.Lightbox",
         "locations":
-          [ { "lineno": 279,
-              "filename": "window.es6" } ],
+          [ { "lineno": 371,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "A [lightbox](https://support.wix.com/en/article/about-lightboxes) pops up on your site to grab your visitor's attention.",
             "description":
@@ -133,13 +164,23 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 371,
-              "filename": "window.es6" } ],
+          [ { "lineno": 452,
+              "filename": "window.js" } ],
         "docs":
-          { "summary": "Gets the locale of the current environment.",
+          { "summary": "**Deprecated.** The `locale` property is being deprecated. Use the\n[`browserLocale`](https://www.wix.com/velo/reference/wix-window/browserlocale) property instead.",
             "description":
-              [ "Deprecation note: The `locale` property is being deprecated. Use the",
-                " [`browserLocale`](wix-window/browserlocale) property instead.",
+              [ "Gets the locale of the current environment.",
+                "",
+                "> #### Migration Instructions",
+                "> If this property is already in your code, it will continue to work.",
+                "> To stay compatible with future changes, migrate to",
+                "> [`wixWindow.browserLocale`](https://www.wix.com/velo/reference/wix-window/browserlocale).",
+                ">",
+                "> To migrate to the new property:",
+                ">",
+                "> 1. Look for any code that uses `wixWindow.locale` and replace it with `wixWindow.browserLocale`.",
+                ">",
+                "> 2. Test your changes to make sure your code behaves as expected.",
                 "",
                 " A locale, also known as an IETF language tag, is an abbreviated code",
                 " that defines the user's language, country, and other aspects of the user",
@@ -158,7 +199,22 @@
             "examples":
               [ { "title": "Get an environment's locale",
                   "body":
-                    [ "import wixWindow from 'wix-window';",
+                    [ "// NOTE: This example uses the new wixWindow.browserLocale",
+                      "//       property, which replaces wixWindow.locale.",
+                      "//       See line 13 for the deprecated example.",
+                      "",
+                      "import wixWindow from 'wix-window';",
+                      "",
+                      "// ...",
+                      "",
+                      "let browserLocale = wixWindow.browserLocale;  // \"en-US\"",
+                      "",
+                      "",
+                      "",
+                      "// NOTE: This example uses the deprecated",
+                      "//       wixWindow.locale property.",
+                      "",
+                      "import wixWindow from 'wix-window';",
                       "",
                       "// ...",
                       "",
@@ -175,8 +231,8 @@
         "set": false,
         "type": "wix-window.Multilingual",
         "locations":
-          [ { "lineno": 1235,
-              "filename": "window.es6" } ],
+          [ { "lineno": 1089,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "The Multilingual API is used when working with the languages in a multilingual site.",
             "description":
@@ -203,8 +259,8 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 1323,
-              "filename": "window.es6" } ],
+          [ { "lineno": 474,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Gets the HTTP referrer header field.",
             "description":
@@ -243,7 +299,7 @@
                       "});",
                       "" ],
                   "extra":
-                    { "description": "This example demonstrates how to use session storage to know which page\n is the page a site visitor previously visited. The code below needs to be\n placed in the **Site** tab so that it runs on all your site's pages. The\n code retrieves the URL of the page a visitor previously visited from session\n storage. It then stores the URL of the vistor's current page in session\n storage. When the visitor navigates to another page, this stored URL is\n retrieved as the previous page URL." } } ],
+                    { "description": "This example demonstrates how to use session storage to know which page\n is the page a site visitor previously visited. The code below needs to be\n placed in the **masterpage.js** file so that it runs on all your site's pages. The\n code retrieves the URL of the page a visitor previously visited from session\n storage. It then stores the URL of the vistor's current page in session\n storage. When the visitor navigates to another page, this stored URL is\n retrieved as the previous page URL." } } ],
             "extra":
               {  } },
         "extra":
@@ -254,10 +310,10 @@
         "set": false,
         "type": "wix-window.Rendering",
         "locations":
-          [ { "lineno": 238,
-              "filename": "window.es6" } ],
+          [ { "lineno": 331,
+              "filename": "window.js" } ],
         "docs":
-          { "summary": "The Rendering API is used to control when code is run as a page is being loaded.",
+          { "summary": "The [Rendering API](wix-window.html#rendering-obj) is used to control when code is run as a page is being loaded.",
             "description":
               [ "When possible, the rendering process that runs when your page loads is",
                 " split in two in order to improve performance. The first cycle in the process",
@@ -284,8 +340,8 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 330,
-              "filename": "window.es6" } ],
+          [ { "lineno": 416,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Gets which mode the site is currently being viewed in.",
             "description":
@@ -307,6 +363,51 @@
             "extra":
               {  } },
         "extra":
+          {  } },
+      { "name": "warmupData",
+        "labels": [],
+        "get": true,
+        "set": false,
+        "type": "wix-window.WarmupData",
+        "locations":
+          [ { "lineno": 193,
+              "filename": "window.js" } ],
+        "docs":
+          { "summary": "The Warmup Data API is used to optimize data loading for sites that render both on the server and in the browser, \n allowing costly data fetching operations to be done only once.",
+            "description":
+              [ "To improve performance the [rendering process](https://support.wix.com/en/article/velo-about-the-page-rendering-process) ",
+                " is split in two when possible: once on the server and once in the browser. When that isn't ",
+                " possible, all rendering happens in the browser.",
+                "",
+                " Because rendering can occur twice, ",
+                " it's preferred to perform time-consuming tasks only once, such as querying ",
+                " collections or working with the results of network requests from external sites. ",
+                " If possible, it's best to perform these operations on the server. ",
+                "",
+                " Requesting the warmup data from the server returns `undefined` in the following situations:",
+                " + When browser rendering happens before server-side rendering.",
+                " + When there is only browser rendering, for example in case visitors navigate from page to page within a site.",
+                "",
+                " Your page code must check for these scenarios and provide a fallback alternative for getting the data.",
+                "",
+                " Use the `warmupData` API and `env` property  of the [Rendering API](https://www.wix.com/velo/reference/wix-window/rendering-obj/env) ",
+                " to track when and where your code is running. This lets you selectively run parts of your code.",
+                "",
+                " > **Notes:**",
+                " > + Rendering never occurs server-side when previewing your site.",
+                " > + `wix-window.warmupData` replaces the deprecated `wix-window.rendering.warmupData`.",
+                " > + Backend rendering only occurs when visitors initially enter the site, and not when visitors navigate from page-to-page within the site.",
+                "",
+                " To use the Warmup Data API, import `warmupData` from the `wix-window` module:",
+                "",
+                "   ```javascript",
+                "   import { warmupData } from 'wix-window';",
+                "   ```" ],
+            "links": [],
+            "examples": [],
+            "extra":
+              {  } },
+        "extra":
           {  } } ],
   "operations":
     [ { "name": "copyToClipboard",
@@ -323,8 +424,8 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the copy is complete or the site visitor closes the modal popup." },
         "locations":
-          [ { "lineno": 465,
-              "filename": "window.es6" } ],
+          [ { "lineno": 546,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Copies text to the site visitor's clipboard.",
             "description":
@@ -373,8 +474,8 @@
                   [ "wix-window.WindowSizeInfo" ] },
             "doc": "Fulfilled - An object containing information about the window's size, the document's size, and the current scroll position." },
         "locations":
-          [ { "lineno": 442,
-              "filename": "window.es6" } ],
+          [ { "lineno": 532,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Returns information about the window.",
             "description":
@@ -405,8 +506,7 @@
         "extra":
           {  } },
       { "name": "getCurrentGeolocation",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -416,8 +516,8 @@
                   [ "Object" ] },
             "doc": "Fulfilled - The coordinates and timestamp of the current location.\nRejected - The user blocked the geolocation popup." },
         "locations":
-          [ { "lineno": 644,
-              "filename": "window.es6" } ],
+          [ { "lineno": 649,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Returns the current geolocation of the user.",
             "description":
@@ -479,8 +579,8 @@
           { "type": "Object",
             "doc": "The data returned by the router." },
         "locations":
-          [ { "lineno": 618,
-              "filename": "window.es6" } ],
+          [ { "lineno": 630,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Returns the data that a router passed to the page in its response.",
             "description":
@@ -526,8 +626,8 @@
                   [ "Object" ] },
             "doc": "Fulfilled - The returned data from the lightbox.\nRejected - The error that caused the rejection." },
         "locations":
-          [ { "lineno": 688,
-              "filename": "window.es6" } ],
+          [ { "lineno": 684,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Opens a lightbox and optionally passes it the given data.",
             "description":
@@ -671,8 +771,8 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the modal window is closed.\nRejected - The error that caused the rejection." },
         "locations":
-          [ { "lineno": 1067,
-              "filename": "window.es6" } ],
+          [ { "lineno": 1020,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Opens a modal window that displays the specified web page.",
             "description":
@@ -737,8 +837,8 @@
                   [ "Object" ] },
             "doc": "Fulfilled - The data returned from the modal window.\nRejected - The error that caused the rejection." },
         "locations":
-          [ { "lineno": 1123,
-              "filename": "window.es6" } ],
+          [ { "lineno": 1045,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Sends a message to the page's parent.",
             "description":
@@ -820,8 +920,8 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the scroll is complete." },
         "locations":
-          [ { "lineno": 574,
-              "filename": "window.es6" } ],
+          [ { "lineno": 610,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Scrolls the page by a given number of pixels.",
             "description":
@@ -879,13 +979,13 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the scroll is complete." },
         "locations":
-          [ { "lineno": 515,
-              "filename": "window.es6" } ],
+          [ { "lineno": 580,
+              "filename": "window.js" } ],
         "docs":
-          { "summary": "Scrolls the page to a specific location inside the vertical [gridlines] (https://support.wix.com/en/article/wix-editor-editor-gridlines).",
+          { "summary": "Scrolls the page to a specific location on the page.",
             "description":
               [ "The `scrollTo()` function returns a Promise that resolves when the current",
-                " page has been scrolled to the given location inside the vertical gridlines.",
+                " page has been scrolled to a given location on the page.",
                 "",
                 " The `x` and `y` parameters determine the top-left pixel that is",
                 " displayed on screen after the scroll.",
@@ -909,7 +1009,7 @@
                       "wixWindow.scrollTo(100, 500);" ],
                   "extra":
                     {  } },
-                { "title": "Scroll the page to a location and log message when done",
+                { "title": "Scroll the page to a location and log a message when done",
                   "body":
                     [ "import wixWindow from 'wix-window';",
                       "",
@@ -956,8 +1056,8 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 985,
-              "filename": "window.es6" } ],
+          [ { "lineno": 967,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Sends a tracking event to external analytics tools.",
             "description":
@@ -1046,8 +1146,8 @@
   "messages":
     [ { "name": "OpenModalOptions",
         "locations":
-          [ { "lineno": 1058,
-              "filename": "window.es6" } ],
+          [ { "lineno": 1010,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "An object used when opening a modal window.",
             "links":
@@ -1079,8 +1179,8 @@
         "labels": [] },
       { "name": "ScrollToOptions",
         "locations":
-          [ { "lineno": 507,
-              "filename": "window.es6" } ],
+          [ { "lineno": 571,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "An object used for providing options for the `scrollTo()` method.",
             "links":
@@ -1106,8 +1206,8 @@
         "labels": [] },
       { "name": "WindowSizeInfo",
         "locations":
-          [ { "lineno": 329,
-              "filename": "window.es6" } ],
+          [ { "lineno": 502,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "An object returned by the `getBoundingRect()` function that contains information about the window's size, the document's size, and the current scroll position.",
             "links":

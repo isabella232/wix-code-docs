@@ -1,7 +1,8 @@
 { "name": "TimeLine",
   "memberOf": "wix-animations",
   "mixes": [],
-  "labels": [],
+  "labels":
+    [ "changed" ],
   "location":
     { "lineno": 1,
       "filename": "timeline.js" },
@@ -18,16 +19,17 @@
   "properties": [],
   "operations":
     [ { "name": "add",
-        "labels": [],
+        "labels":
+          [ "changed" ],
         "nameParams": [],
         "params":
           [ { "name": "target",
               "type":
-                [ "$w.HiddenMixin",
+                [ "$w.Element",
                   { "name": "Array",
                     "typeParams":
-                      [ "$w.HiddenMixin" ] } ],
-              "doc": "Page element or\n elements to animate." },
+                      [ "$w.Element" ] } ],
+              "doc": "Page element or\n elements to animate that mix in [`HiddenMixin`]($w.HiddenMixin.html)" },
             { "name": "animation",
               "type":
                 [ "wix-animations.TimeLine.AnimationAttributes",
@@ -60,7 +62,9 @@
                 " within the timeline.",
                 "",
                 " You can override the default order that the animations run using the `offset`",
-                " parameter." ],
+                " parameter.",
+                "",
+                " You can add multiple `add()` functions to make more complex animations." ],
             "links": [],
             "examples":
               [ { "title": "Add animations to a timeline one at a time",
@@ -210,7 +214,7 @@
           { "type": "wix-animations.TimeLine",
             "doc": "The timeline the event handler was set on." },
         "locations":
-          [ { "lineno": 300,
+          [ { "lineno": 302,
               "filename": "timeline.js" } ],
         "docs":
           { "summary": "Sets an event handler that runs when the timeline completes playing.",
@@ -294,7 +298,7 @@
           { "type": "wix-animations.TimeLine",
             "doc": "The timeline the event handler was set on." },
         "locations":
-          [ { "lineno": 276,
+          [ { "lineno": 278,
               "filename": "timeline.js" } ],
         "docs":
           { "summary": "Sets an event handler that runs when a the timeline repeats.",
@@ -378,7 +382,7 @@
           { "type": "wix-animations.TimeLine",
             "doc": "The timeline the event handler was set on." },
         "locations":
-          [ { "lineno": 324,
+          [ { "lineno": 326,
               "filename": "timeline.js" } ],
         "docs":
           { "summary": "Sets an event handler that runs when the timeline completes playing\n in the reverse direction.",
@@ -462,7 +466,7 @@
           { "type": "wix-animations.TimeLine",
             "doc": "The timeline the event handler was set on." },
         "locations":
-          [ { "lineno": 244,
+          [ { "lineno": 246,
               "filename": "timeline.js" } ],
         "docs":
           { "summary": "Sets an event handler that runs when the timeline starts playing.",
@@ -551,7 +555,7 @@
           { "type": "wix-animations.TimeLine",
             "doc": "The timeline to be paused." },
         "locations":
-          [ { "lineno": 214,
+          [ { "lineno": 216,
               "filename": "timeline.js" } ],
         "docs":
           { "summary": "Pauses a timeline.",
@@ -629,7 +633,7 @@
           { "type": "wix-animations.TimeLine",
             "doc": "The timeline to be played forwards." },
         "locations":
-          [ { "lineno": 189,
+          [ { "lineno": 191,
               "filename": "timeline.js" } ],
         "docs":
           { "summary": "Plays a timeline forwards.",
@@ -706,7 +710,7 @@
           { "type": "wix-animations.TimeLine",
             "doc": "The timeline to be replayed." },
         "locations":
-          [ { "lineno": 228,
+          [ { "lineno": 230,
               "filename": "timeline.js" } ],
         "docs":
           { "summary": "Replays a timeline.",
@@ -786,7 +790,7 @@
           { "type": "wix-animations.TimeLine",
             "doc": "The timeline to be played in reverse." },
         "locations":
-          [ { "lineno": 202,
+          [ { "lineno": 204,
               "filename": "timeline.js" } ],
         "docs":
           { "summary": "Plays a timeline in reverse.",
@@ -942,7 +946,7 @@
               "optional": true },
             { "name": "opacity",
               "type": "number",
-              "doc": "Target opacity of the animated element or elements.",
+              "doc": "Target opacity of the animated element or elements, from 0.0 to 1.0.",
               "optional": true },
             { "name": "rotate",
               "type":

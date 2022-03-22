@@ -3,8 +3,8 @@
   "mixes": [],
   "labels": [],
   "location":
-    { "lineno": 8,
-      "filename": "PlayableMixin.es6" },
+    { "lineno": 1,
+      "filename": "PlayableMixin.js" },
   "docs":
     { "summary": "Provides functionality for elements that can be played.",
       "description":
@@ -40,8 +40,8 @@
         "set": false,
         "type": "boolean",
         "locations":
-          [ { "lineno": 72,
-              "filename": "PlayableMixin.es6" } ],
+          [ { "lineno": 31,
+              "filename": "PlayableMixin.js" } ],
         "docs":
           { "summary": "Indicates if the element is currently playing.",
             "description":
@@ -85,8 +85,8 @@
                   [ "$w.Element" ] },
             "doc": "Fulfilled - The newly displayed image or slide." },
         "locations":
-          [ { "lineno": 270,
-              "filename": "PlayableMixin.es6" } ],
+          [ { "lineno": 167,
+              "filename": "PlayableMixin.js" } ],
         "docs":
           { "summary": "Moves to the next item.",
             "description":
@@ -96,12 +96,12 @@
                 "",
                 "> **Notes:**",
                 "> + When using `next()` on a [gallery]($w.Gallery.html), make sure the",
-                " [gallery]($w.Gallery.html) is one where the `isPlayable`",
-                " [capability]($w/gallery/gallerycapabilities) is `true`.",
+                ">   [gallery]($w.Gallery.html) is one where the `isPlayable`",
+                ">   [capability]($w/gallery/gallerycapabilities) is `true`.",
                 ">",
                 ">",
                 "> + If you [change a gallery's type](https://www.wix.com/support/html5/article/changing-the-gallery-type)",
-                " to one that doesn't support `next()`, your code may no longer function correctly." ],
+                ">   to one that doesn't support `next()`, your code may no longer function correctly." ],
             "links":
               [ "[previous( )](#previous)",
                 "[play( )](#play)",
@@ -137,8 +137,8 @@
                 "$w.Slideshow" ],
             "doc": "The gallery or slideshow that triggered the event." },
         "locations":
-          [ { "lineno": 102,
-              "filename": "PlayableMixin.es6" } ],
+          [ { "lineno": 53,
+              "filename": "PlayableMixin.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when playback is paused.",
             "description":
@@ -147,18 +147,12 @@
                 "",
                 "> **Notes:**",
                 "> + When using `onPause()` on a [gallery]($w.Gallery.html), make sure the",
-                " [gallery]($w.Gallery.html) is one where the `isPlayable`",
-                " [capability]($w/gallery/gallerycapabilities) is `true`.",
+                ">   [gallery]($w.Gallery.html) is one where the `isPlayable`",
+                ">   [capability]($w/gallery/gallerycapabilities) is `true`.",
                 ">",
                 ">",
                 "> + If you [change a gallery's type](https://www.wix.com/support/html5/article/changing-the-gallery-type)",
-                " to one that doesn't support `onPause()`, your code may no longer function correctly.",
-                ">",
-                ">",
-                "> + **Deprecation note:** The $w parameter of event handlers is being deprecated. To get",
-                " a scoped selector for working with elements in repeater items, use the [$w.at()]($w.html#at) function",
-                " and pass it the context property of the event parameter: `$item = $w.at(event.context)`. To learn more, see",
-                " [here](https://www.wix.com/velo/forum/wix-tips-and-updates/removal-of-the-w-parameter-from-event-handlers)." ],
+                ">   to one that doesn't support `onPause()`, your code may no longer function correctly." ],
             "links":
               [ "[pause( )](#pause)" ],
             "examples":
@@ -186,8 +180,8 @@
                 "$w.Slideshow" ],
             "doc": "The gallery or slideshow that triggered the event." },
         "locations":
-          [ { "lineno": 154,
-              "filename": "PlayableMixin.es6" } ],
+          [ { "lineno": 83,
+              "filename": "PlayableMixin.js" } ],
         "docs":
           { "summary": "Adds an event handler that runs when playback is started or restarted.",
             "description":
@@ -196,18 +190,12 @@
                 "",
                 "> **Notes:**",
                 "> + When using `onPlay()` on a [gallery]($w.Gallery.html), make sure the",
-                " [gallery]($w.Gallery.html) is one where the `isPlayable`",
-                " [capability]($w/gallery/gallerycapabilities) is `true`.",
+                ">   [gallery]($w.Gallery.html) is one where the `isPlayable`",
+                ">   [capability]($w/gallery/gallerycapabilities) is `true`.",
                 ">",
                 ">",
                 "> + If you [change a gallery's type](https://www.wix.com/support/html5/article/changing-the-gallery-type)",
-                " to one that doesn't support `onPlay()`, your code may no longer function correctly.",
-                ">",
-                ">",
-                "> + **Deprecation note:** The $w parameter of event handlers is being deprecated. To get",
-                " a scoped selector for working with elements in repeater items, use the [$w.at()]($w.html#at) function",
-                " and pass it the context property of the event parameter: `$item = $w.at(event.context)`. To learn more, see",
-                " [here](https://www.wix.com/velo/forum/wix-tips-and-updates/removal-of-the-w-parameter-from-event-handlers)." ],
+                ">   to one that doesn't support `onPlay()`, your code may no longer function correctly." ],
             "links":
               [ "[play( )](#play)" ],
             "examples":
@@ -229,8 +217,8 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 206,
-              "filename": "PlayableMixin.es6" } ],
+          [ { "lineno": 113,
+              "filename": "PlayableMixin.js" } ],
         "docs":
           { "summary": "Pauses playback.",
             "description":
@@ -241,12 +229,12 @@
                 "",
                 "> **Notes:**",
                 "> + When using `pause()` on a [gallery]($w.Gallery.html), make sure the",
-                " [gallery]($w.Gallery.html) is one where the `isPlayable`",
-                " [capability]($w/gallery/gallerycapabilities) is `true`.",
+                ">   [gallery]($w.Gallery.html) is one where the `isPlayable`",
+                ">   [capability]($w/gallery/gallerycapabilities) is `true`.",
                 ">",
                 ">",
                 "> + If you [change a gallery's type](https://www.wix.com/support/html5/article/changing-the-gallery-type)",
-                " to one that doesn't support `pause()`, your code may no longer function correctly." ],
+                ">   to one that doesn't support `pause()`, your code may no longer function correctly." ],
             "links":
               [ "[play( )](#play)",
                 "[onPause( )](#onPause)" ],
@@ -277,8 +265,8 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 238,
-              "filename": "PlayableMixin.es6" } ],
+          [ { "lineno": 140,
+              "filename": "PlayableMixin.js" } ],
         "docs":
           { "summary": "Begins or resumes playback.",
             "description":
@@ -289,12 +277,12 @@
                 "",
                 "> **Notes:**",
                 "> + When using `play()` on a [gallery]($w.Gallery.html), make sure the",
-                " [gallery]($w.Gallery.html) is one where the `isPlayable`",
-                " [capability]($w/gallery/gallerycapabilities) is `true`.",
+                ">   [gallery]($w.Gallery.html) is one where the `isPlayable`",
+                ">   [capability]($w/gallery/gallerycapabilities) is `true`.",
                 ">",
                 ">",
                 "> + If you [change a gallery's type](https://www.wix.com/support/html5/article/changing-the-gallery-type)",
-                " to one that doesn't support `play()`, your code may no longer function correctly." ],
+                ">   to one that doesn't support `play()`, your code may no longer function correctly." ],
             "links":
               [ "[pause( )](#pause)",
                 "[onPlay( )](#onPlay)" ],
@@ -329,8 +317,8 @@
                   [ "$w.Element" ] },
             "doc": "Fulfilled - The newly displayed image or slide." },
         "locations":
-          [ { "lineno": 310,
-              "filename": "PlayableMixin.es6" } ],
+          [ { "lineno": 196,
+              "filename": "PlayableMixin.js" } ],
         "docs":
           { "summary": "Moves to the previous image or slide.",
             "description":
@@ -340,12 +328,12 @@
                 "",
                 "> **Notes:**",
                 "> + When using `previous()` on a [gallery]($w.Gallery.html), make sure the",
-                " [gallery]($w.Gallery.html) is one where the `isPlayable`",
-                " [capability]($w/gallery/gallerycapabilities) is `true`.",
+                ">   [gallery]($w.Gallery.html) is one where the `isPlayable`",
+                ">   [capability]($w/gallery/gallerycapabilities) is `true`.",
                 ">",
                 ">",
                 "> + If you [change a gallery's type](https://www.wix.com/support/html5/article/changing-the-gallery-type)",
-                " to one that doesn't support `previous()`, your code may no longer function correctly." ],
+                ">   to one that doesn't support `previous()`, your code may no longer function correctly." ],
             "links":
               [ "[next( )](#next)" ],
             "examples":
