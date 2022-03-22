@@ -22,19 +22,6 @@
           "required": true
         },
         {
-          "name": "message",
-          "type": [
-            {
-              "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
-            }
-          ],
-          "doc": "Message when accepting the order.",
-          "required": false
-        },
-        {
           "name": "options",
           "type": [
             {
@@ -97,16 +84,13 @@
           "required": true
         },
         {
-          "name": "message",
+          "name": "options",
           "type": [
             {
-              "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
+              "referenceType": "wix-restaurants-orders-backend.CancelOrderOptions"
             }
           ],
-          "doc": "Message when canceling the order.",
+          "doc": "",
           "required": false
         }
       ],
@@ -214,20 +198,13 @@
           "required": true
         },
         {
-          "name": "fieldMask",
+          "name": "options",
           "type": [
             {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
+              "referenceType": "wix-restaurants-orders-backend.GetOrderOptions"
             }
           ],
-          "doc": "Set of fields to retrieve.\nFields that aren't included in `fieldmaks.paths` are ignored.\nSee [the article about field masks](https://dev.wix.com/api/rest/restaurants/orders/supported-field-masks)\nfor more details.",
+          "doc": "",
           "required": false
         }
       ],
@@ -272,23 +249,6 @@
     {
       "name": "listOrders",
       "params": [
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Set of fields to retrieve.\nFields that aren't included in `fieldmaks.paths` are ignored.\nSee [the article about field masks](https://dev.wix.com/api/rest/restaurants/orders/supported-field-masks)\nfor more details.",
-          "required": false
-        },
         {
           "name": "options",
           "type": [
@@ -347,6 +307,19 @@
           "type": [
             {
               "nativeType": "Date"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "message",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
             }
           ],
           "doc": ""
@@ -447,6 +420,29 @@
             }
           ],
           "doc": "Activity timestamp."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CancelOrderOptions",
+      "members": [
+        {
+          "name": "message",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -1493,6 +1489,33 @@
       }
     },
     {
+      "name": "GetOrderOptions",
+      "members": [
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "GetOrderRequest",
       "members": [
         {
@@ -1896,6 +1919,23 @@
           "doc": ""
         },
         {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
           "name": "limit",
           "optional": true,
           "type": [
@@ -2114,6 +2154,23 @@
             },
             {
               "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
             }
           ],
           "doc": ""
