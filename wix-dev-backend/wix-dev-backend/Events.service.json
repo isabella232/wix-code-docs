@@ -17393,6 +17393,16 @@
           "doc": "Final place sequence with overrides"
         },
         {
+          "name": "reservationOptions",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.ReservationOptions"
+            }
+          ],
+          "doc": "Element reservation options"
+        },
+        {
           "name": "seqMetaData",
           "optional": true,
           "type": [
@@ -39568,6 +39578,26 @@
     {
       "name": "RequestCancellationResponse",
       "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "ReservationOptions",
+      "members": [
+        {
+          "name": "reserveWholeElement",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Indicates whether the entire element was reserved"
+        }
+      ],
       "docs": {
         "description": [
           ""
