@@ -1453,7 +1453,6 @@
       "members": [
         {
           "name": "archived",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
@@ -3381,7 +3380,6 @@
       "members": [
         {
           "name": "archived",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
