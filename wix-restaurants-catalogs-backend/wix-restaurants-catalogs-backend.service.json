@@ -2228,10 +2228,10 @@
           "required": false
         },
         {
-          "name": "includeVisibilityCriteria",
+          "name": "options",
           "type": [
             {
-              "nativeType": "boolean"
+              "referenceType": "wix-restaurants-catalogs-backend.GetItemOptions"
             }
           ],
           "doc": "",
@@ -2288,13 +2288,13 @@
           "required": false
         },
         {
-          "name": "includeVisibilityCriteria",
+          "name": "options",
           "type": [
             {
-              "nativeType": "boolean"
+              "referenceType": "wix-restaurants-catalogs-backend.GetItemOptions"
             }
           ],
-          "doc": "Whether `visibilityCriteria` is returned. Defaults to `false`.",
+          "doc": "",
           "required": false
         }
       ],
@@ -2548,16 +2548,6 @@
       "name": "listCatalogs",
       "params": [
         {
-          "name": "sort",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Sorting"
-            }
-          ],
-          "doc": "",
-          "required": false
-        },
-        {
           "name": "options",
           "type": [
             {
@@ -2607,16 +2597,6 @@
     {
       "name": "listCatalogs",
       "params": [
-        {
-          "name": "sort",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Sorting"
-            }
-          ],
-          "doc": "Sort order. Defaults to `ASC`.",
-          "required": false
-        },
         {
           "name": "options",
           "type": [
@@ -2672,23 +2652,6 @@
           "type": [
             {
               "nativeType": "string"
-            }
-          ],
-          "doc": "",
-          "required": false
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
             }
           ],
           "doc": "",
@@ -2755,23 +2718,6 @@
           "required": true
         },
         {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Field mask path.",
-          "required": false
-        },
-        {
           "name": "options",
           "type": [
             {
@@ -2828,23 +2774,6 @@
           "type": [
             {
               "nativeType": "string"
-            }
-          ],
-          "doc": "",
-          "required": false
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
             }
           ],
           "doc": "",
@@ -2911,23 +2840,6 @@
           "required": true
         },
         {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Field mask path.",
-          "required": false
-        },
-        {
           "name": "options",
           "type": [
             {
@@ -2984,23 +2896,6 @@
           "type": [
             {
               "nativeType": "string"
-            }
-          ],
-          "doc": "",
-          "required": false
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
             }
           ],
           "doc": "",
@@ -3065,23 +2960,6 @@
           ],
           "doc": "ID of the catalog the sections belong to.",
           "required": true
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Field mask path.",
-          "required": false
         },
         {
           "name": "options",
@@ -3351,10 +3229,10 @@
           "required": false
         },
         {
-          "name": "item",
+          "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateItemItem"
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateItemOptions"
             }
           ],
           "doc": "",
@@ -3411,10 +3289,10 @@
           "required": false
         },
         {
-          "name": "item",
+          "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateItemItem"
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateItemOptions"
             }
           ],
           "doc": "",
@@ -3474,10 +3352,10 @@
           "required": false
         },
         {
-          "name": "menu",
+          "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuMenu"
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuOptions"
             }
           ],
           "doc": "",
@@ -3534,10 +3412,10 @@
           "required": false
         },
         {
-          "name": "menu",
+          "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuMenu"
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateMenuOptions"
             }
           ],
           "doc": "",
@@ -3597,10 +3475,10 @@
           "required": false
         },
         {
-          "name": "section",
+          "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionSection"
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionOptions"
             }
           ],
           "doc": "",
@@ -3657,10 +3535,10 @@
           "required": false
         },
         {
-          "name": "section",
+          "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionSection"
+              "referenceType": "wix-restaurants-catalogs-backend.UpdateSectionOptions"
             }
           ],
           "doc": "",
@@ -5038,7 +4916,6 @@
       "members": [
         {
           "name": "archived",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
@@ -5974,6 +5851,26 @@
       }
     },
     {
+      "name": "GetItemOptions",
+      "members": [
+        {
+          "name": "includeVisibilityCriteria",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "GetItemRequest",
       "members": [
         {
@@ -6567,6 +6464,16 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "sort",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Sorting"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -6671,6 +6578,23 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -6764,6 +6688,23 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -6854,6 +6795,23 @@
           "type": [
             {
               "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
             }
           ],
           "doc": ""
@@ -7168,7 +7126,6 @@
       "members": [
         {
           "name": "archived",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
@@ -7684,16 +7641,6 @@
             }
           ],
           "doc": ""
-        },
-        {
-          "name": "item",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.item_3"
-            }
-          ],
-          "doc": ""
         }
       ],
       "docs": {
@@ -7703,150 +7650,16 @@
       }
     },
     {
-      "name": "UpdateItemItem",
+      "name": "UpdateItemOptions",
       "members": [
         {
-          "name": "acceptSpecialRequest",
-          "optional": true,
+          "name": "item",
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
+              "referenceType": "wix-restaurants-catalogs-backend.Item"
             }
           ],
-          "doc": "Whether a customer can add a special request when ordering this item. Defaults to `true`."
-        },
-        {
-          "name": "archived",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Whether the item is archived. Defaults to `false`. **Note:** Archived items can't be updated."
-        },
-        {
-          "name": "description",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Item description."
-        },
-        {
-          "name": "dishOptions",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.DishOptions"
-            }
-          ],
-          "doc": "Items customers can choose to modify a dish. Can be an extra, selection, or deselection."
-        },
-        {
-          "name": "imageUrl",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "URL of the item's image file."
-        },
-        {
-          "name": "inStock",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Whether the item is in stock."
-        },
-        {
-          "name": "labels",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Labels"
-            }
-          ],
-          "doc": "Item labels. For example spicy, hot, vegan, gluten-free, or organic."
-        },
-        {
-          "name": "name",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Item name."
-        },
-        {
-          "name": "price",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Money"
-            }
-          ],
-          "doc": "Item price."
-        },
-        {
-          "name": "taxRate",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Tax rate of the item in percent."
-        },
-        {
-          "name": "type",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Item type.\nOne of:\nDISH,\nUNSPECIFIED_ITEM_TYPE,\nVARIATION"
-        },
-        {
-          "name": "visibilityCriteria",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
-            }
-          ],
-          "doc": "Visibility criteria that must be met for the item to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
+          "doc": ""
         }
       ],
       "docs": {
@@ -7914,16 +7727,6 @@
             }
           ],
           "doc": ""
-        },
-        {
-          "name": "menu",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.menu_4"
-            }
-          ],
-          "doc": ""
         }
       ],
       "docs": {
@@ -7933,80 +7736,16 @@
       }
     },
     {
-      "name": "UpdateMenuMenu",
+      "name": "UpdateMenuOptions",
       "members": [
         {
-          "name": "archived",
-          "readOnly": true,
-          "optional": true,
+          "name": "menu",
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
+              "referenceType": "wix-restaurants-catalogs-backend.Menu"
             }
           ],
-          "doc": "Whether the menu is archived. Defaults to `false`. **Note:** Archived menus can't be updated."
-        },
-        {
-          "name": "description",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Menu description."
-        },
-        {
-          "name": "imageUrl",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "URL of the menu's image file."
-        },
-        {
-          "name": "name",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Menu name."
-        },
-        {
-          "name": "sectionIds",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.MenuSectionIds"
-            }
-          ],
-          "doc": "IDs of the sections that are included in the menu."
-        },
-        {
-          "name": "visibilityCriteria",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
-            }
-          ],
-          "doc": "Visibility criteria that must be met for the menu to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
+          "doc": ""
         }
       ],
       "docs": {
@@ -8083,13 +7822,22 @@
             }
           ],
           "doc": ""
-        },
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateSectionOptions",
+      "members": [
         {
           "name": "section",
-          "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.section_5"
+              "referenceType": "wix-restaurants-catalogs-backend.Section"
             }
           ],
           "doc": ""
@@ -8141,103 +7889,6 @@
             }
           ],
           "doc": "Updated section."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "UpdateSectionSection",
-      "members": [
-        {
-          "name": "archived",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Whether the section is archived. Defaults to `false`. **Note:** Archived sections can't be updated."
-        },
-        {
-          "name": "description",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Section description."
-        },
-        {
-          "name": "imageUrl",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "URL of the section's image file."
-        },
-        {
-          "name": "itemIds",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.SectionItemIds"
-            }
-          ],
-          "doc": "IDs of the items that belong to the section."
-        },
-        {
-          "name": "menuId",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "ID of the menu the section belongs to."
-        },
-        {
-          "name": "name",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Section name."
-        },
-        {
-          "name": "visibilityCriteria",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.VisibilityCriteria"
-            }
-          ],
-          "doc": "Visibility criteria that must be met for the section to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
         }
       ],
       "docs": {
@@ -8425,75 +8076,6 @@
             }
           ],
           "doc": "Whether the entity appears in the live site. Defaults to `true`.\nIf `false`, the entity isn't rendered in the live site, even if each visibility criterion is fulfilled."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "item_3",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "menu_4",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "section_5",
-      "members": [
-        {
-          "name": "_id",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
         }
       ],
       "docs": {
