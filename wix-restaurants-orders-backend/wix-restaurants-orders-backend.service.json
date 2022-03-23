@@ -2192,6 +2192,20 @@
           "doc": "Pickup details."
         },
         {
+          "name": "preparationTime",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "The time it takes to prepare and deliver the order in minutes"
+        },
+        {
           "name": "promisedTime",
           "optional": true,
           "type": [
