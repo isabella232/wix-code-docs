@@ -17389,7 +17389,17 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-dev-backend.Events.SeqMetaData"
+              "referenceType": "wix-dev-backend.Events.Sequencing"
+            }
+          ],
+          "doc": "A place numbering meta data"
+        },
+        {
+          "name": "sequencing",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-dev-backend.Events.Sequencing"
             }
           ],
           "doc": "A place numbering meta data"
@@ -39793,7 +39803,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Indicates whether the entire element was reserved"
+          "doc": "Indicates whether the entire element must be reserved"
         }
       ],
       "docs": {
@@ -40761,6 +40771,23 @@
           "doc": "A client defined external id for cross referencing.\nCan reference external entities.\nFormat: \"{fqdn}:{entity guid}\""
         },
         {
+          "name": "sections",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-dev-backend.Events.Section"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Sections of the plan. Seating plan is divided in high level sections."
+        },
+        {
           "name": "sectors",
           "optional": true,
           "type": [
@@ -40769,13 +40796,13 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-dev-backend.Events.Sector"
+                    "referenceType": "wix-dev-backend.Events.Section"
                   }
                 ]
               }
             }
           ],
-          "doc": "Sectors of the plan.Seating plan is divided in high level sectors."
+          "doc": "Sectors of the plan. Seating plan is divided in high level sectors."
         },
         {
           "name": "title",
@@ -41153,7 +41180,7 @@
       }
     },
     {
-      "name": "Sector",
+      "name": "Section",
       "members": [
         {
           "name": "_id",
@@ -41163,7 +41190,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": "Unique sector id"
+          "doc": "Unique section id"
         },
         {
           "name": "config",
@@ -41197,7 +41224,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": "Is default sector"
+          "doc": "Is default section"
         },
         {
           "name": "elements",
@@ -41214,7 +41241,7 @@
               }
             }
           ],
-          "doc": "Elements of the sector."
+          "doc": "Elements of the section."
         },
         {
           "name": "title",
@@ -41227,7 +41254,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Human readable sector title"
+          "doc": "Human readable section title"
         },
         {
           "name": "totalCapacity",
@@ -41396,12 +41423,42 @@
       }
     },
     {
-      "name": "SeqMetaData",
+      "name": "Sequencing",
       "members": [
+        {
+          "name": "labels",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Finite generated seq of labels"
+        },
         {
           "name": "reverse",
           "optional": true,
           "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "If true - direction right to left. Otherwise left to right."
+        },
+        {
+          "name": "reverseOrder",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
