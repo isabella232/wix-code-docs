@@ -146,29 +146,6 @@
       "name": "aggregateOrders",
       "params": [
         {
-          "name": "filter",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Record",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  },
-                  {
-                    "nativeType": "any"
-                  }
-                ]
-              }
-            },
-            {
-              "nativeType": "null"
-            }
-          ],
-          "doc": "Filter applied to original data",
-          "required": false
-        },
-        {
           "name": "options",
           "type": [
             {
@@ -877,16 +854,6 @@
           ],
           "doc": "Order ID.",
           "required": true
-        },
-        {
-          "name": "sendOrderCanceledEmail",
-          "type": [
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Whether to send an order canceled email to the buyer.",
-          "required": false
         },
         {
           "name": "options",
@@ -1651,23 +1618,6 @@
           "required": true
         },
         {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "mask of contact details fields to update",
-          "required": false
-        },
-        {
           "name": "options",
           "type": [
             {
@@ -1728,23 +1678,6 @@
           ],
           "doc": "Order ID.",
           "required": true
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Field mask of buyerInfo fields to update.",
-          "required": false
         },
         {
           "name": "options",
@@ -1881,23 +1814,6 @@
           ],
           "doc": "Order ID.",
           "required": true
-        },
-        {
-          "name": "fieldMask",
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "mask of shipping address fields to update",
-          "required": false
         },
         {
           "name": "options",
@@ -2359,6 +2275,29 @@
       "members": [
         {
           "name": "aggregation",
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "any"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "filter",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -3533,6 +3472,16 @@
         },
         {
           "name": "restockAllItems",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "sendOrderCanceledEmail",
           "optional": true,
           "type": [
             {
@@ -8296,6 +8245,23 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -8381,6 +8347,23 @@
           "type": [
             {
               "referenceType": "wix-ecom-backend.Orders.BuyerInfoUpdate"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
             }
           ],
           "doc": ""
@@ -8518,6 +8501,23 @@
     {
       "name": "UpdateOrderShippingAddressOptions",
       "members": [
+        {
+          "name": "fieldMask",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        },
         {
           "name": "shippingAddress",
           "type": [
