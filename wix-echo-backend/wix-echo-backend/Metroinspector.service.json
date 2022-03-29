@@ -30,16 +30,6 @@
           "required": false
         },
         {
-          "name": "arg2",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "2nd part of the message",
-          "required": false
-        },
-        {
           "name": "options",
           "type": [
             {
@@ -134,6 +124,16 @@
     {
       "name": "EchoOptions",
       "members": [
+        {
+          "name": "arg2",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
         {
           "name": "someDate",
           "optional": true,
