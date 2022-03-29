@@ -20,16 +20,6 @@
       "name": "publicLongEcho",
       "params": [
         {
-          "name": "int64Field",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "",
-          "required": false
-        },
-        {
           "name": "options",
           "type": [
             {
@@ -106,6 +96,16 @@
         },
         {
           "name": "fixed64Field",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "int64Field",
           "optional": true,
           "type": [
             {
@@ -314,6 +314,16 @@
         },
         {
           "name": "fixed64Field",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "int64Field",
           "optional": true,
           "type": [
             {
