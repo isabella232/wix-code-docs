@@ -20,10 +20,10 @@
       "name": "createProduct",
       "params": [
         {
-          "name": "product",
+          "name": "options",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.CreateProductOptions"
             }
           ],
           "doc": "",
@@ -189,10 +189,8 @@
         "description": [
           "|PROPERTY\t|SUPPORTED FILTERS & SORTING\t",
           "|:---:|:---:|",
-          "|`title`|[`eq()`](wix-metro-backend.Products.ProductsQueryBuilder#eq),[`ne()`](wix-metro-backend.Products.ProductsQueryBuilder#ne),[`startsWith()`](wix-metro-backend.Products.ProductsQueryBuilder#startsWith),[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|",
-          "|`id`|[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|",
-          "|`collectionId`|[`eq()`](wix-metro-backend.Products.ProductsQueryBuilder#eq),[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|",
-          "|`createdDate`|[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|"
+          "|`title`|[`eq()`](wix-metro-backend.Products.ProductsQueryBuilder#eq),[`ne()`](wix-metro-backend.Products.ProductsQueryBuilder#ne),[`startsWith()`](wix-metro-backend.Products.ProductsQueryBuilder#startsWith)|",
+          "|`collectionId`|[`eq()`](wix-metro-backend.Products.ProductsQueryBuilder#eq)|"
         ],
         "examples": [
           {
@@ -223,10 +221,10 @@
           "required": false
         },
         {
-          "name": "product",
+          "name": "options",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.UpdateProductOptions"
             }
           ],
           "doc": "",
@@ -301,6 +299,25 @@
             }
           ],
           "doc": "Address longitude."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CreateProductOptions",
+      "members": [
+        {
+          "name": "product",
+          "type": [
+            {
+              "referenceType": "wix-metro-backend.Products.Product"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -870,19 +887,19 @@
           "doc": ""
         },
         {
-          "name": "pageLink",
+          "name": "name",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.PageLink"
+              "nativeType": "string"
             }
           ],
           "doc": ""
         },
         {
-          "name": "title",
+          "name": "pageLink",
           "type": [
             {
-              "nativeType": "string"
+              "referenceType": "wix-metro-backend.Products.PageLink"
             }
           ],
           "doc": ""
@@ -1237,6 +1254,25 @@
       }
     },
     {
+      "name": "UpdateProductOptions",
+      "members": [
+        {
+          "name": "product",
+          "type": [
+            {
+              "referenceType": "wix-metro-backend.Products.Product"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "UpdateProductRequest",
       "members": [
         {
@@ -1329,6 +1365,20 @@
       "name": "VideoResolution",
       "members": [
         {
+          "name": "filename",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Video filename. Optional."
+        },
+        {
           "name": "format",
           "optional": true,
           "type": [
@@ -1340,7 +1390,6 @@
         },
         {
           "name": "height",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
@@ -1351,13 +1400,28 @@
         },
         {
           "name": "poster",
+          "readOnly": false,
           "optional": true,
           "type": [
             {
               "nativeType": "string"
             }
           ],
-          "doc": "Video thumbnail."
+          "doc": "Video poster. Deprecated, please use the `posters` property in the parent entity"
+        },
+        {
+          "name": "quality",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Video quality for example 480p, 720p"
         },
         {
           "name": "sizeInBytes",
@@ -1371,7 +1435,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Video size in bytes. Optional."
+          "doc": "Video size in bytes. Optional. Deprecated, please use the `sizeInBytes` property in the parent entity. Size cannot be provided per resolution"
         },
         {
           "name": "url",
@@ -1392,11 +1456,10 @@
               "nativeType": "Date"
             }
           ],
-          "doc": "Video URL expiration date (when relevant). Optional"
+          "doc": "Video URL expiration date (when relevant). Optional. Deprecated, please use the `urlExpirationDate` property in the parent entity"
         },
         {
           "name": "width",
-          "readOnly": true,
           "optional": true,
           "type": [
             {
