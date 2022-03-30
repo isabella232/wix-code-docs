@@ -80,6 +80,7 @@
       "members": [
         {
           "name": "content",
+          "optional": true,
           "type": [
             {
               "referenceType": "wix-reviews-backend.ReviewContent"
@@ -98,6 +99,7 @@
         },
         {
           "name": "email",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -110,6 +112,7 @@
         },
         {
           "name": "name",
+          "optional": true,
           "type": [
             {
               "nativeType": "null"
@@ -729,6 +732,26 @@
       }
     },
     {
+      "name": "QueryReviewsOptions",
+      "members": [
+        {
+          "name": "query",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-reviews-backend.QueryV2"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "QueryReviewsRequest",
       "members": [
         {
@@ -1121,6 +1144,26 @@
       }
     },
     {
+      "name": "SetReplyOptions",
+      "members": [
+        {
+          "name": "message",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "SetReplyRequest",
       "members": [
         {
@@ -1203,7 +1246,18 @@
       "name": "UpdateReviewOptions",
       "members": [
         {
+          "name": "content",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-reviews-backend.ReviewContent"
+            }
+          ],
+          "doc": ""
+        },
+        {
           "name": "fieldset",
+          "optional": true,
           "type": [
             {
               "complexType": {
