@@ -1,0 +1,203 @@
+{
+  "name": "OrdersQueryBuilder",
+  "memberOf": "wix-ecom-backend.Payments",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "wix-ecom-backend-order.payments.orders-query-builder",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [],
+  "operations": [
+    {
+      "name": "ascending",
+      "params": [
+        {
+          "name": "propertyNames",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-ecom-backend.Payments.OrdersQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "descending",
+      "params": [
+        {
+          "name": "propertyNames",
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-ecom-backend.Payments.OrdersQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "find",
+      "params": [],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-ecom-backend.Payments.OrdersQueryResult"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Returns the `payments` that match the query.",
+        "description": [
+          "The `find()` function returns a Promise that resolves to the results found by the query and some information about the results. The Promise is rejected if `find()` is called with incorrect permissions or if any of the functions used to refine the query are invalid."
+        ],
+        "examples": [
+          {
+            "title": "find example",
+            "body": [
+              "import { payments } from 'wix-ecom-backend';",
+              "//...",
+              "payments",
+              "  .queryOrders()",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "limit",
+      "params": [
+        {
+          "name": "limit",
+          "type": [
+            {
+              "nativeType": "number"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "referenceType": "wix-ecom-backend.Payments.OrdersQueryBuilder"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Limits the number of items the query returns.",
+        "description": [
+          "The `limit()` function defines the number of results a query returns in each page. Only one page of results is retrieved at a time. The `next()` and `prev()` functions are used to navigate the pages of a query result.",
+          "",
+          "By default, `limit` is set to 50.",
+          "",
+          "The maximum value that `limit()` can accept is 1000."
+        ],
+        "examples": [
+          {
+            "title": "limit example",
+            "body": [
+              "import { payments } from 'wix-ecom-backend';",
+              "//...",
+              "payments",
+              "  .queryOrders()",
+              "  .limit(10)",
+              "  .find()",
+              "  .then((results) => {",
+              "    if (results.items.length > 0) {",
+              "      const items = results.items;",
+              "      const firstItem = items[0];",
+              "      const pageSize = results.pageSize;",
+              "      const hasNext = results.hasNext();",
+              "      const hasPrev = results.hasPrev();",
+              "      const length = results.length;",
+              "    } else {",
+              "      // handle case where no matching items found",
+              "    }",
+              "  })",
+              "  .catch((error) => {",
+              "    console.error(error);",
+              "  });",
+              ""
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "messages": []
+}
