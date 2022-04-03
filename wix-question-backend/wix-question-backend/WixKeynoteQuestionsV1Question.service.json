@@ -1043,6 +1043,7 @@
       "members": [
         {
           "name": "mask",
+          "optional": true,
           "type": [
             {
               "complexType": {
@@ -1231,6 +1232,7 @@
       "members": [
         {
           "name": "redeemVote",
+          "optional": true,
           "type": [
             {
               "nativeType": "boolean"
