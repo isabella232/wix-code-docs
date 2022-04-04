@@ -576,7 +576,7 @@
       ],
       "requiredFields": [
         "checkout",
-        "checkout._id",
+        "checkoutId",
         "checkout.customFields.value",
         "checkout.membershipOptions.selectedMemberships.memberships._id",
         "checkout.membershipOptions.selectedMemberships.memberships.appId",
@@ -6953,6 +6953,19 @@
             }
           ],
           "doc": "Date and time the checkout was created."
+        },
+        {
+          "name": "_id",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Checkout ID."
         },
         {
           "name": "_updatedDate",
