@@ -1058,7 +1058,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.fulfillment_4"
+              "referenceType": "wix-ecom-backend.Fulfillments.fulfillment_2"
             }
           ],
           "doc": ""
@@ -1103,7 +1103,7 @@
           "name": "fulfillment",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.fulfillment_5"
+              "referenceType": "wix-ecom-backend.Fulfillments.fulfillment_3"
             }
           ],
           "doc": ""
@@ -1224,7 +1224,7 @@
       }
     },
     {
-      "name": "fulfillment_4",
+      "name": "fulfillment_2",
       "members": [
         {
           "name": "_id",
@@ -1247,7 +1247,7 @@
       }
     },
     {
-      "name": "fulfillment_5",
+      "name": "fulfillment_3",
       "members": [
         {
           "name": "_createdDate",
