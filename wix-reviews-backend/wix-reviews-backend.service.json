@@ -1357,17 +1357,6 @@
           "doc": ""
         },
         {
-          "name": "author",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-reviews-backend.Author"
-            }
-          ],
-          "doc": "Reply author data"
-        },
-        {
           "name": "message",
           "optional": true,
           "type": [
