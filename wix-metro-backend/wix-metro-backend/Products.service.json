@@ -192,7 +192,8 @@
           "|`title`|[`eq()`](wix-metro-backend.Products.ProductsQueryBuilder#eq),[`ne()`](wix-metro-backend.Products.ProductsQueryBuilder#ne),[`startsWith()`](wix-metro-backend.Products.ProductsQueryBuilder#startsWith),[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|",
           "|`id`|[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|",
           "|`collectionId`|[`eq()`](wix-metro-backend.Products.ProductsQueryBuilder#eq),[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|",
-          "|`createdDate`|[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|"
+          "|`createdDate`|[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|",
+          "|`guid`|[`eq()`](wix-metro-backend.Products.ProductsQueryBuilder#eq),[`ne()`](wix-metro-backend.Products.ProductsQueryBuilder#ne),[`startsWith()`](wix-metro-backend.Products.ProductsQueryBuilder#startsWith),[`ascending()`](wix-metro-backend.Products.ProductsQueryBuilder#ascending),[`descending()`](wix-metro-backend.Products.ProductsQueryBuilder#descending)|"
         ],
         "examples": [
           {
@@ -818,6 +819,15 @@
         },
         {
           "name": "document",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "guid",
           "type": [
             {
               "nativeType": "string"
