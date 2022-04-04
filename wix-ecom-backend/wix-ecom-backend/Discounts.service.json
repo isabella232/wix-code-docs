@@ -315,7 +315,7 @@
       ],
       "requiredFields": [
         "discountRule",
-        "discountRule._id",
+        "discountRuleId",
         "discountRule.revision"
       ],
       "ret": {
@@ -2051,6 +2051,20 @@
             }
           ],
           "doc": "Represents the time this DiscountRule was created"
+        },
+        {
+          "name": "_id",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "DiscountRule ID"
         },
         {
           "name": "_updatedDate",
