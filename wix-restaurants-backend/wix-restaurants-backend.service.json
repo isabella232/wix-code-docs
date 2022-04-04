@@ -1,0 +1,27 @@
+{
+  "name": "wix-restaurants-backend",
+  "mixes": [],
+  "callbacks": [],
+  "extra": {},
+  "clientId": "wix-restaurants-backend",
+  "docs": {},
+  "relatedGuides": [],
+  "properties": [
+    {
+      "name": "orders",
+      "type": [
+        {
+          "referenceType": "wix-restaurants-backend.Orders"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    }
+  ],
+  "operations": [],
+  "messages": []
+}
