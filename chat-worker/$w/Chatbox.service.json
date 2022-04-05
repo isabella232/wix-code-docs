@@ -9,7 +9,7 @@
     { "lineno": 123,
       "filename": "chatApiPublic.js" },
   "docs":
-    { "summary": "An element for sending and receiving chat messages.",
+    { "summary": "An element for sending and receiving chat messages. Simon was here.",
       "description":
         [ "The <a href=\"https://support.wix.com/en/article/about-wix-chat\" target=\"_blank\">Wix Chat</a> application lets you communicate with site visitors via a chatbox.",
           "The chatbox sends messages over a chat channel, which connects 2 or more chat participants.",
@@ -539,8 +539,7 @@
         "extra":
           {  } },
       { "name": "onMessageReceived",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "message",
@@ -590,8 +589,7 @@
           { "notes":
               [ "`onMessageReceived()` runs if the message was sent via the chatbox widget. It does not run if the message was sent programatically using [`sendMessage()`](#sendMessage).\n\n `onMessageReceived()` doesn't work when previewing your site." ] } },
       { "name": "onMessageSent",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "message",
