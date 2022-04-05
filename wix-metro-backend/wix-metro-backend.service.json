@@ -6,7 +6,22 @@
   "clientId": "wix-metro-backend",
   "docs": {},
   "relatedGuides": [],
-  "properties": [],
+  "properties": [
+    {
+      "name": "products",
+      "type": [
+        {
+          "referenceType": "wix-metro-backend.Products"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    }
+  ],
   "operations": [],
   "messages": []
 }
