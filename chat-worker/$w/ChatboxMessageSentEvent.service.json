@@ -1,0 +1,24 @@
+{ "name": "ChatboxMessageSentEvent",
+  "memberOf": "$w",
+  "mixes":
+    [ "$w.Event" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 355,
+      "filename": "chatApiPublic.js" },
+  "docs":
+    { "summary": "Event that is fired when a site visitor sends a chat message.",
+      "description":
+        [ "The `onMessageSent()` event handler runs when a chat message is sent. The sent `Message`",
+          " object contains information about the message that was sent." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }

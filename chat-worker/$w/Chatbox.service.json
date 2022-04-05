@@ -6,7 +6,7 @@
   "labels":
     [ "changed" ],
   "location":
-    { "lineno": 125,
+    { "lineno": 123,
       "filename": "chatApiPublic.js" },
   "docs":
     { "summary": "An element for sending and receiving chat messages.",
@@ -30,7 +30,7 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 220,
+          [ { "lineno": 222,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Indicates if an element appears on all pages or only on the current page.",
@@ -56,7 +56,7 @@
         "type": "boolean",
         "defaultValue": "false",
         "locations":
-          [ { "lineno": 154,
+          [ { "lineno": 153,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Indicates if the chatbox is visible or hidden.",
@@ -125,7 +125,7 @@
         "set": false,
         "type": "boolean",
         "locations":
-          [ { "lineno": 481,
+          [ { "lineno": 479,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Indicates if the chatbox is maximized.",
@@ -154,14 +154,13 @@
         "extra":
           {  } },
       { "name": "parent",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "get": true,
         "set": false,
         "type": "$w.Node",
         "defaultValue": "null",
         "locations":
-          [ { "lineno": 197,
+          [ { "lineno": 198,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "<b>Note: This standard element property is not relevant for Chatbox.</b>",
@@ -196,7 +195,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the chat box focuses on the channel." },
         "locations":
-          [ { "lineno": 428,
+          [ { "lineno": 447,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Expands the chatbox and focuses it on the specified chat channel.",
@@ -258,7 +257,7 @@
                   [ "$w.Chatbox.Channel" ] },
             "doc": "Fulfilled - When the information associated with the specific channel has been retrieved." },
         "locations":
-          [ { "lineno": 497,
+          [ { "lineno": 493,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Gets a chatbox channel.",
@@ -368,7 +367,7 @@
                         [ "$w.Chatbox.Channel" ] } ] },
             "doc": "Fulfilled - When the list of channels has been retrieved." },
         "locations":
-          [ { "lineno": 456,
+          [ { "lineno": 467,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Gets a list of available chat channels for a site visitor.",
@@ -432,7 +431,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the chatbox is maximized." },
         "locations":
-          [ { "lineno": 398,
+          [ { "lineno": 417,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Expands the chatbox and sets its [`maximized`](#maximized) property to `true`.",
@@ -479,7 +478,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the chatbox is minimized." },
         "locations":
-          [ { "lineno": 413,
+          [ { "lineno": 432,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Collapses the chatbox and sets its [`maximized`](#maximized) property to `false`.",
@@ -522,7 +521,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 363,
+          [ { "lineno": 390,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An event that fires when the chatbox is maximized.",
@@ -546,11 +545,14 @@
         "params":
           [ { "name": "message",
               "type": "$w.Chatbox.Message",
-              "doc": "The message that was received." } ],
+              "doc": "The message that was received." },
+            { "name": "handler",
+              "type": "$w.ChatboxMessageReceivedEventHandler",
+              "doc": "The name of the function or\n the function expression to run when a site visitor receives a chat message." } ],
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 306,
+          [ { "lineno": 329,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An event that fires when a site visitor receives a chat message.",
@@ -594,11 +596,14 @@
         "params":
           [ { "name": "message",
               "type": "$w.Chatbox.Message",
-              "doc": "The message that was sent." } ],
+              "doc": "The message that was sent." },
+            { "name": "handler",
+              "type": "$w.ChatboxMessageSentEventHandler",
+              "doc": "The name of the function or\nthe function expression to run when a site visitor sends a chat message." } ],
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 334,
+          [ { "lineno": 364,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An event that fires when a site visitor sends a chat message.",
@@ -641,7 +646,7 @@
         "ret":
           { "type": "void" },
         "locations":
-          [ { "lineno": 353,
+          [ { "lineno": 382,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An event that fires when the chatbox is minimized.",
@@ -659,8 +664,7 @@
         "extra":
           {  } },
       { "name": "onViewportEnter",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -670,7 +674,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 259,
+          [ { "lineno": 263,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "<b>Note: This standard element event is not relevant for Chatbox.</b>",
@@ -692,8 +696,7 @@
         "extra":
           { "eventType": "viewportEnter" } },
       { "name": "onViewportLeave",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "handler",
@@ -703,7 +706,7 @@
           { "type": "$w.Element",
             "doc": "The element on which the event is now registered." },
         "locations":
-          [ { "lineno": 282,
+          [ { "lineno": 287,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "<b>Note: This standard element event is not relevant for Chatbox.</b>",
@@ -726,8 +729,7 @@
         "extra":
           { "eventType": "viewportLeave" } },
       { "name": "scrollTo",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params": [],
         "ret":
@@ -737,7 +739,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the scroll is complete." },
         "locations":
-          [ { "lineno": 237,
+          [ { "lineno": 240,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "<b>Note: This standard element function is not relevant for Chatbox.</b>",
@@ -760,8 +762,7 @@
         "extra":
           {  } },
       { "name": "sendMessage",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "messageInfo",
@@ -774,7 +775,7 @@
                   [ "void" ] },
             "doc": "Fulfilled - When the message is sent." },
         "locations":
-          [ { "lineno": 373,
+          [ { "lineno": 398,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "Sends a chat message from a site visitor.",
@@ -825,7 +826,7 @@
   "messages":
     [ { "name": "Channel",
         "locations":
-          [ { "lineno": 92,
+          [ { "lineno": 88,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An object representing a chat channel.",
@@ -932,7 +933,7 @@
         "labels": [] },
       { "name": "ChannelInfo",
         "locations":
-          [ { "lineno": 104,
+          [ { "lineno": 101,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An object containing information about a chat channel.",
@@ -1035,11 +1036,10 @@
         "extra":
           { "notes":
               [ "At least one of the object properties is required. If `channelId` is passed, `type` is ignored." ] },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "DisplayData",
         "locations":
-          [ { "lineno": 48,
+          [ { "lineno": 43,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An object representing display information associated with a [`Channel`](#channel).",
@@ -1124,11 +1124,10 @@
               "doc": "Only supported for business channels. Initials of the site's business." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "Message",
         "locations":
-          [ { "lineno": 20,
+          [ { "lineno": 13,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An object that contains information about a chat message.",
@@ -1210,7 +1209,7 @@
         "labels": [] },
       { "name": "MessageInfo",
         "locations":
-          [ { "lineno": 37,
+          [ { "lineno": 31,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "An object representing a chat message to be sent.",
@@ -1263,7 +1262,7 @@
         "labels": [] },
       { "name": "MessagePayload",
         "locations":
-          [ { "lineno": 9,
+          [ { "lineno": 1,
               "filename": "chatApiPublic.js" } ],
         "docs":
           { "summary": "The content of a chat message.",
@@ -1306,4 +1305,5 @@
         "labels": [] } ],
   "extra":
     { "notes":
-        [ "You cannot use a channel programmatically until it is created. A channel is created the first\n time the business or a visitor sends a message via the chatbox widget to a specific recipient.\n\n You can also send chat messages from the [backend](wix-chat-backend.html) of your site." ] } }
+        [ "You cannot use a channel programmatically until it is created. A channel is created the first\n time the business or a visitor sends a message via the chatbox widget to a specific recipient.\n\n You can also send chat messages from the [backend](wix-chat-backend.html) of your site." ],
+      "queryable": true } }

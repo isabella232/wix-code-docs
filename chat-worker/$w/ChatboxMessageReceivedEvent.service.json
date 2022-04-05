@@ -1,0 +1,25 @@
+{ "name": "ChatboxMessageReceivedEvent",
+  "memberOf": "$w",
+  "mixes":
+    [ "$w.Event" ],
+  "labels":
+    [ "new" ],
+  "location":
+    { "lineno": 318,
+      "filename": "chatApiPublic.js" },
+  "docs":
+    { "summary": "Event that is fired when a site visitor receives a chat message.",
+      "description":
+        [ "The `onMessageReceived()` event handler runs when a chat message is received",
+          " by a site visitor. The received `Message`",
+          " object contains information about the message that was received." ],
+      "links": [],
+      "examples": [],
+      "extra":
+        {  } },
+  "properties": [],
+  "operations": [],
+  "callbacks": [],
+  "messages": [],
+  "extra":
+    {  } }
