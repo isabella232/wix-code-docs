@@ -464,6 +464,19 @@
       "name": "UpdateWishlistWishlist",
       "members": [
         {
+          "name": "_id",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Wishlist ID"
+        },
+        {
           "name": "email",
           "optional": true,
           "type": [
