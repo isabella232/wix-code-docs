@@ -13,7 +13,7 @@
       "params": [{
         "name": "event",
         "type": [{
-          "referenceType": "wix-echo-backend.Events.EchoDispatched"
+          "referenceType": "wix-metro-backend.Events.EchoDispatched"
         }],
         "doc": "mlm\n",
         "required": false
@@ -47,7 +47,7 @@
       "params": [{
         "name": "event",
         "type": [{
-          "referenceType": "wix-echo-backend.Events.EchoDispatched2"
+          "referenceType": "wix-metro-backend.Events.EchoDispatched2"
         }],
         "doc": "mlm\n",
         "required": false
@@ -82,14 +82,14 @@
       "members": [{
           "name": "data",
           "type": [{
-            "referenceType": "wix-echo-backend.Events.Dispatched"
+            "nativeType": "string"
           }],
           "doc": ""
         },
         {
           "name": "metadata",
           "type": [{
-            "referenceType": "wix-echo-backend.Events.BackendEventMetadata"
+            "nativeType": "string"
           }],
           "doc": ""
         }
@@ -105,14 +105,14 @@
       "members": [{
           "name": "data",
           "type": [{
-            "referenceType": "wix-echo-backend.Events.Dispatched"
+            "nativeType": "string"
           }],
           "doc": ""
         },
         {
           "name": "metadata",
           "type": [{
-            "referenceType": "wix-echo-backend.Events.BackendEventMetadata"
+            "nativeType": "string"
           }],
           "doc": ""
         }
