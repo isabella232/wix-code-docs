@@ -41,8 +41,8 @@
          "ret":{
             "type":[
                {
-                  "nativeType":"void"
-               }
+                     "referenceType":"wix-metro-backend.Events.Foo"
+                  }
             ],
             "doc":null
          },
@@ -86,8 +86,9 @@
          "ret":{
             "type":[
                {
-                  "nativeType":"void"
-               }
+                     "referenceType":"wix-metro-backend.Events.NamespaceFoo",
+                     "displayName":"Foo"
+                  }
             ],
             "doc":null
          },
