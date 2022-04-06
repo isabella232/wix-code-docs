@@ -72,7 +72,8 @@
                "name":"event",
                "type":[
                   {
-                     "referenceType":"wix-metro-backend.Events.NamespaceFoo"
+                     "referenceType":"wix-metro-backend.Events.NamespaceFoo",
+                     "displayName":"Foo"
                   }
                ],
                "doc":"mlm\n",
@@ -132,7 +133,6 @@
       },
       {
          "name":"NamespaceFoo",
-         "displayName":"Foo",
          "members":[
             {
                "name":"test2",
