@@ -12,7 +12,6 @@
        "get": true,
        "set": false,
       "type":  "wix-metro-backend.Products",
-      ],
       "docs": {
         "summary": "",
         "links": [],
