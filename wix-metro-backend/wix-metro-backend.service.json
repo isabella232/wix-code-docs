@@ -11,10 +11,7 @@
       "name": "products",
        "get": true,
        "set": false,
-      "type": [
-        {
-          "referenceType": "wix-metro-backend.Products"
-        }
+      "type":  "wix-metro-backend.Products",
       ],
       "docs": {
         "summary": "",
