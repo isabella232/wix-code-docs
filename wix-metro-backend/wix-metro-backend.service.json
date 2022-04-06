@@ -8,11 +8,12 @@
   "relatedGuides": [],
   "properties": [
     {
-    "name": "products",
-     "get": true,
-     "set": false,
-      "labels": [],
-      "type":  "wix-metro-backend.Products",
+      "name": "products",
+      "type": [
+        {
+          "referenceType": "wix-metro-backend.Products"
+        }
+      ],
       "docs": {
         "summary": "",
         "links": [],
