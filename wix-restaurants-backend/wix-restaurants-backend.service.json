@@ -8,6 +8,20 @@
   "relatedGuides": [],
   "properties": [
     {
+      "name": "catalogs",
+      "type": [
+        {
+          "referenceType": "wix-restaurants-backend.Catalogs"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    },
+    {
       "name": "orders",
       "type": [
         {
