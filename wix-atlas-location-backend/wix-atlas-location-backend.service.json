@@ -15,7 +15,8 @@
           "name": "addressLocation",
           "type": [
             {
-              "referenceType": "wix-atlas-location-backend.AddressLocation"
+              "referenceType": "wix-atlas-location-backend.AddressLocation",
+              "displayName": "AddressLocation"
             }
           ],
           "doc": "",
@@ -30,7 +31,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-atlas-location-backend.ReverseGeocodingResponse"
+                  "referenceType": "wix-atlas-location-backend.ReverseGeocodingResponse",
+                  "displayName": "ReverseGeocodingResponse"
                 }
               ]
             }
@@ -65,7 +67,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-atlas-location-backend.SearchOptions"
+              "referenceType": "wix-atlas-location-backend.SearchOptions",
+              "displayName": "SearchOptions"
             }
           ],
           "doc": "",
@@ -80,7 +83,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-atlas-location-backend.SearchResponse"
+                  "referenceType": "wix-atlas-location-backend.SearchResponse",
+                  "displayName": "SearchResponse"
                 }
               ]
             }
@@ -196,7 +200,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-location-backend.AddressLocation"
+              "referenceType": "wix-atlas-location-backend.AddressLocation",
+              "displayName": "AddressLocation"
             }
           ],
           "doc": "coordinates of the physical address"
@@ -232,7 +237,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-location-backend.StreetAddress"
+              "referenceType": "wix-atlas-location-backend.StreetAddress",
+              "displayName": "StreetAddress"
             }
           ],
           "doc": "a break down of the street to number and street name"
@@ -259,7 +265,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-location-backend.Subdivision"
+                    "referenceType": "wix-atlas-location-backend.Subdivision",
+                    "displayName": "Subdivision"
                   }
                 ]
               }
@@ -347,7 +354,8 @@
           "name": "addressLocation",
           "type": [
             {
-              "referenceType": "wix-atlas-location-backend.AddressLocation"
+              "referenceType": "wix-atlas-location-backend.AddressLocation",
+              "displayName": "AddressLocation"
             }
           ],
           "doc": "The latitude and longitude values specifying the location for which you wish to obtain the closest, human-readable address."
@@ -371,7 +379,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-location-backend.SearchResult"
+                    "referenceType": "wix-atlas-location-backend.SearchResult",
+                    "displayName": "SearchResult"
                   }
                 ]
               }
@@ -415,7 +424,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-location-backend.FilterBy"
+                    "referenceType": "wix-atlas-location-backend.FilterBy",
+                    "displayName": "FilterBy"
                   }
                 ]
               }
@@ -485,7 +495,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-location-backend.FilterBy"
+                    "referenceType": "wix-atlas-location-backend.FilterBy",
+                    "displayName": "FilterBy"
                   }
                 ]
               }
@@ -538,7 +549,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-location-backend.SearchResult"
+                    "referenceType": "wix-atlas-location-backend.SearchResult",
+                    "displayName": "SearchResult"
                   }
                 ]
               }
@@ -561,7 +573,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-location-backend.Address"
+              "referenceType": "wix-atlas-location-backend.Address",
+              "displayName": "Address"
             }
           ],
           "doc": ""
