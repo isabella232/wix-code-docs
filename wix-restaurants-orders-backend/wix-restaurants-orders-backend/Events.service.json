@@ -16,8 +16,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-OrderAcceptedEvent",
-              "displayName": "OrderAcceptedEvent"
+              "referenceType": "wix-restaurants-orders-backend.Events.OrderAcceptedEvent"
             }
           ],
           "doc": "",
@@ -59,8 +58,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-OrderCanceledEvent",
-              "displayName": "OrderCanceledEvent"
+              "referenceType": "wix-restaurants-orders-backend.Events.OrderCanceledEvent"
             }
           ],
           "doc": "",
@@ -102,8 +100,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-OrderFulfilledEvent",
-              "displayName": "OrderFulfilledEvent"
+              "referenceType": "wix-restaurants-orders-backend.Events.OrderFulfilledEvent"
             }
           ],
           "doc": "",
@@ -141,7 +138,7 @@
   ],
   "messages": [
     {
-      "name": "@wix/velo-events-AcceptOrderRequest",
+      "name": "AcceptOrderRequest",
       "members": [
         {
           "name": "_id",
@@ -173,15 +170,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-AcceptOrderResponse",
+      "name": "AcceptOrderResponse",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "Accepted order."
@@ -194,7 +190,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Activity",
+      "name": "Activity",
       "members": [
         {
           "name": "message",
@@ -229,7 +225,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BackendEventMetadata",
+      "name": "BackendEventMetadata",
       "members": [
         {
           "name": "entityId",
@@ -275,7 +271,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CancelOrderRequest",
+      "name": "CancelOrderRequest",
       "members": [
         {
           "name": "_id",
@@ -307,15 +303,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-CancelOrderResponse",
+      "name": "CancelOrderResponse",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "Canceled order."
@@ -328,7 +323,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CatalogReference",
+      "name": "CatalogReference",
       "members": [
         {
           "name": "catalogItemDescription",
@@ -390,7 +385,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ChannelInfo",
+      "name": "ChannelInfo",
       "members": [
         {
           "name": "type",
@@ -410,7 +405,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Coupon",
+      "name": "Coupon",
       "members": [
         {
           "name": "_id",
@@ -440,7 +435,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Curbside",
+      "name": "Curbside",
       "members": [
         {
           "name": "info",
@@ -460,7 +455,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CursorPaging",
+      "name": "CursorPaging",
       "members": [
         {
           "name": "cursor",
@@ -496,7 +491,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Cursors",
+      "name": "Cursors",
       "members": [
         {
           "name": "next",
@@ -532,7 +527,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Customer",
+      "name": "Customer",
       "members": [
         {
           "name": "contactId",
@@ -624,7 +619,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DeliveryAddress",
+      "name": "DeliveryAddress",
       "members": [
         {
           "name": "addressLine2",
@@ -761,8 +756,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-DeliveryAddressLocation",
-              "displayName": "DeliveryAddressLocation"
+              "referenceType": "wix-restaurants-orders-backend.Events.DeliveryAddressLocation"
             }
           ],
           "doc": "Geo coordinates of the address."
@@ -837,7 +831,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DeliveryAddressLocation",
+      "name": "DeliveryAddressLocation",
       "members": [
         {
           "name": "latitude",
@@ -873,15 +867,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-DeliveryDetails",
+      "name": "DeliveryDetails",
       "members": [
         {
           "name": "address",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-DeliveryAddress",
-              "displayName": "DeliveryAddress"
+              "referenceType": "wix-restaurants-orders-backend.Events.DeliveryAddress"
             }
           ],
           "doc": "Delivery address."
@@ -891,8 +884,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-ExternalProvider",
-              "displayName": "ExternalProvider"
+              "referenceType": "wix-restaurants-orders-backend.Events.ExternalProvider"
             }
           ],
           "doc": "Delivery through an external provider."
@@ -902,8 +894,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-PickupInfo",
-              "displayName": "PickupInfo"
+              "referenceType": "wix-restaurants-orders-backend.Events.PickupInfo"
             }
           ],
           "doc": "Information about the delivery pickup."
@@ -913,8 +904,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Restaurant",
-              "displayName": "Restaurant"
+              "referenceType": "wix-restaurants-orders-backend.Events.Restaurant"
             }
           ],
           "doc": "Delivery through the restaurant."
@@ -927,7 +917,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DineInDetails",
+      "name": "DineInDetails",
       "members": [
         {
           "name": "label",
@@ -957,7 +947,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Discount",
+      "name": "Discount",
       "members": [
         {
           "name": "appliedAmount",
@@ -1007,7 +997,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DropOffInfo",
+      "name": "DropOffInfo",
       "members": [
         {
           "name": "contactless",
@@ -1027,7 +1017,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Empty",
+      "name": "Empty",
       "members": [],
       "docs": {
         "description": [
@@ -1036,7 +1026,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ExternalProvider",
+      "name": "ExternalProvider",
       "members": [
         {
           "name": "_id",
@@ -1114,7 +1104,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-FulfillOrderRequest",
+      "name": "FulfillOrderRequest",
       "members": [
         {
           "name": "_id",
@@ -1133,15 +1123,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-FulfillOrderResponse",
+      "name": "FulfillOrderResponse",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "Fulfilled order."
@@ -1154,7 +1143,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Fulfillment",
+      "name": "Fulfillment",
       "members": [
         {
           "name": "asap",
@@ -1174,8 +1163,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-DeliveryDetails",
-              "displayName": "DeliveryDetails"
+              "referenceType": "wix-restaurants-orders-backend.Events.DeliveryDetails"
             }
           ],
           "doc": "Delivery details."
@@ -1185,8 +1173,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-DineInDetails",
-              "displayName": "DineInDetails"
+              "referenceType": "wix-restaurants-orders-backend.Events.DineInDetails"
             }
           ],
           "doc": "Dine-in details"
@@ -1196,8 +1183,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-PickupDetails",
-              "displayName": "PickupDetails"
+              "referenceType": "wix-restaurants-orders-backend.Events.PickupDetails"
             }
           ],
           "doc": "Pickup details."
@@ -1230,7 +1216,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetOrderByMsidRequest",
+      "name": "GetOrderByMsidRequest",
       "members": [
         {
           "name": "_id",
@@ -1275,15 +1261,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetOrderByMsidResponse",
+      "name": "GetOrderByMsidResponse",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "Order data."
@@ -1296,7 +1281,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetOrderRequest",
+      "name": "GetOrderRequest",
       "members": [
         {
           "name": "_id",
@@ -1332,15 +1317,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetOrderResponse",
+      "name": "GetOrderResponse",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "Retrieved order."
@@ -1353,7 +1337,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetTotalActiveOrdersRequest",
+      "name": "GetTotalActiveOrdersRequest",
       "members": [
         {
           "name": "locationId",
@@ -1389,7 +1373,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetTotalActiveOrdersResponse",
+      "name": "GetTotalActiveOrdersResponse",
       "members": [
         {
           "name": "totals",
@@ -1400,8 +1384,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-LocationToAmount",
-                    "displayName": "LocationToAmount"
+                    "referenceType": "wix-restaurants-orders-backend.Events.LocationToAmount"
                   }
                 ]
               }
@@ -1417,15 +1400,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-LineItem",
+      "name": "LineItem",
       "members": [
         {
           "name": "catalogReference",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-CatalogReference",
-              "displayName": "CatalogReference"
+              "referenceType": "wix-restaurants-orders-backend.Events.CatalogReference"
             }
           ],
           "doc": "References to the line item’s origin catalog."
@@ -1452,8 +1434,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-LineItemOption",
-                    "displayName": "LineItemOption"
+                    "referenceType": "wix-restaurants-orders-backend.Events.LineItemOption"
                   }
                 ]
               }
@@ -1489,7 +1470,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-LineItemOption",
+      "name": "LineItemOption",
       "members": [
         {
           "name": "availableChoices",
@@ -1500,8 +1481,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-LineItemOptionItem",
-                    "displayName": "LineItemOptionItem"
+                    "referenceType": "wix-restaurants-orders-backend.Events.LineItemOptionItem"
                   }
                 ]
               }
@@ -1577,8 +1557,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-LineItem",
-                    "displayName": "LineItem"
+                    "referenceType": "wix-restaurants-orders-backend.Events.LineItem"
                   }
                 ]
               }
@@ -1604,7 +1583,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-LineItemOptionItem",
+      "name": "LineItemOptionItem",
       "members": [
         {
           "name": "itemId",
@@ -1640,7 +1619,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListOrdersByMsidRequest",
+      "name": "ListOrdersByMsidRequest",
       "members": [
         {
           "name": "_createdDate",
@@ -1712,8 +1691,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Sort",
-              "displayName": "Sort"
+              "referenceType": "wix-restaurants-orders-backend.Events.Sort"
             }
           ],
           "doc": "Sorting of Orders in response. Default \"CREATED_DATE:ASC\""
@@ -1736,7 +1714,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListOrdersByMsidResponse",
+      "name": "ListOrdersByMsidResponse",
       "members": [
         {
           "name": "orders",
@@ -1747,8 +1725,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-                    "displayName": "Order"
+                    "referenceType": "wix-restaurants-orders-backend.Events.Order"
                   }
                 ]
               }
@@ -1764,7 +1741,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListOrdersRequest",
+      "name": "ListOrdersRequest",
       "members": [
         {
           "name": "_createdDate",
@@ -1844,8 +1821,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Sort",
-              "displayName": "Sort"
+              "referenceType": "wix-restaurants-orders-backend.Events.Sort"
             }
           ],
           "doc": "Sorting options."
@@ -1868,7 +1844,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListOrdersResponse",
+      "name": "ListOrdersResponse",
       "members": [
         {
           "name": "orders",
@@ -1879,8 +1855,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-                    "displayName": "Order"
+                    "referenceType": "wix-restaurants-orders-backend.Events.Order"
                   }
                 ]
               }
@@ -1896,7 +1871,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-LocationToAmount",
+      "name": "LocationToAmount",
       "members": [
         {
           "name": "locationId",
@@ -1949,7 +1924,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-LoyaltyInfo",
+      "name": "LoyaltyInfo",
       "members": [
         {
           "name": "appliedAmount",
@@ -2013,15 +1988,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-NewOrder",
+      "name": "NewOrder",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "New order."
@@ -2034,7 +2008,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-NotifyOrderEventRequest",
+      "name": "NotifyOrderEventRequest",
       "members": [
         {
           "name": "_id",
@@ -2073,7 +2047,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-NotifyOrderEventResponse",
+      "name": "NotifyOrderEventResponse",
       "members": [],
       "docs": {
         "description": [
@@ -2082,7 +2056,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Order",
+      "name": "Order",
       "members": [
         {
           "name": "_createdDate",
@@ -2127,8 +2101,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Activity",
-                    "displayName": "Activity"
+                    "referenceType": "wix-restaurants-orders-backend.Events.Activity"
                   }
                 ]
               }
@@ -2141,8 +2114,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-ChannelInfo",
-              "displayName": "ChannelInfo"
+              "referenceType": "wix-restaurants-orders-backend.Events.ChannelInfo"
             }
           ],
           "doc": "Information about the sales channel that submitted the order."
@@ -2165,8 +2137,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Coupon",
-              "displayName": "Coupon"
+              "referenceType": "wix-restaurants-orders-backend.Events.Coupon"
             }
           ],
           "doc": "Coupon applied to the order."
@@ -2189,8 +2160,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Customer",
-              "displayName": "Customer"
+              "referenceType": "wix-restaurants-orders-backend.Events.Customer"
             }
           ],
           "doc": "Customer information."
@@ -2204,8 +2174,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Discount",
-                    "displayName": "Discount"
+                    "referenceType": "wix-restaurants-orders-backend.Events.Discount"
                   }
                 ]
               }
@@ -2218,8 +2187,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Fulfillment",
-              "displayName": "Fulfillment"
+              "referenceType": "wix-restaurants-orders-backend.Events.Fulfillment"
             }
           ],
           "doc": "Order fulfillment information."
@@ -2233,8 +2201,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-LineItem",
-                    "displayName": "LineItem"
+                    "referenceType": "wix-restaurants-orders-backend.Events.LineItem"
                   }
                 ]
               }
@@ -2261,8 +2228,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-LoyaltyInfo",
-              "displayName": "LoyaltyInfo"
+              "referenceType": "wix-restaurants-orders-backend.Events.LoyaltyInfo"
             }
           ],
           "doc": "Information about the order’s loyalty points."
@@ -2276,8 +2242,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Payment",
-                    "displayName": "Payment"
+                    "referenceType": "wix-restaurants-orders-backend.Events.Payment"
                   }
                 ]
               }
@@ -2300,8 +2265,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Totals",
-              "displayName": "Totals"
+              "referenceType": "wix-restaurants-orders-backend.Events.Totals"
             }
           ],
           "doc": "Order totals."
@@ -2314,15 +2278,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-OrderAccepted",
+      "name": "OrderAccepted",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "Accepted order."
@@ -2335,14 +2298,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-OrderAcceptedEvent",
+      "name": "OrderAcceptedEvent",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-OrderAccepted",
-              "displayName": "OrderAccepted"
+              "referenceType": "wix-restaurants-orders-backend.Events.OrderAccepted"
             }
           ],
           "doc": ""
@@ -2351,8 +2313,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-restaurants-orders-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -2365,15 +2326,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-OrderCanceled",
+      "name": "OrderCanceled",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "Canceled order."
@@ -2386,14 +2346,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-OrderCanceledEvent",
+      "name": "OrderCanceledEvent",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-OrderCanceled",
-              "displayName": "OrderCanceled"
+              "referenceType": "wix-restaurants-orders-backend.Events.OrderCanceled"
             }
           ],
           "doc": ""
@@ -2402,8 +2361,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-restaurants-orders-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -2416,15 +2374,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-OrderFulfilled",
+      "name": "OrderFulfilled",
       "members": [
         {
           "name": "order",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-orders-backend.Events.Order"
             }
           ],
           "doc": "Fulfilled order."
@@ -2437,14 +2394,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-OrderFulfilledEvent",
+      "name": "OrderFulfilledEvent",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-OrderFulfilled",
-              "displayName": "OrderFulfilled"
+              "referenceType": "wix-restaurants-orders-backend.Events.OrderFulfilled"
             }
           ],
           "doc": ""
@@ -2453,8 +2409,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-restaurants-orders-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -2467,7 +2422,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-PagingMetadataV2",
+      "name": "PagingMetadataV2",
       "members": [
         {
           "name": "count",
@@ -2487,8 +2442,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Cursors",
-              "displayName": "Cursors"
+              "referenceType": "wix-restaurants-orders-backend.Events.Cursors"
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
@@ -2540,7 +2494,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Payment",
+      "name": "Payment",
       "members": [
         {
           "name": "amount",
@@ -2599,15 +2553,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-PickupDetails",
+      "name": "PickupDetails",
       "members": [
         {
           "name": "curbside",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-Curbside",
-              "displayName": "Curbside"
+              "referenceType": "wix-restaurants-orders-backend.Events.Curbside"
             }
           ],
           "doc": "Curbside pickup method"
@@ -2633,7 +2586,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-PickupInfo",
+      "name": "PickupInfo",
       "members": [
         {
           "name": "windowEndTime",
@@ -2663,15 +2616,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-PosInfo",
+      "name": "PosInfo",
       "members": [
         {
           "name": "externalProvider",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.@wix/velo-events-PosInfoExternalProvider",
-              "displayName": "PosInfoExternalProvider"
+              "referenceType": "wix-restaurants-orders-backend.Events.PosInfoExternalProvider"
             }
           ],
           "doc": ""
@@ -2684,7 +2636,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-PosInfoExternalProvider",
+      "name": "PosInfoExternalProvider",
       "members": [
         {
           "name": "_id",
@@ -2714,7 +2666,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Restaurant",
+      "name": "Restaurant",
       "members": [
         {
           "name": "fee",
@@ -2737,7 +2689,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Sort",
+      "name": "Sort",
       "members": [
         {
           "name": "fieldName",
@@ -2767,7 +2719,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Totals",
+      "name": "Totals",
       "members": [
         {
           "name": "delivery",
