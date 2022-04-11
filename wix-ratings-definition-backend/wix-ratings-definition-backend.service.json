@@ -15,8 +15,7 @@
           "name": "definition",
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "",
@@ -31,8 +30,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-definition-backend.CreateDefinitionResponse",
-                  "displayName": "CreateDefinitionResponse"
+                  "referenceType": "wix-ratings-definition-backend.CreateDefinitionResponse"
                 }
               ]
             }
@@ -92,8 +90,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-definition-backend.DeleteDefinitionResponse",
-                  "displayName": "DeleteDefinitionResponse"
+                  "referenceType": "wix-ratings-definition-backend.DeleteDefinitionResponse"
                 }
               ]
             }
@@ -143,8 +140,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-definition-backend.GetDefinitionResponse",
-                  "displayName": "GetDefinitionResponse"
+                  "referenceType": "wix-ratings-definition-backend.GetDefinitionResponse"
                 }
               ]
             }
@@ -179,8 +175,7 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.GetEntityDefinitionIdentifiers",
-              "displayName": "GetEntityDefinitionIdentifiers"
+              "referenceType": "wix-ratings-definition-backend.GetEntityDefinitionIdentifiers"
             }
           ],
           "doc": "",
@@ -195,8 +190,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-definition-backend.GetEntityDefinitionResponse",
-                  "displayName": "GetEntityDefinitionResponse"
+                  "referenceType": "wix-ratings-definition-backend.GetEntityDefinitionResponse"
                 }
               ]
             }
@@ -244,8 +238,7 @@
           "name": "definition",
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.UpdateDefinitionDefinition",
-              "displayName": "UpdateDefinitionDefinition"
+              "referenceType": "wix-ratings-definition-backend.UpdateDefinitionDefinition"
             }
           ],
           "doc": "",
@@ -255,8 +248,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.UpdateDefinitionOptions",
-              "displayName": "UpdateDefinitionOptions"
+              "referenceType": "wix-ratings-definition-backend.UpdateDefinitionOptions"
             }
           ],
           "doc": "",
@@ -271,8 +263,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-definition-backend.UpdateDefinitionResponse",
-                  "displayName": "UpdateDefinitionResponse"
+                  "referenceType": "wix-ratings-definition-backend.UpdateDefinitionResponse"
                 }
               ]
             }
@@ -323,8 +314,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.RangeSetting",
-              "displayName": "RangeSetting"
+              "referenceType": "wix-ratings-definition-backend.RangeSetting"
             }
           ],
           "doc": "Range settings."
@@ -343,8 +333,7 @@
           "name": "definition",
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "Definition to create."
@@ -364,8 +353,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "The created definition."
@@ -425,8 +413,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-definition-backend.AttributeSetting",
-                    "displayName": "AttributeSetting"
+                    "referenceType": "wix-ratings-definition-backend.AttributeSetting"
                   }
                 ]
               }
@@ -540,8 +527,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "The retrieved definition."
@@ -617,8 +603,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "The retrieved definition."
@@ -708,8 +693,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-definition-backend.AttributeSetting",
-                    "displayName": "AttributeSetting"
+                    "referenceType": "wix-ratings-definition-backend.AttributeSetting"
                   }
                 ]
               }
@@ -792,8 +776,7 @@
           "name": "definition",
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "Definition to be updated, may be partial. Pass the latest `revision` for a successful update."
@@ -830,8 +813,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "The updated definition."
