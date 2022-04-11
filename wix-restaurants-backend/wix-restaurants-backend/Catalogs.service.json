@@ -23,7 +23,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ArchiveMenuIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.ArchiveMenuIdentifiers",
+              "displayName": "ArchiveMenuIdentifiers"
             }
           ],
           "doc": "",
@@ -41,7 +42,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.ArchiveMenuResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.ArchiveMenuResponse",
+                  "displayName": "ArchiveMenuResponse"
                 }
               ]
             }
@@ -86,7 +88,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkArchiveMenusOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkArchiveMenusOptions",
+              "displayName": "BulkArchiveMenusOptions"
             }
           ],
           "doc": "",
@@ -103,7 +106,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkArchiveMenusResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkArchiveMenusResponse",
+                  "displayName": "BulkArchiveMenusResponse"
                 }
               ]
             }
@@ -148,7 +152,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateDishesOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateDishesOptions",
+              "displayName": "BulkCreateDishesOptions"
             }
           ],
           "doc": "",
@@ -165,7 +170,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateDishesResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateDishesResponse",
+                  "displayName": "BulkCreateDishesResponse"
                 }
               ]
             }
@@ -210,7 +216,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateMenusOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateMenusOptions",
+              "displayName": "BulkCreateMenusOptions"
             }
           ],
           "doc": "",
@@ -227,7 +234,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateMenusResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateMenusResponse",
+                  "displayName": "BulkCreateMenusResponse"
                 }
               ]
             }
@@ -272,7 +280,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateSectionsOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateSectionsOptions",
+              "displayName": "BulkCreateSectionsOptions"
             }
           ],
           "doc": "",
@@ -289,7 +298,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateSectionsResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateSectionsResponse",
+                  "displayName": "BulkCreateSectionsResponse"
                 }
               ]
             }
@@ -334,7 +344,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateVariationsOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateVariationsOptions",
+              "displayName": "BulkCreateVariationsOptions"
             }
           ],
           "doc": "",
@@ -351,7 +362,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateVariationsResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkCreateVariationsResponse",
+                  "displayName": "BulkCreateVariationsResponse"
                 }
               ]
             }
@@ -396,7 +408,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkUnarchiveMenusOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkUnarchiveMenusOptions",
+              "displayName": "BulkUnarchiveMenusOptions"
             }
           ],
           "doc": "",
@@ -413,7 +426,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkUnarchiveMenusResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkUnarchiveMenusResponse",
+                  "displayName": "BulkUnarchiveMenusResponse"
                 }
               ]
             }
@@ -458,7 +472,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateItemsOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateItemsOptions",
+              "displayName": "BulkUpdateItemsOptions"
             }
           ],
           "doc": "",
@@ -475,7 +490,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateItemsResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateItemsResponse",
+                  "displayName": "BulkUpdateItemsResponse"
                 }
               ]
             }
@@ -520,7 +536,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateMenusOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateMenusOptions",
+              "displayName": "BulkUpdateMenusOptions"
             }
           ],
           "doc": "",
@@ -537,7 +554,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateMenusResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateMenusResponse",
+                  "displayName": "BulkUpdateMenusResponse"
                 }
               ]
             }
@@ -582,7 +600,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateSectionsOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateSectionsOptions",
+              "displayName": "BulkUpdateSectionsOptions"
             }
           ],
           "doc": "",
@@ -599,7 +618,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateSectionsResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkUpdateSectionsResponse",
+                  "displayName": "BulkUpdateSectionsResponse"
                 }
               ]
             }
@@ -644,7 +664,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.CatalogsBulkArchiveMenusOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.CatalogsBulkArchiveMenusOptions",
+              "displayName": "CatalogsBulkArchiveMenusOptions"
             }
           ],
           "doc": "",
@@ -661,7 +682,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkArchiveMenusResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.BulkArchiveMenusResponse",
+                  "displayName": "BulkArchiveMenusResponse"
                 }
               ]
             }
@@ -696,7 +718,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.CreateDishIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.CreateDishIdentifiers",
+              "displayName": "CreateDishIdentifiers"
             }
           ],
           "doc": "",
@@ -706,7 +729,8 @@
           "name": "dish",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Item of type `dish` to create.",
@@ -726,7 +750,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.CreateDishResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.CreateDishResponse",
+                  "displayName": "CreateDishResponse"
                 }
               ]
             }
@@ -778,7 +803,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.CreateDraftCatalogResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.CreateDraftCatalogResponse",
+                  "displayName": "CreateDraftCatalogResponse"
                 }
               ]
             }
@@ -823,7 +849,8 @@
           "name": "menu",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Menu to create.",
@@ -841,7 +868,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.CreateMenuResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.CreateMenuResponse",
+                  "displayName": "CreateMenuResponse"
                 }
               ]
             }
@@ -876,7 +904,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.CreateSectionIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.CreateSectionIdentifiers",
+              "displayName": "CreateSectionIdentifiers"
             }
           ],
           "doc": "",
@@ -886,7 +915,8 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Section to create.",
@@ -905,7 +935,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.CreateSectionResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.CreateSectionResponse",
+                  "displayName": "CreateSectionResponse"
                 }
               ]
             }
@@ -968,7 +999,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.CreateVariationResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.CreateVariationResponse",
+                  "displayName": "CreateVariationResponse"
                 }
               ]
             }
@@ -1020,7 +1052,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.DiscardDraftCatalogResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.DiscardDraftCatalogResponse",
+                  "displayName": "DiscardDraftCatalogResponse"
                 }
               ]
             }
@@ -1055,7 +1088,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.GetItemIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.GetItemIdentifiers",
+              "displayName": "GetItemIdentifiers"
             }
           ],
           "doc": "",
@@ -1065,7 +1099,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.GetItemOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.GetItemOptions",
+              "displayName": "GetItemOptions"
             }
           ],
           "doc": "",
@@ -1083,7 +1118,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.GetItemResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.GetItemResponse",
+                  "displayName": "GetItemResponse"
                 }
               ]
             }
@@ -1118,7 +1154,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.GetMenuIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.GetMenuIdentifiers",
+              "displayName": "GetMenuIdentifiers"
             }
           ],
           "doc": "",
@@ -1136,7 +1173,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.GetMenuResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.GetMenuResponse",
+                  "displayName": "GetMenuResponse"
                 }
               ]
             }
@@ -1171,7 +1209,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.GetSectionIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.GetSectionIdentifiers",
+              "displayName": "GetSectionIdentifiers"
             }
           ],
           "doc": "",
@@ -1190,7 +1229,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.GetSectionResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.GetSectionResponse",
+                  "displayName": "GetSectionResponse"
                 }
               ]
             }
@@ -1225,7 +1265,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ListCatalogsOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.ListCatalogsOptions",
+              "displayName": "ListCatalogsOptions"
             }
           ],
           "doc": "",
@@ -1240,7 +1281,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.ListCatalogsResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.ListCatalogsResponse",
+                  "displayName": "ListCatalogsResponse"
                 }
               ]
             }
@@ -1285,7 +1327,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ListItemsOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.ListItemsOptions",
+              "displayName": "ListItemsOptions"
             }
           ],
           "doc": "",
@@ -1302,7 +1345,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.ListItemsResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.ListItemsResponse",
+                  "displayName": "ListItemsResponse"
                 }
               ]
             }
@@ -1347,7 +1391,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ListMenusOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.ListMenusOptions",
+              "displayName": "ListMenusOptions"
             }
           ],
           "doc": "",
@@ -1364,7 +1409,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.ListMenusResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.ListMenusResponse",
+                  "displayName": "ListMenusResponse"
                 }
               ]
             }
@@ -1409,7 +1455,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ListSectionsOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.ListSectionsOptions",
+              "displayName": "ListSectionsOptions"
             }
           ],
           "doc": "",
@@ -1426,7 +1473,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.ListSectionsResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.ListSectionsResponse",
+                  "displayName": "ListSectionsResponse"
                 }
               ]
             }
@@ -1478,7 +1526,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.PublishDraftCatalogResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.PublishDraftCatalogResponse",
+                  "displayName": "PublishDraftCatalogResponse"
                 }
               ]
             }
@@ -1513,7 +1562,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.UnarchiveMenuIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.UnarchiveMenuIdentifiers",
+              "displayName": "UnarchiveMenuIdentifiers"
             }
           ],
           "doc": "",
@@ -1531,7 +1581,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.UnarchiveMenuResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.UnarchiveMenuResponse",
+                  "displayName": "UnarchiveMenuResponse"
                 }
               ]
             }
@@ -1566,7 +1617,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.UpdateItemIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.UpdateItemIdentifiers",
+              "displayName": "UpdateItemIdentifiers"
             }
           ],
           "doc": "",
@@ -1576,7 +1628,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.UpdateItemOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.UpdateItemOptions",
+              "displayName": "UpdateItemOptions"
             }
           ],
           "doc": "",
@@ -1594,7 +1647,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.UpdateItemResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.UpdateItemResponse",
+                  "displayName": "UpdateItemResponse"
                 }
               ]
             }
@@ -1629,7 +1683,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.UpdateMenuIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.UpdateMenuIdentifiers",
+              "displayName": "UpdateMenuIdentifiers"
             }
           ],
           "doc": "",
@@ -1639,7 +1694,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.UpdateMenuOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.UpdateMenuOptions",
+              "displayName": "UpdateMenuOptions"
             }
           ],
           "doc": "",
@@ -1657,7 +1713,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.UpdateMenuResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.UpdateMenuResponse",
+                  "displayName": "UpdateMenuResponse"
                 }
               ]
             }
@@ -1692,7 +1749,8 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionIdentifiers"
+              "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionIdentifiers",
+              "displayName": "UpdateSectionIdentifiers"
             }
           ],
           "doc": "",
@@ -1702,7 +1760,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionOptions",
+              "displayName": "UpdateSectionOptions"
             }
           ],
           "doc": "",
@@ -1721,7 +1780,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionResponse"
+                  "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionResponse",
+                  "displayName": "UpdateSectionResponse"
                 }
               ]
             }
@@ -1868,7 +1928,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Archived menu."
@@ -1892,7 +1953,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.TimePeriod"
+                    "referenceType": "wix-restaurants-backend.Catalogs.TimePeriod",
+                    "displayName": "TimePeriod"
                   }
                 ]
               }
@@ -1909,7 +1971,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.SpecialHourPeriod"
+                    "referenceType": "wix-restaurants-backend.Catalogs.SpecialHourPeriod",
+                    "displayName": "SpecialHourPeriod"
                   }
                 ]
               }
@@ -2055,7 +2118,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Archive Menus metadata."
@@ -2069,7 +2133,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkMenuResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkMenuResult",
+                    "displayName": "BulkMenuResult"
                   }
                 ]
               }
@@ -2096,7 +2161,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.CreateDishRequest"
+                    "referenceType": "wix-restaurants-backend.Catalogs.CreateDishRequest",
+                    "displayName": "CreateDishRequest"
                   }
                 ]
               }
@@ -2142,7 +2208,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.CreateDishRequest"
+                    "referenceType": "wix-restaurants-backend.Catalogs.CreateDishRequest",
+                    "displayName": "CreateDishRequest"
                   }
                 ]
               }
@@ -2175,7 +2242,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Create Dishes metadata."
@@ -2189,7 +2257,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkItemResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkItemResult",
+                    "displayName": "BulkItemResult"
                   }
                 ]
               }
@@ -2216,7 +2285,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+                    "displayName": "Menu"
                   }
                 ]
               }
@@ -2262,7 +2332,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+                    "displayName": "Menu"
                   }
                 ]
               }
@@ -2295,7 +2366,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Create Menus metadata."
@@ -2309,7 +2381,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkMenuResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkMenuResult",
+                    "displayName": "BulkMenuResult"
                   }
                 ]
               }
@@ -2336,7 +2409,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.CreateSectionRequest"
+                    "referenceType": "wix-restaurants-backend.Catalogs.CreateSectionRequest",
+                    "displayName": "CreateSectionRequest"
                   }
                 ]
               }
@@ -2382,7 +2456,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.CreateSectionRequest"
+                    "referenceType": "wix-restaurants-backend.Catalogs.CreateSectionRequest",
+                    "displayName": "CreateSectionRequest"
                   }
                 ]
               }
@@ -2415,7 +2490,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Create Sections metadata."
@@ -2429,7 +2505,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkSectionResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkSectionResult",
+                    "displayName": "BulkSectionResult"
                   }
                 ]
               }
@@ -2466,7 +2543,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.NewVariation"
+                    "referenceType": "wix-restaurants-backend.Catalogs.NewVariation",
+                    "displayName": "NewVariation"
                   }
                 ]
               }
@@ -2512,7 +2590,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.NewVariation"
+                    "referenceType": "wix-restaurants-backend.Catalogs.NewVariation",
+                    "displayName": "NewVariation"
                   }
                 ]
               }
@@ -2535,7 +2614,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Create Variations metadata."
@@ -2549,7 +2629,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkItemResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkItemResult",
+                    "displayName": "BulkItemResult"
                   }
                 ]
               }
@@ -2572,7 +2653,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Item."
@@ -2582,7 +2664,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ItemMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.ItemMetadata",
+              "displayName": "ItemMetadata"
             }
           ],
           "doc": "Metadata of the item."
@@ -2602,7 +2685,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Menu."
@@ -2612,7 +2696,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ItemMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.ItemMetadata",
+              "displayName": "ItemMetadata"
             }
           ],
           "doc": "Menu metadata."
@@ -2632,7 +2717,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Section."
@@ -2642,7 +2728,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ItemMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.ItemMetadata",
+              "displayName": "ItemMetadata"
             }
           ],
           "doc": "Section metadata."
@@ -2745,7 +2832,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Unarchive Menus metadata."
@@ -2759,7 +2847,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkMenuResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkMenuResult",
+                    "displayName": "BulkMenuResult"
                   }
                 ]
               }
@@ -2786,7 +2875,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Item"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Item",
+                    "displayName": "Item"
                   }
                 ]
               }
@@ -2832,7 +2922,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Item"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Item",
+                    "displayName": "Item"
                   }
                 ]
               }
@@ -2865,7 +2956,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Update Items metadata."
@@ -2879,7 +2971,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkItemResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkItemResult",
+                    "displayName": "BulkItemResult"
                   }
                 ]
               }
@@ -2906,7 +2999,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+                    "displayName": "Menu"
                   }
                 ]
               }
@@ -2952,7 +3046,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+                    "displayName": "Menu"
                   }
                 ]
               }
@@ -2985,7 +3080,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Update Menus metadata."
@@ -2999,7 +3095,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkMenuResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkMenuResult",
+                    "displayName": "BulkMenuResult"
                   }
                 ]
               }
@@ -3036,7 +3133,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionRequest"
+                    "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionRequest",
+                    "displayName": "UpdateSectionRequest"
                   }
                 ]
               }
@@ -3082,7 +3180,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionRequest"
+                    "referenceType": "wix-restaurants-backend.Catalogs.UpdateSectionRequest",
+                    "displayName": "UpdateSectionRequest"
                   }
                 ]
               }
@@ -3105,7 +3204,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata"
+              "referenceType": "wix-restaurants-backend.Catalogs.BulkActionMetadata",
+              "displayName": "BulkActionMetadata"
             }
           ],
           "doc": "Bulk Update Sections metadata."
@@ -3119,7 +3219,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.BulkSectionResult"
+                    "referenceType": "wix-restaurants-backend.Catalogs.BulkSectionResult",
+                    "displayName": "BulkSectionResult"
                   }
                 ]
               }
@@ -3202,7 +3303,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Catalog"
+              "referenceType": "wix-restaurants-backend.Catalogs.Catalog",
+              "displayName": "Catalog"
             }
           ],
           "doc": "Changed Catalog."
@@ -3236,7 +3338,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Discount"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Discount",
+                    "displayName": "Discount"
                   }
                 ]
               }
@@ -3266,7 +3369,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Item"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Item",
+                    "displayName": "Item"
                   }
                 ]
               }
@@ -3283,7 +3387,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+                    "displayName": "Menu"
                   }
                 ]
               }
@@ -3300,7 +3405,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Section"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Section",
+                    "displayName": "Section"
                   }
                 ]
               }
@@ -3457,7 +3563,8 @@
           "name": "dish",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Dish to create."
@@ -3495,7 +3602,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Created Dish."
@@ -3534,7 +3642,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Catalog"
+              "referenceType": "wix-restaurants-backend.Catalogs.Catalog",
+              "displayName": "Catalog"
             }
           ],
           "doc": "Created draft catalog."
@@ -3562,7 +3671,8 @@
           "name": "menu",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Menu to create."
@@ -3582,7 +3692,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Created Menu."
@@ -3638,7 +3749,8 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Section to create."
@@ -3658,7 +3770,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Created section."
@@ -3706,7 +3819,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Created Variation."
@@ -3730,7 +3844,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.DishOptionItem"
+                    "referenceType": "wix-restaurants-backend.Catalogs.DishOptionItem",
+                    "displayName": "DishOptionItem"
                   }
                 ]
               }
@@ -3808,7 +3923,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Money"
+              "referenceType": "wix-restaurants-backend.Catalogs.Money",
+              "displayName": "Money"
             }
           ],
           "doc": "Discount amount."
@@ -3818,7 +3934,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.DiscountCondition"
+              "referenceType": "wix-restaurants-backend.Catalogs.DiscountCondition",
+              "displayName": "DiscountCondition"
             }
           ],
           "doc": "Discount condition.\nAll conditions must be met so that a customer can apply the discount."
@@ -3841,7 +3958,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ItemIds"
+              "referenceType": "wix-restaurants-backend.Catalogs.ItemIds",
+              "displayName": "ItemIds"
             }
           ],
           "doc": "IDs of the items the discount applies to. **Note:** The items must be of type `dish`."
@@ -3877,7 +3995,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.SectionIds"
+              "referenceType": "wix-restaurants-backend.Catalogs.SectionIds",
+              "displayName": "SectionIds"
             }
           ],
           "doc": "IDs of the sections the discount applies to."
@@ -3907,7 +4026,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Availability"
+              "referenceType": "wix-restaurants-backend.Catalogs.Availability",
+              "displayName": "Availability"
             }
           ],
           "doc": "List of times when the discount is available."
@@ -3918,7 +4038,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Coupon"
+              "referenceType": "wix-restaurants-backend.Catalogs.Coupon",
+              "displayName": "Coupon"
             }
           ],
           "doc": "Coupon associated with the discount."
@@ -3945,7 +4066,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Money"
+              "referenceType": "wix-restaurants-backend.Catalogs.Money",
+              "displayName": "Money"
             }
           ],
           "doc": "Minimum order price for the discount."
@@ -3982,7 +4104,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Deselection"
+              "referenceType": "wix-restaurants-backend.Catalogs.Deselection",
+              "displayName": "Deselection"
             }
           ],
           "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
@@ -3992,7 +4115,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Extras"
+              "referenceType": "wix-restaurants-backend.Catalogs.Extras",
+              "displayName": "Extras"
             }
           ],
           "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
@@ -4012,7 +4136,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Selection"
+              "referenceType": "wix-restaurants-backend.Catalogs.Selection",
+              "displayName": "Selection"
             }
           ],
           "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
@@ -4053,7 +4178,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Money"
+              "referenceType": "wix-restaurants-backend.Catalogs.Money",
+              "displayName": "Money"
             }
           ],
           "doc": "Dish option price. `0` for free choices that are included in the dish's price."
@@ -4077,7 +4203,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.DishOption"
+                    "referenceType": "wix-restaurants-backend.Catalogs.DishOption",
+                    "displayName": "DishOption"
                   }
                 ]
               }
@@ -4104,7 +4231,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.DishOptionItem"
+                    "referenceType": "wix-restaurants-backend.Catalogs.DishOptionItem",
+                    "displayName": "DishOptionItem"
                   }
                 ]
               }
@@ -4256,7 +4384,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Retrieved item."
@@ -4332,7 +4461,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Retrieved menu."
@@ -4426,7 +4556,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Retrieved section."
@@ -4553,7 +4684,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.DishOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.DishOptions",
+              "displayName": "DishOptions"
             }
           ],
           "doc": "Items customers can choose to modify a dish. Can be an extra, selection, or deselection."
@@ -4589,7 +4721,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Labels"
+              "referenceType": "wix-restaurants-backend.Catalogs.Labels",
+              "displayName": "Labels"
             }
           ],
           "doc": "Item labels. For example spicy, hot, vegan, gluten-free, or organic."
@@ -4612,7 +4745,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Money"
+              "referenceType": "wix-restaurants-backend.Catalogs.Money",
+              "displayName": "Money"
             }
           ],
           "doc": "Item price."
@@ -4646,7 +4780,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria"
+              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria",
+              "displayName": "VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the item to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
@@ -4706,7 +4841,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.ApplicationError"
+              "referenceType": "wix-restaurants-backend.Catalogs.ApplicationError",
+              "displayName": "ApplicationError"
             }
           ],
           "doc": "In case of failure, details about the error"
@@ -4800,7 +4936,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Paging"
+              "referenceType": "wix-restaurants-backend.Catalogs.Paging",
+              "displayName": "Paging"
             }
           ],
           "doc": ""
@@ -4810,7 +4947,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Sorting"
+              "referenceType": "wix-restaurants-backend.Catalogs.Sorting",
+              "displayName": "Sorting"
             }
           ],
           "doc": ""
@@ -4857,7 +4995,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Paging"
+              "referenceType": "wix-restaurants-backend.Catalogs.Paging",
+              "displayName": "Paging"
             }
           ],
           "doc": "Paging information. `offset` defaults to `0` and `limit` defaults to `50`. The maximum for limit is `1,000`."
@@ -4867,7 +5006,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Sorting"
+              "referenceType": "wix-restaurants-backend.Catalogs.Sorting",
+              "displayName": "Sorting"
             }
           ],
           "doc": "Sort order. Defaults to `ASC`."
@@ -4891,7 +5031,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Catalog"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Catalog",
+                    "displayName": "Catalog"
                   }
                 ]
               }
@@ -5001,7 +5142,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Item"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Item",
+                    "displayName": "Item"
                   }
                 ]
               }
@@ -5111,7 +5253,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+                    "displayName": "Menu"
                   }
                 ]
               }
@@ -5221,7 +5364,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.Section"
+                    "referenceType": "wix-restaurants-backend.Catalogs.Section",
+                    "displayName": "Section"
                   }
                 ]
               }
@@ -5311,7 +5455,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.MenuSectionIds"
+              "referenceType": "wix-restaurants-backend.Catalogs.MenuSectionIds",
+              "displayName": "MenuSectionIds"
             }
           ],
           "doc": "IDs of the sections that are included in the menu."
@@ -5321,7 +5466,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria"
+              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria",
+              "displayName": "VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the menu to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
@@ -5530,7 +5676,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Catalog"
+              "referenceType": "wix-restaurants-backend.Catalogs.Catalog",
+              "displayName": "Catalog"
             }
           ],
           "doc": "Published catalog."
@@ -5604,7 +5751,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.SectionItemIds"
+              "referenceType": "wix-restaurants-backend.Catalogs.SectionItemIds",
+              "displayName": "SectionItemIds"
             }
           ],
           "doc": "IDs of the items that belong to the section."
@@ -5641,7 +5789,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria"
+              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria",
+              "displayName": "VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the section to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
@@ -5719,7 +5868,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Catalogs.DishOptionItem"
+                    "referenceType": "wix-restaurants-backend.Catalogs.DishOptionItem",
+                    "displayName": "DishOptionItem"
                   }
                 ]
               }
@@ -5944,7 +6094,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Unarchived menu."
@@ -5973,7 +6124,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.item_0"
+              "referenceType": "wix-restaurants-backend.Catalogs.item_0",
+              "displayName": "item_0"
             }
           ],
           "doc": ""
@@ -5992,7 +6144,8 @@
           "name": "item",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.item_1"
+              "referenceType": "wix-restaurants-backend.Catalogs.item_1",
+              "displayName": "item_1"
             }
           ],
           "doc": ""
@@ -6020,7 +6173,8 @@
           "name": "item",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Item to update."
@@ -6040,7 +6194,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Updated Item."
@@ -6069,7 +6224,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.menu_2"
+              "referenceType": "wix-restaurants-backend.Catalogs.menu_2",
+              "displayName": "menu_2"
             }
           ],
           "doc": ""
@@ -6088,7 +6244,8 @@
           "name": "menu",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.menu_3"
+              "referenceType": "wix-restaurants-backend.Catalogs.menu_3",
+              "displayName": "menu_3"
             }
           ],
           "doc": ""
@@ -6116,7 +6273,8 @@
           "name": "menu",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Menu to update."
@@ -6136,7 +6294,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Menu"
+              "referenceType": "wix-restaurants-backend.Catalogs.Menu",
+              "displayName": "Menu"
             }
           ],
           "doc": "Updated Menu."
@@ -6174,7 +6333,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.section_4"
+              "referenceType": "wix-restaurants-backend.Catalogs.section_4",
+              "displayName": "section_4"
             }
           ],
           "doc": ""
@@ -6193,7 +6353,8 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.section_5"
+              "referenceType": "wix-restaurants-backend.Catalogs.section_5",
+              "displayName": "section_5"
             }
           ],
           "doc": ""
@@ -6221,7 +6382,8 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Section to update."
@@ -6241,7 +6403,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Updated section."
@@ -6269,7 +6432,8 @@
           "name": "dish",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Item"
+              "referenceType": "wix-restaurants-backend.Catalogs.Item",
+              "displayName": "Item"
             }
           ],
           "doc": "Item of type `dish` to create."
@@ -6324,7 +6488,8 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Section to create."
@@ -6361,7 +6526,8 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Section"
+              "referenceType": "wix-restaurants-backend.Catalogs.Section",
+              "displayName": "Section"
             }
           ],
           "doc": "Section to update."
@@ -6381,7 +6547,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Availability"
+              "referenceType": "wix-restaurants-backend.Catalogs.Availability",
+              "displayName": "Availability"
             }
           ],
           "doc": "Time periods when the entity is available."
@@ -6525,7 +6692,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.DishOptions"
+              "referenceType": "wix-restaurants-backend.Catalogs.DishOptions",
+              "displayName": "DishOptions"
             }
           ],
           "doc": "Items customers can choose to modify a dish. Can be an extra, selection, or deselection."
@@ -6561,7 +6729,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Labels"
+              "referenceType": "wix-restaurants-backend.Catalogs.Labels",
+              "displayName": "Labels"
             }
           ],
           "doc": "Item labels. For example spicy, hot, vegan, gluten-free, or organic."
@@ -6584,7 +6753,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.Money"
+              "referenceType": "wix-restaurants-backend.Catalogs.Money",
+              "displayName": "Money"
             }
           ],
           "doc": "Item price."
@@ -6618,7 +6788,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria"
+              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria",
+              "displayName": "VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the item to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
@@ -6728,7 +6899,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.MenuSectionIds"
+              "referenceType": "wix-restaurants-backend.Catalogs.MenuSectionIds",
+              "displayName": "MenuSectionIds"
             }
           ],
           "doc": "IDs of the sections that are included in the menu."
@@ -6738,7 +6910,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria"
+              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria",
+              "displayName": "VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the menu to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
@@ -6835,7 +7008,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.SectionItemIds"
+              "referenceType": "wix-restaurants-backend.Catalogs.SectionItemIds",
+              "displayName": "SectionItemIds"
             }
           ],
           "doc": "IDs of the items that belong to the section."
@@ -6872,7 +7046,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria"
+              "referenceType": "wix-restaurants-backend.Catalogs.VisibilityCriteria",
+              "displayName": "VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the section to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
