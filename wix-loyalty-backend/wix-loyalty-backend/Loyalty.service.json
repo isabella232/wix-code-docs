@@ -33,8 +33,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.AdjustPointsOptions",
-              "displayName": "AdjustPointsOptions"
+              "referenceType": "wix-loyalty-backend.Loyalty.AdjustPointsOptions"
             }
           ],
           "doc": "",
@@ -51,8 +50,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.AdjustPointsResponse",
-                  "displayName": "AdjustPointsResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.AdjustPointsResponse"
                 }
               ]
             }
@@ -104,8 +102,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.CreateAccountResponse",
-                  "displayName": "CreateAccountResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.CreateAccountResponse"
                 }
               ]
             }
@@ -150,8 +147,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.EarnPointsOptions",
-              "displayName": "EarnPointsOptions"
+              "referenceType": "wix-loyalty-backend.Loyalty.EarnPointsOptions"
             }
           ],
           "doc": "",
@@ -170,8 +166,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.EarnPointsResponse",
-                  "displayName": "EarnPointsResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.EarnPointsResponse"
                 }
               ]
             }
@@ -223,8 +218,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.GetAccountResponse",
-                  "displayName": "GetAccountResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.GetAccountResponse"
                 }
               ]
             }
@@ -259,8 +253,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.GetAccountBySecondaryIdOptions",
-              "displayName": "GetAccountBySecondaryIdOptions"
+              "referenceType": "wix-loyalty-backend.Loyalty.GetAccountBySecondaryIdOptions"
             }
           ],
           "doc": "",
@@ -277,8 +270,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.GetAccountBySecondaryIdResponse",
-                  "displayName": "GetAccountBySecondaryIdResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.GetAccountBySecondaryIdResponse"
                 }
               ]
             }
@@ -317,8 +309,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.GetCurrentMemberAccountResponse",
-                  "displayName": "GetCurrentMemberAccountResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.GetCurrentMemberAccountResponse"
                 }
               ]
             }
@@ -357,8 +348,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.GetProgramTotalsResponse",
-                  "displayName": "GetProgramTotalsResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.GetProgramTotalsResponse"
                 }
               ]
             }
@@ -413,8 +403,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.GetTransactionResponse",
-                  "displayName": "GetTransactionResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.GetTransactionResponse"
                 }
               ]
             }
@@ -449,8 +438,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.ListAccountsOptions",
-              "displayName": "ListAccountsOptions"
+              "referenceType": "wix-loyalty-backend.Loyalty.ListAccountsOptions"
             }
           ],
           "doc": "",
@@ -465,8 +453,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.ListAccountsResponse",
-                  "displayName": "ListAccountsResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.ListAccountsResponse"
                 }
               ]
             }
@@ -514,8 +501,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.ListTransactionsOptions",
-              "displayName": "ListTransactionsOptions"
+              "referenceType": "wix-loyalty-backend.Loyalty.ListTransactionsOptions"
             }
           ],
           "doc": "",
@@ -532,8 +518,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.ListTransactionsResponse",
-                  "displayName": "ListTransactionsResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.ListTransactionsResponse"
                 }
               ]
             }
@@ -568,8 +553,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.ListUserAccountsOptions",
-              "displayName": "ListUserAccountsOptions"
+              "referenceType": "wix-loyalty-backend.Loyalty.ListUserAccountsOptions"
             }
           ],
           "doc": "",
@@ -584,8 +568,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.ListUserAccountsResponse",
-                  "displayName": "ListUserAccountsResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.ListUserAccountsResponse"
                 }
               ]
             }
@@ -640,8 +623,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.RedeemPointsOptions",
-              "displayName": "RedeemPointsOptions"
+              "referenceType": "wix-loyalty-backend.Loyalty.RedeemPointsOptions"
             }
           ],
           "doc": "",
@@ -659,8 +641,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-loyalty-backend.Loyalty.RedeemPointsResponse",
-                  "displayName": "RedeemPointsResponse"
+                  "referenceType": "wix-loyalty-backend.Loyalty.RedeemPointsResponse"
                 }
               ]
             }
@@ -703,8 +684,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-                    "displayName": "LoyaltyAccount"
+                    "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
                   }
                 ]
               }
@@ -718,8 +698,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Merged account."
@@ -874,8 +853,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Loyalty account."
@@ -914,8 +892,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Loyalty account."
@@ -1017,8 +994,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.ActionEvent",
-              "displayName": "ActionEvent"
+              "referenceType": "wix-loyalty-backend.Loyalty.ActionEvent"
             }
           ],
           "doc": ""
@@ -1028,8 +1004,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.EntityCreatedEvent",
-              "displayName": "EntityCreatedEvent"
+              "referenceType": "wix-loyalty-backend.Loyalty.EntityCreatedEvent"
             }
           ],
           "doc": ""
@@ -1039,8 +1014,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.EntityDeletedEvent",
-              "displayName": "EntityDeletedEvent"
+              "referenceType": "wix-loyalty-backend.Loyalty.EntityDeletedEvent"
             }
           ],
           "doc": ""
@@ -1116,8 +1090,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.EntityUpdatedEvent",
-              "displayName": "EntityUpdatedEvent"
+              "referenceType": "wix-loyalty-backend.Loyalty.EntityUpdatedEvent"
             }
           ],
           "doc": ""
@@ -1242,8 +1215,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Loyalty account."
@@ -1276,6 +1248,20 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "triggeredByUndelete",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Indicates the event was triggered by a restore-from-trashbin operation for a previously deleted entity"
         }
       ],
       "docs": {
@@ -1286,7 +1272,22 @@
     },
     {
       "name": "EntityDeletedEvent",
-      "members": [],
+      "members": [
+        {
+          "name": "movedToTrash",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Indicates if the entity is sent to trash-bin. only available when trash-bin is enabled"
+        }
+      ],
       "docs": {
         "description": [
           ""
@@ -1305,6 +1306,20 @@
             }
           ],
           "doc": "Since platformized APIs only expose PATCH and not PUT we can't assume that the fields sent from the client are the actual diff.\nThis means that to generate a list of changed fields (as opposed to sent fields) one needs to traverse both objects.\nWe don't want to impose this on all developers and so we leave this traversal to the notification recipients which need it."
+        },
+        {
+          "name": "previousEntityAsJson",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "This field is currently part of the of the EntityUpdatedEvent msg, but scala/node libraries which implements the domain events standard\nwont populate it / have any reference to it in the API.\nThe main reason for it is that fetching the old entity from the DB will have a performance hit on an update operation so unless truly needed,\nthe developer should send only the new (current) entity.\nAn additional reason is not wanting to send this additional entity over the wire (kafka) since in some cases it can be really big\nDevelopers that must reflect the old entity will have to implement their own domain event sender mechanism which will follow the DomainEvent proto message."
         }
       ],
       "docs": {
@@ -1381,8 +1396,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Loyalty account."
@@ -1421,8 +1435,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Loyalty account."
@@ -1451,8 +1464,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Loyalty account."
@@ -1481,8 +1493,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.Points",
-              "displayName": "Points"
+              "referenceType": "wix-loyalty-backend.Loyalty.Points"
             }
           ],
           "doc": "Program totals."
@@ -1524,8 +1535,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.Transaction",
-              "displayName": "Transaction"
+              "referenceType": "wix-loyalty-backend.Loyalty.Transaction"
             }
           ],
           "doc": "Retrieved transaction."
@@ -1615,8 +1625,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.RedeemInfo",
-              "displayName": "RedeemInfo"
+              "referenceType": "wix-loyalty-backend.Loyalty.RedeemInfo"
             }
           ],
           "doc": "Additional redeem information. Only present if `type` is `REDEEM`."
@@ -1677,8 +1686,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-loyalty-backend.Loyalty.CursorPaging"
             }
           ],
           "doc": ""
@@ -1715,8 +1723,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-loyalty-backend.Loyalty.CursorPaging"
             }
           ],
           "doc": ""
@@ -1740,8 +1747,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-                    "displayName": "LoyaltyAccount"
+                    "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
                   }
                 ]
               }
@@ -1754,8 +1760,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.PagingMetadataV2",
-              "displayName": "PagingMetadataV2"
+              "referenceType": "wix-loyalty-backend.Loyalty.PagingMetadataV2"
             }
           ],
           "doc": ""
@@ -1775,8 +1780,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-loyalty-backend.Loyalty.CursorPaging"
             }
           ],
           "doc": ""
@@ -1808,8 +1812,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-loyalty-backend.Loyalty.CursorPaging"
             }
           ],
           "doc": "TODO: This is not implemented and we can implement it later\ncopied from https://github.com/wix-private/p13n/blob/master/protos/query/src/main/proto/wix/common/query.proto"
@@ -1829,8 +1832,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.PagingMetadataV2",
-              "displayName": "PagingMetadataV2"
+              "referenceType": "wix-loyalty-backend.Loyalty.PagingMetadataV2"
             }
           ],
           "doc": ""
@@ -1844,8 +1846,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Loyalty.Transaction",
-                    "displayName": "Transaction"
+                    "referenceType": "wix-loyalty-backend.Loyalty.Transaction"
                   }
                 ]
               }
@@ -1944,8 +1945,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccountForMetaSite",
-                    "displayName": "LoyaltyAccountForMetaSite"
+                    "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccountForMetaSite"
                   }
                 ]
               }
@@ -2012,8 +2012,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LatestTransaction",
-              "displayName": "LatestTransaction"
+              "referenceType": "wix-loyalty-backend.Loyalty.LatestTransaction"
             }
           ],
           "doc": "Details of the account's latest transaction."
@@ -2037,8 +2036,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.Points",
-              "displayName": "Points"
+              "referenceType": "wix-loyalty-backend.Loyalty.Points"
             }
           ],
           "doc": "Information about the account totals."
@@ -2079,8 +2077,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Loyalty account."
@@ -2123,11 +2120,24 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.Cursors",
-              "displayName": "Cursors"
+              "referenceType": "wix-loyalty-backend.Loyalty.Cursors"
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
+        },
+        {
+          "name": "hasNext",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Indicates if there are more results after the current page.\nIf `true`, another page of results can be retrieved.\nIf `false`, this is the last page."
         },
         {
           "name": "offset",
@@ -2233,8 +2243,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Updated account."
@@ -2401,8 +2410,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount",
-              "displayName": "LoyaltyAccount"
+              "referenceType": "wix-loyalty-backend.Loyalty.LoyaltyAccount"
             }
           ],
           "doc": "Loyalty account."
@@ -2529,8 +2537,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Loyalty.RedeemInfo",
-              "displayName": "RedeemInfo"
+              "referenceType": "wix-loyalty-backend.Loyalty.RedeemInfo"
             }
           ],
           "doc": "Additional redeem information. Only present if `type` is `REDEEM`."
