@@ -23,8 +23,7 @@
           "name": "question",
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question",
-              "displayName": "Question"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
             }
           ],
           "doc": "",
@@ -42,8 +41,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.CreateQuestionResponse",
-                  "displayName": "CreateQuestionResponse"
+                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.CreateQuestionResponse"
                 }
               ]
             }
@@ -105,8 +103,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.DeleteQuestionResponse",
-                  "displayName": "DeleteQuestionResponse"
+                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.DeleteQuestionResponse"
                 }
               ]
             }
@@ -158,8 +155,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.GetQuestionResponse",
-                  "displayName": "GetQuestionResponse"
+                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.GetQuestionResponse"
                 }
               ]
             }
@@ -194,8 +190,7 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QueryV2"
             }
           ],
           "doc": "",
@@ -212,8 +207,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QueryQuestionResponse",
-                  "displayName": "QueryQuestionResponse"
+                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QueryQuestionResponse"
                 }
               ]
             }
@@ -252,8 +246,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QuestionsFeedResponse",
-                  "displayName": "QuestionsFeedResponse"
+                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QuestionsFeedResponse"
                 }
               ]
             }
@@ -301,8 +294,7 @@
           "name": "question",
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpdateQuestionQuestion",
-              "displayName": "UpdateQuestionQuestion"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpdateQuestionQuestion"
             }
           ],
           "doc": "",
@@ -312,8 +304,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpdateQuestionOptions",
-              "displayName": "UpdateQuestionOptions"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpdateQuestionOptions"
             }
           ],
           "doc": "",
@@ -332,8 +323,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpdateQuestionResponse",
-                  "displayName": "UpdateQuestionResponse"
+                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpdateQuestionResponse"
                 }
               ]
             }
@@ -378,8 +368,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpvoteOptions",
-              "displayName": "UpvoteOptions"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpvoteOptions"
             }
           ],
           "doc": "",
@@ -396,8 +385,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpvoteResponse",
-                  "displayName": "UpvoteResponse"
+                  "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.UpvoteResponse"
                 }
               ]
             }
@@ -434,8 +422,7 @@
           "name": "question",
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question",
-              "displayName": "Question"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
             }
           ],
           "doc": ""
@@ -455,8 +442,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question",
-              "displayName": "Question"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
             }
           ],
           "doc": ""
@@ -669,8 +655,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question",
-              "displayName": "Question"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
             }
           ],
           "doc": ""
@@ -725,8 +710,7 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.QueryV2"
             }
           ],
           "doc": ""
@@ -750,8 +734,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question",
-                    "displayName": "Question"
+                    "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
                   }
                 ]
               }
@@ -774,8 +757,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.CursorPaging"
             }
           ],
           "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
@@ -842,8 +824,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Paging",
-              "displayName": "Paging"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Paging"
             }
           ],
           "doc": "Paging options to limit and skip the number of items."
@@ -857,8 +838,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Sorting",
-                    "displayName": "Sorting"
+                    "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Sorting"
                   }
                 ]
               }
@@ -1013,8 +993,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.FeedQuestion",
-                    "displayName": "FeedQuestion"
+                    "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.FeedQuestion"
                   }
                 ]
               }
@@ -1216,8 +1195,7 @@
           "name": "question",
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question",
-              "displayName": "Question"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
             }
           ],
           "doc": ""
@@ -1237,8 +1215,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question",
-              "displayName": "Question"
+              "referenceType": "wix-question-backend.WixKeynoteQuestionsV1Question.Question"
             }
           ],
           "doc": ""
