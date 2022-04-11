@@ -16,7 +16,8 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.QuestionCreated"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-QuestionCreated",
+              "displayName": "QuestionCreated"
             }
           ],
           "doc": "",
@@ -58,7 +59,8 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.QuestionDeleted"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-QuestionDeleted",
+              "displayName": "QuestionDeleted"
             }
           ],
           "doc": "",
@@ -100,7 +102,8 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.QuestionUpdated"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-QuestionUpdated",
+              "displayName": "QuestionUpdated"
             }
           ],
           "doc": "",
@@ -138,7 +141,7 @@
   ],
   "messages": [
     {
-      "name": "BackendEventMetadata",
+      "name": "@wix/velo-events-BackendEventMetadata",
       "members": [
         {
           "name": "entityId",
@@ -184,13 +187,14 @@
       }
     },
     {
-      "name": "CreateQuestionRequest",
+      "name": "@wix/velo-events-CreateQuestionRequest",
       "members": [
         {
           "name": "question",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Question"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-Question",
+              "displayName": "Question"
             }
           ],
           "doc": ""
@@ -203,14 +207,15 @@
       }
     },
     {
-      "name": "CreateQuestionResponse",
+      "name": "@wix/velo-events-CreateQuestionResponse",
       "members": [
         {
           "name": "question",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Question"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-Question",
+              "displayName": "Question"
             }
           ],
           "doc": ""
@@ -223,7 +228,7 @@
       }
     },
     {
-      "name": "CursorPaging",
+      "name": "@wix/velo-events-CursorPaging",
       "members": [
         {
           "name": "cursor",
@@ -259,7 +264,7 @@
       }
     },
     {
-      "name": "DeleteQuestionRequest",
+      "name": "@wix/velo-events-DeleteQuestionRequest",
       "members": [
         {
           "name": "questionId",
@@ -288,7 +293,7 @@
       }
     },
     {
-      "name": "DeleteQuestionResponse",
+      "name": "@wix/velo-events-DeleteQuestionResponse",
       "members": [],
       "docs": {
         "description": [
@@ -297,7 +302,7 @@
       }
     },
     {
-      "name": "Empty",
+      "name": "@wix/velo-events-Empty",
       "members": [],
       "docs": {
         "description": [
@@ -306,7 +311,7 @@
       }
     },
     {
-      "name": "FeedQuestion",
+      "name": "@wix/velo-events-FeedQuestion",
       "members": [
         {
           "name": "_createdDate",
@@ -397,7 +402,7 @@
       }
     },
     {
-      "name": "GetQuestionRequest",
+      "name": "@wix/velo-events-GetQuestionRequest",
       "members": [
         {
           "name": "questionId",
@@ -416,14 +421,15 @@
       }
     },
     {
-      "name": "GetQuestionResponse",
+      "name": "@wix/velo-events-GetQuestionResponse",
       "members": [
         {
           "name": "question",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Question"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-Question",
+              "displayName": "Question"
             }
           ],
           "doc": ""
@@ -436,7 +442,7 @@
       }
     },
     {
-      "name": "Paging",
+      "name": "@wix/velo-events-Paging",
       "members": [
         {
           "name": "limit",
@@ -472,13 +478,14 @@
       }
     },
     {
-      "name": "QueryQuestionRequest",
+      "name": "@wix/velo-events-QueryQuestionRequest",
       "members": [
         {
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.QueryV2"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-QueryV2",
+              "displayName": "QueryV2"
             }
           ],
           "doc": ""
@@ -491,7 +498,7 @@
       }
     },
     {
-      "name": "QueryQuestionResponse",
+      "name": "@wix/velo-events-QueryQuestionResponse",
       "members": [
         {
           "name": "questions",
@@ -502,7 +509,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-question-backend.Events.Question"
+                    "referenceType": "wix-question-backend.Events.@wix/velo-events-Question",
+                    "displayName": "Question"
                   }
                 ]
               }
@@ -518,14 +526,15 @@
       }
     },
     {
-      "name": "QueryV2",
+      "name": "@wix/velo-events-QueryV2",
       "members": [
         {
           "name": "cursorPaging",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.CursorPaging"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-CursorPaging",
+              "displayName": "CursorPaging"
             }
           ],
           "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
@@ -592,7 +601,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Paging"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-Paging",
+              "displayName": "Paging"
             }
           ],
           "doc": "Paging options to limit and skip the number of items."
@@ -606,7 +616,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-question-backend.Events.Sorting"
+                    "referenceType": "wix-question-backend.Events.@wix/velo-events-Sorting",
+                    "displayName": "Sorting"
                   }
                 ]
               }
@@ -622,7 +633,7 @@
       }
     },
     {
-      "name": "Question",
+      "name": "@wix/velo-events-Question",
       "members": [
         {
           "name": "_createdDate",
@@ -741,13 +752,14 @@
       }
     },
     {
-      "name": "QuestionCreated",
+      "name": "@wix/velo-events-QuestionCreated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Question"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-Question",
+              "displayName": "Question"
             }
           ],
           "doc": ""
@@ -756,7 +768,8 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.BackendEventMetadata"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-BackendEventMetadata",
+              "displayName": "BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -769,13 +782,14 @@
       }
     },
     {
-      "name": "QuestionDeleted",
+      "name": "@wix/velo-events-QuestionDeleted",
       "members": [
         {
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.BackendEventMetadata"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-BackendEventMetadata",
+              "displayName": "BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -788,13 +802,14 @@
       }
     },
     {
-      "name": "QuestionUpdated",
+      "name": "@wix/velo-events-QuestionUpdated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Question"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-Question",
+              "displayName": "Question"
             }
           ],
           "doc": ""
@@ -803,7 +818,8 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.BackendEventMetadata"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-BackendEventMetadata",
+              "displayName": "BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -816,7 +832,7 @@
       }
     },
     {
-      "name": "QuestionsFeedRequest",
+      "name": "@wix/velo-events-QuestionsFeedRequest",
       "members": [],
       "docs": {
         "description": [
@@ -825,7 +841,7 @@
       }
     },
     {
-      "name": "QuestionsFeedResponse",
+      "name": "@wix/velo-events-QuestionsFeedResponse",
       "members": [
         {
           "name": "questions",
@@ -836,7 +852,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-question-backend.Events.FeedQuestion"
+                    "referenceType": "wix-question-backend.Events.@wix/velo-events-FeedQuestion",
+                    "displayName": "FeedQuestion"
                   }
                 ]
               }
@@ -852,7 +869,7 @@
       }
     },
     {
-      "name": "Sorting",
+      "name": "@wix/velo-events-Sorting",
       "members": [
         {
           "name": "fieldName",
@@ -882,7 +899,7 @@
       }
     },
     {
-      "name": "UpdateQuestionRequest",
+      "name": "@wix/velo-events-UpdateQuestionRequest",
       "members": [
         {
           "name": "mask",
@@ -905,7 +922,8 @@
           "name": "question",
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Question"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-Question",
+              "displayName": "Question"
             }
           ],
           "doc": ""
@@ -918,14 +936,15 @@
       }
     },
     {
-      "name": "UpdateQuestionResponse",
+      "name": "@wix/velo-events-UpdateQuestionResponse",
       "members": [
         {
           "name": "question",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-question-backend.Events.Question"
+              "referenceType": "wix-question-backend.Events.@wix/velo-events-Question",
+              "displayName": "Question"
             }
           ],
           "doc": ""
@@ -938,7 +957,7 @@
       }
     },
     {
-      "name": "UpvoteRequest",
+      "name": "@wix/velo-events-UpvoteRequest",
       "members": [
         {
           "name": "questionId",
@@ -967,7 +986,7 @@
       }
     },
     {
-      "name": "UpvoteResponse",
+      "name": "@wix/velo-events-UpvoteResponse",
       "members": [],
       "docs": {
         "description": [
