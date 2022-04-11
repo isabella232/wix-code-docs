@@ -16,8 +16,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-WishlistCreated",
-              "displayName": "WishlistCreated"
+              "referenceType": "wix-freds-backend.Events.WishlistCreated"
             }
           ],
           "doc": "",
@@ -59,8 +58,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-WishlistDeleted",
-              "displayName": "WishlistDeleted"
+              "referenceType": "wix-freds-backend.Events.WishlistDeleted"
             }
           ],
           "doc": "",
@@ -102,8 +100,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-WishlistUpdated",
-              "displayName": "WishlistUpdated"
+              "referenceType": "wix-freds-backend.Events.WishlistUpdated"
             }
           ],
           "doc": "",
@@ -141,7 +138,7 @@
   ],
   "messages": [
     {
-      "name": "@wix/velo-events-BackendEventMetadata",
+      "name": "BackendEventMetadata",
       "members": [
         {
           "name": "entityId",
@@ -187,14 +184,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateWishlistRequest",
+      "name": "CreateWishlistRequest",
       "members": [
         {
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-Wishlist",
-              "displayName": "Wishlist"
+              "referenceType": "wix-freds-backend.Events.Wishlist"
             }
           ],
           "doc": "Wishlist to be created"
@@ -207,15 +203,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateWishlistResponse",
+      "name": "CreateWishlistResponse",
       "members": [
         {
           "name": "wishlist",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-Wishlist",
-              "displayName": "Wishlist"
+              "referenceType": "wix-freds-backend.Events.Wishlist"
             }
           ],
           "doc": "The created Wishlist"
@@ -228,7 +223,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CursorPaging",
+      "name": "CursorPaging",
       "members": [
         {
           "name": "cursor",
@@ -264,7 +259,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DeleteWishlistRequest",
+      "name": "DeleteWishlistRequest",
       "members": [
         {
           "name": "revision",
@@ -293,7 +288,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DeleteWishlistResponse",
+      "name": "DeleteWishlistResponse",
       "members": [],
       "docs": {
         "description": [
@@ -302,7 +297,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetWishlistRequest",
+      "name": "GetWishlistRequest",
       "members": [
         {
           "name": "wishlistId",
@@ -321,15 +316,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetWishlistResponse",
+      "name": "GetWishlistResponse",
       "members": [
         {
           "name": "wishlist",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-Wishlist",
-              "displayName": "Wishlist"
+              "referenceType": "wix-freds-backend.Events.Wishlist"
             }
           ],
           "doc": "The retrieved Wishlist"
@@ -342,7 +336,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Paging",
+      "name": "Paging",
       "members": [
         {
           "name": "limit",
@@ -378,15 +372,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-QueryV2",
+      "name": "QueryV2",
       "members": [
         {
           "name": "cursorPaging",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-freds-backend.Events.CursorPaging"
             }
           ],
           "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
@@ -453,8 +446,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-Paging",
-              "displayName": "Paging"
+              "referenceType": "wix-freds-backend.Events.Paging"
             }
           ],
           "doc": "Paging options to limit and skip the number of items."
@@ -468,8 +460,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-freds-backend.Events.@wix/velo-events-Sorting",
-                    "displayName": "Sorting"
+                    "referenceType": "wix-freds-backend.Events.Sorting"
                   }
                 ]
               }
@@ -485,14 +476,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-QueryWishlistRequest",
+      "name": "QueryWishlistRequest",
       "members": [
         {
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-freds-backend.Events.QueryV2"
             }
           ],
           "doc": "WQL expression"
@@ -505,7 +495,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-QueryWishlistResponse",
+      "name": "QueryWishlistResponse",
       "members": [
         {
           "name": "wishlists",
@@ -516,8 +506,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-freds-backend.Events.@wix/velo-events-Wishlist",
-                    "displayName": "Wishlist"
+                    "referenceType": "wix-freds-backend.Events.Wishlist"
                   }
                 ]
               }
@@ -533,7 +522,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Sorting",
+      "name": "Sorting",
       "members": [
         {
           "name": "fieldName",
@@ -563,7 +552,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-UpdateWishlistRequest",
+      "name": "UpdateWishlistRequest",
       "members": [
         {
           "name": "mask",
@@ -586,8 +575,7 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-Wishlist",
-              "displayName": "Wishlist"
+              "referenceType": "wix-freds-backend.Events.Wishlist"
             }
           ],
           "doc": "Wishlist to be updated, may be partial"
@@ -600,15 +588,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-UpdateWishlistResponse",
+      "name": "UpdateWishlistResponse",
       "members": [
         {
           "name": "wishlist",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-Wishlist",
-              "displayName": "Wishlist"
+              "referenceType": "wix-freds-backend.Events.Wishlist"
             }
           ],
           "doc": "The updated Wishlist"
@@ -621,7 +608,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Wishlist",
+      "name": "Wishlist",
       "members": [
         {
           "name": "_createdDate",
@@ -712,14 +699,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-WishlistCreated",
+      "name": "WishlistCreated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-Wishlist",
-              "displayName": "Wishlist"
+              "referenceType": "wix-freds-backend.Events.Wishlist"
             }
           ],
           "doc": ""
@@ -728,8 +714,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-freds-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -742,14 +727,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-WishlistDeleted",
+      "name": "WishlistDeleted",
       "members": [
         {
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-freds-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -762,14 +746,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-WishlistUpdated",
+      "name": "WishlistUpdated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-Wishlist",
-              "displayName": "Wishlist"
+              "referenceType": "wix-freds-backend.Events.Wishlist"
             }
           ],
           "doc": ""
@@ -778,8 +761,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-freds-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
