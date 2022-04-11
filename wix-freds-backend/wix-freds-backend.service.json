@@ -15,7 +15,8 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Wishlist"
+              "referenceType": "wix-freds-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "",
@@ -30,7 +31,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-freds-backend.CreateWishlistResponse"
+                  "referenceType": "wix-freds-backend.CreateWishlistResponse",
+                  "displayName": "CreateWishlistResponse"
                 }
               ]
             }
@@ -75,7 +77,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-freds-backend.DeleteWishlistOptions"
+              "referenceType": "wix-freds-backend.DeleteWishlistOptions",
+              "displayName": "DeleteWishlistOptions"
             }
           ],
           "doc": "",
@@ -90,7 +93,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-freds-backend.DeleteWishlistResponse"
+                  "referenceType": "wix-freds-backend.DeleteWishlistResponse",
+                  "displayName": "DeleteWishlistResponse"
                 }
               ]
             }
@@ -140,7 +144,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-freds-backend.GetWishlistResponse"
+                  "referenceType": "wix-freds-backend.GetWishlistResponse",
+                  "displayName": "GetWishlistResponse"
                 }
               ]
             }
@@ -175,7 +180,8 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-freds-backend.QueryV2"
+              "referenceType": "wix-freds-backend.QueryV2",
+              "displayName": "QueryV2"
             }
           ],
           "doc": "",
@@ -190,7 +196,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-freds-backend.QueryWishlistResponse"
+                  "referenceType": "wix-freds-backend.QueryWishlistResponse",
+                  "displayName": "QueryWishlistResponse"
                 }
               ]
             }
@@ -238,7 +245,8 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-freds-backend.UpdateWishlistWishlist"
+              "referenceType": "wix-freds-backend.UpdateWishlistWishlist",
+              "displayName": "UpdateWishlistWishlist"
             }
           ],
           "doc": "",
@@ -248,7 +256,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-freds-backend.UpdateWishlistOptions"
+              "referenceType": "wix-freds-backend.UpdateWishlistOptions",
+              "displayName": "UpdateWishlistOptions"
             }
           ],
           "doc": "",
@@ -263,7 +272,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-freds-backend.UpdateWishlistResponse"
+                  "referenceType": "wix-freds-backend.UpdateWishlistResponse",
+                  "displayName": "UpdateWishlistResponse"
                 }
               ]
             }
@@ -300,7 +310,8 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Wishlist"
+              "referenceType": "wix-freds-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "Wishlist to be created"
@@ -320,7 +331,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Wishlist"
+              "referenceType": "wix-freds-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "The created Wishlist"
@@ -453,7 +465,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Wishlist"
+              "referenceType": "wix-freds-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "The retrieved Wishlist"
@@ -509,7 +522,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.CursorPaging"
+              "referenceType": "wix-freds-backend.CursorPaging",
+              "displayName": "CursorPaging"
             }
           ],
           "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
@@ -576,7 +590,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Paging"
+              "referenceType": "wix-freds-backend.Paging",
+              "displayName": "Paging"
             }
           ],
           "doc": "Paging options to limit and skip the number of items."
@@ -590,7 +605,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-freds-backend.Sorting"
+                    "referenceType": "wix-freds-backend.Sorting",
+                    "displayName": "Sorting"
                   }
                 ]
               }
@@ -612,7 +628,8 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-freds-backend.QueryV2"
+              "referenceType": "wix-freds-backend.QueryV2",
+              "displayName": "QueryV2"
             }
           ],
           "doc": "WQL expression"
@@ -636,7 +653,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-freds-backend.Wishlist"
+                    "referenceType": "wix-freds-backend.Wishlist",
+                    "displayName": "Wishlist"
                   }
                 ]
               }
@@ -732,7 +750,8 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-freds-backend.Wishlist"
+              "referenceType": "wix-freds-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "Wishlist to be updated, may be partial"
@@ -752,7 +771,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-freds-backend.Wishlist"
+              "referenceType": "wix-freds-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "The updated Wishlist"
