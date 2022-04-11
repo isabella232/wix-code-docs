@@ -15,7 +15,8 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-jackal-backend.Wishlist"
+              "referenceType": "wix-jackal-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "",
@@ -30,7 +31,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-jackal-backend.CreateWishlistResponse"
+                  "referenceType": "wix-jackal-backend.CreateWishlistResponse",
+                  "displayName": "CreateWishlistResponse"
                 }
               ]
             }
@@ -90,7 +92,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-jackal-backend.DeleteWishlistResponse"
+                  "referenceType": "wix-jackal-backend.DeleteWishlistResponse",
+                  "displayName": "DeleteWishlistResponse"
                 }
               ]
             }
@@ -140,7 +143,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-jackal-backend.GetWishlistResponse"
+                  "referenceType": "wix-jackal-backend.GetWishlistResponse",
+                  "displayName": "GetWishlistResponse"
                 }
               ]
             }
@@ -175,7 +179,8 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-jackal-backend.QueryV2"
+              "referenceType": "wix-jackal-backend.QueryV2",
+              "displayName": "QueryV2"
             }
           ],
           "doc": "",
@@ -190,7 +195,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-jackal-backend.QueryWishlistResponse"
+                  "referenceType": "wix-jackal-backend.QueryWishlistResponse",
+                  "displayName": "QueryWishlistResponse"
                 }
               ]
             }
@@ -238,7 +244,8 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-jackal-backend.UpdateWishlistWishlist"
+              "referenceType": "wix-jackal-backend.UpdateWishlistWishlist",
+              "displayName": "UpdateWishlistWishlist"
             }
           ],
           "doc": "",
@@ -248,7 +255,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-jackal-backend.UpdateWishlistOptions"
+              "referenceType": "wix-jackal-backend.UpdateWishlistOptions",
+              "displayName": "UpdateWishlistOptions"
             }
           ],
           "doc": "",
@@ -263,7 +271,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-jackal-backend.UpdateWishlistResponse"
+                  "referenceType": "wix-jackal-backend.UpdateWishlistResponse",
+                  "displayName": "UpdateWishlistResponse"
                 }
               ]
             }
@@ -300,7 +309,8 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-jackal-backend.Wishlist"
+              "referenceType": "wix-jackal-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "Wishlist to be created"
@@ -320,7 +330,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-jackal-backend.Wishlist"
+              "referenceType": "wix-jackal-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "The created Wishlist"
@@ -433,7 +444,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-jackal-backend.Wishlist"
+              "referenceType": "wix-jackal-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "The retrieved Wishlist"
@@ -489,7 +501,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-jackal-backend.CursorPaging"
+              "referenceType": "wix-jackal-backend.CursorPaging",
+              "displayName": "CursorPaging"
             }
           ],
           "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
@@ -556,7 +569,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-jackal-backend.Paging"
+              "referenceType": "wix-jackal-backend.Paging",
+              "displayName": "Paging"
             }
           ],
           "doc": "Paging options to limit and skip the number of items."
@@ -570,7 +584,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-jackal-backend.Sorting"
+                    "referenceType": "wix-jackal-backend.Sorting",
+                    "displayName": "Sorting"
                   }
                 ]
               }
@@ -592,7 +607,8 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-jackal-backend.QueryV2"
+              "referenceType": "wix-jackal-backend.QueryV2",
+              "displayName": "QueryV2"
             }
           ],
           "doc": "WQL expression"
@@ -616,7 +632,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-jackal-backend.Wishlist"
+                    "referenceType": "wix-jackal-backend.Wishlist",
+                    "displayName": "Wishlist"
                   }
                 ]
               }
@@ -712,7 +729,8 @@
           "name": "wishlist",
           "type": [
             {
-              "referenceType": "wix-jackal-backend.Wishlist"
+              "referenceType": "wix-jackal-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "Wishlist to be updated, may be partial"
@@ -732,7 +750,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-jackal-backend.Wishlist"
+              "referenceType": "wix-jackal-backend.Wishlist",
+              "displayName": "Wishlist"
             }
           ],
           "doc": "The updated Wishlist"
@@ -782,7 +801,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-jackal-backend.WishlistItem"
+                    "referenceType": "wix-jackal-backend.WishlistItem",
+                    "displayName": "WishlistItem"
                   }
                 ]
               }
@@ -858,7 +878,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-jackal-backend.WishlistItem"
+                    "referenceType": "wix-jackal-backend.WishlistItem",
+                    "displayName": "WishlistItem"
                   }
                 ]
               }
