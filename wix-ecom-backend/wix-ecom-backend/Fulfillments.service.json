@@ -33,8 +33,7 @@
           "name": "fulfillment",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.Fulfillment",
-              "displayName": "Fulfillment"
+              "referenceType": "wix-ecom-backend.Fulfillments.Fulfillment"
             }
           ],
           "doc": "Fulfillment info.",
@@ -56,8 +55,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Fulfillments.CreateFulfillmentResponse",
-                  "displayName": "CreateFulfillmentResponse"
+                  "referenceType": "wix-ecom-backend.Fulfillments.CreateFulfillmentResponse"
                 }
               ]
             }
@@ -92,8 +90,7 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.DeleteFulfillmentIdentifiers",
-              "displayName": "DeleteFulfillmentIdentifiers"
+              "referenceType": "wix-ecom-backend.Fulfillments.DeleteFulfillmentIdentifiers"
             }
           ],
           "doc": "",
@@ -111,8 +108,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Fulfillments.DeleteFulfillmentResponse",
-                  "displayName": "DeleteFulfillmentResponse"
+                  "referenceType": "wix-ecom-backend.Fulfillments.DeleteFulfillmentResponse"
                 }
               ]
             }
@@ -171,8 +167,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Fulfillments.ListFulfillmentsForMultipleOrdersResponse",
-                  "displayName": "ListFulfillmentsForMultipleOrdersResponse"
+                  "referenceType": "wix-ecom-backend.Fulfillments.ListFulfillmentsForMultipleOrdersResponse"
                 }
               ]
             }
@@ -224,8 +219,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Fulfillments.ListFulfillmentsForSingleOrderResponse",
-                  "displayName": "ListFulfillmentsForSingleOrderResponse"
+                  "referenceType": "wix-ecom-backend.Fulfillments.ListFulfillmentsForSingleOrderResponse"
                 }
               ]
             }
@@ -260,8 +254,7 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.UpdateFulfillmentIdentifiers",
-              "displayName": "UpdateFulfillmentIdentifiers"
+              "referenceType": "wix-ecom-backend.Fulfillments.UpdateFulfillmentIdentifiers"
             }
           ],
           "doc": "",
@@ -271,8 +264,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.UpdateFulfillmentOptions",
-              "displayName": "UpdateFulfillmentOptions"
+              "referenceType": "wix-ecom-backend.Fulfillments.UpdateFulfillmentOptions"
             }
           ],
           "doc": "",
@@ -290,8 +282,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Fulfillments.UpdateFulfillmentResponse",
-                  "displayName": "UpdateFulfillmentResponse"
+                  "referenceType": "wix-ecom-backend.Fulfillments.UpdateFulfillmentResponse"
                 }
               ]
             }
@@ -336,6 +327,20 @@
             }
           ],
           "doc": "Wix customer ID"
+        },
+        {
+          "name": "contactId",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Contact Id. needed for cases where the user is the buyer and so it doesn't exist on the buyer info"
         },
         {
           "name": "email",
@@ -419,8 +424,7 @@
           "name": "fulfillment",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.Fulfillment",
-              "displayName": "Fulfillment"
+              "referenceType": "wix-ecom-backend.Fulfillments.Fulfillment"
             }
           ],
           "doc": "Fulfillment info."
@@ -459,8 +463,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments",
-              "displayName": "OrderWithFulfillments"
+              "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments"
             }
           ],
           "doc": "Order ID and the orders' fulfillments."
@@ -536,8 +539,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments",
-              "displayName": "OrderWithFulfillments"
+              "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments"
             }
           ],
           "doc": "Order ID and the orders' associated fulfillments after deletion."
@@ -585,8 +587,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Fulfillments.FulfillmentLineItem",
-                    "displayName": "FulfillmentLineItem"
+                    "referenceType": "wix-ecom-backend.Fulfillments.FulfillmentLineItem"
                   }
                 ]
               }
@@ -599,8 +600,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.FulfillmentTrackingInfo",
-              "displayName": "FulfillmentTrackingInfo"
+              "referenceType": "wix-ecom-backend.Fulfillments.FulfillmentTrackingInfo"
             }
           ],
           "doc": "Fulfillment tracking info."
@@ -620,8 +620,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.BuyerInfo",
-              "displayName": "BuyerInfo"
+              "referenceType": "wix-ecom-backend.Fulfillments.BuyerInfo"
             }
           ],
           "doc": "Buyer information."
@@ -671,8 +670,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.V2FulfillmentTrackingInfo",
-              "displayName": "V2FulfillmentTrackingInfo"
+              "referenceType": "wix-ecom-backend.Fulfillments.V2FulfillmentTrackingInfo"
             }
           ],
           "doc": "Fulfillment tracking information."
@@ -834,8 +832,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.V2FulfillmentTrackingInfo",
-              "displayName": "V2FulfillmentTrackingInfo"
+              "referenceType": "wix-ecom-backend.Fulfillments.V2FulfillmentTrackingInfo"
             }
           ],
           "doc": "Fulfillment tracking information."
@@ -932,8 +929,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments",
-                    "displayName": "OrderWithFulfillments"
+                    "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments"
                   }
                 ]
               }
@@ -975,8 +971,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments",
-              "displayName": "OrderWithFulfillments"
+              "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments"
             }
           ],
           "doc": "List of fulfillments associated with the order."
@@ -1000,8 +995,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Fulfillments.Fulfillment",
-                    "displayName": "Fulfillment"
+                    "referenceType": "wix-ecom-backend.Fulfillments.Fulfillment"
                   }
                 ]
               }
@@ -1064,8 +1058,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.fulfillment_4",
-              "displayName": "fulfillment_4"
+              "referenceType": "wix-ecom-backend.Fulfillments.fulfillment_4"
             }
           ],
           "doc": ""
@@ -1110,8 +1103,7 @@
           "name": "fulfillment",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.fulfillment_5",
-              "displayName": "fulfillment_5"
+              "referenceType": "wix-ecom-backend.Fulfillments.fulfillment_5"
             }
           ],
           "doc": ""
@@ -1147,8 +1139,7 @@
           "name": "fulfillment",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.Fulfillment",
-              "displayName": "Fulfillment"
+              "referenceType": "wix-ecom-backend.Fulfillments.Fulfillment"
             }
           ],
           "doc": "Fulfillment info to update."
@@ -1177,8 +1168,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments",
-              "displayName": "OrderWithFulfillments"
+              "referenceType": "wix-ecom-backend.Fulfillments.OrderWithFulfillments"
             }
           ],
           "doc": "Order ID and the orders' associated fulfillments after update."
@@ -1292,8 +1282,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Fulfillments.FulfillmentLineItem",
-                    "displayName": "FulfillmentLineItem"
+                    "referenceType": "wix-ecom-backend.Fulfillments.FulfillmentLineItem"
                   }
                 ]
               }
@@ -1306,8 +1295,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Fulfillments.FulfillmentTrackingInfo",
-              "displayName": "FulfillmentTrackingInfo"
+              "referenceType": "wix-ecom-backend.Fulfillments.FulfillmentTrackingInfo"
             }
           ],
           "doc": "Fulfillment tracking info."
