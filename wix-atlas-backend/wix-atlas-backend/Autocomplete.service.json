@@ -33,8 +33,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.ListPredictionsOptions",
-              "displayName": "ListPredictionsOptions"
+              "referenceType": "wix-atlas-backend.Autocomplete.ListPredictionsOptions"
             }
           ],
           "doc": "",
@@ -51,8 +50,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-atlas-backend.Autocomplete.ListPredictionsResponse",
-                  "displayName": "ListPredictionsResponse"
+                  "referenceType": "wix-atlas-backend.Autocomplete.ListPredictionsResponse"
                 }
               ]
             }
@@ -97,8 +95,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.PredictOptions",
-              "displayName": "PredictOptions"
+              "referenceType": "wix-atlas-backend.Autocomplete.PredictOptions"
             }
           ],
           "doc": "",
@@ -115,8 +112,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-atlas-backend.Autocomplete.PredictResponse",
-                  "displayName": "PredictResponse"
+                  "referenceType": "wix-atlas-backend.Autocomplete.PredictResponse"
                 }
               ]
             }
@@ -224,8 +220,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-backend.Autocomplete.FilterBy",
-                    "displayName": "FilterBy"
+                    "referenceType": "wix-atlas-backend.Autocomplete.FilterBy"
                   }
                 ]
               }
@@ -238,8 +233,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation",
-              "displayName": "AddressLocation"
+              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
           "doc": ""
@@ -249,8 +243,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation",
-              "displayName": "AddressLocation"
+              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
           "doc": ""
@@ -287,8 +280,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-backend.Autocomplete.FilterBy",
-                    "displayName": "FilterBy"
+                    "referenceType": "wix-atlas-backend.Autocomplete.FilterBy"
                   }
                 ]
               }
@@ -310,8 +302,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation",
-              "displayName": "AddressLocation"
+              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
           "doc": "The point around which you wish to retrieve place information"
@@ -321,8 +312,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation",
-              "displayName": "AddressLocation"
+              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
           "doc": "The origin point from which to calculate straight-line distance to the destination"
@@ -359,8 +349,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-backend.Autocomplete.Prediction",
-                    "displayName": "Prediction"
+                    "referenceType": "wix-atlas-backend.Autocomplete.Prediction"
                   }
                 ]
               }
@@ -430,8 +419,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation",
-              "displayName": "AddressLocation"
+              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
           "doc": ""
@@ -441,8 +429,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation",
-              "displayName": "AddressLocation"
+              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
           "doc": ""
@@ -501,8 +488,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation",
-              "displayName": "AddressLocation"
+              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
           "doc": "The point around which you wish to retrieve place information"
@@ -512,8 +498,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation",
-              "displayName": "AddressLocation"
+              "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
           "doc": "The origin point from which to calculate straight-line distance to the destination"
@@ -550,8 +535,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-backend.Autocomplete.Prediction",
-                    "displayName": "Prediction"
+                    "referenceType": "wix-atlas-backend.Autocomplete.Prediction"
                   }
                 ]
               }
@@ -601,8 +585,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-backend.Autocomplete.MatchedSubstrings",
-                    "displayName": "MatchedSubstrings"
+                    "referenceType": "wix-atlas-backend.Autocomplete.MatchedSubstrings"
                   }
                 ]
               }
@@ -625,8 +608,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-backend.Autocomplete.TextStructure",
-              "displayName": "TextStructure"
+              "referenceType": "wix-atlas-backend.Autocomplete.TextStructure"
             }
           ],
           "doc": "Provides pre-formatted text that can be shown in your autocomplete results"
@@ -660,8 +642,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-backend.Autocomplete.MatchedSubstrings",
-                    "displayName": "MatchedSubstrings"
+                    "referenceType": "wix-atlas-backend.Autocomplete.MatchedSubstrings"
                   }
                 ]
               }
