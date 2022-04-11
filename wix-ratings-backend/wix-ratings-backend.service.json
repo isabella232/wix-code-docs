@@ -42,8 +42,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.BulkAverageAttributesOptions",
-              "displayName": "BulkAverageAttributesOptions"
+              "referenceType": "wix-ratings-backend.BulkAverageAttributesOptions"
             }
           ],
           "doc": "",
@@ -58,8 +57,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.BulkAverageAttributesResponse",
-                  "displayName": "BulkAverageAttributesResponse"
+                  "referenceType": "wix-ratings-backend.BulkAverageAttributesResponse"
                 }
               ]
             }
@@ -104,8 +102,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.CreateRatingOptions",
-              "displayName": "CreateRatingOptions"
+              "referenceType": "wix-ratings-backend.CreateRatingOptions"
             }
           ],
           "doc": "",
@@ -120,8 +117,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.CreateRatingResponse",
-                  "displayName": "CreateRatingResponse"
+                  "referenceType": "wix-ratings-backend.CreateRatingResponse"
                 }
               ]
             }
@@ -181,8 +177,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.DeleteRatingResponse",
-                  "displayName": "DeleteRatingResponse"
+                  "referenceType": "wix-ratings-backend.DeleteRatingResponse"
                 }
               ]
             }
@@ -217,8 +212,7 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.GetEntityRatingSummaryIdentifiers",
-              "displayName": "GetEntityRatingSummaryIdentifiers"
+              "referenceType": "wix-ratings-backend.GetEntityRatingSummaryIdentifiers"
             }
           ],
           "doc": "",
@@ -250,8 +244,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.GetEntityRatingSummaryResponse",
-                  "displayName": "GetEntityRatingSummaryResponse"
+                  "referenceType": "wix-ratings-backend.GetEntityRatingSummaryResponse"
                 }
               ]
             }
@@ -318,8 +311,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.GetNamespaceRatingSummaryResponse",
-                  "displayName": "GetNamespaceRatingSummaryResponse"
+                  "referenceType": "wix-ratings-backend.GetNamespaceRatingSummaryResponse"
                 }
               ]
             }
@@ -369,8 +361,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.GetRatingResponse",
-                  "displayName": "GetRatingResponse"
+                  "referenceType": "wix-ratings-backend.GetRatingResponse"
                 }
               ]
             }
@@ -405,8 +396,7 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-ratings-backend.QueryV2"
             }
           ],
           "doc": "",
@@ -421,8 +411,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.QueryRatingsResponse",
-                  "displayName": "QueryRatingsResponse"
+                  "referenceType": "wix-ratings-backend.QueryRatingsResponse"
                 }
               ]
             }
@@ -483,8 +472,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.UpdateRatingValueOptions",
-              "displayName": "UpdateRatingValueOptions"
+              "referenceType": "wix-ratings-backend.UpdateRatingValueOptions"
             }
           ],
           "doc": "",
@@ -499,8 +487,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.UpdateRatingValueResponse",
-                  "displayName": "UpdateRatingValueResponse"
+                  "referenceType": "wix-ratings-backend.UpdateRatingValueResponse"
                 }
               ]
             }
@@ -595,8 +582,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.ValueBreakdown",
-                    "displayName": "ValueBreakdown"
+                    "referenceType": "wix-ratings-backend.ValueBreakdown"
                   }
                 ]
               }
@@ -689,8 +675,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.EntityAverage",
-                    "displayName": "EntityAverage"
+                    "referenceType": "wix-ratings-backend.EntityAverage"
                   }
                 ]
               }
@@ -732,8 +717,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.IdentificationData",
-              "displayName": "IdentificationData"
+              "referenceType": "wix-ratings-backend.IdentificationData"
             }
           ],
           "doc": ""
@@ -803,8 +787,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.IdentificationData",
-              "displayName": "IdentificationData"
+              "referenceType": "wix-ratings-backend.IdentificationData"
             }
           ],
           "doc": "Set rating's owner explicitly. Ignored when visitor/member calls API."
@@ -856,8 +839,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.Rating",
-              "displayName": "Rating"
+              "referenceType": "wix-ratings-backend.Rating"
             }
           ],
           "doc": "The created rating."
@@ -1057,8 +1039,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.ActionEvent",
-              "displayName": "ActionEvent"
+              "referenceType": "wix-ratings-backend.ActionEvent"
             }
           ],
           "doc": ""
@@ -1068,8 +1049,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.EntityCreatedEvent",
-              "displayName": "EntityCreatedEvent"
+              "referenceType": "wix-ratings-backend.EntityCreatedEvent"
             }
           ],
           "doc": ""
@@ -1079,8 +1059,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.EntityDeletedEvent",
-              "displayName": "EntityDeletedEvent"
+              "referenceType": "wix-ratings-backend.EntityDeletedEvent"
             }
           ],
           "doc": ""
@@ -1156,8 +1135,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.EntityUpdatedEvent",
-              "displayName": "EntityUpdatedEvent"
+              "referenceType": "wix-ratings-backend.EntityUpdatedEvent"
             }
           ],
           "doc": ""
@@ -1230,6 +1208,20 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "triggeredByUndelete",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Indicates the event was triggered by a restore-from-trashbin operation for a previously deleted entity"
         }
       ],
       "docs": {
@@ -1240,7 +1232,22 @@
     },
     {
       "name": "EntityDeletedEvent",
-      "members": [],
+      "members": [
+        {
+          "name": "movedToTrash",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Indicates if the entity is sent to trash-bin. only available when trash-bin is enabled"
+        }
+      ],
       "docs": {
         "description": [
           ""
@@ -1259,6 +1266,20 @@
             }
           ],
           "doc": "Since platformized APIs only expose PATCH and not PUT we can't assume that the fields sent from the client are the actual diff.\nThis means that to generate a list of changed fields (as opposed to sent fields) one needs to traverse both objects.\nWe don't want to impose this on all developers and so we leave this traversal to the notification recipients which need it."
+        },
+        {
+          "name": "previousEntityAsJson",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "This field is currently part of the of the EntityUpdatedEvent msg, but scala/node libraries which implements the domain events standard\nwont populate it / have any reference to it in the API.\nThe main reason for it is that fetching the old entity from the DB will have a performance hit on an update operation so unless truly needed,\nthe developer should send only the new (current) entity.\nAn additional reason is not wanting to send this additional entity over the wire (kafka) since in some cases it can be really big\nDevelopers that must reflect the old entity will have to implement their own domain event sender mechanism which will follow the DomainEvent proto message."
         }
       ],
       "docs": {
@@ -1352,8 +1373,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.AttributeSummary",
-                    "displayName": "AttributeSummary"
+                    "referenceType": "wix-ratings-backend.AttributeSummary"
                   }
                 ]
               }
@@ -1436,8 +1456,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.AttributeSummary",
-                    "displayName": "AttributeSummary"
+                    "referenceType": "wix-ratings-backend.AttributeSummary"
                   }
                 ]
               }
@@ -1489,8 +1508,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.Rating",
-              "displayName": "Rating"
+              "referenceType": "wix-ratings-backend.Rating"
             }
           ],
           "doc": "The retrieved rating."
@@ -1587,8 +1605,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.InternalDocument",
-              "displayName": "InternalDocument"
+              "referenceType": "wix-ratings-backend.InternalDocument"
             }
           ],
           "doc": "partial document to apply"
@@ -1635,8 +1652,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.InternalDocument",
-                    "displayName": "InternalDocument"
+                    "referenceType": "wix-ratings-backend.InternalDocument"
                   }
                 ]
               }
@@ -1663,8 +1679,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.InternalDocument",
-                    "displayName": "InternalDocument"
+                    "referenceType": "wix-ratings-backend.InternalDocument"
                   }
                 ]
               }
@@ -1700,8 +1715,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.Cursors",
-              "displayName": "Cursors"
+              "referenceType": "wix-ratings-backend.Cursors"
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
@@ -1721,8 +1735,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-ratings-backend.QueryV2"
             }
           ],
           "doc": ""
@@ -1742,8 +1755,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.PagingMetadataV2",
-              "displayName": "PagingMetadataV2"
+              "referenceType": "wix-ratings-backend.PagingMetadataV2"
             }
           ],
           "doc": ""
@@ -1757,8 +1769,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.Rating",
-                    "displayName": "Rating"
+                    "referenceType": "wix-ratings-backend.Rating"
                   }
                 ]
               }
@@ -1781,8 +1792,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-ratings-backend.CursorPaging"
             }
           ],
           "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
@@ -1819,8 +1829,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.Sorting",
-                    "displayName": "Sorting"
+                    "referenceType": "wix-ratings-backend.Sorting"
                   }
                 ]
               }
@@ -1922,8 +1931,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.IdentificationData",
-              "displayName": "IdentificationData"
+              "referenceType": "wix-ratings-backend.IdentificationData"
             }
           ],
           "doc": "Rating's owner"
@@ -2074,8 +2082,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.InternalDocument",
-                    "displayName": "InternalDocument"
+                    "referenceType": "wix-ratings-backend.InternalDocument"
                   }
                 ]
               }
@@ -2101,8 +2108,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.DeleteByFilterOperation",
-              "displayName": "DeleteByFilterOperation"
+              "referenceType": "wix-ratings-backend.DeleteByFilterOperation"
             }
           ],
           "doc": "delete documents matching filter"
@@ -2112,8 +2118,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.DeleteByIdsOperation",
-              "displayName": "DeleteByIdsOperation"
+              "referenceType": "wix-ratings-backend.DeleteByIdsOperation"
             }
           ],
           "doc": "delete by document ids"
@@ -2163,8 +2168,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.InternalDocumentUpdateOperation",
-              "displayName": "InternalDocumentUpdateOperation"
+              "referenceType": "wix-ratings-backend.InternalDocumentUpdateOperation"
             }
           ],
           "doc": "insert/update documents"
@@ -2174,8 +2178,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.InternalDocumentUpdateByFilterOperation",
-              "displayName": "InternalDocumentUpdateByFilterOperation"
+              "referenceType": "wix-ratings-backend.InternalDocumentUpdateByFilterOperation"
             }
           ],
           "doc": "update internal documents matching filter"
@@ -2185,8 +2188,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.InternalUpdateExistingOperation",
-              "displayName": "InternalUpdateExistingOperation"
+              "referenceType": "wix-ratings-backend.InternalUpdateExistingOperation"
             }
           ],
           "doc": "update only existing documents"
@@ -2274,8 +2276,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.Rating",
-              "displayName": "Rating"
+              "referenceType": "wix-ratings-backend.Rating"
             }
           ],
           "doc": "The updated rating."
