@@ -16,7 +16,8 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.ActivityCounterUpdated"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-ActivityCounterUpdated",
+              "displayName": "ActivityCounterUpdated"
             }
           ],
           "doc": "",
@@ -54,7 +55,7 @@
   ],
   "messages": [
     {
-      "name": "ActivityCounter",
+      "name": "@wix/velo-events-ActivityCounter",
       "members": [
         {
           "name": "appId",
@@ -75,7 +76,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-activity-counters-backend.Events.Counter"
+                    "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-Counter",
+                    "displayName": "Counter"
                   }
                 ]
               }
@@ -101,13 +103,14 @@
       }
     },
     {
-      "name": "ActivityCounterUpdated",
+      "name": "@wix/velo-events-ActivityCounterUpdated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.ActivityCounter"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-ActivityCounter",
+              "displayName": "ActivityCounter"
             }
           ],
           "doc": ""
@@ -116,7 +119,8 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.BackendEventMetadata"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-BackendEventMetadata",
+              "displayName": "BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -129,7 +133,7 @@
       }
     },
     {
-      "name": "BackendEventMetadata",
+      "name": "@wix/velo-events-BackendEventMetadata",
       "members": [
         {
           "name": "entityId",
@@ -175,7 +179,7 @@
       }
     },
     {
-      "name": "Counter",
+      "name": "@wix/velo-events-Counter",
       "members": [
         {
           "name": "count",
@@ -215,7 +219,7 @@
       }
     },
     {
-      "name": "GetActivityCountersRequest",
+      "name": "@wix/velo-events-GetActivityCountersRequest",
       "members": [
         {
           "name": "memberId",
@@ -234,7 +238,7 @@
       }
     },
     {
-      "name": "GetActivityCountersResponse",
+      "name": "@wix/velo-events-GetActivityCountersResponse",
       "members": [
         {
           "name": "activityCounters",
@@ -245,7 +249,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-activity-counters-backend.Events.ActivityCounter"
+                    "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-ActivityCounter",
+                    "displayName": "ActivityCounter"
                   }
                 ]
               }
@@ -261,13 +266,14 @@
       }
     },
     {
-      "name": "IncrementActivityCountersRequest",
+      "name": "@wix/velo-events-IncrementActivityCountersRequest",
       "members": [
         {
           "name": "counter",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.Counter"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-Counter",
+              "displayName": "Counter"
             }
           ],
           "doc": "Site member ID whose counter will be increment."
@@ -289,14 +295,15 @@
       }
     },
     {
-      "name": "IncrementActivityCountersResponse",
+      "name": "@wix/velo-events-IncrementActivityCountersResponse",
       "members": [
         {
           "name": "activityCounter",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.ActivityCounter"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-ActivityCounter",
+              "displayName": "ActivityCounter"
             }
           ],
           "doc": ""
@@ -309,7 +316,7 @@
       }
     },
     {
-      "name": "Paging",
+      "name": "@wix/velo-events-Paging",
       "members": [
         {
           "name": "limit",
@@ -345,7 +352,7 @@
       }
     },
     {
-      "name": "PagingMetadata",
+      "name": "@wix/velo-events-PagingMetadata",
       "members": [
         {
           "name": "count",
@@ -359,20 +366,6 @@
             }
           ],
           "doc": "Number of items returned in the response."
-        },
-        {
-          "name": "hasNext",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Indicates if there are more results after the current page.\nIf `true`, another page of results can be retrieved.\nIf `false`, this is the last page."
         },
         {
           "name": "offset",
@@ -421,7 +414,7 @@
       }
     },
     {
-      "name": "Query",
+      "name": "@wix/velo-events-Query",
       "members": [
         {
           "name": "filter",
@@ -438,7 +431,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.Paging"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-Paging",
+              "displayName": "Paging"
             }
           ],
           "doc": "Limit number of results."
@@ -451,14 +445,15 @@
       }
     },
     {
-      "name": "QueryActivityCountersRequest",
+      "name": "@wix/velo-events-QueryActivityCountersRequest",
       "members": [
         {
           "name": "query",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.Query"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-Query",
+              "displayName": "Query"
             }
           ],
           "doc": ""
@@ -471,7 +466,7 @@
       }
     },
     {
-      "name": "QueryActivityCountersResponse",
+      "name": "@wix/velo-events-QueryActivityCountersResponse",
       "members": [
         {
           "name": "activityCounters",
@@ -482,7 +477,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-activity-counters-backend.Events.ActivityCounter"
+                    "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-ActivityCounter",
+                    "displayName": "ActivityCounter"
                   }
                 ]
               }
@@ -495,7 +491,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.PagingMetadata"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-PagingMetadata",
+              "displayName": "PagingMetadata"
             }
           ],
           "doc": "Retrieved activity counters."
@@ -508,13 +505,14 @@
       }
     },
     {
-      "name": "SetActivityCountersRequest",
+      "name": "@wix/velo-events-SetActivityCountersRequest",
       "members": [
         {
           "name": "counter",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.Counter"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-Counter",
+              "displayName": "Counter"
             }
           ],
           "doc": "Site member ID whose counter will be set."
@@ -536,14 +534,15 @@
       }
     },
     {
-      "name": "SetActivityCountersResponse",
+      "name": "@wix/velo-events-SetActivityCountersResponse",
       "members": [
         {
           "name": "activityCounter",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Events.ActivityCounter"
+              "referenceType": "wix-activity-counters-backend.Events.@wix/velo-events-ActivityCounter",
+              "displayName": "ActivityCounter"
             }
           ],
           "doc": ""
