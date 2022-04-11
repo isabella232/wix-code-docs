@@ -30,8 +30,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-activity-counters-backend.GetActivityCountersResponse",
-                  "displayName": "GetActivityCountersResponse"
+                  "referenceType": "wix-activity-counters-backend.GetActivityCountersResponse"
                 }
               ]
             }
@@ -76,8 +75,7 @@
           "name": "counter",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Counter",
-              "displayName": "Counter"
+              "referenceType": "wix-activity-counters-backend.Counter"
             }
           ],
           "doc": "",
@@ -92,8 +90,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-activity-counters-backend.IncrementActivityCountersResponse",
-                  "displayName": "IncrementActivityCountersResponse"
+                  "referenceType": "wix-activity-counters-backend.IncrementActivityCountersResponse"
                 }
               ]
             }
@@ -128,8 +125,7 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Query",
-              "displayName": "Query"
+              "referenceType": "wix-activity-counters-backend.Query"
             }
           ],
           "doc": "",
@@ -144,8 +140,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-activity-counters-backend.QueryActivityCountersResponse",
-                  "displayName": "QueryActivityCountersResponse"
+                  "referenceType": "wix-activity-counters-backend.QueryActivityCountersResponse"
                 }
               ]
             }
@@ -190,8 +185,7 @@
           "name": "counter",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Counter",
-              "displayName": "Counter"
+              "referenceType": "wix-activity-counters-backend.Counter"
             }
           ],
           "doc": "",
@@ -206,8 +200,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-activity-counters-backend.SetActivityCountersResponse",
-                  "displayName": "SetActivityCountersResponse"
+                  "referenceType": "wix-activity-counters-backend.SetActivityCountersResponse"
                 }
               ]
             }
@@ -259,8 +252,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-activity-counters-backend.Counter",
-                    "displayName": "Counter"
+                    "referenceType": "wix-activity-counters-backend.Counter"
                   }
                 ]
               }
@@ -356,8 +348,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-activity-counters-backend.ActivityCounter",
-                    "displayName": "ActivityCounter"
+                    "referenceType": "wix-activity-counters-backend.ActivityCounter"
                   }
                 ]
               }
@@ -379,8 +370,7 @@
           "name": "counter",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Counter",
-              "displayName": "Counter"
+              "referenceType": "wix-activity-counters-backend.Counter"
             }
           ],
           "doc": "Site member ID whose counter will be increment."
@@ -409,8 +399,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.ActivityCounter",
-              "displayName": "ActivityCounter"
+              "referenceType": "wix-activity-counters-backend.ActivityCounter"
             }
           ],
           "doc": ""
@@ -473,6 +462,20 @@
             }
           ],
           "doc": "Number of items returned in the response."
+        },
+        {
+          "name": "hasNext",
+          "readOnly": false,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Indicates if there are more results after the current page.\nIf `true`, another page of results can be retrieved.\nIf `false`, this is the last page."
         },
         {
           "name": "offset",
@@ -538,8 +541,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Paging",
-              "displayName": "Paging"
+              "referenceType": "wix-activity-counters-backend.Paging"
             }
           ],
           "doc": "Limit number of results."
@@ -559,8 +561,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Query",
-              "displayName": "Query"
+              "referenceType": "wix-activity-counters-backend.Query"
             }
           ],
           "doc": ""
@@ -584,8 +585,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-activity-counters-backend.ActivityCounter",
-                    "displayName": "ActivityCounter"
+                    "referenceType": "wix-activity-counters-backend.ActivityCounter"
                   }
                 ]
               }
@@ -598,8 +598,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.PagingMetadata",
-              "displayName": "PagingMetadata"
+              "referenceType": "wix-activity-counters-backend.PagingMetadata"
             }
           ],
           "doc": "Retrieved activity counters."
@@ -618,8 +617,7 @@
           "name": "counter",
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.Counter",
-              "displayName": "Counter"
+              "referenceType": "wix-activity-counters-backend.Counter"
             }
           ],
           "doc": "Site member ID whose counter will be set."
@@ -648,8 +646,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-activity-counters-backend.ActivityCounter",
-              "displayName": "ActivityCounter"
+              "referenceType": "wix-activity-counters-backend.ActivityCounter"
             }
           ],
           "doc": ""
