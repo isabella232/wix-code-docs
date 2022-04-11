@@ -83,8 +83,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent",
-              "displayName": "ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent"
             }
           ],
           "doc": ""
@@ -139,8 +138,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent",
-              "displayName": "ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent"
             }
           ],
           "doc": "Review content"
@@ -204,8 +202,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review",
-              "displayName": "Review"
+              "referenceType": "wix-reviews-backend.Review"
             }
           ],
           "doc": "Review entity"
@@ -316,8 +313,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review",
-              "displayName": "Review"
+              "referenceType": "wix-reviews-backend.Review"
             }
           ],
           "doc": "Review entity"
@@ -347,8 +343,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ActionEvent",
-              "displayName": "ActionEvent"
+              "referenceType": "wix-reviews-backend.ActionEvent"
             }
           ],
           "doc": ""
@@ -358,8 +353,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.EntityCreatedEvent",
-              "displayName": "EntityCreatedEvent"
+              "referenceType": "wix-reviews-backend.EntityCreatedEvent"
             }
           ],
           "doc": ""
@@ -369,8 +363,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.EntityDeletedEvent",
-              "displayName": "EntityDeletedEvent"
+              "referenceType": "wix-reviews-backend.EntityDeletedEvent"
             }
           ],
           "doc": ""
@@ -446,8 +439,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.EntityUpdatedEvent",
-              "displayName": "EntityUpdatedEvent"
+              "referenceType": "wix-reviews-backend.EntityUpdatedEvent"
             }
           ],
           "doc": ""
@@ -544,8 +536,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review",
-              "displayName": "Review"
+              "referenceType": "wix-reviews-backend.Review"
             }
           ],
           "doc": "Review entity"
@@ -646,8 +637,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Image",
-              "displayName": "Image"
+              "referenceType": "wix-reviews-backend.Image"
             }
           ],
           "doc": ""
@@ -657,8 +647,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.VideoV2",
-              "displayName": "VideoV2"
+              "referenceType": "wix-reviews-backend.VideoV2"
             }
           ],
           "doc": ""
@@ -691,8 +680,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Cursors",
-              "displayName": "Cursors"
+              "referenceType": "wix-reviews-backend.Cursors"
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
@@ -751,8 +739,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-reviews-backend.QueryV2"
             }
           ],
           "doc": ""
@@ -772,8 +759,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-reviews-backend.QueryV2"
             }
           ],
           "doc": "Review query"
@@ -793,8 +779,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.PagingMetadataV2",
-              "displayName": "PagingMetadataV2"
+              "referenceType": "wix-reviews-backend.PagingMetadataV2"
             }
           ],
           "doc": "Paging metadata"
@@ -808,8 +793,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-reviews-backend.Review",
-                    "displayName": "Review"
+                    "referenceType": "wix-reviews-backend.Review"
                   }
                 ]
               }
@@ -832,8 +816,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-reviews-backend.CursorPaging"
             }
           ],
           "doc": ""
@@ -870,8 +853,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-reviews-backend.Sorting",
-                    "displayName": "Sorting"
+                    "referenceType": "wix-reviews-backend.Sorting"
                   }
                 ]
               }
@@ -913,8 +895,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review",
-              "displayName": "Review"
+              "referenceType": "wix-reviews-backend.Review"
             }
           ],
           "doc": "Review id"
@@ -1006,8 +987,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Author",
-              "displayName": "Author"
+              "referenceType": "wix-reviews-backend.Author"
             }
           ],
           "doc": "Author of review data"
@@ -1017,8 +997,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent",
-              "displayName": "ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent"
             }
           ],
           "doc": "Review content"
@@ -1078,8 +1057,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Reply",
-              "displayName": "Reply"
+              "referenceType": "wix-reviews-backend.Reply"
             }
           ],
           "doc": "Reply to review"
@@ -1116,8 +1094,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-reviews-backend.Media",
-                    "displayName": "Media"
+                    "referenceType": "wix-reviews-backend.Media"
                   }
                 ]
               }
@@ -1212,8 +1189,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review",
-              "displayName": "Review"
+              "referenceType": "wix-reviews-backend.Review"
             }
           ],
           "doc": "Review entity"
@@ -1263,8 +1239,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent",
-              "displayName": "ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent"
             }
           ],
           "doc": ""
@@ -1301,8 +1276,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent",
-              "displayName": "ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent"
             }
           ],
           "doc": "Review content"
@@ -1348,8 +1322,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review",
-              "displayName": "Review"
+              "referenceType": "wix-reviews-backend.Review"
             }
           ],
           "doc": "Updated review data"
@@ -1392,8 +1365,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Image",
-              "displayName": "Image"
+              "referenceType": "wix-reviews-backend.Image"
             }
           ],
           "doc": "Video thumbnail."
@@ -1450,8 +1422,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-reviews-backend.VideoResolution",
-                    "displayName": "VideoResolution"
+                    "referenceType": "wix-reviews-backend.VideoResolution"
                   }
                 ]
               }
