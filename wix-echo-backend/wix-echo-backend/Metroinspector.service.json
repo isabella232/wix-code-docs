@@ -33,7 +33,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-echo-backend.Metroinspector.EchoOptions"
+              "referenceType": "wix-echo-backend.Metroinspector.EchoOptions",
+              "displayName": "EchoOptions"
             }
           ],
           "doc": "",
@@ -81,7 +82,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-echo-backend.Metroinspector.EchoMessage"
+              "referenceType": "wix-echo-backend.Metroinspector.EchoMessage",
+              "displayName": "EchoMessage"
             }
           ],
           "doc": "the message someone says"
@@ -239,7 +241,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-echo-backend.Metroinspector.EchoMessage"
+              "referenceType": "wix-echo-backend.Metroinspector.EchoMessage",
+              "displayName": "EchoMessage"
             }
           ],
           "doc": "override EchoResponse.echoMessage"
