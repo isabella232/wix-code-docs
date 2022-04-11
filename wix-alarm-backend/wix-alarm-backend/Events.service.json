@@ -16,7 +16,8 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-alarm-backend.Events.AlarmSnoozedEvent"
+              "referenceType": "wix-alarm-backend.Events.@wix/velo-events-AlarmSnoozedEvent",
+              "displayName": "AlarmSnoozedEvent"
             }
           ],
           "doc": "",
@@ -58,7 +59,8 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-alarm-backend.Events.AlarmTriggeredEvent"
+              "referenceType": "wix-alarm-backend.Events.@wix/velo-events-AlarmTriggeredEvent",
+              "displayName": "AlarmTriggeredEvent"
             }
           ],
           "doc": "",
@@ -96,7 +98,7 @@
   ],
   "messages": [
     {
-      "name": "AlarmMessage",
+      "name": "@wix/velo-events-AlarmMessage",
       "members": [
         {
           "name": "_id",
@@ -116,7 +118,7 @@
       }
     },
     {
-      "name": "AlarmRequest",
+      "name": "@wix/velo-events-AlarmRequest",
       "members": [
         {
           "name": "seconds",
@@ -136,7 +138,7 @@
       }
     },
     {
-      "name": "AlarmResponse",
+      "name": "@wix/velo-events-AlarmResponse",
       "members": [
         {
           "name": "time",
@@ -156,7 +158,7 @@
       }
     },
     {
-      "name": "AlarmSnoozed",
+      "name": "@wix/velo-events-AlarmSnoozed",
       "members": [],
       "docs": {
         "description": [
@@ -165,13 +167,14 @@
       }
     },
     {
-      "name": "AlarmSnoozedEvent",
+      "name": "@wix/velo-events-AlarmSnoozedEvent",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-alarm-backend.Events.AlarmSnoozed"
+              "referenceType": "wix-alarm-backend.Events.@wix/velo-events-AlarmSnoozed",
+              "displayName": "AlarmSnoozed"
             }
           ],
           "doc": ""
@@ -180,7 +183,8 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-alarm-backend.Events.BackendEventMetadata"
+              "referenceType": "wix-alarm-backend.Events.@wix/velo-events-BackendEventMetadata",
+              "displayName": "BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -193,7 +197,7 @@
       }
     },
     {
-      "name": "AlarmTriggered",
+      "name": "@wix/velo-events-AlarmTriggered",
       "members": [],
       "docs": {
         "description": [
@@ -202,13 +206,14 @@
       }
     },
     {
-      "name": "AlarmTriggeredEvent",
+      "name": "@wix/velo-events-AlarmTriggeredEvent",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-alarm-backend.Events.AlarmTriggered"
+              "referenceType": "wix-alarm-backend.Events.@wix/velo-events-AlarmTriggered",
+              "displayName": "AlarmTriggered"
             }
           ],
           "doc": ""
@@ -217,7 +222,8 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-alarm-backend.Events.BackendEventMetadata"
+              "referenceType": "wix-alarm-backend.Events.@wix/velo-events-BackendEventMetadata",
+              "displayName": "BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -230,7 +236,7 @@
       }
     },
     {
-      "name": "BackendEventMetadata",
+      "name": "@wix/velo-events-BackendEventMetadata",
       "members": [
         {
           "name": "entityId",
