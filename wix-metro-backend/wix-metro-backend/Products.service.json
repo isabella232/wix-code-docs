@@ -23,7 +23,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.CreateProductOptions"
+              "referenceType": "wix-metro-backend.Products.CreateProductOptions",
+              "displayName": "CreateProductOptions"
             }
           ],
           "doc": "",
@@ -40,7 +41,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-metro-backend.Products.CreateProductResponse"
+                  "referenceType": "wix-metro-backend.Products.CreateProductResponse",
+                  "displayName": "CreateProductResponse"
                 }
               ]
             }
@@ -92,7 +94,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-metro-backend.Products.DeleteProductResponse"
+                  "referenceType": "wix-metro-backend.Products.DeleteProductResponse",
+                  "displayName": "DeleteProductResponse"
                 }
               ]
             }
@@ -144,7 +147,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-metro-backend.Products.GetProductResponse"
+                  "referenceType": "wix-metro-backend.Products.GetProductResponse",
+                  "displayName": "GetProductResponse"
                 }
               ]
             }
@@ -179,7 +183,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
+            "displayName": "ProductsQueryBuilder"
           }
         ],
         "doc": null
@@ -227,7 +232,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.UpdateProductOptions"
+              "referenceType": "wix-metro-backend.Products.UpdateProductOptions",
+              "displayName": "UpdateProductOptions"
             }
           ],
           "doc": "",
@@ -244,7 +250,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-metro-backend.Products.UpdateProductResponse"
+                  "referenceType": "wix-metro-backend.Products.UpdateProductResponse",
+                  "displayName": "UpdateProductResponse"
                 }
               ]
             }
@@ -317,7 +324,8 @@
           "name": "product",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.Product",
+              "displayName": "Product"
             }
           ],
           "doc": ""
@@ -336,7 +344,8 @@
           "name": "product",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.Product",
+              "displayName": "Product"
             }
           ],
           "doc": ""
@@ -356,7 +365,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.Product",
+              "displayName": "Product"
             }
           ],
           "doc": ""
@@ -495,7 +505,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.Product",
+              "displayName": "Product"
             }
           ],
           "doc": ""
@@ -537,20 +548,6 @@
           "doc": ""
         },
         {
-          "name": "formattedAddress",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        },
-        {
           "name": "postalCode",
           "optional": true,
           "type": [
@@ -568,7 +565,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.StreetAddress"
+              "referenceType": "wix-metro-backend.Products.StreetAddress",
+              "displayName": "StreetAddress"
             }
           ],
           "doc": ""
@@ -683,24 +681,11 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Cursors"
+              "referenceType": "wix-metro-backend.Products.Cursors",
+              "displayName": "Cursors"
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
-        },
-        {
-          "name": "hasNext",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Indicates if there are more results after the current page.\nIf `true`, another page of results can be retrieved.\nIf `false`, this is the last page."
         },
         {
           "name": "offset",
@@ -812,7 +797,8 @@
           "name": "customAddress",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.MyAddress"
+              "referenceType": "wix-metro-backend.Products.MyAddress",
+              "displayName": "MyAddress"
             }
           ],
           "doc": ""
@@ -884,7 +870,8 @@
           "name": "mainVariant",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Variant"
+              "referenceType": "wix-metro-backend.Products.Variant",
+              "displayName": "Variant"
             }
           ],
           "doc": ""
@@ -911,7 +898,8 @@
           "name": "pageLink",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.PageLink"
+              "referenceType": "wix-metro-backend.Products.PageLink",
+              "displayName": "PageLink"
             }
           ],
           "doc": ""
@@ -924,7 +912,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-metro-backend.Products.Variant"
+                    "referenceType": "wix-metro-backend.Products.Variant",
+                    "displayName": "Variant"
                   }
                 ]
               }
@@ -986,7 +975,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.QueryV2"
+              "referenceType": "wix-metro-backend.Products.QueryV2",
+              "displayName": "QueryV2"
             }
           ],
           "doc": ""
@@ -1006,7 +996,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.PagingMetadataV2"
+              "referenceType": "wix-metro-backend.Products.PagingMetadataV2",
+              "displayName": "PagingMetadataV2"
             }
           ],
           "doc": ""
@@ -1020,7 +1011,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-metro-backend.Products.Product"
+                    "referenceType": "wix-metro-backend.Products.Product",
+                    "displayName": "Product"
                   }
                 ]
               }
@@ -1043,7 +1035,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.CursorPaging"
+              "referenceType": "wix-metro-backend.Products.CursorPaging",
+              "displayName": "CursorPaging"
             }
           ],
           "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
@@ -1110,7 +1103,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Paging"
+              "referenceType": "wix-metro-backend.Products.Paging",
+              "displayName": "Paging"
             }
           ],
           "doc": "Paging options to limit and skip the number of items."
@@ -1124,7 +1118,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-metro-backend.Products.Sorting"
+                    "referenceType": "wix-metro-backend.Products.Sorting",
+                    "displayName": "Sorting"
                   }
                 ]
               }
@@ -1172,17 +1167,6 @@
     {
       "name": "StreetAddress",
       "members": [
-        {
-          "name": "apt",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Apartment number."
-        },
         {
           "name": "name",
           "optional": true,
@@ -1232,31 +1216,6 @@
             }
           ],
           "doc": "Subdivision full name."
-        },
-        {
-          "name": "type",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Subdivision level\nOne of:\nADMINISTRATIVE_AREA_LEVEL_1,\nADMINISTRATIVE_AREA_LEVEL_2,\nADMINISTRATIVE_AREA_LEVEL_3,\nADMINISTRATIVE_AREA_LEVEL_4,\nADMINISTRATIVE_AREA_LEVEL_5,\nCOUNTRY,\nUNKNOWN_SUBDIVISION_TYPE"
-        },
-        {
-          "name": "typeInfo",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Free text description of subdivision type."
         }
       ],
       "docs": {
@@ -1272,7 +1231,8 @@
           "name": "product",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.Product",
+              "displayName": "Product"
             }
           ],
           "doc": ""
@@ -1291,7 +1251,8 @@
           "name": "product",
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.Product",
+              "displayName": "Product"
             }
           ],
           "doc": ""
@@ -1321,7 +1282,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-metro-backend.Products.Product"
+              "referenceType": "wix-metro-backend.Products.Product",
+              "displayName": "Product"
             }
           ],
           "doc": ""
@@ -1377,20 +1339,6 @@
       "name": "VideoResolution",
       "members": [
         {
-          "name": "filename",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video filename. Optional."
-        },
-        {
           "name": "format",
           "optional": true,
           "type": [
@@ -1411,45 +1359,6 @@
           "doc": "Video height."
         },
         {
-          "name": "poster",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video poster. Deprecated, please use the `posters` property in the parent entity"
-        },
-        {
-          "name": "quality",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video quality for example 480p, 720p"
-        },
-        {
-          "name": "sizeInBytes",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Video size in bytes. Optional. Deprecated, please use the `sizeInBytes` property in the parent entity. Size cannot be provided per resolution"
-        },
-        {
           "name": "url",
           "optional": true,
           "type": [
@@ -1458,17 +1367,6 @@
             }
           ],
           "doc": "Video URL."
-        },
-        {
-          "name": "urlExpirationDate",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Video URL expiration date (when relevant). Optional. Deprecated, please use the `urlExpirationDate` property in the parent entity"
         },
         {
           "name": "width",
