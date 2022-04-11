@@ -25,8 +25,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.AddParticipantOptions",
-              "displayName": "AddParticipantOptions"
+              "referenceType": "wix-online-programs-backend.AddParticipantOptions"
             }
           ],
           "doc": "",
@@ -41,8 +40,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-online-programs-backend.AddParticipantResponse",
-                  "displayName": "AddParticipantResponse"
+                  "referenceType": "wix-online-programs-backend.AddParticipantResponse"
                 }
               ]
             }
@@ -160,8 +158,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -210,8 +207,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Settings",
-              "displayName": "Settings"
+              "referenceType": "wix-online-programs-backend.Settings"
             }
           ],
           "doc": "challenge section settings."
@@ -225,8 +221,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ChallengeStep",
-                    "displayName": "ChallengeStep"
+                    "referenceType": "wix-online-programs-backend.ChallengeStep"
                   }
                 ]
               }
@@ -292,8 +287,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ChallengeStepSettings",
-              "displayName": "ChallengeStepSettings"
+              "referenceType": "wix-online-programs-backend.ChallengeStepSettings"
             }
           ],
           "doc": ""
@@ -323,8 +317,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.EmbeddingSettings",
-              "displayName": "EmbeddingSettings"
+              "referenceType": "wix-online-programs-backend.EmbeddingSettings"
             }
           ],
           "doc": ""
@@ -334,8 +327,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.GeneralSettings",
-              "displayName": "GeneralSettings"
+              "referenceType": "wix-online-programs-backend.GeneralSettings"
             }
           ],
           "doc": ""
@@ -365,8 +357,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ObjectDescription",
-              "displayName": "ObjectDescription"
+              "referenceType": "wix-online-programs-backend.ObjectDescription"
             }
           ],
           "doc": ""
@@ -432,8 +423,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.QuantityCriterion",
-              "displayName": "QuantityCriterion"
+              "referenceType": "wix-online-programs-backend.QuantityCriterion"
             }
           ],
           "doc": ""
@@ -443,8 +433,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.QuantityCriterion",
-              "displayName": "QuantityCriterion"
+              "referenceType": "wix-online-programs-backend.QuantityCriterion"
             }
           ],
           "doc": ""
@@ -454,8 +443,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.MinThreshold",
-              "displayName": "MinThreshold"
+              "referenceType": "wix-online-programs-backend.MinThreshold"
             }
           ],
           "doc": ""
@@ -620,8 +608,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -833,8 +820,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -1024,8 +1010,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.StartCondition",
-                    "displayName": "StartCondition"
+                    "referenceType": "wix-online-programs-backend.StartCondition"
                   }
                 ]
               }
@@ -1058,8 +1043,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.MediaItem",
-              "displayName": "MediaItem"
+              "referenceType": "wix-online-programs-backend.MediaItem"
             }
           ],
           "doc": ""
@@ -1106,8 +1090,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.FeedbackItem",
-                    "displayName": "FeedbackItem"
+                    "referenceType": "wix-online-programs-backend.FeedbackItem"
                   }
                 ]
               }
@@ -1124,8 +1107,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.FeedbackItem",
-                    "displayName": "FeedbackItem"
+                    "referenceType": "wix-online-programs-backend.FeedbackItem"
                   }
                 ]
               }
@@ -1158,8 +1140,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.FeedbackItemChoice",
-              "displayName": "FeedbackItemChoice"
+              "referenceType": "wix-online-programs-backend.FeedbackItemChoice"
             }
           ],
           "doc": ""
@@ -1179,8 +1160,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.MediaItems",
-              "displayName": "MediaItems"
+              "referenceType": "wix-online-programs-backend.MediaItems"
             }
           ],
           "doc": ""
@@ -1190,8 +1170,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Choices",
-              "displayName": "Choices"
+              "referenceType": "wix-online-programs-backend.Choices"
             }
           ],
           "doc": ""
@@ -1214,8 +1193,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Quantity",
-              "displayName": "Quantity"
+              "referenceType": "wix-online-programs-backend.Quantity"
             }
           ],
           "doc": ""
@@ -1311,8 +1289,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.FeedbackItemType",
-              "displayName": "FeedbackItemType"
+              "referenceType": "wix-online-programs-backend.FeedbackItemType"
             }
           ],
           "doc": ""
@@ -1345,8 +1322,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.MediaFeedbackItem",
-              "displayName": "MediaFeedbackItem"
+              "referenceType": "wix-online-programs-backend.MediaFeedbackItem"
             }
           ],
           "doc": ""
@@ -1356,8 +1332,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.MultipleChoiceFeedbackItem",
-              "displayName": "MultipleChoiceFeedbackItem"
+              "referenceType": "wix-online-programs-backend.MultipleChoiceFeedbackItem"
             }
           ],
           "doc": ""
@@ -1367,8 +1342,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.MultipleChoiceFeedbackItem",
-              "displayName": "MultipleChoiceFeedbackItem"
+              "referenceType": "wix-online-programs-backend.MultipleChoiceFeedbackItem"
             }
           ],
           "doc": ""
@@ -1378,8 +1352,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.NumericFeedbackItem",
-              "displayName": "NumericFeedbackItem"
+              "referenceType": "wix-online-programs-backend.NumericFeedbackItem"
             }
           ],
           "doc": ""
@@ -1389,8 +1362,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.QuantityFeedbackItem",
-              "displayName": "QuantityFeedbackItem"
+              "referenceType": "wix-online-programs-backend.QuantityFeedbackItem"
             }
           ],
           "doc": ""
@@ -1400,8 +1372,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TextFeedbackItem",
-              "displayName": "TextFeedbackItem"
+              "referenceType": "wix-online-programs-backend.TextFeedbackItem"
             }
           ],
           "doc": ""
@@ -1421,8 +1392,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ObjectDescription",
-              "displayName": "ObjectDescription"
+              "referenceType": "wix-online-programs-backend.ObjectDescription"
             }
           ],
           "doc": "steps description: title, details, image and etc."
@@ -1432,8 +1402,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeDuration",
-              "displayName": "TimeDuration"
+              "referenceType": "wix-online-programs-backend.TimeDuration"
             }
           ],
           "doc": ""
@@ -1443,8 +1412,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.GroupSettings",
-              "displayName": "GroupSettings"
+              "referenceType": "wix-online-programs-backend.GroupSettings"
             }
           ],
           "doc": ""
@@ -1454,8 +1422,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.IndividualSettings",
-              "displayName": "IndividualSettings"
+              "referenceType": "wix-online-programs-backend.IndividualSettings"
             }
           ],
           "doc": ""
@@ -1465,8 +1432,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.RecurrenceSettings",
-              "displayName": "RecurrenceSettings"
+              "referenceType": "wix-online-programs-backend.RecurrenceSettings"
             }
           ],
           "doc": ""
@@ -1666,8 +1632,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -1727,8 +1692,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantSection",
-              "displayName": "ParticipantSection"
+              "referenceType": "wix-online-programs-backend.ParticipantSection"
             }
           ],
           "doc": ""
@@ -1778,8 +1742,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeInterval",
-              "displayName": "TimeInterval"
+              "referenceType": "wix-online-programs-backend.TimeInterval"
             }
           ],
           "doc": ""
@@ -1799,8 +1762,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantStep",
-              "displayName": "ParticipantStep"
+              "referenceType": "wix-online-programs-backend.ParticipantStep"
             }
           ],
           "doc": ""
@@ -1814,8 +1776,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ParticipantStep",
-                    "displayName": "ParticipantStep"
+                    "referenceType": "wix-online-programs-backend.ParticipantStep"
                   }
                 ]
               }
@@ -1918,8 +1879,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeInterval",
-              "displayName": "TimeInterval"
+              "referenceType": "wix-online-programs-backend.TimeInterval"
             }
           ],
           "doc": ""
@@ -1939,8 +1899,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.CompletionCriteria",
-              "displayName": "CompletionCriteria"
+              "referenceType": "wix-online-programs-backend.CompletionCriteria"
             }
           ],
           "doc": ""
@@ -1974,8 +1933,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.FeedbackItemSettings",
-                    "displayName": "FeedbackItemSettings"
+                    "referenceType": "wix-online-programs-backend.FeedbackItemSettings"
                   }
                 ]
               }
@@ -1992,8 +1950,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.FeedbackItemSettings",
-                    "displayName": "FeedbackItemSettings"
+                    "referenceType": "wix-online-programs-backend.FeedbackItemSettings"
                   }
                 ]
               }
@@ -2154,8 +2111,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.InvitationDetails",
-                    "displayName": "InvitationDetails"
+                    "referenceType": "wix-online-programs-backend.InvitationDetails"
                   }
                 ]
               }
@@ -2304,8 +2260,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -2369,8 +2324,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ParticipantSection",
-                    "displayName": "ParticipantSection"
+                    "referenceType": "wix-online-programs-backend.ParticipantSection"
                   }
                 ]
               }
@@ -2403,8 +2357,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.DateInterval",
-              "displayName": "DateInterval"
+              "referenceType": "wix-online-programs-backend.DateInterval"
             }
           ],
           "doc": ""
@@ -2434,8 +2387,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeInterval",
-              "displayName": "TimeInterval"
+              "referenceType": "wix-online-programs-backend.TimeInterval"
             }
           ],
           "doc": ""
@@ -2459,8 +2411,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ParticipantStep",
-                    "displayName": "ParticipantStep"
+                    "referenceType": "wix-online-programs-backend.ParticipantStep"
                   }
                 ]
               }
@@ -2529,8 +2480,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Paging",
-              "displayName": "Paging"
+              "referenceType": "wix-online-programs-backend.Paging"
             }
           ],
           "doc": ""
@@ -2540,8 +2490,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Sorting",
-              "displayName": "Sorting"
+              "referenceType": "wix-online-programs-backend.Sorting"
             }
           ],
           "doc": ""
@@ -2644,8 +2593,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Paging",
-              "displayName": "Paging"
+              "referenceType": "wix-online-programs-backend.Paging"
             }
           ],
           "doc": ""
@@ -2655,8 +2603,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Sorting",
-              "displayName": "Sorting"
+              "referenceType": "wix-online-programs-backend.Sorting"
             }
           ],
           "doc": ""
@@ -2707,8 +2654,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.Participant",
-                    "displayName": "Participant"
+                    "referenceType": "wix-online-programs-backend.Participant"
                   }
                 ]
               }
@@ -2801,8 +2747,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.DateInterval",
-              "displayName": "DateInterval"
+              "referenceType": "wix-online-programs-backend.DateInterval"
             }
           ],
           "doc": ""
@@ -2822,8 +2767,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeInterval",
-              "displayName": "TimeInterval"
+              "referenceType": "wix-online-programs-backend.TimeInterval"
             }
           ],
           "doc": ""
@@ -2896,8 +2840,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.MediaItem",
-                    "displayName": "MediaItem"
+                    "referenceType": "wix-online-programs-backend.MediaItem"
                   }
                 ]
               }
@@ -3013,8 +2956,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.Choice",
-                    "displayName": "Choice"
+                    "referenceType": "wix-online-programs-backend.Choice"
                   }
                 ]
               }
@@ -3057,8 +2999,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -3138,8 +3079,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantSection",
-              "displayName": "ParticipantSection"
+              "referenceType": "wix-online-programs-backend.ParticipantSection"
             }
           ],
           "doc": ""
@@ -3219,8 +3159,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantStep",
-              "displayName": "ParticipantStep"
+              "referenceType": "wix-online-programs-backend.ParticipantStep"
             }
           ],
           "doc": ""
@@ -3273,8 +3212,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.MediaItem",
-              "displayName": "MediaItem"
+              "referenceType": "wix-online-programs-backend.MediaItem"
             }
           ],
           "doc": ""
@@ -3362,8 +3300,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.EntitySummary",
-              "displayName": "EntitySummary"
+              "referenceType": "wix-online-programs-backend.EntitySummary"
             }
           ],
           "doc": ""
@@ -3373,8 +3310,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.DateInterval",
-              "displayName": "DateInterval"
+              "referenceType": "wix-online-programs-backend.DateInterval"
             }
           ],
           "doc": ""
@@ -3384,8 +3320,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Member",
-              "displayName": "Member"
+              "referenceType": "wix-online-programs-backend.Member"
             }
           ],
           "doc": ""
@@ -3435,8 +3370,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.StepsSummary",
-              "displayName": "StepsSummary"
+              "referenceType": "wix-online-programs-backend.StepsSummary"
             }
           ],
           "doc": ""
@@ -3446,8 +3380,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeInterval",
-              "displayName": "TimeInterval"
+              "referenceType": "wix-online-programs-backend.TimeInterval"
             }
           ],
           "doc": ""
@@ -3471,8 +3404,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.StateTransition",
-                    "displayName": "StateTransition"
+                    "referenceType": "wix-online-programs-backend.StateTransition"
                   }
                 ]
               }
@@ -3531,8 +3463,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -3598,8 +3529,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Progress",
-              "displayName": "Progress"
+              "referenceType": "wix-online-programs-backend.Progress"
             }
           ],
           "doc": ""
@@ -3609,8 +3539,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ChallengeSection",
-              "displayName": "ChallengeSection"
+              "referenceType": "wix-online-programs-backend.ChallengeSection"
             }
           ],
           "doc": ""
@@ -3624,8 +3553,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ParticipantStep",
-                    "displayName": "ParticipantStep"
+                    "referenceType": "wix-online-programs-backend.ParticipantStep"
                   }
                 ]
               }
@@ -3642,8 +3570,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ParticipantSectionStateTransition",
-                    "displayName": "ParticipantSectionStateTransition"
+                    "referenceType": "wix-online-programs-backend.ParticipantSectionStateTransition"
                   }
                 ]
               }
@@ -3666,8 +3593,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Completed",
-              "displayName": "Completed"
+              "referenceType": "wix-online-programs-backend.Completed"
             }
           ],
           "doc": ""
@@ -3687,8 +3613,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Overdue",
-              "displayName": "Overdue"
+              "referenceType": "wix-online-programs-backend.Overdue"
             }
           ],
           "doc": ""
@@ -3698,8 +3623,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Running",
-              "displayName": "Running"
+              "referenceType": "wix-online-programs-backend.Running"
             }
           ],
           "doc": ""
@@ -3709,8 +3633,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.WaitingDate",
-              "displayName": "WaitingDate"
+              "referenceType": "wix-online-programs-backend.WaitingDate"
             }
           ],
           "doc": ""
@@ -3720,8 +3643,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.WaitingDependency",
-              "displayName": "WaitingDependency"
+              "referenceType": "wix-online-programs-backend.WaitingDependency"
             }
           ],
           "doc": ""
@@ -3751,8 +3673,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.DateInterval",
-              "displayName": "DateInterval"
+              "referenceType": "wix-online-programs-backend.DateInterval"
             }
           ],
           "doc": ""
@@ -3762,8 +3683,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Feedback",
-              "displayName": "Feedback"
+              "referenceType": "wix-online-programs-backend.Feedback"
             }
           ],
           "doc": ""
@@ -3773,8 +3693,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ChallengeStep",
-              "displayName": "ChallengeStep"
+              "referenceType": "wix-online-programs-backend.ChallengeStep"
             }
           ],
           "doc": ""
@@ -3784,8 +3703,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeInterval",
-              "displayName": "TimeInterval"
+              "referenceType": "wix-online-programs-backend.TimeInterval"
             }
           ],
           "doc": ""
@@ -3799,8 +3717,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ParticipantStepStateTransition",
-                    "displayName": "ParticipantStepStateTransition"
+                    "referenceType": "wix-online-programs-backend.ParticipantStepStateTransition"
                   }
                 ]
               }
@@ -3853,8 +3770,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantJoinDate",
-              "displayName": "ParticipantJoinDate"
+              "referenceType": "wix-online-programs-backend.ParticipantJoinDate"
             }
           ],
           "doc": ""
@@ -3918,8 +3834,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.ParticipantPerformance",
-                    "displayName": "ParticipantPerformance"
+                    "referenceType": "wix-online-programs-backend.ParticipantPerformance"
                   }
                 ]
               }
@@ -4019,8 +3934,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.All",
-              "displayName": "All"
+              "referenceType": "wix-online-programs-backend.All"
             }
           ],
           "doc": ""
@@ -4030,8 +3944,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.MinThreshold",
-              "displayName": "MinThreshold"
+              "referenceType": "wix-online-programs-backend.MinThreshold"
             }
           ],
           "doc": ""
@@ -4084,8 +3997,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantsFilter",
-              "displayName": "ParticipantsFilter"
+              "referenceType": "wix-online-programs-backend.ParticipantsFilter"
             }
           ],
           "doc": ""
@@ -4095,8 +4007,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Paging",
-              "displayName": "Paging"
+              "referenceType": "wix-online-programs-backend.Paging"
             }
           ],
           "doc": ""
@@ -4106,8 +4017,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSorting",
-              "displayName": "QueryParticipantsRequestSorting"
+              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSorting"
             }
           ],
           "doc": ""
@@ -4137,8 +4047,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantsFilter",
-              "displayName": "ParticipantsFilter"
+              "referenceType": "wix-online-programs-backend.ParticipantsFilter"
             }
           ],
           "doc": ""
@@ -4148,8 +4057,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Paging",
-              "displayName": "Paging"
+              "referenceType": "wix-online-programs-backend.Paging"
             }
           ],
           "doc": ""
@@ -4159,8 +4067,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSorting",
-              "displayName": "QueryParticipantsRequestSorting"
+              "referenceType": "wix-online-programs-backend.QueryParticipantsRequestSorting"
             }
           ],
           "doc": ""
@@ -4214,8 +4121,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.Participant",
-                    "displayName": "Participant"
+                    "referenceType": "wix-online-programs-backend.Participant"
                   }
                 ]
               }
@@ -4248,8 +4154,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeDuration",
-              "displayName": "TimeDuration"
+              "referenceType": "wix-online-programs-backend.TimeDuration"
             }
           ],
           "doc": ""
@@ -4259,8 +4164,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeDuration",
-              "displayName": "TimeDuration"
+              "referenceType": "wix-online-programs-backend.TimeDuration"
             }
           ],
           "doc": ""
@@ -4297,8 +4201,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.RecurrenceSchedule",
-                    "displayName": "RecurrenceSchedule"
+                    "referenceType": "wix-online-programs-backend.RecurrenceSchedule"
                   }
                 ]
               }
@@ -4467,8 +4370,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -4508,8 +4410,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Feedback",
-              "displayName": "Feedback"
+              "referenceType": "wix-online-programs-backend.Feedback"
             }
           ],
           "doc": ""
@@ -4569,8 +4470,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantStep",
-              "displayName": "ParticipantStep"
+              "referenceType": "wix-online-programs-backend.ParticipantStep"
             }
           ],
           "doc": ""
@@ -4640,8 +4540,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Feedback",
-              "displayName": "Feedback"
+              "referenceType": "wix-online-programs-backend.Feedback"
             }
           ],
           "doc": ""
@@ -4771,8 +4670,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -4792,8 +4690,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.DateInterval",
-              "displayName": "DateInterval"
+              "referenceType": "wix-online-programs-backend.DateInterval"
             }
           ],
           "doc": ""
@@ -4813,8 +4710,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ObjectDescription",
-              "displayName": "ObjectDescription"
+              "referenceType": "wix-online-programs-backend.ObjectDescription"
             }
           ],
           "doc": "section description(title, details, image...)"
@@ -4824,8 +4720,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.StartCondition",
-              "displayName": "StartCondition"
+              "referenceType": "wix-online-programs-backend.StartCondition"
             }
           ],
           "doc": "condition for the section start."
@@ -4875,8 +4770,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.TimeDuration",
-              "displayName": "TimeDuration"
+              "referenceType": "wix-online-programs-backend.TimeDuration"
             }
           ],
           "doc": "step delay regarding the challenge start."
@@ -4886,8 +4780,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.StepDependency",
-              "displayName": "StepDependency"
+              "referenceType": "wix-online-programs-backend.StepDependency"
             }
           ],
           "doc": "whether the step should start on join."
@@ -4970,8 +4863,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Container",
-              "displayName": "Container"
+              "referenceType": "wix-online-programs-backend.Container"
             }
           ],
           "doc": ""
@@ -4981,8 +4873,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Step",
-              "displayName": "Step"
+              "referenceType": "wix-online-programs-backend.Step"
             }
           ],
           "doc": ""
@@ -5012,8 +4903,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantStepStateTransition",
-              "displayName": "ParticipantStepStateTransition"
+              "referenceType": "wix-online-programs-backend.ParticipantStepStateTransition"
             }
           ],
           "doc": ""
@@ -5057,8 +4947,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-online-programs-backend.Feedback",
-                    "displayName": "Feedback"
+                    "referenceType": "wix-online-programs-backend.Feedback"
                   }
                 ]
               }
@@ -5141,8 +5030,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.StepEvent",
-              "displayName": "StepEvent"
+              "referenceType": "wix-online-programs-backend.StepEvent"
             }
           ],
           "doc": ""
@@ -5371,8 +5259,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Participant",
-              "displayName": "Participant"
+              "referenceType": "wix-online-programs-backend.Participant"
             }
           ],
           "doc": ""
@@ -5442,8 +5329,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Feedback",
-              "displayName": "Feedback"
+              "referenceType": "wix-online-programs-backend.Feedback"
             }
           ],
           "doc": ""
@@ -5483,8 +5369,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.Feedback",
-              "displayName": "Feedback"
+              "referenceType": "wix-online-programs-backend.Feedback"
             }
           ],
           "doc": ""
@@ -5534,8 +5419,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-online-programs-backend.ParticipantStep",
-              "displayName": "ParticipantStep"
+              "referenceType": "wix-online-programs-backend.ParticipantStep"
             }
           ],
           "doc": ""
