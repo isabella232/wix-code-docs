@@ -25,7 +25,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-reviews-backend.CreateReviewOptions"
+              "referenceType": "wix-reviews-backend.CreateReviewOptions",
+              "displayName": "CreateReviewOptions"
             }
           ],
           "doc": "",
@@ -40,7 +41,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-reviews-backend.CreateReviewResponse"
+                  "referenceType": "wix-reviews-backend.CreateReviewResponse",
+                  "displayName": "CreateReviewResponse"
                 }
               ]
             }
@@ -90,7 +92,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-reviews-backend.DeleteReviewResponse"
+                  "referenceType": "wix-reviews-backend.DeleteReviewResponse",
+                  "displayName": "DeleteReviewResponse"
                 }
               ]
             }
@@ -140,7 +143,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-reviews-backend.GetReviewResponse"
+                  "referenceType": "wix-reviews-backend.GetReviewResponse",
+                  "displayName": "GetReviewResponse"
                 }
               ]
             }
@@ -175,7 +179,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-reviews-backend.QueryReviewsOptions"
+              "referenceType": "wix-reviews-backend.QueryReviewsOptions",
+              "displayName": "QueryReviewsOptions"
             }
           ],
           "doc": "",
@@ -190,7 +195,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-reviews-backend.QueryReviewsResponse"
+                  "referenceType": "wix-reviews-backend.QueryReviewsResponse",
+                  "displayName": "QueryReviewsResponse"
                 }
               ]
             }
@@ -240,7 +246,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-reviews-backend.RemoveReplyResponse"
+                  "referenceType": "wix-reviews-backend.RemoveReplyResponse",
+                  "displayName": "RemoveReplyResponse"
                 }
               ]
             }
@@ -285,7 +292,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-reviews-backend.SetReplyOptions"
+              "referenceType": "wix-reviews-backend.SetReplyOptions",
+              "displayName": "SetReplyOptions"
             }
           ],
           "doc": "",
@@ -300,7 +308,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-reviews-backend.SetReplyResponse"
+                  "referenceType": "wix-reviews-backend.SetReplyResponse",
+                  "displayName": "SetReplyResponse"
                 }
               ]
             }
@@ -345,7 +354,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-reviews-backend.UpdateReviewOptions"
+              "referenceType": "wix-reviews-backend.UpdateReviewOptions",
+              "displayName": "UpdateReviewOptions"
             }
           ],
           "doc": "",
@@ -360,7 +370,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-reviews-backend.UpdateReviewResponse"
+                  "referenceType": "wix-reviews-backend.UpdateReviewResponse",
+                  "displayName": "UpdateReviewResponse"
                 }
               ]
             }
@@ -464,7 +475,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent",
+              "displayName": "ReviewContent"
             }
           ],
           "doc": ""
@@ -519,7 +531,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent",
+              "displayName": "ReviewContent"
             }
           ],
           "doc": "Review content"
@@ -583,7 +596,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review"
+              "referenceType": "wix-reviews-backend.Review",
+              "displayName": "Review"
             }
           ],
           "doc": "Review entity"
@@ -694,7 +708,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review"
+              "referenceType": "wix-reviews-backend.Review",
+              "displayName": "Review"
             }
           ],
           "doc": "Review entity"
@@ -724,7 +739,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ActionEvent"
+              "referenceType": "wix-reviews-backend.ActionEvent",
+              "displayName": "ActionEvent"
             }
           ],
           "doc": ""
@@ -734,7 +750,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.EntityCreatedEvent"
+              "referenceType": "wix-reviews-backend.EntityCreatedEvent",
+              "displayName": "EntityCreatedEvent"
             }
           ],
           "doc": ""
@@ -744,7 +761,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.EntityDeletedEvent"
+              "referenceType": "wix-reviews-backend.EntityDeletedEvent",
+              "displayName": "EntityDeletedEvent"
             }
           ],
           "doc": ""
@@ -820,7 +838,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.EntityUpdatedEvent"
+              "referenceType": "wix-reviews-backend.EntityUpdatedEvent",
+              "displayName": "EntityUpdatedEvent"
             }
           ],
           "doc": ""
@@ -853,20 +872,6 @@
             }
           ],
           "doc": ""
-        },
-        {
-          "name": "triggeredByUndelete",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Indicates the event was triggered by a restore-from-trashbin operation for a previously deleted entity"
         }
       ],
       "docs": {
@@ -877,22 +882,7 @@
     },
     {
       "name": "EntityDeletedEvent",
-      "members": [
-        {
-          "name": "movedToTrash",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Indicates if the entity is sent to trash-bin. only available when trash-bin is enabled"
-        }
-      ],
+      "members": [],
       "docs": {
         "description": [
           ""
@@ -911,20 +901,6 @@
             }
           ],
           "doc": "Since platformized APIs only expose PATCH and not PUT we can't assume that the fields sent from the client are the actual diff.\nThis means that to generate a list of changed fields (as opposed to sent fields) one needs to traverse both objects.\nWe don't want to impose this on all developers and so we leave this traversal to the notification recipients which need it."
-        },
-        {
-          "name": "previousEntityAsJson",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "This field is currently part of the of the EntityUpdatedEvent msg, but scala/node libraries which implements the domain events standard\nwont populate it / have any reference to it in the API.\nThe main reason for it is that fetching the old entity from the DB will have a performance hit on an update operation so unless truly needed,\nthe developer should send only the new (current) entity.\nAn additional reason is not wanting to send this additional entity over the wire (kafka) since in some cases it can be really big\nDevelopers that must reflect the old entity will have to implement their own domain event sender mechanism which will follow the DomainEvent proto message."
         }
       ],
       "docs": {
@@ -960,7 +936,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review"
+              "referenceType": "wix-reviews-backend.Review",
+              "displayName": "Review"
             }
           ],
           "doc": "Review entity"
@@ -1061,7 +1038,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Image"
+              "referenceType": "wix-reviews-backend.Image",
+              "displayName": "Image"
             }
           ],
           "doc": ""
@@ -1071,7 +1049,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.VideoV2"
+              "referenceType": "wix-reviews-backend.VideoV2",
+              "displayName": "VideoV2"
             }
           ],
           "doc": ""
@@ -1104,7 +1083,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Cursors"
+              "referenceType": "wix-reviews-backend.Cursors",
+              "displayName": "Cursors"
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
@@ -1163,7 +1143,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.QueryV2"
+              "referenceType": "wix-reviews-backend.QueryV2",
+              "displayName": "QueryV2"
             }
           ],
           "doc": ""
@@ -1183,7 +1164,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.QueryV2"
+              "referenceType": "wix-reviews-backend.QueryV2",
+              "displayName": "QueryV2"
             }
           ],
           "doc": "Review query"
@@ -1203,7 +1185,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.PagingMetadataV2"
+              "referenceType": "wix-reviews-backend.PagingMetadataV2",
+              "displayName": "PagingMetadataV2"
             }
           ],
           "doc": "Paging metadata"
@@ -1217,7 +1200,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-reviews-backend.Review"
+                    "referenceType": "wix-reviews-backend.Review",
+                    "displayName": "Review"
                   }
                 ]
               }
@@ -1240,7 +1224,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.CursorPaging"
+              "referenceType": "wix-reviews-backend.CursorPaging",
+              "displayName": "CursorPaging"
             }
           ],
           "doc": ""
@@ -1277,7 +1262,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-reviews-backend.Sorting"
+                    "referenceType": "wix-reviews-backend.Sorting",
+                    "displayName": "Sorting"
                   }
                 ]
               }
@@ -1319,7 +1305,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review"
+              "referenceType": "wix-reviews-backend.Review",
+              "displayName": "Review"
             }
           ],
           "doc": "Review id"
@@ -1411,7 +1398,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Author"
+              "referenceType": "wix-reviews-backend.Author",
+              "displayName": "Author"
             }
           ],
           "doc": "Author of review data"
@@ -1421,7 +1409,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent",
+              "displayName": "ReviewContent"
             }
           ],
           "doc": "Review content"
@@ -1481,7 +1470,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Reply"
+              "referenceType": "wix-reviews-backend.Reply",
+              "displayName": "Reply"
             }
           ],
           "doc": "Reply to review"
@@ -1518,7 +1508,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-reviews-backend.Media"
+                    "referenceType": "wix-reviews-backend.Media",
+                    "displayName": "Media"
                   }
                 ]
               }
@@ -1613,7 +1604,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review"
+              "referenceType": "wix-reviews-backend.Review",
+              "displayName": "Review"
             }
           ],
           "doc": "Review entity"
@@ -1663,7 +1655,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent",
+              "displayName": "ReviewContent"
             }
           ],
           "doc": ""
@@ -1700,7 +1693,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.ReviewContent"
+              "referenceType": "wix-reviews-backend.ReviewContent",
+              "displayName": "ReviewContent"
             }
           ],
           "doc": "Review content"
@@ -1746,7 +1740,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Review"
+              "referenceType": "wix-reviews-backend.Review",
+              "displayName": "Review"
             }
           ],
           "doc": "Updated review data"
@@ -1789,7 +1784,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.Image"
+              "referenceType": "wix-reviews-backend.Image",
+              "displayName": "Image"
             }
           ],
           "doc": "Video thumbnail."
@@ -1846,7 +1842,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-reviews-backend.VideoResolution"
+                    "referenceType": "wix-reviews-backend.VideoResolution",
+                    "displayName": "VideoResolution"
                   }
                 ]
               }
