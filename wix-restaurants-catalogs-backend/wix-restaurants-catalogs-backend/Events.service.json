@@ -16,8 +16,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-CatalogChangedEvent",
-              "displayName": "CatalogChangedEvent"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.CatalogChangedEvent"
             }
           ],
           "doc": "",
@@ -59,8 +58,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-CatalogCreated",
-              "displayName": "CatalogCreated"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.CatalogCreated"
             }
           ],
           "doc": "",
@@ -102,8 +100,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-CatalogUpdated",
-              "displayName": "CatalogUpdated"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.CatalogUpdated"
             }
           ],
           "doc": "",
@@ -141,7 +138,7 @@
   ],
   "messages": [
     {
-      "name": "@wix/velo-events-ApplicationError",
+      "name": "ApplicationError",
       "members": [
         {
           "name": "code",
@@ -194,7 +191,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ArchiveMenuRequest",
+      "name": "ArchiveMenuRequest",
       "members": [
         {
           "name": "catalogId",
@@ -222,15 +219,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-ArchiveMenuResponse",
+      "name": "ArchiveMenuResponse",
       "members": [
         {
           "name": "menu",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-              "displayName": "Menu"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
             }
           ],
           "doc": "Archived menu."
@@ -243,7 +239,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Availability",
+      "name": "Availability",
       "members": [
         {
           "name": "periods",
@@ -254,8 +250,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-TimePeriod",
-                    "displayName": "TimePeriod"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.TimePeriod"
                   }
                 ]
               }
@@ -272,8 +267,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-SpecialHourPeriod",
-                    "displayName": "SpecialHourPeriod"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.SpecialHourPeriod"
                   }
                 ]
               }
@@ -289,7 +283,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BackendEventMetadata",
+      "name": "BackendEventMetadata",
       "members": [
         {
           "name": "entityId",
@@ -335,7 +329,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkActionMetadata",
+      "name": "BulkActionMetadata",
       "members": [
         {
           "name": "totalFailures",
@@ -375,7 +369,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkArchiveMenusRequest",
+      "name": "BulkArchiveMenusRequest",
       "members": [
         {
           "name": "catalogId",
@@ -421,15 +415,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkArchiveMenusResponse",
+      "name": "BulkArchiveMenusResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Archive Menus metadata."
@@ -443,8 +436,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkMenuResult",
-                    "displayName": "BulkMenuResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkMenuResult"
                   }
                 ]
               }
@@ -460,7 +452,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateDishesRequest",
+      "name": "BulkCreateDishesRequest",
       "members": [
         {
           "name": "catalogId",
@@ -480,8 +472,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkCreateDishesRequestCreateDishRequest",
-                    "displayName": "BulkCreateDishesRequestCreateDishRequest"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkCreateDishesRequestCreateDishRequest"
                   }
                 ]
               }
@@ -507,14 +498,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateDishesRequestCreateDishRequest",
+      "name": "BulkCreateDishesRequestCreateDishRequest",
       "members": [
         {
           "name": "dish",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-              "displayName": "Item"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
             }
           ],
           "doc": "Dish to create."
@@ -545,15 +535,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateDishesResponse",
+      "name": "BulkCreateDishesResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Create Dishes metadata."
@@ -567,8 +556,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkItemResult",
-                    "displayName": "BulkItemResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkItemResult"
                   }
                 ]
               }
@@ -584,7 +572,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateMenusRequest",
+      "name": "BulkCreateMenusRequest",
       "members": [
         {
           "name": "catalogId",
@@ -604,8 +592,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-                    "displayName": "Menu"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
                   }
                 ]
               }
@@ -631,15 +618,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateMenusResponse",
+      "name": "BulkCreateMenusResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Create Menus metadata."
@@ -653,8 +639,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkMenuResult",
-                    "displayName": "BulkMenuResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkMenuResult"
                   }
                 ]
               }
@@ -670,7 +655,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateSectionsRequest",
+      "name": "BulkCreateSectionsRequest",
       "members": [
         {
           "name": "catalogId",
@@ -690,8 +675,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkCreateSectionsRequestCreateSectionRequest",
-                    "displayName": "BulkCreateSectionsRequestCreateSectionRequest"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkCreateSectionsRequestCreateSectionRequest"
                   }
                 ]
               }
@@ -717,7 +701,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateSectionsRequestCreateSectionRequest",
+      "name": "BulkCreateSectionsRequestCreateSectionRequest",
       "members": [
         {
           "name": "menuId",
@@ -732,8 +716,7 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-              "displayName": "Section"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
             }
           ],
           "doc": "Section to create."
@@ -746,15 +729,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateSectionsResponse",
+      "name": "BulkCreateSectionsResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Create Sections metadata."
@@ -768,8 +750,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkSectionResult",
-                    "displayName": "BulkSectionResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkSectionResult"
                   }
                 ]
               }
@@ -785,7 +766,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateVariationsRequest",
+      "name": "BulkCreateVariationsRequest",
       "members": [
         {
           "name": "catalogId",
@@ -815,8 +796,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-NewVariation",
-                    "displayName": "NewVariation"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.NewVariation"
                   }
                 ]
               }
@@ -832,15 +812,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkCreateVariationsResponse",
+      "name": "BulkCreateVariationsResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Create Variations metadata."
@@ -854,8 +833,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkItemResult",
-                    "displayName": "BulkItemResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkItemResult"
                   }
                 ]
               }
@@ -871,15 +849,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkItemResult",
+      "name": "BulkItemResult",
       "members": [
         {
           "name": "entity",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-              "displayName": "Item"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
             }
           ],
           "doc": "Item."
@@ -889,8 +866,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-ItemMetadata",
-              "displayName": "ItemMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.ItemMetadata"
             }
           ],
           "doc": "Metadata of the item."
@@ -903,15 +879,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkMenuResult",
+      "name": "BulkMenuResult",
       "members": [
         {
           "name": "entity",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-              "displayName": "Menu"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
             }
           ],
           "doc": "Menu."
@@ -921,8 +896,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-ItemMetadata",
-              "displayName": "ItemMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.ItemMetadata"
             }
           ],
           "doc": "Menu metadata."
@@ -935,15 +909,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkSectionResult",
+      "name": "BulkSectionResult",
       "members": [
         {
           "name": "entity",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-              "displayName": "Section"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
             }
           ],
           "doc": "Section."
@@ -953,8 +926,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-ItemMetadata",
-              "displayName": "ItemMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.ItemMetadata"
             }
           ],
           "doc": "Section metadata."
@@ -967,7 +939,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUnarchiveMenusRequest",
+      "name": "BulkUnarchiveMenusRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1013,15 +985,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUnarchiveMenusResponse",
+      "name": "BulkUnarchiveMenusResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Unarchive Menus metadata."
@@ -1035,8 +1006,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkMenuResult",
-                    "displayName": "BulkMenuResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkMenuResult"
                   }
                 ]
               }
@@ -1052,7 +1022,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUpdateItemsRequest",
+      "name": "BulkUpdateItemsRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1072,8 +1042,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
                   }
                 ]
               }
@@ -1099,15 +1068,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUpdateItemsResponse",
+      "name": "BulkUpdateItemsResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Update Items metadata."
@@ -1121,8 +1089,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkItemResult",
-                    "displayName": "BulkItemResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkItemResult"
                   }
                 ]
               }
@@ -1138,7 +1105,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUpdateMenusRequest",
+      "name": "BulkUpdateMenusRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1158,8 +1125,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-                    "displayName": "Menu"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
                   }
                 ]
               }
@@ -1185,15 +1151,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUpdateMenusResponse",
+      "name": "BulkUpdateMenusResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Update Menus metadata."
@@ -1207,8 +1172,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkMenuResult",
-                    "displayName": "BulkMenuResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkMenuResult"
                   }
                 ]
               }
@@ -1224,7 +1188,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUpdateSectionsRequest",
+      "name": "BulkUpdateSectionsRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1254,8 +1218,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkUpdateSectionsRequestUpdateSectionRequest",
-                    "displayName": "BulkUpdateSectionsRequestUpdateSectionRequest"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkUpdateSectionsRequestUpdateSectionRequest"
                   }
                 ]
               }
@@ -1271,7 +1234,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUpdateSectionsRequestUpdateSectionRequest",
+      "name": "BulkUpdateSectionsRequestUpdateSectionRequest",
       "members": [
         {
           "name": "menuId",
@@ -1286,8 +1249,7 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-              "displayName": "Section"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
             }
           ],
           "doc": "Section to update."
@@ -1300,15 +1262,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-BulkUpdateSectionsResponse",
+      "name": "BulkUpdateSectionsResponse",
       "members": [
         {
           "name": "bulkActionMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkActionMetadata",
-              "displayName": "BulkActionMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BulkActionMetadata"
             }
           ],
           "doc": "Bulk Update Sections metadata."
@@ -1322,8 +1283,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BulkSectionResult",
-                    "displayName": "BulkSectionResult"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.BulkSectionResult"
                   }
                 ]
               }
@@ -1339,7 +1299,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Catalog",
+      "name": "Catalog",
       "members": [
         {
           "name": "_id",
@@ -1390,6 +1350,20 @@
             }
           ],
           "doc": "ID of the location the catalog belongs to. See the [Locations API](https://dev.wix.com/api/rest/business-info/locations/introduction) for more details."
+        },
+        {
+          "name": "revision",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Revision number. Increments by 1 each time the catalog is updated.\nTo prevent conflicting changes, the existing `revision` must be used when updating a catalog."
         }
       ],
       "docs": {
@@ -1399,15 +1373,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-CatalogChanged",
+      "name": "CatalogChanged",
       "members": [
         {
           "name": "catalog",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Catalog",
-              "displayName": "Catalog"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Catalog"
             }
           ],
           "doc": "Changed Catalog."
@@ -1420,14 +1393,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-CatalogChangedEvent",
+      "name": "CatalogChangedEvent",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-CatalogChanged",
-              "displayName": "CatalogChanged"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.CatalogChanged"
             }
           ],
           "doc": ""
@@ -1436,8 +1408,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -1450,14 +1421,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-CatalogCreated",
+      "name": "CatalogCreated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Catalog",
-              "displayName": "Catalog"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Catalog"
             }
           ],
           "doc": ""
@@ -1466,8 +1436,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -1480,7 +1449,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CatalogUpdated",
+      "name": "CatalogUpdated",
       "members": [
         {
           "name": "archived",
@@ -1501,8 +1470,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Discount",
-                    "displayName": "Discount"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Discount"
                   }
                 ]
               }
@@ -1532,8 +1500,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
                   }
                 ]
               }
@@ -1550,8 +1517,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-                    "displayName": "Menu"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
                   }
                 ]
               }
@@ -1568,8 +1534,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-                    "displayName": "Section"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
                   }
                 ]
               }
@@ -1581,8 +1546,7 @@
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Catalog",
-              "displayName": "Catalog"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Catalog"
             }
           ],
           "doc": ""
@@ -1614,8 +1578,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-BackendEventMetadata",
-              "displayName": "BackendEventMetadata"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.BackendEventMetadata"
             }
           ],
           "doc": ""
@@ -1628,7 +1591,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Coupon",
+      "name": "Coupon",
       "members": [
         {
           "name": "applied",
@@ -1666,7 +1629,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateDishRequest",
+      "name": "CreateDishRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1681,8 +1644,7 @@
           "name": "dish",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-              "displayName": "Item"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
             }
           ],
           "doc": "Item of type `dish` to create."
@@ -1713,15 +1675,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateDishResponse",
+      "name": "CreateDishResponse",
       "members": [
         {
           "name": "dish",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-              "displayName": "Item"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
             }
           ],
           "doc": "Created Dish."
@@ -1734,7 +1695,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateDraftCatalogRequest",
+      "name": "CreateDraftCatalogRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1753,15 +1714,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateDraftCatalogResponse",
+      "name": "CreateDraftCatalogResponse",
       "members": [
         {
           "name": "catalog",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Catalog",
-              "displayName": "Catalog"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Catalog"
             }
           ],
           "doc": "Created draft catalog."
@@ -1774,7 +1734,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateMenuRequest",
+      "name": "CreateMenuRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1789,8 +1749,7 @@
           "name": "menu",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-              "displayName": "Menu"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
             }
           ],
           "doc": "Menu to create."
@@ -1803,15 +1762,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateMenuResponse",
+      "name": "CreateMenuResponse",
       "members": [
         {
           "name": "menu",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-              "displayName": "Menu"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
             }
           ],
           "doc": "Created Menu."
@@ -1824,7 +1782,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateSectionRequest",
+      "name": "CreateSectionRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1848,8 +1806,7 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-              "displayName": "Section"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
             }
           ],
           "doc": "Section to create."
@@ -1862,15 +1819,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateSectionResponse",
+      "name": "CreateSectionResponse",
       "members": [
         {
           "name": "section",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-              "displayName": "Section"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
             }
           ],
           "doc": "Created section."
@@ -1883,7 +1839,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateVariationRequest",
+      "name": "CreateVariationRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1911,15 +1867,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-CreateVariationResponse",
+      "name": "CreateVariationResponse",
       "members": [
         {
           "name": "variation",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-              "displayName": "Item"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
             }
           ],
           "doc": "Created Variation."
@@ -1932,7 +1887,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Deselection",
+      "name": "Deselection",
       "members": [
         {
           "name": "availableChoices",
@@ -1943,8 +1898,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-DishOptionItem",
-                    "displayName": "DishOptionItem"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.DishOptionItem"
                   }
                 ]
               }
@@ -1960,7 +1914,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DiscardDraftCatalogRequest",
+      "name": "DiscardDraftCatalogRequest",
       "members": [
         {
           "name": "catalogId",
@@ -1979,7 +1933,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DiscardDraftCatalogResponse",
+      "name": "DiscardDraftCatalogResponse",
       "members": [],
       "docs": {
         "description": [
@@ -1988,7 +1942,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Discount",
+      "name": "Discount",
       "members": [
         {
           "name": "_id",
@@ -2022,8 +1976,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Money",
-              "displayName": "Money"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Money"
             }
           ],
           "doc": "Discount amount."
@@ -2033,8 +1986,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-DiscountCondition",
-              "displayName": "DiscountCondition"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.DiscountCondition"
             }
           ],
           "doc": "Discount condition.\nAll conditions must be met so that a customer can apply the discount."
@@ -2057,8 +2009,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-DiscountItemIds",
-              "displayName": "DiscountItemIds"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.DiscountItemIds"
             }
           ],
           "doc": "IDs of the items the discount applies to. **Note:** The items must be of type `dish`."
@@ -2094,8 +2045,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-DiscountSectionIds",
-              "displayName": "DiscountSectionIds"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.DiscountSectionIds"
             }
           ],
           "doc": "IDs of the sections the discount applies to."
@@ -2118,15 +2068,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-DiscountCondition",
+      "name": "DiscountCondition",
       "members": [
         {
           "name": "availability",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Availability",
-              "displayName": "Availability"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Availability"
             }
           ],
           "doc": "List of times when the discount is available."
@@ -2137,8 +2086,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Coupon",
-              "displayName": "Coupon"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Coupon"
             }
           ],
           "doc": "Coupon associated with the discount."
@@ -2165,8 +2113,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Money",
-              "displayName": "Money"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Money"
             }
           ],
           "doc": "Minimum order price for the discount."
@@ -2196,7 +2143,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DiscountItemIds",
+      "name": "DiscountItemIds",
       "members": [
         {
           "name": "values",
@@ -2223,7 +2170,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DiscountSectionIds",
+      "name": "DiscountSectionIds",
       "members": [
         {
           "name": "values",
@@ -2250,15 +2197,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-DishOption",
+      "name": "DishOption",
       "members": [
         {
           "name": "deselection",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Deselection",
-              "displayName": "Deselection"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Deselection"
             }
           ],
           "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
@@ -2268,8 +2214,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Extras",
-              "displayName": "Extras"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Extras"
             }
           ],
           "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
@@ -2289,8 +2234,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Selection",
-              "displayName": "Selection"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Selection"
             }
           ],
           "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
@@ -2314,7 +2258,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DishOptionItem",
+      "name": "DishOptionItem",
       "members": [
         {
           "name": "itemId",
@@ -2331,8 +2275,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Money",
-              "displayName": "Money"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Money"
             }
           ],
           "doc": "Dish option price. `0` for free choices that are included in the dish's price."
@@ -2345,7 +2288,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-DishOptions",
+      "name": "DishOptions",
       "members": [
         {
           "name": "values",
@@ -2356,8 +2299,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-DishOption",
-                    "displayName": "DishOption"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.DishOption"
                   }
                 ]
               }
@@ -2373,7 +2315,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Extras",
+      "name": "Extras",
       "members": [
         {
           "name": "availableChoices",
@@ -2384,8 +2326,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-DishOptionItem",
-                    "displayName": "DishOptionItem"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.DishOptionItem"
                   }
                 ]
               }
@@ -2444,7 +2385,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetItemRequest",
+      "name": "GetItemRequest",
       "members": [
         {
           "name": "catalogId",
@@ -2482,15 +2423,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetItemResponse",
+      "name": "GetItemResponse",
       "members": [
         {
           "name": "item",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-              "displayName": "Item"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
             }
           ],
           "doc": "Retrieved item."
@@ -2503,7 +2443,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetMenuRequest",
+      "name": "GetMenuRequest",
       "members": [
         {
           "name": "catalogId",
@@ -2531,15 +2471,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetMenuResponse",
+      "name": "GetMenuResponse",
       "members": [
         {
           "name": "menu",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-              "displayName": "Menu"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
             }
           ],
           "doc": "Retrieved menu."
@@ -2552,7 +2491,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetSectionRequest",
+      "name": "GetSectionRequest",
       "members": [
         {
           "name": "catalogId",
@@ -2589,15 +2528,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-GetSectionResponse",
+      "name": "GetSectionResponse",
       "members": [
         {
           "name": "section",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-              "displayName": "Section"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
             }
           ],
           "doc": "Retrieved section."
@@ -2610,7 +2548,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-IndexCacheCmd",
+      "name": "IndexCacheCmd",
       "members": [
         {
           "name": "catalogId",
@@ -2663,7 +2601,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Item",
+      "name": "Item",
       "members": [
         {
           "name": "_id",
@@ -2724,8 +2662,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-DishOptions",
-              "displayName": "DishOptions"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.DishOptions"
             }
           ],
           "doc": "Items customers can choose to modify a dish. Can be an extra, selection, or deselection."
@@ -2761,8 +2698,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Labels",
-              "displayName": "Labels"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Labels"
             }
           ],
           "doc": "Item labels. For example spicy, hot, vegan, gluten-free, or organic."
@@ -2785,8 +2721,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Money",
-              "displayName": "Money"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Money"
             }
           ],
           "doc": "Item price."
@@ -2820,8 +2755,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-VisibilityCriteria",
-              "displayName": "VisibilityCriteria"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the item to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
@@ -2834,7 +2768,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ItemIds",
+      "name": "ItemIds",
       "members": [
         {
           "name": "values",
@@ -2861,7 +2795,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ItemMetadata",
+      "name": "ItemMetadata",
       "members": [
         {
           "name": "_id",
@@ -2881,8 +2815,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-ApplicationError",
-              "displayName": "ApplicationError"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.ApplicationError"
             }
           ],
           "doc": "In case of failure, details about the error"
@@ -2915,7 +2848,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Labels",
+      "name": "Labels",
       "members": [
         {
           "name": "values",
@@ -2942,7 +2875,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListCatalogsRequest",
+      "name": "ListCatalogsRequest",
       "members": [
         {
           "name": "archived",
@@ -2976,8 +2909,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Paging",
-              "displayName": "Paging"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Paging"
             }
           ],
           "doc": "Paging information. `offset` defaults to `0` and `limit` defaults to `50`. The maximum for limit is `1,000`."
@@ -2987,8 +2919,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Sorting",
-              "displayName": "Sorting"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Sorting"
             }
           ],
           "doc": "Sort order. Defaults to `ASC`."
@@ -3001,7 +2932,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListCatalogsResponse",
+      "name": "ListCatalogsResponse",
       "members": [
         {
           "name": "catalogs",
@@ -3012,8 +2943,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Catalog",
-                    "displayName": "Catalog"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Catalog"
                   }
                 ]
               }
@@ -3029,7 +2959,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListItemsRequest",
+      "name": "ListItemsRequest",
       "members": [
         {
           "name": "archived",
@@ -3075,7 +3005,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListItemsResponse",
+      "name": "ListItemsResponse",
       "members": [
         {
           "name": "items",
@@ -3086,8 +3016,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
                   }
                 ]
               }
@@ -3103,7 +3032,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListMenusRequest",
+      "name": "ListMenusRequest",
       "members": [
         {
           "name": "archived",
@@ -3149,7 +3078,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListMenusResponse",
+      "name": "ListMenusResponse",
       "members": [
         {
           "name": "menus",
@@ -3160,8 +3089,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-                    "displayName": "Menu"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
                   }
                 ]
               }
@@ -3177,7 +3105,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListSectionsRequest",
+      "name": "ListSectionsRequest",
       "members": [
         {
           "name": "archived",
@@ -3223,7 +3151,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-ListSectionsResponse",
+      "name": "ListSectionsResponse",
       "members": [
         {
           "name": "sections",
@@ -3234,8 +3162,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-                    "displayName": "Section"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
                   }
                 ]
               }
@@ -3251,7 +3178,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Menu",
+      "name": "Menu",
       "members": [
         {
           "name": "_id",
@@ -3325,8 +3252,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-SectionIds",
-              "displayName": "SectionIds"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.SectionIds"
             }
           ],
           "doc": "IDs of the sections that are included in the menu."
@@ -3336,8 +3262,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-VisibilityCriteria",
-              "displayName": "VisibilityCriteria"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the menu to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
@@ -3350,7 +3275,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Money",
+      "name": "Money",
       "members": [
         {
           "name": "currency",
@@ -3362,6 +3287,20 @@
             }
           ],
           "doc": "Currency code. Must be valid ISO 4217 currency code (e.g., USD)."
+        },
+        {
+          "name": "formattedValue",
+          "readOnly": true,
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Monetary amount. Decimal string in local format (e.g., 1 000,30). Optionally, a single (-), to indicate that the amount is negative."
         },
         {
           "name": "value",
@@ -3381,7 +3320,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-NewVariation",
+      "name": "NewVariation",
       "members": [
         {
           "name": "name",
@@ -3401,7 +3340,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Paging",
+      "name": "Paging",
       "members": [
         {
           "name": "limit",
@@ -3437,7 +3376,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-PublishCatalogUpdated",
+      "name": "PublishCatalogUpdated",
       "members": [
         {
           "name": "archived",
@@ -3493,7 +3432,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-PublishDraftCatalogRequest",
+      "name": "PublishDraftCatalogRequest",
       "members": [
         {
           "name": "catalogId",
@@ -3512,15 +3451,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-PublishDraftCatalogResponse",
+      "name": "PublishDraftCatalogResponse",
       "members": [
         {
           "name": "catalog",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Catalog",
-              "displayName": "Catalog"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Catalog"
             }
           ],
           "doc": "Published catalog."
@@ -3533,7 +3471,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Section",
+      "name": "Section",
       "members": [
         {
           "name": "_id",
@@ -3594,8 +3532,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-ItemIds",
-              "displayName": "ItemIds"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.ItemIds"
             }
           ],
           "doc": "IDs of the items that belong to the section."
@@ -3632,8 +3569,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-VisibilityCriteria",
-              "displayName": "VisibilityCriteria"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.VisibilityCriteria"
             }
           ],
           "doc": "Visibility criteria that must be met for the section to appear in the live site.\nIn case of multiple visibility criteria, every criterion must be fulfilled."
@@ -3646,7 +3582,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-SectionIds",
+      "name": "SectionIds",
       "members": [
         {
           "name": "values",
@@ -3673,7 +3609,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Selection",
+      "name": "Selection",
       "members": [
         {
           "name": "availableChoices",
@@ -3684,8 +3620,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-DishOptionItem",
-                    "displayName": "DishOptionItem"
+                    "referenceType": "wix-restaurants-catalogs-backend.Events.DishOptionItem"
                   }
                 ]
               }
@@ -3714,7 +3649,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-Sorting",
+      "name": "Sorting",
       "members": [
         {
           "name": "fieldName",
@@ -3744,7 +3679,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-SpecialHourPeriod",
+      "name": "SpecialHourPeriod",
       "members": [
         {
           "name": "available",
@@ -3797,7 +3732,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-TimePeriod",
+      "name": "TimePeriod",
       "members": [
         {
           "name": "closeDay",
@@ -3847,7 +3782,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-UnarchiveMenuRequest",
+      "name": "UnarchiveMenuRequest",
       "members": [
         {
           "name": "catalogId",
@@ -3875,15 +3810,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-UnarchiveMenuResponse",
+      "name": "UnarchiveMenuResponse",
       "members": [
         {
           "name": "menu",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-              "displayName": "Menu"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
             }
           ],
           "doc": "Unarchived menu."
@@ -3896,7 +3830,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-UpdateItemRequest",
+      "name": "UpdateItemRequest",
       "members": [
         {
           "name": "catalogId",
@@ -3911,8 +3845,7 @@
           "name": "item",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-              "displayName": "Item"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
             }
           ],
           "doc": "Item to update."
@@ -3925,15 +3858,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-UpdateItemResponse",
+      "name": "UpdateItemResponse",
       "members": [
         {
           "name": "item",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Item",
-              "displayName": "Item"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Item"
             }
           ],
           "doc": "Updated Item."
@@ -3946,7 +3878,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-UpdateMenuRequest",
+      "name": "UpdateMenuRequest",
       "members": [
         {
           "name": "catalogId",
@@ -3961,8 +3893,7 @@
           "name": "menu",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-              "displayName": "Menu"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
             }
           ],
           "doc": "Menu to update."
@@ -3975,15 +3906,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-UpdateMenuResponse",
+      "name": "UpdateMenuResponse",
       "members": [
         {
           "name": "menu",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Menu",
-              "displayName": "Menu"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Menu"
             }
           ],
           "doc": "Updated Menu."
@@ -3996,7 +3926,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-UpdateSectionRequest",
+      "name": "UpdateSectionRequest",
       "members": [
         {
           "name": "catalogId",
@@ -4020,8 +3950,7 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-              "displayName": "Section"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
             }
           ],
           "doc": "Section to update."
@@ -4034,15 +3963,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-UpdateSectionResponse",
+      "name": "UpdateSectionResponse",
       "members": [
         {
           "name": "section",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Section",
-              "displayName": "Section"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Section"
             }
           ],
           "doc": "Updated section."
@@ -4055,15 +3983,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-VisibilityCriteria",
+      "name": "VisibilityCriteria",
       "members": [
         {
           "name": "availability",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.@wix/velo-events-Availability",
-              "displayName": "Availability"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.Availability"
             }
           ],
           "doc": "Time periods when the entity is available."
