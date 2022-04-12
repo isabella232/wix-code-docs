@@ -101,6 +101,23 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "entityIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -476,6 +493,26 @@
       }
     },
     {
+      "name": "DeleteRatingOptions",
+      "members": [
+        {
+          "name": "revision",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "DeleteRatingRequest",
       "members": [
         {
@@ -766,6 +803,33 @@
       }
     },
     {
+      "name": "GetEntityRatingSummaryOptions",
+      "members": [
+        {
+          "name": "attributeIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "GetEntityRatingSummaryRequest",
       "members": [
         {
@@ -849,6 +913,33 @@
             }
           ],
           "doc": "Summary namespace."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "GetNamespaceRatingSummaryOptions",
+      "members": [
+        {
+          "name": "attributeIds",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -1168,6 +1259,26 @@
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "QueryRatingsOptions",
+      "members": [
+        {
+          "name": "query",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.QueryV2"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
