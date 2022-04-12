@@ -1059,6 +1059,36 @@
       }
     },
     {
+      "name": "Error",
+      "members": [
+        {
+          "name": "code",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Error code"
+        },
+        {
+          "name": "message",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Error message"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "ExternalProvider",
       "members": [
         {
@@ -2838,6 +2868,23 @@
           "doc": "ID of the external provider."
         },
         {
+          "name": "errors",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-orders-backend.Events.Error"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Order creation errors"
+        },
+        {
           "name": "orderId",
           "optional": true,
           "type": [
@@ -2846,6 +2893,16 @@
             }
           ],
           "doc": "ID of the order in the external provider."
+        },
+        {
+          "name": "success",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Order creation success"
         }
       ],
       "docs": {
