@@ -95,7 +95,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-places-backend.AddressLocation"
+              "referenceType": "wix-atlas-places-backend.AddressLocation",
+              "displayName": "AddressLocation"
             }
           ],
           "doc": "coordinates of the physical address"
@@ -131,7 +132,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-places-backend.StreetAddress"
+              "referenceType": "wix-atlas-places-backend.StreetAddress",
+              "displayName": "StreetAddress"
             }
           ],
           "doc": "a break down of the street to number and street name"
@@ -158,7 +160,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-atlas-places-backend.Subdivision"
+                    "referenceType": "wix-atlas-places-backend.Subdivision",
+                    "displayName": "Subdivision"
                   }
                 ]
               }
@@ -236,7 +239,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-places-backend.Place"
+              "referenceType": "wix-atlas-places-backend.Place",
+              "displayName": "Place"
             }
           ],
           "doc": ""
@@ -256,7 +260,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-atlas-places-backend.Address"
+              "referenceType": "wix-atlas-places-backend.Address",
+              "displayName": "Address"
             }
           ],
           "doc": ""
