@@ -1410,6 +1410,32 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "promisedTimeInProgress",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order delivery date and time for filtering new orders count, Must include a `gte:` or `lte:` prefix, for example: `gte:2021-10-26T12:48:15Z`."
+        },
+        {
+          "name": "promisedTimeNew",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order delivery date and time for filtering new orders count, Must include a `gte:` or `lte:` prefix, for example: `gte:2021-10-26T12:48:15Z`."
         }
       ],
       "docs": {
