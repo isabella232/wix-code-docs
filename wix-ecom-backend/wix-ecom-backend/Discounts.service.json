@@ -23,7 +23,8 @@
           "name": "discountRule",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountRule"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountRule",
+              "displayName": "DiscountRule"
             }
           ],
           "doc": "DiscountRule to be created",
@@ -42,7 +43,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Discounts.CreateDiscountRuleResponse"
+                  "referenceType": "wix-ecom-backend.Discounts.CreateDiscountRuleResponse",
+                  "displayName": "CreateDiscountRuleResponse"
                 }
               ]
             }
@@ -94,7 +96,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Discounts.DeleteDiscountRuleResponse"
+                  "referenceType": "wix-ecom-backend.Discounts.DeleteDiscountRuleResponse",
+                  "displayName": "DeleteDiscountRuleResponse"
                 }
               ]
             }
@@ -129,7 +132,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.GetAppliedDiscountsOptions"
+              "referenceType": "wix-ecom-backend.Discounts.GetAppliedDiscountsOptions",
+              "displayName": "GetAppliedDiscountsOptions"
             }
           ],
           "doc": "",
@@ -144,7 +148,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Discounts.GetAppliedDiscountsResponse"
+                  "referenceType": "wix-ecom-backend.Discounts.GetAppliedDiscountsResponse",
+                  "displayName": "GetAppliedDiscountsResponse"
                 }
               ]
             }
@@ -196,7 +201,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Discounts.GetDiscountRuleResponse"
+                  "referenceType": "wix-ecom-backend.Discounts.GetDiscountRuleResponse",
+                  "displayName": "GetDiscountRuleResponse"
                 }
               ]
             }
@@ -231,7 +237,8 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.PlatformQuery"
+              "referenceType": "wix-ecom-backend.Discounts.PlatformQuery",
+              "displayName": "PlatformQuery"
             }
           ],
           "doc": "WQL expression",
@@ -248,7 +255,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Discounts.QueryDiscountRulesResponse"
+                  "referenceType": "wix-ecom-backend.Discounts.QueryDiscountRulesResponse",
+                  "displayName": "QueryDiscountRulesResponse"
                 }
               ]
             }
@@ -296,7 +304,8 @@
           "name": "discountRule",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.UpdateDiscountRuleDiscountRule"
+              "referenceType": "wix-ecom-backend.Discounts.UpdateDiscountRuleDiscountRule",
+              "displayName": "UpdateDiscountRuleDiscountRule"
             }
           ],
           "doc": "",
@@ -306,7 +315,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.UpdateDiscountRuleOptions"
+              "referenceType": "wix-ecom-backend.Discounts.UpdateDiscountRuleOptions",
+              "displayName": "UpdateDiscountRuleOptions"
             }
           ],
           "doc": "",
@@ -325,7 +335,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Discounts.UpdateDiscountRuleResponse"
+                  "referenceType": "wix-ecom-backend.Discounts.UpdateDiscountRuleResponse",
+                  "displayName": "UpdateDiscountRuleResponse"
                 }
               ]
             }
@@ -417,7 +428,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.DiscountTrigger"
+                    "referenceType": "wix-ecom-backend.Discounts.DiscountTrigger",
+                    "displayName": "DiscountTrigger"
                   }
                 ]
               }
@@ -440,7 +452,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.AppliedDiscountRule"
+              "referenceType": "wix-ecom-backend.Discounts.AppliedDiscountRule",
+              "displayName": "AppliedDiscountRule"
             }
           ],
           "doc": "Discount rule"
@@ -497,7 +510,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Discounts.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Discount value"
@@ -517,7 +531,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountRuleName"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountRuleName",
+              "displayName": "DiscountRuleName"
             }
           ],
           "doc": "Discount rule name"
@@ -626,7 +641,8 @@
           "name": "discountRule",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountRule"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountRule",
+              "displayName": "DiscountRule"
             }
           ],
           "doc": "DiscountRule to be created"
@@ -646,7 +662,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountRule"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountRule",
+              "displayName": "DiscountRule"
             }
           ],
           "doc": "The created DiscountRule"
@@ -853,7 +870,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.Scope"
+                    "referenceType": "wix-ecom-backend.Discounts.Scope",
+                    "displayName": "Scope"
                   }
                 ]
               }
@@ -935,7 +953,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.ActiveTimeInfo"
+              "referenceType": "wix-ecom-backend.Discounts.ActiveTimeInfo",
+              "displayName": "ActiveTimeInfo"
             }
           ],
           "doc": "Time frame which the discount rule is active"
@@ -945,7 +964,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.Discounts"
+              "referenceType": "wix-ecom-backend.Discounts.Discounts",
+              "displayName": "Discounts"
             }
           ],
           "doc": "Description of a set of discounts that can be performed, if above's trigger is met\nCurrently only a single discount is supported"
@@ -992,7 +1012,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountTrigger"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountTrigger",
+              "displayName": "DiscountTrigger"
             }
           ],
           "doc": "Discount rule trigger - description of a set of conditions that must be fulfilled to perform pre-defined discounts (see `discounts` below).\nNot providing a trigger means the rule discounts will always be applied (if possible)"
@@ -1056,7 +1077,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.And"
+              "referenceType": "wix-ecom-backend.Discounts.And",
+              "displayName": "And"
             }
           ],
           "doc": "Chain multiple triggers with AND operator"
@@ -1066,7 +1088,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.ItemQuantityRange"
+              "referenceType": "wix-ecom-backend.Discounts.ItemQuantityRange",
+              "displayName": "ItemQuantityRange"
             }
           ],
           "doc": "Item quantity trigger"
@@ -1076,7 +1099,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.SubtotalRange"
+              "referenceType": "wix-ecom-backend.Discounts.SubtotalRange",
+              "displayName": "SubtotalRange"
             }
           ],
           "doc": "Subtotal trigger"
@@ -1111,7 +1135,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.Discount"
+                    "referenceType": "wix-ecom-backend.Discounts.Discount",
+                    "displayName": "Discount"
                   }
                 ]
               }
@@ -1144,7 +1169,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.ActionEvent"
+              "referenceType": "wix-ecom-backend.Discounts.ActionEvent",
+              "displayName": "ActionEvent"
             }
           ],
           "doc": ""
@@ -1154,7 +1180,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.EntityCreatedEvent"
+              "referenceType": "wix-ecom-backend.Discounts.EntityCreatedEvent",
+              "displayName": "EntityCreatedEvent"
             }
           ],
           "doc": ""
@@ -1164,7 +1191,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.EntityDeletedEvent"
+              "referenceType": "wix-ecom-backend.Discounts.EntityDeletedEvent",
+              "displayName": "EntityDeletedEvent"
             }
           ],
           "doc": ""
@@ -1240,7 +1268,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.EntityUpdatedEvent"
+              "referenceType": "wix-ecom-backend.Discounts.EntityUpdatedEvent",
+              "displayName": "EntityUpdatedEvent"
             }
           ],
           "doc": ""
@@ -1273,20 +1302,6 @@
             }
           ],
           "doc": ""
-        },
-        {
-          "name": "triggeredByUndelete",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Indicates the event was triggered by a restore-from-trashbin operation for a previously deleted entity"
         }
       ],
       "docs": {
@@ -1297,22 +1312,7 @@
     },
     {
       "name": "EntityDeletedEvent",
-      "members": [
-        {
-          "name": "movedToTrash",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": "Indicates if the entity is sent to trash-bin. only available when trash-bin is enabled"
-        }
-      ],
+      "members": [],
       "docs": {
         "description": [
           ""
@@ -1331,20 +1331,6 @@
             }
           ],
           "doc": "Since platformized APIs only expose PATCH and not PUT we can't assume that the fields sent from the client are the actual diff.\nThis means that to generate a list of changed fields (as opposed to sent fields) one needs to traverse both objects.\nWe don't want to impose this on all developers and so we leave this traversal to the notification recipients which need it."
-        },
-        {
-          "name": "previousEntityAsJson",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "This field is currently part of the of the EntityUpdatedEvent msg, but scala/node libraries which implements the domain events standard\nwont populate it / have any reference to it in the API.\nThe main reason for it is that fetching the old entity from the DB will have a performance hit on an update operation so unless truly needed,\nthe developer should send only the new (current) entity.\nAn additional reason is not wanting to send this additional entity over the wire (kafka) since in some cases it can be really big\nDevelopers that must reflect the old entity will have to implement their own domain event sender mechanism which will follow the DomainEvent proto message."
         }
       ],
       "docs": {
@@ -1365,7 +1351,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.LineItem"
+                    "referenceType": "wix-ecom-backend.Discounts.LineItem",
+                    "displayName": "LineItem"
                   }
                 ]
               }
@@ -1392,7 +1379,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.LineItem"
+                    "referenceType": "wix-ecom-backend.Discounts.LineItem",
+                    "displayName": "LineItem"
                   }
                 ]
               }
@@ -1419,7 +1407,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.AppliedDiscount"
+                    "referenceType": "wix-ecom-backend.Discounts.AppliedDiscount",
+                    "displayName": "AppliedDiscount"
                   }
                 ]
               }
@@ -1461,7 +1450,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountRule"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountRule",
+              "displayName": "DiscountRule"
             }
           ],
           "doc": "The retrieved DiscountRule"
@@ -1498,7 +1488,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.Scope"
+                    "referenceType": "wix-ecom-backend.Discounts.Scope",
+                    "displayName": "Scope"
                   }
                 ]
               }
@@ -1544,7 +1535,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.CatalogReference"
+              "referenceType": "wix-ecom-backend.Discounts.CatalogReference",
+              "displayName": "CatalogReference"
             }
           ],
           "doc": "Optional references to the line item's origin catalog.\nSee [Catalog SPI](https://bo.wix.com/wix-docs/rest/ecommerce/catalog-spi/introduction) for more details.\nThis field is empty in the case of a custom line item.\ncurrently we only use the catalog app id to set tax=0 for specific apps."
@@ -1689,7 +1681,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.Cursors"
+              "referenceType": "wix-ecom-backend.Discounts.Cursors",
+              "displayName": "Cursors"
             }
           ],
           "doc": "Cursors to navigate through result pages. Returned if cursor paging was used."
@@ -1735,7 +1728,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.CursorPaging"
+              "referenceType": "wix-ecom-backend.Discounts.CursorPaging",
+              "displayName": "CursorPaging"
             }
           ],
           "doc": "Cursor pointing to page of results. Cannot be used together with `paging`. `cursorPaging.cursor` can not be used together with `filter` or `sort`."
@@ -1768,7 +1762,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.PlatformPaging"
+              "referenceType": "wix-ecom-backend.Discounts.PlatformPaging",
+              "displayName": "PlatformPaging"
             }
           ],
           "doc": "Pointer to page of results using offset. Cannot be used together with `cursorPaging`."
@@ -1782,7 +1777,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.Sorting"
+                    "referenceType": "wix-ecom-backend.Discounts.Sorting",
+                    "displayName": "Sorting"
                   }
                 ]
               }
@@ -1804,7 +1800,8 @@
           "name": "query",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.PlatformQuery"
+              "referenceType": "wix-ecom-backend.Discounts.PlatformQuery",
+              "displayName": "PlatformQuery"
             }
           ],
           "doc": "WQL expression"
@@ -1828,7 +1825,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.DiscountRule"
+                    "referenceType": "wix-ecom-backend.Discounts.DiscountRule",
+                    "displayName": "DiscountRule"
                   }
                 ]
               }
@@ -1841,7 +1839,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.PlatformPagingMetadata"
+              "referenceType": "wix-ecom-backend.Discounts.PlatformPagingMetadata",
+              "displayName": "PlatformPagingMetadata"
             }
           ],
           "doc": "The retrieved paging metadata"
@@ -1871,7 +1870,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.CatalogItemFilter"
+              "referenceType": "wix-ecom-backend.Discounts.CatalogItemFilter",
+              "displayName": "CatalogItemFilter"
             }
           ],
           "doc": "An entity filter for scope of type CATALOG_ITEM"
@@ -1881,7 +1881,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.CustomFilter"
+              "referenceType": "wix-ecom-backend.Discounts.CustomFilter",
+              "displayName": "CustomFilter"
             }
           ],
           "doc": "A custom filter for scope of type CUSTOM_FILTER"
@@ -1959,7 +1960,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Discounts.Scope"
+                    "referenceType": "wix-ecom-backend.Discounts.Scope",
+                    "displayName": "Scope"
                   }
                 ]
               }
@@ -2044,7 +2046,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.ActiveTimeInfo"
+              "referenceType": "wix-ecom-backend.Discounts.ActiveTimeInfo",
+              "displayName": "ActiveTimeInfo"
             }
           ],
           "doc": "Time frame which the discount rule is active"
@@ -2054,7 +2057,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.Discounts"
+              "referenceType": "wix-ecom-backend.Discounts.Discounts",
+              "displayName": "Discounts"
             }
           ],
           "doc": "Description of a set of discounts that can be performed, if above's trigger is met\nCurrently only a single discount is supported"
@@ -2101,7 +2105,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountTrigger"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountTrigger",
+              "displayName": "DiscountTrigger"
             }
           ],
           "doc": "Discount rule trigger - description of a set of conditions that must be fulfilled to perform pre-defined discounts (see `discounts` below).\nNot providing a trigger means the rule discounts will always be applied (if possible)"
@@ -2158,28 +2163,11 @@
           "name": "discountRule",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountRule"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountRule",
+              "displayName": "DiscountRule"
             }
           ],
           "doc": "DiscountRule to be updated, may be partial"
-        },
-        {
-          "name": "mask",
-          "readOnly": false,
-          "optional": true,
-          "type": [
-            {
-              "complexType": {
-                "nativeType": "Array",
-                "typeParams": [
-                  {
-                    "nativeType": "string"
-                  }
-                ]
-              }
-            }
-          ],
-          "doc": "Explicit list of fields to update"
         }
       ],
       "docs": {
@@ -2196,7 +2184,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Discounts.DiscountRule"
+              "referenceType": "wix-ecom-backend.Discounts.DiscountRule",
+              "displayName": "DiscountRule"
             }
           ],
           "doc": "The updated DiscountRule"
