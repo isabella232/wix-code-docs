@@ -565,16 +565,6 @@
       "name": "AcceptOrderOptions",
       "members": [
         {
-          "name": "dropOffTime",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": ""
-        },
-        {
           "name": "message",
           "optional": true,
           "type": [
@@ -585,17 +575,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
-        },
-        {
-          "name": "pickupTime",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": ""
+          "doc": "Message when accepting the order."
         }
       ],
       "docs": {
@@ -706,7 +686,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Message when canceling the order."
         }
       ],
       "docs": {
@@ -1477,6 +1457,36 @@
       }
     },
     {
+      "name": "Error",
+      "members": [
+        {
+          "name": "code",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Error code"
+        },
+        {
+          "name": "message",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Error message"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "ExternalProvider",
       "members": [
         {
@@ -1688,7 +1698,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Controls what data is returned in the response"
         }
       ],
       "docs": {
@@ -1781,7 +1791,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Set of fields to retrieve.\nFields that aren't included in `fieldmaks.paths` are ignored.\nSee [the article about field masks](https://dev.wix.com/api/rest/restaurants/orders/supported-field-masks)\nfor more details."
         }
       ],
       "docs": {
@@ -1861,7 +1871,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "filter response to a specific location, otherwise return totals for all locations."
         },
         {
           "name": "organizationId",
@@ -1875,6 +1885,32 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "promisedTimeInProgress",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order delivery date and time for filtering new orders count, Must include a `gte:` or `lte:` prefix, for example: `gte:2021-10-26T12:48:15Z`."
+        },
+        {
+          "name": "promisedTimeNew",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order delivery date and time for filtering new orders count, Must include a `gte:` or `lte:` prefix, for example: `gte:2021-10-26T12:48:15Z`."
         }
       ],
       "docs": {
@@ -1911,6 +1947,32 @@
             }
           ],
           "doc": ""
+        },
+        {
+          "name": "promisedTimeInProgress",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order delivery date and time for filtering new orders count, Must include a `gte:` or `lte:` prefix, for example: `gte:2021-10-26T12:48:15Z`."
+        },
+        {
+          "name": "promisedTimeNew",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Order delivery date and time for filtering new orders count, Must include a `gte:` or `lte:` prefix, for example: `gte:2021-10-26T12:48:15Z`."
         }
       ],
       "docs": {
@@ -2015,7 +2077,7 @@
       ],
       "docs": {
         "description": [
-          ""
+          "TEST  This is a line item for the order."
         ]
       }
     },
@@ -2184,7 +2246,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Created date of the order epoch time."
         },
         {
           "name": "delivered",
@@ -2214,7 +2276,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Controls what data is returned in the response."
         },
         {
           "name": "limit",
@@ -2227,7 +2289,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": ""
+          "doc": "limit of records - min: 1 max: 2000"
         },
         {
           "name": "msid",
@@ -2236,7 +2298,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Metasite id"
         },
         {
           "name": "sort",
@@ -2247,7 +2309,7 @@
               "displayName": "Sort"
             }
           ],
-          "doc": ""
+          "doc": "Sorting of Orders in response. Default \"CREATED_DATE:ASC\""
         },
         {
           "name": "status",
@@ -2257,7 +2319,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "One of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
+          "doc": "Order status to filter by. Currently Status Fulfilled is not supported\nOne of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
         }
       ],
       "docs": {
@@ -2404,31 +2466,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
-        },
-        {
-          "name": "asap",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "boolean"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "cursorPaging",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Orders.CursorPaging",
-              "displayName": "CursorPaging"
-            }
-          ],
-          "doc": ""
+          "doc": "Order creation date and time. Must include a `gte:` or `lte:` prefix, for example: `gte:2021-10-26T12:48:15Z`."
         },
         {
           "name": "delivered",
@@ -2441,7 +2479,7 @@
               "nativeType": "boolean"
             }
           ],
-          "doc": ""
+          "doc": "Whether the order has been delivered."
         },
         {
           "name": "fieldMask",
@@ -2458,7 +2496,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Set of fields to retrieve.\nFields that aren't included in `fieldmaks.paths` are ignored.\nSee [the article about field masks](https://dev.wix.com/api/rest/restaurants/orders/supported-field-masks)\nfor more details."
         },
         {
           "name": "limit",
@@ -2471,7 +2509,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": ""
+          "doc": "Number of orders to return. The minimum limit is 1, the maximum 1000."
         },
         {
           "name": "locationIds",
@@ -2488,33 +2526,7 @@
               }
             }
           ],
-          "doc": ""
-        },
-        {
-          "name": "phone",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "promisedTime",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
+          "doc": "Location filter. Pass an array of location IDs to return orders with any of the provided locations."
         },
         {
           "name": "sort",
@@ -2525,7 +2537,7 @@
               "displayName": "Sort"
             }
           ],
-          "doc": ""
+          "doc": "Sorting options."
         },
         {
           "name": "status",
@@ -2535,7 +2547,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "One of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
+          "doc": "Order status. Currently, it is not possible to filter by status `FULFILLED`.\nOne of:\nACCEPTED,\nCANCELED,\nFULFILLED,\nNEW,\nPENDING,\nUNSPECIFIED_ORDER_STATUS"
         }
       ],
       "docs": {
@@ -2825,7 +2837,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "One of:\nACCEPTED,\nCANCELED,\nCREATED,\nFULFILLED,\nUNKNOWN"
+          "doc": "Notification event type\nOne of:\nACCEPTED,\nCANCELED,\nCREATED,\nFULFILLED,\nUNKNOWN"
         },
         {
           "name": "msid",
@@ -2835,7 +2847,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Metasite id"
         }
       ],
       "docs": {
@@ -3418,6 +3430,24 @@
           "doc": "ID of the external provider."
         },
         {
+          "name": "errors",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Array",
+                "typeParams": [
+                  {
+                    "referenceType": "wix-restaurants-backend.Orders.Error",
+                    "displayName": "Error"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Order creation errors"
+        },
+        {
           "name": "orderId",
           "optional": true,
           "type": [
@@ -3426,6 +3456,16 @@
             }
           ],
           "doc": "ID of the order in the external provider."
+        },
+        {
+          "name": "success",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Order creation success"
         }
       ],
       "docs": {
