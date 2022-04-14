@@ -140,7 +140,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "2nd part of the message"
         },
         {
           "name": "someDate",
@@ -170,7 +170,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "this field test translatable annotation"
         }
       ],
       "docs": {
