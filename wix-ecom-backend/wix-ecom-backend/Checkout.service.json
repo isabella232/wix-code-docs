@@ -23,7 +23,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CreateCheckoutOptions"
+              "referenceType": "wix-ecom-backend.Checkout.CreateCheckoutOptions",
+              "displayName": "CreateCheckoutOptions"
             }
           ],
           "doc": "",
@@ -45,7 +46,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.CreateCheckoutResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.CreateCheckoutResponse",
+                  "displayName": "CreateCheckoutResponse"
                 }
               ]
             }
@@ -91,7 +93,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CreateOrderOptions"
+              "referenceType": "wix-ecom-backend.Checkout.CreateOrderOptions",
+              "displayName": "CreateOrderOptions"
             }
           ],
           "doc": "",
@@ -108,7 +111,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.CreateOrderResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.CreateOrderResponse",
+                  "displayName": "CreateOrderResponse"
                 }
               ]
             }
@@ -154,7 +158,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CreateOrderAndChargeOptions"
+              "referenceType": "wix-ecom-backend.Checkout.CreateOrderAndChargeOptions",
+              "displayName": "CreateOrderAndChargeOptions"
             }
           ],
           "doc": "",
@@ -171,7 +176,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.CreateOrderAndChargeResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.CreateOrderAndChargeResponse",
+                  "displayName": "CreateOrderAndChargeResponse"
                 }
               ]
             }
@@ -223,7 +229,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.GetCheckoutResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.GetCheckoutResponse",
+                  "displayName": "GetCheckoutResponse"
                 }
               ]
             }
@@ -268,7 +275,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.GetWixCheckoutUrlOptions"
+              "referenceType": "wix-ecom-backend.Checkout.GetWixCheckoutUrlOptions",
+              "displayName": "GetWixCheckoutUrlOptions"
             }
           ],
           "doc": "",
@@ -285,7 +293,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.GetWixCheckoutURLResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.GetWixCheckoutURLResponse",
+                  "displayName": "GetWixCheckoutURLResponse"
                 }
               ]
             }
@@ -337,7 +346,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.MarkCheckoutAsCompletedResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.MarkCheckoutAsCompletedResponse",
+                  "displayName": "MarkCheckoutAsCompletedResponse"
                 }
               ]
             }
@@ -389,7 +399,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.RemoveCouponResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.RemoveCouponResponse",
+                  "displayName": "RemoveCouponResponse"
                 }
               ]
             }
@@ -441,7 +452,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.RemoveGiftCardResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.RemoveGiftCardResponse",
+                  "displayName": "RemoveGiftCardResponse"
                 }
               ]
             }
@@ -511,7 +523,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.RemoveLineItemsResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.RemoveLineItemsResponse",
+                  "displayName": "RemoveLineItemsResponse"
                 }
               ]
             }
@@ -559,7 +572,8 @@
           "name": "checkout",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.UpdateCheckoutCheckout"
+              "referenceType": "wix-ecom-backend.Checkout.UpdateCheckoutCheckout",
+              "displayName": "UpdateCheckoutCheckout"
             }
           ],
           "doc": "",
@@ -569,7 +583,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.UpdateCheckoutOptions"
+              "referenceType": "wix-ecom-backend.Checkout.UpdateCheckoutOptions",
+              "displayName": "UpdateCheckoutOptions"
             }
           ],
           "doc": "",
@@ -591,7 +606,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Checkout.UpdateCheckoutResponse"
+                  "referenceType": "wix-ecom-backend.Checkout.UpdateCheckoutResponse",
+                  "displayName": "UpdateCheckoutResponse"
                 }
               ]
             }
@@ -725,7 +741,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.FullName"
+              "referenceType": "wix-ecom-backend.Checkout.FullName",
+              "displayName": "FullName"
             }
           ],
           "doc": "Addressee name"
@@ -748,7 +765,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Street"
+              "referenceType": "wix-ecom-backend.Checkout.Street",
+              "displayName": "Street"
             }
           ],
           "doc": "Address line 1 (street)"
@@ -771,7 +789,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.VatId"
+              "referenceType": "wix-ecom-backend.Checkout.VatId",
+              "displayName": "VatId"
             }
           ],
           "doc": "Tax information (for Brazil only)"
@@ -804,7 +823,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ApiAddress"
+              "referenceType": "wix-ecom-backend.Checkout.ApiAddress",
+              "displayName": "ApiAddress"
             }
           ],
           "doc": "Address."
@@ -814,7 +834,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.FullAddressContactDetails"
+              "referenceType": "wix-ecom-backend.Checkout.FullAddressContactDetails",
+              "displayName": "FullAddressContactDetails"
             }
           ],
           "doc": "Contact details."
@@ -913,7 +934,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.StreetAddress"
+              "referenceType": "wix-ecom-backend.Checkout.StreetAddress",
+              "displayName": "StreetAddress"
             }
           ],
           "doc": "Street address object, with number, name, and apartment number in separate fields."
@@ -1053,7 +1075,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Coupon"
+              "referenceType": "wix-ecom-backend.Checkout.Coupon",
+              "displayName": "Coupon"
             }
           ],
           "doc": "Coupon details."
@@ -1063,7 +1086,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.DiscountRule"
+              "referenceType": "wix-ecom-backend.Checkout.DiscountRule",
+              "displayName": "DiscountRule"
             }
           ],
           "doc": "Discount rule"
@@ -1100,7 +1124,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MerchantDiscount"
+              "referenceType": "wix-ecom-backend.Checkout.MerchantDiscount",
+              "displayName": "MerchantDiscount"
             }
           ],
           "doc": "Merchant discount."
@@ -1120,7 +1145,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ApplicationError"
+              "referenceType": "wix-ecom-backend.Checkout.ApplicationError",
+              "displayName": "ApplicationError"
             }
           ],
           "doc": "invalid request (i.e. address), timeout, internal error, license error, and others will be encoded here"
@@ -1150,7 +1176,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Address"
+              "referenceType": "wix-ecom-backend.Checkout.Address",
+              "displayName": "Address"
             }
           ],
           "doc": "Full billing address"
@@ -1314,7 +1341,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CarrierErrors"
+              "referenceType": "wix-ecom-backend.Checkout.CarrierErrors",
+              "displayName": "CarrierErrors"
             }
           ],
           "doc": "Carrier errors."
@@ -1324,7 +1352,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Details"
+              "referenceType": "wix-ecom-backend.Checkout.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Coupon calculation error."
@@ -1334,7 +1363,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Details"
+              "referenceType": "wix-ecom-backend.Checkout.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "General shipping calculation error."
@@ -1344,7 +1374,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Details"
+              "referenceType": "wix-ecom-backend.Checkout.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Gift card calculation error."
@@ -1354,7 +1385,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Details"
+              "referenceType": "wix-ecom-backend.Checkout.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Membership payment methods calculation errors\nFor example, will indicate that a line item that must be paid with membership payment doesn't have one or selected memberships are invalid"
@@ -1368,7 +1400,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.ApplicationError"
+                    "referenceType": "wix-ecom-backend.Checkout.ApplicationError",
+                    "displayName": "ApplicationError"
                   }
                 ]
               }
@@ -1381,7 +1414,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Details"
+              "referenceType": "wix-ecom-backend.Checkout.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Tax calculation error."
@@ -1411,7 +1445,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Details"
+              "referenceType": "wix-ecom-backend.Checkout.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Error details."
@@ -1435,7 +1470,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.CarrierError"
+                    "referenceType": "wix-ecom-backend.Checkout.CarrierError",
+                    "displayName": "CarrierError"
                   }
                 ]
               }
@@ -1472,7 +1508,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.ShippingOption"
+                    "referenceType": "wix-ecom-backend.Checkout.ShippingOption",
+                    "displayName": "ShippingOption"
                   }
                 ]
               }
@@ -1677,7 +1714,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.AppliedDiscount"
+                    "referenceType": "wix-ecom-backend.Checkout.AppliedDiscount",
+                    "displayName": "AppliedDiscount"
                   }
                 ]
               }
@@ -1690,7 +1728,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.AddressWithContact"
+              "referenceType": "wix-ecom-backend.Checkout.AddressWithContact",
+              "displayName": "AddressWithContact"
             }
           ],
           "doc": "Billing information."
@@ -1700,7 +1739,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.BuyerInfo"
+              "referenceType": "wix-ecom-backend.Checkout.BuyerInfo",
+              "displayName": "BuyerInfo"
             }
           ],
           "doc": "Buyer information."
@@ -1735,7 +1775,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CalculationErrors"
+              "referenceType": "wix-ecom-backend.Checkout.CalculationErrors",
+              "displayName": "CalculationErrors"
             }
           ],
           "doc": "Errors when calculating totals."
@@ -1779,7 +1820,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CreatedBy"
+              "referenceType": "wix-ecom-backend.Checkout.CreatedBy",
+              "displayName": "CreatedBy"
             }
           ],
           "doc": "ID of the checkout's initiator."
@@ -1804,7 +1846,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.CustomField"
+                    "referenceType": "wix-ecom-backend.Checkout.CustomField",
+                    "displayName": "CustomField"
                   }
                 ]
               }
@@ -1818,7 +1861,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.GiftCard"
+              "referenceType": "wix-ecom-backend.Checkout.GiftCard",
+              "displayName": "GiftCard"
             }
           ],
           "doc": "Applied gift card details."
@@ -1833,7 +1877,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.LineItem"
+                    "referenceType": "wix-ecom-backend.Checkout.LineItem",
+                    "displayName": "LineItem"
                   }
                 ]
               }
@@ -1846,7 +1891,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MembershipOptions"
+              "referenceType": "wix-ecom-backend.Checkout.MembershipOptions",
+              "displayName": "MembershipOptions"
             }
           ],
           "doc": "Information about valid and invalid memberships, and which ones are selected for usage"
@@ -1857,7 +1903,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PriceSummary"
+              "referenceType": "wix-ecom-backend.Checkout.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Remaining amount so that the order will be fully payed"
@@ -1868,7 +1915,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PriceSummary"
+              "referenceType": "wix-ecom-backend.Checkout.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Minimal amount to pay in order to place the order"
@@ -1879,7 +1927,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PriceSummary"
+              "referenceType": "wix-ecom-backend.Checkout.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Calculated price summary for the checkout."
@@ -1889,7 +1938,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ShippingInfo"
+              "referenceType": "wix-ecom-backend.Checkout.ShippingInfo",
+              "displayName": "ShippingInfo"
             }
           ],
           "doc": "Shipping information."
@@ -1922,7 +1972,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.TaxSummary"
+              "referenceType": "wix-ecom-backend.Checkout.TaxSummary",
+              "displayName": "TaxSummary"
             }
           ],
           "doc": "Tax summary."
@@ -1953,7 +2004,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": ""
@@ -2059,7 +2111,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Coupon value."
@@ -2108,7 +2161,8 @@
           "name": "checkoutInfo",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Checkout information."
@@ -2135,7 +2189,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.CustomLineItem"
+                    "referenceType": "wix-ecom-backend.Checkout.CustomLineItem",
+                    "displayName": "CustomLineItem"
                   }
                 ]
               }
@@ -2164,7 +2219,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.LineItem"
+                    "referenceType": "wix-ecom-backend.Checkout.LineItem",
+                    "displayName": "LineItem"
                   }
                 ]
               }
@@ -2181,7 +2237,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.MerchantDiscountInput"
+                    "referenceType": "wix-ecom-backend.Checkout.MerchantDiscountInput",
+                    "displayName": "MerchantDiscountInput"
                   }
                 ]
               }
@@ -2213,7 +2270,8 @@
           "name": "checkoutInfo",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Checkout information."
@@ -2240,7 +2298,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.CustomLineItem"
+                    "referenceType": "wix-ecom-backend.Checkout.CustomLineItem",
+                    "displayName": "CustomLineItem"
                   }
                 ]
               }
@@ -2269,7 +2328,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.LineItem"
+                    "referenceType": "wix-ecom-backend.Checkout.LineItem",
+                    "displayName": "LineItem"
                   }
                 ]
               }
@@ -2286,7 +2346,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.MerchantDiscountInput"
+                    "referenceType": "wix-ecom-backend.Checkout.MerchantDiscountInput",
+                    "displayName": "MerchantDiscountInput"
                   }
                 ]
               }
@@ -2309,7 +2370,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Newly created checkout."
@@ -2702,7 +2764,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.DescriptionLine"
+                    "referenceType": "wix-ecom-backend.Checkout.DescriptionLine",
+                    "displayName": "DescriptionLine"
                   }
                 ]
               }
@@ -2824,7 +2887,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PickupDetails"
+              "referenceType": "wix-ecom-backend.Checkout.PickupDetails",
+              "displayName": "PickupDetails"
             }
           ],
           "doc": "Pickup details."
@@ -2877,7 +2941,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Color"
+              "referenceType": "wix-ecom-backend.Checkout.Color",
+              "displayName": "Color"
             }
           ],
           "doc": "Description line color value."
@@ -2887,7 +2952,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.DescriptionLineName"
+              "referenceType": "wix-ecom-backend.Checkout.DescriptionLineName",
+              "displayName": "DescriptionLineName"
             }
           ],
           "doc": "Description line name."
@@ -2897,7 +2963,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PlainTextValue"
+              "referenceType": "wix-ecom-backend.Checkout.PlainTextValue",
+              "displayName": "PlainTextValue"
             }
           ],
           "doc": "Description line plain text value."
@@ -2950,7 +3017,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ApplicationError"
+              "referenceType": "wix-ecom-backend.Checkout.ApplicationError",
+              "displayName": "ApplicationError"
             }
           ],
           "doc": ""
@@ -2980,7 +3048,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ValidationError"
+              "referenceType": "wix-ecom-backend.Checkout.ValidationError",
+              "displayName": "ValidationError"
             }
           ],
           "doc": ""
@@ -3040,7 +3109,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Discount value."
@@ -3050,7 +3120,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.DiscountRuleName"
+              "referenceType": "wix-ecom-backend.Checkout.DiscountRuleName",
+              "displayName": "DiscountRuleName"
             }
           ],
           "doc": "Discount rule name"
@@ -3113,7 +3184,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ActionEvent"
+              "referenceType": "wix-ecom-backend.Checkout.ActionEvent",
+              "displayName": "ActionEvent"
             }
           ],
           "doc": ""
@@ -3123,7 +3195,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.EntityCreatedEvent"
+              "referenceType": "wix-ecom-backend.Checkout.EntityCreatedEvent",
+              "displayName": "EntityCreatedEvent"
             }
           ],
           "doc": ""
@@ -3133,7 +3206,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.EntityDeletedEvent"
+              "referenceType": "wix-ecom-backend.Checkout.EntityDeletedEvent",
+              "displayName": "EntityDeletedEvent"
             }
           ],
           "doc": ""
@@ -3209,7 +3283,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.EntityUpdatedEvent"
+              "referenceType": "wix-ecom-backend.Checkout.EntityUpdatedEvent",
+              "displayName": "EntityUpdatedEvent"
             }
           ],
           "doc": ""
@@ -3415,7 +3490,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CommonVatId"
+              "referenceType": "wix-ecom-backend.Checkout.CommonVatId",
+              "displayName": "CommonVatId"
             }
           ],
           "doc": "Tax information (for Brazil only). If ID is provided, `vatId.type` must also be set - UNSPECIFIED is not allowed."
@@ -3484,7 +3560,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "The requested checkout."
@@ -3562,7 +3639,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Gift card value."
@@ -3635,7 +3713,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Membership"
+              "referenceType": "wix-ecom-backend.Checkout.Membership",
+              "displayName": "Membership"
             }
           ],
           "doc": "The membership"
@@ -3703,7 +3782,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.TaxRateBreakdown"
+                    "referenceType": "wix-ecom-backend.Checkout.TaxRateBreakdown",
+                    "displayName": "TaxRateBreakdown"
                   }
                 ]
               }
@@ -3726,7 +3806,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Amount for which tax is calculated."
@@ -3736,7 +3817,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Calculated tax, based on `taxable_amount` and `tax_rate`."
@@ -3800,7 +3882,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ItemAvailabilityInfo"
+              "referenceType": "wix-ecom-backend.Checkout.ItemAvailabilityInfo",
+              "displayName": "ItemAvailabilityInfo"
             }
           ],
           "doc": "Item availability details."
@@ -3810,7 +3893,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CatalogReference"
+              "referenceType": "wix-ecom-backend.Checkout.CatalogReference",
+              "displayName": "CatalogReference"
             }
           ],
           "doc": "Catalog and item reference info. See [Catalog SPI](https://bo.wix.com/wix-docs/rest/ecommerce/catalog-spi/introduction) for more details.\nEmpty in the case of a custom line item."
@@ -3821,7 +3905,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Partial payment for the given item to be paid upfront during the checkout. Eligible for catalog items with type `DEPOSIT_ONLINE` only."
@@ -3836,7 +3921,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.DescriptionLine"
+                    "referenceType": "wix-ecom-backend.Checkout.DescriptionLine",
+                    "displayName": "DescriptionLine"
                   }
                 ]
               }
@@ -3850,7 +3936,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Discount for this line item's entire quantity."
@@ -3861,7 +3948,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Item price **before** catalog-defined discount. Defaults to `price` when not provided."
@@ -3872,7 +3960,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ItemType"
+              "referenceType": "wix-ecom-backend.Checkout.ItemType",
+              "displayName": "ItemType"
             }
           ],
           "doc": "Item type. Either a preset type or custom."
@@ -3905,7 +3994,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PhysicalProperties"
+              "referenceType": "wix-ecom-backend.Checkout.PhysicalProperties",
+              "displayName": "PhysicalProperties"
             }
           ],
           "doc": "Physical properties of the item. When relevant, contains information such as SKU, item weight, and shippability."
@@ -3916,7 +4006,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Item price **after** catalog-defined discount."
@@ -3927,7 +4018,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PriceDescription"
+              "referenceType": "wix-ecom-backend.Checkout.PriceDescription",
+              "displayName": "PriceDescription"
             }
           ],
           "doc": "Additional description for the price. For example, when price is 0 but additional details about the actual price are needed - \"Starts at $67\"."
@@ -3938,7 +4030,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ProductName"
+              "referenceType": "wix-ecom-backend.Checkout.ProductName",
+              "displayName": "ProductName"
             }
           ],
           "doc": "Item name.\n+ Stores - `product.name`\n+ Bookings - `service.info.name`\n+ Events - `ticket.name`"
@@ -3973,7 +4066,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ServiceProperties"
+              "referenceType": "wix-ecom-backend.Checkout.ServiceProperties",
+              "displayName": "ServiceProperties"
             }
           ],
           "doc": "Service properties. When relevant, this contains information such as date and number of participants."
@@ -3984,7 +4078,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ItemTaxFullDetails"
+              "referenceType": "wix-ecom-backend.Checkout.ItemTaxFullDetails",
+              "displayName": "ItemTaxFullDetails"
             }
           ],
           "doc": "Tax details for this line item."
@@ -3995,7 +4090,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total price after all discounts and tax."
@@ -4006,7 +4102,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total price after all discounts, before tax."
@@ -4201,7 +4298,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MembershipPaymentCredits"
+              "referenceType": "wix-ecom-backend.Checkout.MembershipPaymentCredits",
+              "displayName": "MembershipPaymentCredits"
             }
           ],
           "doc": "Optional - For a membership that has limited credits, information about credit usage"
@@ -4238,7 +4336,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MembershipName"
+              "referenceType": "wix-ecom-backend.Checkout.MembershipName",
+              "displayName": "MembershipName"
             }
           ],
           "doc": "The name of this membership"
@@ -4296,7 +4395,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.Membership"
+                    "referenceType": "wix-ecom-backend.Checkout.Membership",
+                    "displayName": "Membership"
                   }
                 ]
               }
@@ -4314,7 +4414,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.InvalidMembership"
+                    "referenceType": "wix-ecom-backend.Checkout.InvalidMembership",
+                    "displayName": "InvalidMembership"
                   }
                 ]
               }
@@ -4327,7 +4428,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.SelectedMemberships"
+              "referenceType": "wix-ecom-backend.Checkout.SelectedMemberships",
+              "displayName": "SelectedMemberships"
             }
           ],
           "doc": "The selected payment options and which line items they apply to"
@@ -4377,7 +4479,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Discount value."
@@ -4527,7 +4630,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V2BuyerInfo"
+              "referenceType": "wix-ecom-backend.Checkout.V2BuyerInfo",
+              "displayName": "V2BuyerInfo"
             }
           ],
           "doc": "Customer information"
@@ -4607,7 +4711,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Totals"
+              "referenceType": "wix-ecom-backend.Checkout.Totals",
+              "displayName": "Totals"
             }
           ],
           "doc": "Totals for order's line items"
@@ -4687,7 +4792,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Price of added cost."
@@ -4826,7 +4932,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ApiAddress"
+              "referenceType": "wix-ecom-backend.Checkout.ApiAddress",
+              "displayName": "ApiAddress"
             }
           ],
           "doc": "Pickup address."
@@ -4932,7 +5039,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total calculated discount value."
@@ -4942,7 +5050,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total shipping price, before discounts and before tax."
@@ -4952,7 +5061,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Subtotal of all line items, before discounts and before tax."
@@ -4962,7 +5072,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total tax."
@@ -4972,7 +5083,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total price after discounts, gift cards, and tax."
@@ -5015,7 +5127,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MediaItem"
+              "referenceType": "wix-ecom-backend.Checkout.MediaItem",
+              "displayName": "MediaItem"
             }
           ],
           "doc": "Line item primary media for preview"
@@ -5175,7 +5288,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Updated checkout after removal of coupon."
@@ -5214,7 +5328,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Updated checkout after removal of gift card."
@@ -5269,7 +5384,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Updated checkout after removal of line items."
@@ -5289,7 +5405,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Group"
+              "referenceType": "wix-ecom-backend.Checkout.Group",
+              "displayName": "Group"
             }
           ],
           "doc": "Coupon scope's applied group (e.g., event or ticket in Wix Events)"
@@ -5383,7 +5500,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.SelectedCarrierServiceOptionPrices"
+              "referenceType": "wix-ecom-backend.Checkout.SelectedCarrierServiceOptionPrices",
+              "displayName": "SelectedCarrierServiceOptionPrices"
             }
           ],
           "doc": "Shipping costs."
@@ -5394,7 +5512,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.DeliveryLogistics"
+              "referenceType": "wix-ecom-backend.Checkout.DeliveryLogistics",
+              "displayName": "DeliveryLogistics"
             }
           ],
           "doc": "Delivery logistics."
@@ -5408,7 +5527,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.SelectedCarrierServiceOptionOtherCharge"
+                    "referenceType": "wix-ecom-backend.Checkout.SelectedCarrierServiceOptionOtherCharge",
+                    "displayName": "SelectedCarrierServiceOptionOtherCharge"
                   }
                 ]
               }
@@ -5453,7 +5573,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.SelectedCarrierServiceOptionPrices"
+              "referenceType": "wix-ecom-backend.Checkout.SelectedCarrierServiceOptionPrices",
+              "displayName": "SelectedCarrierServiceOptionPrices"
             }
           ],
           "doc": "Price of added charge."
@@ -5496,7 +5617,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Shipping price before discount and before tax."
@@ -5506,7 +5628,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ItemTaxFullDetails"
+              "referenceType": "wix-ecom-backend.Checkout.ItemTaxFullDetails",
+              "displayName": "ItemTaxFullDetails"
             }
           ],
           "doc": "Tax details."
@@ -5516,7 +5639,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Shipping discount before tax."
@@ -5526,7 +5650,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total shipping price, after discount and after tax."
@@ -5536,7 +5661,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Totals shipping price after discount and before tax."
@@ -5607,7 +5733,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.SelectedMembership"
+                    "referenceType": "wix-ecom-backend.Checkout.SelectedMembership",
+                    "displayName": "SelectedMembership"
                   }
                 ]
               }
@@ -5663,7 +5790,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Address"
+              "referenceType": "wix-ecom-backend.Checkout.Address",
+              "displayName": "Address"
             }
           ],
           "doc": "Shipping destination address"
@@ -5724,7 +5852,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.CarrierServiceOption"
+                    "referenceType": "wix-ecom-backend.Checkout.CarrierServiceOption",
+                    "displayName": "CarrierServiceOption"
                   }
                 ]
               }
@@ -5738,7 +5867,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ShippingRegion"
+              "referenceType": "wix-ecom-backend.Checkout.ShippingRegion",
+              "displayName": "ShippingRegion"
             }
           ],
           "doc": "Shipping region."
@@ -5748,7 +5878,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.SelectedCarrierServiceOption"
+              "referenceType": "wix-ecom-backend.Checkout.SelectedCarrierServiceOption",
+              "displayName": "SelectedCarrierServiceOption"
             }
           ],
           "doc": "Selected option out of the options allowed for the region (see `region` field).\nThe region field is chosen based on the address provided."
@@ -5758,7 +5889,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.AddressWithContact"
+              "referenceType": "wix-ecom-backend.Checkout.AddressWithContact",
+              "displayName": "AddressWithContact"
             }
           ],
           "doc": "Shipping address and contact details."
@@ -5788,7 +5920,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ShippingPrice"
+              "referenceType": "wix-ecom-backend.Checkout.ShippingPrice",
+              "displayName": "ShippingPrice"
             }
           ],
           "doc": "Sipping price information."
@@ -5798,7 +5931,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.DeliveryLogistics"
+              "referenceType": "wix-ecom-backend.Checkout.DeliveryLogistics",
+              "displayName": "DeliveryLogistics"
             }
           ],
           "doc": "Delivery logistics."
@@ -5832,7 +5966,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.OtherCharge"
+                    "referenceType": "wix-ecom-backend.Checkout.OtherCharge",
+                    "displayName": "OtherCharge"
                   }
                 ]
               }
@@ -5845,7 +5980,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Shipping price."
@@ -6013,7 +6149,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1AppliedCoupon"
+              "referenceType": "wix-ecom-backend.Checkout.V1AppliedCoupon",
+              "displayName": "V1AppliedCoupon"
             }
           ],
           "doc": "Coupon that was applied to subscription"
@@ -6023,7 +6160,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Address"
+              "referenceType": "wix-ecom-backend.Checkout.Address",
+              "displayName": "Address"
             }
           ],
           "doc": "Full billing address"
@@ -6034,7 +6172,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1BillingInfo"
+              "referenceType": "wix-ecom-backend.Checkout.V1BillingInfo",
+              "displayName": "V1BillingInfo"
             }
           ],
           "doc": "information about first subscription payment"
@@ -6044,7 +6183,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1BuyerInfo"
+              "referenceType": "wix-ecom-backend.Checkout.V1BuyerInfo",
+              "displayName": "V1BuyerInfo"
             }
           ],
           "doc": "member or contact"
@@ -6080,7 +6220,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ChannelInfo"
+              "referenceType": "wix-ecom-backend.Checkout.ChannelInfo",
+              "displayName": "ChannelInfo"
             }
           ],
           "doc": "Sales channel that submitted this subscription"
@@ -6103,7 +6244,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1CustomField"
+              "referenceType": "wix-ecom-backend.Checkout.V1CustomField",
+              "displayName": "V1CustomField"
             }
           ],
           "doc": "Custom field"
@@ -6141,7 +6283,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.V1LineItem"
+                    "referenceType": "wix-ecom-backend.Checkout.V1LineItem",
+                    "displayName": "V1LineItem"
                   }
                 ]
               }
@@ -6154,7 +6297,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1ShippingInfo"
+              "referenceType": "wix-ecom-backend.Checkout.V1ShippingInfo",
+              "displayName": "V1ShippingInfo"
             }
           ],
           "doc": "Delivery information"
@@ -6164,7 +6308,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.StoreSettings"
+              "referenceType": "wix-ecom-backend.Checkout.StoreSettings",
+              "displayName": "StoreSettings"
             }
           ],
           "doc": "site settings at the moment when subscription created"
@@ -6174,7 +6319,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1SubscriptionOptionInfo"
+              "referenceType": "wix-ecom-backend.Checkout.V1SubscriptionOptionInfo",
+              "displayName": "V1SubscriptionOptionInfo"
             }
           ],
           "doc": "Information about subscription option from which subscription was created"
@@ -6184,7 +6330,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1SubscriptionSettings"
+              "referenceType": "wix-ecom-backend.Checkout.V1SubscriptionSettings",
+              "displayName": "V1SubscriptionSettings"
             }
           ],
           "doc": "defines when subscriber will be charged: for frequency=MONTH, billingCycles=6, interval=2 payment will be done every 2 month during one year"
@@ -6194,7 +6341,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1Totals"
+              "referenceType": "wix-ecom-backend.Checkout.V1Totals",
+              "displayName": "V1Totals"
             }
           ],
           "doc": "Totals for subscription's line items"
@@ -6214,7 +6362,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Subscription"
+              "referenceType": "wix-ecom-backend.Checkout.Subscription",
+              "displayName": "Subscription"
             }
           ],
           "doc": ""
@@ -6257,7 +6406,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V2SubscriptionOptionInfo"
+              "referenceType": "wix-ecom-backend.Checkout.V2SubscriptionOptionInfo",
+              "displayName": "V2SubscriptionOptionInfo"
             }
           ],
           "doc": "Subscription options info."
@@ -6267,7 +6417,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1SubscriptionSettings"
+              "referenceType": "wix-ecom-backend.Checkout.V1SubscriptionSettings",
+              "displayName": "V1SubscriptionSettings"
             }
           ],
           "doc": "Subscription settings."
@@ -6287,7 +6438,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Description"
+              "referenceType": "wix-ecom-backend.Checkout.Description",
+              "displayName": "Description"
             }
           ],
           "doc": "Subscription option description."
@@ -6297,7 +6449,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.SubscriptionSettings"
+              "referenceType": "wix-ecom-backend.Checkout.SubscriptionSettings",
+              "displayName": "SubscriptionSettings"
             }
           ],
           "doc": "Subscription option settings."
@@ -6307,7 +6460,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Title"
+              "referenceType": "wix-ecom-backend.Checkout.Title",
+              "displayName": "Title"
             }
           ],
           "doc": "Subscription option title."
@@ -6370,7 +6524,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.AutoTaxFallbackCalculationDetails"
+              "referenceType": "wix-ecom-backend.Checkout.AutoTaxFallbackCalculationDetails",
+              "displayName": "AutoTaxFallbackCalculationDetails"
             }
           ],
           "doc": "details of the fallback rate calculation"
@@ -6430,7 +6585,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Amount of tax for this tax detail."
@@ -6450,7 +6606,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.TaxCalculationDetails"
+              "referenceType": "wix-ecom-backend.Checkout.TaxCalculationDetails",
+              "displayName": "TaxCalculationDetails"
             }
           ],
           "doc": "Tax calculator that was active when the order was created."
@@ -6461,7 +6618,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Amount for which tax is calculated, added from line items."
@@ -6472,7 +6630,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.Checkout.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Calculated tax, added from line items."
@@ -6683,7 +6842,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.AppliedDiscount"
+                    "referenceType": "wix-ecom-backend.Checkout.AppliedDiscount",
+                    "displayName": "AppliedDiscount"
                   }
                 ]
               }
@@ -6696,7 +6856,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.AddressWithContact"
+              "referenceType": "wix-ecom-backend.Checkout.AddressWithContact",
+              "displayName": "AddressWithContact"
             }
           ],
           "doc": "Billing information."
@@ -6706,7 +6867,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.BuyerInfo"
+              "referenceType": "wix-ecom-backend.Checkout.BuyerInfo",
+              "displayName": "BuyerInfo"
             }
           ],
           "doc": "Buyer information."
@@ -6741,7 +6903,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CalculationErrors"
+              "referenceType": "wix-ecom-backend.Checkout.CalculationErrors",
+              "displayName": "CalculationErrors"
             }
           ],
           "doc": "Errors when calculating totals."
@@ -6785,7 +6948,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.CreatedBy"
+              "referenceType": "wix-ecom-backend.Checkout.CreatedBy",
+              "displayName": "CreatedBy"
             }
           ],
           "doc": "ID of the checkout's initiator."
@@ -6810,7 +6974,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.CustomField"
+                    "referenceType": "wix-ecom-backend.Checkout.CustomField",
+                    "displayName": "CustomField"
                   }
                 ]
               }
@@ -6824,7 +6989,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.GiftCard"
+              "referenceType": "wix-ecom-backend.Checkout.GiftCard",
+              "displayName": "GiftCard"
             }
           ],
           "doc": "Applied gift card details."
@@ -6839,7 +7005,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.LineItem"
+                    "referenceType": "wix-ecom-backend.Checkout.LineItem",
+                    "displayName": "LineItem"
                   }
                 ]
               }
@@ -6852,7 +7019,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.MembershipOptions"
+              "referenceType": "wix-ecom-backend.Checkout.MembershipOptions",
+              "displayName": "MembershipOptions"
             }
           ],
           "doc": "Information about valid and invalid memberships, and which ones are selected for usage"
@@ -6863,7 +7031,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PriceSummary"
+              "referenceType": "wix-ecom-backend.Checkout.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Remaining amount so that the order will be fully payed"
@@ -6874,7 +7043,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PriceSummary"
+              "referenceType": "wix-ecom-backend.Checkout.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Minimal amount to pay in order to place the order"
@@ -6885,7 +7055,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PriceSummary"
+              "referenceType": "wix-ecom-backend.Checkout.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Calculated price summary for the checkout."
@@ -6895,7 +7066,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ShippingInfo"
+              "referenceType": "wix-ecom-backend.Checkout.ShippingInfo",
+              "displayName": "ShippingInfo"
             }
           ],
           "doc": "Shipping information."
@@ -6928,7 +7100,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.TaxSummary"
+              "referenceType": "wix-ecom-backend.Checkout.TaxSummary",
+              "displayName": "TaxSummary"
             }
           ],
           "doc": "Tax summary."
@@ -6989,7 +7162,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.MerchantDiscountInput"
+                    "referenceType": "wix-ecom-backend.Checkout.MerchantDiscountInput",
+                    "displayName": "MerchantDiscountInput"
                   }
                 ]
               }
@@ -7011,7 +7185,8 @@
           "name": "checkout",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Checkout information."
@@ -7051,7 +7226,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.MerchantDiscountInput"
+                    "referenceType": "wix-ecom-backend.Checkout.MerchantDiscountInput",
+                    "displayName": "MerchantDiscountInput"
                   }
                 ]
               }
@@ -7074,7 +7250,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Updated checkout."
@@ -7094,7 +7271,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Previous checkout."
@@ -7104,7 +7282,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Checkout"
+              "referenceType": "wix-ecom-backend.Checkout.Checkout",
+              "displayName": "Checkout"
             }
           ],
           "doc": "Updated checkout."
@@ -7283,7 +7462,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ChargeDetails"
+              "referenceType": "wix-ecom-backend.Checkout.ChargeDetails",
+              "displayName": "ChargeDetails"
             }
           ],
           "doc": "Charges details"
@@ -7297,7 +7477,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.CustomTextFieldSelection"
+                    "referenceType": "wix-ecom-backend.Checkout.CustomTextFieldSelection",
+                    "displayName": "CustomTextFieldSelection"
                   }
                 ]
               }
@@ -7324,7 +7505,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.OptionSelection"
+                    "referenceType": "wix-ecom-backend.Checkout.OptionSelection",
+                    "displayName": "OptionSelection"
                   }
                 ]
               }
@@ -7337,7 +7519,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ProductDetails"
+              "referenceType": "wix-ecom-backend.Checkout.ProductDetails",
+              "displayName": "ProductDetails"
             }
           ],
           "doc": "Product details"
@@ -7380,7 +7563,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.PickupAddress"
+              "referenceType": "wix-ecom-backend.Checkout.PickupAddress",
+              "displayName": "PickupAddress"
             }
           ],
           "doc": "Pickup address"
@@ -7436,7 +7620,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.V1PickupDetails"
+              "referenceType": "wix-ecom-backend.Checkout.V1PickupDetails",
+              "displayName": "V1PickupDetails"
             }
           ],
           "doc": "Pickup details (when this object describes pickup)"
@@ -7446,7 +7631,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.ShipmentDetails"
+              "referenceType": "wix-ecom-backend.Checkout.ShipmentDetails",
+              "displayName": "ShipmentDetails"
             }
           ],
           "doc": "Shipment details (when this object describes shipment)"
@@ -7492,7 +7678,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.Checkout.Discount"
+              "referenceType": "wix-ecom-backend.Checkout.Discount",
+              "displayName": "Discount"
             }
           ],
           "doc": ""
@@ -7777,7 +7964,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.Checkout.FieldViolation"
+                    "referenceType": "wix-ecom-backend.Checkout.FieldViolation",
+                    "displayName": "FieldViolation"
                   }
                 ]
               }
