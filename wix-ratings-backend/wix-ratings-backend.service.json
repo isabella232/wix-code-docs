@@ -25,8 +25,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.BulkAverageAttributesOptions",
-              "displayName": "BulkAverageAttributesOptions"
+              "referenceType": "wix-ratings-backend.BulkAverageAttributesOptions"
             }
           ],
           "doc": "",
@@ -41,8 +40,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.BulkAverageAttributesResponse",
-                  "displayName": "BulkAverageAttributesResponse"
+                  "referenceType": "wix-ratings-backend.BulkAverageAttributesResponse"
                 }
               ]
             }
@@ -87,8 +85,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.CreateRatingOptions",
-              "displayName": "CreateRatingOptions"
+              "referenceType": "wix-ratings-backend.CreateRatingOptions"
             }
           ],
           "doc": "",
@@ -103,8 +100,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.CreateRatingResponse",
-                  "displayName": "CreateRatingResponse"
+                  "referenceType": "wix-ratings-backend.CreateRatingResponse"
                 }
               ]
             }
@@ -149,8 +145,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.DeleteRatingOptions",
-              "displayName": "DeleteRatingOptions"
+              "referenceType": "wix-ratings-backend.DeleteRatingOptions"
             }
           ],
           "doc": "",
@@ -165,8 +160,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.DeleteRatingResponse",
-                  "displayName": "DeleteRatingResponse"
+                  "referenceType": "wix-ratings-backend.DeleteRatingResponse"
                 }
               ]
             }
@@ -201,8 +195,7 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.GetEntityRatingSummaryIdentifiers",
-              "displayName": "GetEntityRatingSummaryIdentifiers"
+              "referenceType": "wix-ratings-backend.GetEntityRatingSummaryIdentifiers"
             }
           ],
           "doc": "",
@@ -212,8 +205,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.GetEntityRatingSummaryOptions",
-              "displayName": "GetEntityRatingSummaryOptions"
+              "referenceType": "wix-ratings-backend.GetEntityRatingSummaryOptions"
             }
           ],
           "doc": "",
@@ -228,8 +220,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.GetEntityRatingSummaryResponse",
-                  "displayName": "GetEntityRatingSummaryResponse"
+                  "referenceType": "wix-ratings-backend.GetEntityRatingSummaryResponse"
                 }
               ]
             }
@@ -274,8 +265,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.GetNamespaceRatingSummaryOptions",
-              "displayName": "GetNamespaceRatingSummaryOptions"
+              "referenceType": "wix-ratings-backend.GetNamespaceRatingSummaryOptions"
             }
           ],
           "doc": "",
@@ -290,8 +280,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.GetNamespaceRatingSummaryResponse",
-                  "displayName": "GetNamespaceRatingSummaryResponse"
+                  "referenceType": "wix-ratings-backend.GetNamespaceRatingSummaryResponse"
                 }
               ]
             }
@@ -341,8 +330,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.GetRatingResponse",
-                  "displayName": "GetRatingResponse"
+                  "referenceType": "wix-ratings-backend.GetRatingResponse"
                 }
               ]
             }
@@ -377,8 +365,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.QueryRatingsOptions",
-              "displayName": "QueryRatingsOptions"
+              "referenceType": "wix-ratings-backend.QueryRatingsOptions"
             }
           ],
           "doc": "",
@@ -393,8 +380,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.QueryRatingsResponse",
-                  "displayName": "QueryRatingsResponse"
+                  "referenceType": "wix-ratings-backend.QueryRatingsResponse"
                 }
               ]
             }
@@ -455,8 +441,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ratings-backend.UpdateRatingValueOptions",
-              "displayName": "UpdateRatingValueOptions"
+              "referenceType": "wix-ratings-backend.UpdateRatingValueOptions"
             }
           ],
           "doc": "",
@@ -471,8 +456,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ratings-backend.UpdateRatingValueResponse",
-                  "displayName": "UpdateRatingValueResponse"
+                  "referenceType": "wix-ratings-backend.UpdateRatingValueResponse"
                 }
               ]
             }
@@ -567,8 +551,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.ValueBreakdown",
-                    "displayName": "ValueBreakdown"
+                    "referenceType": "wix-ratings-backend.ValueBreakdown"
                   }
                 ]
               }
@@ -678,8 +661,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.EntityAverage",
-                    "displayName": "EntityAverage"
+                    "referenceType": "wix-ratings-backend.EntityAverage"
                   }
                 ]
               }
@@ -721,8 +703,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.IdentificationData",
-              "displayName": "IdentificationData"
+              "referenceType": "wix-ratings-backend.IdentificationData"
             }
           ],
           "doc": ""
@@ -792,8 +773,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.IdentificationData",
-              "displayName": "IdentificationData"
+              "referenceType": "wix-ratings-backend.IdentificationData"
             }
           ],
           "doc": "Set rating's owner explicitly. Ignored when visitor/member calls API."
@@ -845,8 +825,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.Rating",
-              "displayName": "Rating"
+              "referenceType": "wix-ratings-backend.Rating"
             }
           ],
           "doc": "The created rating."
@@ -1066,8 +1045,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.ActionEvent",
-              "displayName": "ActionEvent"
+              "referenceType": "wix-ratings-backend.ActionEvent"
             }
           ],
           "doc": ""
@@ -1077,8 +1055,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.EntityCreatedEvent",
-              "displayName": "EntityCreatedEvent"
+              "referenceType": "wix-ratings-backend.EntityCreatedEvent"
             }
           ],
           "doc": ""
@@ -1088,8 +1065,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.EntityDeletedEvent",
-              "displayName": "EntityDeletedEvent"
+              "referenceType": "wix-ratings-backend.EntityDeletedEvent"
             }
           ],
           "doc": ""
@@ -1165,8 +1141,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.EntityUpdatedEvent",
-              "displayName": "EntityUpdatedEvent"
+              "referenceType": "wix-ratings-backend.EntityUpdatedEvent"
             }
           ],
           "doc": ""
@@ -1388,8 +1363,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.AttributeSummary",
-                    "displayName": "AttributeSummary"
+                    "referenceType": "wix-ratings-backend.AttributeSummary"
                   }
                 ]
               }
@@ -1499,8 +1473,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.AttributeSummary",
-                    "displayName": "AttributeSummary"
+                    "referenceType": "wix-ratings-backend.AttributeSummary"
                   }
                 ]
               }
@@ -1552,8 +1525,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.Rating",
-              "displayName": "Rating"
+              "referenceType": "wix-ratings-backend.Rating"
             }
           ],
           "doc": "The retrieved rating."
@@ -1650,8 +1622,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.InternalDocument",
-              "displayName": "InternalDocument"
+              "referenceType": "wix-ratings-backend.InternalDocument"
             }
           ],
           "doc": "partial document to apply"
@@ -1698,8 +1669,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.InternalDocument",
-                    "displayName": "InternalDocument"
+                    "referenceType": "wix-ratings-backend.InternalDocument"
                   }
                 ]
               }
@@ -1726,8 +1696,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.InternalDocument",
-                    "displayName": "InternalDocument"
+                    "referenceType": "wix-ratings-backend.InternalDocument"
                   }
                 ]
               }
@@ -1763,8 +1732,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.Cursors",
-              "displayName": "Cursors"
+              "referenceType": "wix-ratings-backend.Cursors"
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
@@ -1784,8 +1752,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-ratings-backend.QueryV2"
             }
           ],
           "doc": ""
@@ -1805,8 +1772,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.QueryV2",
-              "displayName": "QueryV2"
+              "referenceType": "wix-ratings-backend.QueryV2"
             }
           ],
           "doc": ""
@@ -1826,8 +1792,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.PagingMetadataV2",
-              "displayName": "PagingMetadataV2"
+              "referenceType": "wix-ratings-backend.PagingMetadataV2"
             }
           ],
           "doc": ""
@@ -1841,8 +1806,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.Rating",
-                    "displayName": "Rating"
+                    "referenceType": "wix-ratings-backend.Rating"
                   }
                 ]
               }
@@ -1865,8 +1829,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.CursorPaging",
-              "displayName": "CursorPaging"
+              "referenceType": "wix-ratings-backend.CursorPaging"
             }
           ],
           "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
@@ -1903,8 +1866,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.Sorting",
-                    "displayName": "Sorting"
+                    "referenceType": "wix-ratings-backend.Sorting"
                   }
                 ]
               }
@@ -2006,8 +1968,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.IdentificationData",
-              "displayName": "IdentificationData"
+              "referenceType": "wix-ratings-backend.IdentificationData"
             }
           ],
           "doc": "Rating's owner"
@@ -2158,8 +2119,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-backend.InternalDocument",
-                    "displayName": "InternalDocument"
+                    "referenceType": "wix-ratings-backend.InternalDocument"
                   }
                 ]
               }
@@ -2185,8 +2145,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.DeleteByFilterOperation",
-              "displayName": "DeleteByFilterOperation"
+              "referenceType": "wix-ratings-backend.DeleteByFilterOperation"
             }
           ],
           "doc": "delete documents matching filter"
@@ -2196,8 +2155,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.DeleteByIdsOperation",
-              "displayName": "DeleteByIdsOperation"
+              "referenceType": "wix-ratings-backend.DeleteByIdsOperation"
             }
           ],
           "doc": "delete by document ids"
@@ -2247,8 +2205,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.InternalDocumentUpdateOperation",
-              "displayName": "InternalDocumentUpdateOperation"
+              "referenceType": "wix-ratings-backend.InternalDocumentUpdateOperation"
             }
           ],
           "doc": "insert/update documents"
@@ -2258,8 +2215,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.InternalDocumentUpdateByFilterOperation",
-              "displayName": "InternalDocumentUpdateByFilterOperation"
+              "referenceType": "wix-ratings-backend.InternalDocumentUpdateByFilterOperation"
             }
           ],
           "doc": "update internal documents matching filter"
@@ -2269,8 +2225,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.InternalUpdateExistingOperation",
-              "displayName": "InternalUpdateExistingOperation"
+              "referenceType": "wix-ratings-backend.InternalUpdateExistingOperation"
             }
           ],
           "doc": "update only existing documents"
@@ -2358,8 +2313,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-backend.Rating",
-              "displayName": "Rating"
+              "referenceType": "wix-ratings-backend.Rating"
             }
           ],
           "doc": "The updated rating."
