@@ -23,7 +23,8 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.CalculateTotalsOptions"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.CalculateTotalsOptions",
+              "displayName": "CalculateTotalsOptions"
             }
           ],
           "doc": "",
@@ -47,7 +48,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.TotalsCalculator.CalculateTotalsResponse"
+                  "referenceType": "wix-ecom-backend.TotalsCalculator.CalculateTotalsResponse",
+                  "displayName": "CalculateTotalsResponse"
                 }
               ]
             }
@@ -164,7 +166,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.StreetAddress"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.StreetAddress",
+              "displayName": "StreetAddress"
             }
           ],
           "doc": "Street address object, with number, name, and apartment number in separate fields."
@@ -264,7 +267,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Coupon"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Coupon",
+              "displayName": "Coupon"
             }
           ],
           "doc": "Coupon details."
@@ -274,7 +278,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.DiscountRule"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.DiscountRule",
+              "displayName": "DiscountRule"
             }
           ],
           "doc": "Discount rule"
@@ -311,7 +316,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MerchantDiscount"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MerchantDiscount",
+              "displayName": "MerchantDiscount"
             }
           ],
           "doc": "Merchant discount."
@@ -331,7 +337,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ApplicationError"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ApplicationError",
+              "displayName": "ApplicationError"
             }
           ],
           "doc": "invalid request (i.e. address), timeout, internal error, license error, and others will be encoded here"
@@ -361,7 +368,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Address"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Address",
+              "displayName": "Address"
             }
           ],
           "doc": "Billing address. Used for calculating tax if product is not shippable."
@@ -452,7 +460,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.LineItem"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.LineItem",
+                    "displayName": "LineItem"
                   }
                 ]
               }
@@ -481,7 +490,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.MerchantDiscountInput"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.MerchantDiscountInput",
+                    "displayName": "MerchantDiscountInput"
                   }
                 ]
               }
@@ -493,7 +503,8 @@
           "name": "selectedMemberships",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedMemberships"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedMemberships",
+              "displayName": "SelectedMemberships"
             }
           ],
           "doc": "The selected memberships and which line items they apply to\nWhen not provided, default selection will be returned\nYou can also set it to empty selection"
@@ -502,7 +513,8 @@
           "name": "selectedShippingOption",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedShippingOption"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedShippingOption",
+              "displayName": "SelectedShippingOption"
             }
           ],
           "doc": "Details about selected shipping option."
@@ -512,7 +524,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Address"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Address",
+              "displayName": "Address"
             }
           ],
           "doc": "Shipping address for tax and shipping calculation (if applicable)."
@@ -532,7 +545,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Address"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Address",
+              "displayName": "Address"
             }
           ],
           "doc": "Billing address. Used for calculating tax if product is not shippable."
@@ -623,7 +637,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.LineItem"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.LineItem",
+                    "displayName": "LineItem"
                   }
                 ]
               }
@@ -652,7 +667,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.MerchantDiscountInput"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.MerchantDiscountInput",
+                    "displayName": "MerchantDiscountInput"
                   }
                 ]
               }
@@ -664,7 +680,8 @@
           "name": "selectedMemberships",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedMemberships"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedMemberships",
+              "displayName": "SelectedMemberships"
             }
           ],
           "doc": "The selected memberships and which line items they apply to\nWhen not provided, default selection will be returned\nYou can also set it to empty selection"
@@ -673,7 +690,8 @@
           "name": "selectedShippingOption",
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedShippingOption"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedShippingOption",
+              "displayName": "SelectedShippingOption"
             }
           ],
           "doc": "Details about selected shipping option."
@@ -683,7 +701,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Address"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Address",
+              "displayName": "Address"
             }
           ],
           "doc": "Shipping address for tax and shipping calculation (if applicable)."
@@ -707,7 +726,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.AppliedDiscount"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.AppliedDiscount",
+                    "displayName": "AppliedDiscount"
                   }
                 ]
               }
@@ -724,7 +744,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.CalculatedLineItem"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.CalculatedLineItem",
+                    "displayName": "CalculatedLineItem"
                   }
                 ]
               }
@@ -737,7 +758,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.CalculationErrors"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.CalculationErrors",
+              "displayName": "CalculationErrors"
             }
           ],
           "doc": "Calculation errors."
@@ -768,7 +790,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.GiftCard"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.GiftCard",
+              "displayName": "GiftCard"
             }
           ],
           "doc": "Details of applied gift card."
@@ -778,7 +801,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MembershipOptions"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MembershipOptions",
+              "displayName": "MembershipOptions"
             }
           ],
           "doc": "Information about valid and invalid memberships, and which ones are selected for usage"
@@ -789,7 +813,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.PriceSummary"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Remaining amount so that the order will be fully payed"
@@ -800,7 +825,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.PriceSummary"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Minimal amount to pay in order to place the order"
@@ -810,7 +836,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.PriceSummary"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.PriceSummary",
+              "displayName": "PriceSummary"
             }
           ],
           "doc": "Price summary."
@@ -820,7 +847,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ShippingInformation"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ShippingInformation",
+              "displayName": "ShippingInformation"
             }
           ],
           "doc": "Shipping information."
@@ -840,7 +868,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.TaxSummary"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.TaxSummary",
+              "displayName": "TaxSummary"
             }
           ],
           "doc": "Tax summary."
@@ -890,7 +919,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.LineItemPricesData"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.LineItemPricesData",
+              "displayName": "LineItemPricesData"
             }
           ],
           "doc": "Price breakdown for this line item."
@@ -910,7 +940,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.CarrierErrors"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.CarrierErrors",
+              "displayName": "CarrierErrors"
             }
           ],
           "doc": "Carrier errors."
@@ -920,7 +951,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Details"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Coupon calculation error."
@@ -930,7 +962,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Details"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "General shipping calculation error."
@@ -940,7 +973,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Details"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Gift card calculation error."
@@ -950,7 +984,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Details"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Membership payment methods calculation errors\nFor example, will indicate that a line item that must be paid with membership payment doesn't have one or selected memberships are invalid"
@@ -964,7 +999,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.ApplicationError"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.ApplicationError",
+                    "displayName": "ApplicationError"
                   }
                 ]
               }
@@ -977,7 +1013,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Details"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Tax calculation error."
@@ -1007,7 +1044,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Details"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Details",
+              "displayName": "Details"
             }
           ],
           "doc": "Error details."
@@ -1031,7 +1069,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.CarrierError"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.CarrierError",
+                    "displayName": "CarrierError"
                   }
                 ]
               }
@@ -1068,7 +1107,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.ShippingOption"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.ShippingOption",
+                    "displayName": "ShippingOption"
                   }
                 ]
               }
@@ -1154,7 +1194,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Coupon value."
@@ -1220,7 +1261,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.PickupDetails"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.PickupDetails",
+              "displayName": "PickupDetails"
             }
           ],
           "doc": "Pickup details."
@@ -1240,7 +1282,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ApplicationError"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ApplicationError",
+              "displayName": "ApplicationError"
             }
           ],
           "doc": ""
@@ -1270,7 +1313,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ValidationError"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ValidationError",
+              "displayName": "ValidationError"
             }
           ],
           "doc": ""
@@ -1300,7 +1344,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Discount value."
@@ -1310,7 +1355,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.DiscountRuleName"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.DiscountRuleName",
+              "displayName": "DiscountRuleName"
             }
           ],
           "doc": "Discount rule name"
@@ -1449,7 +1495,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Gift card value."
@@ -1522,7 +1569,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Membership"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Membership",
+              "displayName": "Membership"
             }
           ],
           "doc": "The membership"
@@ -1557,7 +1605,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.TaxRateBreakdown"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.TaxRateBreakdown",
+                    "displayName": "TaxRateBreakdown"
                   }
                 ]
               }
@@ -1580,7 +1629,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Amount for which tax is calculated."
@@ -1590,7 +1640,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Calculated tax, based on `taxable_amount` and `tax_rate`."
@@ -1620,7 +1671,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.CatalogReference"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.CatalogReference",
+              "displayName": "CatalogReference"
             }
           ],
           "doc": "Optional references to the line item's origin catalog.\nSee [Catalog SPI](https://bo.wix.com/wix-docs/rest/ecommerce/catalog-spi/introduction) for more details.\nThis field is empty in the case of a custom line item.\ncurrently we only use the catalog app id to set tax=0 for specific apps."
@@ -1653,7 +1705,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.PhysicalProperties"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.PhysicalProperties",
+              "displayName": "PhysicalProperties"
             }
           ],
           "doc": "Physical properties (if applicable)."
@@ -1712,7 +1765,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ServiceProperties"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ServiceProperties",
+              "displayName": "ServiceProperties"
             }
           ],
           "doc": "Service properties. When relevant, this contains information such as date and number of participants."
@@ -1722,7 +1776,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.SubscriptionSettings"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.SubscriptionSettings",
+              "displayName": "SubscriptionSettings"
             }
           ],
           "doc": "Subscription settings."
@@ -1742,7 +1797,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Catalog price after catalog discount."
@@ -1752,7 +1808,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ItemTaxFullDetails"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ItemTaxFullDetails",
+              "displayName": "ItemTaxFullDetails"
             }
           ],
           "doc": "Tax details."
@@ -1762,7 +1819,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total discount for all line items."
@@ -1772,7 +1830,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total price after discounts and after tax."
@@ -1782,7 +1841,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total price after discounts, before tax."
@@ -1845,7 +1905,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MembershipPaymentCredits"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MembershipPaymentCredits",
+              "displayName": "MembershipPaymentCredits"
             }
           ],
           "doc": "Optional - For a membership that has limited credits, information about credit usage"
@@ -1882,7 +1943,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MembershipName"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MembershipName",
+              "displayName": "MembershipName"
             }
           ],
           "doc": "The name of this membership"
@@ -1939,7 +2001,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.Membership"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.Membership",
+                    "displayName": "Membership"
                   }
                 ]
               }
@@ -1956,7 +2019,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.InvalidMembership"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.InvalidMembership",
+                    "displayName": "InvalidMembership"
                   }
                 ]
               }
@@ -1973,7 +2037,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedMembership"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedMembership",
+                    "displayName": "SelectedMembership"
                   }
                 ]
               }
@@ -2026,7 +2091,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Discount value."
@@ -2136,7 +2202,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Price of added cost."
@@ -2212,7 +2279,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Address"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Address",
+              "displayName": "Address"
             }
           ],
           "doc": "Pickup address."
@@ -2252,7 +2320,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total calculated discount value."
@@ -2262,7 +2331,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total shipping price, before discounts and before tax."
@@ -2272,7 +2342,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Subtotal of all line items, before discounts and before tax."
@@ -2282,7 +2353,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total tax."
@@ -2292,7 +2364,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total price after discounts, gift cards, and tax."
@@ -2312,7 +2385,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.Group"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.Group",
+              "displayName": "Group"
             }
           ],
           "doc": "Coupon scope's applied group (e.g., event or ticket in Wix Events)"
@@ -2366,7 +2440,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedCarrierServiceOptionPrices"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedCarrierServiceOptionPrices",
+              "displayName": "SelectedCarrierServiceOptionPrices"
             }
           ],
           "doc": "Shipping costs."
@@ -2377,7 +2452,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.DeliveryLogistics"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.DeliveryLogistics",
+              "displayName": "DeliveryLogistics"
             }
           ],
           "doc": "Delivery logistics."
@@ -2391,7 +2467,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedCarrierServiceOptionOtherCharge"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedCarrierServiceOptionOtherCharge",
+                    "displayName": "SelectedCarrierServiceOptionOtherCharge"
                   }
                 ]
               }
@@ -2436,7 +2513,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedCarrierServiceOptionPrices"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedCarrierServiceOptionPrices",
+              "displayName": "SelectedCarrierServiceOptionPrices"
             }
           ],
           "doc": "Price of added charge."
@@ -2479,7 +2557,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Shipping price before discount and before tax."
@@ -2489,7 +2568,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ItemTaxFullDetails"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ItemTaxFullDetails",
+              "displayName": "ItemTaxFullDetails"
             }
           ],
           "doc": "Tax details."
@@ -2499,7 +2579,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Shipping discount before tax."
@@ -2509,7 +2590,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Total shipping price, after discount and after tax."
@@ -2519,7 +2601,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Totals shipping price after discount and before tax."
@@ -2590,7 +2673,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedMembership"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedMembership",
+                    "displayName": "SelectedMembership"
                   }
                 ]
               }
@@ -2683,7 +2767,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.CarrierServiceOption"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.CarrierServiceOption",
+                    "displayName": "CarrierServiceOption"
                   }
                 ]
               }
@@ -2696,7 +2781,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ShippingRegion"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ShippingRegion",
+              "displayName": "ShippingRegion"
             }
           ],
           "doc": "Shipping region."
@@ -2706,7 +2792,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedCarrierServiceOption"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.SelectedCarrierServiceOption",
+              "displayName": "SelectedCarrierServiceOption"
             }
           ],
           "doc": "Selected shipping option."
@@ -2736,7 +2823,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.ShippingPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.ShippingPrice",
+              "displayName": "ShippingPrice"
             }
           ],
           "doc": "Sipping price information."
@@ -2746,7 +2834,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.DeliveryLogistics"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.DeliveryLogistics",
+              "displayName": "DeliveryLogistics"
             }
           ],
           "doc": "Delivery logistics."
@@ -2780,7 +2869,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.OtherCharge"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.OtherCharge",
+                    "displayName": "OtherCharge"
                   }
                 ]
               }
@@ -2793,7 +2883,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Shipping price."
@@ -2894,7 +2985,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.AutoTaxFallbackCalculationDetails"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.AutoTaxFallbackCalculationDetails",
+              "displayName": "AutoTaxFallbackCalculationDetails"
             }
           ],
           "doc": "details of the fallback rate calculation"
@@ -2954,7 +3046,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Amount of tax for this tax detail."
@@ -2974,7 +3067,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.TaxCalculationDetails"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.TaxCalculationDetails",
+              "displayName": "TaxCalculationDetails"
             }
           ],
           "doc": "Tax calculator that was active when the order was created."
@@ -2985,7 +3079,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Amount for which tax is calculated, added from line items."
@@ -2996,7 +3091,8 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice"
+              "referenceType": "wix-ecom-backend.TotalsCalculator.MultiCurrencyPrice",
+              "displayName": "MultiCurrencyPrice"
             }
           ],
           "doc": "Calculated tax, added from line items."
@@ -3029,7 +3125,8 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ecom-backend.TotalsCalculator.FieldViolation"
+                    "referenceType": "wix-ecom-backend.TotalsCalculator.FieldViolation",
+                    "displayName": "FieldViolation"
                   }
                 ]
               }
