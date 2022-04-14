@@ -23,8 +23,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-core-services-dev.Echo.PublicLongEchoOptions",
-              "displayName": "PublicLongEchoOptions"
+              "referenceType": "wix-core-services-dev.Echo.PublicLongEchoOptions"
             }
           ],
           "doc": "",
@@ -39,8 +38,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-core-services-dev.Echo.LongMessage",
-                  "displayName": "LongMessage"
+                  "referenceType": "wix-core-services-dev.Echo.LongMessage"
                 }
               ]
             }
