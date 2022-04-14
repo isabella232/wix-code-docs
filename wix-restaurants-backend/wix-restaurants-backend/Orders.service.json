@@ -33,8 +33,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.AcceptOrderOptions",
-              "displayName": "AcceptOrderOptions"
+              "referenceType": "wix-restaurants-backend.Orders.AcceptOrderOptions"
             }
           ],
           "doc": "",
@@ -51,8 +50,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.AcceptOrderResponse",
-                  "displayName": "AcceptOrderResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.AcceptOrderResponse"
                 }
               ]
             }
@@ -98,8 +96,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.CancelOrderOptions",
-              "displayName": "CancelOrderOptions"
+              "referenceType": "wix-restaurants-backend.Orders.CancelOrderOptions"
             }
           ],
           "doc": "",
@@ -116,8 +113,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.CancelOrderResponse",
-                  "displayName": "CancelOrderResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.CancelOrderResponse"
                 }
               ]
             }
@@ -169,8 +165,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.FulfillOrderResponse",
-                  "displayName": "FulfillOrderResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.FulfillOrderResponse"
                 }
               ]
             }
@@ -215,8 +210,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.GetOrderOptions",
-              "displayName": "GetOrderOptions"
+              "referenceType": "wix-restaurants-backend.Orders.GetOrderOptions"
             }
           ],
           "doc": "",
@@ -233,8 +227,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.GetOrderResponse",
-                  "displayName": "GetOrderResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.GetOrderResponse"
                 }
               ]
             }
@@ -289,8 +282,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.GetOrderByMsidOptions",
-              "displayName": "GetOrderByMsidOptions"
+              "referenceType": "wix-restaurants-backend.Orders.GetOrderByMsidOptions"
             }
           ],
           "doc": "",
@@ -308,8 +300,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.GetOrderByMsidResponse",
-                  "displayName": "GetOrderByMsidResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.GetOrderByMsidResponse"
                 }
               ]
             }
@@ -344,8 +335,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.GetTotalActiveOrdersOptions",
-              "displayName": "GetTotalActiveOrdersOptions"
+              "referenceType": "wix-restaurants-backend.Orders.GetTotalActiveOrdersOptions"
             }
           ],
           "doc": "",
@@ -360,8 +350,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.GetTotalActiveOrdersResponse",
-                  "displayName": "GetTotalActiveOrdersResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.GetTotalActiveOrdersResponse"
                 }
               ]
             }
@@ -396,8 +385,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.ListOrdersOptions",
-              "displayName": "ListOrdersOptions"
+              "referenceType": "wix-restaurants-backend.Orders.ListOrdersOptions"
             }
           ],
           "doc": "",
@@ -412,8 +400,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.ListOrdersResponse",
-                  "displayName": "ListOrdersResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.ListOrdersResponse"
                 }
               ]
             }
@@ -448,8 +435,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.ListOrdersByMsidOptions",
-              "displayName": "ListOrdersByMsidOptions"
+              "referenceType": "wix-restaurants-backend.Orders.ListOrdersByMsidOptions"
             }
           ],
           "doc": "",
@@ -466,8 +452,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.ListOrdersByMsidResponse",
-                  "displayName": "ListOrdersByMsidResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.ListOrdersByMsidResponse"
                 }
               ]
             }
@@ -512,8 +497,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.NotifyOrderEventOptions",
-              "displayName": "NotifyOrderEventOptions"
+              "referenceType": "wix-restaurants-backend.Orders.NotifyOrderEventOptions"
             }
           ],
           "doc": "",
@@ -530,8 +514,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-restaurants-backend.Orders.NotifyOrderEventResponse",
-                  "displayName": "NotifyOrderEventResponse"
+                  "referenceType": "wix-restaurants-backend.Orders.NotifyOrderEventResponse"
                 }
               ]
             }
@@ -624,8 +607,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "Accepted order."
@@ -735,8 +717,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "Canceled order."
@@ -1182,8 +1163,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.DeliveryAddressLocation",
-              "displayName": "DeliveryAddressLocation"
+              "referenceType": "wix-restaurants-backend.Orders.DeliveryAddressLocation"
             }
           ],
           "doc": "Geo coordinates of the address."
@@ -1301,8 +1281,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.DeliveryAddress",
-              "displayName": "DeliveryAddress"
+              "referenceType": "wix-restaurants-backend.Orders.DeliveryAddress"
             }
           ],
           "doc": "Delivery address."
@@ -1312,8 +1291,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.ExternalProvider",
-              "displayName": "ExternalProvider"
+              "referenceType": "wix-restaurants-backend.Orders.ExternalProvider"
             }
           ],
           "doc": "Delivery through an external provider."
@@ -1323,8 +1301,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.PickupInfo",
-              "displayName": "PickupInfo"
+              "referenceType": "wix-restaurants-backend.Orders.PickupInfo"
             }
           ],
           "doc": "Information about the delivery pickup."
@@ -1334,8 +1311,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Restaurant",
-              "displayName": "Restaurant"
+              "referenceType": "wix-restaurants-backend.Orders.Restaurant"
             }
           ],
           "doc": "Delivery through the restaurant."
@@ -1591,8 +1567,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "Fulfilled order."
@@ -1625,8 +1600,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.DeliveryDetails",
-              "displayName": "DeliveryDetails"
+              "referenceType": "wix-restaurants-backend.Orders.DeliveryDetails"
             }
           ],
           "doc": "Delivery details."
@@ -1636,8 +1610,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.DineInDetails",
-              "displayName": "DineInDetails"
+              "referenceType": "wix-restaurants-backend.Orders.DineInDetails"
             }
           ],
           "doc": "Dine-in details"
@@ -1647,8 +1620,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.PickupDetails",
-              "displayName": "PickupDetails"
+              "referenceType": "wix-restaurants-backend.Orders.PickupDetails"
             }
           ],
           "doc": "Pickup details."
@@ -1760,8 +1732,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "Order data."
@@ -1844,8 +1815,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "Retrieved order."
@@ -1993,8 +1963,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.LocationToAmount",
-                    "displayName": "LocationToAmount"
+                    "referenceType": "wix-restaurants-backend.Orders.LocationToAmount"
                   }
                 ]
               }
@@ -2017,8 +1986,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.CatalogReference",
-              "displayName": "CatalogReference"
+              "referenceType": "wix-restaurants-backend.Orders.CatalogReference"
             }
           ],
           "doc": "References to the line item’s origin catalog."
@@ -2045,8 +2013,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.LineItemOption",
-                    "displayName": "LineItemOption"
+                    "referenceType": "wix-restaurants-backend.Orders.LineItemOption"
                   }
                 ]
               }
@@ -2093,8 +2060,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.LineItemOptionItem",
-                    "displayName": "LineItemOptionItem"
+                    "referenceType": "wix-restaurants-backend.Orders.LineItemOptionItem"
                   }
                 ]
               }
@@ -2170,8 +2136,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.LineItem",
-                    "displayName": "LineItem"
+                    "referenceType": "wix-restaurants-backend.Orders.LineItem"
                   }
                 ]
               }
@@ -2305,8 +2270,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Sort",
-              "displayName": "Sort"
+              "referenceType": "wix-restaurants-backend.Orders.Sort"
             }
           ],
           "doc": "Sorting of Orders in response. Default \"CREATED_DATE:ASC\""
@@ -2401,8 +2365,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Sort",
-              "displayName": "Sort"
+              "referenceType": "wix-restaurants-backend.Orders.Sort"
             }
           ],
           "doc": "Sorting of Orders in response. Default \"CREATED_DATE:ASC\""
@@ -2436,8 +2399,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.Order",
-                    "displayName": "Order"
+                    "referenceType": "wix-restaurants-backend.Orders.Order"
                   }
                 ]
               }
@@ -2533,8 +2495,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Sort",
-              "displayName": "Sort"
+              "referenceType": "wix-restaurants-backend.Orders.Sort"
             }
           ],
           "doc": "Sorting options."
@@ -2637,8 +2598,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Sort",
-              "displayName": "Sort"
+              "referenceType": "wix-restaurants-backend.Orders.Sort"
             }
           ],
           "doc": "Sorting options."
@@ -2672,8 +2632,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.Order",
-                    "displayName": "Order"
+                    "referenceType": "wix-restaurants-backend.Orders.Order"
                   }
                 ]
               }
@@ -2813,8 +2772,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "New order."
@@ -2950,8 +2908,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.Activity",
-                    "displayName": "Activity"
+                    "referenceType": "wix-restaurants-backend.Orders.Activity"
                   }
                 ]
               }
@@ -2964,8 +2921,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.ChannelInfo",
-              "displayName": "ChannelInfo"
+              "referenceType": "wix-restaurants-backend.Orders.ChannelInfo"
             }
           ],
           "doc": "Information about the sales channel that submitted the order."
@@ -2988,8 +2944,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Coupon",
-              "displayName": "Coupon"
+              "referenceType": "wix-restaurants-backend.Orders.Coupon"
             }
           ],
           "doc": "Coupon applied to the order."
@@ -3012,8 +2967,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Customer",
-              "displayName": "Customer"
+              "referenceType": "wix-restaurants-backend.Orders.Customer"
             }
           ],
           "doc": "Customer information."
@@ -3027,8 +2981,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.Discount",
-                    "displayName": "Discount"
+                    "referenceType": "wix-restaurants-backend.Orders.Discount"
                   }
                 ]
               }
@@ -3041,8 +2994,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Fulfillment",
-              "displayName": "Fulfillment"
+              "referenceType": "wix-restaurants-backend.Orders.Fulfillment"
             }
           ],
           "doc": "Order fulfillment information."
@@ -3056,8 +3008,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.LineItem",
-                    "displayName": "LineItem"
+                    "referenceType": "wix-restaurants-backend.Orders.LineItem"
                   }
                 ]
               }
@@ -3084,8 +3035,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.LoyaltyInfo",
-              "displayName": "LoyaltyInfo"
+              "referenceType": "wix-restaurants-backend.Orders.LoyaltyInfo"
             }
           ],
           "doc": "Information about the order’s loyalty points."
@@ -3099,8 +3049,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.Payment",
-                    "displayName": "Payment"
+                    "referenceType": "wix-restaurants-backend.Orders.Payment"
                   }
                 ]
               }
@@ -3123,8 +3072,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Totals",
-              "displayName": "Totals"
+              "referenceType": "wix-restaurants-backend.Orders.Totals"
             }
           ],
           "doc": "Order totals."
@@ -3144,8 +3092,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "Accepted order."
@@ -3165,8 +3112,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "Canceled order."
@@ -3186,8 +3132,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Order",
-              "displayName": "Order"
+              "referenceType": "wix-restaurants-backend.Orders.Order"
             }
           ],
           "doc": "Fulfilled order."
@@ -3220,8 +3165,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Cursors",
-              "displayName": "Cursors"
+              "referenceType": "wix-restaurants-backend.Orders.Cursors"
             }
           ],
           "doc": "Cursors to navigate through the result pages using `next` and `prev`. Returned if cursor paging is used."
@@ -3339,8 +3283,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.Curbside",
-              "displayName": "Curbside"
+              "referenceType": "wix-restaurants-backend.Orders.Curbside"
             }
           ],
           "doc": "Curbside pickup method"
@@ -3403,8 +3346,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.PosInfoExternalProvider",
-              "displayName": "PosInfoExternalProvider"
+              "referenceType": "wix-restaurants-backend.Orders.PosInfoExternalProvider"
             }
           ],
           "doc": ""
@@ -3438,8 +3380,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-restaurants-backend.Orders.Error",
-                    "displayName": "Error"
+                    "referenceType": "wix-restaurants-backend.Orders.Error"
                   }
                 ]
               }
