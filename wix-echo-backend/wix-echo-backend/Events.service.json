@@ -16,7 +16,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-echo-backend.Events.@wix/velo-events-EchoDispatched",
+              "referenceType": "wix-echo-backend.Events.wixVeloEventsEchoDispatched",
               "displayName": "EchoDispatched"
             }
           ],
@@ -55,7 +55,35 @@
   ],
   "messages": [
     {
-      "name": "@wix/velo-events-BackendEventMetadata",
+      "name": "EchoMessage",
+      "members": [
+        {
+          "name": "id",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "veloMessage",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "wixVeloEventsBackendEventMetadata",
       "members": [
         {
           "name": "entityId",
@@ -101,14 +129,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-Dispatched",
+      "name": "wixVeloEventsDispatched",
       "members": [
         {
           "name": "echo",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-echo-backend.Events.@wix/velo-events-EchoMessage",
+              "referenceType": "wix-echo-backend.Events.wixVeloEventsEchoMessage",
               "displayName": "EchoMessage"
             }
           ],
@@ -122,13 +150,13 @@
       }
     },
     {
-      "name": "@wix/velo-events-EchoDispatched",
+      "name": "wixVeloEventsEchoDispatched",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-echo-backend.Events.@wix/velo-events-Dispatched",
+              "referenceType": "wix-echo-backend.Events.wixVeloEventsDispatched",
               "displayName": "Dispatched"
             }
           ],
@@ -138,7 +166,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-echo-backend.Events.@wix/velo-events-BackendEventMetadata",
+              "referenceType": "wix-echo-backend.Events.wixVeloEventsBackendEventMetadata",
               "displayName": "BackendEventMetadata"
             }
           ],
@@ -152,7 +180,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-EchoRequest",
+      "name": "wixVeloEventsEchoRequest",
       "members": [
         {
           "name": "arg1",
@@ -212,14 +240,14 @@
       }
     },
     {
-      "name": "@wix/velo-events-EchoResponse",
+      "name": "wixVeloEventsEchoResponse",
       "members": [
         {
           "name": "echoMessage",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-echo-backend.Events.@wix/velo-events-EchoMessage",
+              "referenceType": "wix-echo-backend.Events.wixVeloEventsEchoMessage",
               "displayName": "EchoMessage"
             }
           ],
@@ -243,7 +271,7 @@
       }
     },
     {
-      "name": "@wix/velo-events-MessageItem",
+      "name": "wixVeloEventsMessageItem",
       "members": [
         {
           "name": "innerMessage",
@@ -254,34 +282,6 @@
             }
           ],
           "doc": "inner_message comment from EchoMessage proto def"
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "EchoMessage",
-      "members": [
-        {
-          "name": "id",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "veloMessage",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": ""
         }
       ],
       "docs": {
