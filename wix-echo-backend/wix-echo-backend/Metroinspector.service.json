@@ -131,6 +131,7 @@
     },
     {
       "name": "EchoOptions",
+      "oneOf": true,
       "members": [
         {
           "name": "arg2",
