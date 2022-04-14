@@ -16,8 +16,7 @@
             "nativeType": "Array",
             "typeParams": [
               {
-                "referenceType": "wix-metro-backend.Products.Product",
-                "displayName": "Product"
+                "referenceType": "wix-metro-backend.Products.Product"
               }
             ]
           }
@@ -152,8 +151,7 @@
       "name": "query",
       "type": [
         {
-          "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
-          "displayName": "ProductsQueryBuilder"
+          "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
         }
       ],
       "docs": {
