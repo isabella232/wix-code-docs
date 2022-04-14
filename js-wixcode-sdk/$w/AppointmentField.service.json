@@ -8,7 +8,7 @@
       "$w.ClickableMixin",
       "$w.RequiredMixin" ],
   "labels":
-    [ "changed" ],
+    [ "new" ],
   "location":
     { "lineno": 1,
       "filename": "AppointmentField.js" },
@@ -560,8 +560,7 @@
               "doc": "End date of the currently displayed month." } ],
         "extra":
           {  },
-        "labels":
-          [ "changed" ] },
+        "labels": [] },
       { "name": "dateTimeRange",
         "locations":
           [ { "lineno": 272,
