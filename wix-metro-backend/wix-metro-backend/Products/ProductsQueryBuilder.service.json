@@ -34,8 +34,7 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
-            "displayName": "ProductsQueryBuilder"
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
           }
         ],
         "doc": null
@@ -108,8 +107,7 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
-            "displayName": "ProductsQueryBuilder"
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
           }
         ],
         "doc": null
@@ -185,8 +183,7 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
-            "displayName": "ProductsQueryBuilder"
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
           }
         ],
         "doc": null
@@ -242,8 +239,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-metro-backend.Products.ProductsQueryResult",
-                  "displayName": "ProductsQueryResult"
+                  "referenceType": "wix-metro-backend.Products.ProductsQueryResult"
                 }
               ]
             }
@@ -304,8 +300,7 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
-            "displayName": "ProductsQueryBuilder"
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
           }
         ],
         "doc": null
@@ -378,8 +373,7 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
-            "displayName": "ProductsQueryBuilder"
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
           }
         ],
         "doc": null
@@ -452,8 +446,7 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
-            "displayName": "ProductsQueryBuilder"
+            "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
           }
         ],
         "doc": null

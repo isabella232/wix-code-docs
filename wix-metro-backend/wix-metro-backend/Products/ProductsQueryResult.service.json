@@ -16,8 +16,7 @@
             "nativeType": "Array",
             "typeParams": [
               {
-                "referenceType": "wix-metro-backend.Products.Product",
-                "displayName": "Product"
+                "referenceType": "wix-metro-backend.Products.Product"
               }
             ]
           }
@@ -152,8 +151,7 @@
       "name": "query",
       "type": [
         {
-          "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder",
-          "displayName": "ProductsQueryBuilder"
+          "referenceType": "wix-metro-backend.Products.ProductsQueryBuilder"
         }
       ],
       "docs": {
@@ -302,8 +300,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-metro-backend.Products.ProductsQueryResult",
-                  "displayName": "ProductsQueryResult"
+                  "referenceType": "wix-metro-backend.Products.ProductsQueryResult"
                 }
               ]
             }
@@ -367,8 +364,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-metro-backend.Products.ProductsQueryResult",
-                  "displayName": "ProductsQueryResult"
+                  "referenceType": "wix-metro-backend.Products.ProductsQueryResult"
                 }
               ]
             }
