@@ -15,8 +15,7 @@
           "name": "gallery",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Gallery",
-              "displayName": "Gallery"
+              "referenceType": "wix-pro-gallery-backend.Gallery"
             }
           ],
           "doc": "",
@@ -26,8 +25,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.CreateGalleryOptions",
-              "displayName": "CreateGalleryOptions"
+              "referenceType": "wix-pro-gallery-backend.CreateGalleryOptions"
             }
           ],
           "doc": "",
@@ -42,8 +40,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.CreateGalleryResponse",
-                  "displayName": "CreateGalleryResponse"
+                  "referenceType": "wix-pro-gallery-backend.CreateGalleryResponse"
                 }
               ]
             }
@@ -88,8 +85,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.CreateGalleryItemOptions",
-              "displayName": "CreateGalleryItemOptions"
+              "referenceType": "wix-pro-gallery-backend.CreateGalleryItemOptions"
             }
           ],
           "doc": "",
@@ -104,8 +100,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.CreateGalleryItemResponse",
-                  "displayName": "CreateGalleryItemResponse"
+                  "referenceType": "wix-pro-gallery-backend.CreateGalleryItemResponse"
                 }
               ]
             }
@@ -150,8 +145,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DeleteGalleryOptions",
-              "displayName": "DeleteGalleryOptions"
+              "referenceType": "wix-pro-gallery-backend.DeleteGalleryOptions"
             }
           ],
           "doc": "",
@@ -166,8 +160,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.DeleteGalleryResponse",
-                  "displayName": "DeleteGalleryResponse"
+                  "referenceType": "wix-pro-gallery-backend.DeleteGalleryResponse"
                 }
               ]
             }
@@ -202,8 +195,7 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemIdentifiers",
-              "displayName": "DeleteGalleryItemIdentifiers"
+              "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemIdentifiers"
             }
           ],
           "doc": "",
@@ -213,8 +205,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemOptions",
-              "displayName": "DeleteGalleryItemOptions"
+              "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemOptions"
             }
           ],
           "doc": "",
@@ -229,8 +220,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemResponse",
-                  "displayName": "DeleteGalleryItemResponse"
+                  "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemResponse"
                 }
               ]
             }
@@ -275,8 +265,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemsOptions",
-              "displayName": "DeleteGalleryItemsOptions"
+              "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemsOptions"
             }
           ],
           "doc": "",
@@ -291,8 +280,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemsResponse",
-                  "displayName": "DeleteGalleryItemsResponse"
+                  "referenceType": "wix-pro-gallery-backend.DeleteGalleryItemsResponse"
                 }
               ]
             }
@@ -337,8 +325,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.GetGalleryOptions",
-              "displayName": "GetGalleryOptions"
+              "referenceType": "wix-pro-gallery-backend.GetGalleryOptions"
             }
           ],
           "doc": "",
@@ -353,8 +340,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.GetGalleryResponse",
-                  "displayName": "GetGalleryResponse"
+                  "referenceType": "wix-pro-gallery-backend.GetGalleryResponse"
                 }
               ]
             }
@@ -389,8 +375,7 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.GetGalleryItemIdentifiers",
-              "displayName": "GetGalleryItemIdentifiers"
+              "referenceType": "wix-pro-gallery-backend.GetGalleryItemIdentifiers"
             }
           ],
           "doc": "",
@@ -400,8 +385,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.GetGalleryItemOptions",
-              "displayName": "GetGalleryItemOptions"
+              "referenceType": "wix-pro-gallery-backend.GetGalleryItemOptions"
             }
           ],
           "doc": "",
@@ -416,8 +400,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.GetGalleryItemResponse",
-                  "displayName": "GetGalleryItemResponse"
+                  "referenceType": "wix-pro-gallery-backend.GetGalleryItemResponse"
                 }
               ]
             }
@@ -452,8 +435,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.ListGalleriesOptions",
-              "displayName": "ListGalleriesOptions"
+              "referenceType": "wix-pro-gallery-backend.ListGalleriesOptions"
             }
           ],
           "doc": "",
@@ -468,8 +450,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.ListGalleriesResponse",
-                  "displayName": "ListGalleriesResponse"
+                  "referenceType": "wix-pro-gallery-backend.ListGalleriesResponse"
                 }
               ]
             }
@@ -514,8 +495,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.ListGalleryItemsOptions",
-              "displayName": "ListGalleryItemsOptions"
+              "referenceType": "wix-pro-gallery-backend.ListGalleryItemsOptions"
             }
           ],
           "doc": "",
@@ -530,8 +510,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.ListGalleryItemsResponse",
-                  "displayName": "ListGalleryItemsResponse"
+                  "referenceType": "wix-pro-gallery-backend.ListGalleryItemsResponse"
                 }
               ]
             }
@@ -581,8 +560,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.PublishGalleryResponse",
-                  "displayName": "PublishGalleryResponse"
+                  "referenceType": "wix-pro-gallery-backend.PublishGalleryResponse"
                 }
               ]
             }
@@ -630,8 +608,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.UpdateGalleryOptions",
-              "displayName": "UpdateGalleryOptions"
+              "referenceType": "wix-pro-gallery-backend.UpdateGalleryOptions"
             }
           ],
           "doc": "",
@@ -646,8 +623,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.UpdateGalleryResponse",
-                  "displayName": "UpdateGalleryResponse"
+                  "referenceType": "wix-pro-gallery-backend.UpdateGalleryResponse"
                 }
               ]
             }
@@ -682,8 +658,7 @@
           "name": "identifiers",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.UpdateGalleryItemIdentifiers",
-              "displayName": "UpdateGalleryItemIdentifiers"
+              "referenceType": "wix-pro-gallery-backend.UpdateGalleryItemIdentifiers"
             }
           ],
           "doc": "",
@@ -693,8 +668,7 @@
           "name": "options",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.UpdateGalleryItemOptions",
-              "displayName": "UpdateGalleryItemOptions"
+              "referenceType": "wix-pro-gallery-backend.UpdateGalleryItemOptions"
             }
           ],
           "doc": "",
@@ -709,8 +683,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-pro-gallery-backend.UpdateGalleryItemResponse",
-                  "displayName": "UpdateGalleryItemResponse"
+                  "referenceType": "wix-pro-gallery-backend.UpdateGalleryItemResponse"
                 }
               ]
             }
@@ -934,8 +907,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Item",
-              "displayName": "Item"
+              "referenceType": "wix-pro-gallery-backend.Item"
             }
           ],
           "doc": ""
@@ -975,8 +947,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Item",
-              "displayName": "Item"
+              "referenceType": "wix-pro-gallery-backend.Item"
             }
           ],
           "doc": "Media item to create."
@@ -996,8 +967,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Item",
-              "displayName": "Item"
+              "referenceType": "wix-pro-gallery-backend.Item"
             }
           ],
           "doc": "Created media item."
@@ -1032,8 +1002,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-pro-gallery-backend.Item"
                   }
                 ]
               }
@@ -1060,8 +1029,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-pro-gallery-backend.Item"
                   }
                 ]
               }
@@ -1129,8 +1097,7 @@
           "name": "gallery",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Gallery",
-              "displayName": "Gallery"
+              "referenceType": "wix-pro-gallery-backend.Gallery"
             }
           ],
           "doc": "Gallery to create."
@@ -1150,8 +1117,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Gallery",
-              "displayName": "Gallery"
+              "referenceType": "wix-pro-gallery-backend.Gallery"
             }
           ],
           "doc": "Created gallery."
@@ -1403,8 +1369,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Gallery",
-              "displayName": "Gallery"
+              "referenceType": "wix-pro-gallery-backend.Gallery"
             }
           ],
           "doc": "Gallery that previously included the deleted media item."
@@ -1567,8 +1532,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DocumentImage",
-              "displayName": "DocumentImage"
+              "referenceType": "wix-pro-gallery-backend.DocumentImage"
             }
           ],
           "doc": "image which represents the document"
@@ -1605,8 +1569,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.IndexDocument",
-                    "displayName": "IndexDocument"
+                    "referenceType": "wix-pro-gallery-backend.IndexDocument"
                   }
                 ]
               }
@@ -1639,8 +1602,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.ActionEvent",
-              "displayName": "ActionEvent"
+              "referenceType": "wix-pro-gallery-backend.ActionEvent"
             }
           ],
           "doc": ""
@@ -1650,8 +1612,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.EntityCreatedEvent",
-              "displayName": "EntityCreatedEvent"
+              "referenceType": "wix-pro-gallery-backend.EntityCreatedEvent"
             }
           ],
           "doc": ""
@@ -1661,8 +1622,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.EntityDeletedEvent",
-              "displayName": "EntityDeletedEvent"
+              "referenceType": "wix-pro-gallery-backend.EntityDeletedEvent"
             }
           ],
           "doc": ""
@@ -1738,8 +1698,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.EntityUpdatedEvent",
-              "displayName": "EntityUpdatedEvent"
+              "referenceType": "wix-pro-gallery-backend.EntityUpdatedEvent"
             }
           ],
           "doc": ""
@@ -1968,8 +1927,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-pro-gallery-backend.Item"
                   }
                 ]
               }
@@ -2032,8 +1990,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Item",
-              "displayName": "Item"
+              "referenceType": "wix-pro-gallery-backend.Item"
             }
           ],
           "doc": "Created media item."
@@ -2073,8 +2030,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Item",
-              "displayName": "Item"
+              "referenceType": "wix-pro-gallery-backend.Item"
             }
           ],
           "doc": "Updated media item."
@@ -2227,8 +2183,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Item",
-              "displayName": "Item"
+              "referenceType": "wix-pro-gallery-backend.Item"
             }
           ],
           "doc": "Retrieved media item."
@@ -2366,8 +2321,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Gallery",
-              "displayName": "Gallery"
+              "referenceType": "wix-pro-gallery-backend.Gallery"
             }
           ],
           "doc": "Retrieved gallery."
@@ -2450,8 +2404,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.Page",
-                    "displayName": "Page"
+                    "referenceType": "wix-pro-gallery-backend.Page"
                   }
                 ]
               }
@@ -2560,8 +2513,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Point",
-              "displayName": "Point"
+              "referenceType": "wix-pro-gallery-backend.Point"
             }
           ],
           "doc": "Focal point of the image."
@@ -2571,8 +2523,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.CommonImage",
-              "displayName": "CommonImage"
+              "referenceType": "wix-pro-gallery-backend.CommonImage"
             }
           ],
           "doc": "Image info - can include Wix Media or an external link."
@@ -2605,8 +2556,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.UnsharpMasking",
-              "displayName": "UnsharpMasking"
+              "referenceType": "wix-pro-gallery-backend.UnsharpMasking"
             }
           ],
           "doc": "[Unsharp masking](https://en.wikipedia.org/wiki/Unsharp_masking) values of the image."
@@ -2659,8 +2609,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DocumentPayload",
-              "displayName": "DocumentPayload"
+              "referenceType": "wix-pro-gallery-backend.DocumentPayload"
             }
           ],
           "doc": "data bag with non-searchable fields (url, image)"
@@ -2710,8 +2659,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.App",
-              "displayName": "App"
+              "referenceType": "wix-pro-gallery-backend.App"
             }
           ],
           "doc": ""
@@ -2813,8 +2761,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Image",
-              "displayName": "Image"
+              "referenceType": "wix-pro-gallery-backend.Image"
             }
           ],
           "doc": "Information about the image."
@@ -2824,8 +2771,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Link",
-              "displayName": "Link"
+              "referenceType": "wix-pro-gallery-backend.Link"
             }
           ],
           "doc": "Link from the item. You can link to Wix sites or external URLs."
@@ -2848,8 +2794,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Tags",
-              "displayName": "Tags"
+              "referenceType": "wix-pro-gallery-backend.Tags"
             }
           ],
           "doc": "Item tags."
@@ -2859,8 +2804,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Text",
-              "displayName": "Text"
+              "referenceType": "wix-pro-gallery-backend.Text"
             }
           ],
           "doc": "Information about the text file."
@@ -2894,8 +2838,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Video",
-              "displayName": "Video"
+              "referenceType": "wix-pro-gallery-backend.Video"
             }
           ],
           "doc": "Information about the video."
@@ -2959,8 +2902,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-pro-gallery-backend.Item"
                   }
                 ]
               }
@@ -3046,8 +2988,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.ItemId",
-                    "displayName": "ItemId"
+                    "referenceType": "wix-pro-gallery-backend.ItemId"
                   }
                 ]
               }
@@ -3074,8 +3015,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.ItemsInGallery",
-                    "displayName": "ItemsInGallery"
+                    "referenceType": "wix-pro-gallery-backend.ItemsInGallery"
                   }
                 ]
               }
@@ -3244,8 +3184,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.Gallery",
-                    "displayName": "Gallery"
+                    "referenceType": "wix-pro-gallery-backend.Gallery"
                   }
                 ]
               }
@@ -3377,8 +3316,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-pro-gallery-backend.Item"
                   }
                 ]
               }
@@ -3637,8 +3575,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Gallery",
-              "displayName": "Gallery"
+              "referenceType": "wix-pro-gallery-backend.Gallery"
             }
           ],
           "doc": "Published gallery."
@@ -3865,8 +3802,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.IndexDocument",
-              "displayName": "IndexDocument"
+              "referenceType": "wix-pro-gallery-backend.IndexDocument"
             }
           ],
           "doc": "partial document to apply"
@@ -3913,8 +3849,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.IndexDocument",
-                    "displayName": "IndexDocument"
+                    "referenceType": "wix-pro-gallery-backend.IndexDocument"
                   }
                 ]
               }
@@ -3953,8 +3888,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DeleteByFilterOperation",
-              "displayName": "DeleteByFilterOperation"
+              "referenceType": "wix-pro-gallery-backend.DeleteByFilterOperation"
             }
           ],
           "doc": "delete documents matching filter"
@@ -3964,8 +3898,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DeleteByIdsOperation",
-              "displayName": "DeleteByIdsOperation"
+              "referenceType": "wix-pro-gallery-backend.DeleteByIdsOperation"
             }
           ],
           "doc": "delete by document ids"
@@ -4031,8 +3964,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DocumentUpdateOperation",
-              "displayName": "DocumentUpdateOperation"
+              "referenceType": "wix-pro-gallery-backend.DocumentUpdateOperation"
             }
           ],
           "doc": "insert/update documents"
@@ -4042,8 +3974,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.UpdateByFilterOperation",
-              "displayName": "UpdateByFilterOperation"
+              "referenceType": "wix-pro-gallery-backend.UpdateByFilterOperation"
             }
           ],
           "doc": "update documents matching filter"
@@ -4053,8 +3984,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.UpdateExistingOperation",
-              "displayName": "UpdateExistingOperation"
+              "referenceType": "wix-pro-gallery-backend.UpdateExistingOperation"
             }
           ],
           "doc": "update only existing documents"
@@ -4078,8 +4008,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.IndexDocument",
-                    "displayName": "IndexDocument"
+                    "referenceType": "wix-pro-gallery-backend.IndexDocument"
                   }
                 ]
               }
@@ -4111,8 +4040,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.item_3",
-              "displayName": "item_3"
+              "referenceType": "wix-pro-gallery-backend.item_3"
             }
           ],
           "doc": ""
@@ -4131,8 +4059,7 @@
           "name": "item",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.item_4",
-              "displayName": "item_4"
+              "referenceType": "wix-pro-gallery-backend.item_4"
             }
           ],
           "doc": ""
@@ -4171,8 +4098,7 @@
           "name": "item",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Item",
-              "displayName": "Item"
+              "referenceType": "wix-pro-gallery-backend.Item"
             }
           ],
           "doc": "Media item to update."
@@ -4192,8 +4118,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Item",
-              "displayName": "Item"
+              "referenceType": "wix-pro-gallery-backend.Item"
             }
           ],
           "doc": "Updated media item."
@@ -4212,8 +4137,7 @@
           "name": "gallery",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.gallery_5",
-              "displayName": "gallery_5"
+              "referenceType": "wix-pro-gallery-backend.gallery_5"
             }
           ],
           "doc": ""
@@ -4242,8 +4166,7 @@
           "name": "gallery",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Gallery",
-              "displayName": "Gallery"
+              "referenceType": "wix-pro-gallery-backend.Gallery"
             }
           ],
           "doc": "Gallery to update."
@@ -4263,8 +4186,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Gallery",
-              "displayName": "Gallery"
+              "referenceType": "wix-pro-gallery-backend.Gallery"
             }
           ],
           "doc": "Updated gallery."
@@ -4307,8 +4229,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.VideoV2",
-              "displayName": "VideoV2"
+              "referenceType": "wix-pro-gallery-backend.VideoV2"
             }
           ],
           "doc": "Video info - can include Wix Media or an external link."
@@ -4431,8 +4352,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.CommonImage",
-                    "displayName": "CommonImage"
+                    "referenceType": "wix-pro-gallery-backend.CommonImage"
                   }
                 ]
               }
@@ -4449,8 +4369,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.VideoResolution",
-                    "displayName": "VideoResolution"
+                    "referenceType": "wix-pro-gallery-backend.VideoResolution"
                   }
                 ]
               }
@@ -4503,8 +4422,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.AddressLink",
-              "displayName": "AddressLink"
+              "referenceType": "wix-pro-gallery-backend.AddressLink"
             }
           ],
           "doc": "Address link type"
@@ -4514,8 +4432,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.AnchorLink",
-              "displayName": "AnchorLink"
+              "referenceType": "wix-pro-gallery-backend.AnchorLink"
             }
           ],
           "doc": "Anchor link type"
@@ -4525,8 +4442,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DocumentLink",
-              "displayName": "DocumentLink"
+              "referenceType": "wix-pro-gallery-backend.DocumentLink"
             }
           ],
           "doc": "Document link type"
@@ -4536,8 +4452,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.DynamicPageLink",
-              "displayName": "DynamicPageLink"
+              "referenceType": "wix-pro-gallery-backend.DynamicPageLink"
             }
           ],
           "doc": "Dynamic page link type"
@@ -4547,8 +4462,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.EmailLink",
-              "displayName": "EmailLink"
+              "referenceType": "wix-pro-gallery-backend.EmailLink"
             }
           ],
           "doc": "Email link type"
@@ -4558,8 +4472,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.ExternalLink",
-              "displayName": "ExternalLink"
+              "referenceType": "wix-pro-gallery-backend.ExternalLink"
             }
           ],
           "doc": "External link type"
@@ -4569,8 +4482,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.PageLink",
-              "displayName": "PageLink"
+              "referenceType": "wix-pro-gallery-backend.PageLink"
             }
           ],
           "doc": "Page link type"
@@ -4580,8 +4492,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.PhoneLink",
-              "displayName": "PhoneLink"
+              "referenceType": "wix-pro-gallery-backend.PhoneLink"
             }
           ],
           "doc": "Phone link type"
@@ -4591,8 +4502,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.WhatsAppLink",
-              "displayName": "WhatsAppLink"
+              "referenceType": "wix-pro-gallery-backend.WhatsAppLink"
             }
           ],
           "doc": "WhatsApp link type"
@@ -4641,8 +4551,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-pro-gallery-backend.Item",
-                    "displayName": "Item"
+                    "referenceType": "wix-pro-gallery-backend.Item"
                   }
                 ]
               }
@@ -4777,8 +4686,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Image",
-              "displayName": "Image"
+              "referenceType": "wix-pro-gallery-backend.Image"
             }
           ],
           "doc": "Information about the image."
@@ -4788,8 +4696,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Link",
-              "displayName": "Link"
+              "referenceType": "wix-pro-gallery-backend.Link"
             }
           ],
           "doc": "Link from the item. You can link to Wix sites or external URLs."
@@ -4812,8 +4719,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Tags",
-              "displayName": "Tags"
+              "referenceType": "wix-pro-gallery-backend.Tags"
             }
           ],
           "doc": "Item tags."
@@ -4823,8 +4729,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Text",
-              "displayName": "Text"
+              "referenceType": "wix-pro-gallery-backend.Text"
             }
           ],
           "doc": "Information about the text file."
@@ -4858,8 +4763,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.Video",
-              "displayName": "Video"
+              "referenceType": "wix-pro-gallery-backend.Video"
             }
           ],
           "doc": "Information about the video."
