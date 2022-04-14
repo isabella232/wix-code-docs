@@ -34,7 +34,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
@@ -107,7 +108,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
@@ -183,7 +185,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
@@ -238,7 +241,8 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-ecom-backend.Orders.OrdersQueryResult"
+                  "referenceType": "wix-ecom-backend.Orders.OrdersQueryResult",
+                  "displayName": "OrdersQueryResult"
                 }
               ]
             }
@@ -309,7 +313,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
@@ -388,7 +393,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
@@ -467,7 +473,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
@@ -536,7 +543,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
@@ -609,7 +617,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
@@ -688,7 +697,8 @@
       "ret": {
         "type": [
           {
-            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder"
+            "referenceType": "wix-ecom-backend.Orders.OrdersQueryBuilder",
+            "displayName": "OrdersQueryBuilder"
           }
         ],
         "doc": null
