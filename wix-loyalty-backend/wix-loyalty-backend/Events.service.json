@@ -16,7 +16,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-AccountCreated",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountAccountCreated",
               "displayName": "AccountCreated"
             }
           ],
@@ -59,7 +59,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-AccountPointsUpdated",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountAccountPointsUpdated",
               "displayName": "AccountPointsUpdated"
             }
           ],
@@ -102,7 +102,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-AccountUpdated",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountAccountUpdated",
               "displayName": "AccountUpdated"
             }
           ],
@@ -145,7 +145,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-ProgramLoyaltyProgramDescriptionUpdated",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramProgramLoyaltyProgramDescriptionUpdated",
               "displayName": "ProgramLoyaltyProgramDescriptionUpdated"
             }
           ],
@@ -188,7 +188,7 @@
           "name": "event",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-ProgramUpdated",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramProgramUpdated",
               "displayName": "ProgramUpdated"
             }
           ],
@@ -227,13 +227,13 @@
   ],
   "messages": [
     {
-      "name": "loyalty-v1-account-AccountCreated",
+      "name": "loyaltyV1AccountAccountCreated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -243,7 +243,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-BackendEventMetadata",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountBackendEventMetadata",
               "displayName": "BackendEventMetadata"
             }
           ],
@@ -257,13 +257,13 @@
       }
     },
     {
-      "name": "loyalty-v1-account-AccountPointsUpdated",
+      "name": "loyaltyV1AccountAccountPointsUpdated",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-PointsUpdated",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountPointsUpdated",
               "displayName": "PointsUpdated"
             }
           ],
@@ -273,7 +273,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-BackendEventMetadata",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountBackendEventMetadata",
               "displayName": "BackendEventMetadata"
             }
           ],
@@ -287,13 +287,13 @@
       }
     },
     {
-      "name": "loyalty-v1-account-AccountUpdated",
+      "name": "loyaltyV1AccountAccountUpdated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -303,7 +303,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-BackendEventMetadata",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountBackendEventMetadata",
               "displayName": "BackendEventMetadata"
             }
           ],
@@ -317,7 +317,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-AccountsMerged",
+      "name": "loyaltyV1AccountAccountsMerged",
       "members": [
         {
           "name": "sourceAccounts",
@@ -329,7 +329,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+                    "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
                     "displayName": "LoyaltyAccount"
                   }
                 ]
@@ -344,7 +344,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -358,7 +358,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-ActionEvent",
+      "name": "loyaltyV1AccountActionEvent",
       "members": [
         {
           "name": "bodyAsJson",
@@ -378,7 +378,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-AdjustPointsRequest",
+      "name": "loyaltyV1AccountAdjustPointsRequest",
       "members": [
         {
           "name": "accountId",
@@ -440,14 +440,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-AdjustPointsResponse",
+      "name": "loyaltyV1AccountAdjustPointsResponse",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -461,7 +461,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-BackendEventMetadata",
+      "name": "loyaltyV1AccountBackendEventMetadata",
       "members": [
         {
           "name": "entityId",
@@ -507,7 +507,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-CreateAccountRequest",
+      "name": "loyaltyV1AccountCreateAccountRequest",
       "members": [
         {
           "name": "contactId",
@@ -526,14 +526,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-CreateAccountResponse",
+      "name": "loyaltyV1AccountCreateAccountResponse",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -547,7 +547,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-CursorPaging",
+      "name": "loyaltyV1AccountCursorPaging",
       "members": [
         {
           "name": "cursor",
@@ -583,7 +583,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-Cursors",
+      "name": "loyaltyV1AccountCursors",
       "members": [
         {
           "name": "next",
@@ -619,7 +619,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-DomainEvent",
+      "name": "loyaltyV1AccountDomainEvent",
       "members": [
         {
           "name": "_id",
@@ -636,7 +636,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-ActionEvent",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountActionEvent",
               "displayName": "ActionEvent"
             }
           ],
@@ -647,7 +647,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-EntityCreatedEvent",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountEntityCreatedEvent",
               "displayName": "EntityCreatedEvent"
             }
           ],
@@ -658,7 +658,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-EntityDeletedEvent",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountEntityDeletedEvent",
               "displayName": "EntityDeletedEvent"
             }
           ],
@@ -735,7 +735,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-EntityUpdatedEvent",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountEntityUpdatedEvent",
               "displayName": "EntityUpdatedEvent"
             }
           ],
@@ -749,7 +749,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-EarnPointsRequest",
+      "name": "loyaltyV1AccountEarnPointsRequest",
       "members": [
         {
           "name": "accountId",
@@ -806,14 +806,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-EarnPointsResponse",
+      "name": "loyaltyV1AccountEarnPointsResponse",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -827,7 +827,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-Empty",
+      "name": "loyaltyV1AccountEmpty",
       "members": [],
       "docs": {
         "description": [
@@ -836,7 +836,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-EntityCreatedEvent",
+      "name": "loyaltyV1AccountEntityCreatedEvent",
       "members": [
         {
           "name": "entityAsJson",
@@ -856,7 +856,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-EntityDeletedEvent",
+      "name": "loyaltyV1AccountEntityDeletedEvent",
       "members": [],
       "docs": {
         "description": [
@@ -865,7 +865,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-EntityUpdatedEvent",
+      "name": "loyaltyV1AccountEntityUpdatedEvent",
       "members": [
         {
           "name": "currentEntityAsJson",
@@ -885,7 +885,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetAccountBySecondaryIdRequest",
+      "name": "loyaltyV1AccountGetAccountBySecondaryIdRequest",
       "members": [
         {
           "name": "contactId",
@@ -915,14 +915,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetAccountBySecondaryIdResponse",
+      "name": "loyaltyV1AccountGetAccountBySecondaryIdResponse",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -936,7 +936,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetAccountRequest",
+      "name": "loyaltyV1AccountGetAccountRequest",
       "members": [
         {
           "name": "_id",
@@ -955,14 +955,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetAccountResponse",
+      "name": "loyaltyV1AccountGetAccountResponse",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -976,7 +976,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetCurrentMemberAccountRequest",
+      "name": "loyaltyV1AccountGetCurrentMemberAccountRequest",
       "members": [],
       "docs": {
         "description": [
@@ -985,14 +985,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetCurrentMemberAccountResponse",
+      "name": "loyaltyV1AccountGetCurrentMemberAccountResponse",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -1006,7 +1006,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetProgramTotalsRequest",
+      "name": "loyaltyV1AccountGetProgramTotalsRequest",
       "members": [],
       "docs": {
         "description": [
@@ -1015,14 +1015,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetProgramTotalsResponse",
+      "name": "loyaltyV1AccountGetProgramTotalsResponse",
       "members": [
         {
           "name": "points",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-Points",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountPoints",
               "displayName": "Points"
             }
           ],
@@ -1036,7 +1036,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetTransactionRequest",
+      "name": "loyaltyV1AccountGetTransactionRequest",
       "members": [
         {
           "name": "_id",
@@ -1058,14 +1058,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-GetTransactionResponse",
+      "name": "loyaltyV1AccountGetTransactionResponse",
       "members": [
         {
           "name": "transaction",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-Transaction",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountTransaction",
               "displayName": "Transaction"
             }
           ],
@@ -1079,7 +1079,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-LatestTransaction",
+      "name": "loyaltyV1AccountLatestTransaction",
       "members": [
         {
           "name": "_createdDate",
@@ -1156,7 +1156,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-RedeemInfo",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountRedeemInfo",
               "displayName": "RedeemInfo"
             }
           ],
@@ -1194,7 +1194,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-ListAccountsRequest",
+      "name": "loyaltyV1AccountListAccountsRequest",
       "members": [
         {
           "name": "contactIds",
@@ -1218,7 +1218,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-CursorPaging",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountCursorPaging",
               "displayName": "CursorPaging"
             }
           ],
@@ -1232,7 +1232,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-ListAccountsResponse",
+      "name": "loyaltyV1AccountListAccountsResponse",
       "members": [
         {
           "name": "accounts",
@@ -1243,7 +1243,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+                    "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
                     "displayName": "LoyaltyAccount"
                   }
                 ]
@@ -1257,7 +1257,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-PagingMetadataV2",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountPagingMetadataV2",
               "displayName": "PagingMetadataV2"
             }
           ],
@@ -1271,7 +1271,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-ListTransactionsRequest",
+      "name": "loyaltyV1AccountListTransactionsRequest",
       "members": [
         {
           "name": "accountId",
@@ -1290,7 +1290,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-CursorPaging",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountCursorPaging",
               "displayName": "CursorPaging"
             }
           ],
@@ -1304,14 +1304,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-ListTransactionsResponse",
+      "name": "loyaltyV1AccountListTransactionsResponse",
       "members": [
         {
           "name": "pagingMetadata",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-PagingMetadataV2",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountPagingMetadataV2",
               "displayName": "PagingMetadataV2"
             }
           ],
@@ -1326,7 +1326,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-Transaction",
+                    "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountTransaction",
                     "displayName": "Transaction"
                   }
                 ]
@@ -1343,7 +1343,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-ListUserAccountsRequest",
+      "name": "loyaltyV1AccountListUserAccountsRequest",
       "members": [
         {
           "name": "limit",
@@ -1379,7 +1379,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-ListUserAccountsResponse",
+      "name": "loyaltyV1AccountListUserAccountsResponse",
       "members": [
         {
           "name": "accounts",
@@ -1390,7 +1390,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccountForMetaSite",
+                    "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccountForMetaSite",
                     "displayName": "LoyaltyAccountForMetaSite"
                   }
                 ]
@@ -1407,7 +1407,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-LoyaltyAccount",
+      "name": "loyaltyV1AccountLoyaltyAccount",
       "members": [
         {
           "name": "_createdDate",
@@ -1458,7 +1458,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LatestTransaction",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLatestTransaction",
               "displayName": "LatestTransaction"
             }
           ],
@@ -1483,7 +1483,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-Points",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountPoints",
               "displayName": "Points"
             }
           ],
@@ -1518,14 +1518,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-LoyaltyAccountForMetaSite",
+      "name": "loyaltyV1AccountLoyaltyAccountForMetaSite",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -1549,7 +1549,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-PagingMetadataV2",
+      "name": "loyaltyV1AccountPagingMetadataV2",
       "members": [
         {
           "name": "count",
@@ -1569,7 +1569,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-Cursors",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountCursors",
               "displayName": "Cursors"
             }
           ],
@@ -1622,7 +1622,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-Points",
+      "name": "loyaltyV1AccountPoints",
       "members": [
         {
           "name": "adjusted",
@@ -1672,14 +1672,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-PointsUpdated",
+      "name": "loyaltyV1AccountPointsUpdated",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -1693,7 +1693,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-RedeemInfo",
+      "name": "loyaltyV1AccountRedeemInfo",
       "members": [
         {
           "name": "referenceEntityId",
@@ -1736,7 +1736,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-RedeemPointsRequest",
+      "name": "loyaltyV1AccountRedeemPointsRequest",
       "members": [
         {
           "name": "accountId",
@@ -1797,14 +1797,14 @@
       }
     },
     {
-      "name": "loyalty-v1-account-RedeemPointsResponse",
+      "name": "loyaltyV1AccountRedeemPointsResponse",
       "members": [
         {
           "name": "account",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-LoyaltyAccount",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountLoyaltyAccount",
               "displayName": "LoyaltyAccount"
             }
           ],
@@ -1818,7 +1818,7 @@
       }
     },
     {
-      "name": "loyalty-v1-account-Transaction",
+      "name": "loyaltyV1AccountTransaction",
       "members": [
         {
           "name": "_createdDate",
@@ -1932,7 +1932,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-account-RedeemInfo",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1AccountRedeemInfo",
               "displayName": "RedeemInfo"
             }
           ],
@@ -1970,7 +1970,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-ActivateLoyaltyProgramRequest",
+      "name": "loyaltyV1ProgramActivateLoyaltyProgramRequest",
       "members": [],
       "docs": {
         "description": [
@@ -1979,14 +1979,14 @@
       }
     },
     {
-      "name": "loyalty-v1-program-ActivateLoyaltyProgramResponse",
+      "name": "loyaltyV1ProgramActivateLoyaltyProgramResponse",
       "members": [
         {
           "name": "loyaltyProgram",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-LoyaltyProgram",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramLoyaltyProgram",
               "displayName": "LoyaltyProgram"
             }
           ],
@@ -2000,7 +2000,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-Asset",
+      "name": "loyaltyV1ProgramAsset",
       "members": [
         {
           "name": "appDefId",
@@ -2040,7 +2040,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-BackendEventMetadata",
+      "name": "loyaltyV1ProgramBackendEventMetadata",
       "members": [
         {
           "name": "entityId",
@@ -2086,7 +2086,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-BulkGetLoyaltyProgramRequest",
+      "name": "loyaltyV1ProgramBulkGetLoyaltyProgramRequest",
       "members": [
         {
           "name": "metaSiteIds",
@@ -2113,7 +2113,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-BulkGetLoyaltyProgramResponse",
+      "name": "loyaltyV1ProgramBulkGetLoyaltyProgramResponse",
       "members": [
         {
           "name": "programInSites",
@@ -2124,7 +2124,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-ProgramInSite",
+                    "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramProgramInSite",
                     "displayName": "ProgramInSite"
                   }
                 ]
@@ -2141,7 +2141,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-DeleteContext",
+      "name": "loyaltyV1ProgramDeleteContext",
       "members": [
         {
           "name": "dateDeleted",
@@ -2194,7 +2194,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-Empty",
+      "name": "loyaltyV1ProgramEmpty",
       "members": [],
       "docs": {
         "description": [
@@ -2203,7 +2203,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-GetLoyaltyProgramDescriptionRequest",
+      "name": "loyaltyV1ProgramGetLoyaltyProgramDescriptionRequest",
       "members": [
         {
           "name": "fields",
@@ -2230,7 +2230,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-GetLoyaltyProgramDescriptionResponse",
+      "name": "loyaltyV1ProgramGetLoyaltyProgramDescriptionResponse",
       "members": [
         {
           "name": "_updatedDate",
@@ -2263,7 +2263,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-GetLoyaltyProgramRequest",
+      "name": "loyaltyV1ProgramGetLoyaltyProgramRequest",
       "members": [],
       "docs": {
         "description": [
@@ -2272,14 +2272,14 @@
       }
     },
     {
-      "name": "loyalty-v1-program-GetLoyaltyProgramResponse",
+      "name": "loyaltyV1ProgramGetLoyaltyProgramResponse",
       "members": [
         {
           "name": "loyaltyProgram",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-LoyaltyProgram",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramLoyaltyProgram",
               "displayName": "LoyaltyProgram"
             }
           ],
@@ -2293,7 +2293,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-LoyaltyProgram",
+      "name": "loyaltyV1ProgramLoyaltyProgram",
       "members": [
         {
           "name": "_createdDate",
@@ -2335,7 +2335,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-PointDefinition",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramPointDefinition",
               "displayName": "PointDefinition"
             }
           ],
@@ -2346,7 +2346,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-Points",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramPoints",
               "displayName": "Points"
             }
           ],
@@ -2371,7 +2371,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-LoyaltyProgramDescriptionUpdated",
+      "name": "loyaltyV1ProgramLoyaltyProgramDescriptionUpdated",
       "members": [],
       "docs": {
         "description": [
@@ -2380,7 +2380,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-MetaSiteSpecialEvent",
+      "name": "loyaltyV1ProgramMetaSiteSpecialEvent",
       "members": [
         {
           "name": "assets",
@@ -2391,7 +2391,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-Asset",
+                    "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramAsset",
                     "displayName": "Asset"
                   }
                 ]
@@ -2405,7 +2405,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteHardDeleted",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteHardDeleted",
               "displayName": "SiteHardDeleted"
             }
           ],
@@ -2426,7 +2426,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-NamespaceChanged",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramNamespaceChanged",
               "displayName": "NamespaceChanged"
             }
           ],
@@ -2437,7 +2437,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-ServiceProvisioned",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramServiceProvisioned",
               "displayName": "ServiceProvisioned"
             }
           ],
@@ -2448,7 +2448,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-ServiceRemoved",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramServiceRemoved",
               "displayName": "ServiceRemoved"
             }
           ],
@@ -2459,7 +2459,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteCreated",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteCreated",
               "displayName": "SiteCreated"
             }
           ],
@@ -2470,7 +2470,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteDeleted",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteDeleted",
               "displayName": "SiteDeleted"
             }
           ],
@@ -2481,7 +2481,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteMarkedAsTemplate",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteMarkedAsTemplate",
               "displayName": "SiteMarkedAsTemplate"
             }
           ],
@@ -2492,7 +2492,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteMarkedAsWixSite",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteMarkedAsWixSite",
               "displayName": "SiteMarkedAsWixSite"
             }
           ],
@@ -2503,7 +2503,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SitePublished",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSitePublished",
               "displayName": "SitePublished"
             }
           ],
@@ -2514,7 +2514,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteRenamed",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteRenamed",
               "displayName": "SiteRenamed"
             }
           ],
@@ -2525,7 +2525,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteTransferred",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteTransferred",
               "displayName": "SiteTransferred"
             }
           ],
@@ -2536,7 +2536,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteUndeleted",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteUndeleted",
               "displayName": "SiteUndeleted"
             }
           ],
@@ -2547,7 +2547,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-SiteUnpublished",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramSiteUnpublished",
               "displayName": "SiteUnpublished"
             }
           ],
@@ -2581,7 +2581,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-NamespaceChanged",
+      "name": "loyaltyV1ProgramNamespaceChanged",
       "members": [
         {
           "name": "newNamespace",
@@ -2611,7 +2611,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-PauseLoyaltyProgramRequest",
+      "name": "loyaltyV1ProgramPauseLoyaltyProgramRequest",
       "members": [],
       "docs": {
         "description": [
@@ -2620,14 +2620,14 @@
       }
     },
     {
-      "name": "loyalty-v1-program-PauseLoyaltyProgramResponse",
+      "name": "loyaltyV1ProgramPauseLoyaltyProgramResponse",
       "members": [
         {
           "name": "loyaltyProgram",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-LoyaltyProgram",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramLoyaltyProgram",
               "displayName": "LoyaltyProgram"
             }
           ],
@@ -2641,7 +2641,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-PointDefinition",
+      "name": "loyaltyV1ProgramPointDefinition",
       "members": [
         {
           "name": "customName",
@@ -2674,7 +2674,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-Points",
+      "name": "loyaltyV1ProgramPoints",
       "members": [
         {
           "name": "customName",
@@ -2707,14 +2707,14 @@
       }
     },
     {
-      "name": "loyalty-v1-program-ProgramInSite",
+      "name": "loyaltyV1ProgramProgramInSite",
       "members": [
         {
           "name": "loyaltyProgram",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-LoyaltyProgram",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramLoyaltyProgram",
               "displayName": "LoyaltyProgram"
             }
           ],
@@ -2738,13 +2738,13 @@
       }
     },
     {
-      "name": "loyalty-v1-program-ProgramLoyaltyProgramDescriptionUpdated",
+      "name": "loyaltyV1ProgramProgramLoyaltyProgramDescriptionUpdated",
       "members": [
         {
           "name": "data",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-LoyaltyProgramDescriptionUpdated",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramLoyaltyProgramDescriptionUpdated",
               "displayName": "LoyaltyProgramDescriptionUpdated"
             }
           ],
@@ -2754,7 +2754,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-BackendEventMetadata",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramBackendEventMetadata",
               "displayName": "BackendEventMetadata"
             }
           ],
@@ -2768,13 +2768,13 @@
       }
     },
     {
-      "name": "loyalty-v1-program-ProgramUpdated",
+      "name": "loyaltyV1ProgramProgramUpdated",
       "members": [
         {
           "name": "entity",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-LoyaltyProgram",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramLoyaltyProgram",
               "displayName": "LoyaltyProgram"
             }
           ],
@@ -2784,7 +2784,7 @@
           "name": "metadata",
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-BackendEventMetadata",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramBackendEventMetadata",
               "displayName": "BackendEventMetadata"
             }
           ],
@@ -2798,7 +2798,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-ServiceProvisioned",
+      "name": "loyaltyV1ProgramServiceProvisioned",
       "members": [
         {
           "name": "appDefId",
@@ -2851,7 +2851,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-ServiceRemoved",
+      "name": "loyaltyV1ProgramServiceRemoved",
       "members": [
         {
           "name": "appDefId",
@@ -2894,7 +2894,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteCreated",
+      "name": "loyaltyV1ProgramSiteCreated",
       "members": [
         {
           "name": "context",
@@ -2967,14 +2967,14 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteDeleted",
+      "name": "loyaltyV1ProgramSiteDeleted",
       "members": [
         {
           "name": "deleteContext",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-DeleteContext",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramDeleteContext",
               "displayName": "DeleteContext"
             }
           ],
@@ -2988,14 +2988,14 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteHardDeleted",
+      "name": "loyaltyV1ProgramSiteHardDeleted",
       "members": [
         {
           "name": "deleteContext",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-DeleteContext",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramDeleteContext",
               "displayName": "DeleteContext"
             }
           ],
@@ -3009,7 +3009,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteMarkedAsTemplate",
+      "name": "loyaltyV1ProgramSiteMarkedAsTemplate",
       "members": [],
       "docs": {
         "description": [
@@ -3018,7 +3018,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteMarkedAsWixSite",
+      "name": "loyaltyV1ProgramSiteMarkedAsWixSite",
       "members": [],
       "docs": {
         "description": [
@@ -3027,7 +3027,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SitePublished",
+      "name": "loyaltyV1ProgramSitePublished",
       "members": [],
       "docs": {
         "description": [
@@ -3036,7 +3036,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteRenamed",
+      "name": "loyaltyV1ProgramSiteRenamed",
       "members": [
         {
           "name": "newSiteName",
@@ -3066,7 +3066,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteTransferred",
+      "name": "loyaltyV1ProgramSiteTransferred",
       "members": [
         {
           "name": "newOwnerId",
@@ -3096,7 +3096,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteUndeleted",
+      "name": "loyaltyV1ProgramSiteUndeleted",
       "members": [],
       "docs": {
         "description": [
@@ -3105,7 +3105,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-SiteUnpublished",
+      "name": "loyaltyV1ProgramSiteUnpublished",
       "members": [
         {
           "name": "urls",
@@ -3132,7 +3132,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-UpdateLoyaltyProgramDescriptionRequest",
+      "name": "loyaltyV1ProgramUpdateLoyaltyProgramDescriptionRequest",
       "members": [
         {
           "name": "description",
@@ -3152,7 +3152,7 @@
       }
     },
     {
-      "name": "loyalty-v1-program-UpdateLoyaltyProgramDescriptionResponse",
+      "name": "loyaltyV1ProgramUpdateLoyaltyProgramDescriptionResponse",
       "members": [],
       "docs": {
         "description": [
@@ -3161,14 +3161,14 @@
       }
     },
     {
-      "name": "loyalty-v1-program-UpdateLoyaltyProgramRequest",
+      "name": "loyaltyV1ProgramUpdateLoyaltyProgramRequest",
       "members": [
         {
           "name": "loyaltyProgram",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-LoyaltyProgram",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramLoyaltyProgram",
               "displayName": "LoyaltyProgram"
             }
           ],
@@ -3182,14 +3182,14 @@
       }
     },
     {
-      "name": "loyalty-v1-program-UpdateLoyaltyProgramResponse",
+      "name": "loyaltyV1ProgramUpdateLoyaltyProgramResponse",
       "members": [
         {
           "name": "loyaltyProgram",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-loyalty-backend.Events.loyalty-v1-program-LoyaltyProgram",
+              "referenceType": "wix-loyalty-backend.Events.loyaltyV1ProgramLoyaltyProgram",
               "displayName": "LoyaltyProgram"
             }
           ],
