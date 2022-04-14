@@ -30,8 +30,7 @@
               "nativeType": "Promise",
               "typeParams": [
                 {
-                  "referenceType": "wix-alarm-backend.AlarmResponse",
-                  "displayName": "AlarmResponse"
+                  "referenceType": "wix-alarm-backend.AlarmResponse"
                 }
               ]
             }
