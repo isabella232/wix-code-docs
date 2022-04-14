@@ -30,8 +30,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.RangeSetting",
-              "displayName": "RangeSetting"
+              "referenceType": "wix-ratings-definition-backend.RangeSetting"
             }
           ],
           "doc": "Range settings."
@@ -50,8 +49,7 @@
           "name": "definition",
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "Definition to create."
@@ -71,8 +69,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "The created definition."
@@ -132,8 +129,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-definition-backend.AttributeSetting",
-                    "displayName": "AttributeSetting"
+                    "referenceType": "wix-ratings-definition-backend.AttributeSetting"
                   }
                 ]
               }
@@ -247,8 +243,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "The retrieved definition."
@@ -324,8 +319,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "The retrieved definition."
@@ -415,8 +409,7 @@
                 "nativeType": "Array",
                 "typeParams": [
                   {
-                    "referenceType": "wix-ratings-definition-backend.AttributeSetting",
-                    "displayName": "AttributeSetting"
+                    "referenceType": "wix-ratings-definition-backend.AttributeSetting"
                   }
                 ]
               }
@@ -499,8 +492,7 @@
           "name": "definition",
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "Definition to be updated, may be partial. Pass the latest `revision` for a successful update."
@@ -537,8 +529,7 @@
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-ratings-definition-backend.Definition",
-              "displayName": "Definition"
+              "referenceType": "wix-ratings-definition-backend.Definition"
             }
           ],
           "doc": "The updated definition."
