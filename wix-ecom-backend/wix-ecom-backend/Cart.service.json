@@ -2519,9 +2519,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2557,7 +2554,6 @@
         },
         {
           "name": "name",
-          "optional": true,
           "type": [
             {
               "nativeType": "null"
