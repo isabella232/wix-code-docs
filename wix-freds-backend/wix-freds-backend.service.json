@@ -234,9 +234,6 @@
           "type": [
             {
               "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
             }
           ],
           "doc": "Wishlist ID",
@@ -352,9 +349,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -364,9 +358,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -485,9 +476,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -497,9 +485,6 @@
           "name": "offset",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -564,9 +549,6 @@
           "name": "filter",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "complexType": {
                 "nativeType": "Record",
@@ -816,9 +798,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -838,9 +817,6 @@
           "name": "revision",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -873,9 +849,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -907,9 +880,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -929,9 +899,6 @@
           "name": "revision",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
