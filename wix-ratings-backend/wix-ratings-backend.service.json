@@ -416,9 +416,6 @@
           "type": [
             {
               "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
             }
           ],
           "doc": "",
@@ -429,9 +426,6 @@
           "type": [
             {
               "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
             }
           ],
           "doc": "",
@@ -513,9 +507,6 @@
           "name": "_id",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -713,9 +704,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "complexType": {
                 "nativeType": "Array",
                 "typeParams": [
@@ -731,9 +719,6 @@
         {
           "name": "value",
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -783,9 +768,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "complexType": {
                 "nativeType": "Array",
                 "typeParams": [
@@ -801,9 +783,6 @@
         {
           "name": "value",
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -845,9 +824,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -857,9 +833,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -881,9 +854,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -893,9 +863,6 @@
           "name": "prev",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -916,9 +883,6 @@
           "name": "filter",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "complexType": {
                 "nativeType": "Record",
@@ -1105,9 +1069,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1127,9 +1088,6 @@
           "name": "triggeredByAnonymizeRequest",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -1556,9 +1514,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1588,9 +1543,6 @@
           "name": "document",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "complexType": {
                 "nativeType": "Record",
@@ -1631,9 +1583,6 @@
           "name": "filter",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "complexType": {
                 "nativeType": "Record",
@@ -1718,9 +1667,6 @@
           "name": "count",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -1839,9 +1785,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "complexType": {
                 "nativeType": "Record",
                 "typeParams": [
@@ -1900,9 +1843,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1978,9 +1918,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "complexType": {
                 "nativeType": "Array",
                 "typeParams": [
@@ -1998,9 +1935,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2032,9 +1966,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "complexType": {
                 "nativeType": "Array",
                 "typeParams": [
@@ -2051,9 +1982,6 @@
           "name": "documentType",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2132,9 +2060,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2174,9 +2099,6 @@
           "name": "language",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2244,9 +2166,6 @@
           "name": "value",
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -2266,9 +2185,6 @@
           "name": "_id",
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2278,9 +2194,6 @@
           "name": "revision",
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2289,9 +2202,6 @@
         {
           "name": "value",
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
