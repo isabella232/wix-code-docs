@@ -538,9 +538,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -579,9 +576,6 @@
           "name": "message",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -624,9 +618,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -658,9 +649,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -689,9 +677,6 @@
           "name": "message",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -734,9 +719,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -758,9 +740,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -771,9 +750,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -865,9 +841,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -877,9 +850,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -901,9 +871,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -913,9 +880,6 @@
           "name": "prev",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -936,9 +900,6 @@
           "name": "contactId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -980,9 +941,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -993,9 +951,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1005,9 +960,6 @@
           "name": "visitorId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1029,9 +981,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1041,9 +990,6 @@
           "name": "approximate",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -1055,9 +1001,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1067,9 +1010,6 @@
           "name": "city",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1081,9 +1021,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1093,9 +1030,6 @@
           "name": "country",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1107,9 +1041,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1119,9 +1050,6 @@
           "name": "entrance",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1133,9 +1061,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1145,9 +1070,6 @@
           "name": "formatted",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1179,9 +1101,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1191,9 +1110,6 @@
           "name": "streetNumber",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1205,9 +1121,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1217,9 +1130,6 @@
           "name": "zipCode",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1241,9 +1151,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -1253,9 +1160,6 @@
           "name": "longitude",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -1447,9 +1351,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1459,9 +1360,6 @@
           "name": "customerFee",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1552,9 +1450,6 @@
           "name": "asap",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -1801,9 +1696,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1813,9 +1705,6 @@
           "name": "organizationId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1837,9 +1726,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1849,9 +1735,6 @@
           "name": "organizationId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1909,9 +1792,6 @@
           "name": "comment",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1987,9 +1867,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "complexType": {
                 "nativeType": "Array",
                 "typeParams": [
@@ -2007,9 +1884,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -2020,9 +1894,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -2032,9 +1903,6 @@
           "name": "name",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2083,9 +1951,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2095,9 +1960,6 @@
           "name": "price",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2119,9 +1981,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2131,9 +1990,6 @@
           "name": "delivered",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2161,9 +2017,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -2214,9 +2067,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2226,9 +2076,6 @@
           "name": "delivered",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2256,9 +2103,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -2336,9 +2180,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2348,9 +2189,6 @@
           "name": "asap",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2371,9 +2209,6 @@
           "name": "delivered",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2402,9 +2237,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -2432,9 +2264,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2444,9 +2273,6 @@
           "name": "promisedTime",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2488,9 +2314,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2500,9 +2323,6 @@
           "name": "delivered",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2530,9 +2350,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -2628,9 +2445,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2671,9 +2485,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2685,9 +2496,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -2697,9 +2505,6 @@
           "name": "rewardId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2711,9 +2516,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2894,9 +2696,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2916,9 +2715,6 @@
           "name": "currency",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2984,9 +2780,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3115,9 +2908,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -3138,9 +2928,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -3151,9 +2938,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -3163,9 +2947,6 @@
           "name": "total",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -3187,9 +2968,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3200,9 +2978,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3212,9 +2987,6 @@
           "name": "providerTransactionId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3255,9 +3027,6 @@
           "name": "fee",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3359,9 +3128,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3412,9 +3178,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3425,9 +3188,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3437,9 +3197,6 @@
           "name": "loyaltySavings",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3472,9 +3229,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3484,9 +3238,6 @@
           "name": "tip",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
