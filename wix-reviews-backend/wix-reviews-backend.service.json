@@ -418,9 +418,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -440,9 +437,6 @@
           "name": "contactId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -483,9 +477,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -495,9 +486,6 @@
           "name": "name",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -538,9 +526,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -550,9 +535,6 @@
           "name": "name",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -603,9 +585,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -615,9 +594,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -639,9 +615,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -651,9 +624,6 @@
           "name": "prev",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -784,9 +754,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -806,9 +773,6 @@
           "name": "triggeredByAnonymizeRequest",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -948,9 +912,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -961,9 +922,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1048,9 +1006,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -1071,9 +1026,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -1084,9 +1036,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -1096,9 +1045,6 @@
           "name": "total",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -1206,9 +1152,6 @@
           "name": "filter",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "complexType": {
                 "nativeType": "Record",
@@ -1458,9 +1401,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1497,9 +1437,6 @@
           "name": "title",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
