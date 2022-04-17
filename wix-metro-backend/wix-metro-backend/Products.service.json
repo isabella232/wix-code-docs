@@ -282,9 +282,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -294,9 +291,6 @@
           "name": "longitude",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -376,9 +370,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -388,9 +379,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -412,9 +400,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -424,9 +409,6 @@
           "name": "prev",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -515,9 +497,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -528,9 +507,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -540,9 +516,6 @@
           "name": "postalCode",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -563,9 +536,6 @@
           "name": "subdivision",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -597,9 +567,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -620,9 +587,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -632,9 +596,6 @@
           "name": "offset",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -656,9 +617,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -679,9 +637,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -692,9 +647,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -704,9 +656,6 @@
           "name": "total",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -773,9 +722,6 @@
           "type": [
             {
               "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
             }
           ],
           "doc": ""
@@ -821,9 +767,6 @@
           "type": [
             {
               "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
             }
           ],
           "doc": ""
@@ -833,9 +776,6 @@
           "type": [
             {
               "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
             }
           ],
           "doc": ""
@@ -845,9 +785,6 @@
           "type": [
             {
               "nativeType": "string"
-            },
-            {
-              "nativeType": "null"
             }
           ],
           "doc": ""
@@ -1058,9 +995,6 @@
           "name": "filter",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "complexType": {
                 "nativeType": "Record",
