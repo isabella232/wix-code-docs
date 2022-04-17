@@ -453,9 +453,7 @@
       },
       "docs": {
         "summary": "",
-        "description": [
-          ""
-        ],
+        "description": [],
         "examples": [
           {
             "title": "startsWith example",
