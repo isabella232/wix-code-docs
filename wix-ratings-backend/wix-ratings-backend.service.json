@@ -97,7 +97,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Attribute id for which average will be computed."
         },
         {
           "name": "entityIds",
@@ -114,7 +114,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Entities ids"
         }
       ],
       "docs": {
@@ -216,7 +216,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Attribute ID."
         },
         {
           "name": "ratingOwner",
@@ -226,7 +226,7 @@
               "referenceType": "wix-ratings-backend.IdentificationData"
             }
           ],
-          "doc": ""
+          "doc": "Set rating's owner explicitly. Ignored when visitor/member calls API."
         },
         {
           "name": "relatedContentIds",
@@ -243,7 +243,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Optional field to indicated to what entities this rating relates to\nGives ability to query ratings which relates to entity"
         },
         {
           "name": "value",
@@ -252,7 +252,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": ""
+          "doc": "Value to set for the specified attribute."
         }
       ],
       "docs": {
@@ -406,6 +406,36 @@
       }
     },
     {
+      "name": "DataExtensionsUpdatedEvent",
+      "members": [
+        {
+          "name": "namespaces",
+          "optional": true,
+          "type": [
+            {
+              "complexType": {
+                "nativeType": "Record",
+                "typeParams": [
+                  {
+                    "nativeType": "string"
+                  },
+                  {
+                    "nativeType": "string"
+                  }
+                ]
+              }
+            }
+          ],
+          "doc": "Map from namespace to the updated data as a JSON in string format\nIf _has_more_data is set to true in the update data, it means you need to call the server again to get it"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "DeleteByFilterOperation",
       "members": [
         {
@@ -473,7 +503,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "The revision number of the rating."
         }
       ],
       "docs": {
@@ -549,6 +579,16 @@
           "type": [
             {
               "referenceType": "wix-ratings-backend.EntityCreatedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dataExtensionsUpdatedEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ratings-backend.DataExtensionsUpdatedEvent"
             }
           ],
           "doc": ""
@@ -748,7 +788,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Entity ID."
         },
         {
           "name": "namespace",
@@ -757,7 +797,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Ratings namespace whose summary is to be returned."
         }
       ],
       "docs": {
@@ -784,7 +824,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "List of attributes to get summary of."
         }
       ],
       "docs": {
@@ -903,7 +943,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "list of attributes to get summary of."
         }
       ],
       "docs": {
@@ -1698,7 +1738,7 @@
               "nativeType": "number"
             }
           ],
-          "doc": ""
+          "doc": "New numeric value of rating"
         }
       ],
       "docs": {
