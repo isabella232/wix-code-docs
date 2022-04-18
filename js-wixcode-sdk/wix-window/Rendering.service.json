@@ -3,8 +3,8 @@
   "mixes": [],
   "labels": [],
   "location":
-    { "lineno": 437,
-      "filename": "window.es6" },
+    { "lineno": 301,
+      "filename": "window.js" },
   "docs":
     { "summary": "The Rendering API is used to control when code is run as a page is being loaded.",
       "description":
@@ -32,8 +32,8 @@
         "set": false,
         "type": "string",
         "locations":
-          [ { "lineno": 207,
-              "filename": "window.es6" } ],
+          [ { "lineno": 104,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "Gets the current environment the rendering process is running in.",
             "description":
@@ -83,8 +83,8 @@
         "set": false,
         "type": "number",
         "locations":
-          [ { "lineno": 192,
-              "filename": "window.es6" } ],
+          [ { "lineno": 93,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "**Deprecated:**  The `renderCycle` property no longer works as expected.",
             "description":
@@ -106,8 +106,8 @@
             "string",
             "Object" ],
         "locations":
-          [ { "lineno": 239,
-              "filename": "window.es6" } ],
+          [ { "lineno": 130,
+              "filename": "window.js" } ],
         "docs":
           { "summary": "**Deprecated:** This version of the `warmupData` property does not work as expected. A newer version is available at [`wix-window.warmupData`](wix-window.html#warmupData).",
             "description":
