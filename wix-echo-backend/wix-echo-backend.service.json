@@ -6,7 +6,22 @@
   "clientId": "wix-echo-backend",
   "docs": {},
   "relatedGuides": [],
-  "properties": [],
+  "properties": [
+    {
+      "name": "metroinspector",
+      "type": [
+        {
+          "referenceType": "wix-echo-backend.Metroinspector"
+        }
+      ],
+      "docs": {
+        "summary": "",
+        "links": [],
+        "examples": [],
+        "extra": {}
+      }
+    }
+  ],
   "operations": [],
   "messages": []
 }
