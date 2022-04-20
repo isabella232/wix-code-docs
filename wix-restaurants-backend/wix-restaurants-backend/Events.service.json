@@ -96,46 +96,6 @@
       }
     },
     {
-      "name": "onCatalogUpdated",
-      "params": [
-        {
-          "name": "event",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogCatalogUpdated",
-              "displayName": "CatalogUpdated"
-            }
-          ],
-          "doc": "",
-          "required": false
-        }
-      ],
-      "requiredFields": [],
-      "ret": {
-        "type": [
-          {
-            "nativeType": "void"
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "description": [],
-        "examples": [
-          {
-            "title": "onCatalogUpdated example",
-            "body": [
-              "",
-              "  export function wixRestaurantsCatalogsOnCatalogUpdated(event) {",
-              "  }",
-              "",
-              "  "
-            ]
-          }
-        ]
-      }
-    },
-    {
       "name": "onOrderAccepted",
       "params": [
         {
@@ -1686,16 +1646,6 @@
           "doc": ""
         },
         {
-          "name": "entity",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogCatalog",
-              "displayName": "Catalog"
-            }
-          ],
-          "doc": ""
-        },
-        {
           "name": "locationId",
           "optional": true,
           "type": [
@@ -1711,16 +1661,6 @@
           "type": [
             {
               "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "metadata",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogBackendEventMetadata",
-              "displayName": "BackendEventMetadata"
             }
           ],
           "doc": ""
