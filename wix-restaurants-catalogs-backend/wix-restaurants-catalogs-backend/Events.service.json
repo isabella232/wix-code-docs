@@ -96,47 +96,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "onCatalogUpdated",
-      "params": [
-        {
-          "name": "event",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsCatalogUpdated",
-              "displayName": "CatalogUpdated"
-            }
-          ],
-          "doc": "",
-          "required": false
-        }
-      ],
-      "requiredFields": [],
-      "ret": {
-        "type": [
-          {
-            "nativeType": "void"
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "summary": "file 'docs/restaurants-catalogs-v3-catalog/onCatalogUpdated/summary.md' not found.",
-        "description": [],
-        "examples": [
-          {
-            "title": "onCatalogUpdated example",
-            "body": [
-              "",
-              "  export function wixRestaurantsCatalogsOnCatalogUpdated(event) {",
-              "  }",
-              "",
-              "  "
-            ]
-          }
-        ]
-      }
     }
   ],
   "messages": [
@@ -1566,16 +1525,6 @@
           "doc": ""
         },
         {
-          "name": "entity",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsCatalog",
-              "displayName": "Catalog"
-            }
-          ],
-          "doc": ""
-        },
-        {
           "name": "locationId",
           "optional": true,
           "type": [
@@ -1591,16 +1540,6 @@
           "type": [
             {
               "nativeType": "string"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "metadata",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsBackendEventMetadata",
-              "displayName": "BackendEventMetadata"
             }
           ],
           "doc": ""
