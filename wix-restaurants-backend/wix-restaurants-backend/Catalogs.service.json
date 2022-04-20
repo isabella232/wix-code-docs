@@ -608,66 +608,6 @@
       }
     },
     {
-      "name": "catalogsBulkArchiveMenus",
-      "params": [
-        {
-          "name": "catalogId",
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "ID of the catalog the menus belong to.",
-          "required": true
-        },
-        {
-          "name": "options",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Catalogs.CatalogsBulkArchiveMenusOptions"
-            }
-          ],
-          "doc": "",
-          "required": false
-        }
-      ],
-      "requiredFields": [
-        "catalogId"
-      ],
-      "ret": {
-        "type": [
-          {
-            "complexType": {
-              "nativeType": "Promise",
-              "typeParams": [
-                {
-                  "referenceType": "wix-restaurants-backend.Catalogs.BulkArchiveMenusResponse"
-                }
-              ]
-            }
-          }
-        ],
-        "doc": null
-      },
-      "docs": {
-        "summary": "Changes the `archived` boolean to `true` for multiple menus.",
-        "description": [],
-        "examples": [
-          {
-            "title": "catalogsBulkArchiveMenus example",
-            "body": [
-              "",
-              "    function catalogsBulkArchiveMenus() {",
-              "",
-              "  }",
-              "",
-              "  "
-            ]
-          }
-        ]
-      }
-    },
-    {
       "name": "createDish",
       "params": [
         {
