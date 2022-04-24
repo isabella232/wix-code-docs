@@ -57,8 +57,9 @@
         "doc": "messge reseult as string\n"
       },
       "docs": {
-        "description": [],
-        "summary": "echo given arg1 and arg2"
+        "description": [
+          "echo given arg1 and arg2"
+        ]
       }
     }
   ],
