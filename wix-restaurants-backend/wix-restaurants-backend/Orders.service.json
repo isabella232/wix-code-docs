@@ -2561,7 +2561,7 @@
               }
             }
           ],
-          "doc": "Dishes and options included in the order."
+          "doc": "TEST This is a line item for the order of the property"
         },
         {
           "name": "locationId",
