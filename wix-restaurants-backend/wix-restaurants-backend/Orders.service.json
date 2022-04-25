@@ -231,8 +231,10 @@
         "doc": null
       },
       "docs": {
-        "summary": "Retrieves an order.",
-        "description": [],
+        "summary": "TEST The `getOrder()` function returns a Promise that is returned when an order is retrieved.",
+        "description": [
+          "1. First do this.\n1. The do that\n    + This is a bullet\n    + So is this.\n\n> **Note**: This indentation is not how our notes generally look but I will waiit to see the branch preview. I am just trying out some markdown here.\n"
+        ],
         "examples": [
           {
             "title": "getOrder example 1",
