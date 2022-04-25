@@ -126,11 +126,7 @@
           {
             "title": "onOrderAccepted example",
             "body": [
-              "",
-              "  export function wixRestaurantsOnOrderAccepted(event) {",
-              "  }",
-              "",
-              "  "
+              "file 'docs/restaurants-v3-order/onOrderAccepted/example.md' not found."
             ]
           }
         ]
@@ -167,11 +163,7 @@
           {
             "title": "onOrderCanceled example",
             "body": [
-              "",
-              "  export function wixRestaurantsOnOrderCanceled(event) {",
-              "  }",
-              "",
-              "  "
+              "file 'docs/restaurants-v3-order/onOrderCanceled/example.md' not found."
             ]
           }
         ]
@@ -208,11 +200,7 @@
           {
             "title": "onOrderFulfilled example",
             "body": [
-              "",
-              "  export function wixRestaurantsOnOrderFulfilled(event) {",
-              "  }",
-              "",
-              "  "
+              "file 'docs/restaurants-v3-order/onOrderFulfilled/example.md' not found."
             ]
           }
         ]
