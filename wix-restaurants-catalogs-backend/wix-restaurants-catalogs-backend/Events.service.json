@@ -109,6 +109,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "complexType": {
                 "nativeType": "Record",
                 "typeParams": [
@@ -1295,6 +1298,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1327,6 +1333,9 @@
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1457,6 +1466,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1521,6 +1533,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1552,6 +1567,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "boolean"
             }
           ],
@@ -1562,6 +1580,9 @@
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1906,6 +1927,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1915,6 +1939,9 @@
           "name": "active",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -1948,6 +1975,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1969,6 +1999,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1978,6 +2011,9 @@
           "name": "percentage",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2310,6 +2346,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -2319,6 +2358,9 @@
           "name": "minChoices",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -2516,6 +2558,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2557,6 +2602,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2566,6 +2614,9 @@
           "name": "acceptSpecialRequest",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -2578,6 +2629,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "boolean"
             }
           ],
@@ -2587,6 +2641,9 @@
           "name": "description",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2609,6 +2666,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2618,6 +2678,9 @@
           "name": "inStock",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -2640,6 +2703,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2660,6 +2726,9 @@
           "name": "taxRate",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2729,6 +2798,9 @@
           "name": "_id",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3118,6 +3190,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3129,6 +3204,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "boolean"
             }
           ],
@@ -3138,6 +3216,9 @@
           "name": "description",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3149,6 +3230,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3158,6 +3242,9 @@
           "name": "name",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3252,6 +3339,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -3261,6 +3351,9 @@
           "name": "offset",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -3292,6 +3385,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3301,6 +3397,9 @@
           "name": "locationId",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3373,6 +3472,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3384,6 +3486,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "boolean"
             }
           ],
@@ -3394,6 +3499,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3403,6 +3511,9 @@
           "name": "imageUrl",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3426,6 +3537,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3435,6 +3549,9 @@
           "name": "name",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3512,6 +3629,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3581,6 +3701,9 @@
           "name": "eventName",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3914,6 +4037,9 @@
           "name": "visible",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
