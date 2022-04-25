@@ -43,7 +43,7 @@
             "title": "onCatalogChanged example",
             "body": [
               "",
-              "  export function wixRestaurantsCatalogsOnCatalogChanged(event) {",
+              "  export function wixRestaurantsCatalogs_onCatalogChanged(event) {",
               "  }",
               "",
               "  "
@@ -86,7 +86,7 @@
             "title": "onCatalogCreated example",
             "body": [
               "",
-              "  export function wixRestaurantsCatalogsOnCatalogCreated(event) {",
+              "  export function wixRestaurantsCatalogs_onCatalogCreated(event) {",
               "  }",
               "",
               "  "
