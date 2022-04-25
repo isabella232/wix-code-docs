@@ -59,8 +59,8 @@
         "doc": null
       },
       "docs": {
+        "summary": "Changes the order status to `ACCEPTED`.",
         "description": [
-          "Changes the order status to `ACCEPTED`.",
           "> **Note:** It is not possible to change the order status from `FULFILLED` to `ACCEPTED`."
         ],
         "examples": [
@@ -121,9 +121,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Changes the order status to `CANCELED`."
-        ],
+        "summary": "Changes the order status to `CANCELED`.",
+        "description": [],
         "examples": [
           {
             "title": "cancelOrder example",
@@ -172,9 +171,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Changes the order status to `FULFILLED`."
-        ],
+        "summary": "Changes the order status to `FULFILLED`.",
+        "description": [],
         "examples": [
           {
             "title": "fulfillOrder example",
@@ -233,8 +231,8 @@
         "doc": null
       },
       "docs": {
+        "summary": "TEST The `getOrder()` function returns a Promise that is returned when an order is retrieved.",
         "description": [
-          "TEST The `getOrder()` function returns a Promise that is returned when an order is retrieved.",
           "1. First do this.\n1. The do that\n    + This is a bullet\n    + So is this.\n\n> **Note**: This indentation is not how our notes generally look but I will waiit to see the branch preview. I am just trying out some markdown here.\n"
         ],
         "examples": [
@@ -704,9 +702,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves an order."
-        ],
+        "summary": "Retrieves an order.",
+        "description": [],
         "examples": [
           {
             "title": "getOrderByMsid example",
@@ -753,9 +750,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "return list of orders total amount mapped to each location based on given status."
-        ],
+        "summary": "return list of orders total amount mapped to each location based on given status.",
+        "description": [],
         "examples": [
           {
             "title": "getTotalActiveOrders example",
@@ -802,9 +798,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves a list of up to 1000 orders, given the provided filters."
-        ],
+        "summary": "Retrieves a list of up to 1000 orders, given the provided filters.",
+        "description": [],
         "examples": [
           {
             "title": "listOrders example",
@@ -853,9 +848,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves a list of up to 2000 orders, given the provided filters."
-        ],
+        "summary": "Retrieves a list of up to 2000 orders, given the provided filters.",
+        "description": [],
         "examples": [
           {
             "title": "listOrdersByMsid example",
@@ -914,9 +908,7 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          ""
-        ],
+        "description": [],
         "examples": [
           {
             "title": "notifyOrderEvent example",
@@ -941,9 +933,6 @@
           "name": "message",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -973,9 +962,6 @@
           "name": "message",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1018,9 +1004,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1052,9 +1035,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1083,9 +1063,6 @@
           "name": "message",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1128,9 +1105,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1152,9 +1126,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1165,9 +1136,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1259,9 +1227,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1271,9 +1236,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -1295,9 +1257,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1307,9 +1266,6 @@
           "name": "prev",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1330,9 +1286,6 @@
           "name": "contactId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1374,9 +1327,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1387,9 +1337,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1399,9 +1346,6 @@
           "name": "visitorId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1423,9 +1367,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1435,9 +1376,6 @@
           "name": "approximate",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -1449,9 +1387,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1461,9 +1396,6 @@
           "name": "city",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1475,9 +1407,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1487,9 +1416,6 @@
           "name": "country",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1501,9 +1427,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1513,9 +1436,6 @@
           "name": "entrance",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1527,9 +1447,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1539,9 +1456,6 @@
           "name": "formatted",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1573,9 +1487,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1585,9 +1496,6 @@
           "name": "streetNumber",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1599,9 +1507,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1611,9 +1516,6 @@
           "name": "zipCode",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1635,9 +1537,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -1647,9 +1546,6 @@
           "name": "longitude",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -1871,9 +1767,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -1883,9 +1776,6 @@
           "name": "customerFee",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -1976,9 +1866,6 @@
           "name": "asap",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2225,9 +2112,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2237,9 +2121,6 @@
           "name": "organizationId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2251,9 +2132,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2263,9 +2141,6 @@
           "name": "promisedTimeNew",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2287,9 +2162,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2299,9 +2171,6 @@
           "name": "organizationId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2313,9 +2182,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2325,9 +2191,6 @@
           "name": "promisedTimeNew",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2385,9 +2248,6 @@
           "name": "comment",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2463,9 +2323,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "complexType": {
                 "nativeType": "Array",
                 "typeParams": [
@@ -2483,9 +2340,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -2496,9 +2350,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -2508,9 +2359,6 @@
           "name": "name",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2559,9 +2407,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2571,9 +2416,6 @@
           "name": "price",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -2595,9 +2437,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2607,9 +2446,6 @@
           "name": "delivered",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2637,9 +2473,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -2690,9 +2523,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2702,9 +2532,6 @@
           "name": "delivered",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2732,9 +2559,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -2812,9 +2636,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2824,9 +2645,6 @@
           "name": "delivered",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2854,9 +2672,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -2915,9 +2730,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -2927,9 +2739,6 @@
           "name": "delivered",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -2957,9 +2766,6 @@
           "name": "limit",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -3055,9 +2861,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3098,9 +2901,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3112,9 +2912,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -3124,9 +2921,6 @@
           "name": "rewardId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3138,9 +2932,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3321,9 +3112,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3343,9 +3131,6 @@
           "name": "currency",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3411,9 +3196,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3542,9 +3324,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -3565,9 +3344,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -3578,9 +3354,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -3590,9 +3363,6 @@
           "name": "total",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -3614,9 +3384,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3627,9 +3394,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3639,9 +3403,6 @@
           "name": "providerTransactionId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3682,9 +3443,6 @@
           "name": "fee",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3813,9 +3571,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3866,9 +3621,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3879,9 +3631,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3891,9 +3640,6 @@
           "name": "loyaltySavings",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3926,9 +3672,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3938,9 +3681,6 @@
           "name": "tip",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
