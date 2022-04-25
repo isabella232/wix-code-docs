@@ -50,9 +50,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Archives a menu. You can't update archived menus."
-        ],
+        "summary": "Archives a menu. You can't update archived menus.",
+        "description": [],
         "examples": [
           {
             "title": "archiveMenu example",
@@ -111,9 +110,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Changes the `archived` boolean to `true` for multiple menus in a draft catalog."
-        ],
+        "summary": "Changes the `archived` boolean to `true` for multiple menus in a draft catalog.",
+        "description": [],
         "examples": [
           {
             "title": "bulkArchiveMenus example",
@@ -172,9 +170,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Adds multiple dishes to a draft catalog."
-        ],
+        "summary": "Adds multiple dishes to a draft catalog.",
+        "description": [],
         "examples": [
           {
             "title": "bulkCreateDishes example",
@@ -233,9 +230,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Adds multiple menus to a draft catalog."
-        ],
+        "summary": "Adds multiple menus to a draft catalog.",
+        "description": [],
         "examples": [
           {
             "title": "bulkCreateMenus example",
@@ -294,9 +290,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Adds multiple sections to a draft catalog."
-        ],
+        "summary": "Adds multiple sections to a draft catalog.",
+        "description": [],
         "examples": [
           {
             "title": "bulkCreateSections example",
@@ -355,9 +350,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Adds multiple variations to a draft catalog."
-        ],
+        "summary": "Adds multiple variations to a draft catalog.",
+        "description": [],
         "examples": [
           {
             "title": "bulkCreateVariations example",
@@ -416,9 +410,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Changes the `archived` boolean to `false` for multiple menus in a draft catalog."
-        ],
+        "summary": "Changes the `archived` boolean to `false` for multiple menus in a draft catalog.",
+        "description": [],
         "examples": [
           {
             "title": "bulkUnarchiveMenus example",
@@ -477,9 +470,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Updates multiple items in a draft catalog.\nYou can't update archived items."
-        ],
+        "summary": "Updates multiple items in a draft catalog.\nYou can't update archived items.",
+        "description": [],
         "examples": [
           {
             "title": "bulkUpdateItems example",
@@ -538,9 +530,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Updates multiple menus in a draft catalog.\nYou can't update archived menus."
-        ],
+        "summary": "Updates multiple menus in a draft catalog.\nYou can't update archived menus.",
+        "description": [],
         "examples": [
           {
             "title": "bulkUpdateMenus example",
@@ -599,9 +590,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Updates multiple sections in a draft catalog.\nYou can't update archived sections."
-        ],
+        "summary": "Updates multiple sections in a draft catalog.\nYou can't update archived sections.",
+        "description": [],
         "examples": [
           {
             "title": "bulkUpdateSections example",
@@ -663,9 +653,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Creates a dish."
-        ],
+        "summary": "Creates a dish.",
+        "description": [],
         "examples": [
           {
             "title": "createDish example",
@@ -714,8 +703,8 @@
         "doc": null
       },
       "docs": {
+        "summary": "Creates a draft version of the specified catalog.\nThen you can update and publish the draft catalog by using the endpoints in the [Draft Catalogs category](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs).",
         "description": [
-          "Creates a draft version of the specified catalog.\nThen you can update and publish the draft catalog by using the endpoints in the [Draft Catalogs category](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs).",
           "> **Note:** You can't create more than one draft catalog per location."
         ],
         "examples": [
@@ -777,9 +766,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Creates a menu."
-        ],
+        "summary": "Creates a menu.",
+        "description": [],
         "examples": [
           {
             "title": "createMenu example",
@@ -840,9 +828,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Creates a section.\nYou can't add the section to multiple menus, since every section belongs to a single menu."
-        ],
+        "summary": "Creates a section.\nYou can't add the section to multiple menus, since every section belongs to a single menu.",
+        "description": [],
         "examples": [
           {
             "title": "createSection example",
@@ -902,9 +889,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Creates a variation."
-        ],
+        "summary": "Creates a variation.",
+        "description": [],
         "examples": [
           {
             "title": "createVariation example",
@@ -953,9 +939,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Discards a draft catalog. If you want to continue using [Bulk endpoints](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs) for this catalog, you must first call the [Create Draft Catalog](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs/create-draft-catalog) endpoint again."
-        ],
+        "summary": "Discards a draft catalog. If you want to continue using [Bulk endpoints](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs) for this catalog, you must first call the [Create Draft Catalog](https://dev.wix.com/api/rest/wix-restaurants/catalogs/draft-catalogs/create-draft-catalog) endpoint again.",
+        "description": [],
         "examples": [
           {
             "title": "discardDraftCatalog example",
@@ -1015,9 +1000,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves an item."
-        ],
+        "summary": "Retrieves an item.",
+        "description": [],
         "examples": [
           {
             "title": "getItem example",
@@ -1067,9 +1051,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves a menu."
-        ],
+        "summary": "Retrieves a menu.",
+        "description": [],
         "examples": [
           {
             "title": "getMenu example",
@@ -1120,9 +1103,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves a section."
-        ],
+        "summary": "Retrieves a section.",
+        "description": [],
         "examples": [
           {
             "title": "getSection example",
@@ -1169,9 +1151,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves catalogs, given the provided filtering, sorting and paging.\nNote that there is a single catalog per location."
-        ],
+        "summary": "Retrieves catalogs, given the provided filtering, sorting and paging.\nNote that there is a single catalog per location.",
+        "description": [],
         "examples": [
           {
             "title": "listCatalogs example",
@@ -1230,9 +1211,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves items, given the provided filtering, sorting and paging."
-        ],
+        "summary": "Retrieves items, given the provided filtering, sorting and paging.",
+        "description": [],
         "examples": [
           {
             "title": "listItems example",
@@ -1291,9 +1271,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves menus, given the provided filtering, sorting and paging."
-        ],
+        "summary": "Retrieves menus, given the provided filtering, sorting and paging.",
+        "description": [],
         "examples": [
           {
             "title": "listMenus example",
@@ -1352,9 +1331,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Retrieves sections, given the provided filtering, sorting and paging."
-        ],
+        "summary": "Retrieves sections, given the provided filtering, sorting and paging.",
+        "description": [],
         "examples": [
           {
             "title": "listSections example",
@@ -1403,9 +1381,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Publishes a draft catalog to the live site by replacing the existing catalog."
-        ],
+        "summary": "Publishes a draft catalog to the live site by replacing the existing catalog.",
+        "description": [],
         "examples": [
           {
             "title": "publishDraftCatalog example",
@@ -1455,9 +1432,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Unarchives a menu."
-        ],
+        "summary": "Unarchives a menu.",
+        "description": [],
         "examples": [
           {
             "title": "unarchiveMenu example",
@@ -1517,9 +1493,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Updates an item.\nYou can't update archived items."
-        ],
+        "summary": "Updates an item.\nYou can't update archived items.",
+        "description": [],
         "examples": [
           {
             "title": "updateItem example",
@@ -1579,9 +1554,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Updates a menu.\nYou can't update archived menus."
-        ],
+        "summary": "Updates a menu.\nYou can't update archived menus.",
+        "description": [],
         "examples": [
           {
             "title": "updateMenu example",
@@ -1642,9 +1616,8 @@
         "doc": null
       },
       "docs": {
-        "description": [
-          "Updates a section.\nYou can't update archived sections. Note that every section belongs to a single menu, you can't add it to another menu."
-        ],
+        "summary": "Updates a section.\nYou can't update archived sections. Note that every section belongs to a single menu, you can't add it to another menu.",
+        "description": [],
         "examples": [
           {
             "title": "updateSection example",
@@ -1679,9 +1652,6 @@
           "name": "data",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "complexType": {
                 "nativeType": "Record",
@@ -3054,9 +3024,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3089,9 +3056,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3160,9 +3124,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3223,9 +3184,6 @@
           "name": "locationId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3295,9 +3253,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -3308,9 +3263,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -3693,9 +3645,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3705,9 +3654,6 @@
           "name": "active",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -3739,9 +3685,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3762,9 +3705,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -3774,9 +3714,6 @@
           "name": "percentage",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -4045,9 +3982,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -4057,9 +3991,6 @@
           "name": "minChoices",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -4367,9 +4298,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -4411,9 +4339,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -4423,9 +4348,6 @@
           "name": "acceptSpecialRequest",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -4438,9 +4360,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -4450,9 +4369,6 @@
           "name": "description",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -4474,9 +4390,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -4486,9 +4399,6 @@
           "name": "inStock",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -4510,9 +4420,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -4532,9 +4439,6 @@
           "name": "taxRate",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -4603,9 +4507,6 @@
           "name": "_id",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -5156,9 +5057,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -5170,9 +5068,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -5182,9 +5077,6 @@
           "name": "description",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -5196,9 +5088,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -5208,9 +5097,6 @@
           "name": "name",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -5330,9 +5216,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -5342,9 +5225,6 @@
           "name": "offset",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -5376,9 +5256,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -5388,9 +5265,6 @@
           "name": "locationId",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -5462,9 +5336,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -5476,9 +5347,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -5489,9 +5357,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -5501,9 +5366,6 @@
           "name": "imageUrl",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -5526,9 +5388,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -5538,9 +5397,6 @@
           "name": "name",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -5643,9 +5499,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -5715,9 +5568,6 @@
           "name": "eventName",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -5885,9 +5735,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -5984,9 +5831,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -6093,9 +5937,6 @@
           "readOnly": true,
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -6348,9 +6189,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -6372,9 +6210,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -6384,9 +6219,6 @@
           "name": "acceptSpecialRequest",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -6399,9 +6231,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -6411,9 +6240,6 @@
           "name": "description",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -6435,9 +6261,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -6447,9 +6270,6 @@
           "name": "inStock",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "boolean"
             }
@@ -6471,9 +6291,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -6493,9 +6310,6 @@
           "name": "taxRate",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -6539,9 +6353,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -6553,9 +6364,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -6565,9 +6373,6 @@
           "name": "description",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -6579,9 +6384,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -6591,9 +6393,6 @@
           "name": "name",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -6636,9 +6435,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -6650,9 +6446,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "boolean"
             }
           ],
@@ -6663,9 +6456,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -6675,9 +6465,6 @@
           "name": "imageUrl",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -6700,9 +6487,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -6712,9 +6496,6 @@
           "name": "name",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
