@@ -34,8 +34,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "Triggered when a loyalty account has been created.",
-        "description": [],
+        "description": [
+          "Triggered when a loyalty account has been created."
+        ],
         "examples": [
           {
             "title": "onAccountCreated example",
@@ -75,8 +76,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "Triggered when the point balance of a loyalty account has been updated.",
-        "description": [],
+        "description": [
+          "Triggered when the point balance of a loyalty account has been updated."
+        ],
         "examples": [
           {
             "title": "onAccountPointsUpdated example",
@@ -116,8 +118,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "Triggered when a loyalty account has been updated.",
-        "description": [],
+        "description": [
+          "Triggered when a loyalty account has been updated."
+        ],
         "examples": [
           {
             "title": "onAccountUpdated example",
@@ -408,6 +411,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -545,6 +551,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -554,6 +563,9 @@
           "name": "limit",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -575,6 +587,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -584,6 +599,9 @@
           "name": "prev",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -719,6 +737,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -738,6 +759,9 @@
           "name": "triggeredByAnonymizeRequest",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -1056,6 +1080,9 @@
           "name": "_id",
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1129,6 +1156,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1149,6 +1179,9 @@
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1172,6 +1205,9 @@
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1279,6 +1315,9 @@
           "name": "accountId",
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1349,6 +1388,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -1358,6 +1400,9 @@
           "name": "offset",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -1463,6 +1508,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1546,6 +1594,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -1567,6 +1618,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -1577,6 +1631,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "boolean"
             }
           ],
@@ -1586,6 +1643,9 @@
           "name": "total",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -1740,6 +1800,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1844,6 +1907,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1876,6 +1942,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1886,6 +1955,9 @@
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1909,6 +1981,9 @@
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2141,6 +2216,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2206,6 +2284,9 @@
           "name": "description",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2278,6 +2359,9 @@
           "name": "name",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2602,6 +2686,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2631,6 +2718,9 @@
           "name": "customName",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2783,6 +2873,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2823,6 +2916,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2862,6 +2958,9 @@
           "name": "originMetaSiteId",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
