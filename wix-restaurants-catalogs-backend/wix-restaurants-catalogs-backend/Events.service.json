@@ -43,11 +43,7 @@
           {
             "title": "onCatalogChanged example",
             "body": [
-              "",
-              "  export function wixRestaurantsCatalogsOnCatalogChanged(event) {",
-              "  }",
-              "",
-              "  "
+              "file 'docs/restaurants-catalogs-v3-catalog/onCatalogChanged/example.md' not found."
             ]
           }
         ]
@@ -87,11 +83,7 @@
           {
             "title": "onCatalogCreated example",
             "body": [
-              "",
-              "  export function wixRestaurantsCatalogsOnCatalogCreated(event) {",
-              "  }",
-              "",
-              "  "
+              "file 'docs/restaurants-catalogs-v3-catalog/onCatalogCreated/example.md' not found."
             ]
           }
         ]
