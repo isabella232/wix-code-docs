@@ -1498,7 +1498,7 @@
         }
       ],
       "requiredFields": [
-        "item._id",
+        "identifiers.itemId",
         "identifiers.catalogId"
       ],
       "ret": {
@@ -1561,7 +1561,7 @@
       ],
       "requiredFields": [
         "identifiers.catalogId",
-        "menu._id"
+        "identifiers.menuId"
       ],
       "ret": {
         "type": [
@@ -1622,7 +1622,7 @@
         }
       ],
       "requiredFields": [
-        "section._id",
+        "identifiers.sectionId",
         "identifiers.menuId",
         "identifiers.catalogId"
       ],
@@ -5880,14 +5880,18 @@
           "doc": "ID of the catalog the item belongs to."
         },
         {
-          "name": "item",
+          "name": "itemId",
+          "readOnly": true,
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.item_0"
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Item ID."
         }
       ],
       "docs": {
@@ -5903,7 +5907,7 @@
           "name": "item",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.item_1"
+              "referenceType": "wix-restaurants-backend.Catalogs.item_0"
             }
           ],
           "doc": ""
@@ -5976,14 +5980,18 @@
           "doc": "ID of the catalog the menu belongs to."
         },
         {
-          "name": "menu",
+          "name": "menuId",
+          "readOnly": true,
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.menu_2"
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Menu ID."
         }
       ],
       "docs": {
@@ -5999,7 +6007,7 @@
           "name": "menu",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.menu_3"
+              "referenceType": "wix-restaurants-backend.Catalogs.menu_1"
             }
           ],
           "doc": ""
@@ -6081,14 +6089,18 @@
           "doc": "Menu ID."
         },
         {
-          "name": "section",
+          "name": "sectionId",
+          "readOnly": true,
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.section_4"
+              "nativeType": "null"
+            },
+            {
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Section ID."
         }
       ],
       "docs": {
@@ -6104,7 +6116,7 @@
           "name": "section",
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Catalogs.section_5"
+              "referenceType": "wix-restaurants-backend.Catalogs.section_2"
             }
           ],
           "doc": ""
@@ -6367,30 +6379,6 @@
             }
           ],
           "doc": "Item ID."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "item_1",
-      "members": [
-        {
-          "name": "_id",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Item ID."
         },
         {
           "name": "acceptSpecialRequest",
@@ -6543,31 +6531,7 @@
       }
     },
     {
-      "name": "menu_2",
-      "members": [
-        {
-          "name": "_id",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Menu ID."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "menu_3",
+      "name": "menu_1",
       "members": [
         {
           "name": "_id",
@@ -6664,31 +6628,7 @@
       }
     },
     {
-      "name": "section_4",
-      "members": [
-        {
-          "name": "_id",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Section ID."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "section_5",
+      "name": "section_2",
       "members": [
         {
           "name": "_id",
