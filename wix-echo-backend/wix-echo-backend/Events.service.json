@@ -34,8 +34,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "override 222",
-        "description": [],
+        "description": [
+          "override 222"
+        ],
         "examples": [
           {
             "title": "onEchoDispatched example",
