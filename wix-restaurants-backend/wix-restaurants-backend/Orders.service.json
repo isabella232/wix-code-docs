@@ -59,8 +59,8 @@
         "doc": null
       },
       "docs": {
-        "summary": "Changes the order status to `ACCEPTED`.",
         "description": [
+          "Changes the order status to `ACCEPTED`.",
           "> **Note:** It is not possible to change the order status from `FULFILLED` to `ACCEPTED`."
         ],
         "examples": [
@@ -121,8 +121,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "Changes the order status to `CANCELED`.",
-        "description": [],
+        "description": [
+          "Changes the order status to `CANCELED`."
+        ],
         "examples": [
           {
             "title": "cancelOrder example",
@@ -171,8 +172,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "Changes the order status to `FULFILLED`.",
-        "description": [],
+        "description": [
+          "Changes the order status to `FULFILLED`."
+        ],
         "examples": [
           {
             "title": "fulfillOrder example",
@@ -208,7 +210,7 @@
               "referenceType": "wix-restaurants-backend.Orders.GetOrderOptions"
             }
           ],
-          "doc": "TEST The options for the order.",
+          "doc": "",
           "required": false
         }
       ],
@@ -231,418 +233,19 @@
         "doc": null
       },
       "docs": {
-        "summary": "TEST The `getOrder()` function returns a Promise that is returned when an order is retrieved.",
         "description": [
-          "1. First do this.\n1. The do that\n    + This is a bullet\n    + So is this.\n\n> **Note**: This indentation is not how our notes generally look but I will waiit to see the branch preview. I am just trying out some markdown here.\n"
+          "Retrieves an order."
         ],
         "examples": [
           {
-            "title": "getOrder example 1",
+            "title": "getOrder example",
             "body": [
-              "//THIS IS A FAKE FOR TESTING ONLY ",
-              "import { wixEvents } from \"wix-events-backend\";",
               "",
-              "const eventId = \"1b7c79b6-6823-42cd-a07d-10a21a66e89a\";",
+              "    function getOrder() {",
               "",
-              "export function myGetEventFunction() {",
-              "  return wixEvents.getEvent(eventId)",
-              "    .then((result) => {",
-              "      return result;",
-              "    })",
-              "    .catch((error) => {",
-              "      console.error(error);",
-              "    });",
-              "}",
+              "  }",
               "",
-              "/* Returns a promise that resolves to",
-              " * the Wix event.",
-              " * {",
-              " *  \"about\": \"<p>Guaranteed to make you laugh.... and yourself.... and more importantly, others!</p>\",",
-              " *  \"assignedContactsLabel\": \"custom.comedy-jacky-the-lacky-live-7-2-21-10-00-pm\",",
-              " *  \"calendarLinks\": {",
-              " *    \"google\": \"http://calendar.google.com/calendar/render?action=TEMPLATE&text=Comedy%3A+Jacky+the+Lacky%2C+Live%21+&dates=20211015T203000Z%2F20211015T223000Z&location=Herbert+House%2C+Harmony+Row%2C+Dublin+2%2C+Ireland&details=Thank+you+for+registering+to+our+event%21+Your+tickets+are+attached+to+this+email.+Don%27t+forget+to+bring+them.%0A%0AWe%27re+looking+forward+to+seeing+you+there.%0A%0AHere+are+the+details%3A%0A%0AComedy%3A+Jacky+the+Lacky%2C+Live%21+%0AOctober+15%2C+2021%2C+9%3A30+PM+%E2%80%93+11%3A30+PM+GMT%2B1%0AThe+Best+Place%2C+Herbert+House%2C+Harmony+Row%2C+Dublin+2%2C+Ireland\",",
-              " *    \"ics\": \"https://www.wixevents.com/media/calendar/1b7c79b6-6823-42cd-a07d-10a21a66e89a?token=JWS.eyJraWQiOiJpb21iOUJ0eSIsImFsZyI6IkhTMjU2In0.eyJkYXRhIjoie1wiZXZlbnRJZFwiOntcInZhbHVlXCI6XCIxYjdjNzliNi02ODIzLTQyY2QtYTA3ZC0xMGEyMWE2NmU4OWFcIn0sXCJvY0xpbmtcIjpudWxsfSIsImlhdCI6MTYyNjI1NzA1NH0.fEejsUz4Oz47PpYO37-tAPOu0f8vpargXhMZ_56SCr8\"",
-              " *  },",
-              " *  \"createdBy\": \"4c47c608-cfa8-4037-93ac-738f09560ed3\",",
-              " *  \"_createdDate\": \"2021-04-28T05:58:29.947Z\",",
-              " *  \"description\": \"DUBLIN\",",
-              " *  \"eventUrl\": {",
-              " *    \"baseUrl\": \"https://mysite.wixsite.com/lectures\",",
-              " *    \"path\": \"/event-details/comedy-jacky-the-lacky-live\"",
-              " *  },",
-              " *  \"form\": {",
-              " *    \"inputGroups\": [",
-              " *      {",
-              " *        \"_id\": \"name\",",
-              " *        \"inputs\": [",
-              " *          {",
-              " *            \"additionalLabels\": [],",
-              " *            \"label\": \"First Name\",",
-              " *            \"maxLength\": 50,",
-              " *            \"name\": \"firstName\",",
-              " *            \"options\": [],",
-              " *            \"required\": true,",
-              " *            \"type\": \"TEXT\"",
-              " *          },",
-              " *          {",
-              " *            \"additionalLabels\": [],",
-              " *            \"label\": \"Last Name\",",
-              " *            \"maxLength\": 50,",
-              " *            \"name\": \"lastName\",",
-              " *            \"options\": [],",
-              " *            \"required\": true,",
-              " *            \"type\": \"TEXT\"",
-              " *          }",
-              " *        ],",
-              " *        \"orderIndex\": 0,",
-              " *        \"system\": true,",
-              " *        \"type\": \"NAME\"",
-              " *      },",
-              " *      {",
-              " *        \"_id\": \"email\",",
-              " *        \"inputs\": [",
-              " *          {",
-              " *            \"additionalLabels\": [],",
-              " *            \"label\": \"Email\",",
-              " *            \"maxLength\": 50,",
-              " *            \"name\": \"email\",",
-              " *            \"options\": [],",
-              " *            \"required\": true,",
-              " *            \"type\": \"TEXT\"",
-              " *          }",
-              " *        ],",
-              " *        \"orderIndex\": 1,",
-              " *        \"system\": true,",
-              " *        \"type\": \"INPUT\"",
-              " *      }",
-              " *    ],",
-              " *    \"messages\": {",
-              " *      \"checkout\": {",
-              " *        \"checkoutLabel\": \"Continue\",",
-              " *        \"title\": \"Add Your Details\"",
-              " *      },",
-              " *      \"registrationClosed\": {",
-              " *        \"exploreEventsLabel\": \"See other events\",",
-              " *        \"message\": \"Registration is Closed\"",
-              " *      },",
-              " *      \"rsvp\": {",
-              " *        \"noMessages\": {",
-              " *          \"confirmationTitle\": \"Sorry You Can't Make It\",",
-              " *          \"shareLabel\": \"Share\",",
-              " *          \"title\": \"Add Your Details\"",
-              " *        },",
-              " *        \"rsvpNo\": \"Not Going\",",
-              " *        \"rsvpYes\": \"I'm Going\",",
-              " *        \"submitRsvpLabel\": \"SUBMIT\",",
-              " *        \"waitingMessages\": {",
-              " *          \"addToCalendarLabel\": \"Add to Calendar\",",
-              " *          \"confirmationMessage\": \"We'll update you if additional spots become available.\",",
-              " *          \"confirmationTitle\": \"Thanks! You've been added to the waitlist.\",",
-              " *          \"shareLabel\": \"Share\",",
-              " *          \"title\": \"Looks Like This Event Is Full. Join the waiting list\"",
-              " *        },",
-              " *        \"yesMessages\": {",
-              " *          \"addToCalendarLabel\": \"Add to Calendar\",",
-              " *          \"confirmationMessage\": \"An email with all the event info was sent to you.\",",
-              " *          \"confirmationTitle\": \"Thank you! See you soon.\",",
-              " *          \"shareLabel\": \"Share\",",
-              " *          \"title\": \"Add Your Details\"",
-              " *        }",
-              " *      }",
-              " *    }",
-              " *  },",
-              " *  \"guestList\": {",
-              " *    \"public\": true",
-              " *  },",
-              " *  \"_id\": \"1b7c79b6-6823-42cd-a07d-10a21a66e89a\",",
-              " *  \"language\": \"en\",",
-              " *  \"location\": {",
-              " *    \"address\": {",
-              " *      \"formatted\": \"Herbert House, Harmony Row, Dublin 2, Ireland\",",
-              " *      \"location\": {",
-              " *        \"latitude\": 37.7703718,",
-              " *        \"longitude\": -122.3871248",
-              " *      }",
-              " *    },",
-              " *    \"name\": \"The Best Place\",",
-              " *    \"tbd\": false,",
-              " *    \"type\": \"VENUE\"",
-              " *  },",
-              " *  \"mainImage\": \"wix:image://v1/870bbd9309c94f859b9a6c4c0ac28186.jpg/file#originWidth=5472&originHeight=3078\",",
-              " *  \"registration\": {",
-              " *    \"initialType\": \"TICKETS\",",
-              " *    \"restrictedTo\": \"VISITOR\",",
-              " *    \"rsvp\": {",
-              " *      \"responseOptions\": \"YES_ONLY\",",
-              " *      \"waitlist\": false",
-              " *    },",
-              " *    \"status\": \"OPEN_TICKETS\",",
-              " *    \"tickets\": {",
-              " *      \"currency\": \"USD\",",
-              " *      \"formAssignedPerTicket\": false,",
-              " *      \"highestTicketPrice\": {",
-              " *        \"currency\": \"USD\",",
-              " *        \"value\": \"41.00\"",
-              " *      },",
-              " *      \"highestTicketPriceFormatted\": \"$41\",",
-              " *      \"lowestTicketPrice\": {",
-              " *        \"currency\": \"USD\",",
-              " *        \"value\": \"0.00\"",
-              " *      },",
-              " *      \"lowestTicketPriceFormatted\": \"$0\",",
-              " *      \"tax\": {}",
-              " *    },",
-              " *    \"type\": \"TICKETS\"",
-              " *  },",
-              " *  \"scheduling\": {",
-              " *    \"endDate\": \"2021-10-15T22:30:00.000Z\",",
-              " *    \"formatted\": \"October 15, 2021, 9:30 PM – 11:30 PM GMT+1\",",
-              " *    \"hideEndDate\": false,",
-              " *    \"showTimeZone\": true,",
-              " *    \"startDate\": \"2021-10-15T20:30:00.000Z\",",
-              " *    \"startDateFormatted\": \"October 15, 2021\",",
-              " *    \"startTimeFormatted\": \"9:30 PM\",",
-              " *    \"tbd\": false,",
-              " *    \"timeZoneId\": \"Europe/Dublin\"",
-              " *  },",
-              " *  \"slug\": \"comedy-jacky-the-lacky-live\",",
-              " *  \"status\": \"SCHEDULED\",",
-              " *  \"summary\": {",
-              " *    \"rsvp\": {",
-              " *      \"noCount\": 0,",
-              " *      \"totalRsvps\": 0,",
-              " *      \"waitlistCount\": 0,",
-              " *      \"yesCount\": 0",
-              " *    },",
-              " *    \"tickets\": {",
-              " *      \"currencyLocked\": true,",
-              " *      \"revenue\": {",
-              " *        \"currency\": \"USD\",",
-              " *        \"value\": \"54.62\"",
-              " *      },",
-              " *      \"totalOrders\": 4,",
-              " *      \"totalSales\": {",
-              " *        \"currency\": \"USD\",",
-              " *        \"value\": \"56.00\"",
-              " *      },",
-              " *      \"totalTickets\": 4",
-              " *    }",
-              " *  },",
-              " *  \"title\": \"Comedy: Jacky the Lacky, Live! \",",
-              " *  \"_updatedDate\": \"2021-06-13T10:27:29.000Z\",",
-              " *  \"videoConferencing\": {",
-              " *    \"session\": {",
-              " *      \"guestLink\": \"https://www.wixevents.com/oc?join=JWS.eyJraWQiOiJpb21iOUJ0eSIsImFsZyI6IkhTMjU2In0.eyJkYXRhIjoie1wiYWN0aW9uXCI6XCJqb2luXCIsXCJpbnN0YW5jZUlkXCI6XCIyNWNhMjM5OC05YTRkLTQwZTAtYmY5OS0wZGNkMjJiZTkwMzVcIixcImV2ZW50SWRcIjpcIjFiN2M3OWI2LTY4MjMtNDJjZC1hMDdkLTEwYTIxYTY2ZTg5YVwifSIsImlhdCI6MTYyNjI1NzA1NH0.2mkBS99UPfAQQz237U-X_IzpD08gPGcerHk0irR9P7w\",",
-              " *      \"hostLink\": \"https://www.wixevents.com/oc?start=JWS.eyJraWQiOiJpb21iOUJ0eSIsImFsZyI6IkhTMjU2In0.eyJkYXRhIjoie1wiYWN0aW9uXCI6XCJzdGFydFwiLFwiaW5zdGFuY2VJZFwiOlwiMjVjYTIzOTgtOWE0ZC00MGUwLWJmOTktMGRjZDIyYmU5MDM1XCIsXCJldmVudElkXCI6XCIxYjdjNzliNi02ODIzLTQyY2QtYTA3ZC0xMGEyMWE2NmU4OWFcIn0iLCJpYXQiOjE2MjYyNTcwNTR9.VjKXyLPtrEdQiFxxG6i0vzAInx7CSyZxed_blqYrXEk\"",
-              " *    }",
-              " *  }",
-              " * ",
-              " */"
-            ]
-          },
-          {
-            "title": "getOrder example 2",
-            "body": [
-              "//Another TEST example",
-              "",
-              "import { wixEvents } from \"wix-events-backend\";",
-              "",
-              "const eventId = \"1b7c79b6-6823-42cd-a07d-10a21a66e89a\";",
-              "",
-              "export function myGetEventFunction() {",
-              "  return wixEvents.getEvent(eventId)",
-              "    .then((result) => {",
-              "      return result;",
-              "    })",
-              "    .catch((error) => {",
-              "      console.error(error);",
-              "    });",
-              "}",
-              "",
-              "/* Returns a promise that resolves to",
-              " * the Wix event.",
-              " * {",
-              " *  \"about\": \"<p>Guaranteed to make you laugh.... and yourself.... and more importantly, others!</p>\",",
-              " *  \"assignedContactsLabel\": \"custom.comedy-jacky-the-lacky-live-7-2-21-10-00-pm\",",
-              " *  \"calendarLinks\": {",
-              " *    \"google\": \"http://calendar.google.com/calendar/render?action=TEMPLATE&text=Comedy%3A+Jacky+the+Lacky%2C+Live%21+&dates=20211015T203000Z%2F20211015T223000Z&location=Herbert+House%2C+Harmony+Row%2C+Dublin+2%2C+Ireland&details=Thank+you+for+registering+to+our+event%21+Your+tickets+are+attached+to+this+email.+Don%27t+forget+to+bring+them.%0A%0AWe%27re+looking+forward+to+seeing+you+there.%0A%0AHere+are+the+details%3A%0A%0AComedy%3A+Jacky+the+Lacky%2C+Live%21+%0AOctober+15%2C+2021%2C+9%3A30+PM+%E2%80%93+11%3A30+PM+GMT%2B1%0AThe+Best+Place%2C+Herbert+House%2C+Harmony+Row%2C+Dublin+2%2C+Ireland\",",
-              " *    \"ics\": \"https://www.wixevents.com/media/calendar/1b7c79b6-6823-42cd-a07d-10a21a66e89a?token=JWS.eyJraWQiOiJpb21iOUJ0eSIsImFsZyI6IkhTMjU2In0.eyJkYXRhIjoie1wiZXZlbnRJZFwiOntcInZhbHVlXCI6XCIxYjdjNzliNi02ODIzLTQyY2QtYTA3ZC0xMGEyMWE2NmU4OWFcIn0sXCJvY0xpbmtcIjpudWxsfSIsImlhdCI6MTYyNjI1NzA1NH0.fEejsUz4Oz47PpYO37-tAPOu0f8vpargXhMZ_56SCr8\"",
-              " *  },",
-              " *  \"createdBy\": \"4c47c608-cfa8-4037-93ac-738f09560ed3\",",
-              " *  \"_createdDate\": \"2021-04-28T05:58:29.947Z\",",
-              " *  \"description\": \"DUBLIN\",",
-              " *  \"eventUrl\": {",
-              " *    \"baseUrl\": \"https://mysite.wixsite.com/lectures\",",
-              " *    \"path\": \"/event-details/comedy-jacky-the-lacky-live\"",
-              " *  },",
-              " *  \"form\": {",
-              " *    \"inputGroups\": [",
-              " *      {",
-              " *        \"_id\": \"name\",",
-              " *        \"inputs\": [",
-              " *          {",
-              " *            \"additionalLabels\": [],",
-              " *            \"label\": \"First Name\",",
-              " *            \"maxLength\": 50,",
-              " *            \"name\": \"firstName\",",
-              " *            \"options\": [],",
-              " *            \"required\": true,",
-              " *            \"type\": \"TEXT\"",
-              " *          },",
-              " *          {",
-              " *            \"additionalLabels\": [],",
-              " *            \"label\": \"Last Name\",",
-              " *            \"maxLength\": 50,",
-              " *            \"name\": \"lastName\",",
-              " *            \"options\": [],",
-              " *            \"required\": true,",
-              " *            \"type\": \"TEXT\"",
-              " *          }",
-              " *        ],",
-              " *        \"orderIndex\": 0,",
-              " *        \"system\": true,",
-              " *        \"type\": \"NAME\"",
-              " *      },",
-              " *      {",
-              " *        \"_id\": \"email\",",
-              " *        \"inputs\": [",
-              " *          {",
-              " *            \"additionalLabels\": [],",
-              " *            \"label\": \"Email\",",
-              " *            \"maxLength\": 50,",
-              " *            \"name\": \"email\",",
-              " *            \"options\": [],",
-              " *            \"required\": true,",
-              " *            \"type\": \"TEXT\"",
-              " *          }",
-              " *        ],",
-              " *        \"orderIndex\": 1,",
-              " *        \"system\": true,",
-              " *        \"type\": \"INPUT\"",
-              " *      }",
-              " *    ],",
-              " *    \"messages\": {",
-              " *      \"checkout\": {",
-              " *        \"checkoutLabel\": \"Continue\",",
-              " *        \"title\": \"Add Your Details\"",
-              " *      },",
-              " *      \"registrationClosed\": {",
-              " *        \"exploreEventsLabel\": \"See other events\",",
-              " *        \"message\": \"Registration is Closed\"",
-              " *      },",
-              " *      \"rsvp\": {",
-              " *        \"noMessages\": {",
-              " *          \"confirmationTitle\": \"Sorry You Can't Make It\",",
-              " *          \"shareLabel\": \"Share\",",
-              " *          \"title\": \"Add Your Details\"",
-              " *        },",
-              " *        \"rsvpNo\": \"Not Going\",",
-              " *        \"rsvpYes\": \"I'm Going\",",
-              " *        \"submitRsvpLabel\": \"SUBMIT\",",
-              " *        \"waitingMessages\": {",
-              " *          \"addToCalendarLabel\": \"Add to Calendar\",",
-              " *          \"confirmationMessage\": \"We'll update you if additional spots become available.\",",
-              " *          \"confirmationTitle\": \"Thanks! You've been added to the waitlist.\",",
-              " *          \"shareLabel\": \"Share\",",
-              " *          \"title\": \"Looks Like This Event Is Full. Join the waiting list\"",
-              " *        },",
-              " *        \"yesMessages\": {",
-              " *          \"addToCalendarLabel\": \"Add to Calendar\",",
-              " *          \"confirmationMessage\": \"An email with all the event info was sent to you.\",",
-              " *          \"confirmationTitle\": \"Thank you! See you soon.\",",
-              " *          \"shareLabel\": \"Share\",",
-              " *          \"title\": \"Add Your Details\"",
-              " *        }",
-              " *      }",
-              " *    }",
-              " *  },",
-              " *  \"guestList\": {",
-              " *    \"public\": true",
-              " *  },",
-              " *  \"_id\": \"1b7c79b6-6823-42cd-a07d-10a21a66e89a\",",
-              " *  \"language\": \"en\",",
-              " *  \"location\": {",
-              " *    \"address\": {",
-              " *      \"formatted\": \"Herbert House, Harmony Row, Dublin 2, Ireland\",",
-              " *      \"location\": {",
-              " *        \"latitude\": 37.7703718,",
-              " *        \"longitude\": -122.3871248",
-              " *      }",
-              " *    },",
-              " *    \"name\": \"The Best Place\",",
-              " *    \"tbd\": false,",
-              " *    \"type\": \"VENUE\"",
-              " *  },",
-              " *  \"mainImage\": \"wix:image://v1/870bbd9309c94f859b9a6c4c0ac28186.jpg/file#originWidth=5472&originHeight=3078\",",
-              " *  \"registration\": {",
-              " *    \"initialType\": \"TICKETS\",",
-              " *    \"restrictedTo\": \"VISITOR\",",
-              " *    \"rsvp\": {",
-              " *      \"responseOptions\": \"YES_ONLY\",",
-              " *      \"waitlist\": false",
-              " *    },",
-              " *    \"status\": \"OPEN_TICKETS\",",
-              " *    \"tickets\": {",
-              " *      \"currency\": \"USD\",",
-              " *      \"formAssignedPerTicket\": false,",
-              " *      \"highestTicketPrice\": {",
-              " *        \"currency\": \"USD\",",
-              " *        \"value\": \"41.00\"",
-              " *      },",
-              " *      \"highestTicketPriceFormatted\": \"$41\",",
-              " *      \"lowestTicketPrice\": {",
-              " *        \"currency\": \"USD\",",
-              " *        \"value\": \"0.00\"",
-              " *      },",
-              " *      \"lowestTicketPriceFormatted\": \"$0\",",
-              " *      \"tax\": {}",
-              " *    },",
-              " *    \"type\": \"TICKETS\"",
-              " *  },",
-              " *  \"scheduling\": {",
-              " *    \"endDate\": \"2021-10-15T22:30:00.000Z\",",
-              " *    \"formatted\": \"October 15, 2021, 9:30 PM – 11:30 PM GMT+1\",",
-              " *    \"hideEndDate\": false,",
-              " *    \"showTimeZone\": true,",
-              " *    \"startDate\": \"2021-10-15T20:30:00.000Z\",",
-              " *    \"startDateFormatted\": \"October 15, 2021\",",
-              " *    \"startTimeFormatted\": \"9:30 PM\",",
-              " *    \"tbd\": false,",
-              " *    \"timeZoneId\": \"Europe/Dublin\"",
-              " *  },",
-              " *  \"slug\": \"comedy-jacky-the-lacky-live\",",
-              " *  \"status\": \"SCHEDULED\",",
-              " *  \"summary\": {",
-              " *    \"rsvp\": {",
-              " *      \"noCount\": 0,",
-              " *      \"totalRsvps\": 0,",
-              " *      \"waitlistCount\": 0,",
-              " *      \"yesCount\": 0",
-              " *    },",
-              " *    \"tickets\": {",
-              " *      \"currencyLocked\": true,",
-              " *      \"revenue\": {",
-              " *        \"currency\": \"USD\",",
-              " *        \"value\": \"54.62\"",
-              " *      },",
-              " *      \"totalOrders\": 4,",
-              " *      \"totalSales\": {",
-              " *        \"currency\": \"USD\",",
-              " *        \"value\": \"56.00\"",
-              " *      },",
-              " *      \"totalTickets\": 4",
-              " *    }",
-              " *  },",
-              " *  \"title\": \"Comedy: Jacky the Lacky, Live! \",",
-              " *  \"_updatedDate\": \"2021-06-13T10:27:29.000Z\",",
-              " *  \"videoConferencing\": {",
-              " *    \"session\": {",
-              " *      \"guestLink\": \"https://www.wixevents.com/oc?join=JWS.eyJraWQiOiJpb21iOUJ0eSIsImFsZyI6IkhTMjU2In0.eyJkYXRhIjoie1wiYWN0aW9uXCI6XCJqb2luXCIsXCJpbnN0YW5jZUlkXCI6XCIyNWNhMjM5OC05YTRkLTQwZTAtYmY5OS0wZGNkMjJiZTkwMzVcIixcImV2ZW50SWRcIjpcIjFiN2M3OWI2LTY4MjMtNDJjZC1hMDdkLTEwYTIxYTY2ZTg5YVwifSIsImlhdCI6MTYyNjI1NzA1NH0.2mkBS99UPfAQQz237U-X_IzpD08gPGcerHk0irR9P7w\",",
-              " *      \"hostLink\": \"https://www.wixevents.com/oc?start=JWS.eyJraWQiOiJpb21iOUJ0eSIsImFsZyI6IkhTMjU2In0.eyJkYXRhIjoie1wiYWN0aW9uXCI6XCJzdGFydFwiLFwiaW5zdGFuY2VJZFwiOlwiMjVjYTIzOTgtOWE0ZC00MGUwLWJmOTktMGRjZDIyYmU5MDM1XCIsXCJldmVudElkXCI6XCIxYjdjNzliNi02ODIzLTQyY2QtYTA3ZC0xMGEyMWE2NmU4OWFcIn0iLCJpYXQiOjE2MjYyNTcwNTR9.VjKXyLPtrEdQiFxxG6i0vzAInx7CSyZxed_blqYrXEk\"",
-              " *    }",
-              " *  }",
-              " * ",
-              " */"
+              "  "
             ]
           }
         ]
@@ -702,8 +305,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "Retrieves an order.",
-        "description": [],
+        "description": [
+          "Retrieves an order."
+        ],
         "examples": [
           {
             "title": "getOrderByMsid example",
@@ -750,8 +354,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "return list of orders total amount mapped to each location based on given status.",
-        "description": [],
+        "description": [
+          "return list of orders total amount mapped to each location based on given status."
+        ],
         "examples": [
           {
             "title": "getTotalActiveOrders example",
@@ -798,8 +403,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "Retrieves a list of up to 1000 orders, given the provided filters.",
-        "description": [],
+        "description": [
+          "Retrieves a list of up to 1000 orders, given the provided filters."
+        ],
         "examples": [
           {
             "title": "listOrders example",
@@ -848,8 +454,9 @@
         "doc": null
       },
       "docs": {
-        "summary": "Retrieves a list of up to 2000 orders, given the provided filters.",
-        "description": [],
+        "description": [
+          "Retrieves a list of up to 2000 orders, given the provided filters."
+        ],
         "examples": [
           {
             "title": "listOrdersByMsid example",
@@ -908,7 +515,9 @@
         "doc": null
       },
       "docs": {
-        "description": [],
+        "description": [
+          ""
+        ],
         "examples": [
           {
             "title": "notifyOrderEvent example",
@@ -933,6 +542,9 @@
           "name": "message",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -962,6 +574,9 @@
           "name": "message",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1004,6 +619,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1035,6 +653,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1063,6 +684,9 @@
           "name": "message",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1105,6 +729,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1126,6 +753,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1136,6 +766,9 @@
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1227,6 +860,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1236,6 +872,9 @@
           "name": "limit",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -1257,6 +896,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1266,6 +908,9 @@
           "name": "prev",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1286,6 +931,9 @@
           "name": "contactId",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1327,6 +975,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1337,6 +988,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1346,6 +1000,9 @@
           "name": "visitorId",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1367,6 +1024,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1376,6 +1036,9 @@
           "name": "approximate",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -1387,6 +1050,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1396,6 +1062,9 @@
           "name": "city",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1407,6 +1076,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1416,6 +1088,9 @@
           "name": "country",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1427,6 +1102,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1436,6 +1114,9 @@
           "name": "entrance",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1447,6 +1128,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1456,6 +1140,9 @@
           "name": "formatted",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1487,6 +1174,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1496,6 +1186,9 @@
           "name": "streetNumber",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1507,6 +1200,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1516,6 +1212,9 @@
           "name": "zipCode",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1537,6 +1236,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -1546,6 +1248,9 @@
           "name": "longitude",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -1767,6 +1472,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -1776,6 +1484,9 @@
           "name": "customerFee",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -1866,6 +1577,9 @@
           "name": "asap",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -2044,7 +1758,7 @@
       ],
       "docs": {
         "description": [
-          "TEST The options for the order."
+          ""
         ]
       }
     },
@@ -2112,6 +1826,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2121,6 +1838,9 @@
           "name": "organizationId",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2132,6 +1852,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2141,6 +1864,9 @@
           "name": "promisedTimeNew",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2162,6 +1888,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2171,6 +1900,9 @@
           "name": "organizationId",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2182,6 +1914,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2191,6 +1926,9 @@
           "name": "promisedTimeNew",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2248,6 +1986,9 @@
           "name": "comment",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2323,6 +2064,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "complexType": {
                 "nativeType": "Array",
                 "typeParams": [
@@ -2340,6 +2084,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -2350,6 +2097,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -2359,6 +2109,9 @@
           "name": "name",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2407,6 +2160,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2416,6 +2172,9 @@
           "name": "price",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2437,6 +2196,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2446,6 +2208,9 @@
           "name": "delivered",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -2473,6 +2238,9 @@
           "name": "limit",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -2523,6 +2291,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2532,6 +2303,9 @@
           "name": "delivered",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -2559,6 +2333,9 @@
           "name": "limit",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -2636,6 +2413,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2645,6 +2425,9 @@
           "name": "delivered",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -2672,6 +2455,9 @@
           "name": "limit",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -2730,6 +2516,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2739,6 +2528,9 @@
           "name": "delivered",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "boolean"
             }
@@ -2766,6 +2558,9 @@
           "name": "limit",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -2861,6 +2656,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2901,6 +2699,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -2912,6 +2713,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -2921,6 +2725,9 @@
           "name": "rewardId",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -2932,6 +2739,9 @@
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3112,6 +2922,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3131,6 +2944,9 @@
           "name": "currency",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3189,13 +3005,16 @@
               }
             }
           ],
-          "doc": "TEST This is a line item for the order of the property"
+          "doc": "Dishes and options included in the order."
         },
         {
           "name": "locationId",
           "readOnly": true,
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3324,6 +3143,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -3344,6 +3166,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "number"
             }
           ],
@@ -3354,6 +3179,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "boolean"
             }
           ],
@@ -3363,6 +3191,9 @@
           "name": "total",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "number"
             }
@@ -3384,6 +3215,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3394,6 +3228,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3403,6 +3240,9 @@
           "name": "providerTransactionId",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3443,6 +3283,9 @@
           "name": "fee",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3571,6 +3414,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3621,6 +3467,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3631,6 +3480,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3640,6 +3492,9 @@
           "name": "loyaltySavings",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
@@ -3672,6 +3527,9 @@
           "optional": true,
           "type": [
             {
+              "nativeType": "null"
+            },
+            {
               "nativeType": "string"
             }
           ],
@@ -3681,6 +3539,9 @@
           "name": "tip",
           "optional": true,
           "type": [
+            {
+              "nativeType": "null"
+            },
             {
               "nativeType": "string"
             }
