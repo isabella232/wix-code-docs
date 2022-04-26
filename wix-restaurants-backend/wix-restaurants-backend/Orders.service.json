@@ -739,6 +739,15 @@
             }
           ],
           "doc": "Message when accepting the order."
+        },
+        {
+          "name": "oneOfAcceptOrderRequestDeliveryTimeOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.AcceptOrderRequestDeliveryTimeOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -746,6 +755,16 @@
           ""
         ]
       }
+    },
+    {
+      "name": "AcceptOrderRequestDeliveryTimeOneOf",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "AcceptOrderResponse",
@@ -1123,6 +1142,15 @@
             }
           ],
           "doc": "Visitor ID."
+        },
+        {
+          "name": "oneOfCustomerIdOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.CustomerIdOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -1130,6 +1158,37 @@
           "Customer information."
         ]
       }
+    },
+    {
+      "name": "CustomerIdOneOf",
+      "members": [
+        {
+          "name": "memberId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Member ID."
+        },
+        {
+          "name": "visitorId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Visitor ID."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "DeliveryAddress",
@@ -1373,6 +1432,15 @@
             }
           ],
           "doc": "Delivery through the restaurant."
+        },
+        {
+          "name": "oneOfDeliveryDetailsProviderOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.DeliveryDetailsProviderOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -1380,6 +1448,37 @@
           ""
         ]
       }
+    },
+    {
+      "name": "DeliveryDetailsProviderOneOf",
+      "members": [
+        {
+          "name": "externalProvider",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.ExternalProvider"
+            }
+          ],
+          "doc": "Delivery through an external provider."
+        },
+        {
+          "name": "restaurant",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.Restaurant"
+            }
+          ],
+          "doc": "Delivery through the restaurant."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "DineInDetails",
@@ -1693,6 +1792,15 @@
             }
           ],
           "doc": "Fulfillment type.\nOne of:\nDELIVERY,\nDINE_IN,\nPICKUP,\nUNSPECIFIED_FULFILLMENT_TYPE"
+        },
+        {
+          "name": "oneOfFulfillmentDetailsOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.FulfillmentDetailsOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -1700,6 +1808,47 @@
           ""
         ]
       }
+    },
+    {
+      "name": "FulfillmentDetailsOneOf",
+      "members": [
+        {
+          "name": "deliveryDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.DeliveryDetails"
+            }
+          ],
+          "doc": "Delivery details."
+        },
+        {
+          "name": "dineInDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.DineInDetails"
+            }
+          ],
+          "doc": "Dine-in details"
+        },
+        {
+          "name": "pickupDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.PickupDetails"
+            }
+          ],
+          "doc": "Pickup details."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "GetOrderByMsidOptions",
