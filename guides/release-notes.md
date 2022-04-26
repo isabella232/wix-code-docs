@@ -7,6 +7,44 @@ We love hearing your feedback! You can help us improve the docs by reporting any
 ![Was this helpful, yes/no buttons](../media/feedback.png)
 
 ---
+### New API: Retrieve package configuration data
+
+`wix-configs-backend`
+
+When building a [Velo package](https://support.wix.com/en/article/creating-a-velo-package-3964385) in Wix Blocks, you can use the [`getPackageConfig()`](https://www.wix.com/velo/reference/wix-configs-backend/getpackageconfig) function in your backend code to retrieve data from the package's `config.json` file. (April 14, 2022)
+
+### New API: Date Picker onViewChange() 
+
+`Wix Editor Elements ($w)`
+
+You can now use the [`onViewChange()`](https://www.wix.com/velo/reference/wix-members/authentication/sendsetpasswordemail) API to add an event handler that triggers when the date picker's view changes.
+
+(April 10, 2022)
+### New API: sendSetPasswordEmail() from the frontend
+
+`wix-members`
+
+You can now use the [`sendSetPasswordEmail()`](https://www.wix.com/velo/reference/wix-members/authentication/sendsetpasswordemail) function from the frontend code to send a site member an email with a link to set, or reset, their password. (April 1, 2022)
+
+### New API: Button Icon
+
+`Wix Editor Elements ($w)`
+
+You can now [set/get](https://www.wix.com/velo/reference/$w/button/icon), [expand](https://www.wix.com/velo/reference/$w/button/expandicon), and [collapse](https://www.wix.com/velo/reference/$w/button/collapseicon) a button's icon in your code. The [`iconCollapsed`](https://www.wix.com/velo/reference/$w/button/iconcollapsed) property allows you to check if an icon is currently collapsed. (March 29, 2022)
+
+### New Feature: Show/Hide number spinner on textInput elements
+
+`Wix Editor Elements ($w)`
+
+You can now show and hide the number spinner on a textInput element when the element is for numeric input.  
+
+A new [numberSpinnerHidden](https://www.wix.com/velo/reference/$w/textinput/numberspinnerhidden) property has been added.  
+2 new functions have been added:
++ [hideNumberSpinner()](https://www.wix.com/velo/reference/$w/textinput/hidenumberspinner)
++ [showNumberSpinner()](https://www.wix.com/velo/reference/$w/textinput/shownumberspinner)  
+
+(March 23, 2022)
+
 ### New Event: Contact Merged
 
 `wix-crm-backend`

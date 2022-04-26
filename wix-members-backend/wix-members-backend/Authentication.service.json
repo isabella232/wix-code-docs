@@ -1,8 +1,7 @@
 { "name": "Authentication",
   "memberOf": "wix-members-backend",
   "mixes": [],
-  "labels":
-    [ "changed" ],
+  "labels": [],
   "location":
     { "lineno": 70,
       "filename": "index.js" },
@@ -90,8 +89,7 @@
         "extra":
           {  } },
       { "name": "approveByToken",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "token",
@@ -113,9 +111,7 @@
                 "The `approveByToken()` function returns a Promise that resolves to a session token",
                 "when the specified member is approved. Tokens must be approved within 30 hours of token creation.",
                 "",
-                "> **Notes:**",
-                ">  - Embedding the `approveByToken()` function in page code may cause email notifications to be sent multiple times, due to the page rendering process on server-side and client-side. To prevent this, use the [wixWindow.rendering.env](https://www.wix.com/velo/reference/wix-window/rendering-obj/env) property to determine where your code is being executed, and only run the code once, either client- or server-side. More details can be found at [Preventing double \"side effects\"](https://www.wix.com/velo/reference/$w/onready#$w_onready_preventing-double-side-effects).",
-                "> - This function replaces the deprecated `wix-users-backend.approveByToken()`. The deprecated function will continue to work, but it will not receive updates. To keep any existing code compatible with future changes, see the [migration instructions](wix-users-backend/approvebytoken#migration-instructions).",
+                "> **Note:** This function replaces the deprecated `wix-users-backend.approveByToken()`. The deprecated function will continue to work, but it will not receive updates. To keep any existing code compatible with future changes, see the [migration instructions](wix-users-backend/approvebytoken#migration-instructions).",
                 "",
                 "A new member's status is `\"PENDING\"`",
                 "when the site's membership policy is set to manual approval.",
@@ -815,8 +811,7 @@
         "extra":
           {  } },
       { "name": "register",
-        "labels":
-          [ "changed" ],
+        "labels": [],
         "nameParams": [],
         "params":
           [ { "name": "email",
@@ -844,9 +839,7 @@
               [ "The `register()` function returns a Promise that resolves to a `RegistrationResult`",
                 " object when the member is either registered or pending registration.",
                 "",
-                "> **Notes:**",
-                ">  - Embedding the `register()` function in page code may cause email notifications to be sent multiple times, due to the page rendering process on server-side and client-side. To prevent this, use the [wixWindow.rendering.env](https://www.wix.com/velo/reference/wix-window/rendering-obj/env) property to determine where your code is being executed, and only run the code once, either client- or server-side. More details can be found at [Preventing double \"side effects\"](https://www.wix.com/velo/reference/$w/onready#$w_onready_preventing-double-side-effects).",
-                "> - This function replaces the deprecated `wix-users-backend.register()`. The deprecated function will continue to work, but it will not receive updates. To keep any existing code compatible with future changes, see the [migration instructions](wix-users-backend/register#migration-instructions).",
+                "> **Note:** This function replaces the deprecated `wix-users-backend.register()`. The deprecated function will continue to work, but it will not receive updates. To keep any existing code compatible with future changes, see the [migration instructions](wix-users-backend/register#migration-instructions).",
                 "",
                 " The specified `password` must be between 4 and 100 ASCII characters.",
                 "",
@@ -1119,17 +1112,18 @@
                 "",
                 "The set password link is valid for 3 hours,",
                 "and it can be used only once.",
-                "If the link expires, the original password remains." ],
+                "If the link expires, no changes are made to the password." ],
             "links": [],
             "examples":
               [ { "title": "Email a member with a link to set their password",
                   "body":
                     [ "import { authentication } from 'wix-members-backend';",
                       "",
-                      "// Sample options value:",
-                      "// {",
-                      "//   hideIgnoreMessage: false",
-                      "// }",
+                      "/* Sample options value:",
+                      "* {",
+                      "*   hideIgnoreMessage: false",
+                      "* }",
+                      "*/",
                       "",
                       "export function mySendSetPasswordEmailFunction(email, options) {",
                       "  return authentication.sendSetPasswordEmail(email, options)",
