@@ -3721,16 +3721,6 @@
           "doc": "Whether the discount is active. Defaults to `true`."
         },
         {
-          "name": "amount",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Catalogs.Money"
-            }
-          ],
-          "doc": "Discount amount."
-        },
-        {
           "name": "condition",
           "optional": true,
           "type": [
@@ -3751,16 +3741,6 @@
           "doc": "Discount description."
         },
         {
-          "name": "itemIds",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Catalogs.ItemIds"
-            }
-          ],
-          "doc": "IDs of the items the discount applies to. **Note:** The items must be of type `dish`."
-        },
-        {
           "name": "name",
           "optional": true,
           "type": [
@@ -3769,26 +3749,6 @@
             }
           ],
           "doc": "Discount name."
-        },
-        {
-          "name": "percentage",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Discount percentage."
-        },
-        {
-          "name": "sectionIds",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Catalogs.SectionIds"
-            }
-          ],
-          "doc": "IDs of the sections the discount applies to."
         },
         {
           "name": "type",
@@ -3966,26 +3926,6 @@
       "name": "DishOption",
       "members": [
         {
-          "name": "deselection",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Catalogs.Deselection"
-            }
-          ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
-        },
-        {
-          "name": "extras",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Catalogs.Extras"
-            }
-          ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
-        },
-        {
           "name": "name",
           "optional": true,
           "type": [
@@ -3994,16 +3934,6 @@
             }
           ],
           "doc": "Dish option name."
-        },
-        {
-          "name": "selection",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Catalogs.Selection"
-            }
-          ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
         },
         {
           "name": "type",
