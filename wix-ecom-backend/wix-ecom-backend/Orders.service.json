@@ -841,7 +841,7 @@
         "description": [],
         "examples": [
           {
-            "title": "CalculateCollectableAmount example",
+            "title": "calculateCollectableAmount example",
             "body": [
               "",
               "    function calculateCollectableAmount() {",
@@ -891,7 +891,7 @@
         "description": [],
         "examples": [
           {
-            "title": "CanCollect example",
+            "title": "canCollect example",
             "body": [
               "",
               "    function canCollect() {",
@@ -1548,7 +1548,7 @@
         "description": [],
         "examples": [
           {
-            "title": "PreparePaymentCollection example",
+            "title": "preparePaymentCollection example",
             "body": [
               "",
               "    function preparePaymentCollection() {",
