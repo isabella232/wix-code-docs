@@ -58,7 +58,7 @@
       },
       "docs": {
         "description": [],
-        "summary": "echo given arg1 and arg2"
+        "summary": "override description function 2"
       }
     }
   ],
