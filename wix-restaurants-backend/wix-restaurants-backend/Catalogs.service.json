@@ -3799,6 +3799,24 @@
             }
           ],
           "doc": "Discount type.\nOne of:\nOFF_ITEM,\nOFF_ORDER,\nUNSPECIFIED_TYPE"
+        },
+        {
+          "name": "oneOfDiscountValueOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.DiscountValueOneOf"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "oneOfDiscountApplyToFilterOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.DiscountApplyToFilterOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -3806,6 +3824,37 @@
           "Customers can use a discount to pay less. Can be an amount or a percentage.\nYou can read more about discounts in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
         ]
       }
+    },
+    {
+      "name": "DiscountApplyToFilterOneOf",
+      "members": [
+        {
+          "name": "itemIds",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.ItemIds"
+            }
+          ],
+          "doc": "IDs of the items the discount applies to. **Note:** The items must be of type `dish`."
+        },
+        {
+          "name": "sectionIds",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.SectionIds"
+            }
+          ],
+          "doc": "IDs of the sections the discount applies to."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "DiscountCondition",
@@ -3883,6 +3932,37 @@
       }
     },
     {
+      "name": "DiscountValueOneOf",
+      "members": [
+        {
+          "name": "amount",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.Money"
+            }
+          ],
+          "doc": "Discount amount."
+        },
+        {
+          "name": "percentage",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount percentage."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
+    },
+    {
       "name": "DishOption",
       "members": [
         {
@@ -3935,6 +4015,15 @@
             }
           ],
           "doc": "One of:\nDESELECTION,\nEXTRAS,\nSELECTION,\nUNSPECIFIED_DISH_OPTION_TYPE"
+        },
+        {
+          "name": "oneOfDishOptionMethodOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.DishOptionMethodOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -3972,6 +4061,47 @@
           ""
         ]
       }
+    },
+    {
+      "name": "DishOptionMethodOneOf",
+      "members": [
+        {
+          "name": "deselection",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.Deselection"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
+        },
+        {
+          "name": "extras",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.Extras"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
+        },
+        {
+          "name": "selection",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Catalogs.Selection"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "DishOptions",
