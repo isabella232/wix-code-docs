@@ -1114,16 +1114,6 @@
           "doc": "Last name."
         },
         {
-          "name": "memberId",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Member ID."
-        },
-        {
           "name": "phone",
           "optional": true,
           "type": [
@@ -1132,16 +1122,6 @@
             }
           ],
           "doc": "Phone number."
-        },
-        {
-          "name": "visitorId",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Visitor ID."
         },
         {
           "name": "oneOfCustomerIdOneOf",
@@ -1404,16 +1384,6 @@
           "doc": "Delivery address."
         },
         {
-          "name": "externalProvider",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Orders.ExternalProvider"
-            }
-          ],
-          "doc": "Delivery through an external provider."
-        },
-        {
           "name": "pickupInfo",
           "optional": true,
           "type": [
@@ -1422,16 +1392,6 @@
             }
           ],
           "doc": "Information about the delivery pickup."
-        },
-        {
-          "name": "restaurant",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Orders.Restaurant"
-            }
-          ],
-          "doc": "Delivery through the restaurant."
         },
         {
           "name": "oneOfDeliveryDetailsProviderOneOf",
@@ -1742,36 +1702,6 @@
             }
           ],
           "doc": "Whether the order should be fulfilled as soon as possible. Defaults to `true`."
-        },
-        {
-          "name": "deliveryDetails",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Orders.DeliveryDetails"
-            }
-          ],
-          "doc": "Delivery details."
-        },
-        {
-          "name": "dineInDetails",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Orders.DineInDetails"
-            }
-          ],
-          "doc": "Dine-in details"
-        },
-        {
-          "name": "pickupDetails",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Orders.PickupDetails"
-            }
-          ],
-          "doc": "Pickup details."
         },
         {
           "name": "promisedTime",
