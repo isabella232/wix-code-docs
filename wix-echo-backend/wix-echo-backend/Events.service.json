@@ -41,7 +41,7 @@
             "title": "onEchoDispatched example",
             "body": [
               "",
-              "  export function wixMetroinspectorOnEchoDispatched(event) {",
+              "  export function wixMetroinspector_onEchoDispatched(event) {",
               "  }",
               "",
               "  "
