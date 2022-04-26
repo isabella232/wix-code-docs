@@ -805,6 +805,106 @@
       }
     },
     {
+      "name": "calculateCollectableAmount",
+      "params": [
+        {
+          "name": "ecomOrderId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ecom order ID.",
+          "required": true
+        }
+      ],
+      "requiredFields": [
+        "ecomOrderId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-ecom-backend.Orders.CalculateCollectableAmountResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Provides amount eligible for payment collection",
+        "description": [],
+        "examples": [
+          {
+            "title": "CalculateCollectableAmount example",
+            "body": [
+              "",
+              "    function calculateCollectableAmount() {",
+              "",
+              "  }",
+              "",
+              "  "
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "canCollect",
+      "params": [
+        {
+          "name": "ecomOrderId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ecom order ID.",
+          "required": true
+        }
+      ],
+      "requiredFields": [
+        "ecomOrderId"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-ecom-backend.Orders.CanCollectResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Determines whether it's possible to collect payments for given order",
+        "description": [],
+        "examples": [
+          {
+            "title": "CanCollect example",
+            "body": [
+              "",
+              "    function canCollect() {",
+              "",
+              "  }",
+              "",
+              "  "
+            ]
+          }
+        ]
+      }
+    },
+    {
       "name": "cancelOrder",
       "params": [
         {
@@ -1391,6 +1491,67 @@
             "body": [
               "",
               "    function markOrderAsSeenByHuman() {",
+              "",
+              "  }",
+              "",
+              "  "
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "preparePaymentCollection",
+      "params": [
+        {
+          "name": "ecomOrderId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ecom order ID.",
+          "required": true
+        },
+        {
+          "name": "amount",
+          "type": [
+            {
+              "referenceType": "wix-ecom-backend.Orders.Price"
+            }
+          ],
+          "doc": "Amount to collect",
+          "required": true
+        }
+      ],
+      "requiredFields": [
+        "ecomOrderId",
+        "amount"
+      ],
+      "ret": {
+        "type": [
+          {
+            "complexType": {
+              "nativeType": "Promise",
+              "typeParams": [
+                {
+                  "referenceType": "wix-ecom-backend.Orders.PreparePaymentCollectionResponse"
+                }
+              ]
+            }
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Prepares payment collection for given ecom order. This is the first of 2-step process of payment collection.\nHere we ensure that payment collection is possible for given order and store and prepare payment gateway order for future charge.\n2nd step is an actual charge of prepared payment gateway order. This could be done either\nvia Wix-Cashier's API (https://bo.wix.com/wix-docs/rest/wix-cashier/pay/charge/charge-for-order)\nor using Cashier Payments Widget (https://github.com/wix-private/cashier-client/tree/master/packages/cashier-payments-widget)",
+        "description": [],
+        "examples": [
+          {
+            "title": "PreparePaymentCollection example",
+            "body": [
+              "",
+              "    function preparePaymentCollection() {",
               "",
               "  }",
               "",
@@ -3426,6 +3587,84 @@
             }
           ],
           "doc": "Email associated with the buyer."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CalculateCollectableAmountRequest",
+      "members": [
+        {
+          "name": "ecomOrderId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ecom order ID."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CalculateCollectableAmountResponse",
+      "members": [
+        {
+          "name": "amount",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-ecom-backend.Orders.Price"
+            }
+          ],
+          "doc": "Collectable order amount"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CanCollectRequest",
+      "members": [
+        {
+          "name": "ecomOrderId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ecom order ID."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "CanCollectResponse",
+      "members": [
+        {
+          "name": "canCollect",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "boolean"
+            }
+          ],
+          "doc": "Is payment collection enabled for given order"
         }
       ],
       "docs": {
@@ -7497,6 +7736,54 @@
         ]
       },
       "oneOf": true
+    },
+    {
+      "name": "PreparePaymentCollectionRequest",
+      "members": [
+        {
+          "name": "amount",
+          "type": [
+            {
+              "referenceType": "wix-ecom-backend.Orders.Price"
+            }
+          ],
+          "doc": "Amount to collect"
+        },
+        {
+          "name": "ecomOrderId",
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Ecom order ID."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "PreparePaymentCollectionResponse",
+      "members": [
+        {
+          "name": "paymentGatewayOrderId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Payment gateway order id which is associated with given payment"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
     },
     {
       "name": "Price",
