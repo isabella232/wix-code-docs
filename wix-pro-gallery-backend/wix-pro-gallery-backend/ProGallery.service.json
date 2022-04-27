@@ -688,7 +688,7 @@
       ],
       "requiredFields": [
         "identifiers.galleryId",
-        "item._id"
+        "identifiers.itemId"
       ],
       "ret": {
         "type": [
@@ -1541,46 +1541,6 @@
           "doc": "random GUID so clients can tell if event was already handled"
         },
         {
-          "name": "actionEvent",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.ActionEvent"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "createdEvent",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.EntityCreatedEvent"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "dataExtensionsUpdatedEvent",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.DataExtensionsUpdatedEvent"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "deletedEvent",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.EntityDeletedEvent"
-            }
-          ],
-          "doc": ""
-        },
-        {
           "name": "entityFqdn",
           "optional": true,
           "type": [
@@ -1641,6 +1601,65 @@
           "doc": "A field that should be set if this event was triggered by an anonymize request.\nFor example you must set it to true when sending an event as a result of a GDPR right to be forgotten request.\nNOTE: This field is not relevant for `EntityCreatedEvent` but is located here for better ergonomics of consumers."
         },
         {
+          "name": "oneOfDomainEventBodyOneOf",
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.DomainEventBodyOneOf"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "DomainEventBodyOneOf",
+      "members": [
+        {
+          "name": "actionEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.ActionEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "createdEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.EntityCreatedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dataExtensionsUpdatedEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.DataExtensionsUpdatedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "deletedEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.EntityDeletedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
           "name": "updatedEvent",
           "optional": true,
           "type": [
@@ -1655,7 +1674,8 @@
         "description": [
           ""
         ]
-      }
+      },
+      "oneOf": true
     },
     {
       "name": "DynamicPageLink",
@@ -2169,6 +2189,15 @@
             }
           ],
           "doc": "Number of media items to skip in the response. Defaults to 0."
+        },
+        {
+          "name": "oneOfGetGalleryRequestVersionOneOf",
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.GetGalleryRequestVersionOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -2176,6 +2205,16 @@
           ""
         ]
       }
+    },
+    {
+      "name": "GetGalleryRequestVersionOneOf",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "GetGalleryResponse",
@@ -2495,31 +2534,11 @@
       "name": "InvalidateCache",
       "members": [
         {
-          "name": "app",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.App"
-            }
-          ],
-          "doc": ""
-        },
-        {
           "name": "localDc",
           "optional": true,
           "type": [
             {
               "nativeType": "boolean"
-            }
-          ],
-          "doc": ""
-        },
-        {
-          "name": "metaSiteId",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
             }
           ],
           "doc": ""
@@ -2533,6 +2552,15 @@
             }
           ],
           "doc": "tell us why you're invalidating the cache. You don't need to add your app name"
+        },
+        {
+          "name": "oneOfInvalidateCacheGetByOneOf",
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.InvalidateCacheGetByOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -2540,6 +2568,37 @@
           ""
         ]
       }
+    },
+    {
+      "name": "InvalidateCacheGetByOneOf",
+      "members": [
+        {
+          "name": "app",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.App"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "metaSiteId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "Item",
@@ -2588,16 +2647,6 @@
           "doc": "Description of the item."
         },
         {
-          "name": "image",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.Image"
-            }
-          ],
-          "doc": "Information about the image."
-        },
-        {
           "name": "link",
           "optional": true,
           "type": [
@@ -2628,16 +2677,6 @@
           "doc": "Item tags."
         },
         {
-          "name": "text",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.Text"
-            }
-          ],
-          "doc": "Information about the text file."
-        },
-        {
           "name": "title",
           "optional": true,
           "type": [
@@ -2659,14 +2698,13 @@
           "doc": "Item data type.\nOne of:\nIMAGE,\nTEXT,\nUNDEFINED,\nVIDEO"
         },
         {
-          "name": "video",
-          "optional": true,
+          "name": "oneOfItemMetadataOneOf",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.Video"
+              "referenceType": "wix-pro-gallery-backend.ProGallery.ItemMetadataOneOf"
             }
           ],
-          "doc": "Information about the video."
+          "doc": ""
         }
       ],
       "docs": {
@@ -2704,6 +2742,47 @@
           ""
         ]
       }
+    },
+    {
+      "name": "ItemMetadataOneOf",
+      "members": [
+        {
+          "name": "image",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.Image"
+            }
+          ],
+          "doc": "Information about the image."
+        },
+        {
+          "name": "text",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.Text"
+            }
+          ],
+          "doc": "Information about the text file."
+        },
+        {
+          "name": "video",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.Video"
+            }
+          ],
+          "doc": "Information about the video."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "ItemsInGallery",
@@ -3605,26 +3684,6 @@
           "doc": "id to pass to processing notification"
         },
         {
-          "name": "deleteByFilter",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.DeleteByFilterOperation"
-            }
-          ],
-          "doc": "delete documents matching filter"
-        },
-        {
-          "name": "deleteByIds",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.DeleteByIdsOperation"
-            }
-          ],
-          "doc": "delete by document ids"
-        },
-        {
           "name": "documentType",
           "optional": true,
           "type": [
@@ -3672,6 +3731,45 @@
           "doc": "one or more ids of indexed documents to be removed. Removal will happen before addition (if both provided)"
         },
         {
+          "name": "oneOfUpdateDocumentsEventOperationOneOf",
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.UpdateDocumentsEventOperationOneOf"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "UpdateDocumentsEventOperationOneOf",
+      "members": [
+        {
+          "name": "deleteByFilter",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.DeleteByFilterOperation"
+            }
+          ],
+          "doc": "delete documents matching filter"
+        },
+        {
+          "name": "deleteByIds",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.DeleteByIdsOperation"
+            }
+          ],
+          "doc": "delete by document ids"
+        },
+        {
           "name": "update",
           "optional": true,
           "type": [
@@ -3706,7 +3804,8 @@
         "description": [
           ""
         ]
-      }
+      },
+      "oneOf": true
     },
     {
       "name": "UpdateExistingOperation",
@@ -3749,14 +3848,15 @@
           "doc": "Gallery ID."
         },
         {
-          "name": "item",
+          "name": "itemId",
+          "readOnly": true,
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.item_3"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Item ID."
         }
       ],
       "docs": {
@@ -3772,7 +3872,7 @@
           "name": "item",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.item_4"
+              "referenceType": "wix-pro-gallery-backend.ProGallery.item_2"
             }
           ],
           "doc": ""
@@ -3840,7 +3940,7 @@
           "name": "gallery",
           "type": [
             {
-              "referenceType": "wix-pro-gallery-backend.ProGallery.gallery_5"
+              "referenceType": "wix-pro-gallery-backend.ProGallery.gallery_3"
             }
           ],
           "doc": ""
@@ -4025,6 +4125,25 @@
       "name": "WixLink",
       "members": [
         {
+          "name": "oneOfWixLinkLinkOneOf",
+          "type": [
+            {
+              "referenceType": "wix-pro-gallery-backend.ProGallery.WixLinkLinkOneOf"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          "The link object generated by panels in the editor and used by applications in Wix"
+        ]
+      }
+    },
+    {
+      "name": "WixLinkLinkOneOf",
+      "members": [
+        {
           "name": "address",
           "optional": true,
           "type": [
@@ -4117,12 +4236,13 @@
       ],
       "docs": {
         "description": [
-          "The link object generated by panels in the editor and used by applications in Wix"
+          ""
         ]
-      }
+      },
+      "oneOf": true
     },
     {
-      "name": "gallery_5",
+      "name": "gallery_3",
       "members": [
         {
           "name": "_createdDate",
@@ -4202,28 +4322,7 @@
       }
     },
     {
-      "name": "item_3",
-      "members": [
-        {
-          "name": "_id",
-          "readOnly": true,
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Item ID."
-        }
-      ],
-      "docs": {
-        "description": [
-          ""
-        ]
-      }
-    },
-    {
-      "name": "item_4",
+      "name": "item_2",
       "members": [
         {
           "name": "_createdDate",
