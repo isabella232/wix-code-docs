@@ -1922,17 +1922,6 @@
           "doc": "Whether the discount is active. Defaults to `true`."
         },
         {
-          "name": "amount",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsMoney",
-              "displayName": "Money"
-            }
-          ],
-          "doc": "Discount amount."
-        },
-        {
           "name": "condition",
           "optional": true,
           "type": [
@@ -1954,6 +1943,56 @@
           "doc": "Discount description."
         },
         {
+          "name": "name",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount name."
+        },
+        {
+          "name": "type",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount type.\nOne of:\nOFF_ITEM,\nOFF_ORDER,\nUNSPECIFIED_TYPE"
+        },
+        {
+          "name": "oneOfDiscountValueOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsDiscountValueOneOf",
+              "displayName": "DiscountValueOneOf"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "oneOfDiscountApplyToFilterOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsDiscountApplyToFilterOneOf",
+              "displayName": "DiscountApplyToFilterOneOf"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          "Customers can use a discount to pay less. Can be an amount or a percentage.\nYou can read more about discounts in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
+        ]
+      }
+    },
+    {
+      "name": "wixVeloEventsDiscountApplyToFilterOneOf",
+      "members": [
+        {
           "name": "itemIds",
           "optional": true,
           "type": [
@@ -1965,26 +2004,6 @@
           "doc": "IDs of the items the discount applies to. **Note:** The items must be of type `dish`."
         },
         {
-          "name": "name",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Discount name."
-        },
-        {
-          "name": "percentage",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Discount percentage."
-        },
-        {
           "name": "sectionIds",
           "optional": true,
           "type": [
@@ -1994,23 +2013,14 @@
             }
           ],
           "doc": "IDs of the sections the discount applies to."
-        },
-        {
-          "name": "type",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Discount type.\nOne of:\nOFF_ITEM,\nOFF_ORDER,\nUNSPECIFIED_TYPE"
         }
       ],
       "docs": {
         "description": [
-          "Customers can use a discount to pay less. Can be an amount or a percentage.\nYou can read more about discounts in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
+          ""
         ]
-      }
+      },
+      "oneOf": true
     },
     {
       "name": "wixVeloEventsDiscountCondition",
@@ -2145,30 +2155,40 @@
       }
     },
     {
-      "name": "wixVeloEventsDishOption",
+      "name": "wixVeloEventsDiscountValueOneOf",
       "members": [
         {
-          "name": "deselection",
+          "name": "amount",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsDeselection",
-              "displayName": "Deselection"
+              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsMoney",
+              "displayName": "Money"
             }
           ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
+          "doc": "Discount amount."
         },
         {
-          "name": "extras",
+          "name": "percentage",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsExtras",
-              "displayName": "Extras"
+              "nativeType": "string"
             }
           ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
-        },
+          "doc": "Discount percentage."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
+    },
+    {
+      "name": "wixVeloEventsDishOption",
+      "members": [
         {
           "name": "name",
           "optional": true,
@@ -2180,17 +2200,6 @@
           "doc": "Dish option name."
         },
         {
-          "name": "selection",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsSelection",
-              "displayName": "Selection"
-            }
-          ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
-        },
-        {
           "name": "type",
           "readOnly": true,
           "optional": true,
@@ -2200,6 +2209,16 @@
             }
           ],
           "doc": "One of:\nDESELECTION,\nEXTRAS,\nSELECTION,\nUNSPECIFIED_DISH_OPTION_TYPE"
+        },
+        {
+          "name": "oneOfDishOptionMethodOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsDishOptionMethodOneOf",
+              "displayName": "DishOptionMethodOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -2238,6 +2257,50 @@
           ""
         ]
       }
+    },
+    {
+      "name": "wixVeloEventsDishOptionMethodOneOf",
+      "members": [
+        {
+          "name": "deselection",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsDeselection",
+              "displayName": "Deselection"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
+        },
+        {
+          "name": "extras",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsExtras",
+              "displayName": "Extras"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
+        },
+        {
+          "name": "selection",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-catalogs-backend.Events.wixVeloEventsSelection",
+              "displayName": "Selection"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "wixVeloEventsDishOptions",
