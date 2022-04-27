@@ -126,7 +126,10 @@
           {
             "title": "onOrderAccepted example",
             "body": [
-              "file 'docs/restaurants-v3-order/onOrderAccepted/example.md' not found."
+              "function a(a: string) {",
+              "// something",
+              "}",
+              ""
             ]
           }
         ]
@@ -163,7 +166,52 @@
           {
             "title": "onOrderCanceled example",
             "body": [
-              "file 'docs/restaurants-v3-order/onOrderCanceled/example.md' not found."
+              "",
+              "  export function wixRestaurants_onOrderCanceled(event) {",
+              "  }",
+              "",
+              "  "
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "onOrderCreated",
+      "params": [
+        {
+          "name": "event",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderOrderCreated",
+              "displayName": "OrderCreated"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "nativeType": "void"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "> **Deprecation Notice**\n>\n> **The Order Created webhook has been replaced with**\n> **the [New Order webhook](https://dev.wix.com/api/rest/wix-restaurants/orders/new-order-webhook)**\n> **and will be removed on September 30, 2022. If your**\n> **app uses this webhook, we recommend updating your**\n> **code as soon as possible.**",
+        "description": [],
+        "examples": [
+          {
+            "title": "onOrderCreated example",
+            "body": [
+              "",
+              "  export function wixRestaurants_onOrderCreated(event) {",
+              "  }",
+              "",
+              "  "
             ]
           }
         ]
@@ -200,7 +248,52 @@
           {
             "title": "onOrderFulfilled example",
             "body": [
-              "file 'docs/restaurants-v3-order/onOrderFulfilled/example.md' not found."
+              "",
+              "  export function wixRestaurants_onOrderFulfilled(event) {",
+              "  }",
+              "",
+              "  "
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "onOrderNewOrder",
+      "params": [
+        {
+          "name": "event",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderOrderNewOrder",
+              "displayName": "OrderNewOrder"
+            }
+          ],
+          "doc": "",
+          "required": false
+        }
+      ],
+      "requiredFields": [],
+      "ret": {
+        "type": [
+          {
+            "nativeType": "void"
+          }
+        ],
+        "doc": null
+      },
+      "docs": {
+        "summary": "Triggered on successful creation of a new order. This means\nthe order has been validated and the payment has cleared,\nand now the site owner can accept or cancel the order.",
+        "description": [],
+        "examples": [
+          {
+            "title": "onOrderNewOrder example",
+            "body": [
+              "",
+              "  export function wixRestaurants_onOrderNewOrder(event) {",
+              "  }",
+              "",
+              "  "
             ]
           }
         ]
@@ -2039,17 +2132,6 @@
           "doc": "Whether the discount is active. Defaults to `true`."
         },
         {
-          "name": "amount",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogMoney",
-              "displayName": "Money"
-            }
-          ],
-          "doc": "Discount amount."
-        },
-        {
           "name": "condition",
           "optional": true,
           "type": [
@@ -2071,6 +2153,56 @@
           "doc": "Discount description."
         },
         {
+          "name": "name",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount name."
+        },
+        {
+          "name": "type",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Discount type.\nOne of:\nOFF_ITEM,\nOFF_ORDER,\nUNSPECIFIED_TYPE"
+        },
+        {
+          "name": "oneOfDiscountValueOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogDiscountValueOneOf",
+              "displayName": "DiscountValueOneOf"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "oneOfDiscountApplyToFilterOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogDiscountApplyToFilterOneOf",
+              "displayName": "DiscountApplyToFilterOneOf"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          "Customers can use a discount to pay less. Can be an amount or a percentage.\nYou can read more about discounts in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
+        ]
+      }
+    },
+    {
+      "name": "restaurantsCatalogsV3CatalogDiscountApplyToFilterOneOf",
+      "members": [
+        {
           "name": "itemIds",
           "optional": true,
           "type": [
@@ -2082,26 +2214,6 @@
           "doc": "IDs of the items the discount applies to. **Note:** The items must be of type `dish`."
         },
         {
-          "name": "name",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Discount name."
-        },
-        {
-          "name": "percentage",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Discount percentage."
-        },
-        {
           "name": "sectionIds",
           "optional": true,
           "type": [
@@ -2111,23 +2223,14 @@
             }
           ],
           "doc": "IDs of the sections the discount applies to."
-        },
-        {
-          "name": "type",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Discount type.\nOne of:\nOFF_ITEM,\nOFF_ORDER,\nUNSPECIFIED_TYPE"
         }
       ],
       "docs": {
         "description": [
-          "Customers can use a discount to pay less. Can be an amount or a percentage.\nYou can read more about discounts in the [introduction](https://dev.wix.com/api/rest/wix-restaurants/catalogs/introduction)."
+          ""
         ]
-      }
+      },
+      "oneOf": true
     },
     {
       "name": "restaurantsCatalogsV3CatalogDiscountCondition",
@@ -2262,30 +2365,40 @@
       }
     },
     {
-      "name": "restaurantsCatalogsV3CatalogDishOption",
+      "name": "restaurantsCatalogsV3CatalogDiscountValueOneOf",
       "members": [
         {
-          "name": "deselection",
+          "name": "amount",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogDeselection",
-              "displayName": "Deselection"
+              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogMoney",
+              "displayName": "Money"
             }
           ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
+          "doc": "Discount amount."
         },
         {
-          "name": "extras",
+          "name": "percentage",
           "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogExtras",
-              "displayName": "Extras"
+              "nativeType": "string"
             }
           ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
-        },
+          "doc": "Discount percentage."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
+    },
+    {
+      "name": "restaurantsCatalogsV3CatalogDishOption",
+      "members": [
         {
           "name": "name",
           "optional": true,
@@ -2297,17 +2410,6 @@
           "doc": "Dish option name."
         },
         {
-          "name": "selection",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogSelection",
-              "displayName": "Selection"
-            }
-          ],
-          "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
-        },
-        {
           "name": "type",
           "readOnly": true,
           "optional": true,
@@ -2317,6 +2419,16 @@
             }
           ],
           "doc": "One of:\nDESELECTION,\nEXTRAS,\nSELECTION,\nUNSPECIFIED_DISH_OPTION_TYPE"
+        },
+        {
+          "name": "oneOfDishOptionMethodOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogDishOptionMethodOneOf",
+              "displayName": "DishOptionMethodOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -2355,6 +2467,50 @@
           ""
         ]
       }
+    },
+    {
+      "name": "restaurantsCatalogsV3CatalogDishOptionMethodOneOf",
+      "members": [
+        {
+          "name": "deselection",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogDeselection",
+              "displayName": "Deselection"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can remove from a dish. For example a specific ingredient. Customers can remove multiple deselections per dish."
+        },
+        {
+          "name": "extras",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogExtras",
+              "displayName": "Extras"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can add to a dish. For example a topping. Customers can add multiple extras per dish."
+        },
+        {
+          "name": "selection",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsCatalogsV3CatalogSelection",
+              "displayName": "Selection"
+            }
+          ],
+          "doc": "Item of type `DISH` or `VARIATION` that customers can select. For example a dish size. Customers can choose only a single selection per dish."
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "restaurantsCatalogsV3CatalogDishOptions",
@@ -4065,6 +4221,16 @@
             }
           ],
           "doc": "Message when accepting the order."
+        },
+        {
+          "name": "oneOfAcceptOrderRequestDeliveryTimeOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderAcceptOrderRequestDeliveryTimeOneOf",
+              "displayName": "AcceptOrderRequestDeliveryTimeOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -4072,6 +4238,16 @@
           ""
         ]
       }
+    },
+    {
+      "name": "restaurantsV3OrderAcceptOrderRequestDeliveryTimeOneOf",
+      "members": [],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "restaurantsV3OrderAcceptOrderResponse",
@@ -4449,16 +4625,6 @@
           "doc": "Last name."
         },
         {
-          "name": "memberId",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Member ID."
-        },
-        {
           "name": "phone",
           "optional": true,
           "type": [
@@ -4467,6 +4633,36 @@
             }
           ],
           "doc": "Phone number."
+        },
+        {
+          "name": "oneOfCustomerIdOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderCustomerIdOneOf",
+              "displayName": "CustomerIdOneOf"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          "Customer information."
+        ]
+      }
+    },
+    {
+      "name": "restaurantsV3OrderCustomerIdOneOf",
+      "members": [
+        {
+          "name": "memberId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Member ID."
         },
         {
           "name": "visitorId",
@@ -4481,9 +4677,10 @@
       ],
       "docs": {
         "description": [
-          "Customer information."
+          ""
         ]
-      }
+      },
+      "oneOf": true
     },
     {
       "name": "restaurantsV3OrderDeliveryAddress",
@@ -4701,17 +4898,6 @@
           "doc": "Delivery address."
         },
         {
-          "name": "externalProvider",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderExternalProvider",
-              "displayName": "ExternalProvider"
-            }
-          ],
-          "doc": "Delivery through an external provider."
-        },
-        {
           "name": "pickupInfo",
           "optional": true,
           "type": [
@@ -4721,6 +4907,37 @@
             }
           ],
           "doc": "Information about the delivery pickup."
+        },
+        {
+          "name": "oneOfDeliveryDetailsProviderOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderDeliveryDetailsProviderOneOf",
+              "displayName": "DeliveryDetailsProviderOneOf"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "restaurantsV3OrderDeliveryDetailsProviderOneOf",
+      "members": [
+        {
+          "name": "externalProvider",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderExternalProvider",
+              "displayName": "ExternalProvider"
+            }
+          ],
+          "doc": "Delivery through an external provider."
         },
         {
           "name": "restaurant",
@@ -4738,7 +4955,8 @@
         "description": [
           ""
         ]
-      }
+      },
+      "oneOf": true
     },
     {
       "name": "restaurantsV3OrderDineInDetails",
@@ -5005,6 +5223,46 @@
           "doc": "Whether the order should be fulfilled as soon as possible. Defaults to `true`."
         },
         {
+          "name": "promisedTime",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "Date"
+            }
+          ],
+          "doc": "Latest delivery time promised by the restaurant."
+        },
+        {
+          "name": "type",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Fulfillment type.\nOne of:\nDELIVERY,\nDINE_IN,\nPICKUP,\nUNSPECIFIED_FULFILLMENT_TYPE"
+        },
+        {
+          "name": "oneOfFulfillmentDetailsOneOf",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderFulfillmentDetailsOneOf",
+              "displayName": "FulfillmentDetailsOneOf"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "restaurantsV3OrderFulfillmentDetailsOneOf",
+      "members": [
+        {
           "name": "deliveryDetails",
           "optional": true,
           "type": [
@@ -5036,33 +5294,14 @@
             }
           ],
           "doc": "Pickup details."
-        },
-        {
-          "name": "promisedTime",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "Date"
-            }
-          ],
-          "doc": "Latest delivery time promised by the restaurant."
-        },
-        {
-          "name": "type",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Fulfillment type.\nOne of:\nDELIVERY,\nDINE_IN,\nPICKUP,\nUNSPECIFIED_FULFILLMENT_TYPE"
         }
       ],
       "docs": {
         "description": [
           ""
         ]
-      }
+      },
+      "oneOf": true
     },
     {
       "name": "restaurantsV3OrderGetOrderByMsidRequest",
@@ -5100,7 +5339,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": "Metasite id"
+          "doc": "Metasite id."
         }
       ],
       "docs": {
@@ -5183,7 +5422,7 @@
       ],
       "docs": {
         "description": [
-          ""
+          "TEST This is the order response - where does this description appear..."
         ]
       }
     },
@@ -6202,6 +6441,36 @@
       }
     },
     {
+      "name": "restaurantsV3OrderOrderCreated",
+      "members": [
+        {
+          "name": "entity",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderOrder",
+              "displayName": "Order"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "metadata",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderBackendEventMetadata",
+              "displayName": "BackendEventMetadata"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
       "name": "restaurantsV3OrderOrderFulfilled",
       "members": [
         {
@@ -6231,6 +6500,36 @@
             {
               "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderOrderFulfilled",
               "displayName": "OrderFulfilled"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "metadata",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderBackendEventMetadata",
+              "displayName": "BackendEventMetadata"
+            }
+          ],
+          "doc": ""
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      }
+    },
+    {
+      "name": "restaurantsV3OrderOrderNewOrder",
+      "members": [
+        {
+          "name": "data",
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Events.restaurantsV3OrderNewOrder",
+              "displayName": "NewOrder"
             }
           ],
           "doc": ""
