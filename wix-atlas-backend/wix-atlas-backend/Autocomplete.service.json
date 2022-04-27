@@ -95,7 +95,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Filters the user can add in order to get more accurate results"
         },
         {
           "name": "location",
@@ -105,7 +105,7 @@
               "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
-          "doc": ""
+          "doc": "The point around which you wish to retrieve place information"
         },
         {
           "name": "origin",
@@ -115,7 +115,7 @@
               "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
-          "doc": ""
+          "doc": "The origin point from which to calculate straight-line distance to the destination"
         },
         {
           "name": "radius",
@@ -125,7 +125,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "The acceptable distance from that location (in meters)"
         }
       ],
       "docs": {
@@ -275,7 +275,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "alpha-2 or alpha-3 ISO-3166 country codes to filter by"
         },
         {
           "name": "location",
@@ -285,7 +285,7 @@
               "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
-          "doc": ""
+          "doc": "The point around which you wish to retrieve place information"
         },
         {
           "name": "origin",
@@ -295,7 +295,7 @@
               "referenceType": "wix-atlas-backend.Autocomplete.AddressLocation"
             }
           ],
-          "doc": ""
+          "doc": "The origin point from which to calculate straight-line distance to the destination"
         },
         {
           "name": "radius",
@@ -305,7 +305,7 @@
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "The acceptable distance from that location (in meters)"
         }
       ],
       "docs": {
