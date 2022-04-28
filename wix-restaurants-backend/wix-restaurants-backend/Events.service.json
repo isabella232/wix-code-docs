@@ -126,8 +126,9 @@
           {
             "title": "onOrderAccepted example",
             "body": [
+              "// comment",
               "function a(a: string) {",
-              "// something",
+              "  // something",
               "}",
               ""
             ]
