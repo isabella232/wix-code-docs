@@ -21,25 +21,9 @@
       "name": "Address",
       "members": [
         {
-          "name": "addressLine",
-          "optional": true,
-          "type": [
-            {
-              "nativeType": "null"
-            },
-            {
-              "nativeType": "string"
-            }
-          ],
-          "doc": "Main address line (usually street and number) as free text"
-        },
-        {
           "name": "addressLine2",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -51,9 +35,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -63,9 +44,6 @@
           "name": "country",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -77,9 +55,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -89,9 +64,6 @@
           "name": "formattedAddress",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -113,9 +85,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -126,31 +95,15 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
           "doc": "zip/postal code"
         },
         {
-          "name": "streetAddress",
-          "optional": true,
-          "type": [
-            {
-              "referenceType": "wix-atlas-backend.Location.StreetAddress"
-            }
-          ],
-          "doc": "a break down of the street to number and street name"
-        },
-        {
           "name": "subdivision",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -173,6 +126,15 @@
             }
           ],
           "doc": "multi-level subdivisions from top to bottom"
+        },
+        {
+          "name": "oneOfAddressStreetOneOf",
+          "type": [
+            {
+              "referenceType": "wix-atlas-backend.Location.AddressStreetOneOf"
+            }
+          ],
+          "doc": ""
         }
       ],
       "docs": {
@@ -189,9 +151,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "number"
             }
           ],
@@ -201,9 +160,6 @@
           "name": "longitude",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "number"
             }
@@ -216,6 +172,37 @@
           ""
         ]
       }
+    },
+    {
+      "name": "AddressStreetOneOf",
+      "members": [
+        {
+          "name": "addressLine",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Main address line (usually street and number) as free text"
+        },
+        {
+          "name": "streetAddress",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-atlas-backend.Location.StreetAddress"
+            }
+          ],
+          "doc": "a break down of the street to number and street name"
+        }
+      ],
+      "docs": {
+        "description": [
+          ""
+        ]
+      },
+      "oneOf": true
     },
     {
       "name": "FilterBy",
@@ -311,7 +298,7 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Country codes filter the user can add in order to get more accurate results"
         },
         {
           "name": "filterBy",
@@ -328,33 +315,27 @@
               }
             }
           ],
-          "doc": ""
+          "doc": "Deprecate! - Please use 'zipCode' and 'countryCodes' fields"
         },
         {
           "name": "query",
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Free text"
         },
         {
           "name": "zipCode",
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Zip code filter the user can add in order to get more accurate results"
         }
       ],
       "docs": {
@@ -405,9 +386,6 @@
           "optional": true,
           "type": [
             {
-              "nativeType": "null"
-            },
-            {
               "nativeType": "string"
             }
           ],
@@ -417,9 +395,6 @@
           "name": "zipCode",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
@@ -567,9 +542,6 @@
           "name": "typeInfo",
           "optional": true,
           "type": [
-            {
-              "nativeType": "null"
-            },
             {
               "nativeType": "string"
             }
