@@ -266,6 +266,16 @@
       "name": "Address",
       "members": [
         {
+          "name": "addressLine",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Main address line, usually street and number as free text."
+        },
+        {
           "name": "addressLine2",
           "optional": true,
           "type": [
@@ -306,6 +316,16 @@
           "doc": "Zip/postal code."
         },
         {
+          "name": "streetAddress",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-metro-backend.Products.StreetAddress"
+            }
+          ],
+          "doc": "Street name and number."
+        },
+        {
           "name": "subdivision",
           "optional": true,
           "type": [
@@ -314,17 +334,19 @@
             }
           ],
           "doc": "Subdivision. Usually a state, region, prefecture, or province code, according to [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2)."
-        },
-        {
-          "name": "oneOfAddressStreetOneOf",
-          "type": [
-            {
-              "referenceType": "wix-metro-backend.Products.AddressStreetOneOf"
-            }
-          ],
-          "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfAddressStreetOneOf",
+            "members": [
+              "addressLine",
+              "streetAddress"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           "Physical address"
@@ -389,8 +411,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "CreateProductOptions",
@@ -1036,6 +1057,16 @@
       "name": "QueryV2",
       "members": [
         {
+          "name": "cursorPaging",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-metro-backend.Products.CursorPaging"
+            }
+          ],
+          "doc": "Cursor token pointing to a page of results. Not used in the first request. Following requests use the cursor token and not `filter` or `sort`."
+        },
+        {
           "name": "fields",
           "optional": true,
           "type": [
@@ -1090,6 +1121,16 @@
           "doc": "Filter object in the following format:\n`\"filter\" : {\n\"fieldName1\": \"value1\",\n\"fieldName2\":{\"$operator\":\"value2\"}\n}`\nExample of operators: `$eq`, `$ne`, `$lt`, `$lte`, `$gt`, `$gte`, `$in`, `$hasSome`, `$hasAll`, `$startsWith`, `$contains`"
         },
         {
+          "name": "paging",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-metro-backend.Products.Paging"
+            }
+          ],
+          "doc": "Paging options to limit and skip the number of items."
+        },
+        {
           "name": "sort",
           "optional": true,
           "type": [
@@ -1105,17 +1146,19 @@
             }
           ],
           "doc": "Sort object in the following format:\n`[{\"fieldName\":\"sortField1\",\"order\":\"ASC\"},{\"fieldName\":\"sortField2\",\"order\":\"DESC\"}]`"
-        },
-        {
-          "name": "oneOfQueryV2PagingMethodOneOf",
-          "type": [
-            {
-              "referenceType": "wix-metro-backend.Products.QueryV2PagingMethodOneOf"
-            }
-          ],
-          "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfQueryV2PagingMethodOneOf",
+            "members": [
+              "cursorPaging",
+              "paging"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           ""
@@ -1150,8 +1193,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "Sorting",
