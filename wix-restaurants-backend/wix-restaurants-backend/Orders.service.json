@@ -739,17 +739,19 @@
             }
           ],
           "doc": "Message when accepting the order."
-        },
-        {
-          "name": "oneOfAcceptOrderRequestDeliveryTimeOneOf",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Orders.AcceptOrderRequestDeliveryTimeOneOf"
-            }
-          ],
-          "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfAcceptOrderRequestDeliveryTimeOneOf",
+            "members": [
+              "dropOffTime",
+              "pickupTime"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           ""
@@ -763,8 +765,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "AcceptOrderResponse",
@@ -1114,6 +1115,16 @@
           "doc": "Last name."
         },
         {
+          "name": "memberId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Member ID."
+        },
+        {
           "name": "phone",
           "optional": true,
           "type": [
@@ -1124,15 +1135,27 @@
           "doc": "Phone number."
         },
         {
-          "name": "oneOfCustomerIdOneOf",
+          "name": "visitorId",
+          "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.CustomerIdOneOf"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Visitor ID."
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfCustomerIdOneOf",
+            "members": [
+              "memberId",
+              "visitorId"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           "Customer information."
@@ -1167,8 +1190,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "DeliveryAddress",
@@ -1384,6 +1406,16 @@
           "doc": "Delivery address."
         },
         {
+          "name": "externalProvider",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.ExternalProvider"
+            }
+          ],
+          "doc": "Delivery through an external provider."
+        },
+        {
           "name": "pickupInfo",
           "optional": true,
           "type": [
@@ -1394,15 +1426,27 @@
           "doc": "Information about the delivery pickup."
         },
         {
-          "name": "oneOfDeliveryDetailsProviderOneOf",
+          "name": "restaurant",
+          "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-backend.Orders.DeliveryDetailsProviderOneOf"
+              "referenceType": "wix-restaurants-backend.Orders.Restaurant"
             }
           ],
-          "doc": ""
+          "doc": "Delivery through the restaurant."
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfDeliveryDetailsProviderOneOf",
+            "members": [
+              "externalProvider",
+              "restaurant"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           ""
@@ -1437,8 +1481,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "DineInDetails",
@@ -1704,6 +1747,36 @@
           "doc": "Whether the order should be fulfilled as soon as possible. Defaults to `true`."
         },
         {
+          "name": "deliveryDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.DeliveryDetails"
+            }
+          ],
+          "doc": "Delivery details."
+        },
+        {
+          "name": "dineInDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.DineInDetails"
+            }
+          ],
+          "doc": "Dine-in details"
+        },
+        {
+          "name": "pickupDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-backend.Orders.PickupDetails"
+            }
+          ],
+          "doc": "Pickup details."
+        },
+        {
           "name": "promisedTime",
           "optional": true,
           "type": [
@@ -1722,17 +1795,20 @@
             }
           ],
           "doc": "Fulfillment type.\nOne of:\nDELIVERY,\nDINE_IN,\nPICKUP,\nUNSPECIFIED_FULFILLMENT_TYPE"
-        },
-        {
-          "name": "oneOfFulfillmentDetailsOneOf",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-backend.Orders.FulfillmentDetailsOneOf"
-            }
-          ],
-          "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfFulfillmentDetailsOneOf",
+            "members": [
+              "deliveryDetails",
+              "dineInDetails",
+              "pickupDetails"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           ""
@@ -1777,8 +1853,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "GetOrderByMsidOptions",
