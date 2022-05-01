@@ -207,18 +207,19 @@
             }
           ],
           "doc": "Message when accepting the order."
-        },
-        {
-          "name": "oneOfAcceptOrderRequestDeliveryTimeOneOf",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsAcceptOrderRequestDeliveryTimeOneOf",
-              "displayName": "AcceptOrderRequestDeliveryTimeOneOf"
-            }
-          ],
-          "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfAcceptOrderRequestDeliveryTimeOneOf",
+            "members": [
+              "dropOffTime",
+              "pickupTime"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           ""
@@ -232,8 +233,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "wixVeloEventsAcceptOrderResponse",
@@ -611,6 +611,16 @@
           "doc": "Last name."
         },
         {
+          "name": "memberId",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Member ID."
+        },
+        {
           "name": "phone",
           "optional": true,
           "type": [
@@ -621,16 +631,27 @@
           "doc": "Phone number."
         },
         {
-          "name": "oneOfCustomerIdOneOf",
+          "name": "visitorId",
+          "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsCustomerIdOneOf",
-              "displayName": "CustomerIdOneOf"
+              "nativeType": "string"
             }
           ],
-          "doc": ""
+          "doc": "Visitor ID."
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfCustomerIdOneOf",
+            "members": [
+              "memberId",
+              "visitorId"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           "Customer information."
@@ -665,8 +686,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "wixVeloEventsDeliveryAddress",
@@ -884,6 +904,17 @@
           "doc": "Delivery address."
         },
         {
+          "name": "externalProvider",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsExternalProvider",
+              "displayName": "ExternalProvider"
+            }
+          ],
+          "doc": "Delivery through an external provider."
+        },
+        {
           "name": "pickupInfo",
           "optional": true,
           "type": [
@@ -895,16 +926,28 @@
           "doc": "Information about the delivery pickup."
         },
         {
-          "name": "oneOfDeliveryDetailsProviderOneOf",
+          "name": "restaurant",
+          "optional": true,
           "type": [
             {
-              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsDeliveryDetailsProviderOneOf",
-              "displayName": "DeliveryDetailsProviderOneOf"
+              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsRestaurant",
+              "displayName": "Restaurant"
             }
           ],
-          "doc": ""
+          "doc": "Delivery through the restaurant."
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfDeliveryDetailsProviderOneOf",
+            "members": [
+              "externalProvider",
+              "restaurant"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           ""
@@ -941,8 +984,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "wixVeloEventsDineInDetails",
@@ -1209,6 +1251,39 @@
           "doc": "Whether the order should be fulfilled as soon as possible. Defaults to `true`."
         },
         {
+          "name": "deliveryDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsDeliveryDetails",
+              "displayName": "DeliveryDetails"
+            }
+          ],
+          "doc": "Delivery details."
+        },
+        {
+          "name": "dineInDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsDineInDetails",
+              "displayName": "DineInDetails"
+            }
+          ],
+          "doc": "Dine-in details"
+        },
+        {
+          "name": "pickupDetails",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsPickupDetails",
+              "displayName": "PickupDetails"
+            }
+          ],
+          "doc": "Pickup details."
+        },
+        {
           "name": "promisedTime",
           "optional": true,
           "type": [
@@ -1227,18 +1302,20 @@
             }
           ],
           "doc": "Fulfillment type.\nOne of:\nDELIVERY,\nDINE_IN,\nPICKUP,\nUNSPECIFIED_FULFILLMENT_TYPE"
-        },
-        {
-          "name": "oneOfFulfillmentDetailsOneOf",
-          "type": [
-            {
-              "referenceType": "wix-restaurants-orders-backend.Events.wixVeloEventsFulfillmentDetailsOneOf",
-              "displayName": "FulfillmentDetailsOneOf"
-            }
-          ],
-          "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfFulfillmentDetailsOneOf",
+            "members": [
+              "deliveryDetails",
+              "dineInDetails",
+              "pickupDetails"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           ""
@@ -1286,8 +1363,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "wixVeloEventsGetOrderByMsidRequest",
