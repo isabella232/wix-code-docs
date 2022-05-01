@@ -71,6 +71,16 @@
       "name": "Address",
       "members": [
         {
+          "name": "addressLine",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
+            }
+          ],
+          "doc": "Main address line (usually street and number) as free text"
+        },
+        {
           "name": "addressLine2",
           "optional": true,
           "type": [
@@ -151,6 +161,16 @@
           "doc": "zip/postal code"
         },
         {
+          "name": "streetAddress",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-atlas-backend.Places.StreetAddress"
+            }
+          ],
+          "doc": "a break down of the street to number and street name"
+        },
+        {
           "name": "subdivision",
           "optional": true,
           "type": [
@@ -176,17 +196,19 @@
             }
           ],
           "doc": "multi-level subdivisions from top to bottom"
-        },
-        {
-          "name": "oneOfAddressStreetOneOf",
-          "type": [
-            {
-              "referenceType": "wix-atlas-backend.Places.AddressStreetOneOf"
-            }
-          ],
-          "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfAddressStreetOneOf",
+            "members": [
+              "addressLine",
+              "streetAddress"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           "Physical address"
@@ -251,8 +273,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "GetPlaceRequest",
