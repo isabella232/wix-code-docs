@@ -699,6 +699,46 @@
           "doc": "random GUID so clients can tell if event was already handled"
         },
         {
+          "name": "actionEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-reviews-backend.ActionEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "createdEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-reviews-backend.EntityCreatedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "dataExtensionsUpdatedEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-reviews-backend.DataExtensionsUpdatedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "deletedEvent",
+          "optional": true,
+          "type": [
+            {
+              "referenceType": "wix-reviews-backend.EntityDeletedEvent"
+            }
+          ],
+          "doc": ""
+        },
+        {
           "name": "entityFqdn",
           "optional": true,
           "type": [
@@ -759,15 +799,30 @@
           "doc": "A field that should be set if this event was triggered by an anonymize request.\nFor example you must set it to true when sending an event as a result of a GDPR right to be forgotten request.\nNOTE: This field is not relevant for `EntityCreatedEvent` but is located here for better ergonomics of consumers."
         },
         {
-          "name": "oneOfDomainEventBodyOneOf",
+          "name": "updatedEvent",
+          "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.DomainEventBodyOneOf"
+              "referenceType": "wix-reviews-backend.EntityUpdatedEvent"
             }
           ],
           "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfDomainEventBodyOneOf",
+            "members": [
+              "actionEvent",
+              "createdEvent",
+              "dataExtensionsUpdatedEvent",
+              "deletedEvent",
+              "updatedEvent"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           ""
@@ -832,8 +887,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "Empty",
@@ -936,15 +990,37 @@
       "name": "Media",
       "members": [
         {
-          "name": "oneOfMediaMediaOneOf",
+          "name": "image",
+          "optional": true,
           "type": [
             {
-              "referenceType": "wix-reviews-backend.MediaMediaOneOf"
+              "nativeType": "string"
+            }
+          ],
+          "doc": ""
+        },
+        {
+          "name": "video",
+          "optional": true,
+          "type": [
+            {
+              "nativeType": "string"
             }
           ],
           "doc": ""
         }
       ],
+      "extra": {
+        "oneOfGroups": [
+          {
+            "name": "oneOfMediaMediaOneOf",
+            "members": [
+              "image",
+              "video"
+            ]
+          }
+        ]
+      },
       "docs": {
         "description": [
           "Entity describing media item of review"
@@ -979,8 +1055,7 @@
         "description": [
           ""
         ]
-      },
-      "oneOf": true
+      }
     },
     {
       "name": "PagingMetadataV2",
