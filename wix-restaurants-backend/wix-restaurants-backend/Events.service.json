@@ -124,7 +124,7 @@
         "description": [],
         "examples": [
           {
-            "title": "onOrderAccepted example",
+            "title": "some title from meni app",
             "body": [
               "// comment",
               "function a(a: string) {",
