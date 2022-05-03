@@ -274,7 +274,7 @@
                       "wixData.query(\"myCollection\")",
                       "  .find()",
                       "  .then( (results) => {",
-                      "    let partials = results.partialIncludes; // false",
+                      "    let resultPage = results.partialIncludes; // false",
                       "  } ) ;" ],
                   "extra":
                     {  } } ],
